@@ -23,16 +23,16 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
+future: true
 
 
 collections:
-  ballots: {}
+  ballots:
+    output: true
+    permalink: /election/:path/
   candidates:
     output: true
     permalink: /candidate/:path/
-  elections:
-    output: true
-    permalink: /election/:path/
   localities:
     output: true
     permalink: /:path/
@@ -41,6 +41,10 @@ collections:
     permalink: /referendum/:path/
 
 defaults:
+  - scope:
+      type: ballots
+    values:
+      layout: locality
   - scope:
       type: candidates
     values:

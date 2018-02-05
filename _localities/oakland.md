@@ -3,6 +3,5 @@ locality_id: oakland
 netfile: COAK
 name: Oakland
 full_name: City of Oakland
-elections:
-- 2016-11-08
+current_election: 2018-11-06
 ---

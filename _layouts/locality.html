@@ -1,21 +1,35 @@
 ---
 layout: default
 ---
-{% assign locality = page %}
+{% if page.collection == 'ballots' %}
+  {% assign ballot = page %}
+  {% assign locality = site.localities | where: 'slug', ballot.locality | first %}
+{% else %}
+  {% assign locality = page %}
+{% endif %}
+
+{% assign ballots = site.ballots | where: "locality", locality.locality_id | reverse %}
+{% assign current_ballot = ballots | where: "election", locality.current_election | first %}
 {% assign today = site.time | date: "%Y-%m-%d" %}
-{% assign next_election = locality.elections | first | date: "%Y-%m-%d" %}
-{% assign ballots = site.ballots | where: "locality", locality.locality_id %}
+{% assign current_election = locality.current_election | date: "%Y-%m-%d" %}
+
+{% unless ballot %}
+  {% comment %}
+    If we are looking at a past election, ballot is already set with the given
+    election. If it's not set, this must be a locality page and we should display
+    the current ballot.
+  {% endcomment %}
+  {% assign ballot = current_ballot %}
+{% endunless %}
 
 <h1>{{ locality.name }}</h1>
 
-{% if next_election > today %}
 <div>
-Upcoming election: {{ next_election }}
+  {% if current_election > today %}Upcoming{% else %}Recent{% endif %}
+  election: <a href="{{ locality.url }}">{{ locality.current_election | date: "%B %-d, %Y" }}</a>
 </div>
-{% endif %}
 
-{% for ballot in ballots %}
-<h2>Election: {{ ballot.election }}</h2>
+<h2>Election: {{ ballot.election | date: "%B %-d, %Y" }}</h2>
 {% for ballot_item in ballot.ballot_items %}
   <h3>{{ ballot_item.name }}</h3>
   {% if ballot_item.contest_type == "Office" %}
@@ -26,18 +40,17 @@ Upcoming election: {{ next_election }}
     {% endfor %}
   </ul>
   {% else %}
-    {% assign referendum = site.referendums | where: "slug", ballot_item.referendum_id | first %}
+    {% assign referendum = site.referendums | where: "path", ballot_item.referendum | first %}
     <div><a href="{{ referendum.url }}">{{ referendum.number }} {{ referendum.title | escape}}</a></div>
     <div>{{ referendum.content }}</div>
   {% endif %}
-{% endfor %}
 {% endfor %}
 
 <h2>All elections:</h2>
 <div>
 <ul>
-  {% for election in locality.elections %}
-  <li>{{ election }}</li>
+  {% for ballot in ballots %}
+  <li><a href="{{ ballot.url }}">{{ ballot.election | date: "%B %-d, %Y" }}</a></li>
   {% endfor %}
 </ul>
 </div>
