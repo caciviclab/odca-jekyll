@@ -4,3 +4,9 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
+
+<ul>
+{% for locality in site.localities %}
+<li><a href="{{ locality.url }}">{{ locality.name }}</a></li>
+{% endfor %}
+</ul>

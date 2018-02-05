@@ -24,6 +24,37 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
+
+collections:
+  ballots: {}
+  candidates:
+    output: true
+    permalink: /candidate/:path/
+  elections:
+    output: true
+    permalink: /election/:path/
+  localities:
+    output: true
+    permalink: /:path/
+  referendums:
+    output: true
+    permalink: /referendum/:path/
+
+defaults:
+  - scope:
+      type: candidates
+    values:
+      layout: candidate
+  - scope:
+      type: localities
+    values:
+      layout: locality
+  - scope:
+      type: referendums
+    values:
+      layout: referendum
+
+
 # Build settings
 markdown: kramdown
 theme: minima

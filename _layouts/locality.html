@@ -1,0 +1,43 @@
+---
+layout: default
+---
+{% assign locality = page %}
+{% assign today = site.time | date: "%Y-%m-%d" %}
+{% assign next_election = locality.elections | first | date: "%Y-%m-%d" %}
+{% assign ballots = site.ballots | where: "locality", locality.locality_id %}
+
+<h1>{{ locality.name }}</h1>
+
+{% if next_election > today %}
+<div>
+Upcoming election: {{ next_election }}
+</div>
+{% endif %}
+
+{% for ballot in ballots %}
+<h2>Election: {{ ballot.election }}</h2>
+{% for ballot_item in ballot.ballot_items %}
+  <h3>{{ ballot_item.name }}</h3>
+  {% if ballot_item.contest_type == "Office" %}
+  <ul>
+    {% for candidate_id in ballot_item.candidates %}
+      {% assign candidate = site.candidates | where: "slug", candidate_id | first %}
+      <li><a href="{{ candidate.url }}">{{ candidate.name }}</a></li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    {% assign referendum = site.referendums | where: "slug", ballot_item.referendum_id | first %}
+    <div><a href="{{ referendum.url }}">{{ referendum.number }} {{ referendum.title | escape}}</a></div>
+    <div>{{ referendum.content }}</div>
+  {% endif %}
+{% endfor %}
+{% endfor %}
+
+<h2>All elections:</h2>
+<div>
+<ul>
+  {% for election in locality.elections %}
+  <li>{{ election }}</li>
+  {% endfor %}
+</ul>
+</div>
