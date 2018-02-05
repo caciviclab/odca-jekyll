@@ -7,6 +7,6 @@ layout: home
 
 <ul>
 {% for locality in site.localities %}
-<li><a href="{{ locality.url }}">{{ locality.name }}</a></li>
+<li><a href="{{ locality.url | prepend: site.baseurl }}">{{ locality.name }}</a></li>
 {% endfor %}
 </ul>
