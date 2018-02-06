@@ -41,8 +41,8 @@ layout: default
   </ul>
   {% else %}
     {% assign referendum = site.referendums | where: "path", ballot_item.referendum | first %}
-    <div><a href="{{ referendum.url | prepend: site.baseurl }}">{{ referendum.number }} {{ referendum.title | escape}}</a></div>
-    <div>{{ referendum.content }}</div>
+    <p><a href="{{ referendum.url | prepend: site.baseurl }}">{{ referendum.number }} {{ referendum.title | escape}}</a></p>
+    <p>{{ referendum.content }}</p>
   {% endif %}
 {% endfor %}
 
