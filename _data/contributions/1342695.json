@@ -1,0 +1,2461 @@
+{
+  "contributions": [
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-01-01",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Kramer"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-01-01",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Kramer"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-01-08",
+      "Tran_NamF": "Sidhardha",
+      "Tran_NamL": "Lakireddy"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-01-08",
+      "Tran_NamF": "Sidhardha",
+      "Tran_NamL": "Lakireddy"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-01-09",
+      "Tran_NamF": "Alan",
+      "Tran_NamL": "Vogl"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-01-09",
+      "Tran_NamF": "Alan",
+      "Tran_NamL": "Vogl"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 20,
+      "Tran_Date": "2015-01-16",
+      "Tran_NamF": null,
+      "Tran_NamL": "East 18th Street Associates"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-01-16",
+      "Tran_NamF": null,
+      "Tran_NamL": "East 18th Street Associates"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-01-16",
+      "Tran_NamF": null,
+      "Tran_NamL": "Lantz Properties, LLC"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-01-16",
+      "Tran_NamF": null,
+      "Tran_NamL": "Lantz Properties, LLC"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-01-16",
+      "Tran_NamF": null,
+      "Tran_NamL": "Stamm Theatres, Inc."
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-01-16",
+      "Tran_NamF": null,
+      "Tran_NamL": "Stamm Theatres, Inc."
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-02-06",
+      "Tran_NamF": "Samantha",
+      "Tran_NamL": "Duvall Chandler"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-02-06",
+      "Tran_NamF": "Samantha",
+      "Tran_NamL": "Duvall Chandler"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-02-06",
+      "Tran_NamF": "Dan",
+      "Tran_NamL": "Lieberman"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-02-06",
+      "Tran_NamF": "Dan",
+      "Tran_NamL": "Lieberman"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-02-13",
+      "Tran_NamF": "Tracy",
+      "Tran_NamL": "Giles"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-02-13",
+      "Tran_NamF": "Tracy",
+      "Tran_NamL": "Giles"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-02-13",
+      "Tran_NamF": "Diane",
+      "Tran_NamL": "Henry"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-02-13",
+      "Tran_NamF": "Diane",
+      "Tran_NamL": "Henry"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-03-06",
+      "Tran_NamF": null,
+      "Tran_NamL": "Ambassador Aparments"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-03-06",
+      "Tran_NamF": null,
+      "Tran_NamL": "Ambassador Aparments"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-03-06",
+      "Tran_NamF": null,
+      "Tran_NamL": "Beacon Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-03-06",
+      "Tran_NamF": null,
+      "Tran_NamL": "Beacon Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-03-06",
+      "Tran_NamF": null,
+      "Tran_NamL": "Greenwood Norwood LLC"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-03-06",
+      "Tran_NamF": null,
+      "Tran_NamL": "Greenwood Norwood LLC"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-03-06",
+      "Tran_NamF": null,
+      "Tran_NamL": "Markenkev Properties, LP"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-03-06",
+      "Tran_NamF": null,
+      "Tran_NamL": "Markenkev Properties, LP"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-03-13",
+      "Tran_NamF": "David",
+      "Tran_NamL": "Bruck"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-03-13",
+      "Tran_NamF": "David",
+      "Tran_NamL": "Bruck"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-03-13",
+      "Tran_NamF": null,
+      "Tran_NamL": "Merit Enterprises"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-03-13",
+      "Tran_NamF": null,
+      "Tran_NamL": "Merit Enterprises"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-03-20",
+      "Tran_NamF": null,
+      "Tran_NamL": "Gallagher and Lindsey Inc"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-03-20",
+      "Tran_NamF": null,
+      "Tran_NamL": "Gallagher and Lindsey Inc"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-03-20",
+      "Tran_NamF": "George",
+      "Tran_NamL": "Heath"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-03-20",
+      "Tran_NamF": "George",
+      "Tran_NamL": "Heath"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-04-17",
+      "Tran_NamF": null,
+      "Tran_NamL": "Leapfrog Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-04-17",
+      "Tran_NamF": null,
+      "Tran_NamL": "Leapfrog Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-04-17",
+      "Tran_NamF": "Bruce",
+      "Tran_NamL": "Whipperman"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-04-17",
+      "Tran_NamF": "Bruce",
+      "Tran_NamL": "Whipperman"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-05-15",
+      "Tran_NamF": null,
+      "Tran_NamL": "Bay Lexington Associates"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-05-15",
+      "Tran_NamF": null,
+      "Tran_NamL": "Bay Lexington Associates"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-06-16",
+      "Tran_NamF": "Chris",
+      "Tran_NamL": "Alevizos"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-06-16",
+      "Tran_NamF": "Chris",
+      "Tran_NamL": "Alevizos"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-06-30",
+      "Tran_NamF": null,
+      "Tran_NamL": "Highland Property Group, LLC"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-06-30",
+      "Tran_NamF": null,
+      "Tran_NamL": "Highland Property Group, LLC"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-06-30",
+      "Tran_NamF": null,
+      "Tran_NamL": "S&H Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-06-30",
+      "Tran_NamF": null,
+      "Tran_NamL": "S&H Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-07-17",
+      "Tran_NamF": null,
+      "Tran_NamL": "Burke, Laurie"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-07-17",
+      "Tran_NamF": null,
+      "Tran_NamL": "Burke, Laurie"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-07-17",
+      "Tran_NamF": null,
+      "Tran_NamL": "Palmview Apartments"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-07-17",
+      "Tran_NamF": null,
+      "Tran_NamL": "Palmview Apartments"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-07-31",
+      "Tran_NamF": null,
+      "Tran_NamL": "Morse Management"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-07-31",
+      "Tran_NamF": null,
+      "Tran_NamL": "Morse Management"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-07-31",
+      "Tran_NamF": null,
+      "Tran_NamL": "Sorensen, Eric"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-07-31",
+      "Tran_NamF": null,
+      "Tran_NamL": "Sorensen, Eric"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-08-03",
+      "Tran_NamF": null,
+      "Tran_NamL": "Rowland Property Management"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2015-08-03",
+      "Tran_NamF": null,
+      "Tran_NamL": "Rowland Property Management"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-08-07",
+      "Tran_NamF": null,
+      "Tran_NamL": "Obannon, Marsha"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-08-07",
+      "Tran_NamF": null,
+      "Tran_NamL": "Obannon, Marsha"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-08-21",
+      "Tran_NamF": null,
+      "Tran_NamL": "DiMaggio Investment Co."
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-08-21",
+      "Tran_NamF": null,
+      "Tran_NamL": "DiMaggio Investment Co."
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 60,
+      "Tran_Date": "2015-09-17",
+      "Tran_NamF": null,
+      "Tran_NamL": "Litton/Fuller Group"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-09-17",
+      "Tran_NamF": null,
+      "Tran_NamL": "Litton/Fuller Group"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-09-20",
+      "Tran_NamF": "Diane",
+      "Tran_NamL": "Bevis"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-09-20",
+      "Tran_NamF": "Diane",
+      "Tran_NamL": "Bevis"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-10-09",
+      "Tran_NamF": null,
+      "Tran_NamL": "Bay, LLC"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-10-09",
+      "Tran_NamF": null,
+      "Tran_NamL": "Bay, LLC"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 950,
+      "Tran_Date": "2015-10-23",
+      "Tran_NamF": null,
+      "Tran_NamL": "Park Lake at Walnut Creek"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 20,
+      "Tran_Date": "2015-12-11",
+      "Tran_NamF": "Tanya",
+      "Tran_NamL": "Bursey"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-12-11",
+      "Tran_NamF": "Tanya",
+      "Tran_NamL": "Bursey"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 50,
+      "Tran_Date": "2015-12-11",
+      "Tran_NamF": "Pamelia",
+      "Tran_NamL": "Gore"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-12-11",
+      "Tran_NamF": "Alan",
+      "Tran_NamL": "Vogl"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-12-11",
+      "Tran_NamF": "Alan",
+      "Tran_NamL": "Vogl"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-12-11",
+      "Tran_NamF": null,
+      "Tran_NamL": "Wilson Associates"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-12-11",
+      "Tran_NamF": null,
+      "Tran_NamL": "Wilson Associates"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-12-18",
+      "Tran_NamF": "Barbara",
+      "Tran_NamL": "Addleman"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-12-18",
+      "Tran_NamF": "Barbara",
+      "Tran_NamL": "Addleman"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-12-18",
+      "Tran_NamF": null,
+      "Tran_NamL": "Pansue Vernon Garden Apts."
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-12-18",
+      "Tran_NamF": null,
+      "Tran_NamL": "Pansue Vernon Garden Apts."
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-12-18",
+      "Tran_NamF": null,
+      "Tran_NamL": "Stamm Theatres, Inc."
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-12-18",
+      "Tran_NamF": null,
+      "Tran_NamL": "Trebor Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-12-18",
+      "Tran_NamF": null,
+      "Tran_NamL": "Trebor Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-12-23",
+      "Tran_NamF": null,
+      "Tran_NamL": "Ma Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-12-23",
+      "Tran_NamF": null,
+      "Tran_NamL": "Ma Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2015-12-28",
+      "Tran_NamF": "Lorane",
+      "Tran_NamL": "Owens"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2015-12-28",
+      "Tran_NamF": "Lorane",
+      "Tran_NamL": "Owens"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 50,
+      "Tran_Date": "2015-12-31",
+      "Tran_NamF": "Gerald",
+      "Tran_NamL": "Johnson"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 50,
+      "Tran_Date": "2015-12-31",
+      "Tran_NamF": "Samuel",
+      "Tran_NamL": "Ponce"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-01-13",
+      "Tran_NamF": "Sidhardha",
+      "Tran_NamL": "Lakireddy"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-01-13",
+      "Tran_NamF": "Sidhardha",
+      "Tran_NamL": "Lakireddy"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-01-15",
+      "Tran_NamF": null,
+      "Tran_NamL": "East 18th Street Assoc. /Oakbrook Manor"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-01-15",
+      "Tran_NamF": null,
+      "Tran_NamL": "East 18th Street Assoc. /Oakbrook Manor"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-01-22",
+      "Tran_NamF": null,
+      "Tran_NamL": "Merit Enterprises"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-01-22",
+      "Tran_NamF": null,
+      "Tran_NamL": "Merit Enterprises"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 125,
+      "Tran_Date": "2016-01-29",
+      "Tran_NamF": null,
+      "Tran_NamL": "Fran Slate Property Management"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-01-29",
+      "Tran_NamF": null,
+      "Tran_NamL": "Lantz Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-01-29",
+      "Tran_NamF": null,
+      "Tran_NamL": "Lantz Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-01-29",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Zolly"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-01-29",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Zolly"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-02-08",
+      "Tran_NamF": "Diane",
+      "Tran_NamL": "Henry"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-02-08",
+      "Tran_NamF": "Diane",
+      "Tran_NamL": "Henry"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-02-08",
+      "Tran_NamF": "Walter",
+      "Tran_NamL": "Miles"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-02-08",
+      "Tran_NamF": "Walter",
+      "Tran_NamL": "Miles"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-02-29",
+      "Tran_NamF": null,
+      "Tran_NamL": "Gallagher & Lindsey"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-02-29",
+      "Tran_NamF": null,
+      "Tran_NamL": "Gallagher & Lindsey"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-02-29",
+      "Tran_NamF": null,
+      "Tran_NamL": "Markenkev Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-02-29",
+      "Tran_NamF": null,
+      "Tran_NamL": "Markenkev Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-03-04",
+      "Tran_NamF": null,
+      "Tran_NamL": "Beacon Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-03-04",
+      "Tran_NamF": null,
+      "Tran_NamL": "Beacon Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-03-18",
+      "Tran_NamF": null,
+      "Tran_NamL": "Greenwood Norwood LLC"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-03-18",
+      "Tran_NamF": null,
+      "Tran_NamL": "Greenwood Norwood LLC"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-03-18",
+      "Tran_NamF": null,
+      "Tran_NamL": "Melba Lake Apts"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-03-18",
+      "Tran_NamF": null,
+      "Tran_NamL": "Melba Lake Apts"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-03-22",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Faussner"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-03-22",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Faussner"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-03-23",
+      "Tran_NamF": null,
+      "Tran_NamL": "Grand Lake Towers"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-03-23",
+      "Tran_NamF": null,
+      "Tran_NamL": "Grand Lake Towers"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-03-25",
+      "Tran_NamF": null,
+      "Tran_NamL": "Anthony Associates"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-03-25",
+      "Tran_NamF": null,
+      "Tran_NamL": "Anthony Associates"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-03-25",
+      "Tran_NamF": "David",
+      "Tran_NamL": "Bruck"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-03-25",
+      "Tran_NamF": "David",
+      "Tran_NamL": "Bruck"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-03-25",
+      "Tran_NamF": null,
+      "Tran_NamL": "Leapfrog Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-03-25",
+      "Tran_NamF": null,
+      "Tran_NamL": "Leapfrog Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-04-08",
+      "Tran_NamF": null,
+      "Tran_NamL": "Hillcrest Management/Commodore Apartments"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-04-08",
+      "Tran_NamF": null,
+      "Tran_NamL": "Hillcrest Management/Commodore Apartments"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-04-15",
+      "Tran_NamF": null,
+      "Tran_NamL": "EEN Property Management"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-04-15",
+      "Tran_NamF": null,
+      "Tran_NamL": "EEN Property Management"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-04-22",
+      "Tran_NamF": null,
+      "Tran_NamL": "Ambassador Aparments"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-04-22",
+      "Tran_NamF": null,
+      "Tran_NamL": "Ambassador Aparments"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-04-22",
+      "Tran_NamF": null,
+      "Tran_NamL": "J & R Associates"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-04-22",
+      "Tran_NamF": null,
+      "Tran_NamL": "J & R Associates"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-05-06",
+      "Tran_NamF": null,
+      "Tran_NamL": "Foxfire Property Management"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-05-06",
+      "Tran_NamF": null,
+      "Tran_NamL": "Foxfire Property Management"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-05-06",
+      "Tran_NamF": "Mitch",
+      "Tran_NamL": "Tunick"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-05-06",
+      "Tran_NamF": "Mitch",
+      "Tran_NamL": "Tunick"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-06-10",
+      "Tran_NamF": null,
+      "Tran_NamL": "Library Gardens"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-06-10",
+      "Tran_NamF": null,
+      "Tran_NamL": "Library Gardens"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-06-16",
+      "Tran_NamF": null,
+      "Tran_NamL": "Palmview Apartments"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-06-16",
+      "Tran_NamF": null,
+      "Tran_NamL": "Palmview Apartments"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-06-20",
+      "Tran_NamF": "Joseph",
+      "Tran_NamL": "Scott"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-06-30",
+      "Tran_NamF": "Laurie",
+      "Tran_NamL": "Burke"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-06-30",
+      "Tran_NamF": "Laurie",
+      "Tran_NamL": "Burke"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-07-08",
+      "Tran_NamF": null,
+      "Tran_NamL": "Rowland Property Management"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-07-08",
+      "Tran_NamF": null,
+      "Tran_NamL": "Rowland Property Management"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-07-22",
+      "Tran_NamF": null,
+      "Tran_NamL": "Morse Management"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-07-22",
+      "Tran_NamF": null,
+      "Tran_NamL": "Morse Management"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-07-22",
+      "Tran_NamF": "John",
+      "Tran_NamL": "Wagers"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-07-22",
+      "Tran_NamF": "John",
+      "Tran_NamL": "Wagers"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-07-29",
+      "Tran_NamF": "Dennis",
+      "Tran_NamL": "Chen"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-07-29",
+      "Tran_NamF": "Dennis",
+      "Tran_NamL": "Chen"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-07-29",
+      "Tran_NamF": null,
+      "Tran_NamL": "Lapham Company"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-07-29",
+      "Tran_NamF": null,
+      "Tran_NamL": "Lapham Company"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-08-05",
+      "Tran_NamF": null,
+      "Tran_NamL": "DiMaggio Investment Co."
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-08-05",
+      "Tran_NamF": null,
+      "Tran_NamL": "DiMaggio Investment Co."
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-08-12",
+      "Tran_NamF": null,
+      "Tran_NamL": "Moyer Realty Company"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-08-12",
+      "Tran_NamF": null,
+      "Tran_NamL": "Moyer Realty Company"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Diane",
+      "Tran_NamL": "Bevis"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Diane",
+      "Tran_NamL": "Bevis"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-08-24",
+      "Tran_NamF": "Ann",
+      "Tran_NamL": "McClain"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-08-24",
+      "Tran_NamF": "Ann",
+      "Tran_NamL": "McClain"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-08-31",
+      "Tran_NamF": null,
+      "Tran_NamL": "510 Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-08-31",
+      "Tran_NamF": null,
+      "Tran_NamL": "510 Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-08-31",
+      "Tran_NamF": "Philippe",
+      "Tran_NamL": "Lehot"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-08-31",
+      "Tran_NamF": "Jack",
+      "Tran_NamL": "McPhail"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-08-31",
+      "Tran_NamF": "Jack",
+      "Tran_NamL": "McPhail"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-09-09",
+      "Tran_NamF": null,
+      "Tran_NamL": "Taylor Springs Management"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-09-09",
+      "Tran_NamF": null,
+      "Tran_NamL": "Taylor Springs Management"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-09-17",
+      "Tran_NamF": "Homayoun",
+      "Tran_NamL": "Ghaderi"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-09-17",
+      "Tran_NamF": "Homayoun",
+      "Tran_NamL": "Ghaderi"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-09-29",
+      "Tran_NamF": null,
+      "Tran_NamL": "40th Street Apartments"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-09-29",
+      "Tran_NamF": null,
+      "Tran_NamL": "40th Street Apartments"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-09-30",
+      "Tran_NamF": "Don",
+      "Tran_NamL": "Gravestock"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-09-30",
+      "Tran_NamF": "Don",
+      "Tran_NamL": "Gravestock"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-10-07",
+      "Tran_NamF": "Mark",
+      "Tran_NamL": "Bitzer"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-10-07",
+      "Tran_NamF": "Mark",
+      "Tran_NamL": "Bitzer"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-10-18",
+      "Tran_NamF": null,
+      "Tran_NamL": "Salles Group"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-10-18",
+      "Tran_NamF": null,
+      "Tran_NamL": "Salles Group"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 50,
+      "Tran_Date": "2016-10-25",
+      "Tran_NamF": "Luise",
+      "Tran_NamL": "Hall"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 50,
+      "Tran_Date": "2016-10-25",
+      "Tran_NamF": "Luise",
+      "Tran_NamL": "Hall"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-10-25",
+      "Tran_NamF": null,
+      "Tran_NamL": "Martinez Real Estate Inv."
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-10-25",
+      "Tran_NamF": null,
+      "Tran_NamL": "Martinez Real Estate Inv."
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-10-28",
+      "Tran_NamF": null,
+      "Tran_NamL": "Highland Property Group LLC"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-10-28",
+      "Tran_NamF": null,
+      "Tran_NamL": "Highland Property Group LLC"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-11-04",
+      "Tran_NamF": null,
+      "Tran_NamL": "Trebor Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-11-04",
+      "Tran_NamF": null,
+      "Tran_NamL": "Trebor Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-11-15",
+      "Tran_NamF": "Lorane",
+      "Tran_NamL": "Owens"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-11-15",
+      "Tran_NamF": "Lorane",
+      "Tran_NamL": "Owens"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-11-17",
+      "Tran_NamF": null,
+      "Tran_NamL": "Birch Street Investments"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-11-17",
+      "Tran_NamF": null,
+      "Tran_NamL": "Birch Street Investments"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-12-08",
+      "Tran_NamF": null,
+      "Tran_NamL": "Litton/Fuller Group"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-12-08",
+      "Tran_NamF": null,
+      "Tran_NamL": "Litton/Fuller Group"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 50,
+      "Tran_Date": "2016-12-19",
+      "Tran_NamF": "Louise",
+      "Tran_NamL": "Hinkamp"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 50,
+      "Tran_Date": "2016-12-19",
+      "Tran_NamF": "Leonard",
+      "Tran_NamL": "Maddox"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-12-20",
+      "Tran_NamF": "Dennis",
+      "Tran_NamL": "Cox"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-12-20",
+      "Tran_NamF": "Dennis",
+      "Tran_NamL": "Cox"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-12-22",
+      "Tran_NamF": "Mary",
+      "Tran_NamL": "Smith"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-12-22",
+      "Tran_NamF": "Mary",
+      "Tran_NamL": "Smith"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-12-30",
+      "Tran_NamF": null,
+      "Tran_NamL": "Black Oak Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-12-30",
+      "Tran_NamF": null,
+      "Tran_NamL": "Black Oak Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-12-30",
+      "Tran_NamF": "Luigi",
+      "Tran_NamL": "Bonacini"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-12-30",
+      "Tran_NamF": "Luigi",
+      "Tran_NamL": "Bonacini"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-12-30",
+      "Tran_NamF": null,
+      "Tran_NamL": "CBS  Associates"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 50,
+      "Tran_Date": "2016-12-30",
+      "Tran_NamF": null,
+      "Tran_NamL": "CBS  Associates"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 195,
+      "Tran_Date": "2016-12-30",
+      "Tran_NamF": null,
+      "Tran_NamL": "Ma Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-12-30",
+      "Tran_NamF": "Alan",
+      "Tran_NamL": "Vogl"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-12-30",
+      "Tran_NamF": "Alan",
+      "Tran_NamL": "Vogl"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-01-03",
+      "Tran_NamF": "Sidhardha",
+      "Tran_NamL": "Lakireddy"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-01-03",
+      "Tran_NamF": "Sidhardha",
+      "Tran_NamL": "Lakireddy"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-01-13",
+      "Tran_NamF": null,
+      "Tran_NamL": "Fran Slate Property Management"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-01-13",
+      "Tran_NamF": null,
+      "Tran_NamL": "Fran Slate Property Management"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-01-20",
+      "Tran_NamF": null,
+      "Tran_NamL": "East 18th Street Assoc. / Oakbrook Manor"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-01-20",
+      "Tran_NamF": null,
+      "Tran_NamL": "East 18th Street Assoc. / Oakbrook Manor"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 50,
+      "Tran_Date": "2017-01-27",
+      "Tran_NamF": null,
+      "Tran_NamL": "Bloom Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-01-27",
+      "Tran_NamF": null,
+      "Tran_NamL": "Magner Limited Partnership"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-01-27",
+      "Tran_NamF": null,
+      "Tran_NamL": "Magner Limited Partnership"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-01-27",
+      "Tran_NamF": null,
+      "Tran_NamL": "Peterson Properties/Ford St. Associates"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-01-27",
+      "Tran_NamF": null,
+      "Tran_NamL": "Peterson Properties/Ford St. Associates"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-01-27",
+      "Tran_NamF": null,
+      "Tran_NamL": "Wilson Associates"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-01-27",
+      "Tran_NamF": null,
+      "Tran_NamL": "Wilson Associates"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-01-31",
+      "Tran_NamF": null,
+      "Tran_NamL": "Avanath Realty"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-01-31",
+      "Tran_NamF": null,
+      "Tran_NamL": "Avanath Realty"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-01-31",
+      "Tran_NamF": null,
+      "Tran_NamL": "Merit Enterprises"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-01-31",
+      "Tran_NamF": null,
+      "Tran_NamL": "Merit Enterprises"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 50,
+      "Tran_Date": "2017-02-10",
+      "Tran_NamF": null,
+      "Tran_NamL": "Bloom Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 20,
+      "Tran_Date": "2017-02-10",
+      "Tran_NamF": "Dwight",
+      "Tran_NamL": "Johnson"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-02-10",
+      "Tran_NamF": "Dwight",
+      "Tran_NamL": "Johnson"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 20,
+      "Tran_Date": "2017-02-10",
+      "Tran_NamF": null,
+      "Tran_NamL": "Melba Lake Apartments"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-02-10",
+      "Tran_NamF": null,
+      "Tran_NamL": "Melba Lake Apartments"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-02-13",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Zolly"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-02-13",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Zolly"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-02-28",
+      "Tran_NamF": null,
+      "Tran_NamL": "Lantz Properties, LLC"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-02-28",
+      "Tran_NamF": null,
+      "Tran_NamL": "Lantz Properties, LLC"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-02-28",
+      "Tran_NamF": "Bryce",
+      "Tran_NamL": "Vree"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-02-28",
+      "Tran_NamF": "Bryce",
+      "Tran_NamL": "Vree"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-03-10",
+      "Tran_NamF": null,
+      "Tran_NamL": "Markenkev Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-03-10",
+      "Tran_NamF": null,
+      "Tran_NamL": "Markenkev Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-03-17",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Faussner"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-03-17",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Faussner"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 50,
+      "Tran_Date": "2017-05-22",
+      "Tran_NamF": "Laura",
+      "Tran_NamL": "Ingram"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 60,
+      "Tran_Date": "2017-05-22",
+      "Tran_NamF": "Laura",
+      "Tran_NamL": "Ingram"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-05-31",
+      "Tran_NamF": null,
+      "Tran_NamL": "Bay Lexington Associates"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-05-31",
+      "Tran_NamF": null,
+      "Tran_NamL": "Bay Lexington Associates"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-05-31",
+      "Tran_NamF": null,
+      "Tran_NamL": "Belmont Apartments"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-05-31",
+      "Tran_NamF": null,
+      "Tran_NamL": "Belmont Apartments"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-05-31",
+      "Tran_NamF": "David",
+      "Tran_NamL": "Bruck"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-05-31",
+      "Tran_NamF": "David",
+      "Tran_NamL": "Bruck"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-05-31",
+      "Tran_NamF": null,
+      "Tran_NamL": "Greenwood Norwood LLC"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-05-31",
+      "Tran_NamF": null,
+      "Tran_NamL": "Greenwood Norwood LLC"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-06-09",
+      "Tran_NamF": "Chris",
+      "Tran_NamL": "Alevizos"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-06-09",
+      "Tran_NamF": "Chris",
+      "Tran_NamL": "Alevizos"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-06-09",
+      "Tran_NamF": null,
+      "Tran_NamL": "Ambassador Aparments"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-06-09",
+      "Tran_NamF": null,
+      "Tran_NamL": "Ambassador Aparments"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-06-09",
+      "Tran_NamF": null,
+      "Tran_NamL": "Anthony Associates"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-06-09",
+      "Tran_NamF": null,
+      "Tran_NamL": "Anthony Associates"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2017-06-09",
+      "Tran_NamF": null,
+      "Tran_NamL": "Armstrong Development"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-06-09",
+      "Tran_NamF": "Diana Adams",
+      "Tran_NamL": "Cohoon"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-06-09",
+      "Tran_NamF": "Diana Adams",
+      "Tran_NamL": "Cohoon"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-06-09",
+      "Tran_NamF": null,
+      "Tran_NamL": "J & R Associates"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-06-09",
+      "Tran_NamF": null,
+      "Tran_NamL": "J & R Associates"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-06-09",
+      "Tran_NamF": null,
+      "Tran_NamL": "Leapfrog Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-06-09",
+      "Tran_NamF": null,
+      "Tran_NamL": "Leapfrog Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-06-09",
+      "Tran_NamF": "Bill",
+      "Tran_NamL": "Silveira"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-06-09",
+      "Tran_NamF": "Bill",
+      "Tran_NamL": "Silveira"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-06-09",
+      "Tran_NamF": "Mitch",
+      "Tran_NamL": "Tunick"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-06-09",
+      "Tran_NamF": "Mitch",
+      "Tran_NamL": "Tunick"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-06-09",
+      "Tran_NamF": "Bruce",
+      "Tran_NamL": "Whipperman"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-06-09",
+      "Tran_NamF": "Bruce",
+      "Tran_NamL": "Whipperman"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-06-12",
+      "Tran_NamF": "Anne",
+      "Tran_NamL": "Wu"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-06-12",
+      "Tran_NamF": "Anne",
+      "Tran_NamL": "Wu"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-06-23",
+      "Tran_NamF": null,
+      "Tran_NamL": "Mohr Financial"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-06-23",
+      "Tran_NamF": null,
+      "Tran_NamL": "Mohr Financial"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-06-30",
+      "Tran_NamF": null,
+      "Tran_NamL": "Merrit on 3rd/Riverstone/Greystar"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-06-30",
+      "Tran_NamF": null,
+      "Tran_NamL": "Merrit on 3rd/Riverstone/Greystar"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-06-30",
+      "Tran_NamF": null,
+      "Tran_NamL": "Premium Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-06-30",
+      "Tran_NamF": null,
+      "Tran_NamL": "Premium Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-06-30",
+      "Tran_NamF": "John",
+      "Tran_NamL": "Wagers"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-06-30",
+      "Tran_NamF": "John",
+      "Tran_NamL": "Wagers"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-07-07",
+      "Tran_NamF": null,
+      "Tran_NamL": "Telegraph Commons - GreyStar"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-07-07",
+      "Tran_NamF": null,
+      "Tran_NamL": "Telegraph Commons - GreyStar"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-07-11",
+      "Tran_NamF": "Delbert",
+      "Tran_NamL": "Hamilton"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-07-11",
+      "Tran_NamF": "Delbert",
+      "Tran_NamL": "Hamilton"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-07-14",
+      "Tran_NamF": "Craig",
+      "Tran_NamL": "Berendt"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-07-14",
+      "Tran_NamF": "Craig",
+      "Tran_NamL": "Berendt"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-07-14",
+      "Tran_NamF": null,
+      "Tran_NamL": "Foxfire Property Management"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-07-14",
+      "Tran_NamF": null,
+      "Tran_NamL": "Foxfire Property Management"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 300,
+      "Tran_Date": "2017-07-14",
+      "Tran_NamF": "Sally",
+      "Tran_NamL": "Kiehn"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-07-20",
+      "Tran_NamF": "Frank",
+      "Tran_NamL": "Cherry"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-07-20",
+      "Tran_NamF": "Frank",
+      "Tran_NamL": "Cherry"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-07-21",
+      "Tran_NamF": null,
+      "Tran_NamL": "Library Gardens"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-07-21",
+      "Tran_NamF": null,
+      "Tran_NamL": "Library Gardens"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-07-25",
+      "Tran_NamF": "Ronald",
+      "Tran_NamL": "Stansbury"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-07-25",
+      "Tran_NamF": "Ronald",
+      "Tran_NamL": "Stansbury"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-07-28",
+      "Tran_NamF": null,
+      "Tran_NamL": "Hillside Village"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-07-28",
+      "Tran_NamF": null,
+      "Tran_NamL": "Hillside Village"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-08-04",
+      "Tran_NamF": "Laurie",
+      "Tran_NamL": "Burke"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-08-04",
+      "Tran_NamF": "Laurie",
+      "Tran_NamL": "Burke"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-08-11",
+      "Tran_NamF": "Carlton",
+      "Tran_NamL": "Jones"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-08-11",
+      "Tran_NamF": "Carlton",
+      "Tran_NamL": "Jones"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-08-25",
+      "Tran_NamF": "Mark",
+      "Tran_NamL": "Bitzer"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-08-25",
+      "Tran_NamF": "Mark",
+      "Tran_NamL": "Bitzer"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-08-25",
+      "Tran_NamF": null,
+      "Tran_NamL": "DiMaggio Investment Co."
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-08-25",
+      "Tran_NamF": null,
+      "Tran_NamL": "DiMaggio Investment Co."
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-08-25",
+      "Tran_NamF": null,
+      "Tran_NamL": "Taylor Springs Management"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-08-25",
+      "Tran_NamF": null,
+      "Tran_NamL": "Taylor Springs Management"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-09-01",
+      "Tran_NamF": null,
+      "Tran_NamL": "510 Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-09-01",
+      "Tran_NamF": null,
+      "Tran_NamL": "510 Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-09-01",
+      "Tran_NamF": "Ann",
+      "Tran_NamL": "McClain"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-09-01",
+      "Tran_NamF": "Ann",
+      "Tran_NamL": "McClain"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-09-01",
+      "Tran_NamF": null,
+      "Tran_NamL": "Morse Management"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-09-01",
+      "Tran_NamF": null,
+      "Tran_NamL": "Morse Management"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-09-08",
+      "Tran_NamF": "Diane",
+      "Tran_NamL": "Bevis"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-09-08",
+      "Tran_NamF": "Diane",
+      "Tran_NamL": "Bevis"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-09-08",
+      "Tran_NamF": "Jack",
+      "Tran_NamL": "McPhail"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-09-08",
+      "Tran_NamF": "Jack",
+      "Tran_NamL": "McPhail"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-09-15",
+      "Tran_NamF": null,
+      "Tran_NamL": "Savvy Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-09-15",
+      "Tran_NamF": null,
+      "Tran_NamL": "Savvy Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-09-16",
+      "Tran_NamF": "Homayoun",
+      "Tran_NamL": "Ghaderi"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-09-16",
+      "Tran_NamF": "Homayoun",
+      "Tran_NamL": "Ghaderi"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-09-22",
+      "Tran_NamF": null,
+      "Tran_NamL": "Salles Group"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-09-22",
+      "Tran_NamF": null,
+      "Tran_NamL": "Salles Group"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 11,
+      "Tran_Date": "2017-09-25",
+      "Tran_NamF": "Sally",
+      "Tran_NamL": "Kiehn"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 20,
+      "Tran_Date": "2017-09-25",
+      "Tran_NamF": "Sally",
+      "Tran_NamL": "Kiehn"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-09-29",
+      "Tran_NamF": null,
+      "Tran_NamL": "Bay St. Apartments/Korman  Communities"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-09-29",
+      "Tran_NamF": null,
+      "Tran_NamL": "Bay St. Apartments/Korman  Communities"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-09-29",
+      "Tran_NamF": "Christopher",
+      "Tran_NamL": "Brown"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-09-29",
+      "Tran_NamF": "Christopher",
+      "Tran_NamL": "Brown"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-09-29",
+      "Tran_NamF": null,
+      "Tran_NamL": "Lenox Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-09-29",
+      "Tran_NamF": null,
+      "Tran_NamL": "Lenox Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-09-29",
+      "Tran_NamF": null,
+      "Tran_NamL": "Rowland Property Management"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-09-29",
+      "Tran_NamF": null,
+      "Tran_NamL": "Rowland Property Management"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 50,
+      "Tran_Date": "2017-10-02",
+      "Tran_NamF": null,
+      "Tran_NamL": "S&H Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 50,
+      "Tran_Date": "2017-10-02",
+      "Tran_NamF": null,
+      "Tran_NamL": "S&H Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-10-10",
+      "Tran_NamF": null,
+      "Tran_NamL": "40th Street Apartments"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-10-10",
+      "Tran_NamF": null,
+      "Tran_NamL": "40th Street Apartments"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-10-13",
+      "Tran_NamF": null,
+      "Tran_NamL": "A & M Associates LP"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-10-13",
+      "Tran_NamF": null,
+      "Tran_NamL": "A & M Associates LP"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-10-13",
+      "Tran_NamF": null,
+      "Tran_NamL": "California Affordable Housing Group LLC"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-10-13",
+      "Tran_NamF": null,
+      "Tran_NamL": "California Affordable Housing Group LLC"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-10-13",
+      "Tran_NamF": null,
+      "Tran_NamL": "Park Central/Greystar"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-10-13",
+      "Tran_NamF": null,
+      "Tran_NamL": "Park Central/Greystar"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-10-20",
+      "Tran_NamF": null,
+      "Tran_NamL": "Bay Cliff Apartments/Fairfield Residentia"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-10-20",
+      "Tran_NamF": null,
+      "Tran_NamL": "Bay Cliff Apartments/Fairfield Residentia"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-10-20",
+      "Tran_NamF": "Frazier",
+      "Tran_NamL": "Kieliel de leon"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-10-20",
+      "Tran_NamF": "Frazier",
+      "Tran_NamL": "Kieliel de leon"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-10-27",
+      "Tran_NamF": null,
+      "Tran_NamL": "Bay LLC"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-10-27",
+      "Tran_NamF": null,
+      "Tran_NamL": "Bay LLC"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-10-27",
+      "Tran_NamF": null,
+      "Tran_NamL": "Pacific Coast Real Estate"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-10-27",
+      "Tran_NamF": null,
+      "Tran_NamL": "Pacific Coast Real Estate"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2017-10-31",
+      "Tran_NamF": null,
+      "Tran_NamL": "Trebor Properties"
+    },
+    {
+      "Filer_ID": "1342695",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2017-10-31",
+      "Tran_NamF": null,
+      "Tran_NamL": "Trebor Properties"
+    }
+  ]
+}

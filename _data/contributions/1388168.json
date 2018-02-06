@@ -1,0 +1,6500 @@
+{
+  "contributions": [
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-08",
+      "Tran_NamF": "Margaret",
+      "Tran_NamL": "Moore"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-08",
+      "Tran_NamF": "Peggy",
+      "Tran_NamL": "Moore"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-08",
+      "Tran_NamF": "Peggy",
+      "Tran_NamL": "Moore"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-08-09",
+      "Tran_NamF": "Greggory",
+      "Tran_NamL": "Brown"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-08-09",
+      "Tran_NamF": "Greggory",
+      "Tran_NamL": "Brown"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-08-09",
+      "Tran_NamF": "Greggory",
+      "Tran_NamL": "Brown"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-10",
+      "Tran_NamF": "Alistair",
+      "Tran_NamL": "McElwee"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-10",
+      "Tran_NamF": "Alistair",
+      "Tran_NamL": "McElwee"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-10",
+      "Tran_NamF": "Alistair",
+      "Tran_NamL": "McElwee"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-11",
+      "Tran_NamF": "Libby",
+      "Tran_NamL": "Schaaf"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-11",
+      "Tran_NamF": "Libby",
+      "Tran_NamL": "Schaaf"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-11",
+      "Tran_NamF": "Libby",
+      "Tran_NamL": "Schaaf"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-17",
+      "Tran_NamF": "John",
+      "Tran_NamL": "Gooding"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-17",
+      "Tran_NamF": "John",
+      "Tran_NamL": "Gooding"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-17",
+      "Tran_NamF": "John",
+      "Tran_NamL": "Gooding"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 50,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Matthew",
+      "Tran_NamL": "Albracht"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 50,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Matthew",
+      "Tran_NamL": "Albracht"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Eric",
+      "Tran_NamL": "Alexander"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Eric",
+      "Tran_NamL": "Alexander"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Eric",
+      "Tran_NamL": "Alexander"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Gwendolyn",
+      "Tran_NamL": "Booze"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Gwendolyn",
+      "Tran_NamL": "Booze"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Gwendolyn",
+      "Tran_NamL": "Booze"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Danielle",
+      "Tran_NamL": "Dagostino"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Danielle",
+      "Tran_NamL": "Dagostino"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Danielle",
+      "Tran_NamL": "Dagostino"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Sarah",
+      "Tran_NamL": "Fine"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Sarah",
+      "Tran_NamL": "Fine"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Sarah",
+      "Tran_NamL": "Fine"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Linda",
+      "Tran_NamL": "Gibbs"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Linda",
+      "Tran_NamL": "Gibbs"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Linda",
+      "Tran_NamL": "Gibbs"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 50,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Alejandro",
+      "Tran_NamL": "Illidge"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Ashley",
+      "Tran_NamL": "Lautzenhiser"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Ashley",
+      "Tran_NamL": "Lautzenhiser"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Ashley",
+      "Tran_NamL": "Lautzenhiser"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "John",
+      "Tran_NamL": "Nguyen-Cleary"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "John",
+      "Tran_NamL": "Nguyen-Cleary"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "John",
+      "Tran_NamL": "Nguyen-Cleary"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Chris",
+      "Tran_NamL": "Pastena"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Chris",
+      "Tran_NamL": "Pastena"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Chris",
+      "Tran_NamL": "Pastena"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Heather",
+      "Tran_NamL": "Quintal"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Heather",
+      "Tran_NamL": "Quintal"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-19",
+      "Tran_NamF": "Heather",
+      "Tran_NamL": "Quintal"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-20",
+      "Tran_NamF": "Karen",
+      "Tran_NamL": "Bovarnick"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-20",
+      "Tran_NamF": "Karen",
+      "Tran_NamL": "Bovarnick"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-20",
+      "Tran_NamF": "Karen",
+      "Tran_NamL": "Bovarnick"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-08-20",
+      "Tran_NamF": "Joanne",
+      "Tran_NamL": "Karchmer"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 95,
+      "Tran_Date": "2016-08-20",
+      "Tran_NamF": "Joanne",
+      "Tran_NamL": "Karchmer"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-21",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Ablon"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-08-21",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Ablon"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-08-21",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Ablon"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-08-22",
+      "Tran_NamF": "Jennifer",
+      "Tran_NamL": "Higgins"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-08-22",
+      "Tran_NamF": "Jennifer",
+      "Tran_NamL": "Higgins"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-08-22",
+      "Tran_NamF": "Jennifer",
+      "Tran_NamL": "Higgins"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-23",
+      "Tran_NamF": "Elizabeth",
+      "Tran_NamL": "Jaff"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-23",
+      "Tran_NamF": null,
+      "Tran_NamL": "Klose Way Partners, LLC"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-23",
+      "Tran_NamF": null,
+      "Tran_NamL": "Klose Way Partners, LLC"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-23",
+      "Tran_NamF": null,
+      "Tran_NamL": "Klose Way Partners, LLC"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-23",
+      "Tran_NamF": "Susan",
+      "Tran_NamL": "Moore"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-23",
+      "Tran_NamF": "Susan",
+      "Tran_NamL": "Moore"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-23",
+      "Tran_NamF": "Susan",
+      "Tran_NamL": "Moore"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-23",
+      "Tran_NamF": "Michael",
+      "Tran_NamL": "Murphy"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-23",
+      "Tran_NamF": "Michael",
+      "Tran_NamL": "Murphy"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-23",
+      "Tran_NamF": "Michael",
+      "Tran_NamL": "Murphy"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-23",
+      "Tran_NamF": "Rosalind",
+      "Tran_NamL": "Romney"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-23",
+      "Tran_NamF": "Rosalind",
+      "Tran_NamL": "Romney"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-23",
+      "Tran_NamF": "Rosalind",
+      "Tran_NamL": "Romney"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-23",
+      "Tran_NamF": null,
+      "Tran_NamL": "Sustainable Urban Neighborhoods"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-23",
+      "Tran_NamF": null,
+      "Tran_NamL": "Sustainable Urban Neighborhoods"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-23",
+      "Tran_NamF": null,
+      "Tran_NamL": "Sustainable Urban Neighborhoods"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-23",
+      "Tran_NamF": "Felinda",
+      "Tran_NamL": "Tran"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-23",
+      "Tran_NamF": "Felinda",
+      "Tran_NamL": "Tran"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-23",
+      "Tran_NamF": "Felinda",
+      "Tran_NamL": "Tran"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-24",
+      "Tran_NamF": "Dan",
+      "Tran_NamL": "Bellino"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-24",
+      "Tran_NamF": "Dan",
+      "Tran_NamL": "Bellino"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-24",
+      "Tran_NamF": "Dan",
+      "Tran_NamL": "Bellino"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-24",
+      "Tran_NamF": "Shane",
+      "Tran_NamL": "Carter"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-24",
+      "Tran_NamF": "Shane",
+      "Tran_NamL": "Carter"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-24",
+      "Tran_NamF": "Shane",
+      "Tran_NamL": "Carter"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-08-26",
+      "Tran_NamF": "Lucia",
+      "Tran_NamL": "Capron"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-08-26",
+      "Tran_NamF": "Lucia",
+      "Tran_NamL": "Capron"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-08-26",
+      "Tran_NamF": "Lucia",
+      "Tran_NamL": "Capron"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-26",
+      "Tran_NamF": "Dianne",
+      "Tran_NamL": "Gregory"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-26",
+      "Tran_NamF": "Dianne",
+      "Tran_NamL": "Gregory"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-26",
+      "Tran_NamF": "Dianne",
+      "Tran_NamL": "Gregory"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-08-26",
+      "Tran_NamF": "Scott",
+      "Tran_NamL": "Hawkins"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-08-26",
+      "Tran_NamF": "Scott",
+      "Tran_NamL": "Hawkins"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-08-26",
+      "Tran_NamF": "Scott",
+      "Tran_NamL": "Hawkins"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-26",
+      "Tran_NamF": "LaNiece",
+      "Tran_NamL": "Jones"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-26",
+      "Tran_NamF": "LaNiece",
+      "Tran_NamL": "Jones"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-26",
+      "Tran_NamF": "LaNiece",
+      "Tran_NamL": "Jones"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-26",
+      "Tran_NamF": "Sam",
+      "Tran_NamL": "Kaspick"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-26",
+      "Tran_NamF": "Sam",
+      "Tran_NamL": "Kaspick"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-26",
+      "Tran_NamF": "Sam",
+      "Tran_NamL": "Kaspick"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-26",
+      "Tran_NamF": "John",
+      "Tran_NamL": "Protopappas"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-26",
+      "Tran_NamF": "John",
+      "Tran_NamL": "Protopappas"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-26",
+      "Tran_NamF": "John",
+      "Tran_NamL": "Protopappas"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-08-26",
+      "Tran_NamF": "Suzanne",
+      "Tran_NamL": "Rotondo"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-08-26",
+      "Tran_NamF": "Suzanne",
+      "Tran_NamL": "Rotondo"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-08-26",
+      "Tran_NamF": "Suzanne",
+      "Tran_NamL": "Rotondo"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-26",
+      "Tran_NamF": "Brent",
+      "Tran_NamL": "Turner"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-26",
+      "Tran_NamF": "Brent",
+      "Tran_NamL": "Turner"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-26",
+      "Tran_NamF": "Brent",
+      "Tran_NamL": "Turner"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-26",
+      "Tran_NamF": "James",
+      "Tran_NamL": "Wood"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-26",
+      "Tran_NamF": "James",
+      "Tran_NamL": "Wood"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-26",
+      "Tran_NamF": "James",
+      "Tran_NamL": "Wood"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-30",
+      "Tran_NamF": "Jonathan",
+      "Tran_NamL": "Bair"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-30",
+      "Tran_NamF": "Jonathan",
+      "Tran_NamL": "Bair"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-08-30",
+      "Tran_NamF": "Jonathan",
+      "Tran_NamL": "Bair"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 180,
+      "Tran_Date": "2016-08-30",
+      "Tran_NamF": "Brian",
+      "Tran_NamL": "Geller"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 180,
+      "Tran_Date": "2016-08-30",
+      "Tran_NamF": "Brian",
+      "Tran_NamL": "Geller"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 180,
+      "Tran_Date": "2016-08-30",
+      "Tran_NamF": "Brian",
+      "Tran_NamL": "Geller"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-31",
+      "Tran_NamF": "Jennifer",
+      "Tran_NamL": "Pahlka"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-31",
+      "Tran_NamF": "Jennifer",
+      "Tran_NamL": "Pahlka"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-31",
+      "Tran_NamF": "Jennifer",
+      "Tran_NamL": "Pahlka"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 350,
+      "Tran_Date": "2016-09-06",
+      "Tran_NamF": "Tikisha",
+      "Tran_NamL": "Ong-Upshaw"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-07",
+      "Tran_NamF": "Chris",
+      "Tran_NamL": "Brown"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-07",
+      "Tran_NamF": "Chris",
+      "Tran_NamL": "Brown"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-07",
+      "Tran_NamF": "Chris",
+      "Tran_NamL": "Brown"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-08",
+      "Tran_NamF": "Miye",
+      "Tran_NamL": "Takagi"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-08",
+      "Tran_NamF": "Miye",
+      "Tran_NamL": "Takagi"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-08",
+      "Tran_NamF": "Miye",
+      "Tran_NamL": "Takagi"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-10",
+      "Tran_NamF": "Edward",
+      "Tran_NamL": "Gerber"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-10",
+      "Tran_NamF": "Edward",
+      "Tran_NamL": "Gerber"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-10",
+      "Tran_NamF": "Edward",
+      "Tran_NamL": "Gerber"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-10",
+      "Tran_NamF": "Eric",
+      "Tran_NamL": "Johnson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-10",
+      "Tran_NamF": "Eric",
+      "Tran_NamL": "Johnson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-10",
+      "Tran_NamF": "Eric",
+      "Tran_NamL": "Johnson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-12",
+      "Tran_NamF": "Heather",
+      "Tran_NamL": "Quintal"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-12",
+      "Tran_NamF": "Heather",
+      "Tran_NamL": "Quintal"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-12",
+      "Tran_NamF": "Heather",
+      "Tran_NamL": "Quintal"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Joan",
+      "Tran_NamL": "Buchanan"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Joan",
+      "Tran_NamL": "Buchanan"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Joan",
+      "Tran_NamL": "Buchanan"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "H",
+      "Tran_NamL": "Burg"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "H",
+      "Tran_NamL": "Burg"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "H",
+      "Tran_NamL": "Burg"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": null,
+      "Tran_NamL": "Campaign for Equality"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": null,
+      "Tran_NamL": "Campaign for Equality"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": null,
+      "Tran_NamL": "Campaign for Equality"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Linda",
+      "Tran_NamL": "Coleman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Linda",
+      "Tran_NamL": "Coleman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Linda",
+      "Tran_NamL": "Coleman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Salvatore",
+      "Tran_NamL": "Fahey"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Salvatore",
+      "Tran_NamL": "Fahey"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Salvatore",
+      "Tran_NamL": "Fahey"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Brendalyn",
+      "Tran_NamL": "Goodall"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Brendalyn",
+      "Tran_NamL": "Goodall"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Brendalyn",
+      "Tran_NamL": "Goodall"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Jill",
+      "Tran_NamL": "Habig"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Jill",
+      "Tran_NamL": "Habig"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Jill",
+      "Tran_NamL": "Habig"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Nancy",
+      "Tran_NamL": "Hinds"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Nancy",
+      "Tran_NamL": "Hinds"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Nancy",
+      "Tran_NamL": "Hinds"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Venus",
+      "Tran_NamL": "Johnson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Venus",
+      "Tran_NamL": "Johnson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Venus",
+      "Tran_NamL": "Johnson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Paula",
+      "Tran_NamL": "Kirlin"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Paula",
+      "Tran_NamL": "Kirlin"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Paula",
+      "Tran_NamL": "Kirlin"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 50,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Kay",
+      "Tran_NamL": "Lawson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Gloria",
+      "Tran_NamL": "Lee"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Gloria",
+      "Tran_NamL": "Lee"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Gloria",
+      "Tran_NamL": "Lee"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Anne",
+      "Tran_NamL": "Marks"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Anne",
+      "Tran_NamL": "Marks"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Anne",
+      "Tran_NamL": "Marks"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Sandy",
+      "Tran_NamL": "Mills"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Sandy",
+      "Tran_NamL": "Mills"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Sandy",
+      "Tran_NamL": "Mills"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 673.45,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Erik",
+      "Tran_NamL": "Moore"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Amelia",
+      "Tran_NamL": "Paradise"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Amelia",
+      "Tran_NamL": "Paradise"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Amelia",
+      "Tran_NamL": "Paradise"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Alex",
+      "Tran_NamL": "Pettit"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Alex",
+      "Tran_NamL": "Pettit"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Alex",
+      "Tran_NamL": "Pettit"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Barbara",
+      "Tran_NamL": "Schaaf"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Barbara",
+      "Tran_NamL": "Schaaf"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Barbara",
+      "Tran_NamL": "Schaaf"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": null,
+      "Tran_NamL": "Wade Jarvis Construction"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": null,
+      "Tran_NamL": "Wade Jarvis Construction"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": null,
+      "Tran_NamL": "Wade Jarvis Construction"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-14",
+      "Tran_NamF": "Belle",
+      "Tran_NamL": "Cole"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-14",
+      "Tran_NamF": "Belle",
+      "Tran_NamL": "Cole"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-14",
+      "Tran_NamF": "Belle",
+      "Tran_NamL": "Cole"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-14",
+      "Tran_NamF": "Brian",
+      "Tran_NamL": "Geller"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-14",
+      "Tran_NamF": "Brian",
+      "Tran_NamL": "Geller"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-14",
+      "Tran_NamF": "Brian",
+      "Tran_NamL": "Geller"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-14",
+      "Tran_NamF": "Kerry",
+      "Tran_NamL": "Hamill"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-14",
+      "Tran_NamF": "Kerry",
+      "Tran_NamL": "Hamill"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-14",
+      "Tran_NamF": "Kerry",
+      "Tran_NamL": "Hamill"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-14",
+      "Tran_NamF": "Rosalind",
+      "Tran_NamL": "Romney"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-14",
+      "Tran_NamF": "Rosalind",
+      "Tran_NamL": "Romney"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-14",
+      "Tran_NamF": "Rosalind",
+      "Tran_NamL": "Romney"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-14",
+      "Tran_NamF": "Kenneth",
+      "Tran_NamL": "Schmier"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-14",
+      "Tran_NamF": "Kenneth",
+      "Tran_NamL": "Schmier"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-14",
+      "Tran_NamF": "Kenneth",
+      "Tran_NamL": "Schmier"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-14",
+      "Tran_NamF": "Mark",
+      "Tran_NamL": "Tye"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-14",
+      "Tran_NamF": "Mark",
+      "Tran_NamL": "Tye"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-14",
+      "Tran_NamF": "Mark",
+      "Tran_NamL": "Tye"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-15",
+      "Tran_NamF": null,
+      "Tran_NamL": "Core Security Solutions, Inc."
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-15",
+      "Tran_NamF": null,
+      "Tran_NamL": "Core Security Solutions, Inc."
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-15",
+      "Tran_NamF": null,
+      "Tran_NamL": "Core Security Solutions, Inc."
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-15",
+      "Tran_NamF": "J Blake",
+      "Tran_NamL": "Johansen"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-15",
+      "Tran_NamF": "J Blake",
+      "Tran_NamL": "Johansen"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-15",
+      "Tran_NamF": "J Blake",
+      "Tran_NamL": "Johansen"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 350,
+      "Tran_Date": "2016-09-15",
+      "Tran_NamF": "Judith",
+      "Tran_NamL": "Johnson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 350,
+      "Tran_Date": "2016-09-15",
+      "Tran_NamF": "Judith",
+      "Tran_NamL": "Johnson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 350,
+      "Tran_Date": "2016-09-15",
+      "Tran_NamF": "Judith",
+      "Tran_NamL": "Johnson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-16",
+      "Tran_NamF": "M Kathleen",
+      "Tran_NamL": "Archambeau"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-16",
+      "Tran_NamF": "M Kathleen",
+      "Tran_NamL": "Archambeau"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-16",
+      "Tran_NamF": "M Kathleen",
+      "Tran_NamL": "Archambeau"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-16",
+      "Tran_NamF": null,
+      "Tran_NamL": "Bowers Consulting Firm"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-16",
+      "Tran_NamF": null,
+      "Tran_NamL": "Bowers Consulting Firm"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-16",
+      "Tran_NamF": null,
+      "Tran_NamL": "Bowers Consulting Firm"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-09-17",
+      "Tran_NamF": "James",
+      "Tran_NamL": "Brown"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-09-17",
+      "Tran_NamF": "James",
+      "Tran_NamL": "Brown"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-09-17",
+      "Tran_NamF": "James",
+      "Tran_NamL": "Brown"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-17",
+      "Tran_NamF": "Leslie",
+      "Tran_NamL": "Zimmerman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-17",
+      "Tran_NamF": "Leslie",
+      "Tran_NamL": "Zimmerman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-17",
+      "Tran_NamF": "Leslie",
+      "Tran_NamL": "Zimmerman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": "Marcy",
+      "Tran_NamL": "Adelman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": "Marcy",
+      "Tran_NamL": "Adelman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": "Marcy",
+      "Tran_NamL": "Adelman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": "Toni",
+      "Tran_NamL": "Broaddus"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": "Toni",
+      "Tran_NamL": "Broaddus"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": "Toni",
+      "Tran_NamL": "Broaddus"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 50,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": "Sue",
+      "Tran_NamL": "Davies"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 50,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": "Sue",
+      "Tran_NamL": "Davies"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": "Cynthia",
+      "Tran_NamL": "Le Blanc"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": "Cynthia",
+      "Tran_NamL": "Le Blanc"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": "Cynthia",
+      "Tran_NamL": "Le Blanc"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": "Cynthia",
+      "Tran_NamL": "Lee"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": "Cynthia",
+      "Tran_NamL": "Lee"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": "Cynthia",
+      "Tran_NamL": "Lee"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": "Gwendolyn",
+      "Tran_NamL": "Mitchell"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": "Gwendolyn",
+      "Tran_NamL": "Mitchell"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": "Gwendolyn",
+      "Tran_NamL": "Mitchell"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": null,
+      "Tran_NamL": "Solomon Ets-Hokin, Inc."
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": null,
+      "Tran_NamL": "Solomon Ets-Hokin, Inc."
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": null,
+      "Tran_NamL": "Solomon Ets-Hokin, Inc."
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": "Janice",
+      "Tran_NamL": "Wells"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": "Janice",
+      "Tran_NamL": "Wells"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": "Janice",
+      "Tran_NamL": "Wells"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 99,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": "Colette",
+      "Tran_NamL": "Winlock"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": "JoAnn",
+      "Tran_NamL": "Yoshioka"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": "JoAnn",
+      "Tran_NamL": "Yoshioka"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": "JoAnn",
+      "Tran_NamL": "Yoshioka"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": "Andrea",
+      "Tran_NamL": "Youngdahl"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": "Andrea",
+      "Tran_NamL": "Youngdahl"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": "Andrea",
+      "Tran_NamL": "Youngdahl"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-20",
+      "Tran_NamF": "Amy",
+      "Tran_NamL": "Almsteier"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-20",
+      "Tran_NamF": "Amy",
+      "Tran_NamL": "Almsteier"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-20",
+      "Tran_NamF": "Amy",
+      "Tran_NamL": "Almsteier"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-20",
+      "Tran_NamF": "Salwa",
+      "Tran_NamL": "Ibrahim"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-20",
+      "Tran_NamF": "Salwa",
+      "Tran_NamL": "Ibrahim"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-20",
+      "Tran_NamF": "Salwa",
+      "Tran_NamL": "Ibrahim"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-20",
+      "Tran_NamF": "Martin",
+      "Tran_NamL": "Kaufman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-20",
+      "Tran_NamF": "Martin",
+      "Tran_NamL": "Kaufman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-20",
+      "Tran_NamF": "Martin",
+      "Tran_NamL": "Kaufman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-20",
+      "Tran_NamF": "Derek",
+      "Tran_NamL": "Peterson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-20",
+      "Tran_NamF": "Derek",
+      "Tran_NamL": "Peterson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-20",
+      "Tran_NamF": "Derek",
+      "Tran_NamL": "Peterson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-21",
+      "Tran_NamF": "Lucia",
+      "Tran_NamL": "Capron"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-21",
+      "Tran_NamF": "Lucia",
+      "Tran_NamL": "Capron"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-21",
+      "Tran_NamF": "Lucia",
+      "Tran_NamL": "Capron"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 152,
+      "Tran_Date": "2016-09-21",
+      "Tran_NamF": "Donald",
+      "Tran_NamL": "Fowler"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 152,
+      "Tran_Date": "2016-09-21",
+      "Tran_NamF": "Donald",
+      "Tran_NamL": "Fowler"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 152,
+      "Tran_Date": "2016-09-21",
+      "Tran_NamF": "Donald",
+      "Tran_NamL": "Fowler"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-09-21",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Kidd"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-09-21",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Kidd"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-09-21",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Kidd"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-21",
+      "Tran_NamF": "Michael",
+      "Tran_NamL": "Nahass"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-21",
+      "Tran_NamF": "Michael",
+      "Tran_NamL": "Nahass"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-21",
+      "Tran_NamF": "Michael",
+      "Tran_NamL": "Nahass"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-09-22",
+      "Tran_NamF": "Sue",
+      "Tran_NamL": "Davies"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-09-22",
+      "Tran_NamF": "Sue",
+      "Tran_NamL": "Davies"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-09-22",
+      "Tran_NamF": "Sue",
+      "Tran_NamL": "Davies"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-09-22",
+      "Tran_NamF": "John",
+      "Tran_NamL": "Lyman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-09-22",
+      "Tran_NamF": "John",
+      "Tran_NamL": "Lyman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-09-22",
+      "Tran_NamF": "John",
+      "Tran_NamL": "Lyman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-22",
+      "Tran_NamF": "Gary",
+      "Tran_NamL": "Rogers"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-22",
+      "Tran_NamF": "Gary",
+      "Tran_NamL": "Rogers"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-22",
+      "Tran_NamF": "Gary",
+      "Tran_NamL": "Rogers"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-22",
+      "Tran_NamF": "Kathleen",
+      "Tran_NamL": "Rogers"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-22",
+      "Tran_NamF": "Kathleen",
+      "Tran_NamL": "Rogers"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-22",
+      "Tran_NamF": "Kathleen",
+      "Tran_NamL": "Rogers"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-22",
+      "Tran_NamF": "James",
+      "Tran_NamL": "Wood"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-22",
+      "Tran_NamF": "James",
+      "Tran_NamL": "Wood"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-22",
+      "Tran_NamF": "James",
+      "Tran_NamL": "Wood"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-23",
+      "Tran_NamF": "Lee",
+      "Tran_NamL": "Aurich"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-23",
+      "Tran_NamF": "Lee",
+      "Tran_NamL": "Aurich"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-23",
+      "Tran_NamF": "Lee",
+      "Tran_NamL": "Aurich"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-23",
+      "Tran_NamF": "Bruce",
+      "Tran_NamL": "Beasley"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-23",
+      "Tran_NamF": "Bruce",
+      "Tran_NamL": "Beasley"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-23",
+      "Tran_NamF": "Bruce",
+      "Tran_NamL": "Beasley"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-09-23",
+      "Tran_NamF": "Laurie",
+      "Tran_NamL": "Capitelli"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-09-23",
+      "Tran_NamF": "Laurie",
+      "Tran_NamL": "Capitelli"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-09-23",
+      "Tran_NamF": "Laurie",
+      "Tran_NamL": "Capitelli"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-23",
+      "Tran_NamF": "Benajmin",
+      "Tran_NamL": "Fay"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-23",
+      "Tran_NamF": "Benajmin",
+      "Tran_NamL": "Fay"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-23",
+      "Tran_NamF": "Benajmin",
+      "Tran_NamL": "Fay"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-23",
+      "Tran_NamF": "David",
+      "Tran_NamL": "Fritz"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-23",
+      "Tran_NamF": "David",
+      "Tran_NamL": "Fritz"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-23",
+      "Tran_NamF": "David",
+      "Tran_NamL": "Fritz"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-23",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Raich"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-23",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Raich"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-23",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Raich"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-23",
+      "Tran_NamF": "Joan",
+      "Tran_NamL": "Story"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-23",
+      "Tran_NamF": "Joan",
+      "Tran_NamL": "Story"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-23",
+      "Tran_NamF": "Joan",
+      "Tran_NamL": "Story"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-23",
+      "Tran_NamF": "Carolyn",
+      "Tran_NamL": "Tawasha"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-23",
+      "Tran_NamF": "Carolyn",
+      "Tran_NamL": "Tawasha"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-23",
+      "Tran_NamF": "Carolyn",
+      "Tran_NamL": "Tawasha"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-23",
+      "Tran_NamF": "Ronald",
+      "Tran_NamL": "Wacker"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-23",
+      "Tran_NamF": "Ronald",
+      "Tran_NamL": "Wacker"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-23",
+      "Tran_NamF": "Ronald",
+      "Tran_NamL": "Wacker"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Matthew",
+      "Tran_NamL": "Albracht"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Matthew",
+      "Tran_NamL": "Albracht"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Matthew",
+      "Tran_NamL": "Albracht"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Kenneth",
+      "Tran_NamL": "Benson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Kenneth",
+      "Tran_NamL": "Benson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Kenneth",
+      "Tran_NamL": "Benson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "John",
+      "Tran_NamL": "Betterton"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "John",
+      "Tran_NamL": "Betterton"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "John",
+      "Tran_NamL": "Betterton"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Karen",
+      "Tran_NamL": "Bovarnick"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Karen",
+      "Tran_NamL": "Bovarnick"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Karen",
+      "Tran_NamL": "Bovarnick"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Clarinda",
+      "Tran_NamL": "Cannon"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Clarinda",
+      "Tran_NamL": "Cannon"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Clarinda",
+      "Tran_NamL": "Cannon"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Cindy",
+      "Tran_NamL": "Chavez"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Cindy",
+      "Tran_NamL": "Chavez"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Cindy",
+      "Tran_NamL": "Chavez"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 350,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Michael",
+      "Tran_NamL": "Colbruno"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 350,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Michael",
+      "Tran_NamL": "Colbruno"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 350,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Michael",
+      "Tran_NamL": "Colbruno"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Regina",
+      "Tran_NamL": "Davis"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Regina",
+      "Tran_NamL": "Davis"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Regina",
+      "Tran_NamL": "Davis"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Abdul",
+      "Tran_NamL": "El-Amin Luqman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Abdul",
+      "Tran_NamL": "El-Amin Luqman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Abdul",
+      "Tran_NamL": "El-Amin Luqman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 400,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Karen",
+      "Tran_NamL": "Friedman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 400,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Karen",
+      "Tran_NamL": "Friedman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 400,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Karen",
+      "Tran_NamL": "Friedman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": null,
+      "Tran_NamL": "Gabriel Quinto for El Cerrito City Council 2014"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": null,
+      "Tran_NamL": "Gabriel Quinto for El Cerrito City Council 2014"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": null,
+      "Tran_NamL": "Gabriel Quinto for El Cerrito City Council 2014"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 60,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Brian",
+      "Tran_NamL": "Geller"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 60,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Brian",
+      "Tran_NamL": "Geller"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Brendalyn",
+      "Tran_NamL": "Goodall"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Brendalyn",
+      "Tran_NamL": "Goodall"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Brendalyn",
+      "Tran_NamL": "Goodall"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Charlette",
+      "Tran_NamL": "Green"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Charlette",
+      "Tran_NamL": "Green"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Charlette",
+      "Tran_NamL": "Green"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Nancy",
+      "Tran_NamL": "Hinds"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Nancy",
+      "Tran_NamL": "Hinds"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Nancy",
+      "Tran_NamL": "Hinds"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Joanne",
+      "Tran_NamL": "Karchmer"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Joanne",
+      "Tran_NamL": "Karchmer"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Joanne",
+      "Tran_NamL": "Karchmer"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Christopher",
+      "Tran_NamL": "Lee"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Christopher",
+      "Tran_NamL": "Lee"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Christopher",
+      "Tran_NamL": "Lee"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Michael",
+      "Tran_NamL": "Levy"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Michael",
+      "Tran_NamL": "Levy"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Michael",
+      "Tran_NamL": "Levy"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Anthony",
+      "Tran_NamL": "Magana"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Anthony",
+      "Tran_NamL": "Magana"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Anthony",
+      "Tran_NamL": "Magana"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Elmoraa",
+      "Tran_NamL": "Magucha-Bey"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Elmoraa",
+      "Tran_NamL": "Magucha-Bey"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Elmoraa",
+      "Tran_NamL": "Magucha-Bey"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Amanda",
+      "Tran_NamL": "Monchamp"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Amanda",
+      "Tran_NamL": "Monchamp"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Amanda",
+      "Tran_NamL": "Monchamp"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Bonnie",
+      "Tran_NamL": "Moran"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Bonnie",
+      "Tran_NamL": "Moran"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Bonnie",
+      "Tran_NamL": "Moran"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Anita",
+      "Tran_NamL": "Ramanathan"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Anita",
+      "Tran_NamL": "Ramanathan"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Anita",
+      "Tran_NamL": "Ramanathan"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Susan",
+      "Tran_NamL": "Rasmussen"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Susan",
+      "Tran_NamL": "Rasmussen"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Susan",
+      "Tran_NamL": "Rasmussen"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Mary Jane",
+      "Tran_NamL": "Ricciardulli"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Mary Jane",
+      "Tran_NamL": "Ricciardulli"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Mary Jane",
+      "Tran_NamL": "Ricciardulli"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Kerry Jo",
+      "Tran_NamL": "Ricketts"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Kerry Jo",
+      "Tran_NamL": "Ricketts"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Kerry Jo",
+      "Tran_NamL": "Ricketts"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Schock"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Schock"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Schock"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Franklin",
+      "Tran_NamL": "Silver"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Franklin",
+      "Tran_NamL": "Silver"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Franklin",
+      "Tran_NamL": "Silver"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Rachel",
+      "Tran_NamL": "Sklar"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Rachel",
+      "Tran_NamL": "Sklar"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Rachel",
+      "Tran_NamL": "Sklar"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Sileshi Sam",
+      "Tran_NamL": "Tadesse"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Sileshi Sam",
+      "Tran_NamL": "Tadesse"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Sileshi Sam",
+      "Tran_NamL": "Tadesse"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": null,
+      "Tran_NamL": "The Inn at Jack London Square"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": null,
+      "Tran_NamL": "The Inn at Jack London Square"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": null,
+      "Tran_NamL": "The Inn at Jack London Square"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "David",
+      "Tran_NamL": "Valdez"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "David",
+      "Tran_NamL": "Valdez"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "David",
+      "Tran_NamL": "Valdez"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Regina",
+      "Tran_NamL": "Wallace-Jones"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Regina",
+      "Tran_NamL": "Wallace-Jones"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Regina",
+      "Tran_NamL": "Wallace-Jones"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Kathleen D.",
+      "Tran_NamL": "Wimberly"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Kathleen D.",
+      "Tran_NamL": "Wimberly"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Kathleen D.",
+      "Tran_NamL": "Wimberly"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Mark",
+      "Tran_NamL": "Witriol"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Pauline",
+      "Tran_NamL": "Witriol"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Pauline",
+      "Tran_NamL": "Witriol"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Pauline",
+      "Tran_NamL": "Witriol"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Terri",
+      "Tran_NamL": "Witriol"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Terri",
+      "Tran_NamL": "Witriol"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Terri",
+      "Tran_NamL": "Witriol"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Ken",
+      "Tran_NamL": "Yamaguchi"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Ken",
+      "Tran_NamL": "Yamaguchi"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-24",
+      "Tran_NamF": "Ken",
+      "Tran_NamL": "Yamaguchi"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-25",
+      "Tran_NamF": "Rosalind",
+      "Tran_NamL": "Barnett"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-25",
+      "Tran_NamF": "Rosalind",
+      "Tran_NamL": "Barnett"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-25",
+      "Tran_NamF": "Rosalind",
+      "Tran_NamL": "Barnett"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-25",
+      "Tran_NamF": "Leigh",
+      "Tran_NamL": "Morgan"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-25",
+      "Tran_NamF": "Leigh",
+      "Tran_NamL": "Morgan"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-25",
+      "Tran_NamF": "Leigh",
+      "Tran_NamL": "Morgan"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-25",
+      "Tran_NamF": "Alexandra",
+      "Tran_NamL": "Snow Thede"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-25",
+      "Tran_NamF": "Alexandra",
+      "Tran_NamL": "Snow Thede"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-25",
+      "Tran_NamF": "Alexandra",
+      "Tran_NamL": "Snow Thede"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-25",
+      "Tran_NamF": "Chris",
+      "Tran_NamL": "Thede"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-25",
+      "Tran_NamF": "Chris",
+      "Tran_NamL": "Thede"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-25",
+      "Tran_NamF": "Chris",
+      "Tran_NamL": "Thede"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-26",
+      "Tran_NamF": "Carol",
+      "Tran_NamL": "Beck"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-26",
+      "Tran_NamF": "Carol",
+      "Tran_NamL": "Beck"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-26",
+      "Tran_NamF": "Carol",
+      "Tran_NamL": "Beck"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-26",
+      "Tran_NamF": "Gail",
+      "Tran_NamL": "King"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-26",
+      "Tran_NamF": "Gail",
+      "Tran_NamL": "King"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-26",
+      "Tran_NamF": "Gail",
+      "Tran_NamL": "King"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-26",
+      "Tran_NamF": "Terrance",
+      "Tran_NamL": "Lim"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-26",
+      "Tran_NamF": "Terrance",
+      "Tran_NamL": "Lim"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-26",
+      "Tran_NamF": "Terrance",
+      "Tran_NamL": "Lim"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-26",
+      "Tran_NamF": "Laurel",
+      "Tran_NamL": "March"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-26",
+      "Tran_NamF": "Laurel",
+      "Tran_NamL": "March"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-26",
+      "Tran_NamF": "Laurel",
+      "Tran_NamL": "March"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-26",
+      "Tran_NamF": "James",
+      "Tran_NamL": "Nemechek"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-26",
+      "Tran_NamF": "James",
+      "Tran_NamL": "Nemechek"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-26",
+      "Tran_NamF": "James",
+      "Tran_NamL": "Nemechek"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-27",
+      "Tran_NamF": "Catherine",
+      "Tran_NamL": "Bracy"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-27",
+      "Tran_NamF": "Catherine",
+      "Tran_NamL": "Bracy"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-27",
+      "Tran_NamF": "Catherine",
+      "Tran_NamL": "Bracy"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-27",
+      "Tran_NamF": "Giselle",
+      "Tran_NamL": "Hale"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-27",
+      "Tran_NamF": "Giselle",
+      "Tran_NamL": "Hale"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-27",
+      "Tran_NamF": "Giselle",
+      "Tran_NamL": "Hale"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-27",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Spencer"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-27",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Spencer"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-27",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Spencer"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-27",
+      "Tran_NamF": "Buffy",
+      "Tran_NamL": "Wicks"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-27",
+      "Tran_NamF": "Buffy",
+      "Tran_NamL": "Wicks"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-27",
+      "Tran_NamF": "Buffy",
+      "Tran_NamL": "Wicks"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-28",
+      "Tran_NamF": "Al",
+      "Tran_NamL": "Aluetta"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-28",
+      "Tran_NamF": "Al",
+      "Tran_NamL": "Aluetta"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-28",
+      "Tran_NamF": "Al",
+      "Tran_NamL": "Aluetta"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-28",
+      "Tran_NamF": "Jacqueline",
+      "Tran_NamL": "Noguera"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-28",
+      "Tran_NamF": "Jacqueline",
+      "Tran_NamL": "Noguera"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-28",
+      "Tran_NamF": "Jacqueline",
+      "Tran_NamL": "Noguera"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 240,
+      "Tran_Date": "2016-09-28",
+      "Tran_NamF": "Shirley",
+      "Tran_NamL": "Remirez"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 240,
+      "Tran_Date": "2016-09-28",
+      "Tran_NamF": "Shirley",
+      "Tran_NamL": "Remirez"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-29",
+      "Tran_NamF": "Eric",
+      "Tran_NamL": "Ullman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-29",
+      "Tran_NamF": "Eric",
+      "Tran_NamL": "Ullman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-29",
+      "Tran_NamF": "Eric",
+      "Tran_NamL": "Ullman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-30",
+      "Tran_NamF": "Debbie",
+      "Tran_NamL": "Foster"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-30",
+      "Tran_NamF": "Debbie",
+      "Tran_NamL": "Foster"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-30",
+      "Tran_NamF": "Debbie",
+      "Tran_NamL": "Foster"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 30,
+      "Tran_Date": "2016-09-30",
+      "Tran_NamF": "Darryl",
+      "Tran_NamL": "Moore"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-03",
+      "Tran_NamF": "Michael",
+      "Tran_NamL": "Lenoir"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-03",
+      "Tran_NamF": "Michael",
+      "Tran_NamL": "Lenoir"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-03",
+      "Tran_NamF": "Michael",
+      "Tran_NamL": "Lenoir"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-10-04",
+      "Tran_NamF": "Greggory",
+      "Tran_NamL": "Brown"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-10-04",
+      "Tran_NamF": "Greggory",
+      "Tran_NamL": "Brown"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-10-04",
+      "Tran_NamF": "Greggory",
+      "Tran_NamL": "Brown"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-04",
+      "Tran_NamF": "Carmen",
+      "Tran_NamL": "Murray"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-04",
+      "Tran_NamF": "Carmen",
+      "Tran_NamL": "Murray"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-04",
+      "Tran_NamF": "Carmen",
+      "Tran_NamL": "Murray"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-04",
+      "Tran_NamF": "Ronald",
+      "Tran_NamL": "Nahas"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-04",
+      "Tran_NamF": "Ronald",
+      "Tran_NamL": "Nahas"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-04",
+      "Tran_NamF": "Ronald",
+      "Tran_NamL": "Nahas"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-04",
+      "Tran_NamF": "Deborah",
+      "Tran_NamL": "Taylor"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-04",
+      "Tran_NamF": "Deborah",
+      "Tran_NamL": "Taylor"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-04",
+      "Tran_NamF": "Deborah",
+      "Tran_NamL": "Taylor"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-10-04",
+      "Tran_NamF": "Lisbet",
+      "Tran_NamL": "Tellefsen"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-10-04",
+      "Tran_NamF": "Lisbet",
+      "Tran_NamL": "Tellefsen"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-10-04",
+      "Tran_NamF": "Lisbet",
+      "Tran_NamL": "Tellefsen"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-05",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Dockendorff"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-05",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Dockendorff"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-05",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Dockendorff"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-05",
+      "Tran_NamF": "Amanda",
+      "Tran_NamL": "Feinstein"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-05",
+      "Tran_NamF": "Amanda",
+      "Tran_NamL": "Feinstein"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-05",
+      "Tran_NamF": "Amanda",
+      "Tran_NamL": "Feinstein"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-05",
+      "Tran_NamF": "Thomas",
+      "Tran_NamL": "Francis"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-05",
+      "Tran_NamF": "Thomas",
+      "Tran_NamL": "Francis"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-05",
+      "Tran_NamF": "Thomas",
+      "Tran_NamL": "Francis"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-05",
+      "Tran_NamF": "Ruth",
+      "Tran_NamL": "Stroup"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-05",
+      "Tran_NamF": "Ruth",
+      "Tran_NamL": "Stroup"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-05",
+      "Tran_NamF": "Ruth",
+      "Tran_NamL": "Stroup"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-10-06",
+      "Tran_NamF": "M Kathleen",
+      "Tran_NamL": "Archambeau"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-10-06",
+      "Tran_NamF": "M Kathleen",
+      "Tran_NamL": "Archambeau"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-10-06",
+      "Tran_NamF": "M Kathleen",
+      "Tran_NamL": "Archambeau"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-06",
+      "Tran_NamF": "Angelina",
+      "Tran_NamL": "Burnett"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-06",
+      "Tran_NamF": "Angelina",
+      "Tran_NamL": "Burnett"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-06",
+      "Tran_NamF": "Angelina",
+      "Tran_NamL": "Burnett"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-10-06",
+      "Tran_NamF": "Raymond",
+      "Tran_NamL": "Lankford"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-10-06",
+      "Tran_NamF": "Raymond",
+      "Tran_NamL": "Lankford"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-10-06",
+      "Tran_NamF": "Raymond",
+      "Tran_NamL": "Lankford"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 850,
+      "Tran_Date": "2016-10-06",
+      "Tran_NamF": "Margaret",
+      "Tran_NamL": "Moore"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-06",
+      "Tran_NamF": "Pamela",
+      "Tran_NamL": "Thompson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-06",
+      "Tran_NamF": "Pamela",
+      "Tran_NamL": "Thompson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-06",
+      "Tran_NamF": "Pamela",
+      "Tran_NamL": "Thompson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-07",
+      "Tran_NamF": "Nancy",
+      "Tran_NamL": "Baglietto"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-07",
+      "Tran_NamF": "Nancy",
+      "Tran_NamL": "Baglietto"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-07",
+      "Tran_NamF": "Nancy",
+      "Tran_NamL": "Baglietto"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-07",
+      "Tran_NamF": "Beverly",
+      "Tran_NamL": "Bueno"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-07",
+      "Tran_NamF": "Beverly",
+      "Tran_NamL": "Bueno"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-07",
+      "Tran_NamF": "Beverly",
+      "Tran_NamL": "Bueno"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-07",
+      "Tran_NamF": "Sandra",
+      "Tran_NamL": "Cook"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-07",
+      "Tran_NamF": "Sandra",
+      "Tran_NamL": "Cook"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-07",
+      "Tran_NamF": "Sandra",
+      "Tran_NamL": "Cook"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-10-07",
+      "Tran_NamF": "Bill",
+      "Tran_NamL": "Dickey"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-10-07",
+      "Tran_NamF": "Bill",
+      "Tran_NamL": "Dickey"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-10-07",
+      "Tran_NamF": "Bill",
+      "Tran_NamL": "Dickey"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-07",
+      "Tran_NamF": "Heather",
+      "Tran_NamL": "Quintal"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-07",
+      "Tran_NamF": "Heather",
+      "Tran_NamL": "Quintal"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-07",
+      "Tran_NamF": "Heather",
+      "Tran_NamL": "Quintal"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 1500,
+      "Tran_Date": "2016-10-07",
+      "Tran_NamF": null,
+      "Tran_NamL": "Transport Oakland"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 1500,
+      "Tran_Date": "2016-10-07",
+      "Tran_NamF": null,
+      "Tran_NamL": "Transport Oakland"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 1500,
+      "Tran_Date": "2016-10-07",
+      "Tran_NamF": null,
+      "Tran_NamL": "Transport Oakland"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-09",
+      "Tran_NamF": "Steve",
+      "Tran_NamL": "Berley"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-09",
+      "Tran_NamF": "Steve",
+      "Tran_NamL": "Berley"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-09",
+      "Tran_NamF": "Steve",
+      "Tran_NamL": "Berley"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-09",
+      "Tran_NamF": "Cynthia",
+      "Tran_NamL": "Kopec"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-09",
+      "Tran_NamF": "Cynthia",
+      "Tran_NamL": "Kopec"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-09",
+      "Tran_NamF": "Cynthia",
+      "Tran_NamL": "Kopec"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-09",
+      "Tran_NamF": "Missy",
+      "Tran_NamL": "Lee"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-09",
+      "Tran_NamF": "Missy",
+      "Tran_NamL": "Lee"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-09",
+      "Tran_NamF": "Missy",
+      "Tran_NamL": "Lee"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-09",
+      "Tran_NamF": "Diane",
+      "Tran_NamL": "Sickmen"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-09",
+      "Tran_NamF": "Diane",
+      "Tran_NamL": "Sickmen"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-09",
+      "Tran_NamF": "Diane",
+      "Tran_NamL": "Sickmen"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-09",
+      "Tran_NamF": "Zee",
+      "Tran_NamL": "Wong"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-09",
+      "Tran_NamF": "Zee",
+      "Tran_NamL": "Wong"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-09",
+      "Tran_NamF": "Zee",
+      "Tran_NamL": "Wong"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 75,
+      "Tran_Date": "2016-10-10",
+      "Tran_NamF": "Linda",
+      "Tran_NamL": "Martin"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-11",
+      "Tran_NamF": "Drew",
+      "Tran_NamL": "Aversa"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-11",
+      "Tran_NamF": "Drew",
+      "Tran_NamL": "Aversa"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-11",
+      "Tran_NamF": "Drew",
+      "Tran_NamL": "Aversa"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 72,
+      "Tran_Date": "2016-10-11",
+      "Tran_NamF": "Brian",
+      "Tran_NamL": "Geller"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 72,
+      "Tran_Date": "2016-10-11",
+      "Tran_NamF": "Brian",
+      "Tran_NamL": "Geller"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-11",
+      "Tran_NamF": "Vincent",
+      "Tran_NamL": "Leung"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-11",
+      "Tran_NamF": "Vincent",
+      "Tran_NamL": "Leung"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-11",
+      "Tran_NamF": "Vincent",
+      "Tran_NamL": "Leung"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-11",
+      "Tran_NamF": "Kevin",
+      "Tran_NamL": "Newsome"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-11",
+      "Tran_NamF": "Kevin",
+      "Tran_NamL": "Newsome"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-11",
+      "Tran_NamF": "Kevin",
+      "Tran_NamL": "Newsome"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-11",
+      "Tran_NamF": "Averell",
+      "Tran_NamL": "Smith"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-11",
+      "Tran_NamF": "Averell",
+      "Tran_NamL": "Smith"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-11",
+      "Tran_NamF": "Averell",
+      "Tran_NamL": "Smith"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": "Francisco",
+      "Tran_NamL": "Devries"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": "Francisco",
+      "Tran_NamL": "Devries"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": "Francisco",
+      "Tran_NamL": "Devries"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": null,
+      "Tran_NamL": "Elwood Commercial Real Estate"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": null,
+      "Tran_NamL": "Elwood Commercial Real Estate"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": null,
+      "Tran_NamL": "Elwood Commercial Real Estate"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": "Gary",
+      "Tran_NamL": "Flaxman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": "Gary",
+      "Tran_NamL": "Flaxman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": "Gary",
+      "Tran_NamL": "Flaxman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": "Earl",
+      "Tran_NamL": "Hamlin"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": "Earl",
+      "Tran_NamL": "Hamlin"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": "Earl",
+      "Tran_NamL": "Hamlin"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": "Seth",
+      "Tran_NamL": "Jacobson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": "Seth",
+      "Tran_NamL": "Jacobson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": "Seth",
+      "Tran_NamL": "Jacobson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": null,
+      "Tran_NamL": "Jay-Phares Corporation"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": null,
+      "Tran_NamL": "Jay-Phares Corporation"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": null,
+      "Tran_NamL": "Jay-Phares Corporation"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": "Richard",
+      "Tran_NamL": "Knutson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": "Richard",
+      "Tran_NamL": "Knutson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": "Richard",
+      "Tran_NamL": "Knutson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": "Michael",
+      "Tran_NamL": "MK Sebree"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": "Michael",
+      "Tran_NamL": "MK Sebree"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": "Michael",
+      "Tran_NamL": "MK Sebree"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": "Lorna",
+      "Tran_NamL": "Padia-Markus"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": "Lorna",
+      "Tran_NamL": "Padia-Markus"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": "Lorna",
+      "Tran_NamL": "Padia-Markus"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": "Eugene",
+      "Tran_NamL": "Zahas"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": "Eugene",
+      "Tran_NamL": "Zahas"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": "Eugene",
+      "Tran_NamL": "Zahas"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-13",
+      "Tran_NamF": "Carolyn",
+      "Tran_NamL": "Mixon"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-13",
+      "Tran_NamF": "Carolyn",
+      "Tran_NamL": "Mixon"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-13",
+      "Tran_NamF": "Carolyn",
+      "Tran_NamL": "Mixon"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-13",
+      "Tran_NamF": "Lupe",
+      "Tran_NamL": "Schoenberger"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-13",
+      "Tran_NamF": "Lupe",
+      "Tran_NamL": "Schoenberger"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-13",
+      "Tran_NamF": "Lupe",
+      "Tran_NamL": "Schoenberger"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-14",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Power"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-14",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Power"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-14",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Power"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 31,
+      "Tran_Date": "2016-10-15",
+      "Tran_NamF": "Abdul",
+      "Tran_NamL": "El-Amin Luqman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 31,
+      "Tran_Date": "2016-10-15",
+      "Tran_NamF": "Abdul",
+      "Tran_NamL": "El-Amin Luqman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-15",
+      "Tran_NamF": "Ernest",
+      "Tran_NamL": "Graves"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-15",
+      "Tran_NamF": "Ernest",
+      "Tran_NamL": "Graves"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-15",
+      "Tran_NamF": "Ernest",
+      "Tran_NamL": "Graves"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-15",
+      "Tran_NamF": "David",
+      "Tran_NamL": "Silver"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-15",
+      "Tran_NamF": "David",
+      "Tran_NamL": "Silver"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-15",
+      "Tran_NamF": "David",
+      "Tran_NamL": "Silver"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-15",
+      "Tran_NamF": "Elizabeth",
+      "Tran_NamL": "Silver"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-15",
+      "Tran_NamF": "Elizabeth",
+      "Tran_NamL": "Silver"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-15",
+      "Tran_NamF": "Elizabeth",
+      "Tran_NamL": "Silver"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-15",
+      "Tran_NamF": "Wendell",
+      "Tran_NamL": "Smith"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-15",
+      "Tran_NamF": "Wendell",
+      "Tran_NamL": "Smith"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-15",
+      "Tran_NamF": "Wendell",
+      "Tran_NamL": "Smith"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 50,
+      "Tran_Date": "2016-10-16",
+      "Tran_NamF": "Barbara",
+      "Tran_NamL": "Lewis"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 50,
+      "Tran_Date": "2016-10-16",
+      "Tran_NamF": "Barbara",
+      "Tran_NamL": "Lewis"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-17",
+      "Tran_NamF": "Karen",
+      "Tran_NamL": "Bovarnick"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-17",
+      "Tran_NamF": "Karen",
+      "Tran_NamL": "Bovarnick"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-17",
+      "Tran_NamF": "Karen",
+      "Tran_NamL": "Bovarnick"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-10-17",
+      "Tran_NamF": "Patti",
+      "Tran_NamL": "Haladay"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-10-17",
+      "Tran_NamF": "Patti",
+      "Tran_NamL": "Haladay"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-10-17",
+      "Tran_NamF": "Patti",
+      "Tran_NamL": "Haladay"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-17",
+      "Tran_NamF": "Dana",
+      "Tran_NamL": "Hughes"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-17",
+      "Tran_NamF": "Dana",
+      "Tran_NamL": "Hughes"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-17",
+      "Tran_NamF": "Dana",
+      "Tran_NamL": "Hughes"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-17",
+      "Tran_NamF": "Donna",
+      "Tran_NamL": "Korones"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-17",
+      "Tran_NamF": "Donna",
+      "Tran_NamL": "Korones"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-17",
+      "Tran_NamF": "Donna",
+      "Tran_NamL": "Korones"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-17",
+      "Tran_NamF": "Barbara",
+      "Tran_NamL": "Lewis"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-17",
+      "Tran_NamF": "Barbara",
+      "Tran_NamL": "Lewis"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-17",
+      "Tran_NamF": "Barbara",
+      "Tran_NamL": "Lewis"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-17",
+      "Tran_NamF": "Jody",
+      "Tran_NamL": "London"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-17",
+      "Tran_NamF": "Jody",
+      "Tran_NamL": "London"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-17",
+      "Tran_NamF": "Jody",
+      "Tran_NamL": "London"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-17",
+      "Tran_NamF": "Barbara",
+      "Tran_NamL": "Price"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-17",
+      "Tran_NamF": "Barbara",
+      "Tran_NamL": "Price"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-17",
+      "Tran_NamF": "Barbara",
+      "Tran_NamL": "Price"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-17",
+      "Tran_NamF": "Eugene",
+      "Tran_NamL": "Stevens"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-17",
+      "Tran_NamF": "Eugene",
+      "Tran_NamL": "Stevens"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-17",
+      "Tran_NamF": "Eugene",
+      "Tran_NamL": "Stevens"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-17",
+      "Tran_NamF": "Adrienne",
+      "Tran_NamL": "Yank"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-17",
+      "Tran_NamF": "Adrienne",
+      "Tran_NamL": "Yank"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-17",
+      "Tran_NamF": "Adrienne",
+      "Tran_NamL": "Yank"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-17",
+      "Tran_NamF": "Barbara",
+      "Tran_NamL": "Zoloth"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-18",
+      "Tran_NamF": "Emily",
+      "Tran_NamL": "Rosenberg"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-18",
+      "Tran_NamF": "Emily",
+      "Tran_NamL": "Rosenberg"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-18",
+      "Tran_NamF": "Emily",
+      "Tran_NamL": "Rosenberg"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-18",
+      "Tran_NamF": "Cynthia",
+      "Tran_NamL": "Wood"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-18",
+      "Tran_NamF": "Cynthia",
+      "Tran_NamL": "Wood"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-18",
+      "Tran_NamF": "Cynthia",
+      "Tran_NamL": "Wood"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-18",
+      "Tran_NamF": "Barbara",
+      "Tran_NamL": "Zoloth"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-18",
+      "Tran_NamF": "Barbara",
+      "Tran_NamL": "Zoloth"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-18",
+      "Tran_NamF": "Barbara",
+      "Tran_NamL": "Zoloth"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-20",
+      "Tran_NamF": "Ellen",
+      "Tran_NamL": "Gierson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-20",
+      "Tran_NamF": "Ellen",
+      "Tran_NamL": "Gierson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-20",
+      "Tran_NamF": "Ellen",
+      "Tran_NamL": "Gierson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-20",
+      "Tran_NamF": "Alejandro",
+      "Tran_NamL": "Illidge"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-20",
+      "Tran_NamF": "Alejandro",
+      "Tran_NamL": "Illidge"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-20",
+      "Tran_NamF": "Alejandro",
+      "Tran_NamL": "Illidge"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 75,
+      "Tran_Date": "2016-10-20",
+      "Tran_NamF": "Mary Jayne",
+      "Tran_NamL": "Sims"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 300,
+      "Tran_Date": "2016-10-20",
+      "Tran_NamF": "Joseph",
+      "Tran_NamL": "Soltanovich"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 300,
+      "Tran_Date": "2016-10-20",
+      "Tran_NamF": "Joseph",
+      "Tran_NamL": "Soltanovich"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 300,
+      "Tran_Date": "2016-10-20",
+      "Tran_NamF": "Joseph",
+      "Tran_NamL": "Soltanovich"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Margaret",
+      "Tran_NamL": "Adam"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Margaret",
+      "Tran_NamL": "Adam"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Margaret",
+      "Tran_NamL": "Adam"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 120,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Karen",
+      "Tran_NamL": "Anderson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 120,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Karen",
+      "Tran_NamL": "Anderson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 120,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Karen",
+      "Tran_NamL": "Anderson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Susan",
+      "Tran_NamL": "Emerick"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Susan",
+      "Tran_NamL": "Emerick"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Susan",
+      "Tran_NamL": "Emerick"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Natalie",
+      "Tran_NamL": "Foster"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Natalie",
+      "Tran_NamL": "Foster"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Natalie",
+      "Tran_NamL": "Foster"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 745,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Margaret",
+      "Tran_NamL": "Moore"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 745,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Peggy",
+      "Tran_NamL": "Moore"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 745,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Peggy",
+      "Tran_NamL": "Moore"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Marie",
+      "Tran_NamL": "Riehle"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Marie",
+      "Tran_NamL": "Riehle"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Marie",
+      "Tran_NamL": "Riehle"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 600,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Linda",
+      "Tran_NamL": "Tillery"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 600,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Linda",
+      "Tran_NamL": "Tillery"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 600,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Linda",
+      "Tran_NamL": "Tillery"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Angela",
+      "Tran_NamL": "Tsay"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Angela",
+      "Tran_NamL": "Tsay"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Angela",
+      "Tran_NamL": "Tsay"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Buffy",
+      "Tran_NamL": "Wicks"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Buffy",
+      "Tran_NamL": "Wicks"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Buffy",
+      "Tran_NamL": "Wicks"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 20,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Colette",
+      "Tran_NamL": "Winlock"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 20,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Colette",
+      "Tran_NamL": "Winlock"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Caryn",
+      "Tran_NamL": "Wolf"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Caryn",
+      "Tran_NamL": "Wolf"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-21",
+      "Tran_NamF": "Caryn",
+      "Tran_NamL": "Wolf"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-22",
+      "Tran_NamF": "Francine",
+      "Tran_NamL": "Anthony"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-22",
+      "Tran_NamF": "Francine",
+      "Tran_NamL": "Anthony"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-22",
+      "Tran_NamF": "Francine",
+      "Tran_NamL": "Anthony"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-10-22",
+      "Tran_NamF": "John",
+      "Tran_NamL": "Bailey"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-10-22",
+      "Tran_NamF": "John",
+      "Tran_NamL": "Bailey"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-10-22",
+      "Tran_NamF": "John",
+      "Tran_NamL": "Bailey"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-22",
+      "Tran_NamF": "A. Freeman",
+      "Tran_NamL": "Bradley"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-22",
+      "Tran_NamF": "A. Freeman",
+      "Tran_NamL": "Bradley"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-10-22",
+      "Tran_NamF": "Cindy",
+      "Tran_NamL": "Chavez"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-10-22",
+      "Tran_NamF": "Cindy",
+      "Tran_NamL": "Chavez"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-10-22",
+      "Tran_NamF": "Cindy",
+      "Tran_NamL": "Chavez"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-22",
+      "Tran_NamF": "Gary",
+      "Tran_NamL": "Durbin"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-22",
+      "Tran_NamF": "Gary",
+      "Tran_NamL": "Durbin"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-22",
+      "Tran_NamF": "Gary",
+      "Tran_NamL": "Durbin"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-22",
+      "Tran_NamF": null,
+      "Tran_NamL": "Littleton Consulting Group"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-22",
+      "Tran_NamF": null,
+      "Tran_NamL": "Littleton Consulting Group"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-22",
+      "Tran_NamF": null,
+      "Tran_NamL": "Littleton Consulting Group"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-22",
+      "Tran_NamF": "Marti",
+      "Tran_NamL": "Paschal"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-22",
+      "Tran_NamF": "Marti",
+      "Tran_NamL": "Paschal"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-22",
+      "Tran_NamF": "Marti",
+      "Tran_NamL": "Paschal"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-23",
+      "Tran_NamF": "Nicole",
+      "Tran_NamL": "Derse"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-23",
+      "Tran_NamF": "Nicole",
+      "Tran_NamL": "Derse"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-10-23",
+      "Tran_NamF": "Andres",
+      "Tran_NamL": "Garcia-Price"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-10-23",
+      "Tran_NamF": "Andres",
+      "Tran_NamL": "Garcia-Price"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-10-23",
+      "Tran_NamF": "Sandra",
+      "Tran_NamL": "Padnos"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-10-23",
+      "Tran_NamF": "Sandra",
+      "Tran_NamL": "Padnos"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Irma",
+      "Tran_NamL": "Anderson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Irma",
+      "Tran_NamL": "Anderson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Christopher",
+      "Tran_NamL": "Beda"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Christopher",
+      "Tran_NamL": "Beda"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Miguel",
+      "Tran_NamL": "Dwin"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Miguel",
+      "Tran_NamL": "Dwin"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Tom",
+      "Tran_NamL": "Juenger"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Tom",
+      "Tran_NamL": "Juenger"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Scott",
+      "Tran_NamL": "Karchmer"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Scott",
+      "Tran_NamL": "Karchmer"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Patricia",
+      "Tran_NamL": "Kernighan"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Patricia",
+      "Tran_NamL": "Kernighan"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Michael",
+      "Tran_NamL": "LaHorgue"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Michael",
+      "Tran_NamL": "LaHorgue"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Barbara",
+      "Tran_NamL": "MacKinnon"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Barbara",
+      "Tran_NamL": "MacKinnon"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Rick",
+      "Tran_NamL": "Mariano"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Rick",
+      "Tran_NamL": "Mariano"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Dennis",
+      "Tran_NamL": "Markus"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Dennis",
+      "Tran_NamL": "Markus"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Greg",
+      "Tran_NamL": "Wade"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Greg",
+      "Tran_NamL": "Wade"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Jonathan",
+      "Tran_NamL": "Zeff"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Max",
+      "Tran_NamL": "Zeff"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Max",
+      "Tran_NamL": "Zeff"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Ron",
+      "Tran_NamL": "Zeff"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Ron",
+      "Tran_NamL": "Zeff"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Zachary",
+      "Tran_NamL": "Zeff"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Zachary",
+      "Tran_NamL": "Zeff"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 300,
+      "Tran_Date": "2016-10-25",
+      "Tran_NamF": "Greg",
+      "Tran_NamL": "Christopher"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 300,
+      "Tran_Date": "2016-10-25",
+      "Tran_NamF": "Greg",
+      "Tran_NamL": "Christopher"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-25",
+      "Tran_NamF": "Daniel",
+      "Tran_NamL": "Garibaldi"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-25",
+      "Tran_NamF": "Daniel",
+      "Tran_NamL": "Garibaldi"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-25",
+      "Tran_NamF": "Matthew",
+      "Tran_NamL": "Haley"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-25",
+      "Tran_NamF": "Matthew",
+      "Tran_NamL": "Haley"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-25",
+      "Tran_NamF": "Sue",
+      "Tran_NamL": "Hamill"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-25",
+      "Tran_NamF": "Sue",
+      "Tran_NamL": "Hamill"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-25",
+      "Tran_NamF": "Anne",
+      "Tran_NamL": "Jensen"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-25",
+      "Tran_NamF": "Anne",
+      "Tran_NamL": "Jensen"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-25",
+      "Tran_NamF": "LaNiece",
+      "Tran_NamL": "Jones"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-25",
+      "Tran_NamF": "LaNiece",
+      "Tran_NamL": "Jones"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-25",
+      "Tran_NamF": "Christopher",
+      "Tran_NamL": "Kidd"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-25",
+      "Tran_NamF": "Christopher",
+      "Tran_NamL": "Kidd"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-25",
+      "Tran_NamF": "Steve",
+      "Tran_NamL": "Kopff"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-25",
+      "Tran_NamF": "Steve",
+      "Tran_NamL": "Kopff"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-25",
+      "Tran_NamF": "Greg",
+      "Tran_NamL": "Pasquali"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-25",
+      "Tran_NamF": "Greg",
+      "Tran_NamL": "Pasquali"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-26",
+      "Tran_NamF": "John",
+      "Tran_NamL": "Bliss"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-26",
+      "Tran_NamF": "John",
+      "Tran_NamL": "Bliss"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-26",
+      "Tran_NamF": "Margaret",
+      "Tran_NamL": "Moore"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 50,
+      "Tran_Date": "2016-10-26",
+      "Tran_NamF": "Peggy",
+      "Tran_NamL": "Moore"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-26",
+      "Tran_NamF": "Peggy",
+      "Tran_NamL": "Moore"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-26",
+      "Tran_NamF": "Dana",
+      "Tran_NamL": "Parry"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-26",
+      "Tran_NamF": "Dana",
+      "Tran_NamL": "Parry"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-26",
+      "Tran_NamF": null,
+      "Tran_NamL": "PMACC"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-26",
+      "Tran_NamF": null,
+      "Tran_NamL": "PMACC"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 350,
+      "Tran_Date": "2016-10-26",
+      "Tran_NamF": "James",
+      "Tran_NamL": "Wood"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 350,
+      "Tran_Date": "2016-10-26",
+      "Tran_NamF": "James",
+      "Tran_NamL": "Wood"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-27",
+      "Tran_NamF": "Patrick",
+      "Tran_NamL": "MacIntyre"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-27",
+      "Tran_NamF": "Patrick",
+      "Tran_NamL": "MacIntyre"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-10-28",
+      "Tran_NamF": "Amanda",
+      "Tran_NamL": "Brown-Stevens"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-10-28",
+      "Tran_NamF": "Amanda",
+      "Tran_NamL": "Brown-Stevens"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-10-28",
+      "Tran_NamF": "Caron",
+      "Tran_NamL": "Ewing"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-10-28",
+      "Tran_NamF": "Caron",
+      "Tran_NamL": "Ewing"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 625,
+      "Tran_Date": "2016-10-28",
+      "Tran_NamF": "Simma",
+      "Tran_NamL": "Lieberman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 75,
+      "Tran_Date": "2016-10-28",
+      "Tran_NamF": "Darryl",
+      "Tran_NamL": "Moore"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-28",
+      "Tran_NamF": "Julius",
+      "Tran_NamL": "Perkins"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-28",
+      "Tran_NamF": "Julius",
+      "Tran_NamL": "Perkins"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-28",
+      "Tran_NamF": "Sheila",
+      "Tran_NamL": "Wells"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-28",
+      "Tran_NamF": "Sheila",
+      "Tran_NamL": "Wells"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-29",
+      "Tran_NamF": "Kenneth",
+      "Tran_NamL": "Benson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-29",
+      "Tran_NamF": "Kenneth",
+      "Tran_NamL": "Benson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-31",
+      "Tran_NamF": "Bradley",
+      "Tran_NamL": "Brownlow"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-31",
+      "Tran_NamF": "Bradley",
+      "Tran_NamL": "Brownlow"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 1400,
+      "Tran_Date": "2016-10-31",
+      "Tran_NamF": null,
+      "Tran_NamL": "East Bay Rental Housing Association PAC"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 1400,
+      "Tran_Date": "2016-10-31",
+      "Tran_NamF": null,
+      "Tran_NamL": "East Bay Rental Housing Association PAC"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-31",
+      "Tran_NamF": "Carolyn",
+      "Tran_NamL": "Fowler"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-31",
+      "Tran_NamF": "Carolyn",
+      "Tran_NamL": "Fowler"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 50,
+      "Tran_Date": "2016-10-31",
+      "Tran_NamF": "Kay",
+      "Tran_NamL": "Lawson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-10-31",
+      "Tran_NamF": "Richard",
+      "Tran_NamL": "Phillips"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-10-31",
+      "Tran_NamF": "Richard",
+      "Tran_NamL": "Phillips"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-31",
+      "Tran_NamF": "Mary Jayne",
+      "Tran_NamL": "Sims"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-31",
+      "Tran_NamF": "Mary Jayne",
+      "Tran_NamL": "Sims"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100.26,
+      "Tran_Date": "2016-11-01",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Ablon"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-01",
+      "Tran_NamF": "Philippa",
+      "Tran_NamL": "Jubelirer"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-01",
+      "Tran_NamF": "Philippa",
+      "Tran_NamL": "Jubelirer"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-11-02",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Schock"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-11-02",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Schock"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100.5,
+      "Tran_Date": "2016-11-03",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Ablon"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-03",
+      "Tran_NamF": "Peter",
+      "Tran_NamL": "Benvenutti"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-03",
+      "Tran_NamF": "Peter",
+      "Tran_NamL": "Benvenutti"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-11-03",
+      "Tran_NamF": "Jenny",
+      "Tran_NamL": "Chu"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-11-03",
+      "Tran_NamF": "Judy",
+      "Tran_NamL": "Chu"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-03",
+      "Tran_NamF": "Suzanne",
+      "Tran_NamL": "Furrer"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-03",
+      "Tran_NamF": "Suzanne",
+      "Tran_NamL": "Furrer"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-11-03",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Kidd"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-11-03",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Kidd"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-03",
+      "Tran_NamF": "Megan",
+      "Tran_NamL": "Morrow"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-03",
+      "Tran_NamF": "Megan",
+      "Tran_NamL": "Morrow"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-11-03",
+      "Tran_NamF": "Jenny",
+      "Tran_NamL": "Ong"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-11-03",
+      "Tran_NamF": "Jenny",
+      "Tran_NamL": "Ong"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-03",
+      "Tran_NamF": "Giovanna",
+      "Tran_NamL": "Tanzillo"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-03",
+      "Tran_NamF": "Giovanna",
+      "Tran_NamL": "Tanzillo"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100.62,
+      "Tran_Date": "2016-11-04",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Ablon"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 450,
+      "Tran_Date": "2016-11-05",
+      "Tran_NamF": "Matthew",
+      "Tran_NamL": "Albracht"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 450,
+      "Tran_Date": "2016-11-05",
+      "Tran_NamF": "Matthew",
+      "Tran_NamL": "Albracht"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-05",
+      "Tran_NamF": "Sandra",
+      "Tran_NamL": "Cook"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-05",
+      "Tran_NamF": "Sandra",
+      "Tran_NamL": "Cook"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-05",
+      "Tran_NamF": "Amanda",
+      "Tran_NamL": "Feinstein"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-05",
+      "Tran_NamF": "Amanda",
+      "Tran_NamL": "Feinstein"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-05",
+      "Tran_NamF": "Charles",
+      "Tran_NamL": "Freiberg"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-05",
+      "Tran_NamF": "Charles",
+      "Tran_NamL": "Freiberg"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-05",
+      "Tran_NamF": "Janet",
+      "Tran_NamL": "Glasgow"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-05",
+      "Tran_NamF": "Janet",
+      "Tran_NamL": "Glasgow"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-05",
+      "Tran_NamF": "Robinne",
+      "Tran_NamL": "Lee"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-05",
+      "Tran_NamF": "Robinne",
+      "Tran_NamL": "Lee"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 50,
+      "Tran_Date": "2016-11-05",
+      "Tran_NamF": "Bonnie",
+      "Tran_NamL": "Moran"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-05",
+      "Tran_NamF": "Carmen",
+      "Tran_NamL": "Murray"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-05",
+      "Tran_NamF": "Carmen",
+      "Tran_NamL": "Murray"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-11-05",
+      "Tran_NamF": "Jim",
+      "Tran_NamL": "Ratliff"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-11-05",
+      "Tran_NamF": "Jim",
+      "Tran_NamL": "Ratliff"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-05",
+      "Tran_NamF": "Veronica",
+      "Tran_NamL": "Sanders"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-05",
+      "Tran_NamF": "Veronica",
+      "Tran_NamL": "Sanders"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-11-05",
+      "Tran_NamF": "Eric",
+      "Tran_NamL": "Ullman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-11-05",
+      "Tran_NamF": "Eric",
+      "Tran_NamL": "Ullman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100.31,
+      "Tran_Date": "2016-11-06",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Ablon"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-06",
+      "Tran_NamF": "Liz",
+      "Tran_NamL": "Brisson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-06",
+      "Tran_NamF": "Liz",
+      "Tran_NamL": "Brisson"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 600,
+      "Tran_Date": "2016-11-06",
+      "Tran_NamF": null,
+      "Tran_NamL": "IndyTHINK"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": -600,
+      "Tran_Date": "2016-11-06",
+      "Tran_NamF": "Simma",
+      "Tran_NamL": "Lieberman"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-06",
+      "Tran_NamF": "Jacqueline",
+      "Tran_NamL": "Phillips"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-06",
+      "Tran_NamF": "Jacqueline",
+      "Tran_NamL": "Phillips"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-11-06",
+      "Tran_NamF": "Liz",
+      "Tran_NamL": "Rebensdorf"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-11-06",
+      "Tran_NamF": "Lang",
+      "Tran_NamL": "Scoble"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-11-06",
+      "Tran_NamF": "Lang",
+      "Tran_NamL": "Scoble"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-11-06",
+      "Tran_NamF": "Steve",
+      "Tran_NamL": "Tidrick"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-11-06",
+      "Tran_NamF": "Steve",
+      "Tran_NamL": "Tidrick"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-06",
+      "Tran_NamF": "Tod",
+      "Tran_NamL": "Vedock"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-06",
+      "Tran_NamF": "Tod",
+      "Tran_NamL": "Vedock"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-06",
+      "Tran_NamF": "Katharine",
+      "Tran_NamL": "Wulff"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-06",
+      "Tran_NamF": "Katharine",
+      "Tran_NamL": "Wulff"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Sophia",
+      "Tran_NamL": "Bereket"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Sophia",
+      "Tran_NamL": "Bereket"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 300,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Miriam",
+      "Tran_NamL": "Bereket-Ab"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 300,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Miriam",
+      "Tran_NamL": "Bereket-Ab"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Natnael",
+      "Tran_NamL": "Bereket-Ab"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Natnael",
+      "Tran_NamL": "Bereket-Ab"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Woinshet",
+      "Tran_NamL": "Daba"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Woinshet",
+      "Tran_NamL": "Daba"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Mulmebet",
+      "Tran_NamL": "Geldo Challa"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Mulmebet",
+      "Tran_NamL": "Geldo Challa"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Yilma",
+      "Tran_NamL": "Hailemichael"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Yilma",
+      "Tran_NamL": "Hailemichael"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Tsedenya",
+      "Tran_NamL": "Lakew"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Tsedenya",
+      "Tran_NamL": "Lakew"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Seble",
+      "Tran_NamL": "Legesse"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Seble",
+      "Tran_NamL": "Legesse"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 300,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Behailu",
+      "Tran_NamL": "Mekbib"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 300,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Behailu",
+      "Tran_NamL": "Mekbib"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 505,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Margaret",
+      "Tran_NamL": "Moore"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 505,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Peggy",
+      "Tran_NamL": "Moore"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Ron",
+      "Tran_NamL": "Rosequist"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Ron",
+      "Tran_NamL": "Rosequist"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Getachew",
+      "Tran_NamL": "Tadesse"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Getachew",
+      "Tran_NamL": "Tadesse"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Konjit",
+      "Tran_NamL": "Tadesse"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Konjit",
+      "Tran_NamL": "Tadesse"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Legesse",
+      "Tran_NamL": "Woldemariam"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Legesse",
+      "Tran_NamL": "Woldemariam"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Asrat",
+      "Tran_NamL": "Yigeza"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-07",
+      "Tran_NamF": "Asrat",
+      "Tran_NamL": "Yigeza"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-11-08",
+      "Tran_NamF": "Yared",
+      "Tran_NamL": "Feleke"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-11-08",
+      "Tran_NamF": "Yared",
+      "Tran_NamL": "Feleke"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-08",
+      "Tran_NamF": "Messay",
+      "Tran_NamL": "Gima"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-08",
+      "Tran_NamF": "Messay",
+      "Tran_NamL": "Gima"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-08",
+      "Tran_NamF": "Bruck",
+      "Tran_NamL": "Girmay"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-08",
+      "Tran_NamF": "Bruck",
+      "Tran_NamL": "Girmay"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-11-08",
+      "Tran_NamF": "Selamawit",
+      "Tran_NamL": "Legesse"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-11-08",
+      "Tran_NamF": "Selamawit",
+      "Tran_NamL": "Legesse"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-11-08",
+      "Tran_NamF": "Joan",
+      "Tran_NamL": "Van Horn"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-11-08",
+      "Tran_NamF": "Joan",
+      "Tran_NamL": "Van Horn"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-11-11",
+      "Tran_NamF": "Steve",
+      "Tran_NamL": "Lowe"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-11-11",
+      "Tran_NamF": "Steve",
+      "Tran_NamL": "Lowe"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 50,
+      "Tran_Date": "2016-11-11",
+      "Tran_NamF": "Linda",
+      "Tran_NamL": "Martin"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 50,
+      "Tran_Date": "2016-11-11",
+      "Tran_NamF": "Heather",
+      "Tran_NamL": "Quintal"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 1400,
+      "Tran_Date": "2016-11-15",
+      "Tran_NamF": null,
+      "Tran_NamL": "California Real Estate PAC"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 1400,
+      "Tran_Date": "2016-11-15",
+      "Tran_NamF": null,
+      "Tran_NamL": "California Real Estate PAC"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-11-15",
+      "Tran_NamF": "George",
+      "Tran_NamL": "Zimmer"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-11-15",
+      "Tran_NamF": "George",
+      "Tran_NamL": "Zimmer"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-12-01",
+      "Tran_NamF": "Bradley",
+      "Tran_NamL": "Brownlow"
+    },
+    {
+      "Filer_ID": "1388168",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-12-01",
+      "Tran_NamF": "Bradley",
+      "Tran_NamL": "Brownlow"
+    }
+  ]
+}

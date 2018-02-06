@@ -17,3 +17,5 @@
   Breed is now running for Mayor, so many of these qualities have changed since
   the last election. Would folks be interested in seeing snapshots of websites,
   at the time of a previous election?
+- supporting/opposing committees for a referendum should be stored within the
+  referendum?

@@ -49,6 +49,25 @@ function extract(field) {
   });
 }
 
+function contributions() {
+  return new Transform({
+    objectMode: true,
+    transform(file, enc, callback) {
+      // Rename the file
+      const match = /\/committee\/(.+)\/contributions\//.exec(file.path);
+      const filerId = match[1];
+      file.path = path.join(file.base, `${filerId}.json`);
+
+      // Restructure into an object
+      const contributions = JSON.parse(file.contents);
+      file.contents = new Buffer(JSON.stringify({ contributions }, null, 2));
+
+      this.push(file);
+      callback();
+    },
+  });
+}
+
 gulp.task('pull:candidates', function () {
   return gulp.src('../disclosure-backend-static/build/candidate/*/index.json')
     .pipe(extract('bio'))
@@ -59,6 +78,22 @@ gulp.task('pull:candidates', function () {
     .pipe(ext.replace('md'))
     .pipe(append('bio'))
     .pipe(gulp.dest('_candidates'));
+});
+
+gulp.task('pull:committees', function () {
+  return gulp.src('../disclosure-backend-static/build/committee/*/index.json')
+    .pipe(slugifyName((data) => `${data.filer_id}.json`))
+    .pipe(jsonToYaml({ safe: true }))
+    .pipe(header('---\n'))
+    .pipe(footer('---\n'))
+    .pipe(ext.replace('md'))
+    .pipe(gulp.dest('_committees'));
+});
+
+gulp.task('pull:contributions', function () {
+  return gulp.src('../disclosure-backend-static/build/committee/*/contributions/index.json')
+    .pipe(contributions())
+    .pipe(gulp.dest('_data/contributions'));
 });
 
 gulp.task('pull:referendums', function () {
@@ -74,6 +109,8 @@ gulp.task('pull:referendums', function () {
 });
 
 gulp.task('pull', gulp.parallel(
-  'pull:referendums',
   'pull:candidates',
+  'pull:committees',
+  'pull:contributions',
+  'pull:referendums',
 ));

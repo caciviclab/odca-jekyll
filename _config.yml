@@ -31,6 +31,9 @@ collections:
   candidates:
     output: true
     permalink: /candidate/:path/
+  committees:
+    output: true
+    permalink: /committee/:path/
   localities:
     output: true
     permalink: /:path/
@@ -47,6 +50,10 @@ defaults:
       type: candidates
     values:
       layout: candidate
+  - scope:
+      type: committees
+    values:
+      layout: committee
   - scope:
       type: localities
     values:
