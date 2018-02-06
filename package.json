@@ -1,0 +1,29 @@
+{
+  "name": "odca-jekyll",
+  "version": "1.0.0",
+  "description": "## Setup",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "pull": "gulp pull",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adborden/odca-jekyll.git"
+  },
+  "author": "Aaron D Borden <adborden@a14n.net> (https://www.a14n.net/)",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/adborden/odca-jekyll/issues"
+  },
+  "homepage": "https://github.com/adborden/odca-jekyll#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-ext": "^1.0.0",
+    "gulp-footer": "^2.0.1",
+    "gulp-header": "^2.0.1",
+    "gulp-json-to-yaml": "0.0.2"
+  },
+  "dependencies": {}
+}
