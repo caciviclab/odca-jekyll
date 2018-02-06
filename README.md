@@ -8,6 +8,7 @@
 
 ## Findings
 
+- `ballots` should probably just be renamed `elections`.
 - naming of the files is very important, it's how we reference relationships
   between entities. Best is to use the full path name which would be unique per
   entity.
