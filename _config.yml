@@ -23,45 +23,35 @@ twitter_username: adborden
 github_username:  adborden
 future: true
 
-
-collections:
-  ballots:
-    output: true
-    permalink: /election/:path/
-  candidates:
-    output: true
-    permalink: /candidate/:path/
-  localities:
-    output: true
-    permalink: /:path/
-  referendums:
-    output: true
-    permalink: /referendum/:path/
+# TODO: allow this to be customized, or bake this into the main backend repo
+odca_build_path: "~/dev/ruby/disclosure-backend-static/build"
 
 defaults:
   - scope:
-      type: ballots
+      type: ballot
     values:
-      layout: locality
+      layout: ballot
   - scope:
-      type: candidates
+      type: candidate
     values:
       layout: candidate
   - scope:
-      type: localities
+      type: locality
     values:
       layout: locality
   - scope:
-      type: referendums
+      type: referendum
     values:
       layout: referendum
-
 
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+
+header_pages:
+  - locality/oakland.html
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

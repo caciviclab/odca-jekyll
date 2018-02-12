@@ -18,12 +18,6 @@
     "url": "https://github.com/adborden/odca-jekyll/issues"
   },
   "homepage": "https://github.com/adborden/odca-jekyll#readme",
-  "devDependencies": {
-    "gulp": "^4.0.0",
-    "gulp-ext": "^1.0.0",
-    "gulp-footer": "^2.0.1",
-    "gulp-header": "^2.0.1",
-    "gulp-json-to-yaml": "0.0.2"
-  },
+  "devDependencies": {},
   "dependencies": {}
 }

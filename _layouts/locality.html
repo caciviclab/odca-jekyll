@@ -1,48 +1,40 @@
 ---
 layout: default
 ---
-{% if page.collection == 'ballots' %}
-  {% assign ballot = page %}
-  {% assign locality = site.localities | where: 'slug', ballot.locality | first %}
-{% else %}
-  {% assign locality = page %}
-{% endif %}
+{% assign locality = page %}
 
-{% assign ballots = site.ballots | where: "locality", locality.locality_id | reverse %}
-{% assign current_ballot = ballots | where: "election", locality.current_election | first %}
+{% assign ballots = site.ballots %}
+{% assign current_ballot = ballots | where: "is_current_ballot", true | first %}
 {% assign today = site.time | date: "%Y-%m-%d" %}
-{% assign current_election = locality.current_election | date: "%Y-%m-%d" %}
+{% assign current_election = ballot.date | date: "%Y-%m-%d" %}
 
-{% unless ballot %}
-  {% comment %}
-    If we are looking at a past election, ballot is already set with the given
-    election. If it's not set, this must be a locality page and we should display
-    the current ballot.
-  {% endcomment %}
-  {% assign ballot = current_ballot %}
-{% endunless %}
-
-<h1>{{ locality.name }}</h1>
+<h1>{{ locality.title }}</h1>
 
 <div>
   {% if current_election > today %}Upcoming{% else %}Recent{% endif %}
   election: <a href="{{ locality.url | prepend: site.baseurl }}">{{ locality.current_election | date: "%B %-d, %Y" }}</a>
 </div>
 
-<h2>Election: {{ ballot.election | date: "%B %-d, %Y" }}</h2>
-{% for ballot_item in ballot.ballot_items %}
+<h2>{{ current_ballot.date | date: "%B %-d, %Y" }}</h2>
+{% for ballot_item in current_ballot.ballot_items %}
   <h3>{{ ballot_item.name }}</h3>
   {% if ballot_item.contest_type == "Office" %}
   <ul>
-    {% for candidate_id in ballot_item.candidates %}
-      {% assign candidate = site.candidates | where: "slug", candidate_id | first %}
-      <li><a href="{{ candidate.url | prepend: site.baseurl }}">{{ candidate.name }}</a></li>
+    {% for candidate in ballot_item.candidates %}
+      {% assign candidate_page = site.candidates | where: "id", candidate.id | first %}
+      <li><a href="{{ candidate_page.url | prepend: site.baseurl }}">{{ candidate.name }}</a></li>
     {% endfor %}
   </ul>
   {% else %}
-    {% assign referendum = site.referendums | where: "path", ballot_item.referendum | first %}
-    <p><a href="{{ referendum.url | prepend: site.baseurl }}">{{ referendum.number }} {{ referendum.title | escape}}</a></p>
-    <p>{{ referendum.content }}</p>
+    {% assign referendum = ballot_item %}
+    {% assign referendum_page = site.referendums | where: "number", referendum.number | first%}
+    <p>
+      <a href="{{ referendum_page.url | prepend: site.baseurl }}">
+        {{ referendum.number }} {{ referendum.title | escape}}
+      </a>
+    </p>
+
+    <p>{{ referendum.summary }}</p>
   {% endif %}
 {% endfor %}
 
@@ -50,7 +42,7 @@ layout: default
 <div>
 <ul>
   {% for ballot in ballots %}
-  <li><a href="{{ ballot.url | prepend: site.baseurl }}">{{ ballot.election | date: "%B %-d, %Y" }}</a></li>
+  <li><a href="{{ ballot.url | prepend: site.baseurl }}">{{ ballot.date | date: "%B %-d, %Y" }}</a></li>
   {% endfor %}
 </ul>
 </div>
