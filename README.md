@@ -13,6 +13,17 @@ raise awareness and accountability. Ultimately, this is one step toward shifting
 politics into a movement of civic engagement and ultimate citizen action.
 
 
+## Prerequisites
+
+- [Ruby 2.3](https://www.ruby-lang.org/)
+- [Bundler](https://bundler.io/) gem
+- [Make](https://www.gnu.org/software/make/)
+
+Optionally:
+
+- [Node 8.9](https://nodejs.org/)
+
+
 ## Setup
 
     $ bundle install
