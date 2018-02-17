@@ -45,4 +45,43 @@ Run the tests
     $ make test
 
 
+## Finance disclosures
+
+The process of downloading, converting, and calculating the reported financial
+disclosures is handled by
+[disclosure-backend-static][backend-static].
+To get the finance data into this project, we use [gulp.js](https://gulpjs.com/)
+to copy the files over and do some light transformations on them to get them
+into a [Jekyll Collection](https://jekyllrb.com/docs/collections/).
+
+We commit all the finance data to this repo so that you do not need to use the
+gulp tasks to help with this project. _You only need to run the gulp tasks if you
+want the latest finance data._
+
+This process is optional and temporary. It allows us to update the finance data
+while allowing local modifications and overrides. If you have thoughts on how
+this could be improved, [let us
+know](https://github.com/adborden/odca-jekyll/issues/5)!
+
+
+### Update the finance data
+
+In order to get the latest finance data, first clone
+[disclosure-backend-static][backend-static] as a sibling to this project's
+directory. _It is important that the `disclosure-backend-static` project is
+cloned to the correct path (`../disclosure-backend-static`) which is hardcoded
+in the gulpfile (pull requests welcome)._
+
+Next, follow the instructions in
+[disclosure-backend-static](https://github.com/caciviclab/disclosure-backend-static/blob/master/README.md)
+and run a build. Then you can run the npm task:
+
+    $ npm run pull
+
+This will copy over all files as-is and will overwrite any local modifications.
+It's important to review the changes before committing them so as not to lose
+any intentional changes.
+
+
+[backend-static]: https://github.com/caciviclab/disclosure-backend-static
 [opendisclosure-io]: http://www.opendisclosure.io/
