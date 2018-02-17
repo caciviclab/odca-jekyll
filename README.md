@@ -1,6 +1,17 @@
 [![CircleCI](https://circleci.com/gh/adborden/odca-jekyll.svg?style=svg)](https://circleci.com/gh/adborden/odca-jekyll)
 
-# Static generated disclosure
+# www.opendisclosure.io
+
+_This project is currently in MVP stage. We are currently working on getting
+this project to feature parity with the existing
+[opendisclosure.io][opendisclosure-io] website._
+
+[Open Disclosure California][opendisclosure-io] provides transparent,
+non-partisan campaign contribution and expenditure data in an accessible and
+easy to understand format. We hope this site will engage the voting public and
+raise awareness and accountability. Ultimately, this is one step toward shifting
+politics into a movement of civic engagement and ultimate citizen action.
+
 
 ## Setup
 
@@ -29,3 +40,6 @@ Open your web browser to [http://localhost:4000/](http://localhost:4000/).
 Run the tests
 
     $ make test
+
+
+[opendisclosure-io]: http://www.opendisclosure.io/
