@@ -13,6 +13,22 @@ raise awareness and accountability. Ultimately, this is one step toward shifting
 politics into a movement of civic engagement and ultimate citizen action.
 
 
+## Contributing
+
+Welcome! We are a coalition of brigades, all volunteers from the California. We
+would love to get help from folks across the state to help us in building
+a database of campaign finance data for local jurisdictions across the state.
+
+www.opendisclosure.io is one piece of the ODCA project. We try to keep our
+[project page](http://caciviclab.org/opendisclosure/) up to date with all the
+information about how we work and where to get looped in.
+
+We're maintaining a high-level list of work for our MVP in this [project
+board](https://github.com/adborden/odca-jekyll/projects/1).
+
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
+
+
 ## Prerequisites
 
 - [Ruby 2.3](https://www.ruby-lang.org/)
