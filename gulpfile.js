@@ -115,16 +115,24 @@ gulp.task('pull:referendums', function () {
     .pipe(gulp.dest('_referendums'));
 });
 
-gulp.task('pull:referendums:opposing', function () {
+gulp.task('pull:referendums_opposing', function () {
   return gulp.src(dataDir('referendum', '*', 'opposing', 'index.json'))
     .pipe(slugifyName((data) => `oakland/2016-11-08/${slugify(data.number)}.json`))
-    .pipe(gulp.dest(path.join('_data', 'referendum_opposing')));
+    .pipe(jsonToYaml({ safe: true }))
+    .pipe(header('---\n'))
+    .pipe(footer('---\n'))
+    .pipe(ext.replace('md'))
+    .pipe(gulp.dest('_referendum_opposing'));
 });
 
-gulp.task('pull:referendums:supporting', function () {
+gulp.task('pull:referendums_supporting', function () {
   return gulp.src(dataDir('referendum', '*', 'supporting', 'index.json'))
     .pipe(slugifyName((data) => `oakland/2016-11-08/${slugify(data.number)}.json`))
-    .pipe(gulp.dest(path.join('_data', 'referendum_supporting')));
+    .pipe(jsonToYaml({ safe: true }))
+    .pipe(header('---\n'))
+    .pipe(footer('---\n'))
+    .pipe(ext.replace('md'))
+    .pipe(gulp.dest('_referendum_supporting'));
 });
 
 gulp.task('pull', gulp.parallel(
@@ -132,6 +140,6 @@ gulp.task('pull', gulp.parallel(
   'pull:committees',
   'pull:contributions',
   'pull:referendums',
-  'pull:referendums:opposing',
-  'pull:referendums:supporting'
+  'pull:referendums_opposing',
+  'pull:referendums_supporting'
 ));
