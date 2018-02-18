@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.4-node
+      - image: circleci/ruby:2.3-node
     steps:
       - checkout
       - restore_cache:
@@ -21,3 +21,37 @@ jobs:
       - run:
           name: Test
           command: make test
+      # Saves the build files so they can be recalled in other jobs
+      - persist_to_workspace:
+          root: .
+          paths:
+            - _site
+
+  deploy:
+    docker:
+      - image: circleci/ruby:2.3-node
+    environment:
+      GITHUB_REPO: adborden/odca-jekyll
+    steps:
+      - checkout
+      - add_ssh_keys:
+          fingerprints:
+            - "84:e6:5d:fd:1d:8c:53:18:7e:0e:3e:ba:82:49:38:ca"
+      - attach_workspace:
+          at: .
+      - deploy:
+          name: Deploy to GH pages
+          command: _bin/deploy.sh
+
+
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
