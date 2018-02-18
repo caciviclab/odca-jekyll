@@ -2,6 +2,22 @@
 layout: default
 ---
 {% assign referendum = page %}
+{% assign election_day = referendum.election | date: "%Y-%m-%d" %}
+{% assign referendum_id = referendum.number | downcase %}
+{% assign supporting = site.data.referendum_supporting[referendum.locality][election_day][referendum_id] %}
+{% assign opposing = site.data.referendum_opposing[referendum.locality][election_day][referendum_id] %}
 
 <h1>{{ referendum.title }}</h1>
-<div>{{ referendum.content }}</div>
+<section>
+  {{ referendum.content }}
+</section>
+<hr />
+<section>
+  <h3 class="section-header">Money supporting the measure <span>{{ supporting.total_contributions | times: 100 | money }}</span></h3>
+  {% include contributions_by_region.html contributions_by_region=supporting.contributions_by_region %}
+</section>
+<hr />
+<section>
+  <h3 class="section-header">Money opposing the measure <span>{{ opposing.total_contributions | times: 100 | money }}</span></h3>
+  {% include contributions_by_region.html contributions_by_region=opposing.contributions_by_region %}
+</section>
