@@ -1,9 +1,14 @@
+[![CircleCI](https://circleci.com/gh/adborden/odca-jekyll.svg?style=svg)](https://circleci.com/gh/adborden/odca-jekyll)
+
 # Static generated disclosure
 
 ## Setup
 
     $ bundle install
-    $ bundle exec jekyll serve
+    $ make build
+    $ make serve
+
+Open your web browser to [http://localhost:4000/](http://localhost:4000/).
 
 
 ## Findings
@@ -19,3 +24,10 @@
   at the time of a previous election?
 - supporting/opposing committees for a referendum should be stored within the
   referendum?
+
+
+## Development
+
+Run the tests
+
+    $ make test

@@ -36,7 +36,7 @@ layout: default
   <ul>
     {% for candidate_id in ballot_item.candidates %}
       {% assign candidate = site.candidates | where: "slug", candidate_id | first %}
-      <li><a href="{{ candidate.url | prepend: site.baseurl }}">{{ candidate.name }}</a></li>
+      <li>{% include candidate-summary.html candidate=candidate %}</li>
     {% endfor %}
   </ul>
   {% else %}
