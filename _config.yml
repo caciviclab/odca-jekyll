@@ -42,10 +42,10 @@ collections:
     permalink: /referendum/:path/
   referendum_opposing:
     output: true
-    permalink: /referendum/:path/opposing
+    permalink: /referendum/:path/opposing/
   referendum_supporting:
     output: true
-    permalink: /referendum/:path/supporting
+    permalink: /referendum/:path/supporting/
 
 defaults:
   - scope:

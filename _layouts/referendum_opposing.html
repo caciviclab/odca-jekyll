@@ -1,0 +1,19 @@
+---
+layout: default
+---
+{% assign opposing = page %}
+
+<h1>Supporters of measure {{ opposing.number }}</h1>
+<section>
+  <center>
+    <h2>Contributions opposing the measure</h2>
+    <span>{{ opposing.total_contributions | times: 100 | money }}</span>
+  </center>
+</section>
+<hr />
+<section>
+  <center>
+    <h2>Expenditures opposing the measure</h2>
+  </center>
+  {% include supporting_opposing_committees.html committees=opposing.opposing_organizations %}
+</section>

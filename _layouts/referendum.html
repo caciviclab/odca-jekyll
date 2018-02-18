@@ -19,7 +19,7 @@ layout: default
   <h3 class="section-header">Money supporting the measure <span>{{ supporting.total_contributions | times: 100 | money }}</span></h3>
   {% include contributions_by_region.html contributions_by_region=supporting.contributions_by_region %}
   {% if supporting and supporting.supporting_organizations != empty %}
-  <p><a href="{{ site.baseurl }}{{ page.url }}supporting">{{ supporting.supporting_organizations.size }} supporting committee(s)</a></p>
+  <p><a href="{{ site.baseurl }}{{ page.url }}supporting/">{{ supporting.supporting_organizations.size }} supporting committee(s)</a></p>
   {% endif %}
   <p>
 </section>
@@ -28,6 +28,6 @@ layout: default
   <h3 class="section-header">Money opposing the measure <span>{{ opposing.total_contributions | times: 100 | money }}</span></h3>
   {% include contributions_by_region.html contributions_by_region=opposing.contributions_by_region %}
   {% if opposing and opposing.opposing_organizations != empty %}
-  <p><a href="{{ site.baseurl }}{{ page.url }}opposing">{{ opposing.opposing_organizations.size }} opposing committee(s)</a></p>
+  <p><a href="{{ site.baseurl }}{{ page.url }}opposing/">{{ opposing.opposing_organizations.size }} opposing committee(s)</a></p>
   {% endif %}
 </section>
