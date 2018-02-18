@@ -18,7 +18,7 @@ layout: default
   <tbody>
     {% for contribution in contributions %}
     <tr>
-      <td>{{ contribution.Tran_NamF }} {{ contribution.Tran_NamL }}</td>
+      <td>{{ contribution.Tran_NamF | escape }} {{ contribution.Tran_NamL | escape }}</td>
       <td>{{ contribution.Tran_Amt1 | money }}</td>
       <td>{{ contribution.Tran_Date | date: "%Y-%m-%d" }}</td>
     </tr>
