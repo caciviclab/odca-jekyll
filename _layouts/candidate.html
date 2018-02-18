@@ -31,6 +31,9 @@ layout: default
   <div>{{ contribution_type[0] }}</div>
   <div>{{ contribution_type[1] | times: 100 | money }}</div>
   {% endfor %}
+  {% if candidate.filer_id and candidate.filer_id != "" %}
+    <p><a href="{{ site.baseurl }}/committee/{{ candidate.filer_id }}/">See all contributions</a></p>
+  {% endif %}
 </section>
 <hr />
 <section>
