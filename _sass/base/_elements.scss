@@ -1,0 +1,54 @@
+$spacing-base: 0.9rem; // Half of the base font
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body,
+blockquote,
+dd,
+dl,
+figure,
+form,
+hr,
+ol,
+p,
+pre,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: $spacing-base;
+  margin-bottom: ($spacing-base / 2);
+}
+
+p + p {
+  margin-top: $spacing-base;
+}
+
+ol,
+ul {
+  list-style: none;
+}

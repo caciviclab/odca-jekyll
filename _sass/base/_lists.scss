@@ -1,0 +1,9 @@
+
+%list--bulleted {
+  list-style-type: disc;
+  margin-left: $spacing-base * 3;
+}
+
+.list--bulleted {
+  @extend %list--bulleted;
+}

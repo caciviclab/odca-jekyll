@@ -28,9 +28,7 @@ $neat-grid--large: (
 
 .grid {
   @include grid-container;
-  @include grid-container($neat-grid--small);
-  @include grid-container($neat-grid--medium);
-  @include grid-container($neat-grid--large);
+  max-width: 800px;
 }
 
 .grid--full {

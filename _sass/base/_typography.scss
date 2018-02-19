@@ -1,12 +1,23 @@
-html {
-  box-sizing: border-box;
-  font-size: 10px;
-}
+$font-size-base: 1.8 !default;
+$font-size-small: 1.4 !default;
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+$h1-font-size: 4rem !default;
+$h2-font-size: 3rem !default;
+$h3-font-size: 2rem !default;
+$h4-font-size: 1.7rem !default;
+$h5-font-size: 1.5rem !default;
+$h6-font-size: 1.3rem !default;
+
+$base-font-size: $font-size-base * 1rem;
+$small-font-size: $font-size-small * 1rem;
+
+$base-line-height: 1.5 !default;
+$heading-line-height: 1.3 !default;
+
+// Define font size in rem with a px fallback
+@mixin font-size($size: $font-size-base) {
+  font-size: ($size * 10) + px;
+  font-size: $size + rem; // scss-lint:disable DuplicateProperty
 }
 
 body {
@@ -14,13 +25,7 @@ body {
   background: $body-background-color;
   color: $body-color;
   font-family: $font-family-sans-serif;
-  overflow-x: hidden;
-}
-
-body,
-form {
-  margin: 0;
-  padding: 0;
+  line-height: $base-line-height;
 }
 
 h1,
@@ -31,6 +36,31 @@ h5,
 h6 {
   @include font-family-serif();
   color: $headings-color;
+  line-height: $heading-line-height;
+}
+
+h1 {
+  font-size: $h1-font-size;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+h4 {
+  font-size: $h4-font-size;
+}
+
+h5 {
+  font-size: $h5-font-size;
+}
+
+h6 {
+  font-size: $h6-font-size;
 }
 
 a {
