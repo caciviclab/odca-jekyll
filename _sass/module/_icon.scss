@@ -1,0 +1,10 @@
+$svg-fill-color: #828282;
+
+.svg-icon {
+  width: 21px;
+  height: 16px;
+  display: inline-block;
+  fill: $svg-fill-color;
+  padding-right: 0.5rem;
+  vertical-align: text-top;
+}

@@ -1,0 +1,26 @@
+.footer {
+  @include font-size($font-size-small);
+
+  li {
+    list-style: none;
+
+    + li {
+      padding-top: 0.3rem;
+    }
+  }
+
+}
+
+.footer__heading {
+  font-size: $h4-font-size;
+}
+
+.social-media-list {
+  a {
+    text-decoration: none;
+  }
+
+  span.username { // scss-lint:disable QualifyingElement
+    text-decoration: underline;
+  }
+}
