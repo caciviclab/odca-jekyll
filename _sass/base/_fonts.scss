@@ -1,0 +1,21 @@
+$font-family-sans-serif: 'Roboto', sans-serif !default;
+$font-family-serif: 'Crete Round', serif !default;
+$font-size-base: 1.8 !default;
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+
+// Define font size in rem with a px fallback
+@mixin font-size($size: $font-size-base) {
+  font-size: ($size * 10) + px;
+  font-size: $size + rem; // scss-lint:disable DuplicateProperty
+}
+
+@mixin font-family-serif($weight: $font-weight-normal) {
+  font-family: $font-family-serif;
+  font-weight: $weight;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900,100italic,300italic,400italic,500italic,700italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Crete+Round:400,400italic);
