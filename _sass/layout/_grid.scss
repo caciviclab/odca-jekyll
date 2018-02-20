@@ -28,14 +28,24 @@ $neat-grid--large: (
 
 .grid {
   @include grid-container;
+  margin: 0 auto;
   max-width: 800px;
 }
 
 .grid--full {
   @include grid-collapse;
-  @include grid-collapse($neat-grid--small);
-  @include grid-collapse($neat-grid--medium);
-  @include grid-collapse($neat-grid--large);
+
+  @include grid-media($neat-grid--small) {
+    @include grid-collapse($neat-grid--small);
+  }
+
+  @include grid-media($neat-grid--medium) {
+    @include grid-collapse($neat-grid--medium);
+  }
+
+  @include grid-media($neat-grid--large) {
+    @include grid-collapse($neat-grid--large);
+  }
 }
 
 @for $i from 1 through 12 {
