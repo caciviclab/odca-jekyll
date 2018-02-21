@@ -15,25 +15,6 @@ body {
   overflow-x: hidden;
 }
 
-body,
-blockquote,
-dd,
-dl,
-figure,
-form,
-hr,
-ol,
-p,
-pre,
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-main {
-  display: block;
-}
-
 h1,
 h2,
 h3,
@@ -46,9 +27,4 @@ h6 {
 
 p + p {
   margin-top: $spacing-base;
-}
-
-ol,
-ul {
-  list-style: none;
 }
