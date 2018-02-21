@@ -56,7 +56,7 @@ defaults:
   - scope:
       type: ballots
     values:
-      layout: locality
+      layout: ballot
   - scope:
       type: candidates
     values:

@@ -1,10 +1,11 @@
 ---
 layout: default
 ---
-{% assign locality = page %}
+{% assign ballot = page %}
+{% assign locality = site.localities | where: 'slug', ballot.locality | first %}
 
 {% assign ballots = site.ballots | where: "locality", locality.locality_id | reverse %}
-{% assign ballot = ballots | where: "election", locality.current_election | first %}
+{% assign current_ballot = ballots | where: "election", locality.current_election | first %}
 {% assign today = site.time | date: "%Y-%m-%d" %}
 {% assign current_election = locality.current_election | date: "%Y-%m-%d" %}
 

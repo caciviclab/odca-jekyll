@@ -1,0 +1,17 @@
+{% assign ballot = include.ballot %}
+<h2>Election: {{ ballot.election | date: "%B %-d, %Y" }}</h2>
+{% for ballot_item in ballot.ballot_items %}
+  <h3>{{ ballot_item.name }}</h3>
+  {% if ballot_item.contest_type == "Office" %}
+  <ul>
+    {% for candidate_id in ballot_item.candidates %}
+      {% assign candidate = site.candidates | where: "slug", candidate_id | first %}
+      <li>{% include candidate-summary.html candidate=candidate %}</li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    {% assign referendum = site.referendums | where: "path", ballot_item.referendum | first %}
+    <p><a href="{{ referendum.url | prepend: site.baseurl }}">{{ referendum.number }} {{ referendum.title | escape}}</a></p>
+    <p>{{ referendum.content }}</p>
+  {% endif %}
+{% endfor %}
