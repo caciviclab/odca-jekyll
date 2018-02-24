@@ -1,9 +1,14 @@
+[![CircleCI](https://circleci.com/gh/adborden/odca-jekyll.svg?style=svg)](https://circleci.com/gh/adborden/odca-jekyll)
+
 # Static generated disclosure
 
 ## Setup
 
     $ bundle install
-    $ bundle exec jekyll serve
+    $ make build
+    $ make serve
+
+Open your web browser to [http://localhost:4000/](http://localhost:4000/).
 
 
 ## Findings
@@ -17,3 +22,10 @@
   Breed is now running for Mayor, so many of these qualities have changed since
   the last election. Would folks be interested in seeing snapshots of websites,
   at the time of a previous election?
+
+
+## Development
+
+Run the tests
+
+    $ make test
