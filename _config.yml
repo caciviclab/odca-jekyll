@@ -22,6 +22,7 @@ url: "https://adborden.github.io" # the base hostname & protocol for your site, 
 twitter_username: adborden
 github_username:  adborden
 future: true
+permalink: pretty
 
 
 collections:
@@ -39,6 +40,10 @@ collections:
     permalink: /referendum/:path/
 
 defaults:
+  - scope:
+      path: ''
+    values:
+      layout: page
   - scope:
       type: ballots
     values:
