@@ -29,3 +29,11 @@ Please submit a pull request for any commits, large or small. Pull requests are
 a great way to get visibility on changes and keep folks up to date. Please keep
 your pull requests of a reasonable size as large pull requests can take longer
 to review and merge.
+
+
+## Styles
+
+We're using the [SMACSS](https://smacss.com/) architecture to organize our CSS
+styles.
+
+CSS class names are based on [BEM](http://getbem.com/naming/).
