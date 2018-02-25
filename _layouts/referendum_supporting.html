@@ -3,17 +3,19 @@ layout: default
 ---
 {% assign supporting = page %}
 
-<h1>Supporters of measure {{ supporting.number }}</h1>
-<section>
-  <center>
-    <h2>Contributions supporting the measure</h2>
-    <span>{{ supporting.total_contributions | times: 100 | money }}</span>
-  </center>
-</section>
-<hr />
-<section>
-  <center>
-    <h2>Expenditures supporting the measure</h2>
-  </center>
-  {% include supporting_opposing_committees.html committees=supporting.supporting_organizations %}
-</section>
+{% capture body %}
+  <h2>Supporters of measure {{ supporting.number }}</h2>
+  <section class="l-section">
+    <center>
+      <h3>Contributions supporting the measure</h3>
+      <span>{{ supporting.total_contributions | times: 100 | money }}</span>
+    </center>
+  </section>
+  <section class="l-section">
+    <center>
+      <h3>Expenditures supporting the measure</h3>
+    </center>
+    {% include supporting_opposing_committees.html committees=supporting.supporting_organizations %}
+  </section>
+{% endcapture %}
+{% include ballot-layout.html content=body ballot=ballot locality=locality %}
