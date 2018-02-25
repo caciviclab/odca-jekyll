@@ -10,6 +10,9 @@ layout: default
 {% assign opposing = site.referendum_opposing | where: 'path', opposing_path | first %}
 
 {% capture body %}
+<header>
+  <h2>{{ referendum.title }}</h2>
+</header>
 <section class="l-section">
   {{ referendum.content }}
 </section>
