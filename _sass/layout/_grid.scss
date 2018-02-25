@@ -33,6 +33,12 @@ $neat-grid--large: (
   @include grid-container;
 }
 
+.grid--narrow {
+  @include grid-container;
+  margin: auto;
+  max-width: 800px;
+}
+
 .grid--full {
   @include grid-collapse;
 
