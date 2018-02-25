@@ -1,0 +1,19 @@
+---
+layout: default
+---
+{% assign supporting = page %}
+
+<h1>Supporters of measure {{ supporting.number }}</h1>
+<section>
+  <center>
+    <h2>Contributions supporting the measure</h2>
+    <span>{{ supporting.total_contributions | times: 100 | money }}</span>
+  </center>
+</section>
+<hr />
+<section>
+  <center>
+    <h2>Expenditures supporting the measure</h2>
+  </center>
+  {% include supporting_opposing_committees.html committees=supporting.supporting_organizations %}
+</section>

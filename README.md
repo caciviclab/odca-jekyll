@@ -63,6 +63,8 @@ This project started as an experiment. Here is what we learned:
   the last election. Would folks be interested in seeing snapshots of websites,
   at the time of a previous election? i.e. should past elections just be
   snapshots of the opendisclosure website?
+- supporting/opposing committees for a referendum should be stored within the
+  referendum?
 
 
 ## Development

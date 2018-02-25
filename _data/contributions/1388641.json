@@ -1,0 +1,606 @@
+{
+  "contributions": [
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-29",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Apodaca"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-29",
+      "Tran_NamF": "Conception",
+      "Tran_NamL": "Gallo"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-29",
+      "Tran_NamF": "Selina",
+      "Tran_NamL": "Gallo"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-08-30",
+      "Tran_NamF": "Amanda",
+      "Tran_NamL": "Gallo"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-04",
+      "Tran_NamF": "Giana",
+      "Tran_NamL": "Gallo"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-05",
+      "Tran_NamF": "Aliza",
+      "Tran_NamL": "Gallo"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 300,
+      "Tran_Date": "2016-09-08",
+      "Tran_NamF": "Emmanuel",
+      "Tran_NamL": "Gomez"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-12",
+      "Tran_NamF": "Louis",
+      "Tran_NamL": "Briones"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-09-12",
+      "Tran_NamF": null,
+      "Tran_NamL": "Conley Family Ltd. Partnership"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-12",
+      "Tran_NamF": "Jason",
+      "Tran_NamL": "Dreisbach"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-12",
+      "Tran_NamF": "Keely",
+      "Tran_NamL": "Dreisbach"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-12",
+      "Tran_NamF": "Marianne",
+      "Tran_NamL": "Dreisbach"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-12",
+      "Tran_NamF": "Ronald",
+      "Tran_NamL": "Dreisbach"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-12",
+      "Tran_NamF": "Noah",
+      "Tran_NamL": "Gallo"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 225,
+      "Tran_Date": "2016-09-12",
+      "Tran_NamF": "Jorge",
+      "Tran_NamL": "Lopez"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-09-12",
+      "Tran_NamF": "Valdimer",
+      "Tran_NamL": "Nunes"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-09-12",
+      "Tran_NamF": "Puay",
+      "Tran_NamL": "Phuan"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-12",
+      "Tran_NamF": null,
+      "Tran_NamL": "Singa Development LLC"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-12",
+      "Tran_NamF": "Evelia",
+      "Tran_NamL": "Villa"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": "Stevan",
+      "Tran_NamL": "Alvarado"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-09-13",
+      "Tran_NamF": null,
+      "Tran_NamL": "National Union of Healthcare Workers Candidate Committee for Quality Patient Care and Union Democracy"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-14",
+      "Tran_NamF": "Catalina",
+      "Tran_NamL": "Alvarado"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-14",
+      "Tran_NamF": null,
+      "Tran_NamL": "Save On Gasoline LLC"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-14",
+      "Tran_NamF": null,
+      "Tran_NamL": "Tulum Innovative Engineering, Inc."
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-15",
+      "Tran_NamF": null,
+      "Tran_NamL": "451 Hegenberger Gas, Inc."
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-15",
+      "Tran_NamF": null,
+      "Tran_NamL": "Auto Plus Towing"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-15",
+      "Tran_NamF": "Rebeca",
+      "Tran_NamL": "Barron"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-15",
+      "Tran_NamF": null,
+      "Tran_NamL": "Digital Design Communications"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-15",
+      "Tran_NamF": null,
+      "Tran_NamL": "Fastrack Airport Parking Inc."
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 300,
+      "Tran_Date": "2016-09-15",
+      "Tran_NamF": null,
+      "Tran_NamL": "MAR CON CO."
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-15",
+      "Tran_NamF": null,
+      "Tran_NamL": "One Stop Automotive and Collision Center Inc."
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-15",
+      "Tran_NamF": "Paramjit",
+      "Tran_NamL": "Singh"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-17",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Gray"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-17",
+      "Tran_NamF": "Randy",
+      "Tran_NamL": "Menjivar"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-09-25",
+      "Tran_NamF": "L.",
+      "Tran_NamL": "Goering"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-25",
+      "Tran_NamF": "rebecca",
+      "Tran_NamL": "kaplan"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-25",
+      "Tran_NamF": "gordon",
+      "Tran_NamL": "link"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-09-25",
+      "Tran_NamF": "naomi",
+      "Tran_NamL": "schiff"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-09-25",
+      "Tran_NamF": "russell",
+      "Tran_NamL": "sheppard"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 300,
+      "Tran_Date": "2016-09-25",
+      "Tran_NamF": "mary",
+      "Tran_NamL": "vail"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 125,
+      "Tran_Date": "2016-09-26",
+      "Tran_NamF": "L.",
+      "Tran_NamL": "Foo"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-09-27",
+      "Tran_NamF": "art",
+      "Tran_NamL": "may"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-09-27",
+      "Tran_NamF": "art",
+      "Tran_NamL": "may"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-28",
+      "Tran_NamF": "eduardo",
+      "Tran_NamL": "axtle"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-28",
+      "Tran_NamF": "sharon",
+      "Tran_NamL": "muir"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-09-28",
+      "Tran_NamF": "robert",
+      "Tran_NamL": "raich"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-09-28",
+      "Tran_NamF": null,
+      "Tran_NamL": "Raphael & associates"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 1400,
+      "Tran_Date": "2016-09-30",
+      "Tran_NamF": null,
+      "Tran_NamL": "service employees international union local 1021"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 1000,
+      "Tran_Date": "2016-10-03",
+      "Tran_NamF": null,
+      "Tran_NamL": "California nurses association political action committee"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-10-04",
+      "Tran_NamF": null,
+      "Tran_NamL": "California nurses association political action committee"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-06",
+      "Tran_NamF": "joe",
+      "Tran_NamL": "coto"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-06",
+      "Tran_NamF": "maureen",
+      "Tran_NamL": "dorsey"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 1000,
+      "Tran_Date": "2016-10-07",
+      "Tran_NamF": null,
+      "Tran_NamL": "ifpte local 21t j Anthony pac fund"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-07",
+      "Tran_NamF": null,
+      "Tran_NamL": "unite here tip state & local fund"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 300,
+      "Tran_Date": "2016-10-07",
+      "Tran_NamF": "david",
+      "Tran_NamL": "weltin"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-10-09",
+      "Tran_NamF": "fernando",
+      "Tran_NamL": "valenzuela"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 1400,
+      "Tran_Date": "2016-10-11",
+      "Tran_NamF": null,
+      "Tran_NamL": "California real estate political action committee"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-11",
+      "Tran_NamF": null,
+      "Tran_NamL": "unity pacalameda labor council"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": "salvador",
+      "Tran_NamL": "anaya"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": null,
+      "Tran_NamL": "el huarache axteca"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": "roberto",
+      "Tran_NamL": "portilla"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 300,
+      "Tran_Date": "2016-10-12",
+      "Tran_NamF": "silvia",
+      "Tran_NamL": "portillo"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-10-13",
+      "Tran_NamF": null,
+      "Tran_NamL": "northern cal district council, ilwu"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-14",
+      "Tran_NamF": "keith",
+      "Tran_NamL": "kim"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-18",
+      "Tran_NamF": "paul",
+      "Tran_NamL": "cardoza"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 350,
+      "Tran_Date": "2016-10-19",
+      "Tran_NamF": null,
+      "Tran_NamL": "Sin-Mex Auto Body Shop"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 300,
+      "Tran_Date": "2016-10-20",
+      "Tran_NamF": null,
+      "Tran_NamL": "BuildZig"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 350,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": "Alastair",
+      "Tran_NamL": "Mactaggart"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-10-24",
+      "Tran_NamF": null,
+      "Tran_NamL": "Raphael & associates"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-10-26",
+      "Tran_NamF": "Jeffrey",
+      "Tran_NamL": "Neustadt"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 12109.23,
+      "Tran_Date": "2016-10-27",
+      "Tran_NamF": null,
+      "Tran_NamL": "City of Oakland"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 12160.38,
+      "Tran_Date": "2016-10-27",
+      "Tran_NamF": null,
+      "Tran_NamL": "City of Oakland"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-10-30",
+      "Tran_NamF": "Emilio",
+      "Tran_NamL": "Mena"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-10-31",
+      "Tran_NamF": "Stephen",
+      "Tran_NamL": "Lowe"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-10-31",
+      "Tran_NamF": "John",
+      "Tran_NamL": "Oram"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-11-01",
+      "Tran_NamF": "Nico",
+      "Tran_NamL": "Enea"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 500,
+      "Tran_Date": "2016-11-01",
+      "Tran_NamF": "Emily",
+      "Tran_NamL": "Richardson"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 200,
+      "Tran_Date": "2016-11-02",
+      "Tran_NamF": "Rich",
+      "Tran_NamL": "Silverstein"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 1500,
+      "Tran_Date": "2016-11-03",
+      "Tran_NamF": null,
+      "Tran_NamL": "Construction & General Laborers Local Union 304 PAC"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 350,
+      "Tran_Date": "2016-11-03",
+      "Tran_NamF": "S.",
+      "Tran_NamL": "Erickson"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-11-03",
+      "Tran_NamF": "Toby",
+      "Tran_NamL": "Levy"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-11-03",
+      "Tran_NamF": null,
+      "Tran_NamL": "Peralta Street LLC"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 250,
+      "Tran_Date": "2016-11-03",
+      "Tran_NamF": null,
+      "Tran_NamL": "The McConnell Group"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 150,
+      "Tran_Date": "2016-11-03",
+      "Tran_NamF": "Willie",
+      "Tran_NamL": "Tomayo"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 100,
+      "Tran_Date": "2016-11-03",
+      "Tran_NamF": "mary",
+      "Tran_NamL": "vail"
+    },
+    {
+      "Filer_ID": "1388641",
+      "Tran_Amt1": 4412.08,
+      "Tran_Date": "2016-11-21",
+      "Tran_NamF": null,
+      "Tran_NamL": "City of Oakland"
+    }
+  ]
+}

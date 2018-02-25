@@ -32,12 +32,21 @@ collections:
   candidates:
     output: true
     permalink: /candidate/:path/
+  committees:
+    output: true
+    permalink: /committee/:path/
   localities:
     output: true
     permalink: /:path/
   referendums:
     output: true
     permalink: /referendum/:path/
+  referendum_opposing:
+    output: true
+    permalink: /referendum/:path/opposing/
+  referendum_supporting:
+    output: true
+    permalink: /referendum/:path/supporting/
 
 defaults:
   - scope:
@@ -53,6 +62,10 @@ defaults:
     values:
       layout: candidate
   - scope:
+      type: committees
+    values:
+      layout: committee
+  - scope:
       type: localities
     values:
       layout: locality
@@ -60,6 +73,14 @@ defaults:
       type: referendums
     values:
       layout: referendum
+  - scope:
+      type: referendum_opposing
+    values:
+      layout: referendum_opposing
+  - scope:
+      type: referendum_supporting
+    values:
+      layout: referendum_supporting
 
 
 # Build settings

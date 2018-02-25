@@ -11,5 +11,5 @@ occupation: Mayor
 party_affiliation: ""
 is_incumbent: yes
 is_accepted_expenditure_ceiling: yes
-filer_id: "1395968"
+filer_id: ""
 ---
