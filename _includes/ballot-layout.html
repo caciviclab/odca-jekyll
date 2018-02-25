@@ -1,0 +1,15 @@
+{% include election-header.html locality=include.locality %}
+
+<div class="l-ballot">
+  <div class="l-ballot__main">
+    <div class="l-ballot__content">
+      <article>
+        {{ include.content }}
+      </article>
+    </div>
+  </div>
+  <div class="l-ballot__nav">
+    {% include ballot-nav.html ballot=include.ballot locality=include.locality %}
+  </div>
+</div>
+

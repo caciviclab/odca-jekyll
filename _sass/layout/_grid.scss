@@ -2,34 +2,35 @@ $grid--small: 360px;
 $grid--medium: 768px;
 $grid--large: 1200px;
 
+$gutter--small: 8px;
+$gutter--large: 16px;
+
 // Default Neat grid is for extra small screens (< $grid--small)
 $neat-grid: (
   columns: 12,
-  gutter: 8px,
+  gutter: $gutter--small,
 );
 
 $neat-grid--small: (
   columns: 12,
-  gutter: 8px,
+  gutter: $gutter--small,
   media: $grid--small,
 );
 
 $neat-grid--medium: (
   columns: 12,
-  gutter: 16px,
+  gutter: $gutter--large,
   media: $grid--medium,
 );
 
 $neat-grid--large: (
   columns: 12,
-  gutter: 16px,
+  gutter: $gutter--large,
   media: $grid--large,
 );
 
 .grid {
   @include grid-container;
-  margin: 0 auto;
-  max-width: 800px;
 }
 
 .grid--full {
@@ -46,6 +47,7 @@ $neat-grid--large: (
   @include grid-media($neat-grid--large) {
     @include grid-collapse($neat-grid--large);
   }
+  @include grid-container;
 }
 
 @for $i from 1 through 12 {

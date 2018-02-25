@@ -1,0 +1,8 @@
+{% case include.referendum_measure_display -%}
+{% when 'referendum' %}
+Referendums
+{% when 'measure' %}
+Ballot measures
+{% when 'proposition' %}
+Propositions
+{%- endcase %}

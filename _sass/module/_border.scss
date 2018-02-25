@@ -1,0 +1,11 @@
+%soft-border {
+  @include soft-border;
+}
+
+%section-border {
+  border-top: 2px $color-gold solid;
+}
+
+%section-border--major {
+  border-top: 3px $color-gold solid;
+}

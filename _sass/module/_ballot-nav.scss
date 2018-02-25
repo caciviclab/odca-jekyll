@@ -1,0 +1,6 @@
+.ballot-nav {
+  @media screen and (min-width: $grid--medium) {
+    // Add gutter for the border
+    padding-right: $gutter--large;
+  }
+}

@@ -1,0 +1,9 @@
+{% assign ballots = include.ballots %}
+<h3>All elections</h3>
+<div>
+  <ul>
+    {% for ballot in ballots %}
+    <li><a href="{{ ballot.url | prepend: site.baseurl }}">{{ ballot.election | date: "%B %-d, %Y" }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
