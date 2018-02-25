@@ -1,8 +1,13 @@
 ---
-layout: default
+layout: page
 ---
 {% assign election = page %}
+{% assign title = election.date | date: "%B %-d, %Y" %}
 
-<h1>{{ election.date | date: "%B %-d, %Y" }}</h1>
+<article class="grid">
+  {% include page-header.html title=title %}
 
-Should we put a list of localities here?
+  <div class="grid-col-12">
+    Should we put a list of localities here?
+  </div>
+</article>
