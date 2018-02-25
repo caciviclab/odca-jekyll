@@ -2,6 +2,9 @@
 build:
 	bundle exec jekyll build
 
+clean:
+	rm -rf _site
+
 production:
 	JEKYLL_ENV=production bundle exec jekyll build
 
