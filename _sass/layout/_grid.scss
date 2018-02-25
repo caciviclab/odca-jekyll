@@ -41,6 +41,7 @@ $neat-grid--large: (
 
 .grid--full {
   @include grid-collapse;
+  @include grid-container;
 
   @include grid-media($neat-grid--small) {
     @include grid-collapse($neat-grid--small);
@@ -53,7 +54,6 @@ $neat-grid--large: (
   @include grid-media($neat-grid--large) {
     @include grid-collapse($neat-grid--large);
   }
-  @include grid-container;
 }
 
 @for $i from 1 through 12 {
