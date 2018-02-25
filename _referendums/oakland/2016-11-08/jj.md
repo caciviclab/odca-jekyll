@@ -1,4 +1,6 @@
 ---
+locality: oakland
+election: 2016-11-08
 id: 3
 contest_type: Referendum
 name: Just Cause for Eviction and Rent Adjustment

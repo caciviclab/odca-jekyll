@@ -1,4 +1,6 @@
 ---
+locality: oakland
+election: 2016-11-08
 id: 2
 contest_type: Referendum
 name: Lease Term for City-Owned or City-Controlled Property

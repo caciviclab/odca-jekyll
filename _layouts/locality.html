@@ -36,9 +36,9 @@ layout: default
       <h3>{{ ballot_item.name }}</h3>
       {% if ballot_item.contest_type == "Office" %}
       <ul>
-        {% for candidate_id in ballot_item.candidates %}
-          {% assign candidate = site.candidates | where: "slug", candidate_id | first %}
-          <li><a href="{{ candidate.url | prepend: site.baseurl }}">{{ candidate.name }}</a></li>
+	{% for candidate_id in ballot_item.candidates %}
+	  {% assign candidate = site.candidates | where: "slug", candidate_id | first %}
+	  <li>{% include candidate-summary.html candidate=candidate %}</li>
         {% endfor %}
       </ul>
       {% else %}
