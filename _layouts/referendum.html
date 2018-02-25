@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 ---
 {% assign referendum = page %}
 {% assign election_day = referendum.election | date: "%Y-%m-%d" %}
@@ -7,7 +7,6 @@ layout: default
 {% assign supporting = site.data.referendum_supporting[referendum.locality][election_day][referendum_id] %}
 {% assign opposing = site.data.referendum_opposing[referendum.locality][election_day][referendum_id] %}
 
-<h1>{{ referendum.title }}</h1>
 <section>
   {{ referendum.content }}
 </section>
