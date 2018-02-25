@@ -19,8 +19,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   An experiment rendering the Open Disclosure website as a static Jekyll site.
 baseurl: "/odca-jekyll" # the subpath of your site, e.g. /blog
 url: "https://adborden.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: adborden
-github_username:  adborden
+twitter_username: caciviclab
+github_username:  caciviclab
 future: true
 permalink: pretty
 
