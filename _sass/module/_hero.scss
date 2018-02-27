@@ -6,19 +6,32 @@ $scrim-color: rgba(0, 0, 0, .4);
   background-position: bottom;
   background-size: cover;
   color: $color-white;
+  padding: ($spacing-base * 6) 0;
   position: relative;
-  text-shadow: 0 2px 3px $text-shadow-color;
 }
 
-// Include a scrim over photo backgrounds to increase legibility of content
-.hero--photo::before {
-  content: '';
-  position: absolute;
-  background-color: $scrim-color;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+// When hero includes a background image, increase legibility
+.hero--photo {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    text-shadow: 0 2px 3px $text-shadow-color;
+  }
+
+  // Include a scrim over photo backgrounds to increase legibility of content
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: $scrim-color;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 }
 
 .hero__hed {
@@ -28,4 +41,13 @@ $scrim-color: rgba(0, 0, 0, .4);
 
 .hero__content {
   position: relative; // layer the content above the .hero--photo scrim
+}
+
+.hero__cta {
+  margin: ($spacing-base * 2) 0;
+
+  // Buttons should take full width
+  .btn {
+    width: 100%;
+  }
 }

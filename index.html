@@ -14,12 +14,10 @@ layout: default
 	movement of civic engagement and ultimate citizen action.
       </p>
     </div>
-    <div class="grid-col-12">
-      <ul class="list--bulleted">
-	{% for locality in site.localities %}
-	  <li><a href="{{ locality.url | prepend: site.baseurl }}">{{ locality.name }}</a></li>
-	{% endfor %}
-      </ul>
-    </div>
+    {% for locality in site.localities %}
+      <div class="grid-col-6">
+	<div class="hero__cta"><a class="btn" href="{{ locality.url | prepend: site.baseurl }}">{{ locality.name }}</a></div>
+      </div>
+    {% endfor %}
   </div>
 </div>
