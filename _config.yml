@@ -13,10 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: 'Open Disclosure California: Static!'
+title: 'Open Disclosure California'
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  An experiment rendering the Open Disclosure website as a static Jekyll site.
+  We provide transparent, non-partisan campaign contribution and expenditure
+  data in an accessible and easy to understand format. We hope this site will
+  engage the voting public and raise awareness and accountability. Ultimately,
+  this is one step toward shifting politics into a movement of civic engagement
+  and ultimate citizen action.
 baseurl: "/odca-jekyll" # the subpath of your site, e.g. /blog
 url: "https://adborden.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: caciviclab
