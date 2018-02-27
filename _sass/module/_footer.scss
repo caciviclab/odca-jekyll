@@ -1,8 +1,12 @@
 .footer {
   @extend %section-border--major;
   @include font-size($font-size-small);
+  background-color: $color-grey-5;
+  padding-bottom: $spacing-base * 2;
 
   ul {
+    margin-top: 0;
+    margin-bottom: $spacing-base * 2;
     padding: 0;
   }
 
@@ -16,8 +20,21 @@
 
 }
 
+.footer__col {
+  @media screen and (min-width: $grid--medium) {
+    // Last column should align right on wider screens
+    &:last-child {
+      text-align: right;
+    }
+  }
+}
+
 .footer__heading {
-  font-size: $h4-font-size;
+  @include heading('h2');
+}
+
+.footer__heading-brand {
+  color: $brand-color;
 }
 
 .social-media-list {

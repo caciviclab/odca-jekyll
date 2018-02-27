@@ -20,6 +20,18 @@ $heading-line-height: 1.3 !default;
   font-size: $size + rem; // scss-lint:disable DuplicateProperty
 }
 
+@mixin heading($size) {
+  @include font-family-serif();
+  color: $headings-color;
+  line-height: $heading-line-height;
+  @if $size == 'h1' { font-size: $h1-font-size; }
+  @if $size == 'h2' { font-size: $h2-font-size; }
+  @if $size == 'h3' { font-size: $h3-font-size; }
+  @if $size == 'h4' { font-size: $h4-font-size; }
+  @if $size == 'h5' { font-size: $h5-font-size; }
+  @if $size == 'h6' { font-size: $h6-font-size; }
+}
+
 body {
   @include font-size();
   background: $body-background-color;

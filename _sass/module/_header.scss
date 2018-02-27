@@ -8,9 +8,7 @@ $header-background-color: $color-white;
 
 
 .site-title {
-  color: $headings-color;
-  font-family: $font-family-serif;
-  font-size: $h2-font-size;
+  @include heading('h2');
   text-decoration: none;
 
   @media screen and (min-width: $grid--medium) {
@@ -49,7 +47,7 @@ $header-background-color: $color-white;
   .site-nav__menu-icon {
     display: block;
     float: right;
-    line-height: 3.5;
+    line-height: 3;
     padding-right: $spacing-base;
     text-align: center;
     width: 36px;
