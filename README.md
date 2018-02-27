@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/adborden/odca-jekyll.svg?style=svg)](https://circleci.com/gh/adborden/odca-jekyll)
+[![CircleCI](https://circleci.com/gh/caciviclab/odca-jekyll.svg?style=svg)](https://circleci.com/gh/caciviclab/odca-jekyll)
 
 # www.opendisclosure.io
 
@@ -24,7 +24,7 @@ www.opendisclosure.io is one piece of the ODCA project. We try to keep our
 information about how we work and where to get looped in.
 
 We're maintaining a high-level list of work for our MVP in this [project
-board](https://github.com/adborden/odca-jekyll/projects/1).
+board](https://github.com/caciviclab/odca-jekyll/projects/1).
 
 Please see [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
 
@@ -90,7 +90,7 @@ want the latest finance data._
 This process is optional and temporary. It allows us to update the finance data
 while allowing local modifications and overrides. If you have thoughts on how
 this could be improved, [let us
-know](https://github.com/adborden/odca-jekyll/issues/5)!
+know](https://github.com/caciviclab/odca-jekyll/issues/5)!
 
 
 ### Update the finance data
