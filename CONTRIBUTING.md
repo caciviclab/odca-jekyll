@@ -37,3 +37,5 @@ We're using the [SMACSS](https://smacss.com/) architecture to organize our CSS
 styles.
 
 CSS class names are based on [BEM](http://getbem.com/naming/).
+
+We've learned over our many iterations and usability tests that folks want this information on their mobile phones, sometimes even to take into the voting booth with them. That's why we design and build with mobile first.
