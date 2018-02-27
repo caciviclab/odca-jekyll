@@ -4,28 +4,34 @@ layout: default
 {% assign committee = page %}
 {% assign contributions = site.data.contributions[committee.filer_id].contributions | sort: 'Tran_Amt1' | reverse %}
 
-<h1>{{ committee.name }}</h1>
 
-<h2>Contributions</h2>
-{% if contributions == empty %}
-  <p>Sorry, there is no contribution data available for this committee.</p>
-{% else %}
-  <table>
-    <thead>
-      <tr>
-        <td>Name</td>
-        <td>Amount</td>
-        <td>Date</td>
-      </tr>
-    </thead>
-    <tbody>
-      {% for contribution in contributions %}
-      <tr>
-        <td>{{ contribution.Tran_NamF | escape }} {{ contribution.Tran_NamL | escape }}</td>
-        <td>{{ contribution.Tran_Amt1 | money }}</td>
-        <td>{{ contribution.Tran_Date | date: "%Y-%m-%d" }}</td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
-{% endif %}
+<header class="grid">
+  <h1 class="grid-col-12">{{ committee.name }}</h1>
+</header>
+<article class="l-committee grid">
+  <div class="grid-col-12">
+    <h2>Contributions</h2>
+    {% if contributions == empty %}
+      <p>Sorry, there is no contribution data available for this committee.</p>
+    {% else %}
+      <table>
+        <thead>
+          <tr>
+            <td>Name</td>
+            <td>Amount</td>
+            <td>Date</td>
+          </tr>
+        </thead>
+        <tbody>
+          {% for contribution in contributions %}
+          <tr>
+            <td>{{ contribution.Tran_NamF | escape }} {{ contribution.Tran_NamL | escape }}</td>
+            <td>{{ contribution.Tran_Amt1 | money }}</td>
+            <td>{{ contribution.Tran_Date | date: "%Y-%m-%d" }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% endif %}
+  </div>
+</article>

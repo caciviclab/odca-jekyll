@@ -1,0 +1,44 @@
+{% assign ballot = include.ballot %}
+{% assign locality = include.locality %}
+{% assign referendums = ballot.ballot_items | where: "contest_type", "Referendum" %}
+{% assign office_elections = ballot.ballot_items | where: "contest_type", "Office" %}
+
+<nav class="ballot-nav grid--full">
+  <div class="grid-col-12">
+  {% if referendums and referendums != empty %}
+    <section class="l-section grid--full">
+      <div class="grid-col-12">
+        <h3>{% include referendum_measure_heading.html referendum_measure_display=locality.referendum_measure_display %}</h3>
+        {% for ballot_item in ballot.ballot_items %}
+          {% if ballot_item.contest_type != "Referendum" %}{% continue %}{% endif %}
+          {% assign referendum = site.referendums | where: "path", ballot_item.referendum | first %}
+          <p><a href="{{ referendum.url | prepend: site.baseurl }}">{{ referendum.number }} {{ referendum.title | escape}}</a></p>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+  {% if office_elections and office_elections != empty %}
+    <section class="l-section grid--full">
+      <div class="grid-col-12">
+        {% for ballot_item in ballot.ballot_items %}
+          {% if ballot_item.contest_type != "Office" %}{% continue %}{% endif %}
+          <h3>{{ ballot_item.name }}</h3>
+          <ul>
+            {% for candidate_id in ballot_item.candidates %}
+              {% assign candidate = site.candidates | where: "slug", candidate_id | first %}
+              <li>{% include candidate-summary.html candidate=candidate %}</li>
+            {% endfor %}
+          </ul>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+  {% if ballots and ballots != empty %}
+    <section class="l-section grid--full">
+      <div class="grid-col-12">
+        {% include all-elections.html ballots=ballots %}
+      </div>
+    </section>
+  {% endif %}
+  </div>
+</nav>

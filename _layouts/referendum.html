@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 ---
 {% assign referendum = page %}
 {% assign election_day = referendum.election | date: "%Y-%m-%d" %}
@@ -9,12 +9,14 @@ layout: page
 {% assign supporting = site.referendum_supporting | where: 'path', supporting_path | first %}
 {% assign opposing = site.referendum_opposing | where: 'path', opposing_path | first %}
 
-
-<section>
+{% capture body %}
+<header>
+  <h2>{{ referendum.title }}</h2>
+</header>
+<section class="l-section">
   {{ referendum.content }}
 </section>
-<hr />
-<section>
+<section class="l-section">
   <h3 class="section-header">Money supporting the measure <span>{{ supporting.total_contributions | times: 100 | money }}</span></h3>
   {% include contributions_by_region.html contributions_by_region=supporting.contributions_by_region %}
   {% if supporting and supporting.supporting_organizations != empty %}
@@ -22,11 +24,12 @@ layout: page
   {% endif %}
   <p>
 </section>
-<hr />
-<section>
+<section class="l-section">
   <h3 class="section-header">Money opposing the measure <span>{{ opposing.total_contributions | times: 100 | money }}</span></h3>
   {% include contributions_by_region.html contributions_by_region=opposing.contributions_by_region %}
   {% if opposing and opposing.opposing_organizations != empty %}
   <p><a href="{{ site.baseurl }}{{ page.url }}opposing/">{{ opposing.opposing_organizations.size }} opposing committee(s)</a></p>
   {% endif %}
 </section>
+{% endcapture %}
+{% include ballot-layout.html content=body %}
