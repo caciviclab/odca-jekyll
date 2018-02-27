@@ -1,0 +1,31 @@
+$text-shadow-color: rgba(30, 30, 30, .8);
+$scrim-color: rgba(0, 0, 0, .4);
+
+.hero {
+  background-image: url('./images/sacramento-capitol-splash.png');
+  background-position: bottom;
+  background-size: cover;
+  color: $color-white;
+  position: relative;
+  text-shadow: 0 2px 3px $text-shadow-color;
+}
+
+// Include a scrim over photo backgrounds to increase legibility of content
+.hero--photo::before {
+  content: '';
+  position: absolute;
+  background-color: $scrim-color;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.hero__hed {
+  color: $color-white;
+  font-style: italic;
+}
+
+.hero__content {
+  position: relative; // layer the content above the .hero--photo scrim
+}

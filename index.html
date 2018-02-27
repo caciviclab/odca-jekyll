@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="hero hero--photo">
+  <div class="hero__content grid grid--narrow">
+    <div class="grid-col-12">
+      <h1 class="hero__hed">California’s online source for local campaign finance data</h1>
+      <p>
+	We provide transparent, non-partisan campaign contribution and
+	expenditure data in an accessible and easy to understand format. We hope
+	this site will engage the voting public and raise awareness and
+	accountability. Ultimately, this is one step toward shifting politics into a
+	movement of civic engagement and ultimate citizen action.
+      </p>
+    </div>
+    <div class="grid-col-12">
+      <ul class="list--bulleted">
+	{% for locality in site.localities %}
+	  <li><a href="{{ locality.url | prepend: site.baseurl }}">{{ locality.name }}</a></li>
+	{% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
