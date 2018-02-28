@@ -1,32 +1,20 @@
-<footer class="footer grid h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+<footer class="footer grid">
 
   <div class="footer__wrapper grid-col-12">
 
-    <h2 class="footer__heading">{{ site.title | escape }}</h2>
+    <h2 class="footer__heading"><a href="{{ site.baseurl }}/">OD<span class="footer__heading-brand">Ca</span></a></h2>
 
     <div class="footer__content grid--full">
-      <div class="footer__col grid-col-4">
-        <ul class="contact-list">
-          <li class="p-name">
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
+      <div class="footer__col grid-col-6">
+        <ul>
+          <li><a class="footer__nav-item" href="{{ site.baseurl }}/about/">About</a></li>
+          <li><a class="footer__nav-item" href="{{ site.baseurl }}/faq/">FAQ</a></li>
+          <li><a class="footer__nav-item" href="http://caciviclab.org/opendisclosure/">Join us</a></li>
         </ul>
       </div>
 
-      <div class="footer__col grid-col-3">
-        {% include social.html %}
-      </div>
-
-      <div class="footer__col grid-col-5">
-        <p>{{ site.description | escape }}</p>
+      <div class="footer__col grid-col-6">
+        <span class="tagline">Brought to you by <span class="tagline__brand">California Civic Lab</span></span>
       </div>
     </div>
 

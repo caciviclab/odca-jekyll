@@ -1,0 +1,8 @@
+.tagline {
+  @include heading('h3');
+}
+
+.tagline__brand {
+  color: $brand-color;
+  white-space: nowrap;
+}
