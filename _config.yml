@@ -96,12 +96,17 @@ plugins:
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
   - Gemfile
   - Gemfile.lock
   - gulpfile.js
+  - LICENSE.md
+  - Makefile
   - node_modules
   - package.json
   - package-lock.json
+  - README.md
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
