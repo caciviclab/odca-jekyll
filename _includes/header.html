@@ -3,8 +3,8 @@
   <div class="header__wrapper grid-col-12">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">OD<span class="site-title__brand">Ca</span></a>
-    <a class="site-title site-title--md" rel="author" href="{{ "/" | relative_url }}">Open Disclosure <span class="site-title__brand">California</span></a>
+    <a class="site-title brand" rel="author" href="{{ "/" | relative_url }}">OD<span class="brand__em">Ca</span></a>
+    <a class="site-title site-title--md brand" rel="author" href="{{ "/" | relative_url }}">Open Disclosure <span class="brand__em">California</span></a>
 
     {% if page_paths %}
       <nav class="site-nav">
