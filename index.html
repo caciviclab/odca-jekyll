@@ -1,38 +1,53 @@
 ---
 layout: default
+header: California’s online source for local campaign finance data
 ---
 
-<div class="hero hero--photo">
-  <div class="hero__content grid grid--narrow">
+{% capture hero-cta %}
+<div class="hero__cta-container">
+  <h2 class="hero__cta-header">View local ballots</h2>
+  {% for locality in site.localities %}
+    <div class="hero__cta"><a class="btn" href="{{ locality.url | prepend: site.baseurl }}">{{ locality.name }}</a></div>
+  {% endfor %}
+</div>
+{% endcapture %}
+
+<div class="hero hero--photo hero--landing">
+  <div class="hero__content">
+    <div class="hero__header">
+      <h1 class="hero__hed">
+        <span class="brand">Open Disclosure <span class="brand__em">California</span></span>
+      </h1>
+      <p class="hero__subhead">
+        Bringing campaign money to light
+      </p>
+    </div>
     <div class="hero__main">
-      <div class="grid-col-12">
-        <h1 class="hero__hed">
-            <span class="brand">Open Disclosure <span class="brand__em">California</span></span>
-        </h1>
-        <p class="hero__subhead">
-          Bringing campaign money to light
+      <div class="hero__section grid--full">
+        <div class="grid-col-12">
+          <div class="hero__lede">
+            <p>{{ page.header | escape }}</p>
+          </div>
+          {{ hero-cta }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero__content hero__content--s1">
+    <div class="hero__header">
+      <h1 class="hero__hed">{{ page.header | escape }}</h1>
+    </div>
+    <div class="hero__main">
+      <div class="hero__lede">
+        <p>
+          We provide transparent, non-partisan campaign contribution and
+          expenditure data in an accessible and easy to understand format. We hope
+          this site will engage the voting public and raise awareness and
+          accountability. Ultimately, this is one step toward shifting politics into a
+          movement of civic engagement and ultimate citizen action.
         </p>
       </div>
+      {{ hero-cta }}
     </div>
-    <div class="hero__main hero__main--sm">
-      <div class="grid-col-12">
-	<h1 class="hero__hed hero__hed--sm">California’s online source for local campaign finance data</h1>
-	<p class="hero__lede">
-	  We provide transparent, non-partisan campaign contribution and
-	  expenditure data in an accessible and easy to understand format. We hope
-	  this site will engage the voting public and raise awareness and
-	  accountability. Ultimately, this is one step toward shifting politics into a
-	  movement of civic engagement and ultimate citizen action.
-	</p>
-      </div>
-    </div>
-    <div class="grid-col-12">
-      <h2>View local ballots</h2>
-    </div>
-    {% for locality in site.localities %}
-      <div class="grid-col-6">
-	<div class="hero__cta"><a class="btn" href="{{ locality.url | prepend: site.baseurl }}">{{ locality.name }}</a></div>
-      </div>
-    {% endfor %}
   </div>
 </div>

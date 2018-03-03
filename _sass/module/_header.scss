@@ -2,6 +2,7 @@ $header-background-color: $color-white;
 
 .header {
   background-color: $header-background-color;
+  border-bottom: 5px $color-gold solid;
   padding: $spacing-base 0;
   position: relative;
 }

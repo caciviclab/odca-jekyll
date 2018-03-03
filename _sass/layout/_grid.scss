@@ -2,7 +2,9 @@ $grid--small: 360px;
 $grid--medium: 768px;
 $grid--large: 1200px;
 
-$gutter--small: 8px;
+$grid-width-narrow: 800px;
+
+$gutter--small: 16px;
 $gutter--large: 16px;
 
 // Default Neat grid is for extra small screens (< $grid--small)
@@ -42,7 +44,7 @@ $neat-grid--large: (
 .grid--narrow {
   @include grid-container;
   margin: auto;
-  max-width: 800px;
+  max-width: $grid-width-narrow;
 }
 
 .grid--full {
