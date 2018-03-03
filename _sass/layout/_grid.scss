@@ -29,6 +29,12 @@ $neat-grid--large: (
   media: $grid--large,
 );
 
+@mixin media($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
 .grid {
   @include grid-container;
 }

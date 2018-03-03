@@ -1,46 +1,79 @@
 $text-shadow-color: rgba(30, 30, 30, .8);
 $scrim-color: rgba(0, 0, 0, .4);
+$hero-breakpoint: $grid--small;
 
 .hero {
-  background-image: url('./images/sacramento-capitol-splash.png');
-  background-position: bottom;
-  background-size: cover;
-  color: $color-white;
   padding: ($spacing-base * 6) 0;
   position: relative;
+
+  @include media($hero-breakpoint) {
+    //background-image: url('./images/sacramento-capitol-splash.png');
+    background-position: bottom;
+    background-size: cover;
+  }
 }
 
-// When hero includes a background image, increase legibility
 .hero--photo {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    text-shadow: 0 2px 3px $text-shadow-color;
-  }
+  // When hero includes a background image, increase legibility
+  @include media($hero-breakpoint) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      color: $color-white;
+      text-shadow: 0 2px 3px $text-shadow-color;
+    }
 
-  // Include a scrim over photo backgrounds to increase legibility of content
-  &::before {
-    content: '';
-    position: absolute;
-    background-color: $scrim-color;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    // Include a scrim over photo backgrounds to increase legibility of content
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: $scrim-color;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
   }
 }
 
 .hero__hed {
-  color: $color-white;
+  font-size: $title-font-size;
+
+}
+
+.hero__hed--sm {
+  font-style: italic;
+}
+
+.hero__subhead {
+  @include heading('h3');
+  color: $subheading-color;
   font-style: italic;
 }
 
 .hero__content {
   position: relative; // layer the content above the .hero--photo scrim
+}
+
+.hero__main {
+  text-align: center;
+
+  @include media($hero-breakpoint) {
+    display: none;
+  }
+}
+
+.hero__main--sm {
+  display: none;
+  text-align: initial;
+
+  @include media($hero-breakpoint) {
+    display: initial;
+  }
 }
 
 .hero__cta {
