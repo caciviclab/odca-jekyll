@@ -52,6 +52,8 @@ expenditures_by_type:
   Not Stated: 435.74
   Campaign Paraphernalia/Misc.: 13557.03
   'Professional Services (Legal, Accounting)': 850
+ballots:
+- _ballots/oakland/2016-11-08.md
 ---
 Marcie Hodge is the Executive Director for SJBH, Inc. (St. John Boys Home, Inc.(?)), a non-profit residential program for developmentally disabled kids based in Oakland for the past eight years. Hodge served two terms as a trustee on the Peralta Community College Board from 2004–12, Oakland Budget Committee, and other education-focused committees. Hodge holds two master’s degrees in Counseling Psychology and Organizational Psychology from Alliant International University-Fresno. Hodge ran for mayor of Oakland in 2010. 
 

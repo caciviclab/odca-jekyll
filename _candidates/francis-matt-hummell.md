@@ -39,6 +39,8 @@ total_expenditures: null
 total_loans_received: null
 contributions_by_type: {}
 expenditures_by_type: {}
+ballots:
+- _ballots/oakland/2016-11-08.md
 ---
 Francis Matt Hummel moved to Oakland from Stockton in 1992. He is Chair of the Cannabis Regulatory Commission. 
 

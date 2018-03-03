@@ -68,6 +68,8 @@ expenditures_by_type:
   Candidate Filing/Ballot Fees: 300
   Campaign Literature and Mailings: 3399.31
   'Information Technology Costs (Internet, E-mail)': 387
+ballots:
+- _ballots/oakland/2016-11-08.md
 ---
 Noni Session is a lifelong resident of Oakland and attended Oakland public schools. Session served as a special education teacher at Harbor Way Academy Elementary School. She graduated with a degree in Cultural Anthropology and African American Studies from San Francisco State University and received her Ph.D. in Cultural Anthropology from Cornell University. Session’s doctoral research in Nairobi, Kenya on Bureaucratic Organizations & Humanitarianism led her to work with the United Nations Development Programme as a Researcher and Government Liaison. 
 

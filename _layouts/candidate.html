@@ -2,6 +2,9 @@
 layout: default
 ---
 {% assign candidate = page %}
+{% assign ballot_path = candidate.ballots | first %}
+{% assign ballot = site.ballots | where: "path", ballot_path | first %}
+{% assign locality = site.localities | where: "locality_id", ballot.locality | first %}
 
 {% capture body %}
   <header>
@@ -46,4 +49,4 @@ layout: default
     </section>
   </div>
 {% endcapture %}
-{% include ballot-layout.html content=body %}
+{% include ballot-layout.html content=body locality=locality ballot=ballot %}

@@ -73,6 +73,8 @@ expenditures_by_type:
   'Professional Services (Legal, Accounting)': 14215.1
   T.V. or Cable Airtime and Production Costs: 79500
   'Information Technology Costs (Internet, E-mail)': 6488.21
+ballots:
+- _ballots/oakland/2016-11-08.md
 ---
 Peggy Moore has served as a Senior Advisor to Oakland Mayor Libby Schaaf and as California Political Director for two winning presidential campaigns. She grew up in Oklahoma City and moved to Oakland in 1990. She has held leadership roles in LGBTQ and African American organizations. 
 
