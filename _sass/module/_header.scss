@@ -31,6 +31,7 @@ $header-background-color: $color-white;
   right: 0;
   text-align: right;
   top: 0;
+  z-index: $z-header-nav;
 
   label[for="site-nav-trigger"] { // scss-lint:disable QualifyingElement
     display: block;
