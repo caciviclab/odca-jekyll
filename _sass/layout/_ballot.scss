@@ -18,6 +18,7 @@
 
 .l-ballot__main {
   @include grid-column(12);
+  padding-bottom: $spacing-base * 2;
 
   @include grid-media($neat-grid--medium) {
     @include grid-column(8);

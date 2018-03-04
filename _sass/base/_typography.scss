@@ -96,3 +96,10 @@ h6 {
 a {
   color: $link-color;
 }
+
+.subheading {
+  @include font-family-serif;
+  color: $subheading-color;
+  font-size: $h4-font-size;
+  font-style: italic;
+}
