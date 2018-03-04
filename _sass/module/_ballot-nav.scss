@@ -3,4 +3,11 @@
     // Add gutter for the border
     padding-right: $gutter--large;
   }
+
+  // Collapse the gutter for l-sections so they consume the full-width, including the left margin.
+  .l-section {
+    @include grid-media($neat-grid--medium) {
+      @include grid-collapse;
+    }
+  }
 }
