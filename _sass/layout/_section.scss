@@ -1,9 +1,9 @@
 .l-section {
   @include grid-container;
-}
 
-.l-section + .l-section {
-  @extend %section-border;
+  + .l-section {
+    @extend %section-border;
+  }
 }
 
 .l-section__content {
