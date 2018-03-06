@@ -51,6 +51,14 @@ $candidate-photo-width: 10rem;
   color: $color-navy;
 }
 
+.candidate__money-total.money {
+  @include heading('h2');
+  color: $color-grey-3;
+  line-height: 1;
+  margin-bottom: $spacing-base * 2;
+  text-align: left;
+}
+
 .candidate__expenditures-opposing {
   @include heading('h3');
   color: $subheading-color;

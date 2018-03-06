@@ -1,6 +1,6 @@
 {% assign color = include.color | default: "blue" %}
-{% assign maximum = include.max | default: 1000 %}
-{% assign width = include.value | divided_by: maximum %}
+{% assign maximum = include.max | default: 100 %}
+{% assign width = include.value | divided_by: maximum | times: 100 %}
 
 <div class="money-bar">
   <div class="money-bar__label">{{ include.label }}</div>
