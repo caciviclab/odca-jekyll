@@ -47,7 +47,7 @@ layout: default
       </div>
     </section>
     <section class="l-section">
-      <div class="l-section__content">
+      <div class="l-section__content l-section__content--half">
         <div class="subheading">Money coming in</div>
         <h2 class="candidate__money-heading">Contributions</h2>
         {% for contribution_type in candidate.supporting_money.contributions_by_type %}
@@ -59,9 +59,7 @@ layout: default
           <p><a href="{{ site.baseurl }}/committee/{{ candidate.filer_id }}/">See all contributions</a></p>
         {% endif %}
       </div>
-    </section>
-    <section class="l-section">
-      <div class="l-section__content">
+      <div class="l-section__content l-section__content--half">
         <div class="subheading">Money going out</div>
         <h2 class="candidate__money-heading">Expenditures</h2>
         {% for expenditure_type in candidate.supporting_money.expenditures_by_type %}
