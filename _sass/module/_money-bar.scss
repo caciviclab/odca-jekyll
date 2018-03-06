@@ -1,0 +1,60 @@
+$measure-height: 2rem;
+$money-label-width: 9rem; // amount of space we reserve for the money label (approx)
+$money-bar-breakpoint: $grid--small; // breakpoint where measure goes from block to inline
+
+.money-bar {
+  font-size: 1.6rem;
+  line-height: 1;
+  margin-bottom: $spacing-base;
+}
+
+.money-bar__label {
+  font-size: $small-font-size;
+  margin-bottom: ($spacing-base / 2);
+}
+
+.money-bar__measure-container {
+  @media screen and (min-width: $grid--small) {
+    // Show inline on larger screens, reserving space for the money label
+    text-align: right;
+    width: calc(100% - #{$money-label-width});
+  }
+}
+
+.money-bar__money {
+  @extend .money;
+  @extend .money--sans;
+  vertical-align: top;
+  line-height: $measure-height;
+
+  @media screen and (min-width: $money-bar-breakpoint) {
+    // Only inline is visible above the breakpoint
+    display: none;
+  }
+}
+
+.money-bar__money--inline {
+  display: none; // Hide below the breakpoint
+
+  @media screen and (min-width: $money-bar-breakpoint) {
+    // Position absolute so the label hangs off of the measure-container
+    display: inline-block;
+    position: absolute;
+    margin-left: $spacing-base;
+  }
+}
+
+.money-bar__measure {
+  background-color: $color-navy;
+  height: $measure-height;
+  min-width: 5px; // Even zero shows something
+  transition: 1.5s cubic-bezier(0,0,.05,1) width;
+}
+
+.money-bar__measure--green {
+  background-color: $color-green;
+}
+
+.money-bar__measure--red {
+  background-color: $color-red;
+}

@@ -1,0 +1,12 @@
+.money {
+  color: $color-grey-3;
+  font-family: $font-family-serif;
+  text-align: right;
+}
+
+.money--sans {
+  //font-size: 1.6rem;
+  font-weight: 500;
+  color: $color-grey-4;
+  font-family: $font-family-sans-serif;
+}

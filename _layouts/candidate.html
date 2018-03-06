@@ -51,8 +51,9 @@ layout: default
         <div class="subheading">Money coming in</div>
         <h2 class="candidate__money-heading">Contributions</h2>
         {% for contribution_type in candidate.supporting_money.contributions_by_type %}
-        <div>{{ contribution_type[0] }}</div>
-        <div>{{ contribution_type[1] | times: 100 | money }}</div>
+          {% assign label=contribution_type[0]  %}
+          {% assign value=contribution_type[1]  %}
+          {% include money-bar.html label=label value=value color="green" %}
         {% endfor %}
         {% if candidate.filer_id and candidate.filer_id != "" %}
           <p><a href="{{ site.baseurl }}/committee/{{ candidate.filer_id }}/">See all contributions</a></p>
@@ -64,8 +65,9 @@ layout: default
         <div class="subheading">Money going out</div>
         <h2 class="candidate__money-heading">Expenditures</h2>
         {% for expenditure_type in candidate.supporting_money.expenditures_by_type %}
-        <div>{{ expenditure_type[0] }}</div>
-        <div>{{ expenditure_type[1] | times: 100 | money }}</div>
+          {% assign label=expenditure_type[0]  %}
+          {% assign value=expenditure_type[1]  %}
+          {% include money-bar.html label=label value=value color="red" %}
         {% endfor %}
       </div>
     </section>
