@@ -19,7 +19,7 @@
     @extend %section-border;
 
     @media screen and (min-width: $grid--medium) {
-      border-top: none !important;
+      border-top: none !important; // scss-lint:disable ImportantRule
     }
   }
 }

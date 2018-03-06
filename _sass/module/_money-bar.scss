@@ -48,7 +48,7 @@ $money-bar-breakpoint: $grid--small; // breakpoint where measure goes from block
   background-color: $color-navy;
   height: $measure-height;
   min-width: 1px; // Even zero shows something
-  transition: 1.5s cubic-bezier(0,0,.05,1) width;
+  transition: 1.5s cubic-bezier(0, 0, .05, 1) width;
 }
 
 .money-bar__measure--green {
