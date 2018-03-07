@@ -5,9 +5,16 @@ set -o pipefail
 set -o nounset
 
 GITHUB_REPO=${GITHUB_REPO:-"caciviclab/www.opendisclosure.io"}
+build_dir=_site
+
+# Add a circleci config to avoid testing the gh-pages branch
+#TODO better way to do this?
+mkdir -p ${build_dir}/.circleci
+cp .circleci/config.yml ${build_dir}/.circleci/
+
 
 # Git init
-cd _site
+cd $build_dir
 git --version
 git init
 git config user.name "CA Civic Lab deploy script"
