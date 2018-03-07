@@ -1,0 +1,70 @@
+@import './header';
+
+.header-nav {
+  background-color: $header-background-color;
+  line-height: 2.5;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0;
+  z-index: $z-header-nav;
+
+  label[for="header-nav-trigger"] { // scss-lint:disable QualifyingElement
+    display: block;
+    float: right;
+    width: 36px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .header-nav__menu-icon {
+    display: block;
+    float: right;
+    line-height: 3;
+    padding-right: $spacing-base;
+    text-align: center;
+    width: 36px;
+
+    > svg path { // scss-lint:disable SelectorDepth
+      fill: $brand-color;
+    }
+  }
+
+  @media screen and (min-width: $grid--medium) {
+    border: none;
+    float: right;
+    position: initial;
+
+    label[for="header-nav-trigger"] { // scss-lint:disable QualifyingElement
+      display: none;
+    }
+  }
+}
+
+.header-nav__link-item {
+  display: block;
+  padding: ($spacing-base * 0.5) $spacing-base;
+  text-decoration: none;
+
+  @media screen and (min-width: $grid--medium) {
+    display: initial;
+    padding: 0 $spacing-base;
+  }
+}
+
+.header-nav__trigger {
+  display: none;
+
+  ~ .header-nav__items {
+    clear: both;
+    display: none;
+
+    @media screen and (min-width: $grid--medium) {
+      display: block;
+    }
+  }
+}
+
+.header-nav__trigger:checked ~ .header-nav__items {
+  display: block;
+}

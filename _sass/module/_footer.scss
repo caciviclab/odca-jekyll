@@ -33,13 +33,9 @@
   @include heading('h2');
 
   a {
-    color: $headings-color;
+    color: $heading-color;
     text-decoration: none;
   }
-}
-
-.footer__heading-brand {
-  color: $brand-color;
 }
 
 .social-media-list {
