@@ -8,10 +8,24 @@
 
 .l-section__content {
   @include grid-column(12);
-  margin-bottom: $spacing-base;
-  margin-top: $spacing-base;
+  padding-bottom: $spacing-base;
+  padding-top: $spacing-base;
 
   @include grid-media($neat-grid--medium) {
     @include grid-column(12);
+  }
+
+  + .l-section__content {
+    @extend %section-border;
+
+    @media screen and (min-width: $grid--medium) {
+      border-top: none !important; // scss-lint:disable ImportantRule
+    }
+  }
+}
+
+.l-section__content--half {
+  @include grid-media($neat-grid--medium) {
+    @include grid-column(6);
   }
 }
