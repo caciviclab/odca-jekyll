@@ -2,12 +2,13 @@ $header-background-color: $color-white;
 
 .header {
   background-color: $header-background-color;
+  border-bottom: 5px $color-gold solid;
   padding: $spacing-base 0;
   position: relative;
 }
 
 
-.site-title {
+.header__title {
   @include heading('h2');
   text-decoration: none;
 
@@ -16,82 +17,10 @@ $header-background-color: $color-white;
   }
 }
 
-.site-title--md {
+.header__title--md {
   display: none;
 
   @media screen and (min-width: $grid--medium) {
     display: initial;
   }
-}
-
-.site-title__brand {
-  color: $brand-color;
-}
-
-.site-nav {
-  background-color: $header-background-color;
-  line-height: 2.5;
-  position: absolute;
-  right: 0;
-  text-align: right;
-  top: 0;
-
-  label[for="site-nav-trigger"] { // scss-lint:disable QualifyingElement
-    display: block;
-    float: right;
-    width: 36px;
-    z-index: 2;
-    cursor: pointer;
-  }
-
-  .site-nav__menu-icon {
-    display: block;
-    float: right;
-    line-height: 3;
-    padding-right: $spacing-base;
-    text-align: center;
-    width: 36px;
-
-    > svg path { // scss-lint:disable SelectorDepth
-      fill: $brand-color;
-    }
-  }
-
-  @media screen and (min-width: $grid--medium) {
-    border: none;
-    float: right;
-    position: initial;
-
-    label[for="site-nav-trigger"] { // scss-lint:disable QualifyingElement
-      display: none;
-    }
-  }
-}
-
-.site-nav__link-item {
-  display: block;
-  padding: ($spacing-base * 0.5) $spacing-base;
-  text-decoration: none;
-
-  @media screen and (min-width: $grid--medium) {
-    display: initial;
-    padding: 0 $spacing-base;
-  }
-}
-
-.site-nav__trigger {
-  display: none;
-
-  ~ .site-nav__items {
-    clear: both;
-    display: none;
-
-    @media screen and (min-width: $grid--medium) {
-      display: block;
-    }
-  }
-}
-
-.site-nav__trigger:checked ~ .site-nav__items {
-  display: block;
 }
