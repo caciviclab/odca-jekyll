@@ -76,5 +76,7 @@ expenditures_by_type:
   'Professional Services (Legal, Accounting)': 3583.75
   T.V. or Cable Airtime and Production Costs: 8000
   'Information Technology Costs (Internet, E-mail)': 400
+ballots:
+- _ballots/oakland/2016-11-08.md
 ---
 Rebecca Kaplan was elected Councilmember-at-Large in 2008 and re-elected in 2012. Before joining the Oakland City Council, she served as an elected Director on the AC Transit Board and worked as housing rights attorney in Oakland. Kaplan holds a Juris Doctorate in Law from Stanford Law School and a Master of Arts in Urban & Environmental Policy from Tufts University. Source: Candidate Statement and campaign website.

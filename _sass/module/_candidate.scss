@@ -1,0 +1,63 @@
+$candidate-photo-width: 10rem;
+
+.candidate__occupation {
+  @include heading('h4');
+  color: $subheading-color;
+  font-style: italic;
+}
+
+.candidate__info-container {
+  margin: ($spacing-base * 2) 0;
+}
+
+.candidate__photo {
+  border-radius: ($candidate-photo-width / 2);
+  vertical-align: top;
+  width: $candidate-photo-width;
+}
+
+.candidate__info {
+  display: inline-block;
+  margin-left: $spacing-base * 2;
+}
+
+.candidate__summary {
+  @include heading('h4');
+  margin: ($spacing-base * 2) 0;
+
+  .money {
+    font-family: $font-family-serif;
+    float: right;
+    text-align: right;
+  }
+}
+
+.candidate__summary--contributions {
+  color: $color-evergreen;
+}
+
+.candidate__summary--expenditures {
+  color: $color-cherry-red;
+}
+
+.candidate__summary--loans {
+  color: $color-navy;
+}
+
+.candidate__summary--balance {
+  border-top: 1px $color-grey-3 solid;
+  color: $color-grey-3;
+}
+
+.candidate__money-heading {
+  color: $color-navy;
+}
+
+.candidate__expenditures-opposing {
+  @include heading('h3');
+  color: $subheading-color;
+
+  .money {
+    float: right;
+  }
+}

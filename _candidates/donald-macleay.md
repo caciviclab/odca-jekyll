@@ -73,6 +73,8 @@ expenditures_by_type:
   'Staff/Spouse Travel, Lodging, and Meals': 320.14
   'Professional Services (Legal, Accounting)': 372.42
   'Information Technology Costs (Internet, E-mail)': 100
+ballots:
+- _ballots/oakland/2016-11-08.md
 ---
 Don Macleay owns and runs East Bay Computer Services, a computer repair business in the Temescal district.  While running for office, Macleay is on leave from People United for a Better Life in Oakland, a youth advocacy organization where he serves as a board member. In 2010, Macleay ran for mayor in Oakland. 
 

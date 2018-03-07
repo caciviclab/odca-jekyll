@@ -64,6 +64,8 @@ expenditures_by_type:
   Candidate Filing/Ballot Fees: 310
   Campaign Literature and Mailings: 1187.01
   'Information Technology Costs (Internet, E-mail)': 177
+ballots:
+- _ballots/oakland/2016-11-08.md
 ---
 Kharyshi Wiginton is the Youth Leadership Coordinator at McClymonds Youth and Family Center has spent a decade doing education-related work in Oakland and currently holds a position at McClymonds High School. Wiginton graduated from the California Institute of Integral Studies in 2009. 
 

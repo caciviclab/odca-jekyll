@@ -4,10 +4,10 @@ $font-size-small: 1.4 !default;
 $title-font-size: 4.6rem !default;
 $h1-font-size: 4rem !default;
 $h2-font-size: 3rem !default;
-$h3-font-size: 2rem !default;
-$h4-font-size: 1.7rem !default;
-$h5-font-size: 1.5rem !default;
-$h6-font-size: 1.3rem !default;
+$h3-font-size: 2.2rem !default;
+$h4-font-size: 1.9rem !default;
+$h5-font-size: 1.7rem !default;
+$h6-font-size: 1.5rem !default;
 
 $base-font-size: $font-size-base * 1rem;
 $small-font-size: $font-size-small * 1rem;
@@ -24,15 +24,33 @@ $heading-font-family: $font-family-serif;
 }
 
 @mixin heading($size) {
-  @include font-family-serif();
   color: $heading-color;
   line-height: $heading-line-height;
-  @if $size == 'h1' { font-size: $h1-font-size; }
-  @if $size == 'h2' { font-size: $h2-font-size; }
-  @if $size == 'h3' { font-size: $h3-font-size; }
-  @if $size == 'h4' { font-size: $h4-font-size; }
-  @if $size == 'h5' { font-size: $h5-font-size; }
-  @if $size == 'h6' { font-size: $h6-font-size; }
+
+  @if $size == 'h1' {
+    @include font-family-serif();
+    font-size: $h1-font-size;
+  }
+  @if $size == 'h2' {
+    @include font-family-serif();
+    font-size: $h2-font-size;
+  }
+  @if $size == 'h3' {
+    @include font-family-serif();
+    font-size: $h3-font-size;
+  }
+  @if $size == 'h4' {
+    font-family: $font-family-sans-serif;
+    font-size: $h4-font-size;
+  }
+  @if $size == 'h5' {
+    font-family: $font-family-sans-serif;
+    font-size: $h5-font-size;
+  }
+  @if $size == 'h6' {
+    font-family: $font-family-sans-serif;
+    font-size: $h6-font-size;
+  }
 }
 
 body {
@@ -80,4 +98,11 @@ h6 {
 
 a {
   color: $link-color;
+}
+
+.subheading {
+  @include font-family-serif;
+  color: $subheading-color;
+  font-size: $h4-font-size;
+  font-style: italic;
 }

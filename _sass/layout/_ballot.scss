@@ -5,18 +5,20 @@
 }
 
 .l-ballot__nav {
-
   @include grid-column(12);
+  border-top: 3px $color-gold solid;
 
   @include grid-media($neat-grid--medium) {
     @include soft-border;
     @include grid-column(4);
     @include grid-shift(-8);
+    border-top: none;
   }
 }
 
 .l-ballot__main {
   @include grid-column(12);
+  padding-bottom: $spacing-base * 2;
 
   @include grid-media($neat-grid--medium) {
     @include grid-column(8);

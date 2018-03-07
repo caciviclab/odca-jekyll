@@ -71,6 +71,8 @@ expenditures_by_type:
   Campaign Paraphernalia/Misc.: 3884.37
   Campaign Literature and Mailings: 33656.76
   'Information Technology Costs (Internet, E-mail)': 3150
+ballots:
+- _ballots/oakland/2016-11-08.md
 ---
 Viola Gonzales was the Chief Executive Officer of AnewAmerica Community Corporation, a non-profit that helps immigrants and refugees start small and micro-businesses. Gonzales has been Executive Director for a non-profit residential program for developmentally disabled kids based in Oakland for the past eight years. Her volunteer service has included corporate advisory, nonprofit and civic boards. In 2002, Gonzales was appointed to the Oakland Board of Education by then-Mayor Jerry Brown. Prior to this appointment, she served on the Oakland Planning Commission. 
 

@@ -77,6 +77,8 @@ expenditures_by_type:
   Campaign Paraphernalia/Misc.: 2443.7
   Candidate Filing/Ballot Fees: 250
   'Professional Services (Legal, Accounting)': 4542.81
+ballots:
+- _ballots/oakland/2016-11-08.md
 ---
 James Harris is the current Board of Education President, a business owner, parent, former teacher, and East Oakland native. Harris serves on the Aim High East Bay Leadership Council. He is a founding board member of Great Oakland Public Schools and a current board member at Youth Uprising. Harris’ career in education began at 16 as a teaching assistant at the Aim High Summer Program, which prepares children from low-income communities for success in high school and life. 
 

@@ -50,6 +50,8 @@ expenditures_by_type:
   Office Expenses: 145.97
   Campaign Paraphernalia/Misc.: 310.03
   Candidate Filing/Ballot Fees: 190
+ballots:
+- _ballots/oakland/2016-11-08.md
 ---
 Nancy Sidebotham has lived and worked in Oakland since 1964. She served for 15 years as Chairperson of the Neighborhood Crime Prevention Committee (NCPC) for beat 29X, on the Community Policing Advisory Board (CPAB), and on Neighborhood Watch. Sidebotham graduated from Merritt College in 1968 and California State University Hayward in 1970. 
 

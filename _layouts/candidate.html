@@ -2,48 +2,74 @@
 layout: default
 ---
 {% assign candidate = page %}
+{% assign ballot_path = candidate.ballots | first %}
+{% assign ballot = site.ballots | where: "path", ballot_path | first %}
+{% assign locality = site.localities | where: "locality_id", ballot.locality | first %}
 
 {% capture body %}
-  <header>
-    <h2>{{ candidate.name }}</h2>
+<div class="candidate">
+  <header class="candidate__header grid">
+    <div class="grid-col-12">
+      <h2>{{ candidate.name }}</h2>
+    </div>
   </header>
-  <div class="grid-col-12">
+  <div class="candidate__main">
     <section class="l-section">
-      <div>
-	<img style="width: 10rem; border-radius: 5rem;" src="{{ candidate.photo_url | default: 'https://s3-us-west-1.amazonaws.com/odca-candidate-photos/no-image.png' }}" alt="{{ candidate.name }}" />
+      <div class="l-section__content">
+        <div class="candidate__info-container">
+          <img class="candidate__photo" src="{{ candidate.photo_url | default: 'https://s3-us-west-1.amazonaws.com/odca-candidate-photos/no-image.png' }}" alt="{{ candidate.name }}" />
+          <div class="candidate__info">
+            <div class="candidate__occupation">{{ candidate.occupation }}</div>
+            <div><a href="{{ candidate.website_url }}">{{ candidate.website_url }}</a></div>
+            <div><a href="https://twitter.com/{{ candidate.twitter_url }}">{{ candidate.twitter_url }}</a></div>
+          </div>
+        </div>
       </div>
-      <div><a href="{{ candidate.website_url }}">{{ candidate.website_url }}</a></div>
-      <div><a href="https://twitter.com/{{ candidate.twitter_url }}">{{ candidate.twitter_url }}</a></div>
-      <div>{{ candidate.content }}</div>
     </section>
     <section class="l-section">
-      <p>Contributions: {{ candidate.total_contributions | times: 100 | money }}</p>
-      <p>Expenditures: {{ candidate.total_expenditures | times: 100 | money }}</p>
-      <p>Loans: {{ candidate.total_loans_received | times: 100 |  money }}</p>
-      <p>Current balance: {{ candidate.total_contributions | minus: candidate.total_expenditures | minus: candidate.total_loans_received | times: 100 | money }}</p>
+      <div class="l-section__content">
+        {{ candidate.content }}
+      </div>
     </section>
     <section class="l-section">
-      <p>Expenditures opposing candidate: {{ candidate.opposing_money.opposing_expenditures | times: 100 | money }}</p>
+      <div class="l-section__content">
+        <div class="candidate__summary candidate__summary--contributions">Contributions: <span class="money">{{ candidate.total_contributions | times: 100 | money }}</span></div>
+        <div class="candidate__summary candidate__summary--expenditures">Expenditures: <span class="money">{{ candidate.total_expenditures | times: 100 | money }}</span></div>
+        {% if candidate.total_loans_received > 0 %}
+        <div class="candidate__summary candidate__summary--loans">Loans: <span class="money">{{ candidate.total_loans_received | times: 100 |  money }}</span></div>
+        {% endif %}
+        <div class="candidate__summary candidate__summary--balance">Current balance: <span class="money">{{ candidate.total_contributions | minus: candidate.total_expenditures | minus: candidate.total_loans_received | times: 100 | money }}</span></div>
+      </div>
     </section>
     <section class="l-section">
-      <div class="section-subheading">Money coming in</div>
-      <h2>Contributions</h2>
-      {% for contribution_type in candidate.supporting_money.contributions_by_type %}
-      <div>{{ contribution_type[0] }}</div>
-      <div>{{ contribution_type[1] | times: 100 | money }}</div>
-      {% endfor %}
-      {% if candidate.filer_id and candidate.filer_id != "" %}
-        <p><a href="{{ site.baseurl }}/committee/{{ candidate.filer_id }}/">See all contributions</a></p>
-      {% endif %}
+      <div class="l-section__content">
+        <h2 class="candidate__expenditures-opposing">Expenditures opposing candidate <span class="money">{{ candidate.opposing_money.opposing_expenditures | times: 100 | money }}</span></h2>
+      </div>
     </section>
     <section class="l-section">
-      <div class="section-subheading">Money going out</div>
-      <h2>Expenditures</h2>
-      {% for expenditure_type in candidate.supporting_money.expenditures_by_type %}
-      <div>{{ expenditure_type[0] }}</div>
-      <div>{{ expenditure_type[1] | times: 100 | money }}</div>
-      {% endfor %}
+      <div class="l-section__content">
+        <div class="subheading">Money coming in</div>
+        <h2 class="candidate__money-heading">Contributions</h2>
+        {% for contribution_type in candidate.supporting_money.contributions_by_type %}
+        <div>{{ contribution_type[0] }}</div>
+        <div>{{ contribution_type[1] | times: 100 | money }}</div>
+        {% endfor %}
+        {% if candidate.filer_id and candidate.filer_id != "" %}
+          <p><a href="{{ site.baseurl }}/committee/{{ candidate.filer_id }}/">See all contributions</a></p>
+        {% endif %}
+      </div>
+    </section>
+    <section class="l-section">
+      <div class="l-section__content">
+        <div class="subheading">Money going out</div>
+        <h2 class="candidate__money-heading">Expenditures</h2>
+        {% for expenditure_type in candidate.supporting_money.expenditures_by_type %}
+        <div>{{ expenditure_type[0] }}</div>
+        <div>{{ expenditure_type[1] | times: 100 | money }}</div>
+        {% endfor %}
+      </div>
     </section>
   </div>
+</div>
 {% endcapture %}
-{% include ballot-layout.html content=body %}
+{% include ballot-layout.html content=body locality=locality ballot=ballot %}

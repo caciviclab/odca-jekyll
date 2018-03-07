@@ -1,3 +1,17 @@
-.l-section + .l-section {
-  @extend %section-border;
+.l-section {
+  @include grid-container;
+
+  + .l-section {
+    @extend %section-border;
+  }
+}
+
+.l-section__content {
+  @include grid-column(12);
+  margin-bottom: $spacing-base;
+  margin-top: $spacing-base;
+
+  @include grid-media($neat-grid--medium) {
+    @include grid-column(12);
+  }
 }

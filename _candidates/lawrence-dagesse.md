@@ -10,4 +10,6 @@ committee_name: ""
 occupation: ""
 party_affiliation: ""
 filer_id: ""
+ballots:
+- _ballots/san-francisco/2018-06-05.md
 ---

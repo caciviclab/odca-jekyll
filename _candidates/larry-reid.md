@@ -75,6 +75,8 @@ expenditures_by_type:
   'Staff/Spouse Travel, Lodging, and Meals': 202.76
   'Professional Services (Legal, Accounting)': 10248.12
   'Information Technology Costs (Internet, E-mail)': 2236.58
+ballots:
+- _ballots/oakland/2016-11-08.md
 ---
 Larry Reid has been a Councilmember for District 7 since 1997. Reid is a member of the Public Works and Rules and Legislation Committees for the City of Oakland and is Chairman of the Community and Economic Development Committee. Reid served as Chief of Staff for former Oakland City Councilmember Aleta Cannon and former Mayor and Assemblymember Elihu Harris. He was born and raised in Cincinnati, Ohio and attended the University of Cincinnati. 
 

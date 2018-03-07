@@ -70,6 +70,8 @@ expenditures_by_type:
   Campaign Paraphernalia/Misc.: 3755.99
   Candidate Filing/Ballot Fees: 300
   Campaign Literature and Mailings: 15150
+ballots:
+- _ballots/oakland/2016-11-08.md
 ---
 Jody London was elected to the Oakland School Board in 2009 to represent District 1. As a parent of two students who have attended Oakland Unified, London began working with the OUSD as a parent volunteer. Before being elected to the board, she chaired the Measure B bond campaign in 2006, served on the bond oversight committee, and led her neighborhood school community in designing and building a new school. London holds a Bachelor of Arts in English, with high honors, from UC Berkeley, and a Master's degreee in Public Administration from Columbia University. 
 

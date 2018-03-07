@@ -45,6 +45,8 @@ total_expenditures: null
 total_loans_received: null
 contributions_by_type: {}
 expenditures_by_type: {}
+ballots:
+- _ballots/oakland/2016-11-08.md
 ---
 Lucky Narain is currently an Associate Regional Public Affairs Director for the United States Department of Agriculture (USDA). He is a Oakland resident and father. For almost three years, Narain taught middle school in the Dominican Republic with the Peace Corps as a volunteer in 2001. He holds a Master’s Degree in Public Policy from Carnegie Mellon University and a law degree from Fordham Law School. Narain has served as a lawyer in the U.S. Army Reserve since 2010. 
 

@@ -78,6 +78,8 @@ expenditures_by_type:
   'Candidate Travel, Lodging, and Meals': 91.39
   'Professional Services (Legal, Accounting)': 12410.7
   'Information Technology Costs (Internet, E-mail)': 3343.09
+ballots:
+- _ballots/oakland/2016-11-08.md
 ---
 Lynnette McElhaney currently serves as an Oakland City Council member representing District 3 and has advocated for the betterment of Oakland in terms of enhancing jobs, public safety, education and the economy. She earned a degree from UC Berkeley and moved to West Oakland after graduating college. 
 

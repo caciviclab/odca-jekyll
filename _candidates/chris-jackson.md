@@ -61,6 +61,8 @@ expenditures_by_type:
   Campaign Paraphernalia/Misc.: 1167.25
   Campaign Literature and Mailings: 1054.74
   'Professional Services (Legal, Accounting)': 2206.32
+ballots:
+- _ballots/oakland/2016-11-08.md
 ---
 Chris Jackson is a social worker who works with the formerly incarcerated on parole or probation. He is a father of a kindergartener who is going into an OUSD school. 
 

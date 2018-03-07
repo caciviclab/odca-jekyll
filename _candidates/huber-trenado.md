@@ -77,6 +77,8 @@ expenditures_by_type:
   Campaign Literature and Mailings: 10825.06
   'Professional Services (Legal, Accounting)': 2500
   'Information Technology Costs (Internet, E-mail)': 833.57
+ballots:
+- _ballots/oakland/2016-11-08.md
 ---
 Huber Trenado is a teacher, community leader, and Oakland native. Trenado has helped establish an Aim High program site to increase the quality of academic programs offered to students during the summer and implement common core standards in Oakland United School District classrooms. Trenado graduated from UC Berkeley. 
 
