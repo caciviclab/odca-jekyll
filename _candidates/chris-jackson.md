@@ -26,41 +26,44 @@ occupation: Social Worker
 party_affiliation: null
 filer_id: 1384926
 supporting_money:
-  contributions_received: 13562
-  total_contributions: 13562
-  total_expenditures: 32760.97
+  contributions_received: 14562
+  total_contributions: 14562
+  total_expenditures: 35235.23
   total_loans_received: 0
   contributions_by_type:
-    Committee: 4900
+    Committee: 5900
     Individual: 5900
     Unitemized: 2762
+  contributions_by_origin:
+    Within Oakland: 6350
+    Within California: 5450
   expenditures_by_type:
     Not Stated: 2033
     Office Expenses: 1900.34
-    Campaign Consultants: 3950
+    Campaign Consultants: 5150
     Campaign Paraphernalia/Misc.: 1167.25
     Campaign Literature and Mailings: 1054.74
-    'Professional Services (Legal, Accounting)': 2206.32
+    'Professional Services (Legal, Accounting)': 3020.47
   supporting_by_type: {}
 opposing_money:
   opposing_expenditures: 6988
   opposing_by_type:
     Campaign Literature and Mailings: 6988
-contributions_received: 13562
-total_contributions: 13562
-total_expenditures: 32760.97
+contributions_received: 14562
+total_contributions: 14562
+total_expenditures: 35235.23
 total_loans_received: 0
 contributions_by_type:
-  Committee: 4900
+  Committee: 5900
   Individual: 5900
   Unitemized: 2762
 expenditures_by_type:
   Not Stated: 2033
   Office Expenses: 1900.34
-  Campaign Consultants: 3950
+  Campaign Consultants: 5150
   Campaign Paraphernalia/Misc.: 1167.25
   Campaign Literature and Mailings: 1054.74
-  'Professional Services (Legal, Accounting)': 2206.32
+  'Professional Services (Legal, Accounting)': 3020.47
 ballots:
 - _ballots/oakland/2016-11-08.md
 ---

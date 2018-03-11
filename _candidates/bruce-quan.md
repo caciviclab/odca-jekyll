@@ -45,6 +45,10 @@ supporting_money:
     Unitemized: 1706
     Self Funding: 39366.14
     Other (includes Businesses): 2650
+  contributions_by_origin:
+    Out of State: 2650
+    Within Oakland: 51816.14
+    Within California: 19451
   expenditures_by_type:
     Office Expenses: 7808.74
     Campaign Consultants: 52134.75

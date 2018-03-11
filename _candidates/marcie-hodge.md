@@ -28,12 +28,15 @@ occupation: Non-profit Executive Director
 party_affiliation: Democrat
 filer_id: 1388731
 supporting_money:
-  contributions_received: 20239
-  total_contributions: 20239
+  contributions_received: 20349
+  total_contributions: 20349
   total_expenditures: 16624.17
   total_loans_received: 19857
   contributions_by_type:
-    Unitemized: 382
+    Unitemized: 442
+    Self Funding: 50
+  contributions_by_origin:
+    Within Oakland: 50
   expenditures_by_type:
     Not Stated: 435.74
     Campaign Paraphernalia/Misc.: 13557.03
@@ -42,12 +45,13 @@ supporting_money:
 opposing_money:
   opposing_expenditures: null
   opposing_by_type: {}
-contributions_received: 20239
-total_contributions: 20239
+contributions_received: 20349
+total_contributions: 20349
 total_expenditures: 16624.17
 total_loans_received: 19857
 contributions_by_type:
-  Unitemized: 382
+  Unitemized: 442
+  Self Funding: 50
 expenditures_by_type:
   Not Stated: 435.74
   Campaign Paraphernalia/Misc.: 13557.03

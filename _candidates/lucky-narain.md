@@ -34,6 +34,7 @@ supporting_money:
   total_expenditures: null
   total_loans_received: null
   contributions_by_type: {}
+  contributions_by_origin: {}
   expenditures_by_type: {}
   supporting_by_type: {}
 opposing_money:

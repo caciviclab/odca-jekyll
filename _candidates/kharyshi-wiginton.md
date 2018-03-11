@@ -30,40 +30,48 @@ filer_id: 1386929
 supporting_money:
   contributions_received: 5798
   total_contributions: 5798
-  total_expenditures: 3052.34
+  total_expenditures: 4886.23
   total_loans_received: 0
   contributions_by_type:
     Individual: 2590
     Unitemized: 1093
     Other (includes Businesses): 2115
+  contributions_by_origin:
+    Out of State: 1905
+    Within Oakland: 2150
+    Within California: 650
   expenditures_by_type:
-    Not Stated: 60
+    Not Stated: 180
     Fundraising Events: 128.05
     Meetings and Appearances: 114.67
+    Campaign Workers' Salaries: 150
     Campaign Paraphernalia/Misc.: 870.17
-    Candidate Filing/Ballot Fees: 310
+    Candidate Filing/Ballot Fees: 1140
     Campaign Literature and Mailings: 1187.01
-    'Information Technology Costs (Internet, E-mail)': 177
+    'Professional Services (Legal, Accounting)': 500
+    'Information Technology Costs (Internet, E-mail)': 381.89
   supporting_by_type: {}
 opposing_money:
   opposing_expenditures: null
   opposing_by_type: {}
 contributions_received: 5798
 total_contributions: 5798
-total_expenditures: 3052.34
+total_expenditures: 4886.23
 total_loans_received: 0
 contributions_by_type:
   Individual: 2590
   Unitemized: 1093
   Other (includes Businesses): 2115
 expenditures_by_type:
-  Not Stated: 60
+  Not Stated: 180
   Fundraising Events: 128.05
   Meetings and Appearances: 114.67
+  Campaign Workers' Salaries: 150
   Campaign Paraphernalia/Misc.: 870.17
-  Candidate Filing/Ballot Fees: 310
+  Candidate Filing/Ballot Fees: 1140
   Campaign Literature and Mailings: 1187.01
-  'Information Technology Costs (Internet, E-mail)': 177
+  'Professional Services (Legal, Accounting)': 500
+  'Information Technology Costs (Internet, E-mail)': 381.89
 ballots:
 - _ballots/oakland/2016-11-08.md
 ---

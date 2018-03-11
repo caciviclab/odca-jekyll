@@ -31,30 +31,35 @@ occupation: 'Incumbent, City Council member'
 party_affiliation: Democrat
 filer_id: 1382408
 supporting_money:
-  contributions_received: 109521.66
-  total_contributions: 109521.66
-  total_expenditures: 131255.42
+  contributions_received: 111576.66
+  total_contributions: 111576.66
+  total_expenditures: 147916.91
   total_loans_received: 0
   contributions_by_type:
-    Committee: 10650
-    Individual: 77692
-    Unitemized: 9622.66
+    Committee: 11350
+    Individual: 78927
+    Unitemized: 9742.66
     Self Funding: 200
     Other (includes Businesses): 11357
+  contributions_by_origin:
+    Out of State: 4145
+    Within Oakland: 45987
+    Within California: 51702
   expenditures_by_type:
-    Print Ads: 300
-    Not Stated: 1388.85
-    Civic Donations: 1000
+    Print Ads: 655
+    Not Stated: 1816.93
+    Contribution: 820
+    Civic Donations: 1650
     Fundraising Events: 12500.23
     Campaign Consultants: 37769.07
     Meetings and Appearances: 200
     Campaign Workers' Salaries: 3500
-    Campaign Paraphernalia/Misc.: 21458.91
+    Campaign Paraphernalia/Misc.: 22732.32
     Campaign Literature and Mailings: 36770.03
     'Professional Services (Legal, Accounting)': 10745
     'Information Technology Costs (Internet, E-mail)': 4226.01
-    Independent Expenditure Supporting/Opposing Others: 300
-    Transfer Between Committees of the Same Candidate/sponsor: 600
+    Independent Expenditure Supporting/Opposing Others: 400
+    Transfer Between Committees of the Same Candidate/sponsor: 13500
   supporting_by_type: {}
 opposing_money:
   opposing_expenditures: 12417
@@ -62,30 +67,31 @@ opposing_money:
     Design of mailer in opposition of Dan Kalb.: 1650
     Printing of mailer in opposition to Dan Kalb: 2917
     Mailing and Postage in opposition to Dan Kalb: 7850
-contributions_received: 109521.66
-total_contributions: 109521.66
-total_expenditures: 131255.42
+contributions_received: 111576.66
+total_contributions: 111576.66
+total_expenditures: 147916.91
 total_loans_received: 0
 contributions_by_type:
-  Committee: 10650
-  Individual: 77692
-  Unitemized: 9622.66
+  Committee: 11350
+  Individual: 78927
+  Unitemized: 9742.66
   Self Funding: 200
   Other (includes Businesses): 11357
 expenditures_by_type:
-  Print Ads: 300
-  Not Stated: 1388.85
-  Civic Donations: 1000
+  Print Ads: 655
+  Not Stated: 1816.93
+  Contribution: 820
+  Civic Donations: 1650
   Fundraising Events: 12500.23
   Campaign Consultants: 37769.07
   Meetings and Appearances: 200
   Campaign Workers' Salaries: 3500
-  Campaign Paraphernalia/Misc.: 21458.91
+  Campaign Paraphernalia/Misc.: 22732.32
   Campaign Literature and Mailings: 36770.03
   'Professional Services (Legal, Accounting)': 10745
   'Information Technology Costs (Internet, E-mail)': 4226.01
-  Independent Expenditure Supporting/Opposing Others: 300
-  Transfer Between Committees of the Same Candidate/sponsor: 600
+  Independent Expenditure Supporting/Opposing Others: 400
+  Transfer Between Committees of the Same Candidate/sponsor: 13500
 ballots:
 - _ballots/oakland/2016-11-08.md
 ---

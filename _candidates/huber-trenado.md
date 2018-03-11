@@ -28,39 +28,44 @@ filer_id: 1386749
 supporting_money:
   contributions_received: 21685.48
   total_contributions: 21685.48
-  total_expenditures: 23067.58
+  total_expenditures: 23562.66
   total_loans_received: 0
   contributions_by_type:
     Individual: 16163.31
     Unitemized: 1798
     Self Funding: 700
     Other (includes Businesses): 3000
+  contributions_by_origin:
+    Out of State: 2750
+    Within Oakland: 9550
+    Within California: 7563.31
   expenditures_by_type:
     Office Expenses: 123.83
     Fundraising Events: 126.9
     Voter Registration: 1600
     Campaign Consultants: 1500
-    Campaign Paraphernalia/Misc.: 4257.86
+    Campaign Paraphernalia/Misc.: 4633.94
     Candidate Filing/Ballot Fees: 300
     Campaign Literature and Mailings: 10825.06
     'Professional Services (Legal, Accounting)': 2500
     'Information Technology Costs (Internet, E-mail)': 833.57
   supporting_by_type:
-    Print Ads: 48
     CANVASSING: 5000
-    Phone Banks: 343
+    STAFF TIME: 18880
+    Phone Banks: 360
     ESTIMATE OF LIT: 8981
-    ESTIMATE OF STAFF TIME: 20624
+    CMP; SEE SCHEDULE G: 2702
+    ESTIMATE OF STAFF TIME: 7100
     Campaign Paraphernalia/Misc.: 2702
-    Campaign Literature and Mailings: 35454
-    'Information Technology Costs (Internet, E-mail)': 5675
-    ESTIMATE OF STAFF TIME COVERING 11/1/16 THROUGH 11/8/16: 9513
+    Campaign Literature and Mailings: 41137
+    STAFF TIME COVERING 11/1/16 THROUGH 11/8/16: 8427
+    'Information Technology Costs (Internet, E-mail)': 6050
 opposing_money:
   opposing_expenditures: null
   opposing_by_type: {}
 contributions_received: 21685.48
 total_contributions: 21685.48
-total_expenditures: 23067.58
+total_expenditures: 23562.66
 total_loans_received: 0
 contributions_by_type:
   Individual: 16163.31
@@ -72,7 +77,7 @@ expenditures_by_type:
   Fundraising Events: 126.9
   Voter Registration: 1600
   Campaign Consultants: 1500
-  Campaign Paraphernalia/Misc.: 4257.86
+  Campaign Paraphernalia/Misc.: 4633.94
   Candidate Filing/Ballot Fees: 300
   Campaign Literature and Mailings: 10825.06
   'Professional Services (Legal, Accounting)': 2500

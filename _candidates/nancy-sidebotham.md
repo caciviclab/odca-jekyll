@@ -32,6 +32,7 @@ supporting_money:
   total_loans_received: 0
   contributions_by_type:
     Unitemized: 396
+  contributions_by_origin: {}
   expenditures_by_type:
     Office Expenses: 145.97
     Campaign Paraphernalia/Misc.: 310.03

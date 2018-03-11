@@ -28,19 +28,23 @@ occupation: East Oakland Community Organizer
 party_affiliation: null
 filer_id: 1386932
 supporting_money:
-  contributions_received: 26966
-  total_contributions: 26966
-  total_expenditures: 31637.46
-  total_loans_received: 5000
+  contributions_received: 27941
+  total_contributions: 27941
+  total_expenditures: 35137.46
+  total_loans_received: 6500
   contributions_by_type:
     Committee: 1700
-    Individual: 17200
-    Unitemized: 3066
+    Individual: 16550
+    Unitemized: 3191
+  contributions_by_origin:
+    Out of State: 300
+    Within Oakland: 12450
+    Within California: 5500
   expenditures_by_type:
     Not Stated: 700
     Phone Banks: 1659.63
     Office Expenses: 2307.9
-    Campaign Consultants: 3000
+    Campaign Consultants: 6500
     Campaign Paraphernalia/Misc.: 2680.47
     Campaign Literature and Mailings: 7287.36
     'Postage, Delivery and Messenger Services': 3818.95
@@ -49,19 +53,19 @@ supporting_money:
 opposing_money:
   opposing_expenditures: null
   opposing_by_type: {}
-contributions_received: 26966
-total_contributions: 26966
-total_expenditures: 31637.46
-total_loans_received: 5000
+contributions_received: 27941
+total_contributions: 27941
+total_expenditures: 35137.46
+total_loans_received: 6500
 contributions_by_type:
   Committee: 1700
-  Individual: 17200
-  Unitemized: 3066
+  Individual: 16550
+  Unitemized: 3191
 expenditures_by_type:
   Not Stated: 700
   Phone Banks: 1659.63
   Office Expenses: 2307.9
-  Campaign Consultants: 3000
+  Campaign Consultants: 6500
   Campaign Paraphernalia/Misc.: 2680.47
   Campaign Literature and Mailings: 7287.36
   'Postage, Delivery and Messenger Services': 3818.95

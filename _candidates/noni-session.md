@@ -38,6 +38,10 @@ supporting_money:
     Individual: 7110
     Unitemized: 1424
     Other (includes Businesses): 2100
+  contributions_by_origin:
+    Out of State: 850
+    Within Oakland: 6500
+    Within California: 1860
   expenditures_by_type:
     Office Expenses: 359.71
     Fundraising Events: 381.2

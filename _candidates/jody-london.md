@@ -31,13 +31,17 @@ filer_id: 1303019
 supporting_money:
   contributions_received: 22344
   total_contributions: 22344
-  total_expenditures: 23781
+  total_expenditures: 23891
   total_loans_received: 0
   contributions_by_type:
     Committee: 500
     Individual: 15485
     Unitemized: 3759
     Other (includes Businesses): 2600
+  contributions_by_origin:
+    Out of State: 450
+    Within Oakland: 10975
+    Within California: 7160
   expenditures_by_type:
     Office Expenses: 248.2
     Fundraising Events: 2338.58
@@ -47,7 +51,7 @@ supporting_money:
     Candidate Filing/Ballot Fees: 300
     Campaign Literature and Mailings: 15150
   supporting_by_type:
-    ESTIMATE OF STAFF TIME: 1941
+    STAFF TIME: 1977
     Campaign Literature and Mailings: 48
     ESTIMATE OF STAFF TIME COVERING 11/1/16 THROUGH 11/8/16: 1905
 opposing_money:
@@ -55,7 +59,7 @@ opposing_money:
   opposing_by_type: {}
 contributions_received: 22344
 total_contributions: 22344
-total_expenditures: 23781
+total_expenditures: 23891
 total_loans_received: 0
 contributions_by_type:
   Committee: 500
