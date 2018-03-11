@@ -106,7 +106,7 @@ gulp.task('pull:contributions', function () {
 gulp.task('pull:referendums', function () {
   return gulp.src(dataDir('referendum', '*', 'index.json'))
     .pipe(extract('summary'))
-    .pipe(slugifyName((data) => `oakland/2016-11-08/${slugify(data.number)}.json`))
+    .pipe(slugifyName((data) => `oakland/2016-11-08/${slugify(data.number || data.title)}.json`))
     .pipe(jsonToYaml({ safe: true }))
     .pipe(header('---\n'))
     .pipe(footer('---\n'))
@@ -117,7 +117,7 @@ gulp.task('pull:referendums', function () {
 
 gulp.task('pull:referendums_opposing', function () {
   return gulp.src(dataDir('referendum', '*', 'opposing', 'index.json'))
-    .pipe(slugifyName((data) => `oakland/2016-11-08/${slugify(data.number)}.json`))
+    .pipe(slugifyName((data) => `oakland/2016-11-08/${slugify(data.number || data.title)}.json`))
     .pipe(jsonToYaml({ safe: true }))
     .pipe(header('---\n'))
     .pipe(footer('---\n'))
@@ -127,7 +127,7 @@ gulp.task('pull:referendums_opposing', function () {
 
 gulp.task('pull:referendums_supporting', function () {
   return gulp.src(dataDir('referendum', '*', 'supporting', 'index.json'))
-    .pipe(slugifyName((data) => `oakland/2016-11-08/${slugify(data.number)}.json`))
+    .pipe(slugifyName((data) => `oakland/2016-11-08/${slugify(data.number || data.title)}.json`))
     .pipe(jsonToYaml({ safe: true }))
     .pipe(header('---\n'))
     .pipe(footer('---\n'))
