@@ -38,15 +38,20 @@ occupation: VP of Finance and Operations at Nonprofit Organization
 party_affiliation: null
 filer_id: 1388133
 supporting_money:
-  contributions_received: 8486
-  total_contributions: 8486
-  total_expenditures: 3617.36
+  contributions_received: 8546
+  total_contributions: 8546
+  total_expenditures: 8554.69
   total_loans_received: 0
   contributions_by_type:
     Individual: 6950
-    Unitemized: 836
+    Unitemized: 896
     Self Funding: 700
+  contributions_by_origin:
+    Out of State: 1500
+    Within Oakland: 1850
+    Within California: 4300
   expenditures_by_type:
+    Civic Donations: 4907.33
     Office Expenses: 506.71
     Campaign Consultants: 2500
     'Information Technology Costs (Internet, E-mail)': 265
@@ -54,15 +59,16 @@ supporting_money:
 opposing_money:
   opposing_expenditures: null
   opposing_by_type: {}
-contributions_received: 8486
-total_contributions: 8486
-total_expenditures: 3617.36
+contributions_received: 8546
+total_contributions: 8546
+total_expenditures: 8554.69
 total_loans_received: 0
 contributions_by_type:
   Individual: 6950
-  Unitemized: 836
+  Unitemized: 896
   Self Funding: 700
 expenditures_by_type:
+  Civic Donations: 4907.33
   Office Expenses: 506.71
   Campaign Consultants: 2500
   'Information Technology Costs (Internet, E-mail)': 265

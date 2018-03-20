@@ -30,13 +30,17 @@ filer_id: 1387803
 supporting_money:
   contributions_received: 27586
   total_contributions: 27586
-  total_expenditures: 26850.43
+  total_expenditures: 26950.43
   total_loans_received: 0
   contributions_by_type:
     Committee: 5700
     Individual: 21536
     Unitemized: 50
     Self Funding: 300
+  contributions_by_origin:
+    Out of State: 700
+    Within Oakland: 15535
+    Within California: 11301
   expenditures_by_type:
     Print Ads: 13871.57
     Phone Banks: 79
@@ -47,21 +51,23 @@ supporting_money:
     Candidate Filing/Ballot Fees: 250
     'Professional Services (Legal, Accounting)': 4542.81
   supporting_by_type:
-    Print Ads: 2048
+    Print Ads: 2000
     CANVASSING: 5000
-    Phone Banks: 598
+    STAFF TIME: 27904
+    Phone Banks: 759
     ESTIMATE OF LIT: 7915
-    ESTIMATE OF STAFF TIME: 31089
+    CMP; SEE SCHEDULE G: 2702
+    ESTIMATE OF STAFF TIME: 11278
     Campaign Paraphernalia/Misc.: 2702
-    Campaign Literature and Mailings: 44503
-    'Information Technology Costs (Internet, E-mail)': 8350
-    ESTIMATE OF STAFF TIME COVERING 11/1/16 THROUGH 11/8/16: 12592
+    Campaign Literature and Mailings: 79635
+    STAFF TIME COVERING 11/1/16 THROUGH 11/8/16: 10414
+    'Information Technology Costs (Internet, E-mail)': 8725
 opposing_money:
   opposing_expenditures: null
   opposing_by_type: {}
 contributions_received: 27586
 total_contributions: 27586
-total_expenditures: 26850.43
+total_expenditures: 26950.43
 total_loans_received: 0
 contributions_by_type:
   Committee: 5700

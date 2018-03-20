@@ -26,58 +26,62 @@ occupation: 'Incumbent, City Council member'
 party_affiliation: Democrat
 filer_id: 1375179
 supporting_money:
-  contributions_received: 58231.08
-  total_contributions: 58231.08
-  total_expenditures: 118301.38
+  contributions_received: 126756.69
+  total_contributions: 126756.69
+  total_expenditures: 134875.99
   total_loans_received: 0
   contributions_by_type:
-    Committee: 10300
-    Individual: 33933.16
-    Unitemized: 2797.92
-    Other (includes Businesses): 11200
+    Committee: 15850
+    Individual: 80872.77
+    Unitemized: 3233.92
+    Other (includes Businesses): 26800
+  contributions_by_origin:
+    Out of State: 2000
+    Within Oakland: 51461.79
+    Within California: 70060.98
   expenditures_by_type:
     Print Ads: 1000
     Not Stated: 17406.96
     Contribution: 750
-    Civic Donations: 4600
-    Office Expenses: 7051.9
+    Civic Donations: 5300
+    Office Expenses: 7348.9
     Fundraising Events: 920.48
-    Campaign Consultants: 25000
-    Meetings and Appearances: 1896.19
+    Campaign Consultants: 29000
+    Meetings and Appearances: 2016.19
     Campaign Paraphernalia/Misc.: 3891.01
     Candidate Filing/Ballot Fees: 250
     Campaign Literature and Mailings: 37361.74
     'Candidate Travel, Lodging, and Meals': 91.39
-    'Professional Services (Legal, Accounting)': 12410.7
-    'Information Technology Costs (Internet, E-mail)': 3343.09
+    'Professional Services (Legal, Accounting)': 21335.45
+    'Information Technology Costs (Internet, E-mail)': 4228.5
   supporting_by_type: {}
 opposing_money:
   opposing_expenditures: null
   opposing_by_type: {}
-contributions_received: 58231.08
-total_contributions: 58231.08
-total_expenditures: 118301.38
+contributions_received: 126756.69
+total_contributions: 126756.69
+total_expenditures: 134875.99
 total_loans_received: 0
 contributions_by_type:
-  Committee: 10300
-  Individual: 33933.16
-  Unitemized: 2797.92
-  Other (includes Businesses): 11200
+  Committee: 15850
+  Individual: 80872.77
+  Unitemized: 3233.92
+  Other (includes Businesses): 26800
 expenditures_by_type:
   Print Ads: 1000
   Not Stated: 17406.96
   Contribution: 750
-  Civic Donations: 4600
-  Office Expenses: 7051.9
+  Civic Donations: 5300
+  Office Expenses: 7348.9
   Fundraising Events: 920.48
-  Campaign Consultants: 25000
-  Meetings and Appearances: 1896.19
+  Campaign Consultants: 29000
+  Meetings and Appearances: 2016.19
   Campaign Paraphernalia/Misc.: 3891.01
   Candidate Filing/Ballot Fees: 250
   Campaign Literature and Mailings: 37361.74
   'Candidate Travel, Lodging, and Meals': 91.39
-  'Professional Services (Legal, Accounting)': 12410.7
-  'Information Technology Costs (Internet, E-mail)': 3343.09
+  'Professional Services (Legal, Accounting)': 21335.45
+  'Information Technology Costs (Internet, E-mail)': 4228.5
 ballots:
 - _ballots/oakland/2016-11-08.md
 ---

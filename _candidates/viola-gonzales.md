@@ -33,43 +33,49 @@ occupation: Nonprofit Executive
 party_affiliation: Democrat
 filer_id: 1387192
 supporting_money:
-  contributions_received: 84742.41
-  total_contributions: 84742.41
-  total_expenditures: 60442.58
-  total_loans_received: 15000
+  contributions_received: 69742.41
+  total_contributions: 69742.41
+  total_expenditures: 69842.41
+  total_loans_received: 6899.83
   contributions_by_type:
     Committee: 4700
     Individual: 43517.84
     Unitemized: 2524.57
-    Self Funding: 15700
+    Self Funding: 8800.17
     Other (includes Businesses): 3300
+  contributions_by_origin:
+    Out of State: 2422.35
+    Within Oakland: 32801.33
+    Within California: 25094.33
   expenditures_by_type:
-    Not Stated: 455.45
+    Not Stated: 5350.76
     Campaign Consultants: 18667.55
     Meetings and Appearances: 529
     Campaign Paraphernalia/Misc.: 3884.37
     Campaign Literature and Mailings: 33656.76
+    'Professional Services (Legal, Accounting)': 4504.52
     'Information Technology Costs (Internet, E-mail)': 3150
   supporting_by_type: {}
 opposing_money:
   opposing_expenditures: null
   opposing_by_type: {}
-contributions_received: 84742.41
-total_contributions: 84742.41
-total_expenditures: 60442.58
-total_loans_received: 15000
+contributions_received: 69742.41
+total_contributions: 69742.41
+total_expenditures: 69842.41
+total_loans_received: 6899.83
 contributions_by_type:
   Committee: 4700
   Individual: 43517.84
   Unitemized: 2524.57
-  Self Funding: 15700
+  Self Funding: 8800.17
   Other (includes Businesses): 3300
 expenditures_by_type:
-  Not Stated: 455.45
+  Not Stated: 5350.76
   Campaign Consultants: 18667.55
   Meetings and Appearances: 529
   Campaign Paraphernalia/Misc.: 3884.37
   Campaign Literature and Mailings: 33656.76
+  'Professional Services (Legal, Accounting)': 4504.52
   'Information Technology Costs (Internet, E-mail)': 3150
 ballots:
 - _ballots/oakland/2016-11-08.md

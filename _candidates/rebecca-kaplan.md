@@ -24,58 +24,62 @@ occupation: 'Incumbent, City Council member At-Large'
 party_affiliation: Democrat
 filer_id: 1381183
 supporting_money:
-  contributions_received: 134374
-  total_contributions: 134374
-  total_expenditures: 156399.08
-  total_loans_received: 0
+  contributions_received: 169231.99
+  total_contributions: 169231.99
+  total_expenditures: 175382.48
+  total_loans_received: 4000
   contributions_by_type:
-    Committee: 14200
-    Individual: 56905
-    Unitemized: 7269
-    Self Funding: 44050
-    Other (includes Businesses): 11950
+    Committee: 18570
+    Individual: 70440
+    Unitemized: 9571.99
+    Self Funding: 48050
+    Other (includes Businesses): 18600
+  contributions_by_origin:
+    Out of State: 5420
+    Within Oakland: 48606
+    Within California: 101634
   expenditures_by_type:
     Print Ads: 1298.18
-    Not Stated: 16605.58
-    Office Expenses: 15728.02
-    Fundraising Events: 750
-    Campaign Consultants: 41405.69
+    Not Stated: 20139.12
+    Office Expenses: 21445.32
+    Fundraising Events: 2907.9
+    Campaign Consultants: 50317.3
     Meetings and Appearances: 100.36
     Campaign Paraphernalia/Misc.: 6453.12
-    Campaign Literature and Mailings: 27737.49
+    Campaign Literature and Mailings: 30619.34
     'Staff/Spouse Travel, Lodging, and Meals': 109.82
-    'Postage, Delivery and Messenger Services': 19670.01
-    'Professional Services (Legal, Accounting)': 3583.75
+    'Postage, Delivery and Messenger Services': 19925.66
+    'Professional Services (Legal, Accounting)': 6863.38
     T.V. or Cable Airtime and Production Costs: 8000
-    'Information Technology Costs (Internet, E-mail)': 400
+    'Information Technology Costs (Internet, E-mail)': 4170.18
   supporting_by_type: {}
 opposing_money:
   opposing_expenditures: null
   opposing_by_type: {}
-contributions_received: 134374
-total_contributions: 134374
-total_expenditures: 156399.08
-total_loans_received: 0
+contributions_received: 169231.99
+total_contributions: 169231.99
+total_expenditures: 175382.48
+total_loans_received: 4000
 contributions_by_type:
-  Committee: 14200
-  Individual: 56905
-  Unitemized: 7269
-  Self Funding: 44050
-  Other (includes Businesses): 11950
+  Committee: 18570
+  Individual: 70440
+  Unitemized: 9571.99
+  Self Funding: 48050
+  Other (includes Businesses): 18600
 expenditures_by_type:
   Print Ads: 1298.18
-  Not Stated: 16605.58
-  Office Expenses: 15728.02
-  Fundraising Events: 750
-  Campaign Consultants: 41405.69
+  Not Stated: 20139.12
+  Office Expenses: 21445.32
+  Fundraising Events: 2907.9
+  Campaign Consultants: 50317.3
   Meetings and Appearances: 100.36
   Campaign Paraphernalia/Misc.: 6453.12
-  Campaign Literature and Mailings: 27737.49
+  Campaign Literature and Mailings: 30619.34
   'Staff/Spouse Travel, Lodging, and Meals': 109.82
-  'Postage, Delivery and Messenger Services': 19670.01
-  'Professional Services (Legal, Accounting)': 3583.75
+  'Postage, Delivery and Messenger Services': 19925.66
+  'Professional Services (Legal, Accounting)': 6863.38
   T.V. or Cable Airtime and Production Costs: 8000
-  'Information Technology Costs (Internet, E-mail)': 400
+  'Information Technology Costs (Internet, E-mail)': 4170.18
 ballots:
 - _ballots/oakland/2016-11-08.md
 ---

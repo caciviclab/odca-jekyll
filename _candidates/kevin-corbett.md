@@ -35,6 +35,10 @@ supporting_money:
     Individual: 36100
     Unitemized: 1642
     Other (includes Businesses): 4450
+  contributions_by_origin:
+    Out of State: 1400
+    Within Oakland: 22300
+    Within California: 17200
   expenditures_by_type:
     Not Stated: 31671.74
     Civic Donations: 18683.77

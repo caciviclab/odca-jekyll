@@ -34,14 +34,18 @@ filer_id: 1382679
 supporting_money:
   contributions_received: 67909
   total_contributions: 67909
-  total_expenditures: 35517.47
+  total_expenditures: 35744.47
   total_loans_received: 0
   contributions_by_type:
     Individual: 59850
     Unitemized: 393
     Other (includes Businesses): 7666
+  contributions_by_origin:
+    Out of State: 1550
+    Within Oakland: 33391
+    Within California: 32575
   expenditures_by_type:
-    Campaign Consultants: 31646.97
+    Campaign Consultants: 31823.97
     Campaign Paraphernalia/Misc.: 820.44
     Candidate Filing/Ballot Fees: 1477
     Campaign Literature and Mailings: 1559.56
@@ -51,14 +55,14 @@ opposing_money:
   opposing_by_type: {}
 contributions_received: 67909
 total_contributions: 67909
-total_expenditures: 35517.47
+total_expenditures: 35744.47
 total_loans_received: 0
 contributions_by_type:
   Individual: 59850
   Unitemized: 393
   Other (includes Businesses): 7666
 expenditures_by_type:
-  Campaign Consultants: 31646.97
+  Campaign Consultants: 31823.97
   Campaign Paraphernalia/Misc.: 820.44
   Candidate Filing/Ballot Fees: 1477
   Campaign Literature and Mailings: 1559.56

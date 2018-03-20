@@ -27,17 +27,22 @@ occupation: Small business owner
 party_affiliation: Green Party
 filer_id: 1384267
 supporting_money:
-  contributions_received: 5144
-  total_contributions: 5144
-  total_expenditures: 6837.67
+  contributions_received: 5219.5
+  total_contributions: 5219.5
+  total_expenditures: 7369.87
   total_loans_received: 0
   contributions_by_type:
     Individual: 2630
-    Unitemized: 764
+    Unitemized: 839.5
     Other (includes Businesses): 1750
+  contributions_by_origin:
+    Out of State: 500
+    Within Oakland: 3680
+    Within California: 200
   expenditures_by_type:
     Not Stated: 809.02
-    Office Expenses: 1710.94
+    Civic Donations: 261.86
+    Office Expenses: 1981.28
     Fundraising Events: 147.81
     Voter Registration: 156.15
     Petition Circulating: 29.28
@@ -52,17 +57,18 @@ supporting_money:
 opposing_money:
   opposing_expenditures: null
   opposing_by_type: {}
-contributions_received: 5144
-total_contributions: 5144
-total_expenditures: 6837.67
+contributions_received: 5219.5
+total_contributions: 5219.5
+total_expenditures: 7369.87
 total_loans_received: 0
 contributions_by_type:
   Individual: 2630
-  Unitemized: 764
+  Unitemized: 839.5
   Other (includes Businesses): 1750
 expenditures_by_type:
   Not Stated: 809.02
-  Office Expenses: 1710.94
+  Civic Donations: 261.86
+  Office Expenses: 1981.28
   Fundraising Events: 147.81
   Voter Registration: 156.15
   Petition Circulating: 29.28

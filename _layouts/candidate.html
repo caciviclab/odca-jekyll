@@ -72,6 +72,19 @@ layout: default
         {% endfor %}
       </div>
     </section>
+    {% assign money_bar_max = candidate.total_contributions %}
+    <section class="l-section">
+      <div class="l-section__content">
+        <div class="subheading">Money coming in</div>
+        <h2 class="candidate__money-heading">Contributions</h2>
+        <div class="candidate__money-total money">{{ candidate.total_contributions | times: 100 | money }}</div>
+        {% for contribution_type in candidate.supporting_money.contributions_by_origin %}
+          {% assign label=contribution_type[0]  %}
+          {% assign value=contribution_type[1]  %}
+          {% include money-bar.html label=label value=value color="green" max=money_bar_max format='percent' %}
+        {% endfor %}
+      </div>
+    </section>
   </div>
 </div>
 {% endcapture %}

@@ -40,6 +40,10 @@ supporting_money:
     Individual: 22350
     Unitemized: 919
     Other (includes Businesses): 37631.69
+  contributions_by_origin:
+    Out of State: 1400
+    Within Oakland: 51081.69
+    Within California: 16700
   expenditures_by_type:
     Print Ads: 500
     Not Stated: 10826.1
