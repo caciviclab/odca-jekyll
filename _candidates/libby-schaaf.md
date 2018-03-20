@@ -12,7 +12,7 @@ is_accepted_expenditure_ceiling: true
 is_incumbent: true
 occupation: 'Incumbent, Mayor'
 party_affiliation: null
-filer_id: 1395968
+filer_id: null
 supporting_money:
   contributions_received: 262193.66
   total_contributions: 262193.66
