@@ -11,25 +11,57 @@ layout: default
 
 {% capture body %}
 <header>
+  <h1>Measure {{ referendum.number }}</h1>
   <h2>{{ referendum.title }}</h2>
 </header>
 <section class="l-section">
   {{ referendum.content }}
 </section>
+
+<!-- supporting money column -->
 <section class="l-section">
-  <h3 class="section-header">Money supporting the measure <span>{{ supporting.total_contributions | times: 100 | money }}</span></h3>
+  <!-- <center> -->
+    <h2 class="section-header">Money supporting the measure
+      <div>{{ supporting.total_contributions | times: 100 | money }}</div>
+    </h2>
+  <!-- </center> -->
   {% include contributions_by_region.html contributions_by_region=supporting.contributions_by_region %}
   {% if supporting and supporting.supporting_organizations != empty %}
-  <p><a href="{{ site.baseurl }}{{ page.url }}supporting/">{{ supporting.supporting_organizations.size }} supporting committee(s)</a></p>
+  <!-- <p><a href="{{ site.baseurl }}{{ page.url }}supporting/">{{ supporting.supporting_organizations.size }} supporting committee(s)</a></p> -->
   {% endif %}
   <p>
-</section>
-<section class="l-section">
-  <h3 class="section-header">Money opposing the measure <span>{{ opposing.total_contributions | times: 100 | money }}</span></h3>
+<!-- </section> -->
+
+<!-- opposing money column -->
+<!-- <section class="l-section"> -->
+  <h2 class="section-header">Money opposing the measure
+    <div>{{ opposing.total_contributions | times: 100 | money }}</div>
+  </h2>
   {% include contributions_by_region.html contributions_by_region=opposing.contributions_by_region %}
   {% if opposing and opposing.opposing_organizations != empty %}
-  <p><a href="{{ site.baseurl }}{{ page.url }}opposing/">{{ opposing.opposing_organizations.size }} opposing committee(s)</a></p>
+  <!-- <p><a href="{{ site.baseurl }}{{ page.url }}opposing/">{{ opposing.opposing_organizations.size }} opposing committee(s)</a></p> -->
   {% endif %}
 </section>
+
+<!-- supporting contributions/expenditures column -->
+<section class="l-section">
+  <h2>Supporters of measure {{ supporting.number }}</h2>
+  <h3>Contributions supporting the measure</h3>
+  <span>{{ supporting.total_contributions | times: 100 | money }}</span>
+
+  <h3>Expenditures supporting the measure</h3>
+  {% include supporting_opposing_committees.html committees=supporting.supporting_organizations %}
+<!-- </section> -->
+
+<!-- opposing contributions/expenditures column -->
+<!-- <section class="l-section"> -->
+  <h2>Opponents of measure {{ opposing.number }}</h2>
+  <h3>Contributions opposing the measure</h3>
+  <span>{{ opposing.total_contributions | times: 100 | money }}</span>
+
+  <h3>Expenditures opposing the measure</h3>
+  {% include supporting_opposing_committees.html committees=opposing.opposing_organizations %}
+</section>
+
 {% endcapture %}
 {% include ballot-layout.html content=body %}
