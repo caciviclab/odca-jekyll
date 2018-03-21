@@ -42,6 +42,9 @@ collections:
   localities:
     output: true
     permalink: /:path/
+  office_elections:
+    output: true
+    permalink: /office/:path/
   referendums:
     output: true
     permalink: /referendum/:path/
@@ -73,6 +76,10 @@ defaults:
       type: localities
     values:
       layout: locality
+  - scope:
+      type: office_elections
+    values:
+      layout: office_election
   - scope:
       type: referendums
     values:

@@ -1,6 +1,5 @@
 ---
 id: 5
-contest_type: Referendum
 name: Police Commission
 title: Police Commission
 summary: >-

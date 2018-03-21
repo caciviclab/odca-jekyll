@@ -1,6 +1,5 @@
 ---
 id: 2
-contest_type: Referendum
 name: Lease Term for City-Owned or City-Controlled Property
 title: Lease Term for City-Owned or City-Controlled Property
 summary: >-

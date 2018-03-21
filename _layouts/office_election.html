@@ -1,0 +1,16 @@
+---
+layout: default
+---
+{% assign office_election = page %}
+{% assign ballot = site.ballots | where: "path", office_election.ballot | first %}
+{% assign locality = site.localities | where: "locality_id", ballot.locality | first %}
+
+{% capture body %}
+<ul>
+  {% for candidate_id in office_election.candidates %}
+    {% assign candidate = site.candidates | where: "slug", candidate_id | first %}
+    <li>{% include candidate-summary.html candidate=candidate %}</li>
+  {% endfor %}
+</ul>
+{% endcapture %}
+{% include ballot-layout.html content=body locality=locality ballot=ballot %}
