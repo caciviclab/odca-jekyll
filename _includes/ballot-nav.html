@@ -2,6 +2,7 @@
 {% assign locality = include.locality %}
 {% assign referendums = ballot.referendums %}
 {% assign office_elections = ballot.office_elections %}
+{% assign ballots = site.ballots | where: "locality", locality.locality_id | reverse %}
 
 <nav class="ballot-nav">
   {% if referendums and referendums != empty %}
