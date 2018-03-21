@@ -5,13 +5,13 @@ $breakpoint--s2: $grid--medium;
 
 .contributors {
   border-top: 3px $color-gold solid;
+}
 
-  thead {
-    font-weight: bold;
+.contributors__thead {
+  font-weight: bold;
 
-    tr {
-      border-bottom: 1px $color-grey-4 solid;
-    }
+  tr {
+    border-bottom: 1px $color-grey-4 solid;
   }
 }
 
