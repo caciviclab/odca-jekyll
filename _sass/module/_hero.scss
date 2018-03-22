@@ -7,10 +7,23 @@ $hero-breakpoint: $grid--medium;
   position: relative;
 }
 
+.hero__attribution {
+  background-color: rgba(230, 230, 230, .7);
+  bottom: 0;
+  display: none;
+  font-size: $small-font-size;
+  padding: 0 $spacing-base;
+  position: absolute;
+  right: 0;
+
+  @include media($hero-breakpoint) {
+    display: block;
+  }
+}
+
 .hero--photo {
   @include media($hero-breakpoint) {
-    //TODO waiting on a new image
-    //background-image: url('./images/sacramento-capitol-splash.png');
+    background-image: url('./images/sacramento-capitol-splash.jpg');
     background-position: bottom;
     background-size: cover;
 
