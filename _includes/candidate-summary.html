@@ -1,5 +1,5 @@
 {% assign candidate = include.candidate %}
 <div>
   <p><a href="{{ candidate.url | prepend: site.baseurl }}">{{ candidate.name }}</a></p>
-  <p>Amount collected {{ candidate.total_contributions | times: 100 | money }}</p>
+  <p>Amount collected {{ candidate.total_contributions | dollars }}</p>
 </div>

@@ -5,7 +5,7 @@
 {% when 'percent' %}
 {% assign display = width | floor | append: '%' %}
 {% else %}
-{% assign display = include.value | times: 100 | money %}
+{% assign display = include.value | friendly_number | prepend: '$' %}
 {% endcase %}
 
 

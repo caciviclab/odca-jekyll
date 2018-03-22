@@ -1,4 +1,4 @@
 {% for region in include.contributions_by_region %}
   <div>{{ region.locale }}</div>
-  <div>{{ region.amount | times: 100 | money }}</div>
+  <div>{{ region.amount | dollars }}</div>
 {% endfor %}
