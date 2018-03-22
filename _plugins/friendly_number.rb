@@ -22,13 +22,22 @@ module Jekyll
     # Adds thousands separator
     # https://codereview.stackexchange.com/a/28100
     def comma_number(number)
-      unless number.is_a? Numeric
+      unless number.is_a? Numeric or number.is_a? String
         return number
       end
 
       whole, decimal = number.to_s.split(".")
       whole_with_commas = whole.chars.to_a.reverse.each_slice(3).map(&:join).join(",").reverse
       [whole_with_commas, decimal].compact.join(".")
+    end
+
+    # Format as money with dollars and cents
+    def money(number)
+      unless number.is_a? Numeric
+        return number
+      end
+
+      '$%s' % comma_number('%.2f' % number)
     end
 
     # Shortcut for number | floor | comma_number | prepend:'$'

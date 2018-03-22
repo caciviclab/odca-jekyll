@@ -33,17 +33,17 @@ layout: default
     </section>
     <section class="l-section">
       <div class="l-section__content">
-        <div class="candidate__summary candidate__summary--contributions">Contributions: <span class="money">{{ candidate.total_contributions | dollars }}</span></div>
-        <div class="candidate__summary candidate__summary--expenditures">Expenditures: <span class="money">{{ candidate.total_expenditures | dollars }}</span></div>
+        <div class="candidate__summary candidate__summary--contributions">Contributions: <span class="money">{{ candidate.total_contributions | money }}</span></div>
+        <div class="candidate__summary candidate__summary--expenditures">Expenditures: <span class="money">{{ candidate.total_expenditures | money }}</span></div>
         {% if candidate.total_loans_received > 0 %}
-        <div class="candidate__summary candidate__summary--loans">Loans: <span class="money">{{ candidate.total_loans_received  }}</span></div>
+        <div class="candidate__summary candidate__summary--loans">Loans: <span class="money">{{ candidate.total_loans_received | money }}</span></div>
         {% endif %}
-        <div class="candidate__summary candidate__summary--balance">Current balance: <span class="money">{{ candidate.total_contributions | minus: candidate.total_expenditures | minus: candidate.total_loans_received }}</span></div>
+        <div class="candidate__summary candidate__summary--balance">Current balance: <span class="money">{{ candidate.total_contributions | minus: candidate.total_expenditures | minus: candidate.total_loans_received | money }}</span></div>
       </div>
     </section>
     <section class="l-section">
       <div class="l-section__content">
-        <h2 class="candidate__expenditures-opposing">Expenditures opposing candidate <span class="money">{{ candidate.opposing_money.opposing_expenditures  }}</span></h2>
+        <h2 class="candidate__expenditures-opposing">Expenditures opposing candidate <span class="money">{{ candidate.opposing_money.opposing_expenditures | dollars  }}</span></h2>
       </div>
     </section>
     {% assign money_bar_max = candidate.total_contributions | plus: candidate.total_expenditures %}
