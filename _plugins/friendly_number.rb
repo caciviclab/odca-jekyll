@@ -15,8 +15,11 @@ module Jekyll
       end
 
       # If number is less than 10, include a decimal
-      $format = number < 10 ? '%.1f%s' : '%d%s'
-      $format % [number, $unit[$iterations]]
+      if number < 10
+        '%.1f%s' % [number.round(1), $unit[$iterations]]
+      else
+        '%d%s' % [number.round, $unit[$iterations]]
+      end
     end
 
     # Adds thousands separator
@@ -37,7 +40,13 @@ module Jekyll
         return number
       end
 
-      '$%s' % comma_number('%.2f' % number)
+      $is_negative = number < 0
+      if $is_negative
+        number *= -1
+      end
+
+      $money = '$%s' % comma_number(number.round(2))
+      $is_negative ? '(%s)' % $money : $money
     end
 
     # Shortcut for number | floor | comma_number | prepend:'$'
@@ -46,7 +55,13 @@ module Jekyll
         return number
       end
 
-      '$%s' % comma_number(number.floor)
+      $is_negative = number < 0
+      if $is_negative
+        number *= -1
+      end
+
+      $money = '$%s' % comma_number(number.round)
+      $is_negative ? '(%s)' % $money : $money
     end
   end
 end
