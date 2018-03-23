@@ -20,7 +20,7 @@ bio: >-
 
   Source: Candidate Statement and survey
 committee_name: 'Committee to Elect Nancy Sidebotham, Councilmember At Large, 2016'
-is_accepted_expenditure_ceiling: true
+is_accepted_expenditure_ceiling: false
 is_incumbent: false
 occupation: Tax Preparer
 party_affiliation: Democrat
@@ -52,6 +52,7 @@ expenditures_by_type:
   Campaign Paraphernalia/Misc.: 310.03
   Candidate Filing/Ballot Fees: 190
 ballots:
+- _ballots/oakland/2018-11-06.md
 - _ballots/oakland/2016-11-08.md
 ---
 Nancy Sidebotham has lived and worked in Oakland since 1964. She served for 15 years as Chairperson of the Neighborhood Crime Prevention Committee (NCPC) for beat 29X, on the Community Policing Advisory Board (CPAB), and on Neighborhood Watch. Sidebotham graduated from Merritt College in 1968 and California State University Hayward in 1970. 
