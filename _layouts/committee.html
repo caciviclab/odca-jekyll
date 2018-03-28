@@ -14,20 +14,20 @@ layout: default
     {% if contributions == empty %}
       <p>Sorry, there is no contribution data available for this committee.</p>
     {% else %}
-      <table>
-        <thead>
+      <table class="contributors">
+        <thead class="contributors__thead">
           <tr>
-            <td>Name</td>
-            <td>Amount</td>
-            <td>Date</td>
+            <td class="contributors__name">Name</td>
+            <td class="contributors__amount">Amount</td>
+            <td class="contributors__date contributors__col--s1">Date</td>
           </tr>
         </thead>
         <tbody>
           {% for contribution in contributions %}
           <tr>
-            <td>{{ contribution.Tran_NamF | escape }} {{ contribution.Tran_NamL | escape }}</td>
-            <td>{{ contribution.Tran_Amt1 | times: 100 | money }}</td>
-            <td>{{ contribution.Tran_Date | date: "%Y-%m-%d" }}</td>
+            <td class="contributors__name">{{ contribution.Tran_NamF | escape }} {{ contribution.Tran_NamL | escape }}</td>
+            <td class="contributors__amount">{{ contribution.Tran_Amt1 | times: 100 | money }}</td>
+            <td class="contributors__date contributors__col--s1">{{ contribution.Tran_Date | date: "%Y-%m-%d" }}</td>
           </tr>
           {% endfor %}
         </tbody>

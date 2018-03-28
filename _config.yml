@@ -27,6 +27,7 @@ twitter_username: caciviclab
 github_username:  caciviclab
 future: true
 permalink: pretty
+google_analytics: UA-50973042-1
 
 
 collections:
