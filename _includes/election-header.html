@@ -3,8 +3,14 @@
 {% assign election_day = locality.current_election | date: "%Y-%m-%d" %}
 <header class="election-header grid">
   <div class="grid-col-12">
-    <h1 class="election-header__title">{{ locality.name | escape }}</h1>
+    <h1 class="election-header__title">
+      {{ locality.name | escape }}
+      {% if locality.status == "beta" %}<span class="label">beta</span>{% endif %}
+    </h1>
     {% if election_day > today %}Upcoming{% else %}Recent{% endif %}
     election: <a href="{{ locality.url | prepend: site.baseurl }}">{{ locality.current_election | date: "%B %-d, %Y" }}</a>
+    {% if locality.status == "beta" %}
+      {% include alert-message.html message="This locality is in Beta which means the data on this page may be incomplete." %}
+    {% endif %}
   </div>
 </header>
