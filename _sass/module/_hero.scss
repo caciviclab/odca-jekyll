@@ -1,4 +1,5 @@
 $text-shadow-color: rgba(30, 30, 30, .8);
+$attribution-background-color: rgba(230, 230, 230, .7);
 $scrim-color: rgba(0, 0, 0, .4);
 $hero-breakpoint: $grid--medium;
 
@@ -7,10 +8,23 @@ $hero-breakpoint: $grid--medium;
   position: relative;
 }
 
+.hero__attribution {
+  background-color: $attribution-background-color;
+  bottom: 0;
+  display: none;
+  font-size: $small-font-size;
+  padding: 0 $spacing-base;
+  position: absolute;
+  right: 0;
+
+  @include media($hero-breakpoint) {
+    display: block;
+  }
+}
+
 .hero--photo {
   @include media($hero-breakpoint) {
-    //TODO waiting on a new image
-    //background-image: url('./images/sacramento-capitol-splash.png');
+    background-image: url('./images/sacramento-capitol-splash.jpg');
     background-position: bottom;
     background-size: cover;
 
