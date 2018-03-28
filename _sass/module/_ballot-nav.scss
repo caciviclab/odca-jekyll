@@ -10,4 +10,12 @@
       @include grid-collapse;
     }
   }
+
+  p {
+    padding-top: $spacing-base;
+
+    &:not(:first-child) {
+      border-top: 1px $color-grey-5 solid;
+    }
+  }
 }

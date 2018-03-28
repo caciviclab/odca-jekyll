@@ -1,0 +1,10 @@
+---
+name: City Council At-Large
+candidates:
+  - rebecca-kaplan
+  - bruce-quan
+  - nancy-sidebotham
+  - francis-matt-hummell
+  - peggy-moore
+ballot: _ballots/oakland/2016-11-08.md
+---

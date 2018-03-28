@@ -138,5 +138,9 @@ Code is licensed under the GNU Affero General Public License.
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ```
 
+Font Awesome Icons located under `assets/fontawesome/` available under the
+[CC-BY-4.0 License](https://creativecommons.org/licenses/by/4.0/).
+
+
 [backend-static]: https://github.com/caciviclab/disclosure-backend-static
 [opendisclosure-io]: http://www.opendisclosure.io/

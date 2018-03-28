@@ -1,0 +1,57 @@
+$col-min-width--s1: 10rem;
+$col-min-width--s2: 14rem;
+$breakpoint--s1: $grid--small;
+$breakpoint--s2: $grid--medium;
+
+.contributors {
+  border-top: 3px $color-gold solid;
+}
+
+.contributors__thead {
+  font-weight: bold;
+
+  tr {
+    border-bottom: 1px $color-grey-4 solid;
+  }
+}
+
+.contributors__name {
+  padding: 0 $spacing-base;
+}
+
+.contributors__amount {
+  padding: 0 $spacing-base;
+  text-align: right;
+  vertical-align: top;
+
+  @include media($breakpoint--s1) {
+    min-width: $col-min-width--s1;
+  }
+
+  @include media($breakpoint--s2) {
+    min-width: $col-min-width--s2;
+  }
+}
+
+.contributors__date {
+  padding: 0 $spacing-base;
+  text-align: left;
+  vertical-align: top;
+  white-space: nowrap;
+
+  @include media($breakpoint--s1) {
+    min-width: $col-min-width--s1;
+  }
+
+  @include media($breakpoint--s2) {
+    min-width: $col-min-width--s2;
+  }
+}
+
+.contributors__col--s1 {
+  display: none;
+
+  @include media($breakpoint--s1) {
+    display: table-cell;
+  }
+}

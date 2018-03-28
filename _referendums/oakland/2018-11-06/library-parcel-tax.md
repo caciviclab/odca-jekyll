@@ -1,7 +1,6 @@
 ---
 locality: oakland
 election: 2018-11-06
-contest_type: "Referendum"
 name: Library Parcel Tax
 title: Library Parcel Tax
 number: TBD
