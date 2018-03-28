@@ -1,0 +1,37 @@
+$icon-width: 6rem;
+$spacing: $spacing-base * 2;
+$breakpoint--s1: $grid--small;
+
+.alert-message {
+  background-color: $color-yellow;
+  border: 3px solid $color-gold;
+  border-radius: 4px;
+  color: $color-grey-4;
+  font-size: $small-font-size;
+  font-style: italic;
+  margin-bottom: $spacing;
+  padding-bottom: $spacing;
+  padding-top: $spacing;
+}
+
+.alert-message__left {
+  display: inline-block;
+  margin-left: $spacing;
+  width: $icon-width;
+}
+
+.alert-message__content {
+  margin-left: $spacing;
+  margin-right: $spacing;
+  vertical-align: top;
+
+  @include media($breakpoint--s1) {
+    display: inline-block;
+    margin-right: 0;
+    width: calc(100% - #{$icon-width} - #{$spacing * 3});
+  }
+}
+
+.alert-message__icon {
+  @include svg-icon($color-gold, $size: $icon-width);
+}
