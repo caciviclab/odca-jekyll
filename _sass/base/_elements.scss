@@ -45,3 +45,11 @@ nav {
     margin: 0;
   }
 }
+
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px $color-grey-5 solid;
+}

@@ -1,3 +1,10 @@
 @mixin soft-border {
   border-right: 1px $border-soft-color solid;
 }
+
+@mixin svg-icon($fill-color: $color-grey-3, $size: ($spacing-base * 2)) {
+  svg {
+    fill: $fill-color;
+    width: $size;
+  }
+}
