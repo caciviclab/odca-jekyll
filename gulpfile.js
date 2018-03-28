@@ -8,13 +8,19 @@ const ext = require('gulp-ext');
 
 const BACKEND_STATIC_REPO = path.join('..', 'disclosure-backend-static');
 
+const OAKLAND_2016_REFERENDUM_NUMBERS = ['g1', 'hh', 'ii', 'jj', 'kk', 'll'];
+
+function guessElection (data) {
+  return data.number && OAKLAND_2016_REFERENDUM_NUMBERS.includes(data.number.toLowerCase()) ? '2016-11-08' : '2018-11-06';
+}
+
 function dataDir(...pathParts) {
   return path.join(BACKEND_STATIC_REPO, 'build', ...pathParts);
 }
 
 
 function slugify(text) {
-  return (text || '').toLowerCase().replace(/[^a-z0-9-]+/g, '-');
+  return (text || '').toLowerCase().replace(/[\.']+/g, '').replace(/[^a-z0-9-]+/g, '-');
 }
 
 function slugifyName(fn) {
@@ -106,7 +112,10 @@ gulp.task('pull:contributions', function () {
 gulp.task('pull:referendums', function () {
   return gulp.src(dataDir('referendum', '*', 'index.json'))
     .pipe(extract('summary'))
-    .pipe(slugifyName((data) => `oakland/2016-11-08/${slugify(data.number || data.title)}.json`))
+    .pipe(slugifyName((data) => {
+      const election = guessElection(data);
+      return `oakland/${election}/${slugify(data.number || data.title)}.json`
+    }))
     .pipe(jsonToYaml({ safe: true }))
     .pipe(header('---\n'))
     .pipe(footer('---\n'))
@@ -117,7 +126,10 @@ gulp.task('pull:referendums', function () {
 
 gulp.task('pull:referendums_opposing', function () {
   return gulp.src(dataDir('referendum', '*', 'opposing', 'index.json'))
-    .pipe(slugifyName((data) => `oakland/2016-11-08/${slugify(data.number || data.title)}.json`))
+    .pipe(slugifyName((data) => {
+      const election = guessElection(data);
+      return `oakland/${election}/${slugify(data.number || data.title)}.json`
+    }))
     .pipe(jsonToYaml({ safe: true }))
     .pipe(header('---\n'))
     .pipe(footer('---\n'))
@@ -127,7 +139,10 @@ gulp.task('pull:referendums_opposing', function () {
 
 gulp.task('pull:referendums_supporting', function () {
   return gulp.src(dataDir('referendum', '*', 'supporting', 'index.json'))
-    .pipe(slugifyName((data) => `oakland/2016-11-08/${slugify(data.number || data.title)}.json`))
+    .pipe(slugifyName((data) => {
+      const election = guessElection(data);
+      return `oakland/${election}/${slugify(data.number || data.title)}.json`
+    }))
     .pipe(jsonToYaml({ safe: true }))
     .pipe(header('---\n'))
     .pipe(footer('---\n'))
