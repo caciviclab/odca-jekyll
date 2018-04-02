@@ -1,5 +1,6 @@
 ---
 id: 4
+contest_type: Referendum
 name: Infrastructure and Housing bonds
 title: Infrastructure and Housing bonds
 summary: >-
@@ -31,4 +32,11 @@ contributions_by_region:
     locale: Within Oakland
   - amount: 299.6999999999971
     locale: Unknown
+contributions_by_type:
+  - type: Individual
+    amount: 7500
+  - type: Other (includes Businesses)
+    amount: 35274.29
+  - type: COM
+    amount: 299.6999999999971
 ---

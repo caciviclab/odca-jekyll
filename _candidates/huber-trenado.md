@@ -1,5 +1,5 @@
 ---
-id: 25
+id: 41
 name: Huber Trenado
 photo_url: 'https://s3-us-west-1.amazonaws.com/odca-candidate-photos/Huber-Trenado.png'
 website_url: 'http://www.votetrenadoousd.com/'
@@ -8,8 +8,8 @@ votersedge_url: >-
   http://votersedge.org/ca/en/ballot/election/area/42/contests/contest/13218/candidate/130702?&county=Alameda%20County&election_authority_id=1
 first_name: Huber
 last_name: Trenado
-ballot_item: 8
-office_election: 8
+ballot_item: 15
+office_election: 15
 bio: >-
   Huber Trenado is a teacher, community leader, and Oakland native. Trenado has
   helped establish an Aim High program site to increase the quality of academic
@@ -30,6 +30,7 @@ supporting_money:
   total_contributions: 21685.48
   total_expenditures: 23562.66
   total_loans_received: 0
+  total_supporting_independent: 101339
   contributions_by_type:
     Individual: 16163.31
     Unitemized: 1798
@@ -82,8 +83,6 @@ expenditures_by_type:
   Campaign Literature and Mailings: 10825.06
   'Professional Services (Legal, Accounting)': 2500
   'Information Technology Costs (Internet, E-mail)': 833.57
-ballots:
-- _ballots/oakland/2016-11-08.md
 ---
 Huber Trenado is a teacher, community leader, and Oakland native. Trenado has helped establish an Aim High program site to increase the quality of academic programs offered to students during the summer and implement common core standards in Oakland United School District classrooms. Trenado graduated from UC Berkeley. 
 

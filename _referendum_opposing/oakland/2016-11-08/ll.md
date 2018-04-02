@@ -1,5 +1,6 @@
 ---
 id: 5
+contest_type: Referendum
 name: Police Commission
 title: Police Commission
 summary: >-
@@ -24,4 +25,5 @@ number: LL
 opposing_organizations: []
 total_contributions: []
 contributions_by_region: []
+contributions_by_type: []
 ---

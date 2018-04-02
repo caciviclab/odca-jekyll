@@ -1,23 +1,27 @@
 ---
-id: 39
+id: 9
 name: Libby Schaaf
-photo_url: ""
-website_url: "https://libbyformayor.wordpress.com/"
-twitter_url: "https://twitter.com/LibbySchaaf"
-votersedge_url: ""
+photo_url: 'https://www.facebook.com/MayorLibbySchaaf/'
+website_url: 'https://libbyformayor.wordpress.com/'
+twitter_url: LibbySchaaf
+votersedge_url: null
 first_name: Libby
 last_name: Schaaf
+ballot_item: 10
+office_election: 10
+bio: null
 committee_name: Libby Schaaf for Mayor 2018
 is_accepted_expenditure_ceiling: true
 is_incumbent: true
 occupation: 'Incumbent, Mayor'
 party_affiliation: null
-filer_id: null
+filer_id: 1395968
 supporting_money:
   contributions_received: 262193.66
   total_contributions: 262193.66
   total_expenditures: 36153.65
   total_loans_received: 0
+  total_supporting_independent: 0
   contributions_by_type:
     Committee: 2250
     Individual: 235919.66
@@ -54,6 +58,4 @@ expenditures_by_type:
   Returned Contributions: 2700
   'Professional Services (Legal, Accounting)': 13994
   'Information Technology Costs (Internet, E-mail)': 975
-ballots:
-- _ballots/oakland/2018-11-06.md
 ---

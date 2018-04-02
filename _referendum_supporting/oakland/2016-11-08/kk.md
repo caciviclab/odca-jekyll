@@ -1,5 +1,6 @@
 ---
 id: 4
+contest_type: Referendum
 name: Infrastructure and Housing bonds
 title: Infrastructure and Housing bonds
 summary: >-
@@ -31,4 +32,11 @@ contributions_by_region:
     locale: Within California
   - amount: 268387.34
     locale: Within Oakland
+contributions_by_type:
+  - type: Committee
+    amount: 176049.34
+  - type: Individual
+    amount: 23188
+  - type: Other (includes Businesses)
+    amount: 207700
 ---

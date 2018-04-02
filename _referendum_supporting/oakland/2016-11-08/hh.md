@@ -1,5 +1,6 @@
 ---
 id: 1
+contest_type: Referendum
 name: Sugar-Sweetened BeverageTax
 title: Sugar-Sweetened BeverageTax
 summary: >-
@@ -29,4 +30,11 @@ contributions_by_region:
     locale: Within California
   - amount: 78680
     locale: Within Oakland
+contributions_by_type:
+  - type: Committee
+    amount: 213964.72
+  - type: Individual
+    amount: 9416327.2
+  - type: Other (includes Businesses)
+    amount: 1129650
 ---

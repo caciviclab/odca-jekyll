@@ -1,5 +1,5 @@
 ---
-id: 11
+id: 15
 name: Noel Gallo
 photo_url: 'https://s3-us-west-1.amazonaws.com/odca-candidate-photos/Noel-Gallo.png'
 website_url: 'http://galloforoakland.com/'
@@ -8,8 +8,8 @@ votersedge_url: >-
   http://votersedge.org/ca/en/ballot/election/area/42/contests/contest/13237/candidate/130759?&county=Alameda%20County&election_authority_id=1
 first_name: Noel
 last_name: Gallo
-ballot_item: 10
-office_election: 10
+ballot_item: 7
+office_election: 7
 bio: >-
   Noel Gallo was elected to the Oakland City Council in 2012 to represent
   District 5. He serves as Co-Chair of the Oakland City Council Education
@@ -33,8 +33,9 @@ filer_id: 1388641
 supporting_money:
   contributions_received: 80100.69
   total_contributions: 80100.69
-  total_expenditures: 86946.74
+  total_expenditures: 87107.1
   total_loans_received: 10000
+  total_supporting_independent: 0
   contributions_by_type:
     Committee: 9200
     Individual: 22350
@@ -48,7 +49,7 @@ supporting_money:
     Print Ads: 500
     Not Stated: 10826.1
     Contribution: 550
-    Civic Donations: 700
+    Civic Donations: 860.36
     Office Expenses: 3595.76
     Fundraising Events: 656.55
     Campaign Workers' Salaries: 3000
@@ -71,7 +72,7 @@ opposing_money:
     Mailing and Postage in opposition to Noel Gallo: 7398
 contributions_received: 80100.69
 total_contributions: 80100.69
-total_expenditures: 86946.74
+total_expenditures: 87107.1
 total_loans_received: 10000
 contributions_by_type:
   Committee: 9200
@@ -82,7 +83,7 @@ expenditures_by_type:
   Print Ads: 500
   Not Stated: 10826.1
   Contribution: 550
-  Civic Donations: 700
+  Civic Donations: 860.36
   Office Expenses: 3595.76
   Fundraising Events: 656.55
   Campaign Workers' Salaries: 3000
@@ -90,8 +91,6 @@ expenditures_by_type:
   Candidate Filing/Ballot Fees: 300
   Campaign Literature and Mailings: 36593.49
   'Professional Services (Legal, Accounting)': 21788
-ballots:
-- _ballots/oakland/2016-11-08.md
 ---
 Noel Gallo was elected to the Oakland City Council in 2012 to represent District 5. He serves as Co-Chair of the Oakland City Council Education Partnership Committee, and a member of the Life Enrichment, Public Works, and Public Safety City Council Committees. He represents the City of Oakland as a member of the AC Transit Bus Rapid Transit (BRT) Policy Steering Committee. Prior to joining the council, Gallo was elected and served on the Oakland Board of Education for 20 years. 
 Gallo is a lifelong resident of Oakland; he grew up in the Fruitvale/San Antonio District neighborhoods. He graduated from the University of California, Berkeley, with a Business Degree. 

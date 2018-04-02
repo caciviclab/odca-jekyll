@@ -1,5 +1,5 @@
 ---
-id: 24
+id: 40
 name: Roseann Torres
 photo_url: 'https://s3-us-west-1.amazonaws.com/odca-candidate-photos/Roseann-Torres.png'
 website_url: 'https://www.facebook.com/torresforschoolboard/home?ref=page_internal'
@@ -8,8 +8,8 @@ votersedge_url: >-
   http://votersedge.org/ca/en/ballot/election/area/42/contests/contest/13218/candidate/130701?&county=Alameda%20County&election_authority_id=1
 first_name: Roseann
 last_name: Torres
-ballot_item: 8
-office_election: 8
+ballot_item: 15
+office_election: 15
 bio: >-
   Rosie Torres is running for re-election to represent District 5 for Oakland
   School Board. Torres was elected to represent Oakland’s District 5 schools in
@@ -29,6 +29,7 @@ supporting_money:
   total_contributions: 36273.01
   total_expenditures: 47922.55
   total_loans_received: 9250
+  total_supporting_independent: 0
   contributions_by_type:
     Committee: 6500
     Individual: 16225.01
@@ -74,8 +75,6 @@ expenditures_by_type:
   'Postage, Delivery and Messenger Services': 740.46
   'Professional Services (Legal, Accounting)': 8500.24
   'Information Technology Costs (Internet, E-mail)': 400
-ballots:
-- _ballots/oakland/2016-11-08.md
 ---
 Rosie Torres is running for re-election to represent District 5 for Oakland School Board. Torres was elected to represent Oakland’s District 5 schools in 2012. Torres holds a Bachelor’s Degree in Marketing from San Francisco State University and a Juris Doctorate from Albany Law School in Albany, New York.  
 

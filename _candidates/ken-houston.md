@@ -1,17 +1,17 @@
 ---
-id: 41
+id: 33
 name: Ken Houston
 photo_url: null
 website_url: null
-twitter_url: '@KHouston4Mayor'
+twitter_url: KHouston4Mayor
 votersedge_url: null
 first_name: Ken
 last_name: Houston
-ballot_item: 9
-office_election: 9
+ballot_item: 10
+office_election: 10
 bio: null
-committee_name: null
-is_accepted_expenditure_ceiling: null
+committee_name: No committee registered
+is_accepted_expenditure_ceiling: false
 is_incumbent: false
 occupation: null
 party_affiliation: null
@@ -21,6 +21,7 @@ supporting_money:
   total_contributions: null
   total_expenditures: null
   total_loans_received: null
+  total_supporting_independent: 0
   contributions_by_type: {}
   contributions_by_origin: {}
   expenditures_by_type: {}
@@ -34,6 +35,4 @@ total_expenditures: null
 total_loans_received: null
 contributions_by_type: {}
 expenditures_by_type: {}
-ballots:
-- _ballots/san-francisco/2018-11-06.md
 ---

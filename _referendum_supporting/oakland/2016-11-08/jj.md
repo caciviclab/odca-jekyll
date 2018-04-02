@@ -1,5 +1,6 @@
 ---
 id: 3
+contest_type: Referendum
 name: Just Cause for Eviction and Rent Adjustment
 title: Just Cause for Eviction and Rent Adjustment
 summary: >-
@@ -39,4 +40,13 @@ contributions_by_region:
     locale: Within Oakland
   - amount: 26855.070000000007
     locale: Unknown
+contributions_by_type:
+  - type: Committee
+    amount: 270394.35
+  - type: Individual
+    amount: 49670
+  - type: Other (includes Businesses)
+    amount: 157655.46
+  - type: COM
+    amount: 26855.070000000036
 ---

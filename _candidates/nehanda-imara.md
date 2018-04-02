@@ -1,5 +1,5 @@
 ---
-id: 14
+id: 23
 name: Nehanda Imara
 photo_url: 'https://s3-us-west-1.amazonaws.com/odca-candidate-photos/Nehanda_Imara.png'
 website_url: 'http://www.nehandafordistrict7.com/'
@@ -8,8 +8,8 @@ votersedge_url: >-
   http://votersedge.org/ca/en/ballot/election/area/42/contests/contest/13238/candidate/130762?&county=Alameda%20County&election_authority_id=1
 first_name: Nehanda
 last_name: Imara
-ballot_item: 7
-office_election: 7
+ballot_item: 9
+office_election: 9
 bio: >-
   Nehanda Imara is an Oakland resident, organizer, educator and adjunct teacher
   for African American and Environmental Studies at Merritt College. She is a
@@ -32,6 +32,7 @@ supporting_money:
   total_contributions: 27941
   total_expenditures: 35137.46
   total_loans_received: 6500
+  total_supporting_independent: 0
   contributions_by_type:
     Committee: 1700
     Individual: 16550
@@ -70,8 +71,6 @@ expenditures_by_type:
   Campaign Literature and Mailings: 7287.36
   'Postage, Delivery and Messenger Services': 3818.95
   'Professional Services (Legal, Accounting)': 3147.37
-ballots:
-- _ballots/oakland/2016-11-08.md
 ---
 Nehanda Imara is an Oakland resident, organizer, educator and adjunct teacher for African American and Environmental Studies at Merritt College. She is a Community Organizer for Communities for a Better Environment. She is a member of the Board of Directors of Leadership Excellence, a non-profit African American youth organization in Oakland and member of the East Oakland Building Healthy Community initiative. Imara also serves as Co-coordinator of Merritt’s “Black Consciousness Raising Tours of Africa and the African Diaspora.  
 

@@ -1,5 +1,5 @@
 ---
-id: 18
+id: 27
 name: Jumoke Hinton Hodge
 photo_url: 'https://s3-us-west-1.amazonaws.com/odca-candidate-photos/Hinton-Hodge.png'
 website_url: 'https://hintonhodge.nationbuilder.com/'
@@ -8,8 +8,8 @@ votersedge_url: >-
   http://votersedge.org/ca/en/ballot/election/area/42/contests/contest/13217/candidate/130695?&county=Alameda%20County&election_authority_id=1
 first_name: Jumoke
 last_name: Hinton Hodge
-ballot_item: 6
-office_election: 6
+ballot_item: 14
+office_election: 14
 bio: >-
   Jumoke Hinton-Hodge is running for re-election as District 3 representative
   for the Oakland Unified School Board of Education. Hinton-Hodge is the
@@ -31,6 +31,7 @@ supporting_money:
   total_contributions: 25041.85
   total_expenditures: 25486.04
   total_loans_received: 7125
+  total_supporting_independent: 117796
   contributions_by_type:
     Committee: 1500
     Individual: 15788
@@ -77,8 +78,6 @@ expenditures_by_type:
   Campaign Literature and Mailings: 5458.08
   'Professional Services (Legal, Accounting)': 1200
   'Information Technology Costs (Internet, E-mail)': 2056.29
-ballots:
-- _ballots/oakland/2016-11-08.md
 ---
 Jumoke Hinton-Hodge is running for re-election as District 3 representative for the Oakland Unified School Board of Education. Hinton-Hodge is the co-founder of the Parent Leadership and Engagement Academy Initiative (PLEA), a community-building project dedicated to the education and support of West Oakland parents and families. She received a Bachelor degree in Black Studies and English from Oberlin College. 
 

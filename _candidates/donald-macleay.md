@@ -1,5 +1,5 @@
 ---
-id: 16
+id: 25
 name: Donald Macleay
 photo_url: 'https://s3-us-west-1.amazonaws.com/odca-candidate-photos/Donald-Macleay1.png'
 website_url: 'http://www.don4ousd.org/'
@@ -8,8 +8,8 @@ votersedge_url: >-
   http://votersedge.org/ca/en/ballot/election/area/42/contests/contest/13216/candidate/130694?&county=Alameda%20County&election_authority_id=1
 first_name: Donald
 last_name: Macleay
-ballot_item: 5
-office_election: 5
+ballot_item: 13
+office_election: 13
 bio: >-
   Don Macleay owns and runs East Bay Computer Services, a computer repair
   business in the Temescal district.  While running for office, Macleay is on
@@ -31,6 +31,7 @@ supporting_money:
   total_contributions: 5219.5
   total_expenditures: 7369.87
   total_loans_received: 0
+  total_supporting_independent: 0
   contributions_by_type:
     Individual: 2630
     Unitemized: 839.5
@@ -79,8 +80,6 @@ expenditures_by_type:
   'Staff/Spouse Travel, Lodging, and Meals': 320.14
   'Professional Services (Legal, Accounting)': 372.42
   'Information Technology Costs (Internet, E-mail)': 100
-ballots:
-- _ballots/oakland/2016-11-08.md
 ---
 Don Macleay owns and runs East Bay Computer Services, a computer repair business in the Temescal district.  While running for office, Macleay is on leave from People United for a Better Life in Oakland, a youth advocacy organization where he serves as a board member. In 2010, Macleay ran for mayor in Oakland. 
 
