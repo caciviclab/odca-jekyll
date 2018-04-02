@@ -1,5 +1,5 @@
 ---
-id: 40
+id: 32
 name: Kristina Molina
 photo_url: null
 website_url: null
@@ -7,10 +7,10 @@ twitter_url: null
 votersedge_url: null
 first_name: Kristina
 last_name: Molina
-ballot_item: 9
-office_election: 9
+ballot_item: 10
+office_election: 10
 bio: null
-committee_name: null
+committee_name: No committee registered
 is_accepted_expenditure_ceiling: true
 is_incumbent: false
 occupation: null
@@ -21,6 +21,7 @@ supporting_money:
   total_contributions: null
   total_expenditures: null
   total_loans_received: null
+  total_supporting_independent: 0
   contributions_by_type: {}
   contributions_by_origin: {}
   expenditures_by_type: {}
@@ -34,6 +35,4 @@ total_expenditures: null
 total_loans_received: null
 contributions_by_type: {}
 expenditures_by_type: {}
-ballots:
-- _ballots/oakland/2018-11-06.md
 ---

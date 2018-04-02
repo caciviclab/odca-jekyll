@@ -1,5 +1,5 @@
 ---
-id: 8
+id: 12
 name: Dan Kalb
 photo_url: 'https://s3-us-west-1.amazonaws.com/odca-candidate-photos/dan-kalb2.png'
 website_url: 'https://dankalb.net'
@@ -8,8 +8,8 @@ votersedge_url: >-
   http://votersedge.org/ca/en/ballot/election/area/42/contests/contest/13235/candidate/130756?&county=Alameda%20County&election_authority_id=1
 first_name: Dan
 last_name: Kalb
-ballot_item: 1
-office_election: 1
+ballot_item: 4
+office_election: 4
 bio: >-
   Dan Kalb was elected in 2013 to represent District 1 in Oakland City Council.
   Past roles Kalb has held include policy analyst, environmental, public
@@ -35,6 +35,7 @@ supporting_money:
   total_contributions: 111576.66
   total_expenditures: 147916.91
   total_loans_received: 0
+  total_supporting_independent: 0
   contributions_by_type:
     Committee: 11350
     Individual: 78927
@@ -92,8 +93,6 @@ expenditures_by_type:
   'Information Technology Costs (Internet, E-mail)': 4226.01
   Independent Expenditure Supporting/Opposing Others: 400
   Transfer Between Committees of the Same Candidate/sponsor: 13500
-ballots:
-- _ballots/oakland/2016-11-08.md
 ---
 Dan Kalb was elected in 2013 to represent District 1 in Oakland City Council. Past roles Kalb has held include policy analyst, environmental, public interest, and social justice advocate, policy director, progressive reformer, and community service volunteer. Kalb serves as the City’s official representative on the StopWaste Board of Directors and is on the East Bay Jewish Community Relations Council Board of Directors. He was the California Policy Director with the Union of Concerned Scientists from 2003 to 2012. He received a Bachelor's of Science in Conservation of Natural Resources from UC Berkeley and a Masters of Public Administration from the University of San Francisco. 
 

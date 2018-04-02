@@ -1,5 +1,5 @@
 ---
-id: 20
+id: 29
 name: Kharyshi Wiginton
 photo_url: 'https://s3-us-west-1.amazonaws.com/odca-candidate-photos/Kharyshi-Wiginton.png'
 website_url: 'http://www.mskfordistrict3sb.com/'
@@ -8,8 +8,8 @@ votersedge_url: >-
   http://votersedge.org/ca/en/ballot/election/area/42/contests/contest/13217/candidate/130698?&county=Alameda%20County&election_authority_id=1
 first_name: Kharyshi
 last_name: Wiginton
-ballot_item: 6
-office_election: 6
+ballot_item: 14
+office_election: 14
 bio: >-
   Kharyshi Wiginton is the Youth Leadership Coordinator at McClymonds Youth and
   Family Center has spent a decade doing education-related work in Oakland and
@@ -32,6 +32,7 @@ supporting_money:
   total_contributions: 5798
   total_expenditures: 4886.23
   total_loans_received: 0
+  total_supporting_independent: 0
   contributions_by_type:
     Individual: 2590
     Unitemized: 1093
@@ -72,8 +73,6 @@ expenditures_by_type:
   Campaign Literature and Mailings: 1187.01
   'Professional Services (Legal, Accounting)': 500
   'Information Technology Costs (Internet, E-mail)': 381.89
-ballots:
-- _ballots/oakland/2016-11-08.md
 ---
 Kharyshi Wiginton is the Youth Leadership Coordinator at McClymonds Youth and Family Center has spent a decade doing education-related work in Oakland and currently holds a position at McClymonds High School. Wiginton graduated from the California Institute of Integral Studies in 2009. 
 

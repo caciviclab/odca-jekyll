@@ -8,8 +8,8 @@ votersedge_url: >-
   http://votersedge.org/ca/en/ballot/election/area/42/contests/contest/13235/candidate/130755?&county=Alameda%20County&election_authority_id=1
 first_name: Kevin
 last_name: Corbett
-ballot_item: 1
-office_election: 1
+ballot_item: 4
+office_election: 4
 bio: >-
   Kevin Corbett is a practicing attorney and has run his own law practice for
   the past 30 years. Corbett attended Bishop O'Dowd High School in Oakland and
@@ -30,6 +30,7 @@ supporting_money:
   total_contributions: 42542
   total_expenditures: 77186.88
   total_loans_received: 0
+  total_supporting_independent: 0
   contributions_by_type:
     Committee: 350
     Individual: 36100
@@ -66,8 +67,6 @@ expenditures_by_type:
   Campaign Literature and Mailings: 7535.18
   'Postage, Delivery and Messenger Services': 12149.88
   'Professional Services (Legal, Accounting)': 5380.73
-ballots:
-- _ballots/oakland/2016-11-08.md
 ---
 Kevin Corbett is a practicing attorney and has run his own law practice for the past 30 years. Corbett attended Bishop O'Dowd High School in Oakland and earned his Bachelor’s Degree and Juris Doctorate from Santa Clara University. He has worked as a Business Law Professor at Vista Community College and Holy Names University. 
 

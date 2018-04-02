@@ -1,5 +1,5 @@
 ---
-id: 10
+id: 14
 name: Noni Session
 photo_url: 'https://s3-us-west-1.amazonaws.com/odca-candidate-photos/Noni-Session2.png'
 website_url: 'http://www.nonifordistrict3.com/'
@@ -8,8 +8,8 @@ votersedge_url: >-
   http://votersedge.org/ca/en/ballot/election/area/42/contests/contest/13236/candidate/130758?&county=Alameda%20County&election_authority_id=1
 first_name: Noni
 last_name: Session
-ballot_item: 2
-office_election: 2
+ballot_item: 6
+office_election: 6
 bio: >-
   Noni Session is a lifelong resident of Oakland and attended Oakland public
   schools. Session served as a special education teacher at Harbor Way Academy
@@ -34,6 +34,7 @@ supporting_money:
   total_contributions: 10634
   total_expenditures: 9611.19
   total_loans_received: 0
+  total_supporting_independent: 0
   contributions_by_type:
     Individual: 7110
     Unitemized: 1424
@@ -72,8 +73,6 @@ expenditures_by_type:
   Candidate Filing/Ballot Fees: 300
   Campaign Literature and Mailings: 3399.31
   'Information Technology Costs (Internet, E-mail)': 387
-ballots:
-- _ballots/oakland/2016-11-08.md
 ---
 Noni Session is a lifelong resident of Oakland and attended Oakland public schools. Session served as a special education teacher at Harbor Way Academy Elementary School. She graduated with a degree in Cultural Anthropology and African American Studies from San Francisco State University and received her Ph.D. in Cultural Anthropology from Cornell University. Session’s doctoral research in Nairobi, Kenya on Bureaucratic Organizations & Humanitarianism led her to work with the United Nations Development Programme as a Researcher and Government Liaison. 
 

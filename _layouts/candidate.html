@@ -41,11 +41,24 @@ layout: default
         <div class="candidate__summary candidate__summary--balance">Current balance: <span class="money">{{ candidate.total_contributions | minus: candidate.total_expenditures | minus: candidate.total_loans_received | times: 100 | money }}</span></div>
       </div>
     </section>
+    {% assign expenditures_against = candidate.opposing_money.opposing_expenditures %}
+    {% assign independent_expenditures_for = candidate.supporting_money.total_supporting_independent %}
+    {% if expenditures_against > 0 or independent_expenditures_for > 0 %}
     <section class="l-section">
       <div class="l-section__content">
-        <h2 class="candidate__expenditures-opposing">Expenditures opposing candidate <span class="money">{{ candidate.opposing_money.opposing_expenditures | times: 100 | money }}</span></h2>
+        {% if expenditures_against > 0 %}
+        <h2 class="candidate__expenditures-opposing">
+          Expenditures opposing candidate <span class="money">{{ expenditures_against | times: 100 | money }}</span>
+        </h2>
+        {% endif %}
+        {% if independent_expenditures_for > 0 %}
+        <h2 class="candidate__expenditures-opposing">
+          Expenditures supporting candidate <span class="money">{{ independent_expenditures_for | times: 100 | money }}</span>
+        </h2>
+        {% endif %}
       </div>
     </section>
+    {% endif %}
     {% assign money_bar_max = candidate.total_contributions | plus: candidate.total_expenditures %}
     <section class="l-section">
       <div class="l-section__content l-section__content--half">

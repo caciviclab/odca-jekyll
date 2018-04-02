@@ -1,5 +1,5 @@
 ---
-id: 12
+id: 16
 name: Viola Gonzales
 photo_url: 'https://s3-us-west-1.amazonaws.com/odca-candidate-photos/Viola-Gonzales.png'
 website_url: 'http://www.voteviola.com/'
@@ -8,8 +8,8 @@ votersedge_url: >-
   http://votersedge.org/ca/en/ballot/election/area/42/contests/contest/13237/candidate/130760?&county=Alameda%20County&election_authority_id=1
 first_name: Viola
 last_name: Gonzales
-ballot_item: 10
-office_election: 10
+ballot_item: 7
+office_election: 7
 bio: >-
   Viola Gonzales was the Chief Executive Officer of AnewAmerica Community
   Corporation, a non-profit that helps immigrants and refugees start small and
@@ -37,6 +37,7 @@ supporting_money:
   total_contributions: 69742.41
   total_expenditures: 69842.41
   total_loans_received: 6899.83
+  total_supporting_independent: 0
   contributions_by_type:
     Committee: 4700
     Individual: 43517.84
@@ -77,8 +78,6 @@ expenditures_by_type:
   Campaign Literature and Mailings: 33656.76
   'Professional Services (Legal, Accounting)': 4504.52
   'Information Technology Costs (Internet, E-mail)': 3150
-ballots:
-- _ballots/oakland/2016-11-08.md
 ---
 Viola Gonzales was the Chief Executive Officer of AnewAmerica Community Corporation, a non-profit that helps immigrants and refugees start small and micro-businesses. Gonzales has been Executive Director for a non-profit residential program for developmentally disabled kids based in Oakland for the past eight years. Her volunteer service has included corporate advisory, nonprofit and civic boards. In 2002, Gonzales was appointed to the Oakland Board of Education by then-Mayor Jerry Brown. Prior to this appointment, she served on the Oakland Planning Commission. 
 

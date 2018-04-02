@@ -1,7 +1,6 @@
 ---
-locality: oakland
-election: 2016-11-08
 id: 1
+contest_type: Referendum
 name: Sugar-Sweetened BeverageTax
 title: Sugar-Sweetened BeverageTax
 summary: >-

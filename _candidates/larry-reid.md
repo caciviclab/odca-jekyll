@@ -1,5 +1,5 @@
 ---
-id: 15
+id: 24
 name: Larry Reid
 photo_url: 'https://s3-us-west-1.amazonaws.com/odca-candidate-photos/larry-reid.png'
 website_url: 'https://www.facebook.com/LarryReid4District7/'
@@ -8,8 +8,8 @@ votersedge_url: >-
   http://votersedge.org/ca/en/ballot/election/area/42/contests/contest/13238/candidate/130763?&county=Alameda%20County&election_authority_id=1
 first_name: Larry
 last_name: Reid
-ballot_item: 7
-office_election: 7
+ballot_item: 9
+office_election: 9
 bio: >-
   Larry Reid has been a Councilmember for District 7 since 1997. Reid is a
   member of the Public Works and Rules and Legislation Committees for the City
@@ -33,6 +33,7 @@ supporting_money:
   total_contributions: 73352.51
   total_expenditures: 76660.71
   total_loans_received: 0
+  total_supporting_independent: 0
   contributions_by_type:
     Committee: 8330
     Individual: 48550
@@ -81,8 +82,6 @@ expenditures_by_type:
   'Staff/Spouse Travel, Lodging, and Meals': 202.76
   'Professional Services (Legal, Accounting)': 10248.12
   'Information Technology Costs (Internet, E-mail)': 2575.69
-ballots:
-- _ballots/oakland/2016-11-08.md
 ---
 Larry Reid has been a Councilmember for District 7 since 1997. Reid is a member of the Public Works and Rules and Legislation Committees for the City of Oakland and is Chairman of the Community and Economic Development Committee. Reid served as Chief of Staff for former Oakland City Councilmember Aleta Cannon and former Mayor and Assemblymember Elihu Harris. He was born and raised in Cincinnati, Ohio and attended the University of Cincinnati. 
 

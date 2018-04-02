@@ -1,5 +1,5 @@
 ---
-id: 9
+id: 13
 name: Lynette Gibson McElhaney
 photo_url: >-
   https://s3-us-west-1.amazonaws.com/odca-candidate-photos/Lynette-Gibson-McElhaney.png
@@ -9,8 +9,8 @@ votersedge_url: >-
   http://votersedge.org/ca/en/ballot/election/area/42/contests/contest/13236/candidate/130757?&county=Alameda%20County&election_authority_id=1
 first_name: Lynette
 last_name: Gibson McElhaney
-ballot_item: 2
-office_election: 2
+ballot_item: 6
+office_election: 6
 bio: >-
   Lynnette McElhaney currently serves as an Oakland City Council member
   representing District 3 and has advocated for the betterment of Oakland in
@@ -30,6 +30,7 @@ supporting_money:
   total_contributions: 126756.69
   total_expenditures: 134875.99
   total_loans_received: 0
+  total_supporting_independent: 0
   contributions_by_type:
     Committee: 15850
     Individual: 80872.77
@@ -82,8 +83,6 @@ expenditures_by_type:
   'Candidate Travel, Lodging, and Meals': 91.39
   'Professional Services (Legal, Accounting)': 21335.45
   'Information Technology Costs (Internet, E-mail)': 4228.5
-ballots:
-- _ballots/oakland/2016-11-08.md
 ---
 Lynnette McElhaney currently serves as an Oakland City Council member representing District 3 and has advocated for the betterment of Oakland in terms of enhancing jobs, public safety, education and the economy. She earned a degree from UC Berkeley and moved to West Oakland after graduating college. 
 

@@ -1,5 +1,5 @@
 ---
-id: 26
+id: 42
 name: James Harris
 photo_url: 'https://s3-us-west-1.amazonaws.com/odca-candidate-photos/james-harris.png'
 website_url: 'http://harrisforeastoakland.com/about-james/'
@@ -8,8 +8,8 @@ votersedge_url: >-
   http://votersedge.org/ca/en/ballot/election/area/42/contests/contest/13219/candidate/130703?&county=Alameda%20County&election_authority_id=1
 first_name: James
 last_name: Harris
-ballot_item: 4
-office_election: 4
+ballot_item: 16
+office_election: 16
 bio: >-
   James Harris is the current Board of Education President, a business owner,
   parent, former teacher, and East Oakland native. Harris serves on the Aim High
@@ -32,6 +32,7 @@ supporting_money:
   total_contributions: 27586
   total_expenditures: 26950.43
   total_loans_received: 0
+  total_supporting_independent: 159034
   contributions_by_type:
     Committee: 5700
     Individual: 21536
@@ -83,8 +84,6 @@ expenditures_by_type:
   Campaign Paraphernalia/Misc.: 2443.7
   Candidate Filing/Ballot Fees: 250
   'Professional Services (Legal, Accounting)': 4542.81
-ballots:
-- _ballots/oakland/2016-11-08.md
 ---
 James Harris is the current Board of Education President, a business owner, parent, former teacher, and East Oakland native. Harris serves on the Aim High East Bay Leadership Council. He is a founding board member of Great Oakland Public Schools and a current board member at Youth Uprising. Harris’ career in education began at 16 as a teaching assistant at the Aim High Summer Program, which prepares children from low-income communities for success in high school and life. 
 

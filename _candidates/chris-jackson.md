@@ -1,5 +1,5 @@
 ---
-id: 27
+id: 43
 name: Chris Jackson
 photo_url: 'https://s3-us-west-1.amazonaws.com/odca-candidate-photos/chris-jackson.png'
 website_url: 'http://www.chrisjacksonforoakland.org/'
@@ -8,8 +8,8 @@ votersedge_url: >-
   http://votersedge.org/ca/en/ballot/election/area/42/contests/contest/13219/candidate/130704?&county=Alameda%20County&election_authority_id=1
 first_name: Chris
 last_name: Jackson
-ballot_item: 4
-office_election: 4
+ballot_item: 16
+office_election: 16
 bio: >-
   Chris Jackson is a social worker who works with the formerly incarcerated on
   parole or probation. He is a father of a kindergartener who is going into an
@@ -30,6 +30,7 @@ supporting_money:
   total_contributions: 14562
   total_expenditures: 35235.23
   total_loans_received: 0
+  total_supporting_independent: 0
   contributions_by_type:
     Committee: 5900
     Individual: 5900
@@ -64,8 +65,6 @@ expenditures_by_type:
   Campaign Paraphernalia/Misc.: 1167.25
   Campaign Literature and Mailings: 1054.74
   'Professional Services (Legal, Accounting)': 3020.47
-ballots:
-- _ballots/oakland/2016-11-08.md
 ---
 Chris Jackson is a social worker who works with the formerly incarcerated on parole or probation. He is a father of a kindergartener who is going into an OUSD school. 
 

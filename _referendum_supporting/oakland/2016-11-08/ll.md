@@ -1,5 +1,6 @@
 ---
 id: 5
+contest_type: Referendum
 name: Police Commission
 title: Police Commission
 summary: >-
@@ -36,4 +37,13 @@ contributions_by_region:
     locale: Within Oakland
   - amount: 483.3100000000013
     locale: Unknown
+contributions_by_type:
+  - type: Committee
+    amount: 9250
+  - type: Individual
+    amount: 17355.5
+  - type: Other (includes Businesses)
+    amount: 1800
+  - type: COM
+    amount: 483.3100000000013
 ---

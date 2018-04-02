@@ -1,5 +1,6 @@
 ---
 id: 3
+contest_type: Referendum
 name: Just Cause for Eviction and Rent Adjustment
 title: Just Cause for Eviction and Rent Adjustment
 summary: >-
@@ -19,4 +20,5 @@ number: JJ
 opposing_organizations: []
 total_contributions: []
 contributions_by_region: []
+contributions_by_type: []
 ---
