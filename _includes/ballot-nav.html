@@ -1,16 +1,16 @@
 {% assign ballot = include.ballot %}
 {% assign locality = include.locality %}
-{% assign referendums = ballot.ballot_items | where: "contest_type", "Referendum" %}
-{% assign office_elections = ballot.ballot_items | where: "contest_type", "Office" %}
+{% assign referendums = ballot.referendums %}
+{% assign office_elections = ballot.office_elections %}
+{% assign ballots = site.ballots | where: "locality", locality.locality_id | reverse %}
 
 <nav class="ballot-nav">
   {% if referendums and referendums != empty %}
     <section class="l-section">
       <div class="l-section__content">
         <h3>{% include referendum_measure_heading.html referendum_measure_display=locality.referendum_measure_display %}</h3>
-        {% for ballot_item in ballot.ballot_items %}
-          {% if ballot_item.contest_type != "Referendum" %}{% continue %}{% endif %}
-          {% assign referendum = site.referendums | where: "path", ballot_item.referendum | first %}
+        {% for ballot_item in referendums %}
+          {% assign referendum = site.referendums | where: "path", ballot_item | first %}
           <p><a href="{{ referendum.url | prepend: site.baseurl }}">{{ referendum.number }} {{ referendum.title | escape}}</a></p>
         {% endfor %}
       </div>
@@ -19,15 +19,9 @@
   {% if office_elections and office_elections != empty %}
     <section class="l-section">
       <div class="l-section__content">
-        {% for ballot_item in ballot.ballot_items %}
-          {% if ballot_item.contest_type != "Office" %}{% continue %}{% endif %}
-          <h3>{{ ballot_item.name }}</h3>
-          <ul>
-            {% for candidate_id in ballot_item.candidates %}
-              {% assign candidate = site.candidates | where: "slug", candidate_id | first %}
-              <li>{% include candidate-summary.html candidate=candidate %}</li>
-            {% endfor %}
-          </ul>
+        {% for ballot_item in office_elections %}
+          {% assign office_election = site.office_elections | where: "path", ballot_item | first %}
+          <p><a href="{{ office_election.url | prepend: site.baseurl }}">{{ office_election.name }}</a></p>
         {% endfor %}
       </div>
     </section>

@@ -1,6 +1,5 @@
 ---
 id: 4
-contest_type: Referendum
 name: Infrastructure and Housing bonds
 title: Infrastructure and Housing bonds
 summary: >-
