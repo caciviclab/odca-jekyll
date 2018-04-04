@@ -41,12 +41,12 @@ Open Disclosure is based on campaign finance filing deadlines established by the
 State of California Fair Political Practices Commission (FPPC) for all state and
 local candidates and ballot measures in the November 2016 election.
 
-Reporting Period    | FPPC Filing Deadline
-----------------    | --------------------
-1/1/2016 – 6/30/16  | August 1, 2016
-7/1/16 – 9/24/16    | September 29, 2016
-9/25/16 – 10/22/16  | October 27, 2016
-10/23/16 – 12/31/16 | January 31, 2017
+| Reporting Period    |||| FPPC Filing Deadline  |
+| :----------------   |||| :-------------------- |
+| 1/1/2016 – 6/30/16  |||| August 1, 2016        |
+| 7/1/16 – 9/24/16    |||| September 29, 2016    |
+| 9/25/16 – 10/22/16  |||| October 27, 2016      |
+| 10/23/16 – 12/31/16 |||| January 31, 2017      |
 
 In addition to these filing deadlines, contributions of $1,000 or more from
 a single source made to candidate and ballot measure committees within the 90
@@ -74,7 +74,7 @@ Committees that are not candidate-controlled or formed to support or oppose a pa
 
 ## How were candidate biographies prepared?
 
-Candidate bios are written by Open Disclosure volunteers to present a neutral summary of a candidate’s applicable background, work history, education. Biographical information is not intended to communicate a candidate’s platform. All candidates are contacted and offered the opportunity to contribute to their own biography text. Primary sources are the candidates’ official ballot statements and submissions of the candidates themselves, although volunteer research also includes information obtained from campaign materials and published news articles. All candidates are researched using the same standards, with comparable time and energy put into each, and no preference given to party or ideology. 
+Candidate bios are written by Open Disclosure volunteers to present a neutral summary of a candidate’s applicable background, work history, education. Biographical information is not intended to communicate a candidate’s platform. All candidates are contacted and offered the opportunity to contribute to their own biography text. Primary sources are the candidates’ official ballot statements and submissions of the candidates themselves, although volunteer research also includes information obtained from campaign materials and published news articles. All candidates are researched using the same standards, with comparable time and energy put into each, and no preference given to party or ideology.
 
 ## How were ballot measure summaries prepared?
 
@@ -82,11 +82,11 @@ Ballot measure descriptions are intended to provide a brief, neutral summary. Su
 
 ## Does Open Disclosure endorse third-party content?
 
-Open Disclosure contains links to various third party websites that contain additional information related to elections and the political process. Content linked to candidates, such as their campaign websites and social media, are not reviewed. Our site does not endorse, approve, certify, or control these external websites. We do not exercise editorial control or oversight over the content featured by these third-party sites and make no representation as to their accuracy, objectivity, fairness, completeness, efficacy, timeliness, or correct sequencing of information. We are not responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any material available on or through such websites.We neither support nor oppose political parties, ballot measures, or candidates for public office. 
+Open Disclosure contains links to various third party websites that contain additional information related to elections and the political process. Content linked to candidates, such as their campaign websites and social media, are not reviewed. Our site does not endorse, approve, certify, or control these external websites. We do not exercise editorial control or oversight over the content featured by these third-party sites and make no representation as to their accuracy, objectivity, fairness, completeness, efficacy, timeliness, or correct sequencing of information. We are not responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any material available on or through such websites.We neither support nor oppose political parties, ballot measures, or candidates for public office.
 
 ## Who do I contact if I believe any of the data is incorrect?
 
-Contact the [Open Disclosure team](https://github.com/caciviclab/disclosure-frontend/issues/new?labels=type%2Fquestion&title=Feedback%3A+a+question+on+data+correctness) if you believe any of the data or candidate information is incorrect or violates the statement of impartiality outlined in the answer above. We want public feedback and ask to be notified if any errors are present. Thank you! 
+Contact the [Open Disclosure team](https://github.com/caciviclab/disclosure-frontend/issues/new?labels=type%2Fquestion&title=Feedback%3A+a+question+on+data+correctness) if you believe any of the data or candidate information is incorrect or violates the statement of impartiality outlined in the answer above. We want public feedback and ask to be notified if any errors are present. Thank you!
 
 ## What are Oakland's Campaign Finance Rules?
 
@@ -122,38 +122,38 @@ consulting firms.
 
 ### Contributions (CTB)
 
-Includes contributions made to other candidates and committees. Use “CTB” for direct monetary contributions. For nonmonetary (in-kind) contributions, use “CTB” and, if one of the other codes accurately describes the expenditure, you may enter that code also. Otherwise, describe the payment. Also provide the name of the candidate or committee that received the nonmonetary contribution in the “Description of Payment” column.* 
+Includes contributions made to other candidates and committees. Use “CTB” for direct monetary contributions. For nonmonetary (in-kind) contributions, use “CTB” and, if one of the other codes accurately describes the expenditure, you may enter that code also. Otherwise, describe the payment. Also provide the name of the candidate or committee that received the nonmonetary contribution in the “Description of Payment” column.*
 
 ### Civic Donations (CVC)
 
-Includes donations to civic, nonprofit or education organizations; payments for community events. 
+Includes donations to civic, nonprofit or education organizations; payments for community events.
 
 ### Candidate Filing/Ballot Fees (FIL)
 
-Includes payments to election officials for candidate filing fees and fees charged for publication of a ballot statement. 
+Includes payments to election officials for candidate filing fees and fees charged for publication of a ballot statement.
 
 ### Fundraising Events (FND)
 
-Includes expenditures associated with holding a fundraising event, including payments for event space to hotels or halls, payments for food and beverages to restaurants, caterers and other vendors, and payments for speakers, entertainment, and decorations. Includes costs of house parties. (Use “LIT” for costs of invitations, brochures, and solicitations associated with fundraising events.) 
+Includes expenditures associated with holding a fundraising event, including payments for event space to hotels or halls, payments for food and beverages to restaurants, caterers and other vendors, and payments for speakers, entertainment, and decorations. Includes costs of house parties. (Use “LIT” for costs of invitations, brochures, and solicitations associated with fundraising events.)
 
 ### Independent expenditures (IND)
 
-Includes payments for communications that support/oppose other candidates or measures that are not made in consultation or coordination with the candidates or a ballot measure committee. Use “IND” and, if one of the other codes accurately describes the independent expenditure, you may enter that code also. Otherwise, describe the payment. Also provide the name of the candidate or ballot measure supported or opposed by the expenditure.* 
+Includes payments for communications that support/oppose other candidates or measures that are not made in consultation or coordination with the candidates or a ballot measure committee. Use “IND” and, if one of the other codes accurately describes the independent expenditure, you may enter that code also. Otherwise, describe the payment. Also provide the name of the candidate or ballot measure supported or opposed by the expenditure.*
 
 ### Legal Defense (LEG)
-Includes attorney or other fees paid for legal defense. 
+Includes attorney or other fees paid for legal defense.
 
 ### Campaign literature and mailings (LIT)
 
-Includes preparation, production, and distribution of campaign literature, direct mail pieces, fundraising solicitations, and door hangers. Includes costs of mailing lists, design/graphics, copy and layout, printing and photocopying. Includes payments to be on a slate mailer, and for absentee ballot mailers. 
+Includes preparation, production, and distribution of campaign literature, direct mail pieces, fundraising solicitations, and door hangers. Includes costs of mailing lists, design/graphics, copy and layout, printing and photocopying. Includes payments to be on a slate mailer, and for absentee ballot mailers.
 
 ### Member Communications (MBR)
 
-Includes payments for communications to members, employees, or shareholders of an organization, or their family members, for the purpose of supporting or opposing a candidate or ballot measure. 
+Includes payments for communications to members, employees, or shareholders of an organization, or their family members, for the purpose of supporting or opposing a candidate or ballot measure.
 
 ### Meetings and appearances (MTG)
 
-Includes costs associated with meetings, press conferences, town halls, and constituent meetings. 
+Includes costs associated with meetings, press conferences, town halls, and constituent meetings.
 
 ### Office expenses (OFC)
 
@@ -161,19 +161,19 @@ Includes expenditures for office rent; utilities (including cellular phone servi
 
 ### Petition circulating (PET)
 
-Includes payments for printing petitions and payments to signature gathering firms for ballot measure qualification drives. 
+Includes payments for printing petitions and payments to signature gathering firms for ballot measure qualification drives.
 
 ### Phone banks (PHO)
 
-Includes costs of phone banks. 
+Includes costs of phone banks.
 
 ### Polling and survey research (POL)
 
-Includes costs of designing and conducting polls, reports on election trends, voter surveys, etc. 
+Includes costs of designing and conducting polls, reports on election trends, voter surveys, etc.
 
 ### Postage, delivery and messenger services (POS)
 
-Includes U.S. Postal Service, Federal Express, United Parcel Service, and other delivery and courier services. 
+Includes U.S. Postal Service, Federal Express, United Parcel Service, and other delivery and courier services.
 
 ### Professional services (PRO)
 
@@ -181,7 +181,7 @@ Includes legal, accounting, and bookkeeping services.
 
 ### Print space and production costs (PRT)
 
-Includes advertising space in newspapers, magazines and other publications, and billboard ads. 
+Includes advertising space in newspapers, magazines and other publications, and billboard ads.
 
 ### Radio airtime and production costs (RAD)
 
@@ -189,27 +189,27 @@ Includes advertising space in newspapers, magazines and other publications, and 
 
 ### Campaign workers salaries (SAL)
 
-Includes state and federal payroll taxes. 
+Includes state and federal payroll taxes.
 
 ### Television or cable airtime and video production costs (TEL)
 
 ### Candidate travel (TRC)
 
-Includes payments or reimbursements for travel, lodging, and meals of a candidate. 
+Includes payments or reimbursements for travel, lodging, and meals of a candidate.
 
 ### Staff/spouse travel (TRS)
 
-Includes payments or reimbursements for travel, lodging, and meals of a candidate’s representative (staff), or member of the candidate’s household. 
+Includes payments or reimbursements for travel, lodging, and meals of a candidate’s representative (staff), or member of the candidate’s household.
 
 ### Transfers (TSF)
 
-Includes only use this code to report the transfer of funds to another authorized committee of the same candidate or sponsoring organization. Report funds this committee gives to other committees on Schedule E, as contributions (“CTB”) to those committees, not as transfers. 
+Includes only use this code to report the transfer of funds to another authorized committee of the same candidate or sponsoring organization. Report funds this committee gives to other committees on Schedule E, as contributions (“CTB”) to those committees, not as transfers.
 
 ### Voter registration costs (VOT)
 
 ### Information technology costs (WEB)
 
-Includes payments for website design, e-mail, internet access, production of website and e-mail advertising. 
+Includes payments for website design, e-mail, internet access, production of website and e-mail advertising.
 
 _\* Payments that are contributions or independent expenditures to support or
 oppose other candidates, measures, and committees must also be summarized on
