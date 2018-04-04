@@ -26,7 +26,7 @@ layout: default
         <div>{{ supporting.total_contributions | times: 100 | money }}</div>
       </h2>
     </center>
-    {% include contributions_by_region.html supporting_opposing=supporting %}
+    {% include contributions_by_region.html supporting_opposing=supporting color="green" %}
     {% if supporting and supporting.supporting_organizations != empty %}
     {% endif %}
   </div>
