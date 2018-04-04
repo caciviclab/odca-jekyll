@@ -1,4 +1,4 @@
-unit = ['', 'K', 'M', 'B', 'T']
+$unit = ['', 'K', 'M', 'B', 'T']
 
 module Jekyll
   module FriendlyNumberFilter
@@ -7,16 +7,16 @@ module Jekyll
       return number unless number.is_a? Numeric
 
       iterations = 0
-      while number / 1000 >= 1 && iterations < unit.size do
+      while number / 1000 >= 1 && iterations < $unit.size do
         number = number / 1000.0
         iterations += 1
       end
 
       # If number is less than 10, include a decimal
       if number < 10
-        '%.1f%s' % [number.round(1), unit[iterations]]
+        '%.1f%s' % [number.round(1), $unit[iterations]]
       else
-        '%d%s' % [number.round, unit[iterations]]
+        '%d%s' % [number.round, $unit[iterations]]
       end
     end
 
