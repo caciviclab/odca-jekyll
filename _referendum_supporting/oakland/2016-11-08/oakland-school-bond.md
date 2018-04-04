@@ -26,10 +26,6 @@ supporting_organizations:
     name: Friends of Oakland Public Schools Yes on G1 2016
     payee: Friends of Oakland Public Schools Yes on G1 2016
     amount: 32926.02
-  - id: null
-    name: 'YES ON G1, SPONSORED BY GO PUBLIC SCHOOLS ADVOCATES'
-    payee: 'YES ON G1, SPONSORED BY GO PUBLIC SCHOOLS ADVOCATES'
-    amount: 15018.45
 total_contributions: 257500
 contributions_by_region:
   - amount: 148000
