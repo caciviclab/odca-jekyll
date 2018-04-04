@@ -1,7 +1,6 @@
 ---
-locality: oakland
-election: 2016-11-08
 id: 1
+contest_type: Referendum
 name: Sugar-Sweetened BeverageTax
 title: Sugar-Sweetened BeverageTax
 summary: >-
@@ -18,6 +17,24 @@ summary: >-
   programs that prevent or reduce the health consequences of consuming
   sugar-sweetened beverages.
 number: HH
-ballot_id: 1
+supporting_organizations:
+  - id: '1381041'
+    name: 'Yes on Measure HH, Citizens for Healthy Oakland Children'
+    payee: 'Yes on Measure HH, Citizens for Healthy Oakland Children'
+    amount: 10770118.520000001
+total_contributions: 10759941.92
+contributions_by_region:
+  - amount: 10447387.2
+    locale: Out of State
+  - amount: 233874.72
+    locale: Within California
+  - amount: 78680
+    locale: Within Oakland
+contributions_by_type:
+  - type: Committee
+    amount: 213964.72
+  - type: Individual
+    amount: 9416327.2
+  - type: Other (includes Businesses)
+    amount: 1129650
 ---
-This measure would impose a tax on the distribution of Sugar-Sweetened Beverage Products in Oakland. Sugar-Sweetened beverages are defined as any beverage to which one or more Caloric Sweeteners have been added and that contain 25 or more calories per 12 fluid ounces of beverage. The tax would not be imposed on infant or baby formula, beverages for medical use, supplemental, meal replacement, or nutritional beverages, milk products, fruit or vegetable juices with no added sweeteners, or alcoholic beverages. The measure would require that any distributor of sugar-sweetened beverages register with the City and establish a Community Advisory Board. The Board would be responsible for making recommendations to the City Council on setting up or funding programs that prevent or reduce the health consequences of consuming sugar-sweetened beverages.

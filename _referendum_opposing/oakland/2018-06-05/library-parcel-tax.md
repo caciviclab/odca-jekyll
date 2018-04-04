@@ -6,7 +6,7 @@ title: Library Parcel Tax
 summary: >-
   This measure would impose an additional parcel tax to fund the Oakland Public
   Library.
-number: null
+number: D
 opposing_organizations: []
 total_contributions: []
 contributions_by_region: []

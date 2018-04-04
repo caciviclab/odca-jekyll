@@ -1,5 +1,6 @@
 ---
 id: 2
+contest_type: Referendum
 name: Lease Term for City-Owned or City-Controlled Property
 title: Lease Term for City-Owned or City-Controlled Property
 summary: >-
@@ -9,7 +10,8 @@ summary: >-
   lease real property owned or controlled by the City of Oakland for a maximum
   term of sixty-six (66) years. (City Charter Section 1001).
 number: II
-supporting_organizations: []
+opposing_organizations: []
 total_contributions: []
 contributions_by_region: []
+contributions_by_type: []
 ---

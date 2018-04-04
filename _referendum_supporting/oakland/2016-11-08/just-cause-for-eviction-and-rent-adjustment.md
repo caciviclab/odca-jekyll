@@ -1,5 +1,6 @@
 ---
 id: 3
+contest_type: Referendum
 name: Just Cause for Eviction and Rent Adjustment
 title: Just Cause for Eviction and Rent Adjustment
 summary: >-
@@ -16,7 +17,36 @@ summary: >-
   allowable cost-of-living rent adjustment for the year while explaining how to
   get information for a rent increase.
 number: JJ
-opposing_organizations: []
-total_contributions: []
-contributions_by_region: []
+supporting_organizations:
+  - id: '1385949'
+    name: 'Causa Justa :: Just Cause (nonprofit 501(c)(3))'
+    payee: 'Causa Justa :: Just Cause (nonprofit 501(c)(3))'
+    amount: 169165.88
+  - id: '1364564'
+    name: >-
+      Committee to Protect Oakland Renters - Yes on Measure JJ, sponsored by
+      labor and community organizations
+    payee: >-
+      Committee to Protect Oakland Renters - Yes on Measure JJ, sponsored by
+      labor and community organizations
+    amount: 448842.35
+total_contributions: 504574.87999999995
+contributions_by_region:
+  - amount: 29200
+    locale: Out of State
+  - amount: 123760.65
+    locale: Within California
+  - amount: 324759.16
+    locale: Within Oakland
+  - amount: 26855.070000000007
+    locale: Unknown
+contributions_by_type:
+  - type: Committee
+    amount: 270394.35
+  - type: Individual
+    amount: 49670
+  - type: Other (includes Businesses)
+    amount: 157655.46
+  - type: COM
+    amount: 26855.070000000036
 ---

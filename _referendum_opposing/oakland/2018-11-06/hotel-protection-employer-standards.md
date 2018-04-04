@@ -4,7 +4,7 @@ contest_type: Referendum
 name: Hotel Protection & Employer Standards
 title: Hotel Protection & Employer Standards
 summary: null
-number: null
+number: TBD2
 opposing_organizations: []
 total_contributions: []
 contributions_by_region: []

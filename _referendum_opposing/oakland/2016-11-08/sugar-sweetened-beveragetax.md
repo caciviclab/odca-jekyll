@@ -1,5 +1,6 @@
 ---
 id: 1
+contest_type: Referendum
 name: Sugar-Sweetened BeverageTax
 title: Sugar-Sweetened BeverageTax
 summary: >-
@@ -16,17 +17,24 @@ summary: >-
   programs that prevent or reduce the health consequences of consuming
   sugar-sweetened beverages.
 number: HH
-supporting_organizations:
-  - id: '1381041'
-    name: 'Yes on Measure HH, Citizens for Healthy Oakland Children'
-    payee: 'Yes on Measure HH, Citizens for Healthy Oakland Children'
-    amount: 10770118.520000001
-total_contributions: 10759941.92
+opposing_organizations:
+  - id: '1385180'
+    name: >-
+      No on HH: No Oakland Grocery Tax, with Major Funding by American Beverage
+      Association California PAC
+    payee: >-
+      No on HH: No Oakland Grocery Tax, with Major Funding by American Beverage
+      Association California PAC
+    amount: 8065162.15
+total_contributions: 7913894.640000001
 contributions_by_region:
-  - amount: 10447387.2
+  - amount: 8391.91
     locale: Out of State
-  - amount: 233874.72
+  - amount: 7905502.73
     locale: Within California
-  - amount: 78680
-    locale: Within Oakland
+contributions_by_type:
+  - type: Committee
+    amount: 7906502.73
+  - type: Other (includes Businesses)
+    amount: 7391.91
 ---
