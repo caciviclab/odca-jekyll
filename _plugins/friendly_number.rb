@@ -38,7 +38,7 @@ module Jekyll
       number.negative? ? '(%s)' % money : money
     end
 
-    # Shortcut for number | floor | comma_number | prepend:'$'
+    # Shortcut for number | round | comma_number | prepend:'$'
     def dollars(number)
       return number unless number.is_a? Numeric
 
