@@ -9,9 +9,21 @@ const ext = require('gulp-ext');
 const BACKEND_STATIC_REPO = path.join('..', 'disclosure-backend-static');
 
 const OAKLAND_2016_REFERENDUM_NUMBERS = ['g1', 'hh', 'ii', 'jj', 'kk', 'll'];
+const OAKLAND_REFERENDUM_ELECTION_MAP = {
+  'g1': '2016-11-08',
+  'hh': '2016-11-08',
+  'ii': '2016-11-08',
+  'jj': '2016-11-08',
+  'kk': '2016-11-08',
+  'll': '2016-11-08',
+  'd': '2018-06-05',
+  'tbd1': '2018-11-06',
+  'tbd2': '2018-11-06',
+};
 
 function guessElection (data) {
-  return data.number && OAKLAND_2016_REFERENDUM_NUMBERS.includes(data.number.toLowerCase()) ? '2016-11-08' : '2018-11-06';
+  const number = data.number && data.number.toLowerCase();
+  return number in OAKLAND_REFERENDUM_ELECTION_MAP ?  OAKLAND_REFERENDUM_ELECTION_MAP[number] : '2018-11-06';
 }
 
 function dataDir(...pathParts) {
@@ -114,7 +126,7 @@ gulp.task('pull:referendums', function () {
     .pipe(extract('summary'))
     .pipe(slugifyName((data) => {
       const election = guessElection(data);
-      return `oakland/${election}/${slugify(data.number || data.title)}.json`
+      return `oakland/${election}/${slugify(data.title)}.json`
     }))
     .pipe(jsonToYaml({ safe: true }))
     .pipe(header('---\n'))
@@ -128,7 +140,7 @@ gulp.task('pull:referendums_opposing', function () {
   return gulp.src(dataDir('referendum', '*', 'opposing', 'index.json'))
     .pipe(slugifyName((data) => {
       const election = guessElection(data);
-      return `oakland/${election}/${slugify(data.number || data.title)}.json`
+      return `oakland/${election}/${slugify(data.title)}.json`
     }))
     .pipe(jsonToYaml({ safe: true }))
     .pipe(header('---\n'))
@@ -141,7 +153,7 @@ gulp.task('pull:referendums_supporting', function () {
   return gulp.src(dataDir('referendum', '*', 'supporting', 'index.json'))
     .pipe(slugifyName((data) => {
       const election = guessElection(data);
-      return `oakland/${election}/${slugify(data.number || data.title)}.json`
+      return `oakland/${election}/${slugify(data.title)}.json`
     }))
     .pipe(jsonToYaml({ safe: true }))
     .pipe(header('---\n'))
