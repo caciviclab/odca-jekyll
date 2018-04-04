@@ -26,7 +26,7 @@ layout: default
         <div>{{ supporting.total_contributions | times: 100 | money }}</div>
       </h2>
     </center>
-    {% include contributions_by_region.html contributions_by_region=supporting.contributions_by_region %}
+    {% include contributions_by_region.html supporting_opposing=supporting %}
     {% if supporting and supporting.supporting_organizations != empty %}
     {% endif %}
   </div>
@@ -38,7 +38,7 @@ layout: default
         <div>{{ opposing.total_contributions | times: 100 | money }}</div>
       </h2>
     </center>
-    {% include contributions_by_region.html contributions_by_region=opposing.contributions_by_region %}
+    {% include contributions_by_region.html supporting_opposing=opposing %}
     {% if opposing and opposing.opposing_organizations != empty %}
     {% endif %}
   </div>
