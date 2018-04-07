@@ -1,10 +1,8 @@
 const { Transform } = require('stream');
 const path = require('path');
+
+const del = require('del');
 const gulp = require('gulp');
-const jsonToYaml = require('gulp-json-to-yaml');
-const header = require('gulp-header');
-const footer = require('gulp-footer');
-const ext = require('gulp-ext');
 
 const BACKEND_STATIC_REPO = path.join('..', 'disclosure-backend-static');
 
@@ -49,31 +47,6 @@ function slugifyName(fn) {
   });
 }
 
-function append(field) {
-  return new Transform({
-    objectMode: true,
-    transform(file, enc, callback) {
-      file.contents = Buffer.concat([file.contents, new Buffer(file[field] || '')]);
-
-      this.push(file);
-      callback();
-    },
-  });
-}
-
-function extract(field) {
-  return new Transform({
-    objectMode: true,
-    transform(file, enc, callback) {
-      const data = JSON.parse(file.contents);
-      file[field] = data[field];
-
-      this.push(file);
-      callback();
-    },
-  });
-}
-
 function contributions() {
   return new Transform({
     objectMode: true,
@@ -93,80 +66,67 @@ function contributions() {
   });
 }
 
+gulp.task('clean', function () {
+  return del([
+    '_data/candidates',
+    '_data/committees',
+    '_data/contributions',
+    '_data/referendums',
+    '_data/referendum_opposing',
+    '_data/referendum_supporting',
+  ]);
+});
+
 gulp.task('pull:candidates', function () {
   return gulp.src(dataDir('candidate', '*', 'index.json'))
-    .pipe(extract('bio'))
     .pipe(slugifyName((data) => `${slugify(data.name)}.json`))
-    .pipe(jsonToYaml({ safe: true }))
-    .pipe(header('---\n'))
-    .pipe(footer('---\n'))
-    .pipe(ext.replace('md'))
-    .pipe(append('bio'))
-    .pipe(gulp.dest('_candidates'));
+    .pipe(gulp.dest('_data/candidates'));
 });
 
 gulp.task('pull:committees', function () {
-  return gulp.src('../disclosure-backend-static/build/committee/*/index.json')
+  return gulp.src(dataDir('committee', '*', 'index.json'))
     .pipe(slugifyName((data) => `${data.filer_id}.json`))
-    .pipe(jsonToYaml({ safe: true }))
-    .pipe(header('---\n'))
-    .pipe(footer('---\n'))
-    .pipe(ext.replace('md'))
-    .pipe(gulp.dest('_committees'));
+    .pipe(gulp.dest('_data/committees'));
 });
 
 gulp.task('pull:contributions', function () {
-  return gulp.src('../disclosure-backend-static/build/committee/*/contributions/index.json')
+  return gulp.src(dataDir('committee', '*', 'contributions', 'index.json'))
     .pipe(contributions())
     .pipe(gulp.dest('_data/contributions'));
 });
 
 gulp.task('pull:referendums', function () {
   return gulp.src(dataDir('referendum', '*', 'index.json'))
-    .pipe(extract('summary'))
     .pipe(slugifyName((data) => {
       const election = guessElection(data);
       return `oakland/${election}/${slugify(data.title)}.json`
     }))
-    .pipe(jsonToYaml({ safe: true }))
-    .pipe(header('---\n'))
-    .pipe(footer('---\n'))
-    .pipe(ext.replace('md'))
-    .pipe(append('summary'))
-    .pipe(gulp.dest('_referendums'));
+    .pipe(gulp.dest('_data/referendums'));
 });
 
-gulp.task('pull:referendums_opposing', function () {
+gulp.task('pull:referendum_opposing', function () {
   return gulp.src(dataDir('referendum', '*', 'opposing', 'index.json'))
     .pipe(slugifyName((data) => {
       const election = guessElection(data);
       return `oakland/${election}/${slugify(data.title)}.json`
     }))
-    .pipe(jsonToYaml({ safe: true }))
-    .pipe(header('---\n'))
-    .pipe(footer('---\n'))
-    .pipe(ext.replace('md'))
-    .pipe(gulp.dest('_referendum_opposing'));
+    .pipe(gulp.dest('_data/referendum_opposing'));
 });
 
-gulp.task('pull:referendums_supporting', function () {
+gulp.task('pull:referendum_supporting', function () {
   return gulp.src(dataDir('referendum', '*', 'supporting', 'index.json'))
     .pipe(slugifyName((data) => {
       const election = guessElection(data);
       return `oakland/${election}/${slugify(data.title)}.json`
     }))
-    .pipe(jsonToYaml({ safe: true }))
-    .pipe(header('---\n'))
-    .pipe(footer('---\n'))
-    .pipe(ext.replace('md'))
-    .pipe(gulp.dest('_referendum_supporting'));
+    .pipe(gulp.dest('_data/referendum_supporting'));
 });
 
 gulp.task('pull', gulp.parallel(
   'pull:candidates',
   'pull:committees',
   'pull:contributions',
+  'pull:referendum_opposing',
+  'pull:referendum_supporting',
   'pull:referendums',
-  'pull:referendums_opposing',
-  'pull:referendums_supporting'
 ));
