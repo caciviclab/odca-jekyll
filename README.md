@@ -105,7 +105,8 @@ Now rebuild your site with the finance data.
 This site is deployed by a [scheduled CI
 task](https://circleci.com/gh/caciviclab/workflows/odca-jekyll) twice daily. It
 clones the [disclosure-backend-static][backend-static] repo and pulls in the
-finance data before doing a build.
+finance data before doing a build. Merges to the master branch will also trigger
+a deploy.
 
 The site is hosted on [GitHub Pages](https://pages.github.com/). The deploy
 consists of a force push of the `_site` directory to the `gh-pages` branch done
