@@ -5,6 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
+    "gulp": "gulp",
     "pull": "gulp pull",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
