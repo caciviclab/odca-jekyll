@@ -21,7 +21,7 @@ is_accepted_expenditure_ceiling: null
 is_incumbent: false
 occupation: 'Chair, Cannabis Regulatory Commission'
 party_affiliation: null
-filer_id: 1389717
+filer_id: null # 1389717
 supporting_money:
   contributions_received: 1750
   total_contributions: 1750

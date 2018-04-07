@@ -15,7 +15,7 @@ is_accepted_expenditure_ceiling: null
 is_incumbent: null
 occupation: null
 party_affiliation: null
-filer_id: 1400832
+filer_id: null # 1400832
 supporting_money:
   contributions_received: 51080.3
   total_contributions: 51080.3
