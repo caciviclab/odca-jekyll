@@ -69,9 +69,7 @@ function contributions() {
 gulp.task('clean', function () {
   return del([
     '_data/candidates',
-    '_data/committees',
     '_data/contributions',
-    '_data/referendums',
     '_data/referendum_opposing',
     '_data/referendum_supporting',
   ]);
@@ -83,25 +81,10 @@ gulp.task('pull:candidates', function () {
     .pipe(gulp.dest('_data/candidates'));
 });
 
-gulp.task('pull:committees', function () {
-  return gulp.src(dataDir('committee', '*', 'index.json'))
-    .pipe(slugifyName((data) => `${data.filer_id}.json`))
-    .pipe(gulp.dest('_data/committees'));
-});
-
 gulp.task('pull:contributions', function () {
   return gulp.src(dataDir('committee', '*', 'contributions', 'index.json'))
     .pipe(contributions())
     .pipe(gulp.dest('_data/contributions'));
-});
-
-gulp.task('pull:referendums', function () {
-  return gulp.src(dataDir('referendum', '*', 'index.json'))
-    .pipe(slugifyName((data) => {
-      const election = guessElection(data);
-      return `oakland/${election}/${slugify(data.title)}.json`
-    }))
-    .pipe(gulp.dest('_data/referendums'));
 });
 
 gulp.task('pull:referendum_opposing', function () {
@@ -124,9 +107,7 @@ gulp.task('pull:referendum_supporting', function () {
 
 gulp.task('pull', gulp.parallel(
   'pull:candidates',
-  'pull:committees',
   'pull:contributions',
   'pull:referendum_opposing',
   'pull:referendum_supporting',
-  'pull:referendums',
 ));
