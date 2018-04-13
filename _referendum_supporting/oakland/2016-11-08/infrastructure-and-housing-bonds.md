@@ -1,5 +1,6 @@
 ---
 id: 4
+contest_type: Referendum
 name: Infrastructure and Housing bonds
 title: Infrastructure and Housing bonds
 summary: >-
@@ -14,21 +15,28 @@ summary: >-
   Council established priorities as set forth in the City’s Capital Improvement
   Plan.
 number: KK
-opposing_organizations:
-  - id: '1391606'
+supporting_organizations:
+  - id: '1387983'
     name: >-
-      Coalition to Improve Oakland Government - NO on Measure KK sponsored by
-      Oakland small business and property owners, home owners and renters
+      Invest in Oakland's Infrastructure and Affordable Housing -- Yes on KK, a
+      Coalition of Business, Community Leaders and Oakland Residents
     payee: >-
-      Coalition to Improve Oakland Government - NO on Measure KK sponsored by
-      Oakland small business and property owners, home owners and renters
-    amount: 43073.99
-total_contributions: 43073.99
+      Invest in Oakland's Infrastructure and Affordable Housing -- Yes on KK, a
+      Coalition of Business, Community Leaders and Oakland Residents
+    amount: 413909.6
+total_contributions: 406937.34
 contributions_by_region:
-  - amount: 19500
+  - amount: 17500
+    locale: Out of State
+  - amount: 121050
     locale: Within California
-  - amount: 23274.29
+  - amount: 268387.34
     locale: Within Oakland
-  - amount: 299.6999999999971
-    locale: Unknown
+contributions_by_type:
+  - type: Committee
+    amount: 176049.34
+  - type: Individual
+    amount: 23188
+  - type: Other (includes Businesses)
+    amount: 207700
 ---

@@ -1,5 +1,6 @@
 ---
 id: 6
+contest_type: Referendum
 name: Oakland School Bond
 title: Oakland School Bond
 summary: >-
@@ -25,14 +26,17 @@ supporting_organizations:
     name: Friends of Oakland Public Schools Yes on G1 2016
     payee: Friends of Oakland Public Schools Yes on G1 2016
     amount: 32926.02
-  - id: '1391632'
-    name: 'YES ON G1, SPONSORED BY GO PUBLIC SCHOOLS ADVOCATES'
-    payee: 'YES ON G1, SPONSORED BY GO PUBLIC SCHOOLS ADVOCATES'
-    amount: 15018.45
 total_contributions: 257500
 contributions_by_region:
   - amount: 148000
     locale: Within California
   - amount: 109500
     locale: Within Oakland
+contributions_by_type:
+  - type: Committee
+    amount: 149000
+  - type: Individual
+    amount: 10500
+  - type: Other (includes Businesses)
+    amount: 98000
 ---

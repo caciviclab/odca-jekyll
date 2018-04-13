@@ -1,5 +1,6 @@
 ---
 id: 6
+contest_type: Referendum
 name: Oakland School Bond
 title: Oakland School Bond
 summary: >-
@@ -12,7 +13,6 @@ summary: >-
   senior and low income residents, no money for Sacramento, and all money
   benefitting Oakland students?
 number: G1
-opposing_organizations: []
-total_contributions: []
-contributions_by_region: []
+ballot_id: 1
 ---
+This measure will provide a districtwide educator salary increase designed to attract/retain teachers; provide enhanced middle school art, music, languages/other programs in addition to core educational programs; improve academic achievement; provide safe, positive schools, and prepare students for college/careers; shall Oakland Unified School District levy a tax of $120 per parcel, providing $12.4 million annually, for 12 years, with exemptions for senior and low income residents, no money for Sacramento, and all money benefitting Oakland students?

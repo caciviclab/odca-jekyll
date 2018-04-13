@@ -7,6 +7,8 @@ summary: >-
   This measure would impose an additional parcel tax to fund the Oakland Public
   Library.
 number: D
-ballot_id: 1
+supporting_organizations: []
+total_contributions: []
+contributions_by_region: []
+contributions_by_type: []
 ---
-This measure would impose an additional parcel tax to fund the Oakland Public Library.
