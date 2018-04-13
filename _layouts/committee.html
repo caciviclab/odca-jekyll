@@ -26,7 +26,7 @@ layout: default
           {% for contribution in contributions %}
           <tr>
             <td class="contributors__name">{{ contribution.Tran_NamF | escape }} {{ contribution.Tran_NamL | escape }}</td>
-            <td class="contributors__amount">{{ contribution.Tran_Amt1 | times: 100 | money }}</td>
+            <td class="contributors__amount">{{ contribution.Tran_Amt1 | dollars }}</td>
             <td class="contributors__date contributors__col--s1">{{ contribution.Tran_Date | date: "%Y-%m-%d" }}</td>
           </tr>
           {% endfor %}

@@ -33,17 +33,17 @@ layout: default
     </section>
     <section class="l-section">
       <div class="l-section__content">
-        <div class="candidate__summary candidate__summary--contributions">Contributions: <span class="money">{{ candidate.total_contributions | times: 100 | money }}</span></div>
-        <div class="candidate__summary candidate__summary--expenditures">Expenditures: <span class="money">{{ candidate.total_expenditures | times: 100 | money }}</span></div>
+        <div class="candidate__summary candidate__summary--contributions">Contributions: <span class="money">{{ candidate.total_contributions | money }}</span></div>
+        <div class="candidate__summary candidate__summary--expenditures">Expenditures: <span class="money">{{ candidate.total_expenditures | money }}</span></div>
         {% if candidate.total_loans_received > 0 %}
-        <div class="candidate__summary candidate__summary--loans">Loans: <span class="money">{{ candidate.total_loans_received | times: 100 |  money }}</span></div>
+        <div class="candidate__summary candidate__summary--loans">Loans: <span class="money">{{ candidate.total_loans_received | money }}</span></div>
         {% endif %}
-        <div class="candidate__summary candidate__summary--balance">Current balance: <span class="money">{{ candidate.total_contributions | minus: candidate.total_expenditures | minus: candidate.total_loans_received | times: 100 | money }}</span></div>
+        <div class="candidate__summary candidate__summary--balance">Current balance: <span class="money">{{ candidate.total_contributions | minus: candidate.total_expenditures | minus: candidate.total_loans_received | money }}</span></div>
       </div>
     </section>
     <section class="l-section">
       <div class="l-section__content">
-        <h2 class="candidate__expenditures-opposing">Expenditures opposing candidate <span class="money">{{ candidate.opposing_money.opposing_expenditures | times: 100 | money }}</span></h2>
+        <h2 class="candidate__expenditures-opposing">Expenditures opposing candidate <span class="money">{{ candidate.opposing_money.opposing_expenditures | dollars  }}</span></h2>
       </div>
     </section>
     {% assign money_bar_max = candidate.total_contributions | plus: candidate.total_expenditures %}
@@ -51,7 +51,7 @@ layout: default
       <div class="l-section__content l-section__content--half">
         <div class="subheading">Money coming in</div>
         <h2 class="candidate__money-heading">Contributions</h2>
-        <div class="candidate__money-total money">{{ candidate.total_contributions | times: 100 | money }}</div>
+        <div class="candidate__money-total money">{{ candidate.total_contributions | dollars }}</div>
         {% for contribution_type in candidate.supporting_money.contributions_by_type %}
           {% assign label=contribution_type[0]  %}
           {% assign value=contribution_type[1]  %}
@@ -64,7 +64,7 @@ layout: default
       <div class="l-section__content l-section__content--half">
         <div class="subheading">Money going out</div>
         <h2 class="candidate__money-heading">Expenditures</h2>
-        <div class="candidate__money-total money">{{ candidate.total_expenditures | times: 100 | money }}</div>
+        <div class="candidate__money-total money">{{ candidate.total_expenditures | dollars }}</div>
         {% for expenditure_type in candidate.supporting_money.expenditures_by_type %}
           {% assign label=expenditure_type[0]  %}
           {% assign value=expenditure_type[1]  %}
@@ -77,7 +77,7 @@ layout: default
       <div class="l-section__content">
         <div class="subheading">Money coming in</div>
         <h2 class="candidate__money-heading">Contributions</h2>
-        <div class="candidate__money-total money">{{ candidate.total_contributions | times: 100 | money }}</div>
+        <div class="candidate__money-total money">{{ candidate.total_contributions | dollars }}</div>
         {% for contribution_type in candidate.supporting_money.contributions_by_origin %}
           {% assign label=contribution_type[0]  %}
           {% assign value=contribution_type[1]  %}

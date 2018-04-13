@@ -1,4 +1,4 @@
 {% for committee in include.committees %}
 <div><a href="{{ site.baseurl }}/committee/{{ committee.id }}/">{{ committee.name }}</a></div>
-<div>{{ committee.amount | times: 100 | money }}</div>
+<div>{{ committee.amount | dollars }}</div>
 {% endfor %}
