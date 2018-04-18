@@ -6,6 +6,6 @@
   <div class="candidate-summary__right">
     <div><a href="{{ candidate.url | prepend: site.baseurl }}">{{ candidate.name | escape }}</a></div>
     <div class="candidate-summary__occupation">{{ candidate.occupation | escape }}</div>
-    <div class="candidate-summary__contributions">amount collected <span class="money">{{ candidate.total_contributions | times: 100 | money }}</span></div>
+    <div class="candidate-summary__contributions">amount collected <span class="money">{{ candidate.total_contributions | dollars }}</span></div>
   </div>
 </div>

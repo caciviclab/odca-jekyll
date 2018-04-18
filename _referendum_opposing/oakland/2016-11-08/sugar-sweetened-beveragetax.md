@@ -1,0 +1,40 @@
+---
+id: 1
+contest_type: Referendum
+name: Sugar-Sweetened BeverageTax
+title: Sugar-Sweetened BeverageTax
+summary: >-
+  This measure would impose a tax on the distribution of Sugar-Sweetened
+  Beverage Products in Oakland. Sugar-Sweetened beverages are defined as any
+  beverage to which one or more Caloric Sweeteners have been added and that
+  contain 25 or more calories per 12 fluid ounces of beverage. The tax would not
+  be imposed on infant or baby formula, beverages for medical use, supplemental,
+  meal replacement, or nutritional beverages, milk products, fruit or vegetable
+  juices with no added sweeteners, or alcoholic beverages. The measure would
+  require that any distributor of sugar-sweetened beverages register with the
+  City and establish a Community Advisory Board. The Board would be responsible
+  for making recommendations to the City Council on setting up or funding
+  programs that prevent or reduce the health consequences of consuming
+  sugar-sweetened beverages.
+number: HH
+opposing_organizations:
+  - id: '1385180'
+    name: >-
+      No on HH: No Oakland Grocery Tax, with Major Funding by American Beverage
+      Association California PAC
+    payee: >-
+      No on HH: No Oakland Grocery Tax, with Major Funding by American Beverage
+      Association California PAC
+    amount: 8065162.15
+total_contributions: 7913894.640000001
+contributions_by_region:
+  - amount: 8391.91
+    locale: Out of State
+  - amount: 7905502.73
+    locale: Within California
+contributions_by_type:
+  - type: Committee
+    amount: 7906502.73
+  - type: Other (includes Businesses)
+    amount: 7391.91
+---

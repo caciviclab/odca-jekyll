@@ -23,7 +23,7 @@ layout: default
   <div class="l-section__content l-section__content--half">
     <center>
       <h2 class="section-header">Supporting Money
-        <div>{{ supporting.total_contributions | times: 100 | money }}</div>
+        <div>{{ supporting.total_contributions | dollars }}</div>
       </h2>
     </center>
     {% include contributions_by_region.html supporting_opposing=supporting color="green" %}
@@ -35,7 +35,7 @@ layout: default
   <div class="l-section__content l-section__content--half">
     <center>
       <h2 class="section-header">Opposing Money
-        <div>{{ opposing.total_contributions | times: 100 | money }}</div>
+        <div>{{ opposing.total_contributions | dollars }}</div>
       </h2>
     </center>
     {% include contributions_by_region.html supporting_opposing=opposing %}
@@ -49,7 +49,7 @@ layout: default
   <div class="l-section__content l-section__content--half">
     <h2>Supporting Committees</h2>
     <h3>Contributions supporting the measure</h3>
-    <span>{{ supporting.total_contributions | times: 100 | money }}</span>
+    <span>{{ supporting.total_contributions | dollars }}</span>
     <h3>Expenditures supporting the measure</h3>
     {% include supporting_opposing_committees.html committees=supporting.supporting_organizations %}
   </div>
@@ -58,7 +58,7 @@ layout: default
   <div class="l-section__content l-section__content--half">
     <h2>Opposing Committees</h2>
     <h3>Contributions opposing the measure</h3>
-    <span>{{ opposing.total_contributions | times: 100 | money }}</span>
+    <span>{{ opposing.total_contributions | dollars }}</span>
     <h3>Expenditures opposing the measure</h3>
     {% include supporting_opposing_committees.html committees=opposing.opposing_organizations %}
   </div>
