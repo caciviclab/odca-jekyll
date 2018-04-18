@@ -1,4 +1,6 @@
 ---
+locality: oakland
+election: 2018-06-05
 id: 7
 contest_type: Referendum
 name: Library Parcel Tax

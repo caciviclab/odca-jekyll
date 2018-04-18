@@ -1,4 +1,6 @@
 ---
+locality: oakland
+election: 2016-11-08
 id: 4
 contest_type: Referendum
 name: Infrastructure and Housing bonds
