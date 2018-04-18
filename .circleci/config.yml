@@ -61,7 +61,7 @@ jobs:
             - *bundle-cache-key
       - run:
           name: Bundle Install
-          command: bundle check || bundle install
+          command: bundle check || bundle install --path vendor/bundle
       - save_cache:
           key: *bundle-cache-key
           paths:

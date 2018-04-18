@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% assign empty_array = '' | split: ',' %}
+{% assign empty_array = '' | split: '' %}
 {% assign committee = page %}
 {% assign contributions = site.data.contributions[committee.filer_id].contributions | default: empty_array | sort: 'Tran_Amt1' | reverse %}
 
