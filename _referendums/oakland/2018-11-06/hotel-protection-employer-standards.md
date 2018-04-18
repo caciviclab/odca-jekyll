@@ -1,4 +1,6 @@
 ---
+locality: oakland
+election: 2018-11-06
 id: 9
 contest_type: Referendum
 name: Hotel Protection & Employer Standards
