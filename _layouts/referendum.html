@@ -3,7 +3,7 @@ layout: default
 ---
 {% assign referendum = page %}
 {% assign election_day = referendum.election | date: "%Y-%m-%d" %}
-{% assign referendum_id = referendum.number | downcase %}
+{% assign referendum_id = referendum.title | slugify %}
 {% capture supporting_path %}_referendum_supporting/{{ referendum.locality }}/{{ election_day }}/{{ referendum_id }}.md{% endcapture %}
 {% capture opposing_path %}_referendum_opposing/{{ referendum.locality }}/{{ election_day }}/{{ referendum_id }}.md{% endcapture %}
 {% assign supporting = site.referendum_supporting | where: 'path', supporting_path | first %}
@@ -38,7 +38,7 @@ layout: default
         <div>{{ opposing.total_contributions | dollars }}</div>
       </h2>
     </center>
-    {% include contributions_by_region.html supporting_opposing=opposing %}
+    {% include contributions_by_region.html supporting_opposing=opposing color="red" %}
     {% if opposing and opposing.opposing_organizations != empty %}
     {% endif %}
   </div>
@@ -48,19 +48,15 @@ layout: default
 <section class="l-section">
   <div class="l-section__content l-section__content--half">
     <h2>Supporting Committees</h2>
-    <h3>Contributions supporting the measure</h3>
-    <span>{{ supporting.total_contributions | dollars }}</span>
     <h3>Expenditures supporting the measure</h3>
-    {% include supporting_opposing_committees.html committees=supporting.supporting_organizations %}
+    {% include supporting_opposing_committees.html committees=supporting.supporting_organizations color="green" %}
   </div>
 
 <!-- opposing contributions/expenditures column -->
   <div class="l-section__content l-section__content--half">
     <h2>Opposing Committees</h2>
-    <h3>Contributions opposing the measure</h3>
-    <span>{{ opposing.total_contributions | dollars }}</span>
     <h3>Expenditures opposing the measure</h3>
-    {% include supporting_opposing_committees.html committees=opposing.opposing_organizations %}
+    {% include supporting_opposing_committees.html committees=opposing.opposing_organizations color="red" %}
   </div>
 </section>
 
