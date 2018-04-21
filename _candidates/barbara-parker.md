@@ -36,6 +36,7 @@ supporting_money:
   total_contributions: 67909
   total_expenditures: 35744.47
   total_loans_received: 0
+  total_supporting_independent: 700
   contributions_by_type:
     Individual: 59850
     Unitemized: 393

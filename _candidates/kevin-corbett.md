@@ -30,6 +30,7 @@ supporting_money:
   total_contributions: 42542
   total_expenditures: 77186.88
   total_loans_received: 0
+  total_supporting_independent: 0
   contributions_by_type:
     Committee: 350
     Individual: 36100
