@@ -1,4 +1,5 @@
 {% for committee in include.committees %}
-<div><a href="{{ site.baseurl }}/committee/{{ committee.id }}/">{{ committee.name }}</a></div>
-<div>{{ committee.amount | dollars }}</div>
+  <div><a href="{{ site.baseurl }}/committee/{{ committee.id }}/">{{ committee.name }}</a></div>
+  <div>{{ committee.amount | dollars }}</div>
+  {% include money-bar.html value=committee.amount color=include.color max=committee.amount %}
 {% endfor %}

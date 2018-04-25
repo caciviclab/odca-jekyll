@@ -1,13 +1,12 @@
 {% assign color = include.color | default: "blue" %}
 {% assign maximum = include.max | default: 100 %}
-{% assign width = include.value | divided_by: maximum | times: 100 %}
+{% assign width = include.value | times: 1.0 | divided_by: maximum | times: 100 %}
 {% case include.format %}
 {% when 'percent' %}
 {% assign display = width | floor | append: '%' %}
 {% else %}
 {% assign display = include.value | friendly_number | prepend: '$' %}
 {% endcase %}
-
 
 <div class="money-bar">
   <div class="money-bar__label">{{ include.label }}</div>

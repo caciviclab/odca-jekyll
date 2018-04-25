@@ -1,4 +1,3 @@
-{% for region in include.contributions_by_region %}
-  <div>{{ region.locale }}</div>
-  <div>{{ region.amount | dollars }}</div>
+{% for region in include.supporting_opposing.contributions_by_region %}
+  {% include money-bar.html label=region.locale value=region.amount color=include.color max=include.supporting_opposing.total_contributions %}
 {% endfor %}
