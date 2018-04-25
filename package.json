@@ -21,7 +21,24 @@
   "homepage": "https://github.com/caciviclab/odca-jekyll#readme",
   "devDependencies": {
     "del": "^3.0.0",
-    "gulp": "^4.0.0"
+    "gulp": "^4.0.0",
+    "gulp-ext": "^1.0.0",
+    "gulp-footer": "^2.0.1",
+    "gulp-header": "^2.0.1",
+    "gulp-json-to-yaml": "0.0.2",
+    "webpack-cli": "^2.0.15"
   },
-  "dependencies": {}
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "lodash": "^4.17.10",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "redux": "^4.0.0",
+    "webpack": "^4.6.0"
+  }
 }

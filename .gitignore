@@ -8,3 +8,7 @@ _data/referendum_supporting
 node_modules
 .sass-cache
 _site
+
+.byebug_history
+bundle.js
+bundle.js.map
