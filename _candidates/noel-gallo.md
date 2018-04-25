@@ -33,8 +33,9 @@ filer_id: 1388641
 supporting_money:
   contributions_received: 80100.69
   total_contributions: 80100.69
-  total_expenditures: 86946.74
+  total_expenditures: 87107.1
   total_loans_received: 10000
+  total_supporting_independent: 700
   contributions_by_type:
     Committee: 9200
     Individual: 22350
@@ -48,7 +49,7 @@ supporting_money:
     Print Ads: 500
     Not Stated: 10826.1
     Contribution: 550
-    Civic Donations: 700
+    Civic Donations: 860.36
     Office Expenses: 3595.76
     Fundraising Events: 656.55
     Campaign Workers' Salaries: 3000
@@ -71,7 +72,7 @@ opposing_money:
     Mailing and Postage in opposition to Noel Gallo: 7398
 contributions_received: 80100.69
 total_contributions: 80100.69
-total_expenditures: 86946.74
+total_expenditures: 87107.1
 total_loans_received: 10000
 contributions_by_type:
   Committee: 9200
@@ -82,7 +83,7 @@ expenditures_by_type:
   Print Ads: 500
   Not Stated: 10826.1
   Contribution: 550
-  Civic Donations: 700
+  Civic Donations: 860.36
   Office Expenses: 3595.76
   Fundraising Events: 656.55
   Campaign Workers' Salaries: 3000

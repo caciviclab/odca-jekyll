@@ -17,23 +17,57 @@ occupation: null
 party_affiliation: null
 filer_id: null
 supporting_money:
-  contributions_received: null
-  total_contributions: null
-  total_expenditures: null
-  total_loans_received: null
-  contributions_by_type: {}
-  contributions_by_origin: {}
-  expenditures_by_type: {}
+  contributions_received: 182435.91
+  total_contributions: 182435.91
+  total_expenditures: 116942.62
+  total_loans_received: 0
+  total_supporting_independent: 1500
+  contributions_by_type:
+    Committee: 6917
+    Individual: 171315.17
+    Unitemized: 1703.74
+    Other (includes Businesses): 2500
+  contributions_by_origin:
+    Out of State: 200
+    Within Oakland: 3100
+    Within California: 177432.17
+  expenditures_by_type:
+    Print Ads: 5956.2
+    Not Stated: 5609.14
+    Contribution: 1200
+    Office Expenses: 7470.07
+    Campaign Consultants: 41522.73
+    Campaign Workers' Salaries: 6400
+    Polling and Survey Research: 14300
+    Campaign Paraphernalia/Misc.: 6656.06
+    Campaign Literature and Mailings: 4151.99
+    'Professional Services (Legal, Accounting)': 13930.61
+    'Information Technology Costs (Internet, E-mail)': 2350
   supporting_by_type: {}
 opposing_money:
   opposing_expenditures: null
   opposing_by_type: {}
-contributions_received: null
-total_contributions: null
-total_expenditures: null
-total_loans_received: null
-contributions_by_type: {}
-expenditures_by_type: {}
+contributions_received: 182435.91
+total_contributions: 182435.91
+total_expenditures: 116942.62
+total_loans_received: 0
+contributions_by_type:
+  Committee: 6917
+  Individual: 171315.17
+  Unitemized: 1703.74
+  Other (includes Businesses): 2500
+expenditures_by_type:
+  Print Ads: 5956.2
+  Not Stated: 5609.14
+  Contribution: 1200
+  Office Expenses: 7470.07
+  Campaign Consultants: 41522.73
+  Campaign Workers' Salaries: 6400
+  Polling and Survey Research: 14300
+  Campaign Paraphernalia/Misc.: 6656.06
+  Campaign Literature and Mailings: 4151.99
+  'Professional Services (Legal, Accounting)': 13930.61
+  'Information Technology Costs (Internet, E-mail)': 2350
 ballots:
 - _ballots/san-francisco/2018-11-06.md
 ---

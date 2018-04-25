@@ -21,6 +21,7 @@ supporting_money:
   total_contributions: null
   total_expenditures: null
   total_loans_received: null
+  total_supporting_independent: 0
   contributions_by_type: {}
   contributions_by_origin: {}
   expenditures_by_type: {}

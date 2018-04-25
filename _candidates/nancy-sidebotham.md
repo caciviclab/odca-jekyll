@@ -20,7 +20,7 @@ bio: >-
 
   Source: Candidate Statement and survey
 committee_name: 'Committee to Elect Nancy Sidebotham, Councilmember At Large, 2016'
-is_accepted_expenditure_ceiling: false
+is_accepted_expenditure_ceiling: true
 is_incumbent: false
 occupation: Tax Preparer
 party_affiliation: Democrat
@@ -30,6 +30,7 @@ supporting_money:
   total_contributions: 396
   total_expenditures: 646
   total_loans_received: 0
+  total_supporting_independent: 0
   contributions_by_type:
     Unitemized: 396
   contributions_by_origin: {}

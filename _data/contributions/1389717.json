@@ -1,0 +1,25 @@
+{
+  "contributions": [
+    {
+      "Filer_ID": "1389717",
+      "Tran_Amt1": 350,
+      "Tran_Date": "2016-09-19",
+      "Tran_NamF": "Robert",
+      "Tran_NamL": "Raich"
+    },
+    {
+      "Filer_ID": "1389717",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-22",
+      "Tran_NamF": "Martin",
+      "Tran_NamL": "Schreider"
+    },
+    {
+      "Filer_ID": "1389717",
+      "Tran_Amt1": 700,
+      "Tran_Date": "2016-09-23",
+      "Tran_NamF": "James",
+      "Tran_NamL": "Anthony"
+    }
+  ]
+}

@@ -1,3 +1,46 @@
 {
-  "contributions": []
+  "contributions": [
+    {
+      "Filer_ID": "1391632",
+      "Tran_Amt1": 25000,
+      "Tran_Date": "2016-10-13",
+      "Tran_NamF": null,
+      "Tran_NamL": "GO PUBLIC SCHOOLS"
+    },
+    {
+      "Filer_ID": "1391632",
+      "Tran_Amt1": 0,
+      "Tran_Date": "2016-11-17",
+      "Tran_NamF": null,
+      "Tran_NamL": "GO PUBLIC SCHOOLS ADVOCATES"
+    },
+    {
+      "Filer_ID": "1391632",
+      "Tran_Amt1": 0,
+      "Tran_Date": "2016-12-21",
+      "Tran_NamF": null,
+      "Tran_NamL": "GO PUBLIC SCHOOLS ADVOCATES"
+    },
+    {
+      "Filer_ID": "1391632",
+      "Tran_Amt1": 0,
+      "Tran_Date": "2017-08-22",
+      "Tran_NamF": null,
+      "Tran_NamL": "GO PUBLIC SCHOOLS ADVOCATES"
+    },
+    {
+      "Filer_ID": "1391632",
+      "Tran_Amt1": 0,
+      "Tran_Date": "2017-11-06",
+      "Tran_NamF": null,
+      "Tran_NamL": "GO PUBLIC SCHOOLS ADVOCATES"
+    },
+    {
+      "Filer_ID": "1391632",
+      "Tran_Amt1": 0,
+      "Tran_Date": "2017-11-27",
+      "Tran_NamF": null,
+      "Tran_NamL": "GO PUBLIC SCHOOLS ADVOCATES"
+    }
+  ]
 }
