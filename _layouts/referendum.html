@@ -8,6 +8,9 @@ layout: default
 {% capture opposing_path %}_referendum_opposing/{{ referendum.locality }}/{{ election_day }}/{{ referendum_id }}.md{% endcapture %}
 {% assign supporting = site.referendum_supporting | where: 'path', supporting_path | first %}
 {% assign opposing = site.referendum_opposing | where: 'path', opposing_path | first %}
+{% capture ballot_path %}_ballots/{{ referendum.locality }}/{{ election_day }}.md{% endcapture %}
+{% assign ballot = site.ballots | where: 'path', ballot_path | first %}
+{% assign locality = site.localities | where: 'locality_id', ballot.locality | first %}
 
 {% capture body %}
 <header>
@@ -61,4 +64,4 @@ layout: default
 </section>
 
 {% endcapture %}
-{% include ballot-layout.html content=body %}
+{% include ballot-layout.html content=body ballot=ballot locality=locality %}
