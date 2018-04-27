@@ -19,7 +19,19 @@ layout: default
         <div class="candidate__info-container">
           <img class="candidate__photo" src="{{ candidate.photo_url | default: 'https://s3-us-west-1.amazonaws.com/odca-candidate-photos/no-image.png' }}" alt="{{ candidate.name }}" />
           <div class="candidate__info">
-            <div class="candidate__occupation">{{ candidate.occupation }}</div>
+            <div class="candidate__occupation-commitee-name">{% if candidate.is_incumbent == true and candidate.committee_name != null %}
+              Incumbent |
+            {% elsif candidate.is_incumbent == true and candidate.committee_name == null %}
+              Incumbent
+            {% elsif candidate.is_incumbent == false and candidate.committee_name != null and candidate.occupation != null %}
+              {{ candidate.occupation }} |
+            {% elsif candidate.is_incumbent == false and candidate.committee_name == null %}
+              {{ candidate.occupation }}
+            {% endif %}
+            {% if candidate.committee_name != null %}<span class="candidate__commitee-name"> {{ candidate.committee_name }} </span>{% endif %}</div>
+            {% if candidate.is_accepted_expenditure_ceiling %}
+            <div class="candidate__expenditure-ceiling">This candidate has agreed to the voluntary spending limits. The maximum contribution this candidate can accept is $800.<a class="candidate__expenditure-ceiling-link" target="_blank" href="https://www.oaklandca.gov/services/boards-and-commissions-index/ethics/election-campaign-rules-and-disclosure/information-for-candidates-and-campaigns-1/oakland-campaign-contribution-limits" alt="Voluntary spending limits - more information"><img src="{{ "/assets/images/icon_more_info.png" | relative_url }}" alt="Voluntary spending limits - more information" /></a></div>
+              {%  endif %}
             <div><a href="{{ candidate.website_url }}">{{ candidate.website_url }}</a></div>
             <div><a href="https://twitter.com/{{ candidate.twitter_url }}">{{ candidate.twitter_url }}</a></div>
           </div>
