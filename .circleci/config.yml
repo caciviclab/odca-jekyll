@@ -16,8 +16,8 @@ jobs:
           paths:
             - vendor/bundle
       - run:
-          name: Build
-          command: make build
+          name: Build production
+          command: make production
       - run:
           name: Test
           command: make test
