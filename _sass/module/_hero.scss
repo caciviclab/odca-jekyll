@@ -35,9 +35,11 @@ $hero-breakpoint: $grid--medium;
     h4,
     h5,
     h6,
-    p {
+    p,
+    ul {
       color: $color-white;
       text-shadow: 0 2px 3px $text-shadow-color;
+      font-family: roboto;
     }
 
     // Include a scrim over photo backgrounds to increase legibility of content
