@@ -46,7 +46,7 @@ Optionally:
     $ make build
     $ make serve
 
-Open your web browser to [http://localhost:4000/](http://localhost:4000/).
+Open your web browser to [http://localhost:4000/odca-jekyll/](http://localhost:4000/odca-jekyll/).
 
 
 ## Findings
