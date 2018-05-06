@@ -1,9 +1,23 @@
 $candidate-photo-width: 10rem;
 
-.candidate__occupation {
+.candidate__occupation-commitee-name {
   @include heading('h3');
   color: $subheading-color;
   font-style: italic;
+  font-size: $h5-font-size;
+  margin-bottom: $spacing-base * .5;
+}
+
+.candidate__expenditure-ceiling {
+  color: $subheading-color;
+  font-style: italic;
+  font-size: $h6-font-size;
+
+  a {
+    height: $h6-font-size;
+    width: $h6-font-size;
+    vertical-align: middle;
+  }
 }
 
 .candidate__info-container {

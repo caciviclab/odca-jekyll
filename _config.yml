@@ -79,14 +79,6 @@ defaults:
       type: referendums
     values:
       layout: referendum
-  - scope:
-      type: referendum_opposing
-    values:
-      layout: referendum_opposing
-  - scope:
-      type: referendum_supporting
-    values:
-      layout: referendum_supporting
 
 
 # Build settings

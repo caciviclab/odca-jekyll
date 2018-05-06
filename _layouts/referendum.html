@@ -6,6 +6,9 @@ layout: default
 {% assign referendum_id = referendum.title | slugify %}
 {% assign supporting = site.data.referendum_supporting[referendum.locality][election_day][referendum_id] %}
 {% assign opposing = site.data.referendum_opposing[referendum.locality][election_day][referendum_id] %}
+{% capture ballot_path %}_ballots/{{ referendum.locality }}/{{ election_day }}.md{% endcapture %}
+{% assign ballot = site.ballots | where: 'path', ballot_path | first %}
+{% assign locality = site.localities | where: 'locality_id', ballot.locality | first %}
 
 {% capture body %}
 <header>
@@ -24,39 +27,62 @@ layout: default
         <div>{{ supporting.total_contributions | dollars }}</div>
       </h2>
     </center>
-    {% include contributions_by_region.html supporting_opposing=supporting color="green" %}
-    {% if supporting and supporting.supporting_organizations != empty %}
-    {% endif %}
   </div>
-
-<!-- opposing money column -->
   <div class="l-section__content l-section__content--half">
     <center>
       <h2 class="section-header">Opposing Money
         <div>{{ opposing.total_contributions | dollars }}</div>
       </h2>
     </center>
+  </div>
+</section>
+<section class="l-section">
+  <div class="l-section__content">
+    <h2 class="section-header">Contributions by region</h2>
+  </div>
+  <div class="l-section__content l-section__content--half">
+    <div class="subheading">Supporting regions</div>
+    {% include contributions_by_region.html supporting_opposing=supporting color="green" %}
+    {% if supporting and supporting.supporting_organizations != empty %}
+    {% endif %}
+  </div>
+  <div class="l-section__content l-section__content--half">
+    <div class="subheading">Opposing regions</div>
     {% include contributions_by_region.html supporting_opposing=opposing color="red" %}
     {% if opposing and opposing.opposing_organizations != empty %}
     {% endif %}
   </div>
 </section>
+<section class="l-section">
+  <div class="l-section__content">
+    <h2>Contributions by type</h2>
+  </div>
+  <div class="l-section__content l-section__content--half">
+    <div class="subheading">Supporting contributors</div>
+    {% include contributions_by_type.html supporting_opposing=supporting color="green" %}
+  </div>
+  <div class="l-section__content l-section__content--half">
+    <div class="subheading">Opposing contributors</div>
+    {% include contributions_by_type.html supporting_opposing=supporting color="red" %}
+  </div>
+</section>
 
 <!-- supporting contributions/expenditures column -->
 <section class="l-section">
+  <div class="l-section__content">
+    <h2>Committee expenditures</h2>
+  </div>
   <div class="l-section__content l-section__content--half">
-    <h2>Supporting Committees</h2>
-    <h3>Expenditures supporting the measure</h3>
+    <div class="subheading">In support of the measure</div>
     {% include supporting_opposing_committees.html committees=supporting.supporting_organizations color="green" %}
   </div>
 
 <!-- opposing contributions/expenditures column -->
   <div class="l-section__content l-section__content--half">
-    <h2>Opposing Committees</h2>
-    <h3>Expenditures opposing the measure</h3>
+    <div class="subheading">In opposition of the measure</div>
     {% include supporting_opposing_committees.html committees=opposing.opposing_organizations color="red" %}
   </div>
 </section>
 
 {% endcapture %}
-{% include ballot-layout.html content=body %}
+{% include ballot-layout.html content=body ballot=ballot locality=locality %}

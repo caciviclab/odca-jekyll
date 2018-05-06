@@ -1,0 +1,7 @@
+{% assign money_bar_max = include.supporting_opposing.total_contributions %}
+{% for contribution_type in include.supporting_opposing.contributions_by_type %}
+  {% assign label=contribution_type.type  %}
+  {% assign value=contribution_type.amount  %}
+  {% include money-bar.html label=label value=value color="green" max=money_bar_max color=include.color %}
+  {% include money-bar.html %}
+{% endfor %}
