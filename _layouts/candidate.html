@@ -47,67 +47,23 @@ layout: default
         </div>
       </div>
     </section>
+    {% assign bio = candidate.content | strip %}
+    {% unless bio == empty %}
     <section class="l-section">
       <div class="l-section__content">
-        {{ candidate.content }}
+        {{ bio }}
       </div>
     </section>
-    <section class="l-section">
-      <div class="l-section__content">
-        <div class="candidate__summary candidate__summary--contributions">Contributions: <span class="money">{{ finance.total_contributions | dollars }}</span></div>
-        <div class="candidate__summary candidate__summary--expenditures">Expenditures: <span class="money">{{ finance.total_expenditures | dollars }}</span></div>
-        {% if finance.total_loans_received > 0 %}
-        <div class="candidate__summary candidate__summary--loans">Loans: <span class="money">{{ finance.total_loans_received | dollars }}</span></div>
-        {% endif %}
-        <div class="candidate__summary candidate__summary--balance">Current balance: <span class="money">{{ finance.total_contributions | minus: finance.total_expenditures | minus: finance.total_loans_received | dollars }}</span></div>
-      </div>
-    </section>
-    {% if finance.opposing_money.opposing_expenditures %}
-    <section class="l-section">
-      <div class="l-section__content">
-        <h2 class="candidate__expenditures-opposing">Expenditures opposing candidate <span class="money">{{ finance.opposing_money.opposing_expenditures | dollars  }}</span></h2>
-      </div>
-    </section>
+    {% endunless %}
+    {% if finance.total_contributions or finance.total_expenditures %}
+      {% include candidate/finance.html candidate=candidate finance=finance %}
+    {% else %}
+      <section class="l-section">
+        <div class="l-section__content">
+          <p>No finance data is available for this candidate.</p>
+        </div>
+      </section>
     {% endif %}
-    {% assign money_bar_max = finance.total_contributions | plus: finance.total_expenditures %}
-    <section class="l-section">
-      <div class="l-section__content l-section__content--half">
-        <div class="subheading">Money coming in</div>
-        <h2 class="candidate__money-heading">Contributions</h2>
-        <div class="candidate__money-total money">{{ finance.total_contributions | dollars }}</div>
-        {% for contribution_type in finance.supporting_money.contributions_by_type %}
-          {% assign label=contribution_type[0]  %}
-          {% assign value=contribution_type[1]  %}
-          {% include money-bar.html label=label value=value color="green" max=money_bar_max %}
-        {% endfor %}
-        {% if candidate.filer_id and candidate.filer_id != "" %}
-          <p><a href="{{ site.baseurl }}/committee/{{ candidate.filer_id }}/">See all contributions</a></p>
-        {% endif %}
-      </div>
-      <div class="l-section__content l-section__content--half">
-        <div class="subheading">Money going out</div>
-        <h2 class="candidate__money-heading">Expenditures</h2>
-        <div class="candidate__money-total money">{{ finance.total_expenditures | dollars }}</div>
-        {% for expenditure_type in finance.supporting_money.expenditures_by_type %}
-          {% assign label=expenditure_type[0]  %}
-          {% assign value=expenditure_type[1]  %}
-          {% include money-bar.html label=label value=value color="red" max=money_bar_max %}
-        {% endfor %}
-      </div>
-    </section>
-    {% assign money_bar_max = finance.total_contributions %}
-    <section class="l-section">
-      <div class="l-section__content">
-        <div class="subheading">Money coming in</div>
-        <h2 class="candidate__money-heading">Contributions</h2>
-        <div class="candidate__money-total money">{{ finance.total_contributions | dollars }}</div>
-        {% for contribution_type in finance.supporting_money.contributions_by_origin %}
-          {% assign label=contribution_type[0]  %}
-          {% assign value=contribution_type[1]  %}
-          {% include money-bar.html label=label value=value color="green" max=money_bar_max format='percent' %}
-        {% endfor %}
-      </div>
-    </section>
   </div>
 </div>
 {% endcapture %}
