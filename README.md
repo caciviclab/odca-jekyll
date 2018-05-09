@@ -34,14 +34,12 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
 - [Ruby 2.3](https://www.ruby-lang.org/)
 - [Bundler](https://bundler.io/) gem
 - [Make](https://www.gnu.org/software/make/)
-
-Optionally:
-
 - [Node 8.9](https://nodejs.org/)
 
 
 ## Setup
 
+    $ npm install
     $ bundle install
     $ make build
     $ make serve
@@ -77,19 +75,11 @@ Run the tests
 ## Finance disclosures
 
 The process of downloading, converting, and calculating the reported financial
-disclosures is handled by
-[disclosure-backend-static][backend-static].
-To get the finance data into this project, we use [gulp.js](https://gulpjs.com/)
-to copy the files over and do some light transformations on them to get them
-into a [Jekyll Collection](https://jekyllrb.com/docs/collections/).
+disclosures is handled by [disclosure-backend-static][backend-static].  To get
+the finance data into this project, we use [gulp.js](https://gulpjs.com/) to
+copy the files over and do some light transformations on their file paths.
 
-We commit all the finance data to this repo so that you do not need to use the
-gulp tasks to help with this project. _You only need to run the gulp tasks if you
-want the latest finance data._
-
-This process is optional and temporary. It allows us to update the finance data
-while allowing local modifications and overrides. If you have thoughts on how
-this could be improved, [let us
+If you have thoughts on how this could be improved, [let us
 know](https://github.com/caciviclab/odca-jekyll/issues/5)!
 
 
@@ -101,15 +91,26 @@ directory. _It is important that the `disclosure-backend-static` project is
 cloned to the correct path (`../disclosure-backend-static`) which is hardcoded
 in the gulpfile (pull requests welcome)._
 
-Next, follow the instructions in
-[disclosure-backend-static](https://github.com/caciviclab/disclosure-backend-static/blob/master/README.md)
-and run a build. Then you can run the npm task:
+Then you can run the npm task.
 
     $ npm run pull
 
-This will copy over all files as-is and will overwrite any local modifications.
-It's important to review the changes before committing them so as not to lose
-any intentional changes.
+Now rebuild your site with the finance data.
+
+    $ make serve
+
+
+## Deployment
+
+This site is deployed by a [scheduled CI
+task](https://circleci.com/gh/caciviclab/workflows/odca-jekyll) twice daily. It
+clones the [disclosure-backend-static][backend-static] repo and pulls in the
+finance data before doing a build. Merges to the master branch will also trigger
+a deploy.
+
+The site is hosted on [GitHub Pages](https://pages.github.com/). The deploy
+consists of a force push of the `_site` directory to the `gh-pages` branch done
+by [_bin/deploy.sh](_bin/deploy.sh).
 
 
 ## License

@@ -4,10 +4,8 @@ layout: default
 {% assign referendum = page %}
 {% assign election_day = referendum.election | date: "%Y-%m-%d" %}
 {% assign referendum_id = referendum.title | slugify %}
-{% capture supporting_path %}_referendum_supporting/{{ referendum.locality }}/{{ election_day }}/{{ referendum_id }}.md{% endcapture %}
-{% capture opposing_path %}_referendum_opposing/{{ referendum.locality }}/{{ election_day }}/{{ referendum_id }}.md{% endcapture %}
-{% assign supporting = site.referendum_supporting | where: 'path', supporting_path | first %}
-{% assign opposing = site.referendum_opposing | where: 'path', opposing_path | first %}
+{% assign supporting = site.data.referendum_supporting[referendum.locality][election_day][referendum_id] %}
+{% assign opposing = site.data.referendum_opposing[referendum.locality][election_day][referendum_id] %}
 {% capture ballot_path %}_ballots/{{ referendum.locality }}/{{ election_day }}.md{% endcapture %}
 {% assign ballot = site.ballots | where: 'path', ballot_path | first %}
 {% assign locality = site.localities | where: 'locality_id', ballot.locality | first %}

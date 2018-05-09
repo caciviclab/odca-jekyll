@@ -5,6 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
+    "gulp": "gulp",
     "pull": "gulp pull",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,11 +20,8 @@
   },
   "homepage": "https://github.com/caciviclab/odca-jekyll#readme",
   "devDependencies": {
-    "gulp": "^4.0.0",
-    "gulp-ext": "^1.0.0",
-    "gulp-footer": "^2.0.1",
-    "gulp-header": "^2.0.1",
-    "gulp-json-to-yaml": "0.0.2"
+    "del": "^3.0.0",
+    "gulp": "^4.0.0"
   },
   "dependencies": {}
 }

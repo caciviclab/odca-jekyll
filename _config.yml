@@ -49,10 +49,6 @@ collections:
   referendums:
     output: true
     permalink: /referendum/:path/
-  referendum_opposing:
-    output: false
-  referendum_supporting:
-    output: false
 
 defaults:
   - scope:

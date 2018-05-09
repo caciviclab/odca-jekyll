@@ -1,18 +1,69 @@
+bundle-cache-key: &bundle-cache-key
+  v1-bundle-{{ checksum "Gemfile.lock" }}
+
+npm-cache-key: &npm-cache-key
+  v1-npm-{{ checksum "package-lock.json" }}
+
+deploy-workflow-jobs: &deploy-workflow-jobs
+  - pull-finance
+  - build:
+      requires:
+        - pull-finance
+  - deploy:
+      requires:
+        - build
+      filters:
+        branches:
+          only: master
+
+
 version: 2
 jobs:
-  build:
+  pull-finance:
     docker:
       - image: circleci/ruby:2.3-node
     steps:
       - checkout
       - restore_cache:
           keys:
-            - v1-bundle-{{ checksum "Gemfile.lock" }}
+            - *npm-cache-key
+      - run:
+          name: npm install
+          command: npm install
+      - save_cache:
+          key: *npm-cache-key
+          paths:
+            - node_modules
+      - run:
+          name: Clone finance data repo
+          command: git clone https://github.com/caciviclab/disclosure-backend-static.git
+          working_directory: ..
+      - run:
+          name: Clean data folder
+          command: npm run gulp -- clean
+      - run:
+          name: Pull finance data
+          command: npm run pull
+      - persist_to_workspace:
+          root: .
+          paths:
+            - _data
+
+  build:
+    docker:
+      - image: circleci/ruby:2.3-node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - restore_cache:
+          keys:
+            - *bundle-cache-key
       - run:
           name: Bundle Install
-          command: bundle check || bundle install
+          command: bundle check || bundle install --path vendor/bundle
       - save_cache:
-          key: v1-bundle-{{ checksum "Gemfile.lock" }}
+          key: *bundle-cache-key
           paths:
             - vendor/bundle
       - run:
@@ -46,16 +97,15 @@ jobs:
 
 workflows:
   version: 2
-  build-and-deploy:
-    jobs:
-      - build:
-          filters:
-            branches:
-              ignore: gh-pages
+  commit:
+    jobs: *deploy-workflow-jobs
 
-      - deploy:
-          requires:
-            - build
+  twice-daily:
+    triggers:
+      - schedule:
+          cron: "0 0,12 * * *"
           filters:
             branches:
-              only: master
+              only:
+                - master
+    jobs: *deploy-workflow-jobs

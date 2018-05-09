@@ -1,5 +1,10 @@
-_site
-.sass-cache
+_data/candidates
+_data/committees
+_data/contributions
+_data/referendum_opposing
+_data/referendum_supporting
+.DS_Store
 .jekyll-metadata
 node_modules
-.DS_Store
+.sass-cache
+_site

@@ -1,4 +1,6 @@
 {% assign candidate = include.candidate %}
+{% assign finance = site.data.candidates[candidate.slug] %}
+
 <div class="candidate-summary">
   <div class="candidate-summary__left">
     <img class="candidate-summary__photo" src="{{ candidate.photo_url | default: 'https://s3-us-west-1.amazonaws.com/odca-candidate-photos/no-image.png' }}" alt="{{ candidate.name }}" />
@@ -6,6 +8,6 @@
   <div class="candidate-summary__right">
     <div><a href="{{ candidate.url | prepend: site.baseurl }}">{{ candidate.name | escape }}</a></div>
     <div class="candidate-summary__occupation">{{ candidate.occupation | escape }}</div>
-    <div class="candidate-summary__contributions">amount collected <span class="money">{{ candidate.total_contributions | dollars }}</span></div>
+    <div class="candidate-summary__contributions">amount collected <span class="money">{{ finance.total_contributions | dollars }}</span></div>
   </div>
 </div>
