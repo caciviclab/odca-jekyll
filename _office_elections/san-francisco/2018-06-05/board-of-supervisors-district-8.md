@@ -1,5 +1,5 @@
 ---
-name: Board of Supervisors, District 8
+title: Board of Supervisors, District 8
 candidates:
   - jeff-sheehy
   - rafael-mandelman

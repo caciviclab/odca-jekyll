@@ -1,5 +1,5 @@
 ---
-name: City Council District 7
+title: City Council District 7
 candidates:
   - marcie-hodge
   - nehanda-imara
