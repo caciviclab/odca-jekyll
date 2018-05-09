@@ -21,7 +21,7 @@ title: Frequently asked questions
 
 ## What data is featured on this website?
 
-Open Disclosure visualizes campaign finance data for all Oakland candidates and ballot measures on the November 2016 ballot. The data comes from the City’s campaign finance portal provided by NetFile on the City Clerk’s website.
+Open Disclosure visualizes campaign finance data for all Oakland candidates and ballot measures on the November 2016 ballot. The data comes from the City’s campaign finance portal on the City of Oakland Public Ethics Commission website.
 
 The data collected by the City Clerk’s office is required by the  California [Political Reform Act (PRA)](http://www.fppc.ca.gov/the-law/the-political-reform-act.html), which requires that a candidate or campaign committee that plans to raise or spend $2,000 or more in a calendar year—including the candidate’s personal funds—must file statements and reports on the committee’s financial activity at specified periods. Candidates or campaign committees that do not raise or spend $2,000 or more in a calendar year are not required to report their financial activity, which may result in some candidates with no available public financial data.
 
