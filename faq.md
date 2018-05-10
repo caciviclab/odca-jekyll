@@ -10,7 +10,6 @@ title: Frequently asked questions
 - [Why don't the total contributions presented match the numbers in the lists of itemized contributions by location and category?](#why-dont-the-total-contributions-presented-match-the-numbers-in-the-lists-of-itemized-contributions-by-location-and-category)
 - [What is an Independent Expenditure?](#what-is-an-independent-expenditure)
 - [What other types of committees must report their campaign-related spending?](#what-other-types-of-committees-must-report-their-campaign-related-spending)
-- [How were candidate biographies prepared?](#how-were-candidate-biographies-prepared)
 - [How were ballot measure summaries prepared?](#how-were-ballot-measure-summaries-prepared)
 - [Does Open Disclosure endorse third-party content?](#does-open-disclosure-endorse-third-party-content)
 - [Who do I contact if I believe any of the data is incorrect?](#who-do-i-contact-if-i-believe-any-of-the-data-is-incorrect)
@@ -21,48 +20,50 @@ title: Frequently asked questions
 
 ## What data is featured on this website?
 
-Open Disclosure visualizes campaign finance data for all Oakland candidates and ballot measures on the November 2016 ballot. The data comes from the City’s campaign finance portal on the City of Oakland Public Ethics Commission website.
+Open Disclosure visualizes campaign finance data for Oakland candidates and ballot measures. The data comes from the City’s campaign finance portal on the City of Oakland Public Ethics Commission website.
 
-The data collected by the City Clerk’s office is required by the  California [Political Reform Act (PRA)](http://www.fppc.ca.gov/the-law/the-political-reform-act.html), which requires that a candidate or campaign committee that plans to raise or spend $2,000 or more in a calendar year—including the candidate’s personal funds—must file statements and reports on the committee’s financial activity at specified periods. Candidates or campaign committees that do not raise or spend $2,000 or more in a calendar year are not required to report their financial activity, which may result in some candidates with no available public financial data.
+The data collected by the Public Ethics Commission is required by the  California [Political Reform Act (PRA)](http://www.fppc.ca.gov/the-law/the-political-reform-act.html), which requires that a candidate or campaign committee that plans to raise or spend $2,000 or more in a calendar year—including the candidate’s personal funds—must file statements and reports on the committee’s financial activity at specified periods. Candidates or campaign committees that do not raise or spend $2,000 or more in a calendar year are not required to report their financial activity electronically, which may result in some candidates with no available public financial data.
 
 Campaign finance data is self-reported by all local candidate-controlled and ballot measure committees. Our volunteer team does not clean, scrub, or edit the data. If there are misspellings or duplicate entries, then that was how the committee reported the campaign finance data. The data is presented as reported. Where necessary we may aggregate data that we believe represents the same entity.
 
 ## Where does the data come from?
 
-The campaign finance data that Open Disclosure presents is derived primarily from the filings of the California Fair Political Practices Commission (FPPC) [Form 460](http://www.fppc.ca.gov/content/dam/fppc/NS-Documents/TAD/Campaign%20Forms/460.pdf) (Recipient Committee Campaign Statement). Once a campaign committee has raised or spent $2,000 or more, it must file Form 460, which contains an overview of the committee’s activity during a specified period.
+The campaign finance data that Open Disclosure presents is derived primarily from the filings of the California Fair Political Practices Commission (FPPC) [Form 460](http://www.fppc.ca.gov/content/dam/fppc/NS-Documents/TAD/Campaign%20Forms/460.pdf) (Recipient Committee Campaign Statement). Once a campaign committee has raised or spent $2,000 or more it must file Form 460, which contains an overview of the committee’s activity during a specified period.
 
-Oakland campaign committees file Form 460 with the Oakland Office of the City Clerk’s e-filing system, NetFile, which is available on the [Public Portal for Campaign Finance Disclosure](http://nf4.netfile.com/pub2/Default.aspx?aid=COAK&AspxAutoDetectCookieSupport=1). The raw data is also synced daily to the City of [Oakland’s Socrata Open Data Portal](https://data.oaklandnet.com/).
+Oakland campaign committees file Form 460 with the Public Ethics Commission’s e-filing system, NetFile, which is available on the [Public Portal for Campaign Finance and Lobbyist Disclosure](http://nf4.netfile.com/pub2/Default.aspx?aid=COAK&AspxAutoDetectCookieSupport=1). The raw data is also synced daily to the City of Oakland's [Open Data Portal](https://data.oaklandnet.com/).
 
 
 ## How up-to-date is the data?
 
 The data is published to the site approximately every 24 hours. The data for
-Open Disclosure is based on campaign finance filing deadlines established by the
+Open Disclosure is based on campaign finance [filing deadlines](http://www.fppc.ca.gov/learn/campaign-rules/where-and-when-to-file-campaign-statements/when-to-file-campaign-statements-state-local-filing-schedules.html) established by the
 State of California Fair Political Practices Commission (FPPC) for all state and
-local candidates and ballot measures in the November 2016 election.
+local elections.
+
+The filing deadlines for local candidates and measures on the November 6, 2018 election are:
 
 | Reporting Period    |||| FPPC Filing Deadline  |
 | :----------------   |||| :-------------------- |
-| 1/1/2016 – 6/30/16  |||| August 1, 2016        |
-| 7/1/16 – 9/24/16    |||| September 29, 2016    |
-| 9/25/16 – 10/22/16  |||| October 27, 2016      |
-| 10/23/16 – 12/31/16 |||| January 31, 2017      |
+| 1/1/2018 – 6/30/18  |||| July 31, 2018        |
+| 7/1/18 – 9/22/18    |||| September 27, 2018    |
+| 9/23/18 – 10/20/18  |||| October 25, 2018      |
+| 10/21/18 – 12/31/18 |||| January 31, 2019      |
 
 In addition to these filing deadlines, contributions of $1,000 or more from
 a single source made to candidate and ballot measure committees within the 90
-days prior to the election (8/10/16-11/8/16) must be reported within 24 hours.
+days prior to the election (8/8/18-11/6/18) must be reported within 24 hours.
 
 ## What is a non-itemized contribution (small contribution)?
 
-Candidate and ballot measure committees must report their total contributions regardless of size. However, contributions of $100 or more must be itemized and include additional information about the contributor. Contributions under $100 may be reported in the aggregate.
+Candidate and ballot measure committees must report their total contributions regardless of size. However, contributions of $100 or more must be itemized and include additional information about the contributor. Contributions under $100 are reported in the aggregate.
 
 ## How do you calculate the proportion raised within Oakland?
 
-Candidates and ballot measure committees must itemize contributions of $100 or more. Information includes the location of the individual, committee, or business making the contribution. The percentage is the proportion of contributions reported to be from Oakland divided by the total of the itemized contributions. We remove contributions and loans made by the candidate to the campaign from this calculation.
+Candidates and ballot measure committees must itemize contributions of $100 or more. Information includes the location of the individual, committee, or business making the contribution. The percentage is the proportion of contributions reported to be from Oakland divided by the total of the itemized contributions. We remove contributions and loans made by the candidate to their own campaign from this calculation.
 
 ## Why don't the total contributions presented match the numbers in the lists of itemized contributions by location and category?
 
-The total contributions and the itemized lists are calculated using different data sets. The total sums the amount of total monetary and non-monetary contributions reported by each campaign committee at each filing deadline. The charts displaying contributions by location and category sum the itemized contributions filed, which are a sub-set of the total contributions. This leads to some discrepancies, because contributions under $100 are not required to be itemized with information on the donor’s identity and location.
+The total contributions and the itemized lists are calculated using different data sets. The total sums the total monetary and non-monetary contributions reported by each campaign committee at each filing deadline. The charts displaying contributions by location and category sum the itemized contributions filed, which are a sub-set of the total contributions. This leads to some discrepancies, because contributions under $100 are not required to be itemized with information on the donor’s identity and location.
 
 ## What is an Independent Expenditure?
 
@@ -70,11 +71,7 @@ Political spending that expressly advocates the election or defeat of a candidat
 
 ## What other types of committees must report their campaign-related spending?
 
-Committees that are not candidate-controlled or formed to support or oppose a particular candidate or ballot measure also raise funds and spend money in local elections. Under California’s Political Reform Act (PRA), committees that receive contributions or make expenditures to support or oppose multiple candidates and/or ballot measures must also file statements and reports on their activities just as candidate and ballot measure committees do. They must also report which candidate or ballot measure their expenditure is intended to support or oppose and whether the expenditure is a contribution to the campaign or an independent expenditure (see above). Independent expenditures are not included in the fundraising totals for candidates or ballot measures. For more information, see the [California Fair Political Practices Commission guide to Campaign Rules](http://www.fppc.ca.gov/learn/campaign-rules.html).
-
-## How were candidate biographies prepared?
-
-Candidate bios are written by Open Disclosure volunteers to present a neutral summary of a candidate’s applicable background, work history, education. Biographical information is not intended to communicate a candidate’s platform. All candidates are contacted and offered the opportunity to contribute to their own biography text. Primary sources are the candidates’ official ballot statements and submissions of the candidates themselves, although volunteer research also includes information obtained from campaign materials and published news articles. All candidates are researched using the same standards, with comparable time and energy put into each, and no preference given to party or ideology.
+Committees that are not candidate-controlled or formed to support or oppose a particular candidate or ballot measure also raise funds and spend money in local elections. Under the Political Reform Act, committees that receive contributions or make expenditures to support or oppose multiple candidates and/or ballot measures must also file statements and reports on their activities just as candidate and ballot measure committees do. They must also report which candidate or ballot measure their expenditure is intended to support or oppose and whether the expenditure is a contribution to the campaign or an independent expenditure (see above). Independent expenditures are not included in the fundraising totals for candidates or ballot measures, but they are shown in a separate line item. For more information, see the [California Fair Political Practices Commission guide to Campaign Rules](http://www.fppc.ca.gov/learn/campaign-rules.html).
 
 ## How were ballot measure summaries prepared?
 
@@ -90,17 +87,17 @@ Contact the [Open Disclosure team](https://github.com/caciviclab/disclosure-fron
 
 ## What are Oakland's Campaign Finance Rules?
 
-Any “person” may contribute up to $700* to each candidate per election cycle. “Broad-based political committees” may contribute up to $1,500* to each candidate per election cycle ([Oakland Campaign Reform Act (OCRA) 3.12.050](https://library.municode.com/HTML/16308/level3/TIT3MUEL_CH3.12THOACAREAC_ARTIIICOLI.html#TIT3MUEL_CH3.12THOACAREAC_ARTIIICOLI_3.12.050LICOPE)).
+Any “person” may contribute up to $800* to each candidate per election cycle. “Broad-based political committees” may contribute up to $1,600* to each candidate per election cycle ([Oakland Campaign Reform Act (OCRA) 3.12.050](https://library.municode.com/HTML/16308/level3/TIT3MUEL_CH3.12THOACAREAC_ARTIIICOLI.html#TIT3MUEL_CH3.12THOACAREAC_ARTIIICOLI_3.12.050LICOPE)).
 
-*Candidates may accept this higher contribution limit ONLY IF they accept the [OCRA expenditure ceilings](http://www2.oaklandnet.com/oakca1/groups/ceda/documents/agenda/oak056852.pdf) by submitting the [OCRA Form 301](http://www2.oaklandnet.com/oakca1/groups/cityclerk/documents/webcontent/oak034166.pdf). If the candidate does not accept the expenditure ceilings then the limit for persons is $100 and the limit for broad-based political committees is $400.
+*Candidates may accept this higher contribution limit ONLY IF they accept the [OCRA expenditure ceilings](https://www.oaklandca.gov/documents/contribution-and-expenditure-limits) by submitting the [OCRA Form 301](https://www.oaklandca.gov/documents/ocra-form-301). If the candidate does not accept the expenditure ceilings then the limit for persons is $100 and the limit for broad-based political committees is $400.
 
 “Person” means an individual, proprietorship, firm, partnership, joint venture, syndicate, business, trust, company, corporation, association, committee, and any other organization or group of persons acting in concert ([OCRA 3.12.040](https://library.municode.com/HTML/16308/level3/TIT3MUEL_CH3.12THOACAREAC_ARTIIDE.html#TIT3MUEL_CH3.12THOACAREAC_ARTIIDE_3.12.040INAC)).
 
 ”Broad-based political committee” means a committee of persons which has been in existence for more than six months, receives contributions from one hundred (100) or more persons, and acting in concert makes contributions to five or more candidates ([OCRA 3.12.040](https://library.municode.com/HTML/16308/level3/TIT3MUEL_CH3.12THOACAREAC_ARTIIDE.html#TIT3MUEL_CH3.12THOACAREAC_ARTIIDE_3.12.040INAC)).
 
-For more information on Oakland’s campaign finance rules, please review the Oakland Campaign Reform Act ([OCRA](https://library.municode.com/HTML/16308/level1/TIT3MUEL.html#TOPTITLE)) and the [Public Ethics Commission’s Guide to OCRA](http://www2.oaklandnet.com/oakca1/groups/ceda/documents/form/oak057203.pdf).
+For more information on Oakland’s campaign finance rules, please review the Oakland Campaign Reform Act ([OCRA](https://library.municode.com/HTML/16308/level1/TIT3MUEL.html#TOPTITLE)) and the Public Ethics Commission's [Oakland Campaign Reform Act Guide](https://www.oaklandca.gov/documents/guide-to-oakland-campaign-reform-act).
 
-Contact the [City of Oakland Public Ethics Commission](http://www2.oaklandnet.com/Government/o/CityAdministration/d/PublicEthics/index.htm) with any questions at ethicscommission@oaklandnet.com or (510) 238-3593.
+Contact the [Public Ethics Commission](https://www.oaklandca.gov/boards-and-commissions/public-ethics-commission) with any questions at ethicscommission@oaklandca.gov or (510) 238-3593.
 
 ## Expenditure Categories: What each category includes
 
