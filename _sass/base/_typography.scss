@@ -15,7 +15,7 @@ $small-font-size: $font-size-small * 1rem;
 $base-line-height: 1.5 !default;
 $heading-line-height: 1.3 !default;
 
-$heading-font-family: $font-family-serif;
+$heading-font-family: $font-family-sans-serif;
 
 // Define font size in rem with a px fallback
 @mixin font-size($size: $font-size-base) {
@@ -28,15 +28,15 @@ $heading-font-family: $font-family-serif;
   line-height: $heading-line-height;
 
   @if $size == 'h1' {
-    @include font-family-serif();
+    font-family: $font-family-sans-serif;
     font-size: $h1-font-size;
   }
   @if $size == 'h2' {
-    @include font-family-serif();
+    font-family: $font-family-sans-serif;
     font-size: $h2-font-size;
   }
   @if $size == 'h3' {
-    @include font-family-serif();
+    font-family: $font-family-sans-serif;
     font-size: $h3-font-size;
   }
   @if $size == 'h4' {
@@ -90,7 +90,7 @@ a {
 }
 
 .subheading {
-  @include font-family-serif;
+  font-family: $font-family-sans-serif;
   color: $subheading-color;
   font-size: $h4-font-size;
   font-style: italic;
