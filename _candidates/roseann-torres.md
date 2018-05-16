@@ -8,7 +8,7 @@ votersedge_url: >-
 committee_name: Roseann Torres for Oakland School Board 2016
 is_accepted_expenditure_ceiling: null
 is_incumbent: true
-occupation: Incumbent
+occupation: Oakland School Board member
 party_affiliation: Democrat
 filer_id: 1379121
 ballots:

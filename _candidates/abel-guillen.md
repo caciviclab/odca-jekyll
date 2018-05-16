@@ -7,7 +7,7 @@ votersedge_url: null
 committee_name: Abel Guillen for City Council 2018
 is_accepted_expenditure_ceiling: true
 is_incumbent: true
-occupation: Incumbent, Councilmember
+occupation: Councilmember
 party_affiliation: null
 filer_id: null # 1395580
 ballots:
