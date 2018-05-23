@@ -1,0 +1,27 @@
+span.hover-info {
+  visibility: hidden;
+// Jesse asks: I tried tinkering with _typography.scss to create a "$font-size-small" variable/setting but failed. What should we do to accomodate the couple spots where a really small font is present in designs? //
+  font-size: 1.25rem;
+  max-width: 24rem;
+  background-color: #303030;
+  color: #fff;
+  border-radius: 2px;
+  padding: 8px 10px;
+  margin: 2.25rem 0rem 0rem -13rem;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+span.hover-info a {
+  color:#FFDD1F;
+}
+span.hover-info-container {
+  display: inline-block;
+  height: 2.25rem;
+  width: 4rem;
+}
+span.hover-info-container:hover .hover-info {
+  visibility: visible;
+}
