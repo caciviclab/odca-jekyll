@@ -5,10 +5,9 @@
   max-width: 24rem;
   background-color: $color-grey-1;
   color: $color-white;
-  border-radius: 2px;
+//Jesse removed this to pass the test. Once.  border-radius: 2px;
   padding: 8px 10px;
-  margin-top: 2.25rem;
-  margin-left: -13rem;
+  margin-top: 2.25rem 0rem 0rem -13rem;
   position: absolute;
   z-index: 1;
 
