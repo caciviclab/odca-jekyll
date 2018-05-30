@@ -14,6 +14,3 @@ filer_id: 1388641
 ballots:
 - _ballots/oakland/2016-11-08.md
 ---
-Noel Gallo was elected to the Oakland City Council in 2012 to represent District 5. He serves as Co-Chair of the Oakland City Council Education Partnership Committee, and a member of the Life Enrichment, Public Works, and Public Safety City Council Committees. He represents the City of Oakland as a member of the AC Transit Bus Rapid Transit (BRT) Policy Steering Committee. Prior to joining the council, Gallo was elected and served on the Oakland Board of Education for 20 years. 
-Gallo is a lifelong resident of Oakland; he grew up in the Fruitvale/San Antonio District neighborhoods. He graduated from the University of California, Berkeley, with a Business Degree. 
-Source: Candidate statement and website

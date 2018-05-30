@@ -14,6 +14,3 @@ filer_id: 1386932
 ballots:
 - _ballots/oakland/2016-11-08.md
 ---
-Nehanda Imara is an Oakland resident, organizer, educator and adjunct teacher for African American and Environmental Studies at Merritt College. She is a Community Organizer for Communities for a Better Environment. She is a member of the Board of Directors of Leadership Excellence, a non-profit African American youth organization in Oakland and member of the East Oakland Building Healthy Community initiative. Imara also serves as Co-coordinator of Merritt’s “Black Consciousness Raising Tours of Africa and the African Diaspora.  
-
-Source: http://www.cbecal.org/about/staff/

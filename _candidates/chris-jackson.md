@@ -14,6 +14,3 @@ filer_id: 1384926
 ballots:
 - _ballots/oakland/2016-11-08.md
 ---
-Chris Jackson is a social worker who works with the formerly incarcerated on parole or probation. He is a father of a kindergartener who is going into an OUSD school. 
-
-Source: http://postnewsgroup.com/blog/2016/08/19/incumbents-run-four-seats-oakland-school-board/ and http://www.chrisjacksonforoakland.org/
