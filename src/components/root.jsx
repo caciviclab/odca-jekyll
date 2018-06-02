@@ -4,7 +4,7 @@ import { HashRouter } from 'react-router-dom';
 
 const Root= () => {
   return (
-    <h1></h1>
+    <div></div>
   );
 };
 
