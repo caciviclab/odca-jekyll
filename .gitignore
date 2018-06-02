@@ -10,5 +10,5 @@ node_modules
 _site
 
 .byebug_history
-bundle.js
-bundle.js.map
+/assets/js/bundle.js
+/assets/js/bundle.js.map
