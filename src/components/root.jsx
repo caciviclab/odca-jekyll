@@ -1,12 +1,7 @@
 import React from 'react';
-import { Provider } from 'react-redux';
-import { HashRouter } from 'react-router-dom';
 
-const Root= () => {
-  return (
-    <div></div>
-  );
-};
+const Root = () =>
+  <div />;
 
 
 export default Root;

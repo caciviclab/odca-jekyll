@@ -9,7 +9,8 @@
     "dist": "webpack --mode=production",
     "gulp": "gulp",
     "pull": "gulp pull",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:lint": "eslint --ext js,jsx src",
+    "test": "npm run test:lint",
     "watch": "webpack --mode=development --watch"
   },
   "repository": {
@@ -24,6 +25,11 @@
   "homepage": "https://github.com/caciviclab/odca-jekyll#readme",
   "devDependencies": {
     "del": "^3.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.8.2",
     "gulp": "^4.0.0",
     "gulp-ext": "^1.0.0",
     "gulp-footer": "^2.0.1",
