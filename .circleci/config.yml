@@ -48,6 +48,7 @@ jobs:
           root: .
           paths:
             - _data
+            - node_modules
 
   build:
     docker:
