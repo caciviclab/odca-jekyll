@@ -1,11 +1,10 @@
 .hover-info {
   visibility: hidden;
-// Jesse asks: I tried tinkering with _typography.scss to create a "$font-size-small" variable/setting but failed. What should we do to accomodate the couple spots where a really small font is present in designs? //
   font-size: 1.25rem;
   max-width: 24rem;
   background-color: $color-grey-1;
   color: $color-white;
-//Jesse removed this to pass the test. Once.  border-radius: 2px;
+  border-radius: 2px;
   padding: 8px 10px;
   margin-top: 2.25rem 0 0 -13rem;
   position: absolute;
