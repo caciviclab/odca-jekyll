@@ -5,10 +5,7 @@ header: California’s online source for local campaign finance data
 
 {% capture hero-cta %}
 <div class="hero__cta-container">
-  <h2 class="hero__cta-header">View local ballots</h2>
-  {% for locality in site.localities %}
-    <div class="hero__cta"><a class="btn" href="{{ locality.url | prepend: site.baseurl }}">{{ locality.name }}</a></div>
-  {% endfor %}
+  <div class="hero__cta"><a class="btn" href="{{ site.baseurl }}{% link _office_elections/oakland/2016-11-08/city-council-district-at-large.md %}">Follow the money</a></div>
 </div>
 {% endcapture %}
 
