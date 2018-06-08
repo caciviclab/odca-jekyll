@@ -95,8 +95,8 @@ linters:
     enabled: false # strict_BEM doesn't seem to be supported by Hound
     convention: strict_BEM
   Shorthand:
-    enabled: true
-    allowed_shorthands: [1, 2, 3, 4]
+    enabled: false
+    allowed_shorthands: [1, 2]
     severity: warning
   SingleLinePerProperty:
     enabled: true
