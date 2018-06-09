@@ -1,5 +1,5 @@
 ---
-name: School Board District 5
+title: School Board District 5
 candidates:
   - michael-hassid
   - michael-hutchinson

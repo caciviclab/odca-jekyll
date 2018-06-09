@@ -1,5 +1,5 @@
 ---
-name: School Board District 1
+title: School Board District 1
 candidates:
   - donald-macleay
   - jody-london

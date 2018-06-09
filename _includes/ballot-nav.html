@@ -1,7 +1,6 @@
-{% assign ballot = include.ballot %}
 {% assign locality = include.locality %}
-{% assign referendums = ballot.referendums %}
-{% assign office_elections = ballot.office_elections %}
+{% assign referendums = include.ballot.referendums %}
+{% assign office_elections = include.ballot.office_elections %}
 {% assign ballots = site.ballots | where: "locality", locality.locality_id | reverse %}
 
 <nav class="ballot-nav">
@@ -21,7 +20,7 @@
       <div class="l-section__content">
         {% for ballot_item in office_elections %}
           {% assign office_election = site.office_elections | where: "path", ballot_item | first %}
-          <p><a href="{{ office_election.url | prepend: site.baseurl }}">{{ office_election.name }}</a></p>
+          <p><a href="{{ office_election.url | prepend: site.baseurl }}">{{ office_election.title }}</a></p>
         {% endfor %}
       </div>
     </section>
