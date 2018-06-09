@@ -7,7 +7,7 @@
   </div>
   <div class="candidate-summary__right">
     <div><a href="{{ candidate.url | prepend: site.baseurl }}">{{ candidate.name | escape }}</a></div>
-    <div class="candidate-summary__occupation">{{ candidate.occupation | escape }}</div>
+    <div class="candidate-summary__occupation">{% if candidate.is_incumbent %}Incumbent, {% endif %}{{ candidate.occupation | escape }}</div>
     <div class="candidate-summary__contributions">amount collected <span class="money">{{ finance.total_contributions | dollars }}</span></div>
   </div>
 </div>

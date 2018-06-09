@@ -7,7 +7,7 @@ votersedge_url: null
 committee_name: Brenda Roberts for Oakland City Auditor 2018
 is_accepted_expenditure_ceiling: true
 is_incumbent: true
-occupation: Incumbent, City Auditor
+occupation: City Auditor
 party_affiliation: null
 filer_id: null
 ballots:
