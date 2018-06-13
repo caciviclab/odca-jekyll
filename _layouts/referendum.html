@@ -24,7 +24,7 @@ layout: default
   {{ referendum.content }}
 </section>
 
-{% if supporting or opposing %}
+{% if supporting.total_contributions > 0 or opposing.total_contributions > 0 %}
 <!-- supporting money column -->
 <section class="l-section">
   <div class="l-section__content l-section__content--half">
