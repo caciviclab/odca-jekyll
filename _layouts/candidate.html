@@ -47,23 +47,6 @@ layout: default
         </div>
       </div>
     </section>
-    <section class="l-section">
-      <div class="l-section__content">
-        <div class="candidate__summary candidate__summary--contributions">Contributions: <span class="money">{{ finance.total_contributions | dollars }}</span></div>
-        <div class="candidate__summary candidate__summary--expenditures">Expenditures: <span class="money">{{ finance.total_expenditures | dollars }}</span></div>
-        {% if finance.total_loans_received > 0 %}
-        <div class="candidate__summary candidate__summary--loans">Loans: <span class="money">{{ finance.total_loans_received | dollars }}</span></div>
-        {% endif %}
-        <div class="candidate__summary candidate__summary--balance">Current balance: <span class="money">{{ finance.total_contributions | minus: finance.total_expenditures | minus: finance.total_loans_received | dollars }}</span></div>
-      </div>
-    </section>
-    {% if finance.opposing_money.opposing_expenditures %}
-    <section class="l-section">
-      <div class="l-section__content">
-        <h2 class="candidate__expenditures-opposing">Expenditures opposing candidate <span class="money">{{ finance.opposing_money.opposing_expenditures | dollars  }}</span></h2>
-      </div>
-    </section>
-    {% endunless %}
     {% if finance.total_contributions or finance.total_expenditures %}
       {% include candidate/finance.html candidate=candidate finance=finance %}
     {% else %}
