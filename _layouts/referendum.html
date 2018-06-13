@@ -12,8 +12,13 @@ layout: default
 
 {% capture body %}
 <header>
-  <h1>Measure {{ referendum.number }}</h1>
-  <h2>{{ referendum.title }}</h2>
+  {% if referendum.number %}
+    <h1>Measure {{ referendum.number }}</h1>
+    <h2>{{ referendum.title | escape }}</h2>
+  {% else %}
+    <h1>{{ referendum.title | escape }}</h1>
+    <div><i>No measure number has been assigned.</i></div>
+  {% endif %}
 </header>
 <section class="l-section">
   {{ referendum.content }}
