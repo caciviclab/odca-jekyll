@@ -17,13 +17,14 @@ layout: default
     <h2>{{ referendum.title | escape }}</h2>
   {% else %}
     <h1>{{ referendum.title | escape }}</h1>
-    <div><i>No measure number has been assigned.</i></div>
+    <div><p><i>No measure number has been assigned.</i></p></div>
   {% endif %}
 </header>
 <section class="l-section">
   {{ referendum.content }}
 </section>
 
+{% if supporting or opposing %}
 <!-- supporting money column -->
 <section class="l-section">
   <div class="l-section__content l-section__content--half">
@@ -88,6 +89,13 @@ layout: default
     {% include supporting_opposing_committees.html committees=opposing.opposing_organizations color="red" %}
   </div>
 </section>
+{% else %}
+<section class="l-section">
+  <div class="l-section__content">
+    <p><i>No filings have been reported for this ballot measure.</i></p>
+  </div>
+</section>
+{% endif %}
 
 {% endcapture %}
 {% include ballot-layout.html content=body ballot=ballot locality=locality %}
