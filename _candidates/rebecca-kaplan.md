@@ -8,7 +8,7 @@ votersedge_url: >-
 committee_name: Kaplan for Oakland City Council 2016
 is_accepted_expenditure_ceiling: true
 is_incumbent: true
-occupation: 'Incumbent, City Council member At-Large'
+occupation: 'City Council member At-Large'
 party_affiliation: Democrat
 filer_id: 1381183
 ballots:

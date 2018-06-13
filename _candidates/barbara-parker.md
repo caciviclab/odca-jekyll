@@ -8,7 +8,7 @@ votersedge_url: >-
 committee_name: Re-elect City Attorney Barbara Parker 2016
 is_accepted_expenditure_ceiling: true
 is_incumbent: true
-occupation: 'Incumbent, City Attorney'
+occupation: 'City Attorney'
 party_affiliation: Democrat
 filer_id: 1382679
 ballots:

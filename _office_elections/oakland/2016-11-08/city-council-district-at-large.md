@@ -1,5 +1,5 @@
 ---
-name: City Council At-Large
+title: City Council At-Large
 candidates:
   - rebecca-kaplan
   - bruce-quan

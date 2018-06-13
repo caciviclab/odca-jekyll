@@ -1,5 +1,5 @@
 ---
-name: School Board District 3
+title: School Board District 3
 candidates:
   - jumoke-hinton-hodge
   - benjamin-lang
