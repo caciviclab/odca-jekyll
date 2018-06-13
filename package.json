@@ -5,13 +5,9 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "build": "webpack --mode=development",
-    "dist": "webpack --mode=production",
     "gulp": "gulp",
     "pull": "gulp pull",
-    "test:lint": "eslint --ext js,jsx src",
-    "test": "npm run test:lint",
-    "watch": "webpack --mode=development --watch"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -25,29 +21,7 @@
   "homepage": "https://github.com/caciviclab/odca-jekyll#readme",
   "devDependencies": {
     "del": "^3.0.0",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-import": "^2.12.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.8.2",
-    "gulp": "^4.0.0",
-    "gulp-ext": "^1.0.0",
-    "gulp-footer": "^2.0.1",
-    "gulp-header": "^2.0.1",
-    "gulp-json-to-yaml": "0.0.2",
-    "webpack-cli": "^2.0.15"
+    "gulp": "^4.0.0"
   },
-  "dependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "lodash": "^4.17.10",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "react-redux": "^5.0.7",
-    "react-router-dom": "^4.2.2",
-    "redux": "^4.0.0",
-    "webpack": "^4.6.0"
-  }
+  "dependencies": {}
 }
