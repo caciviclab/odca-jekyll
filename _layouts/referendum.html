@@ -3,7 +3,7 @@ layout: default
 ---
 {% assign referendum = page %}
 {% assign election_day = referendum.election | date: "%Y-%m-%d" %}
-{% assign referendum_id = referendum.title | slugify %}
+{% assign referendum_id = referendum.title | slugify: "pretty" %}
 {% assign supporting = site.data.referendum_supporting[referendum.locality][election_day][referendum_id] %}
 {% assign opposing = site.data.referendum_opposing[referendum.locality][election_day][referendum_id] %}
 {% capture ballot_path %}_ballots/{{ referendum.locality }}/{{ election_day }}.md{% endcapture %}
