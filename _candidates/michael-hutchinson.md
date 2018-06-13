@@ -14,4 +14,3 @@ filer_id: 134896
 ballots:
 - _ballots/oakland/2016-11-08.md
 ---
-Mike Hutchinson has worked and volunteered in Oakland's public schools for the past twenty years and has run programs for non-profit organizations for the past nine years. Hutchinson is an Oakland resident who attended UC Berkeley.

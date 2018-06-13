@@ -14,6 +14,3 @@ filer_id: 1387192
 ballots:
 - _ballots/oakland/2016-11-08.md
 ---
-Viola Gonzales was the Chief Executive Officer of AnewAmerica Community Corporation, a non-profit that helps immigrants and refugees start small and micro-businesses. Gonzales has been Executive Director for a non-profit residential program for developmentally disabled kids based in Oakland for the past eight years. Her volunteer service has included corporate advisory, nonprofit and civic boards. In 2002, Gonzales was appointed to the Oakland Board of Education by then-Mayor Jerry Brown. Prior to this appointment, she served on the Oakland Planning Commission. 
-
-Source: http://www.anewamerica.org/index.php/news/events/173-changes-in-leadership-at-anewamerica , https://www.linkedin.com/in/violagonzales , http://boedocdepot.ousd.k12.ca.us/boe-webextender/bextest/ViolaGonzales.asp , and candidate survey

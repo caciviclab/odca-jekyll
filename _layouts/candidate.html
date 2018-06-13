@@ -47,14 +47,6 @@ layout: default
         </div>
       </div>
     </section>
-    {% assign bio = candidate.content | strip %}
-    {% unless bio == empty %}
-    <section class="l-section">
-      <div class="l-section__content">
-        {{ bio }}
-      </div>
-    </section>
-    {% endunless %}
     {% if finance.total_contributions or finance.total_expenditures %}
       {% include candidate/finance.html candidate=candidate finance=finance %}
     {% else %}

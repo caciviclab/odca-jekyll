@@ -14,6 +14,3 @@ filer_id: 1386416
 ballots:
 - _ballots/oakland/2016-11-08.md
 ---
-Jumoke Hinton-Hodge is running for re-election as District 3 representative for the Oakland Unified School Board of Education. Hinton-Hodge is the co-founder of the Parent Leadership and Engagement Academy Initiative (PLEA), a community-building project dedicated to the education and support of West Oakland parents and families. She received a Bachelor degree in Black Studies and English from Oberlin College. 
-
-Source: http://www.ousd.org/directorhodge

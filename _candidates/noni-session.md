@@ -14,6 +14,3 @@ filer_id: 1386922
 ballots:
 - _ballots/oakland/2016-11-08.md
 ---
-Noni Session is a lifelong resident of Oakland and attended Oakland public schools. Session served as a special education teacher at Harbor Way Academy Elementary School. She graduated with a degree in Cultural Anthropology and African American Studies from San Francisco State University and received her Ph.D. in Cultural Anthropology from Cornell University. Session’s doctoral research in Nairobi, Kenya on Bureaucratic Organizations & Humanitarianism led her to work with the United Nations Development Programme as a Researcher and Government Liaison. 
-
-Source: https://www.crowdpac.com/campaigns/68285/support-noni-session-for-oakland-city-council-distict-3

@@ -14,6 +14,3 @@ filer_id: 1387803
 ballots:
 - _ballots/oakland/2016-11-08.md
 ---
-James Harris is the current Board of Education President, a business owner, parent, former teacher, and East Oakland native. Harris serves on the Aim High East Bay Leadership Council. He is a founding board member of Great Oakland Public Schools and a current board member at Youth Uprising. Harris’ career in education began at 16 as a teaching assistant at the Aim High Summer Program, which prepares children from low-income communities for success in high school and life. 
-
-Source: http://harrisforeastoakland.com/
