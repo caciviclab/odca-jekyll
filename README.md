@@ -55,7 +55,7 @@ This project started as an experiment. Here is what we learned:
 - naming of the files is very important, it's how we reference relationships
   between entities. Best is to use the full path name which would be unique per
   entity.
-- Info we attribute to candidates, like bio, occupation, website, etc, should
+- Info we attribute to candidates, like occupation, website, etc, should
   those be frozen in time based at the time of election? For example, London
   Breed is now running for Mayor, so many of these attributes have changed since
   the last election. Would folks be interested in seeing snapshots of websites,
