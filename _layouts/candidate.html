@@ -34,11 +34,10 @@ layout: default
             <div class="candidate__expenditure-ceiling">
               This candidate has agreed to the voluntary spending limits.
               The maximum contribution this candidate can accept is $800.
-              <a target="_blank" href="https://www.oaklandca.gov/services/boards-and-commissions-index/ethics/election-campaign-rules-and-disclosure"
-                 alt="Voluntary spending limits - more information">
-                <img src="{{ "/assets/images/icon_more_info.png" | relative_url }}"
+              <span class="hover-info-container"><img src="{{ "/assets/images/icon_more_info.png" | relative_url }}"
                      alt="Voluntary spending limits - more information" />
-              </a>
+                     <span class="hover-info">For more detail on voluntary spending limits, see the <a href="{{ "/faq" | relative_url }}">FAQ article</a>.</span>
+              </span>
             </div>
               {%  endif %}
             <div><a href="{{ candidate.website_url }}">{{ candidate.website_url }}</a></div>

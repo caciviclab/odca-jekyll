@@ -94,10 +94,6 @@ linters:
   SelectorFormat:
     enabled: false # strict_BEM doesn't seem to be supported by Hound
     convention: strict_BEM
-  Shorthand:
-    enabled: false
-    allowed_shorthands: [1, 2]
-    severity: warning
   SingleLinePerProperty:
     enabled: true
     allow_single_line_rule_sets: true
