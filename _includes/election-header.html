@@ -4,7 +4,6 @@
 <header class="election-header grid">
   <div class="grid-col-12">
     <h1 class="election-header__title">{{ locality.name | escape }}</h1>
-    {% if election_day > today %}Upcoming{% else %}Recent{% endif %}
-    election: <a href="{{ locality.url | prepend: site.baseurl }}">{{ locality.current_election | date: "%B %-d, %Y" }}</a>
+    {{ include.ballot.election | date: "%B %-d, %Y" }} election
   </div>
 </header>

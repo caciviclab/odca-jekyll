@@ -34,7 +34,7 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
 - [Ruby 2.3](https://www.ruby-lang.org/)
 - [Bundler](https://bundler.io/) gem
 - [Make](https://www.gnu.org/software/make/)
-- [Node 8.9](https://nodejs.org/)
+- [Node 8.9+](https://nodejs.org/)
 
 
 ## Setup
@@ -97,7 +97,7 @@ Then you can run the npm task.
 
 Now rebuild your site with the finance data.
 
-    $ make serve
+    $ make build
 
 
 ## Deployment
