@@ -20,12 +20,12 @@
 }
 
 .candidate-summary__occupation {
-  @include font-family-serif;
+  font-family: $font-family-sans-serif;
   color: $color-grey-2;
 }
 
 .candidate-summary__contributions {
-  @include font-family-serif;
+  font-family: $font-family-sans-serif;
   color: $color-grey-4;
   font-size: $h5-font-size;
   font-style: italic;

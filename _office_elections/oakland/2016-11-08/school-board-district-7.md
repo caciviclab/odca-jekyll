@@ -1,5 +1,5 @@
 ---
-name: School Board District 7
+title: School Board District 7
 candidates:
   - james-harris
   - chris-jackson

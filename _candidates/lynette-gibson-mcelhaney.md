@@ -9,7 +9,7 @@ votersedge_url: >-
 committee_name: Re-Elect McElhaney for City Council 2016
 is_accepted_expenditure_ceiling: true
 is_incumbent: true
-occupation: 'Incumbent, City Council member'
+occupation: 'City Council member'
 party_affiliation: Democrat
 filer_id: 1375179
 ballots:

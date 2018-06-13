@@ -8,7 +8,7 @@ votersedge_url: >-
 committee_name: ReElect Noel Gallo for Oakland City Council 2016
 is_accepted_expenditure_ceiling: true
 is_incumbent: true
-occupation: 'Incumbent, City Council member'
+occupation: 'City Council member'
 party_affiliation: Democrat
 filer_id: 1388641
 ballots:

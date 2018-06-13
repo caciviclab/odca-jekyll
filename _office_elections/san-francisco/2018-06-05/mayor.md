@@ -1,5 +1,5 @@
 ---
-name: Mayor
+title: Mayor
 candidates:
   - richie-greenberg
   - mark-leno
