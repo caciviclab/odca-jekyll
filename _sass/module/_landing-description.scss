@@ -1,0 +1,6 @@
+.landing__description__header {
+  @include heading('h2');
+  color: $color-grey-2;
+  font-style: italic;
+  font-weight: 300px;
+}

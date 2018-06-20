@@ -24,7 +24,7 @@ $heading-font-family: $font-family-sans-serif;
 }
 
 @mixin heading($size) {
-  // color: $color-white;
+  color: $color-white;
   line-height: $heading-line-height;
 
   @if $size == 'h1' {

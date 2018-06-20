@@ -12,7 +12,6 @@
           {% assign referendum = site.referendums | where: "path", ballot_item | first %}
           <p><a href="{{ referendum.url | prepend: site.baseurl }}">{{ referendum.number }} {{ referendum.title | escape}}</a></p>
         {% endfor %}
-        <!-- <p>Maddy Sidebar: Ballot Measures</p> -->
       </div>
     </section>
   {% endif %}
