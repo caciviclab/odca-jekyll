@@ -45,6 +45,7 @@
   display: block;
   padding: ($spacing-base * 0.5) $spacing-base;
   text-decoration: none;
+  color: $color-white;
 
   @media screen and (min-width: $grid--medium) {
     display: initial;

@@ -103,6 +103,9 @@ $hero-breakpoint: $grid--medium;
 
 .hero__cta-container {
   @include grid-collapse;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero__cta-header {
@@ -124,11 +127,11 @@ $hero-breakpoint: $grid--medium;
   // Buttons should take full width of the column
   .btn {
     width: 100%;
-    color: #006ea3;
-    background-color: white;
+    color: $color-navy;
+    background-color: $color-white;
     font-style: normal;
     font-weight: bold;
-  }
+    }
 }
 
 .hero--landing {
