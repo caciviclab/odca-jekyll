@@ -101,7 +101,9 @@ exclude:
   - package.json
   - package-lock.json
   - README.md
+  - src
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - webpack.config.js

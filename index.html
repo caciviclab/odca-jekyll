@@ -5,14 +5,7 @@ header: Track the Money in Oakland's Elections
 
 {% capture hero-cta %}
 <div class="hero__cta-container">
-  <!-- <h2 class="hero__cta-header">Funds Raised in Oakland:</h2> -->
-  <!-- <h2 class="hero__cta-header">Funds Raised in San Francisco:</h2> -->
-  <div class="hero__cta"><a class="btn" href="#">Follow the Money</a></div>
-  {% for locality in site.localities %}
-  <!-- <div class="hero__cta"><a class="btn" href="#">Follow the Money</a></div> -->
-    <!-- <div class="hero__cta"><p>{{ locality.amount_of_money_raised }}</p></div> -->
-    <!-- request submitted for data -->
-  {% endfor %}
+  <div class="hero__cta"><a class="btn" href="{{ site.baseurl }}{% link _office_elections/oakland/2016-11-08/city-council-district-at-large.md %}">Follow the money</a></div>
 </div>
 {% endcapture %}
 

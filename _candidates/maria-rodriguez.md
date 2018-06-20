@@ -9,7 +9,6 @@ first_name: Maria
 last_name: Rodriguez
 ballot_item: 8
 office_election: 8
-bio: null
 committee_name: No committee registered
 is_accepted_expenditure_ceiling: true
 is_incumbent: false

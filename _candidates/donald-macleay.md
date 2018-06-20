@@ -14,6 +14,3 @@ filer_id: 1384267
 ballots:
 - _ballots/oakland/2016-11-08.md
 ---
-Don Macleay owns and runs East Bay Computer Services, a computer repair business in the Temescal district.  While running for office, Macleay is on leave from People United for a Better Life in Oakland, a youth advocacy organization where he serves as a board member. In 2010, Macleay ran for mayor in Oakland. 
-
-Source: https://oaklandnorth.net/2012/10/29/greens-don-macleay-promotes-civilians-on-police-force-higher-minimum-wage/

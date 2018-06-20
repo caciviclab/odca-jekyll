@@ -1,0 +1,26 @@
+.hover-info {
+  visibility: hidden;
+  font-size: 1.25rem;
+  max-width: 24rem;
+  background-color: $color-grey-1;
+  color: $color-white;
+  border-radius: 2px;
+  padding: 8px 10px;
+  margin: 2.25rem 0 0 -13rem;
+  position: absolute;
+  z-index: 1;
+
+  a {
+    color: $color-gold;
+  }
+}
+
+.hover-info-container {
+  display: inline-block;
+  height: 2.25rem;
+  width: 4rem;
+}
+
+.hover-info-container:hover .hover-info {
+  visibility: visible;
+}

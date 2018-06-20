@@ -9,7 +9,6 @@ first_name: Jane
 last_name: Kim
 ballot_item: 10
 office_election: 10
-bio: null
 committee_name: Jane Kim for Mayor 2018
 is_accepted_expenditure_ceiling: null
 is_incumbent: null
