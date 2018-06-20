@@ -40,10 +40,10 @@ jobs:
           working_directory: ..
       - run:
           name: Clean data folder
-          command: npm run gulp -- clean
+          command: make clean
       - run:
           name: Pull finance data
-          command: npm run pull
+          command: make pull
       - persist_to_workspace:
           root: .
           paths:
