@@ -35,7 +35,9 @@ $hero-breakpoint: $grid--medium;
     h4,
     h5,
     h6,
-    p {
+    p,
+    ul,
+    li {
       color: $color-white;
       text-shadow: 0 2px 3px $text-shadow-color;
     }
@@ -62,11 +64,15 @@ $hero-breakpoint: $grid--medium;
 // Layout element
 .hero__main {
   @include grid-column(12);
+  font-weight: 350;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
 }
 
 .hero__hed {
   font-size: $title-font-size;
-
+  font-weight: 375;
   @include media($hero-breakpoint) {
     font-style: italic;
   }
@@ -118,6 +124,10 @@ $hero-breakpoint: $grid--medium;
   // Buttons should take full width of the column
   .btn {
     width: 100%;
+    color: #006ea3;
+    background-color: white;
+    font-style: normal;
+    font-weight: bold;
   }
 }
 
