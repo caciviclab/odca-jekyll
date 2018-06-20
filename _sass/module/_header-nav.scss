@@ -83,6 +83,6 @@
   display: block;
 
   @media screen and (max-width: 768px) {
-  border-bottom: 5px #ffdd1f solid;
+    border-bottom: 5px $color-gold solid;
   }
 }
