@@ -4,7 +4,9 @@ const path = require('path');
 const del = require('del');
 const gulp = require('gulp');
 
-const BACKEND_STATIC_REPO = path.join('..', 'disclosure-backend-static');
+const backendStaticRepoPath = process.env.BACKEND_STATIC_REPO || path.resolve('..', 'disclosure-backend-static');
+
+const loader = require('./gulp/data-loader')(backendStaticRepoPath);
 
 const OAKLAND_2016_REFERENDUM_NUMBERS = ['g1', 'hh', 'ii', 'jj', 'kk', 'll'];
 const OAKLAND_REFERENDUM_ELECTION_MAP = {
@@ -25,7 +27,7 @@ function guessElection (data) {
 }
 
 function dataDir(...pathParts) {
-  return path.join(BACKEND_STATIC_REPO, 'build', ...pathParts);
+  return path.join(backendStaticRepoPath, 'build', ...pathParts);
 }
 
 
@@ -33,7 +35,17 @@ function slugify(text) {
   return (text || '').toLowerCase().replace(/[\.']+/g, '').replace(/[^a-z0-9-]+/g, '-');
 }
 
-function slugifyName(fn) {
+function candidatePath(candidate) {
+  const officeElection = loader.officeElection(candidate.office_election);
+  const ballot = loader.ballot(officeElection.ballot_id);
+
+  // Backend serializes localities as arrays
+  const locality = loader.locality(ballot.locality_id)[0];
+
+  return path.join(slugify(locality.name), ballot.date, `${slugify(candidate.name)}.json`);
+}
+
+function transformPath(fn) {
   return new Transform({
     objectMode: true,
     transform(file, enc, callback) {
@@ -77,7 +89,7 @@ gulp.task('clean', function () {
 
 gulp.task('pull:candidates', function () {
   return gulp.src(dataDir('candidate', '*', 'index.json'))
-    .pipe(slugifyName((data) => `${slugify(data.name)}.json`))
+    .pipe(transformPath(candidatePath))
     .pipe(gulp.dest('_data/candidates'));
 });
 
@@ -89,7 +101,7 @@ gulp.task('pull:contributions', function () {
 
 gulp.task('pull:referendum_opposing', function () {
   return gulp.src(dataDir('referendum', '*', 'opposing', 'index.json'))
-    .pipe(slugifyName((data) => {
+    .pipe(transformPath((data) => {
       const election = guessElection(data);
       return `oakland/${election}/${slugify(data.title)}.json`
     }))
@@ -98,7 +110,7 @@ gulp.task('pull:referendum_opposing', function () {
 
 gulp.task('pull:referendum_supporting', function () {
   return gulp.src(dataDir('referendum', '*', 'supporting', 'index.json'))
-    .pipe(slugifyName((data) => {
+    .pipe(transformPath((data) => {
       const election = guessElection(data);
       return `oakland/${election}/${slugify(data.title)}.json`
     }))

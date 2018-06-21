@@ -94,6 +94,7 @@ exclude:
   - CONTRIBUTING.md
   - Gemfile
   - Gemfile.lock
+  - gulp/
   - gulpfile.js
   - LICENSE.md
   - Makefile
