@@ -11,5 +11,5 @@ occupation: null
 party_affiliation: null
 filer_id: null
 ballots:
-- _ballots/san-francisco/2018-11-06.md
+- _ballots/san-francisco/2018-06-05.md
 ---
