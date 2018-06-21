@@ -5,6 +5,11 @@ layout: default
 {% assign ballot = site.ballots | where: "path", office_election.ballot | first %}
 {% assign locality = site.localities | where: "locality_id", ballot.locality | first %}
 
+{% comment %}
+Filter the candidates for this election.
+{% endcomment %}
+{% assign ballot_candidates = site.candidates | where_exp: "item", "item.path contains ballot.election" %}
+
 {% capture body %}
 <div class="office-election">
   <header class="office-election__header">
@@ -12,7 +17,7 @@ layout: default
   </header>
   <main>
     {% for candidate_id in office_election.candidates %}
-      {% assign candidate = site.candidates | where: "slug", candidate_id | first %}
+      {% assign candidate = ballot_candidates | where: "slug", candidate_id | first %}
       <div class="office-election__candidate">{% include candidate-summary.html candidate=candidate %}</div>
     {% endfor %}
   </main>
