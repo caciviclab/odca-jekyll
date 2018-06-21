@@ -11,6 +11,5 @@ is_incumbent: false
 occupation: Small business owner
 party_affiliation: Green Party
 filer_id: 1384267
-ballots:
-- _ballots/oakland/2016-11-08.md
+ballot: _ballots/oakland/2016-11-08.md
 ---

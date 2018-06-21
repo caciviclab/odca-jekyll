@@ -11,6 +11,5 @@ is_incumbent: false
 occupation: Non-profit Executive Director
 party_affiliation: Democrat
 filer_id: 1388731
-ballots:
-- _ballots/oakland/2016-11-08.md
+ballot: _ballots/oakland/2016-11-08.md
 ---

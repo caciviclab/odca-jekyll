@@ -10,6 +10,5 @@ is_incumbent: false
 occupation: Associate Regional Public Affairs Director
 party_affiliation: null
 filer_id: null
-ballots:
-- _ballots/oakland/2016-11-08.md
+ballot: _ballots/oakland/2016-11-08.md
 ---

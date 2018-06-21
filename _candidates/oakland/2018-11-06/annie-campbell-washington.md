@@ -10,6 +10,5 @@ is_incumbent: true
 occupation: Councilmember
 party_affiliation: null
 filer_id: null # 1376660
-ballots:
-- _ballots/oakland/2018-11-06.md
+ballot: _ballots/oakland/2018-11-06.md
 ---

@@ -9,6 +9,5 @@ last_name: "Dagesse"
 occupation: ""
 party_affiliation: ""
 filer_id: ""
-ballots:
-- _ballots/san-francisco/2018-06-05.md
+ballot: _ballots/san-francisco/2018-06-05.md
 ---

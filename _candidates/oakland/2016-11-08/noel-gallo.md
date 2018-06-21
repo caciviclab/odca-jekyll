@@ -11,6 +11,5 @@ is_incumbent: true
 occupation: 'City Council member'
 party_affiliation: Democrat
 filer_id: 1388641
-ballots:
-- _ballots/oakland/2016-11-08.md
+ballot: _ballots/oakland/2016-11-08.md
 ---

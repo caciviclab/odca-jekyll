@@ -10,6 +10,5 @@ is_incumbent: false
 occupation: null
 party_affiliation: null
 filer_id: null # 1403436
-ballots:
-- _ballots/oakland/2018-11-06.md
+ballot: _ballots/oakland/2018-11-06.md
 ---

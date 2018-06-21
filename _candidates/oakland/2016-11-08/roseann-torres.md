@@ -11,6 +11,5 @@ is_incumbent: true
 occupation: Oakland School Board member
 party_affiliation: Democrat
 filer_id: 1379121
-ballots:
-- _ballots/oakland/2016-11-08.md
+ballot: _ballots/oakland/2016-11-08.md
 ---

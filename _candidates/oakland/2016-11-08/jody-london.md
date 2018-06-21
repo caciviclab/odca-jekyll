@@ -11,6 +11,5 @@ is_incumbent: true
 occupation: 'School Board Director, and Sustainability Coordinator'
 party_affiliation: Democrat
 filer_id: 1303019
-ballots:
-- _ballots/oakland/2016-11-08.md
+ballot: _ballots/oakland/2016-11-08.md
 ---

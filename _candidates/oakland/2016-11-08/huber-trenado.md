@@ -11,6 +11,5 @@ is_incumbent: false
 occupation: Teacher
 party_affiliation: Democrat
 filer_id: 1386749
-ballots:
-- _ballots/oakland/2016-11-08.md
+ballot: _ballots/oakland/2016-11-08.md
 ---

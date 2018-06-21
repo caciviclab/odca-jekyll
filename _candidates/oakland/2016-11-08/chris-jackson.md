@@ -11,6 +11,5 @@ is_incumbent: false
 occupation: Social Worker
 party_affiliation: null
 filer_id: 1384926
-ballots:
-- _ballots/oakland/2016-11-08.md
+ballot: _ballots/oakland/2016-11-08.md
 ---

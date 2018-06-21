@@ -9,6 +9,5 @@ is_incumbent: false
 occupation: null
 party_affiliation: null
 filer_id: null
-ballots:
-- _ballots/san-francisco/2018-11-06.md
+ballot: _ballots/san-francisco/2018-11-06.md
 ---

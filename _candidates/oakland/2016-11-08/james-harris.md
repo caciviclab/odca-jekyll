@@ -11,6 +11,5 @@ is_incumbent: true
 occupation: Board of Education President; owns and operates media company in San Francisco
 party_affiliation: null
 filer_id: 1387803
-ballots:
-- _ballots/oakland/2016-11-08.md
+ballot: _ballots/oakland/2016-11-08.md
 ---

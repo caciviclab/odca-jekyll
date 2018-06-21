@@ -11,6 +11,5 @@ is_incumbent: true
 occupation: Councilmember for District 7
 party_affiliation: null
 filer_id: 1387905
-ballots:
-- _ballots/oakland/2016-11-08.md
+ballot: _ballots/oakland/2016-11-08.md
 ---

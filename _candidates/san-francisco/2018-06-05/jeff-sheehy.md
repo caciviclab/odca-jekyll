@@ -10,6 +10,5 @@ is_incumbent: null
 occupation: null
 party_affiliation: null
 filer_id: null
-ballots:
-- _ballots/san-francisco/2018-06-05.md
+ballot: _ballots/san-francisco/2018-06-05.md
 ---
