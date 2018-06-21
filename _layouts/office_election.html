@@ -4,6 +4,7 @@ layout: default
 {% assign office_election = page %}
 {% assign ballot = site.ballots | where: "path", office_election.ballot | first %}
 {% assign locality = site.localities | where: "locality_id", ballot.locality | first %}
+{% assign election_day = ballot.election | date: '%Y-%m-%d' %}
 
 {% comment %}
 Filter the candidates for this election.
@@ -18,7 +19,8 @@ Filter the candidates for this election.
   <main>
     {% for candidate_id in office_election.candidates %}
       {% assign candidate = ballot_candidates | where: "slug", candidate_id | first %}
-      <div class="office-election__candidate">{% include candidate-summary.html candidate=candidate %}</div>
+      {% assign finance = site.data.candidates[locality.slug][election_day][candidate.slug] %}
+      <div class="office-election__candidate">{% include candidate-summary.html candidate=candidate finance=finance %}</div>
     {% endfor %}
   </main>
 </div>
