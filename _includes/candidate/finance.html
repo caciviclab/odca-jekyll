@@ -11,10 +11,21 @@
     <div class="candidate__summary candidate__summary--balance">Current balance: <span class="money">{{ finance.total_contributions | minus: finance.total_expenditures | minus: finance.total_loans_received | dollars }}</span></div>
   </div>
 </section>
-{% if finance.opposing_money.opposing_expenditures %}
+{% assign expenditures_against = finance.opposing_money.opposing_expenditures %}
+{% assign independent_expenditures_for = finance.supporting_money.total_supporting_independent %}
+{% if expenditures_against > 0 or independent_expenditures_for > 0 %}
 <section class="l-section">
   <div class="l-section__content">
-    <h2 class="candidate__expenditures-opposing">Expenditures opposing candidate <span class="money">{{ finance.opposing_money.opposing_expenditures | dollars  }}</span></h2>
+    {% if expenditures_against > 0 %}
+    <h2 class="candidate__expenditures-opposing">
+      Expenditures opposing candidate <span class="money">{{ expenditures_against | dollars }}</span>
+    </h2>
+    {% endif %}
+    {% if independent_expenditures_for > 0 %}
+    <h2 class="candidate__expenditures-supporting">
+      Expenditures supporting candidate <span class="money">{{ independent_expenditures_for | dollars }}</span>
+    </h2>
+    {% endif %}
   </div>
 </section>
 {% endif %}
