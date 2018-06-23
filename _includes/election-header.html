@@ -1,9 +1,10 @@
 {% assign locality = include.locality %}
-{% assign today = site.time | date: "%Y-%m-%d" %}
+{% assign today = site.time | date: "%b. %-d, %Y" %}
 {% assign election_day = locality.current_election | date: "%Y-%m-%d" %}
 <header class="election-header grid">
   <div class="grid-col-12">
     <h1 class="election-header__title">{{ locality.name | escape }}</h1>
-    {{ include.ballot.election | date: "%B %-d, %Y" }} election
+    <div class="election-header__day">{{ include.ballot.election | date: "%B %-d, %Y" }} election</div>
+    <div class="election-header__updated-at">Content last updated {{ today }}</div>
   </div>
 </header>
