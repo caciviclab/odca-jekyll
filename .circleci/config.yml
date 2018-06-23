@@ -43,7 +43,7 @@ jobs:
           command: make clean
       - run:
           name: Pull finance data
-          command: make pull
+          command: make pull-finance
       - persist_to_workspace:
           root: .
           paths:

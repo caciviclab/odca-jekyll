@@ -11,7 +11,7 @@ production:
 	npm run dist
 	JEKYLL_ENV=production bundle exec jekyll build
 
-pull:
+pull-finance:
 	npm run pull
 
 serve:

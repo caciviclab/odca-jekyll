@@ -93,7 +93,7 @@ in the gulpfile (pull requests welcome)._
 
 Then you can run the pull-finance task.
 
-    $ make pull
+    $ make pull-finance
 
 Now rebuild your site with the finance data.
 
