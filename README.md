@@ -20,7 +20,7 @@ would love to get help from folks across the state to help us in building
 a database of campaign finance data for local jurisdictions across the state.
 
 www.opendisclosure.io is one piece of the ODCA project. We try to keep our
-[project page](http://caciviclab.org/opendisclosure/) up to date with all the
+[project page](https://caciviclab.org/opendisclosure/) up to date with all the
 information about how we work and where to get looped in.
 
 We're maintaining a high-level list of work for our MVP in this [project
