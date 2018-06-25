@@ -1,5 +1,5 @@
 ---
-title: Oakland Unified School District 6
+title: OUSD District 6
 candidates:
 - shanthi-gonzales
 - ebony-edgerson
