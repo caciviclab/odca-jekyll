@@ -2,10 +2,11 @@
 layout: default
 ---
 {% assign candidate = page %}
-{% assign finance = site.data.candidates[candidate.slug] %}
-{% assign ballot_path = candidate.ballots | first %}
-{% assign ballot = site.ballots | where: "path", ballot_path | first %}
+{% assign ballot = site.ballots | where: "path", candidate.ballot | first %}
 {% assign locality = site.localities | where: "locality_id", ballot.locality | first %}
+{% assign election_day = ballot.election | date: '%Y-%m-%d' %}
+{% assign finance = site.data.candidates[locality.slug][election_day][candidate.slug] %}
+
 
 {% capture body %}
 <div class="candidate">
