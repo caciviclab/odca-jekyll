@@ -1,6 +1,6 @@
 ---
 locality: oakland
-election: 2016-11-08
+election: '2016-11-08'
 title: Sugar-Sweetened BeverageTax
 number: HH
 ---
