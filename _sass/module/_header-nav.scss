@@ -82,7 +82,9 @@
 .header-nav__trigger:checked ~ .header-nav__items {
   display: block;
 
-  @media screen and (max-width: 768px) {
-    border-bottom: 5px $color-gold solid;
+  @mixin media($grid--medium) {
+    @media screen and (min-width: $grid--medium) {
+      border-bottom: 5px $color-gold solid;
+    }
   }
 }
