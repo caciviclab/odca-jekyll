@@ -1,6 +1,17 @@
 .landing__description__header {
-  @include heading('h2');
+  @include heading('h3');
   color: $color-grey-2;
   font-style: italic;
   font-weight: 300px;
+}
+
+.landing__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing__description__paragraph {
+  display: flex;
+  justify-content: center;
 }

@@ -55,7 +55,7 @@ $heading-font-family: $font-family-sans-serif;
 
 body {
   @include font-size();
-  background: $body-background-color;
+  background: $color-white;
   color: $body-color;
   font-family: $font-family-sans-serif;
   line-height: $base-line-height;
