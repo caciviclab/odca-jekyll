@@ -8,6 +8,10 @@
   <div class="candidate-summary__right">
     <div><a href="{{ candidate.url | prepend: site.baseurl }}">{{ candidate.name | escape }}</a></div>
     <div class="candidate-summary__occupation">{% if candidate.is_incumbent %}Incumbent, {% endif %}{{ candidate.occupation | escape }}</div>
-    <div class="candidate-summary__contributions">amount collected <span class="money">{{ finance.total_contributions | dollars }}</span></div>
+    {% if finance.total_contributions > 0 %}
+      <div class="candidate-summary__contributions">amount collected <span class="money">{{ finance.total_contributions | dollars }}</span></div>
+    {% else %}
+      <div class="candidate-summary__contributions">no contributions have been reported</div>
+    {% endif %}
   </div>
 </div>

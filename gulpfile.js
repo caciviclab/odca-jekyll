@@ -30,7 +30,7 @@ function dataDir(...pathParts) {
 
 
 function slugify(text) {
-  return (text || '').toLowerCase().replace(/[\.']+/g, '').replace(/[^a-z0-9-]+/g, '-');
+  return (text || '').toLowerCase().replace(/[\._~!$&'()+,;=@]+/g, '').replace(/[^a-z0-9-]+/g, '-');
 }
 
 function slugifyName(fn) {
