@@ -3,6 +3,7 @@ layout: default
 ---
 {% assign candidate = page %}
 {% assign finance = site.data.candidates[candidate.slug] %}
+{% assign other_committees = site.committees | where:"candidate_controlled_id",finance["filer_id"] %}
 {% assign ballot_path = candidate.ballots | first %}
 {% assign ballot = site.ballots | where: "path", ballot_path | first %}
 {% assign locality = site.localities | where: "locality_id", ballot.locality | first %}
@@ -55,6 +56,12 @@ layout: default
         </div>
       </section>
     {% endif %}
+    <section class="l-section">
+        <div class="l-section__content">
+            <h1 style="color: red;">Other Candidate-Controlled Committees</h1>
+            <p style="font-size: 4rem; font-weight: 700; color: red;">{{ other_committees | size }}</p>
+        </div>
+    </section>
   </div>
 </div>
 {% endcapture %}
