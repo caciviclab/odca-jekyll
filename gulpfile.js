@@ -30,7 +30,7 @@ function dataDir(...pathParts) {
 
 
 function slugify(text) {
-  return (text || '').toLowerCase().replace(/[\.']+/g, '').replace(/[^a-z0-9-]+/g, '-');
+  return (text || '').toLowerCase().replace(/[\._~!$&'()+,;=@]+/g, '').replace(/[^a-z0-9-]+/g, '-');
 }
 
 function slugifyName(fn) {
@@ -69,6 +69,7 @@ function contributions() {
 gulp.task('clean', function () {
   return del([
     '_data/candidates',
+    '_data/committees',
     '_data/contributions',
     '_data/referendum_opposing',
     '_data/referendum_supporting',

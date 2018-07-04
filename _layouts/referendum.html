@@ -3,7 +3,7 @@ layout: default
 ---
 {% assign referendum = page %}
 {% assign election_day = referendum.election | date: "%Y-%m-%d" %}
-{% assign referendum_id = referendum.title | slugify %}
+{% assign referendum_id = referendum.title | slugify: "pretty" %}
 {% assign supporting = site.data.referendum_supporting[referendum.locality][election_day][referendum_id] %}
 {% assign opposing = site.data.referendum_opposing[referendum.locality][election_day][referendum_id] %}
 {% capture ballot_path %}_ballots/{{ referendum.locality }}/{{ election_day }}.md{% endcapture %}
@@ -12,13 +12,19 @@ layout: default
 
 {% capture body %}
 <header>
-  <h1>Measure {{ referendum.number }}</h1>
-  <h2>{{ referendum.title }}</h2>
+  {% if referendum.number %}
+    <h1>Measure {{ referendum.number }}</h1>
+    <h2>{{ referendum.title | escape }}</h2>
+  {% else %}
+    <h1>{{ referendum.title | escape }}</h1>
+    <div><p><i>No measure number has been assigned.</i></p></div>
+  {% endif %}
 </header>
 <section class="l-section">
   {{ referendum.content }}
 </section>
 
+{% if supporting.total_contributions > 0 or opposing.total_contributions > 0 %}
 <!-- supporting money column -->
 <section class="l-section">
   <div class="l-section__content l-section__content--half">
@@ -83,6 +89,13 @@ layout: default
     {% include supporting_opposing_committees.html committees=opposing.opposing_organizations color="red" %}
   </div>
 </section>
+{% else %}
+<section class="l-section">
+  <div class="l-section__content">
+    <p><i>No filings have been reported for this ballot measure.</i></p>
+  </div>
+</section>
+{% endif %}
 
 {% endcapture %}
 {% include ballot-layout.html content=body ballot=ballot locality=locality %}

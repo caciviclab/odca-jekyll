@@ -8,6 +8,7 @@ votersedge_url: >-
   http://votersedge.org/ca/en/ballot/election/area/42/contests/contest/13236/candidate/130757?&county=Alameda%20County&election_authority_id=1
 committee_name: Re-Elect McElhaney for City Council 2016
 is_accepted_expenditure_ceiling: true
+has_accepted_public_funds: true
 is_incumbent: true
 occupation: 'City Council member'
 party_affiliation: Democrat
