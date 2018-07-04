@@ -46,7 +46,6 @@ $hero-breakpoint: $grid--medium;
     &::before {
       content: '';
       position: absolute;
-      background-color: $scrim-color;
       top: 0;
       bottom: 0;
       left: 0;
@@ -127,8 +126,8 @@ $hero-breakpoint: $grid--medium;
   // Buttons should take full width of the column
   .btn {
     width: 100%;
-    // color: navy;
-    // background-color: #ffffff;
+    opacity: 1;
+    background-color: #ffffff;
     font-style: normal;
     font-weight: bold;
     }
