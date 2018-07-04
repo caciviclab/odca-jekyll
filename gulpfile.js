@@ -14,10 +14,10 @@ gulp.task('clean', function () {
     '_ballots',
     '_candidates',
     '_office_elections',
+    '_committees',
     '_referendums',
     '_data/candidates',
     '_data/committees',
-    '_data/contributions',
     '_data/referendum_opposing',
     '_data/referendum_supporting',
   ]);
