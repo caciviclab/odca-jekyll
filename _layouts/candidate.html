@@ -56,12 +56,16 @@ layout: default
         </div>
       </section>
     {% endif %}
-    <section class="l-section">
-        <div class="l-section__content">
-            <h1 style="color: red;">Other Candidate-Controlled Committees</h1>
-            <p style="font-size: 4rem; font-weight: 700; color: red;">{{ other_committees | size }}</p>
-        </div>
-    </section>
+    {% if other_committees | size %}
+        <section class="l-section">
+            <div class="l-section__content">
+                <h2 class="candidate__money-heading">Other Committees Controlled By This Candidate</h2>
+                {% for committee in other_committees %}
+                    <p>{{ committee.name }}</p>
+                {% endfor %}
+            </div>
+        </section>
+    {% endif %}
   </div>
 </div>
 {% endcapture %}
