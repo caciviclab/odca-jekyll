@@ -24,7 +24,7 @@ $hero-breakpoint: $grid--medium;
 
 .hero--photo {
   @include media($hero-breakpoint) {
-    background-image: url('./images/open-disclosure-splash.jpg');
+    background-image: url('./images/open-disclosure-splash.png');
     background-position: bottom;
     background-size: cover;
 
@@ -133,6 +133,23 @@ $hero-breakpoint: $grid--medium;
     }
 }
 
+.hero__funds__raised {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hero__funds__raised__header {
+  font-weight: 400;
+  font-style: italic;
+}
+.hero__funds_raised__total {
+  color: $color-gold;
+  font-weight: 400;
+  font-size: 4rem;
+}
+.hero__funds__raised__city {
+  text-align: center;
+}
 .hero--landing {
   // The hero on the landing page works very differently, showing different
   // content based on the breakpoint. The breakpoints are represented as
