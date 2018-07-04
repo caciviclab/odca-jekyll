@@ -12,6 +12,7 @@ function dataDir(...pathParts) {
 gulp.task('clean', function () {
   return del([
     '_ballots',
+    '_candidates',
     '_office_elections',
     '_referendums',
     '_data/candidates',
@@ -37,9 +38,14 @@ gulp.task('pull:referendums', function () {
     .pipe(gulp.dest('_referendums'));
 });
 
-gulp.task('pull:candidates', function () {
+gulp.task('pull:candidates_data', function () {
   return gulp.src(dataDir('_data', 'candidates', '*.json'))
     .pipe(gulp.dest('_data/candidates'));
+});
+
+gulp.task('pull:candidates', function () {
+  return gulp.src(dataDir('_candidates', '*.md'))
+    .pipe(gulp.dest('_candidates'));
 });
 
 gulp.task('pull:committees', function () {
@@ -65,6 +71,7 @@ gulp.task('pull:referendum_supporting', function () {
 gulp.task('pull', gulp.parallel(
   'pull:ballots',
   'pull:candidates',
+  'pull:candidates_data',
   'pull:committees',
   'pull:office_elections',
   'pull:referendums',

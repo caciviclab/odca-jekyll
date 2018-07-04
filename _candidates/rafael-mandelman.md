@@ -1,15 +1,9 @@
 ---
 name: Rafael Mandelman
-photo_url: null
-website_url: "http://www.rafaelmandelman.com/"
-twitter_url: null
-votersedge_url: null
+website_url: http://www.rafaelmandelman.com/
 committee_name: Rafael Mandelman for Supervisor 2018 Primary
-is_accepted_expenditure_ceiling: null
-is_incumbent: null
-occupation: null
-party_affiliation: null
-filer_id: null
+is_incumbent: false
+filer_id: 1395947
 ballots:
-- _ballots/san-francisco/2018-06-05.md
+- _ballots/sf/2018-06-05.md
 ---

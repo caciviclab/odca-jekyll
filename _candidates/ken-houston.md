@@ -1,14 +1,8 @@
 ---
 name: Ken Houston
-photo_url: null
-website_url: null
-twitter_url: '@KHouston4Mayor'
-votersedge_url: null
-is_accepted_expenditure_ceiling: null
+twitter_url: KHouston4Mayor
+is_accepted_expenditure_ceiling: false
 is_incumbent: false
-occupation: null
-party_affiliation: null
-filer_id: null
 ballots:
-- _ballots/san-francisco/2018-11-06.md
+- _ballots/oakland/2018-11-06.md
 ---

@@ -1,15 +1,9 @@
 ---
 name: Jeff Sheehy
-photo_url: null
-website_url: "http://jeffsheehy.org/"
-twitter_url: null
-votersedge_url: null
+website_url: http://jeffsheehy.org/
 committee_name: JEFF SHEEHY FOR SUPERVISOR JUNE 2018
-is_accepted_expenditure_ceiling: null
-is_incumbent: null
-occupation: null
-party_affiliation: null
-filer_id: null
+is_incumbent: false
+filer_id: 1395306
 ballots:
-- _ballots/san-francisco/2018-11-06.md
+- _ballots/sf/2018-06-05.md
 ---

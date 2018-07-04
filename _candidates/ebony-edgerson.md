@@ -1,15 +1,9 @@
 ---
 name: Ebony Edgerson
-photo_url: null
-website_url: null
-twitter_url: null
-votersedge_url: null
-committee_name: null
+committee_name: Ebony S Edgerson for Oakland School Board District 6 2018
 is_accepted_expenditure_ceiling: false
 is_incumbent: false
-occupation: null
-party_affiliation: null
-filer_id: null
+filer_id: 1404992
 ballots:
 - _ballots/oakland/2018-11-06.md
 ---
