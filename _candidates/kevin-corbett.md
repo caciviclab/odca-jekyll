@@ -7,6 +7,7 @@ votersedge_url: >-
   http://votersedge.org/ca/en/ballot/election/area/42/contests/contest/13235/candidate/130755?&county=Alameda%20County&election_authority_id=1
 committee_name: 'Kevin Corbett for Oakland City Council 2016, District 1'
 is_accepted_expenditure_ceiling: true
+has_accepted_public_funds: true
 is_incumbent: false
 occupation: 'Probate Attorney, Business Person and Community Volunteer'
 party_affiliation: Democrat

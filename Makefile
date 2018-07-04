@@ -4,16 +4,15 @@ build:
 	bundle exec jekyll build
 
 clean:
-	rm -rf _site \
-	  _data/candidates \
-	  _data/committees \
-	  _data/contributions \
-	  _data/referendum_opposing \
-	  _data/referendum_supporting
+	rm -rf _site
+	npm run gulp -- clean
 
 production:
 	npm run dist
 	JEKYLL_ENV=production bundle exec jekyll build
+
+pull-finance:
+	npm run pull
 
 serve:
 	npm run watch &
