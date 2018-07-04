@@ -46,7 +46,7 @@ layout: default
         </div>
       </div>
     </section>
-    {% if finance.total_contributions or finance.total_expenditures %}
+    {% if finance.total_contributions > 0 or finance.total_expenditures > 0 %}
       {% include candidate/finance.html candidate=candidate finance=finance %}
     {% else %}
       <section class="l-section">
