@@ -1,6 +1,7 @@
-$header-background-color: $color-white;
+$header-background-color: $color-navy;
 
 .header {
+  color: $color-white;
   background-color: $header-background-color;
   border-bottom: 5px $color-gold solid;
   padding: $spacing-base 0;
@@ -10,7 +11,12 @@ $header-background-color: $color-white;
 
 .header__title {
   @include heading('h2');
+  color: $color-white;
+  font-weight: lighter;
   text-decoration: none;
+  position: relative;
+  left: 40px;
+  z-index: $z-header-nav;
 
   @media screen and (min-width: $grid--medium) {
     display: none;
@@ -22,5 +28,6 @@ $header-background-color: $color-white;
 
   @media screen and (min-width: $grid--medium) {
     display: initial;
+    left: 0;
   }
 }
