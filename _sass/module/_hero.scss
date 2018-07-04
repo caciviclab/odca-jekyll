@@ -24,7 +24,7 @@ $hero-breakpoint: $grid--medium;
 
 .hero--photo {
   @include media($hero-breakpoint) {
-    background-image: url('./images/sacramento-capitol-splash.jpg');
+    background-image: url('./images/open-disclosure-splash.jpg');
     background-position: bottom;
     background-size: cover;
 
