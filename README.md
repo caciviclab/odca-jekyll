@@ -91,9 +91,9 @@ directory. _It is important that the `disclosure-backend-static` project is
 cloned to the correct path (`../disclosure-backend-static`) which is hardcoded
 in the gulpfile (pull requests welcome)._
 
-Then you can run the npm task.
+Then you can run the pull-finance task.
 
-    $ npm run pull
+    $ make pull-finance
 
 Now rebuild your site with the finance data.
 

@@ -11,14 +11,14 @@ layout: default
 <div class="candidate">
   <header class="candidate__header grid">
     <div class="grid-col-12">
-      <h2>{{ candidate.name }}</h2>
+      <h2>{{ candidate.name | smartify | escape }}</h2>
     </div>
   </header>
   <div class="candidate__main">
     <section class="l-section">
       <div class="l-section__content">
         <div class="candidate__info-container">
-          <img class="candidate__photo" src="{{ candidate.photo_url | default: 'https://s3-us-west-1.amazonaws.com/odca-candidate-photos/no-image.png' }}" alt="{{ candidate.name }}" />
+          <img class="candidate__photo" src="{{ candidate.photo_url | default: 'https://s3-us-west-1.amazonaws.com/odca-candidate-photos/no-image.png' }}" alt="{{ candidate.name | smartify | escape }}" />
           <div class="candidate__info">
             <div class="candidate__occupation-commitee-name">{% if candidate.is_incumbent == true and candidate.committee_name != null %}
               Incumbent |
@@ -29,7 +29,7 @@ layout: default
             {% elsif candidate.is_incumbent == false and candidate.committee_name == null %}
               {{ candidate.occupation }}
             {% endif %}
-            {% if candidate.committee_name != null %}<span class="candidate__commitee-name"> {{ candidate.committee_name }} </span>{% endif %}</div>
+            {% if candidate.committee_name != null %}<span class="candidate__commitee-name"> {{ candidate.committee_name | smartify | escape }} </span>{% endif %}</div>
             {% if candidate.is_accepted_expenditure_ceiling %}
             <div class="candidate__expenditure-ceiling">
               This candidate has agreed to the voluntary spending limits.
@@ -51,7 +51,7 @@ layout: default
     {% else %}
       <section class="l-section">
         <div class="l-section__content">
-          <p>No finance data is available for this candidate.</p>
+          <p><i>No finance data is available for this candidate.</i></p>
         </div>
       </section>
     {% endif %}
