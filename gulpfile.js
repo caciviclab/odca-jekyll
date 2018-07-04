@@ -39,12 +39,12 @@ gulp.task('pull:referendums', function () {
 });
 
 gulp.task('pull:candidates_data', function () {
-  return gulp.src(dataDir('_data', 'candidates', '*.json'))
+  return gulp.src(dataDir('_data', 'candidates', '**', '*.json'))
     .pipe(gulp.dest('_data/candidates'));
 });
 
 gulp.task('pull:candidates', function () {
-  return gulp.src(dataDir('_candidates', '*.md'))
+  return gulp.src(dataDir('_candidates', '**', '*.md'))
     .pipe(gulp.dest('_candidates'));
 });
 
