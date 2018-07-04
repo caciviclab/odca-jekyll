@@ -3,7 +3,7 @@ layout: default
 ---
 {% assign candidate = page %}
 {% assign finance = site.data.candidates[candidate.slug] %}
-{% assign other_committees = site.committees | where:"candidate_controlled_id",finance["filer_id"] %}
+{% assign other_committees = site.committees | where:"candidate_controlled_id",finance.filer_id %}
 {% assign ballot_path = candidate.ballots | first %}
 {% assign ballot = site.ballots | where: "path", ballot_path | first %}
 {% assign locality = site.localities | where: "locality_id", ballot.locality | first %}
@@ -61,7 +61,7 @@ layout: default
             <div class="l-section__content">
                 <h2 class="candidate__money-heading">Other Committees Controlled By This Candidate</h2>
                 {% for committee in other_committees %}
-                    <p>{{ committee.name }}</p>
+                    <p><a href="{{ site.baseurl }}/committee/{{ committee.filer_id }}">{{ committee.name }}</a></p>
                 {% endfor %}
             </div>
         </section>
