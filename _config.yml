@@ -85,6 +85,8 @@ defaults:
 markdown: kramdown
 plugins:
   - jekyll-feed
+include:
+  - .circleci # Include CircleCI config so gh-pages branch is ignored in CI
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

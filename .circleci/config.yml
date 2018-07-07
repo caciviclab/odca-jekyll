@@ -9,6 +9,10 @@ deploy-workflow-jobs: &deploy-workflow-jobs
   - build:
       requires:
         - pull-finance
+      filters:
+        branches:
+          ignore:
+            - gh-pages
   - deploy:
       requires:
         - build
