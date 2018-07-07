@@ -1,0 +1,8 @@
+{%- assign class = include.class -%}
+{%- assign alt = include.candidate.name | smartify | escape -%}
+{%- assign photo_url = include.candidate.photo_url | default: 'https://s3-us-west-1.amazonaws.com/odca-candidate-photos/no-image.png' -%}
+{%- if photo_url contains '://' -%}
+<img class="{{ class }}" src="{{ photo_url }}" alt="{{ alt }}" />
+{%- else -%}
+<img class="{{ class }}" src="{{ photo_url | prepend: site.baseurl }}" alt="{{ alt }}" />
+{%- endif -%}
