@@ -38,7 +38,7 @@ gulp.task('pull:referendums', function () {
     .pipe(gulp.dest('_referendums'));
 });
 
-gulp.task('pull:candidates_data', function () {
+gulp.task('pull:candidates-finance', function () {
   return gulp.src(dataDir('_data', 'candidates', '**', '*.json'))
     .pipe(gulp.dest('_data/candidates'));
 });
@@ -49,6 +49,11 @@ gulp.task('pull:candidates', function () {
 });
 
 gulp.task('pull:committees', function () {
+  return gulp.src(dataDir('_committees', '**', '*.md'))
+    .pipe(gulp.dest('_committees'));
+});
+
+gulp.task('pull:committees-finance', function () {
   return gulp.src(dataDir('_data', 'committees', '*.json'))
     .pipe(gulp.dest('_data/committees'));
 });
@@ -71,8 +76,9 @@ gulp.task('pull:referendum_supporting', function () {
 gulp.task('pull', gulp.parallel(
   'pull:ballots',
   'pull:candidates',
-  'pull:candidates_data',
+  'pull:candidates-finance',
   'pull:committees',
+  'pull:committees-finance',
   'pull:office_elections',
   'pull:referendums',
   'pull:referendum_opposing',
