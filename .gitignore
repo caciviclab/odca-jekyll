@@ -1,3 +1,6 @@
+_ballots
+_candidates
+_committees
 _data/candidates
 _data/committees
 _data/contributions
@@ -6,6 +9,8 @@ _data/referendum_supporting
 .DS_Store
 .jekyll-metadata
 node_modules
+_office_elections
+_referendums
 .sass-cache
 _site
 

@@ -1,5 +1,5 @@
 ---
-locality_id: san-francisco
+locality_id: sf
 netfile: SFO
 name: San Francisco
 full_name: City and County of San Francisco
