@@ -4,5 +4,10 @@
 {%- if photo_url contains '://' -%}
 <img class="{{ class }}" src="{{ photo_url }}" alt="{{ alt }}" />
 {%- else -%}
-<img class="{{ class }}" src="{{ photo_url | prepend: site.baseurl }}" alt="{{ alt }}" />
+{% asset 'candidates/{{ photo_url }}'
+   class="{{ class }}"
+   alt="{{ alt }}"
+   srcset:width="600 2x"
+   srcset:width="450 1.5x"
+   srcset:width="300 1x" %}
 {%- endif -%}
