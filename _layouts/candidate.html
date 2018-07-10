@@ -20,7 +20,7 @@ layout: default
     <section class="l-section">
       <div class="l-section__content">
         <div class="candidate__info-container">
-          <img class="candidate__photo" src="{{ candidate.photo_url | default: 'https://s3-us-west-1.amazonaws.com/odca-candidate-photos/no-image.png' }}" alt="{{ candidate.name | smartify | escape }}" />
+          {% include candidate-photo.html candidate=candidate class="candidate__photo" %}
           <div class="candidate__info">
             <div class="candidate__occupation-commitee-name">{% if candidate.is_incumbent == true and candidate.committee_name != null %}
               Incumbent |
