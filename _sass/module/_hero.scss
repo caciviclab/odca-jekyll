@@ -72,6 +72,7 @@ $hero-breakpoint: $grid--medium;
 .hero__hed {
   font-size: $title-font-size;
   font-weight: 375;
+
   @include media($hero-breakpoint) {
     font-style: italic;
   }
@@ -125,12 +126,11 @@ $hero-breakpoint: $grid--medium;
 
   // Buttons should take full width of the column
   .btn {
-    width: 100%;
-    opacity: 1;
-    background-color: #ffffff;
+    background-color: $color-white;
     font-style: normal;
     font-weight: bold;
-    }
+    width: 100%;
+  }
 }
 
 .hero__funds__raised {
@@ -142,14 +142,17 @@ $hero-breakpoint: $grid--medium;
   font-weight: 400;
   font-style: italic;
 }
+
 .hero__funds_raised__total {
   color: $color-gold;
   font-weight: 400;
   font-size: 4rem;
 }
+
 .hero__funds__raised__city {
   text-align: center;
 }
+
 .hero--landing {
   // The hero on the landing page works very differently, showing different
   // content based on the breakpoint. The breakpoints are represented as
