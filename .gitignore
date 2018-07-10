@@ -1,11 +1,17 @@
+_ballots
+_candidates
+_committees
 _data/candidates
 _data/committees
 _data/contributions
 _data/referendum_opposing
 _data/referendum_supporting
+_data/stats.json
 .DS_Store
 .jekyll-metadata
 node_modules
+_office_elections
+_referendums
 .sass-cache
 _site
 
