@@ -1,0 +1,13 @@
+.election-header__updated-at {
+  font-size: $small-font-size;
+}
+
+@include grid-media($neat-grid--medium) {
+  .election-header__day {
+    float: left;
+  }
+
+  .election-header__updated-at {
+    float: right;
+  }
+}

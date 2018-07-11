@@ -13,6 +13,7 @@ gem "jekyll", "~> 3.6.2"
 gem "html-proofer"
 gem "neat"
 gem "scss_lint"
+gem "mini_magick"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
