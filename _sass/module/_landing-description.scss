@@ -1,0 +1,17 @@
+.landing__description__header {
+  @include heading('h3');
+  color: $color-grey-2;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.landing__description {
+  padding: 50px;
+}
+
+.landing__description__paragraph {
+  display: flex;
+  justify-content: center;
+  color: $color-grey-2;
+  font-weight: 300;
+}

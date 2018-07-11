@@ -38,7 +38,7 @@
     }
   }
 
-  @media screen and (min-width: $grid--medium) {
+  @include media($grid--medium) {
     border: none;
     float: right;
     position: initial;
@@ -53,8 +53,9 @@
   display: block;
   padding: ($spacing-base * 0.5) $spacing-base;
   text-decoration: none;
+  color: $color-white;
 
-  @media screen and (min-width: $grid--medium) {
+  @include media($grid--medium) {
     display: initial;
     padding: 0 $spacing-base;
   }
@@ -73,7 +74,7 @@
     clear: both;
     display: none;
 
-    @media screen and (min-width: $grid--medium) {
+    @include media($grid--medium) {
       display: block;
     }
   }
@@ -82,9 +83,7 @@
 .header-nav__trigger:checked ~ .header-nav__items {
   display: block;
 
-  @mixin media($grid--medium) {
-    @media screen and (min-width: $grid--medium) {
-      border-bottom: 5px $color-gold solid;
-    }
+  @include media($grid--medium) {
+    border-bottom: 5px $color-gold solid;
   }
 }

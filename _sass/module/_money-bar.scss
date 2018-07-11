@@ -14,7 +14,7 @@ $money-bar-breakpoint: $grid--small; // breakpoint where measure goes from block
 }
 
 .money-bar__measure-container {
-  @media screen and (min-width: $grid--small) {
+  @include media($grid--small) {
     // Show inline on larger screens, reserving space for the money label
     text-align: right;
     width: calc(100% - #{$money-label-width});
@@ -27,7 +27,7 @@ $money-bar-breakpoint: $grid--small; // breakpoint where measure goes from block
   vertical-align: top;
   line-height: $measure-height;
 
-  @media screen and (min-width: $money-bar-breakpoint) {
+  @include media($money-bar-breakpoint) {
     // Only inline is visible above the breakpoint
     display: none;
   }
@@ -36,7 +36,7 @@ $money-bar-breakpoint: $grid--small; // breakpoint where measure goes from block
 .money-bar__money--inline {
   display: none; // Hide below the breakpoint
 
-  @media screen and (min-width: $money-bar-breakpoint) {
+  @include media($money-bar-breakpoint) {
     // Position absolute so the label hangs off of the measure-container
     display: inline-block;
     position: absolute;

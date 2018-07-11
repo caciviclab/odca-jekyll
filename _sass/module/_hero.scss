@@ -24,7 +24,7 @@ $hero-breakpoint: $grid--medium;
 
 .hero--photo {
   @include media($hero-breakpoint) {
-    background-image: url('./images/sacramento-capitol-splash.jpg');
+    background-image: url('./images/open-disclosure-splash.png');
     background-position: bottom;
     background-size: cover;
 
@@ -35,7 +35,9 @@ $hero-breakpoint: $grid--medium;
     h4,
     h5,
     h6,
-    p {
+    p,
+    ul,
+    li {
       color: $color-white;
       text-shadow: 0 2px 3px $text-shadow-color;
     }
@@ -44,7 +46,6 @@ $hero-breakpoint: $grid--medium;
     &::before {
       content: '';
       position: absolute;
-      background-color: $scrim-color;
       top: 0;
       bottom: 0;
       left: 0;
@@ -62,10 +63,15 @@ $hero-breakpoint: $grid--medium;
 // Layout element
 .hero__main {
   @include grid-column(12);
+  font-weight: 350;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
 }
 
 .hero__hed {
   font-size: $title-font-size;
+  font-weight: 375;
 
   @include media($hero-breakpoint) {
     font-style: italic;
@@ -97,6 +103,9 @@ $hero-breakpoint: $grid--medium;
 
 .hero__cta-container {
   @include grid-collapse;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero__cta-header {
@@ -117,8 +126,31 @@ $hero-breakpoint: $grid--medium;
 
   // Buttons should take full width of the column
   .btn {
+    background-color: $color-white;
+    font-style: normal;
+    font-weight: bold;
     width: 100%;
   }
+}
+
+.hero__funds__raised {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hero__funds__raised__header {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.hero__funds_raised__total {
+  color: $color-gold;
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+.hero__funds__raised__city {
+  text-align: center;
 }
 
 .hero--landing {
