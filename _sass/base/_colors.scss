@@ -5,6 +5,7 @@ $color-grey-4: #909090 !default;
 $color-grey-5: #f0f0f0 !default;
 
 $color-navy: #006ea3 !default;
+$color-lochmara-blue: #0489c8 !default;
 $color-cherry-red: #9f0a07 !default;
 $color-cream: #e7e7e7 !default;
 $color-gold: #ffdd1f !default;
@@ -15,11 +16,12 @@ $color-silver: #eceff1 !default;
 $color-white: #fff !default;
 $color-yellow: #ffc !default;
 
-$body-background-color: $color-cream !default;
+$body-background-color: $color-white !default;
 $body-color: $color-grey-1 !default;
 $border-soft-color: $color-cream !default;
 $brand-color: $color-navy !default;
 $heading-color: $color-grey-2 !default;
+$heading-color--light: $color-grey-3 !default;
 $link-color: $color-navy !default;
 $note-color: $color-grey-3 !default;
 $subheading-color: $color-grey-4 !default;

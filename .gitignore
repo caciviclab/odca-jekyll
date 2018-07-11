@@ -8,6 +8,7 @@ _data/referendum_opposing
 _data/referendum_supporting
 _data/stats.json
 .DS_Store
+.jekyll-cache
 .jekyll-metadata
 node_modules
 _office_elections

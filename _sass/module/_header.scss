@@ -3,7 +3,7 @@ $header-background-color: $color-navy;
 .header {
   color: $color-white;
   background-color: $header-background-color;
-  border-bottom: 5px $color-gold solid;
+  border-bottom: 5px $color-lochmara-blue solid;
   padding: $spacing-base 0;
   position: relative;
 }
@@ -18,7 +18,7 @@ $header-background-color: $color-navy;
   left: 40px;
   z-index: $z-header-nav;
 
-  @media screen and (min-width: $grid--medium) {
+  @include media($grid--medium) {
     display: none;
   }
 }
@@ -26,7 +26,7 @@ $header-background-color: $color-navy;
 .header__title--md {
   display: none;
 
-  @media screen and (min-width: $grid--medium) {
+  @include media($grid--medium) {
     display: initial;
     left: 0;
   }
