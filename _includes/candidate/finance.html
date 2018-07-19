@@ -3,6 +3,9 @@
 
 <section class="l-section">
   <div class="l-section__content">
+    {% if candidate.data_warning %}
+      {% include alert-message.html message=candidate.data_warning %}
+    {% endif %}
     <div class="candidate__summary candidate__summary--contributions">Contributions: <span class="money">{{ finance.total_contributions | dollars }}</span></div>
     <div class="candidate__summary candidate__summary--expenditures">Expenditures: <span class="money">{{ finance.total_expenditures | dollars }}</span></div>
     {% if finance.total_loans_received > 0 %}
