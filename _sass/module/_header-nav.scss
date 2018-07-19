@@ -9,28 +9,36 @@
   top: 0;
   z-index: $z-header-nav;
 
+  @media screen and (max-width: 768px) {
+    left: 0;
+  }
+
+  a {
+    color: $color-white;
+    font-size: $small-font-size;
+  }
+
   label[for="header-nav-trigger"] { // scss-lint:disable QualifyingElement
     display: block;
-    float: right;
-    width: 36px;
+    float: left;
+    width: 55px;
     z-index: 2;
     cursor: pointer;
   }
 
   .header-nav__menu-icon {
     display: block;
-    float: right;
+    float: left;
     line-height: 3;
-    padding-right: $spacing-base;
     text-align: center;
-    width: 36px;
+    width: 55px;
 
     > svg path { // scss-lint:disable SelectorDepth
-      fill: $brand-color;
+      fill: $color-white;
     }
   }
 
-  @media screen and (min-width: $grid--medium) {
+  @include media($grid--medium) {
     border: none;
     float: right;
     position: initial;
@@ -45,10 +53,17 @@
   display: block;
   padding: ($spacing-base * 0.5) $spacing-base;
   text-decoration: none;
+  color: $color-white;
 
-  @media screen and (min-width: $grid--medium) {
+  @include media($grid--medium) {
     display: initial;
     padding: 0 $spacing-base;
+  }
+
+  @media screen and (max-width: 768px) {
+    text-align: left;
+    position: relative;
+    left: 50px;
   }
 }
 
@@ -59,7 +74,7 @@
     clear: both;
     display: none;
 
-    @media screen and (min-width: $grid--medium) {
+    @include media($grid--medium) {
       display: block;
     }
   }
@@ -67,4 +82,8 @@
 
 .header-nav__trigger:checked ~ .header-nav__items {
   display: block;
+
+  @include media($grid--medium) {
+    border-bottom: 5px $color-gold solid;
+  }
 }

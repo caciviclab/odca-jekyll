@@ -5,10 +5,7 @@ npm-cache-key: &npm-cache-key
   v1-npm-{{ checksum "package-lock.json" }}
 
 deploy-workflow-jobs: &deploy-workflow-jobs
-  - pull-finance
   - build:
-      requires:
-        - pull-finance
       filters:
         branches:
           ignore:
@@ -23,11 +20,21 @@ deploy-workflow-jobs: &deploy-workflow-jobs
 
 version: 2
 jobs:
-  pull-finance:
+  build:
     docker:
       - image: circleci/ruby:2.3-node
     steps:
       - checkout
+      - restore_cache:
+          keys:
+            - *bundle-cache-key
+      - run:
+          name: Bundle Install
+          command: bundle check || bundle install --path vendor/bundle
+      - save_cache:
+          key: *bundle-cache-key
+          paths:
+            - vendor/bundle
       - restore_cache:
           keys:
             - *npm-cache-key
@@ -48,29 +55,6 @@ jobs:
       - run:
           name: Pull finance data
           command: make pull-finance
-      - persist_to_workspace:
-          root: .
-          paths:
-            - _data
-            - node_modules
-
-  build:
-    docker:
-      - image: circleci/ruby:2.3-node
-    steps:
-      - checkout
-      - attach_workspace:
-          at: .
-      - restore_cache:
-          keys:
-            - *bundle-cache-key
-      - run:
-          name: Bundle Install
-          command: bundle check || bundle install --path vendor/bundle
-      - save_cache:
-          key: *bundle-cache-key
-          paths:
-            - vendor/bundle
       - run:
           name: Build production
           command: make production
