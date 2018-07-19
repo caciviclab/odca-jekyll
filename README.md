@@ -1,4 +1,5 @@
 [![CircleCI](https://circleci.com/gh/caciviclab/odca-jekyll.svg?style=svg)](https://circleci.com/gh/caciviclab/odca-jekyll)
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/caciviclab/disclosure-backend.png?columns=ready)](https://waffle.io/caciviclab/disclosure-backend?utm_source=badge)
 
 # www.opendisclosure.io
 
