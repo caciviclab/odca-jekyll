@@ -42,6 +42,10 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
     $ npm install
     $ bundle install
     $ make build
+    
+Follow the instructions under ### Finance Instructions.
+
+    $ npm run pull
     $ make serve
 
 Open your web browser to [http://localhost:4000/odca-jekyll/](http://localhost:4000/odca-jekyll/).
