@@ -123,7 +123,7 @@ PLATFORMS
 
 DEPENDENCIES
   html-proofer
-  jekyll (~> 3.7)
+  jekyll (>= 3.7)
   jekyll-assets
   jekyll-feed (~> 0.6)
   jekyll-seo-tag
