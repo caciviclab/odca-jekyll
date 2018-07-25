@@ -3,7 +3,8 @@ layout: default
 ---
 {% assign empty_array = '' | split: '' %}
 {% assign committee = page %}
-{% assign contributions = site.data.committees[committee.filer_id].contributions | default: empty_array | sort: 'Tran_Amt1' | reverse %}
+{% assign finance = site.data.committees[committee.filer_id] %}
+{% assign contributions = finance.contributions | default: empty_array | sort: 'Tran_Amt1' | reverse %}
 
 
 <header class="grid">
@@ -15,6 +16,12 @@ layout: default
     {% if contributions == empty %}
       <p>Sorry, there is no contribution data available for this committee.</p>
     {% else %}
+      <div class="l-committee__header">
+        <div class="total-contributions">
+          Total money raised to date
+          <span class="money">{{ finance.total_contributions | dollars }}</span>
+        </div>
+      </div>
       <table class="contributors">
         <thead class="contributors__thead">
           <tr>
