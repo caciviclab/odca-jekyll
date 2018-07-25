@@ -8,12 +8,10 @@
   <div class="candidate-summary__right">
     <div class="candidate-summary__name"><a href="{{ candidate.url | prepend: site.baseurl }}">{{ candidate.name | smartify | escape }}</a></div>
     <div class="candidate-summary__occupation">{% if candidate.is_incumbent %}Incumbent {% endif %}{{ candidate.occupation | default: 'No occupation reported' | escape }}</div>
-    {% if finance.total_contributions > 2000 %}
+    {% if finance.total_contributions > 0 %}
       <div class="candidate-summary__contributions">amount collected <span class="money">{{ finance.total_contributions | dollars }}</span></div>
-    {% elsif finance.total_contributions > 0 and finance.total_contributions < 2000 %}
-      <div class="candidate-summary__contributions">Candidate has not raised more than $2000.</div>
-    {% elsif finance.total_contributions < 0 %}
-      <div class="candidate-summary__contributions">no contributions have been reported</div>
+    {% else %}
+      <div class="candidate-summary__contributions">No contributions have been reported.</div>
     {% endif %}
   </div>
 </div>
