@@ -6,11 +6,13 @@
     <img class="candidate-summary__photo" src="{{ candidate.photo_url | default: 'https://s3-us-west-1.amazonaws.com/odca-candidate-photos/no-image.png' }}" alt="{{ candidate.name | smartify | escape }}" />
   </div>
   <div class="candidate-summary__right">
-    <div><a href="{{ candidate.url | prepend: site.baseurl }}">{{ candidate.name | smartify | escape }}</a></div>
-    <div class="candidate-summary__occupation">{% if candidate.is_incumbent %}Incumbent, {% endif %}{{ candidate.occupation | default: 'No occupation reported' | escape }}</div>
-    {% if finance.total_contributions > 0 %}
+    <div class="candidate-summary__name"><a href="{{ candidate.url | prepend: site.baseurl }}">{{ candidate.name | smartify | escape }}</a></div>
+    <div class="candidate-summary__occupation">{% if candidate.is_incumbent %}Incumbent {% endif %}{{ candidate.occupation | default: 'No occupation reported' | escape }}</div>
+    {% if finance.total_contributions > 2000 %}
       <div class="candidate-summary__contributions">amount collected <span class="money">{{ finance.total_contributions | dollars }}</span></div>
-    {% else %}
+    {% elsif finance.total_contributions > 0 and finance.total_contributions < 2000 %}
+      <div class="candidate-summary__contributions">Candidate has not raised more than $2000.</div>
+    {% elsif finance.total_contributions < 0 %}
       <div class="candidate-summary__contributions">no contributions have been reported</div>
     {% endif %}
   </div>
