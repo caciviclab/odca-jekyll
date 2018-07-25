@@ -69,6 +69,7 @@ $candidate-photo-width: 10rem;
 .candidate__summary--balance {
   border-top: 1px $color-grey-3 solid;
   color: $color-grey-3;
+  padding-top: $spacing-base * 2;
 }
 
 .candidate__money-heading {
@@ -89,9 +90,10 @@ $candidate-photo-width: 10rem;
   font-size: $h6-font-size;
 }
 
-.candidate__expenditures-opposing {
+.candidate__expenditures {
   @include heading('h3');
   color: $subheading-color;
+  margin: ($spacing-base * 2) 0;
 
   .money {
     float: right;

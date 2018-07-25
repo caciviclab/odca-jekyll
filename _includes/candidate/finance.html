@@ -20,14 +20,14 @@
 <section class="l-section">
   <div class="l-section__content">
     {% if expenditures_against > 0 %}
-    <h2 class="candidate__expenditures-opposing">
-      Expenditures opposing candidate <span class="money">{{ expenditures_against | dollars }}</span>
-    </h2>
+    <div class="candidate__expenditures">
+      Independent Expenditures Opposing Candidate <span class="money">{{ expenditures_against | dollars }}</span>
+    </div>
     {% endif %}
     {% if independent_expenditures_for > 0 %}
-    <h2 class="candidate__expenditures-supporting">
-      Expenditures supporting candidate <span class="money">{{ independent_expenditures_for | dollars }}</span>
-    </h2>
+    <div class="candidate__expenditures">
+      Independent Expenditures Supporting Candidate <span class="money">{{ independent_expenditures_for | dollars }}</span>
+    </div>
     {% endif %}
   </div>
 </section>
