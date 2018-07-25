@@ -5,7 +5,11 @@ npm-cache-key: &npm-cache-key
   v1-npm-{{ checksum "package-lock.json" }}
 
 deploy-workflow-jobs: &deploy-workflow-jobs
-  - build
+  - build:
+      filters:
+        branches:
+          ignore:
+            - gh-pages
   - deploy:
       requires:
         - build

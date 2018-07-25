@@ -44,6 +44,7 @@ layout: default
               {%  endif %}
             <div><a href="{{ candidate.website_url }}">{{ candidate.website_url }}</a></div>
             <div><a href="https://twitter.com/{{ candidate.twitter_url }}">{{ candidate.twitter_url }}</a></div>
+            {% if candidate.votersedge_url != null %}<div><a href="{{ candidate.votersedge_url }}" target="_blank">Voter's Edge Profile</a></div>{% endif %}
           </div>
         </div>
       </div>

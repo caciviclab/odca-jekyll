@@ -1,4 +1,5 @@
 [![CircleCI](https://circleci.com/gh/caciviclab/odca-jekyll.svg?style=svg)](https://circleci.com/gh/caciviclab/odca-jekyll)
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/caciviclab/disclosure-backend.png?columns=ready)](https://waffle.io/caciviclab/disclosure-backend?utm_source=badge)
 
 # www.opendisclosure.io
 
@@ -42,6 +43,10 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
     $ npm install
     $ bundle install
     $ make build
+    
+Follow the instructions under ### Finance Instructions.
+
+    $ npm run pull
     $ make serve
 
 Open your web browser to [http://localhost:4000/odca-jekyll/](http://localhost:4000/odca-jekyll/).
