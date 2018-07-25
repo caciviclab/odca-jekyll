@@ -18,6 +18,7 @@ class ContributionsTable extends React.Component {
         amount: contribution.Tran_Amt1,
         date: new Date(contribution.Tran_Date),
       })),
+      filter: '',
       // Initial state is sorting by amount, "ascending", note that the columns
       // have different definitions of ascending/descending, see `applySortOrder`
       // below.
@@ -31,6 +32,41 @@ class ContributionsTable extends React.Component {
   constructor(props) {
     super(props);
     this.state = ContributionsTable.initialState(props.contributions);
+  }
+
+  /**
+   * applyFilter
+   *
+   * Applies the filter text against the contributions names and returns only
+   * the contributions that match the filter. Names and the filter are
+   * tokenized (broken by white-space and normalized) before being matched. For
+   * example, given the filter 'reb kap', should match the contribution name
+   * 'Rebecca Kaplan'.
+   *
+   * @param {array} contributions the source array of contributions.
+   * @returns {array} the contributions matching the filter.
+   */
+  applyFilter(contributions) {
+    const { filter } = this.state;
+    if (!filter) {
+      return contributions;
+    }
+
+    function tokenize(data) {
+      // Lowercases everything and split by white-space
+      return data.toLowerCase().split(/\s+/g);
+    }
+
+    return contributions
+      .filter((contribution) => {
+        const tokens = tokenize(contribution.name);
+        const queries = tokenize(filter);
+
+        // Every query needs to match at least one token. It's considered a
+        // match when the query matches the first part of the token.
+        return queries.every(query =>
+          tokens.some(token => token.startsWith(query)));
+      });
   }
 
   applySortOrder(contributions) {
@@ -82,27 +118,36 @@ class ContributionsTable extends React.Component {
       });
     };
 
+    const updateFilter = (e) => {
+      this.setState({
+        filter: e.target.value,
+      });
+    };
+
     return (
-      <table className="contributors">
-        <thead className="contributors__thead">
-          <tr>
-            <td className="contributors__name"><button onClick={sortToggle('name')}>^</button>Name</td>
-            <td className="contributors__amount"><button onClick={sortToggle('amount')}>^</button>Amount</td>
-            <td className="contributors__date contributors__col--s1"><button onClick={sortToggle('date')}>^</button>Date</td>
-          </tr>
-        </thead>
-        <tbody>
-          {
-            this.applySortOrder(contributions).map(contribution => (
-              <tr key={contribution.id}>
-                <td className="contributors__name">{contribution.name}</td>
-                <td className="contributors__amount">{dollars(contribution.amount)}</td>
-                <td className="contributors__date contributors__col--s1">{day(contribution.date)}</td>
-              </tr>
-            ))
-          }
-        </tbody>
-      </table>
+      <div>
+        <input value={this.state.filterField} onChange={updateFilter} type="text" />
+        <table className="contributors">
+          <thead className="contributors__thead">
+            <tr>
+              <td className="contributors__name"><button onClick={sortToggle('name')}>^</button>Name</td>
+              <td className="contributors__amount"><button onClick={sortToggle('amount')}>^</button>Amount</td>
+              <td className="contributors__date contributors__col--s1"><button onClick={sortToggle('date')}>^</button>Date</td>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              this.applySortOrder(this.applyFilter(contributions)).map(contribution => (
+                <tr key={contribution.id}>
+                  <td className="contributors__name">{contribution.name}</td>
+                  <td className="contributors__amount">{dollars(contribution.amount)}</td>
+                  <td className="contributors__date contributors__col--s1">{day(contribution.date)}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
     );
   }
 }
