@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { day, dollars } from '../format';
+import webComponent from '../web-component';
+
 
 function name(contribution) {
   return [contribution.Tran_NamF, contribution.Tran_NamL]
@@ -26,6 +28,17 @@ class ContributionsTable extends React.Component {
         order: 1,
         column: 'amount',
       },
+    };
+  }
+
+  /**
+   * Parses HTML attributes to props
+   */
+  static parseAttributes(attributes) {
+    const contributions = JSON.parse(attributes.contributions ?
+      attributes.contributions.value : []);
+    return {
+      contributions,
     };
   }
 
@@ -166,4 +179,4 @@ ContributionsTable.defaultProps = {
 };
 
 
-export default ContributionsTable;
+export default webComponent(ContributionsTable, 'contributions-table');
