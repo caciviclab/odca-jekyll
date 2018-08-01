@@ -42,7 +42,12 @@ header: Track the Money in Oakland’s Elections
           <li>Is the money coming from local sources?</li>
           <li>What ballot measures are receiving the most funds?</li>
         </ul>
-        <h2>Funds Raised in Oakland: {{site.data.totals.oakland-2018.['Within Oakland'] | money}}</h2>
+        <div class="hero__funds__raised__header">
+          <h3>Funds Raised in Oakland:</h3>
+        </div>
+        <div class="hero__funds_raised__total">
+          <h2>{{ site.data.totals.oakland-2018.['Within Oakland'] | money | append: "0" }}</h2>
+        </div>
       </div>
     </div>
     {{ hero-cta }}
