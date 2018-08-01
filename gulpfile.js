@@ -21,6 +21,7 @@ gulp.task('clean', function () {
     '_data/referendum_opposing',
     '_data/referendum_supporting',
     '_data/stats.json',
+    '_data/totals.json',
   ]);
 });
 
@@ -79,6 +80,10 @@ gulp.task('pull:stats', function () {
     .pipe(gulp.dest('_data'));
 });
 
+gulp.task('pull:totals', function () {
+  return gulp.src(dataDir('_data', 'totals.json'))
+    .pipe(gulp.dest('_data'));
+});
 
 gulp.task('pull', gulp.parallel(
   'pull:ballots',
@@ -91,4 +96,5 @@ gulp.task('pull', gulp.parallel(
   'pull:referendum_opposing',
   'pull:referendum_supporting',
   'pull:stats',
+  'pull:totals',
 ));
