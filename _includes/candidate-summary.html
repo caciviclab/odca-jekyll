@@ -11,7 +11,7 @@
     {% if finance.total_contributions > 2000 %}
       <div class="candidate-summary__contributions">amount collected <span class="money">{{ finance.total_contributions | dollars }}</span></div>
     {% elsif finance.total_contributions > 0 and finance.total_contributions < 2000 %}
-      <div class="candidate-summary__contributions">Candidate has not raised more than $2000.</div>
+      <div class="candidate-summary__contributions">Candidate has not raised more than $2000.<span class="hover-info-container"><img src="{{ "/assets/images/icon_more_info.png" | relative_url }}" alt="Candidate has raised less than $2000 - more information" /><span class="hover-info">For more detail on what this means, see the <a href="{{ "/faq" | relative_url }}">FAQ article</a>.</span></span></div>
     {% elsif finance.total_contributions < 0 %}
       <div class="candidate-summary__contributions">no contributions have been reported</div>
     {% endif %}

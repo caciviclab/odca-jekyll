@@ -4,7 +4,7 @@
 }
 
 .candidate-summary__left {
-  @include grid-column(1);
+  @include grid-column(2);
   margin-bottom: $spacing-base * 2;
   margin-top: $spacing-base * 2;
 }
@@ -21,6 +21,7 @@
 
 .candidate-summary__photo {
   width: 100%;
+  min-width: 4rem;
 }
 
 .candidate-summary__name {
@@ -47,6 +48,7 @@
   line-height: normal;
   margin-top: .6rem;
 
+
   .money {
     color: $color-grey-2;
     font-size: $h4-font-size;
@@ -55,4 +57,8 @@
     margin-left: $spacing-base;
     line-height: 1.5rem;
   }
+  .hover-info-container {
+    padding-left: 1rem;
+  }
+
 }
