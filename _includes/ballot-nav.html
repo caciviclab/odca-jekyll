@@ -8,7 +8,6 @@
   {% if office_elections and office_elections != empty %}
     <section class="l-section">
       <div class="l-section__content">
-        <h3>Elective Offices</h3>
         {% for ballot_item in office_elections %}
           {% assign office_election = site.office_elections | where: "path", ballot_item | first %}
           <p><a href="{{ office_election.url | prepend: site.baseurl }}">{{ office_election.title }}</a></p>
