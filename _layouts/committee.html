@@ -15,7 +15,7 @@ layout: default
     {% if contributions == empty %}
       <p>Sorry, there is no contribution data available for this committee.</p>
     {% else %}
-    <div id="react-contributions" data-contributions="{{ contributions | jsonify | escape }}"></div>
+    <contributions-table contributions="{{ contributions | jsonify | escape }}"></contributions-table>
     {% endif %}
   </div>
 </article>
