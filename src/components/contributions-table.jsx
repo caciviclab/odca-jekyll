@@ -143,9 +143,25 @@ class ContributionsTable extends React.Component {
         <table className="contributors">
           <thead className="contributors__thead">
             <tr>
-              <td className="contributors__name"><button onClick={sortToggle('name')}>^</button>Name</td>
-              <td className="contributors__amount"><button onClick={sortToggle('amount')}>^</button>Amount</td>
-              <td className="contributors__date contributors__col--s1"><button onClick={sortToggle('date')}>^</button>Date</td>
+              <td className="contributors__name">
+                <span className="arrow-container">
+                  {/* down arrow */}
+                  <svg width="10" height="10">
+                    <polygon points="0,0 5,10 10,0" />
+                  </svg>
+                  {/* up arrow */}
+                  {/* <svg width="10" height="10">
+                    <polygon points="0,10 5,0 10,10" />
+                  </svg> */}
+                </span>
+                <input type="button" className="sort-column active" onClick={sortToggle('name')} value="Name" />
+              </td>
+              <td className="contributors__amount">
+                <input type="button" className="sort-column amount" onClick={sortToggle('amount')} value="Amount" />
+              </td>
+              <td className="contributors__date contributors__col--s1">
+                <input type="button" className="sort-column" onClick={sortToggle('date')} value="Date" />
+              </td>
             </tr>
           </thead>
           <tbody>
