@@ -1,3 +1,28 @@
 .l-committee {
   background-color: $color-white;
 }
+
+.l-committee__header {
+  @include grid-container;
+  @include grid-collapse;
+
+  // TODO this doesn't belong here
+  .total-contributions {
+    @include grid-column(12);
+    color: $heading-color--light;
+    font-size: $small-font-size;
+
+    @include grid-media($neat-grid--medium) {
+      @include grid-column(6);
+      @include grid-push(6);
+
+      text-align: right;
+    }
+
+    .money { // scss-lint:disable SelectorDepth
+      color: $heading-color;
+      font-size: $large-font-size;
+      font-weight: bold;
+    }
+  }
+}
