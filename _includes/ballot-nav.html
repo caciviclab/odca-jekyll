@@ -9,8 +9,15 @@
       <div class="l-section__content">
         <h3>Elective Offices</h3>
         {% for ballot_item in office_elections %}
-          {% assign office_election = site.office_elections | where: "path", ballot_item | first %}
-          <p><a href="{{ office_election.url | prepend: site.baseurl }}">{{ office_election.title }}</a></p>
+          <div class="ballot-nav__group">
+            {% if ballot_item.label %}
+              <h4>{{ ballot_item.label | escape }}</h4>
+            {% endif %}
+            {% for office_election_path in ballot_item.items %}
+              {% assign office_election = site.office_elections | where: "path", office_election_path | first %}
+              <p><a href="{{ office_election.url | prepend: site.baseurl }}">{{ office_election.title }}</a></p>
+            {% endfor %}
+          </div>
         {% endfor %}
       </div>
     </section>
