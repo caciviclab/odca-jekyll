@@ -1,0 +1,22 @@
+{
+  "berkeley-2018": {
+    "Out of State": 29189385.53,
+    "Within California": 17048384.700000003,
+    "Within Oakland": 2856122.38
+  },
+  "oakland-2016": {
+    "Out of State": 47492.35,
+    "Within California": 562461.63,
+    "Within Oakland": 618185.6
+  },
+  "oakland-2018": {
+    "Within Oakland": 232836.0,
+    "Within California": 179254.66,
+    "Out of State": 21450.0
+  },
+  "sf-june-2018": {
+    "Within Oakland": 40166.0,
+    "Within California": 1694161.3399999999,
+    "Out of State": 98609.98000000001
+  }
+}
