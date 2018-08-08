@@ -80,4 +80,4 @@ Thank you to our fellow Code for America brigade teams for your support and assi
 - [Code for San Francisco](https://codeforsanfrancisco.org/)
 - [Code for Sacramento](https://codeforsacramento.org/)
 - [Open San Diego](https://opensandiego.org/)
-- [Code For San Jose](https://www.codeforsanjose.com/)
+- [Code for San Jose](https://www.codeforsanjose.com/)
