@@ -13,6 +13,7 @@ All development on OpenDisclosure happens publicly on [Github](https://github.co
 ### Current Team
 
 - Aaron D Borden
+- Andy Luo
 - Alison Lawyer
 - Colin King-Bailey
 - Elina Rubuliak
@@ -27,7 +28,6 @@ All development on OpenDisclosure happens publicly on [Github](https://github.co
 
 - Amanda Richardson
 - Andrell Bower
-- Andy Luo
 - Ash Roughani
 - Asha John
 - Ben Cipollini
