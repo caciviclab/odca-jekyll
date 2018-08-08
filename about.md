@@ -6,7 +6,7 @@ Open Disclosure California (ODCA) was created to support transparency and integr
 
 ODCA pulls the raw data for money accepted from candidate and ballot committees and on spending by those committees when they submit their campaign finance filings to [NetFile](https://public.netfile.com/pub2/Default.aspx?aid=COAK&AspxAutoDetectCookieSupport=1), Oakland’s campaign finance disclosure database. Election committees must file according to [Oakland’s Campaign Contribution Limits](https://www.oaklandca.gov/services/boards-and-commissions-index/ethics/campaign-finance-rules-and-disclosure/information-for-candidates-and-campaign-committees/oakland-campaign-contribution-limits) and following deadlines set forth by the [California Fair Political Practices Commission (FPPC)](http://www.fppc.ca.gov/). ODCA then visualizes that data to show relationships and connections with funders. ODCA does not clean or editorialize the data prior to publishing it. The [first version](http://2014.opendisclosure.io/) of Open Disclosure visualized money in the 2014 Oakland mayoral election. ODCA now includes data for all offices and measures on the ballot. 
 
-ODCA is developed by [OpenOakland](http://openoakland.org/), a [Code for America](http://www.codeforamerica.org/) citizen brigade that works to improve the lives of Oaklanders by advancing civic innovation and open government through community partnerships, engaged volunteers, and civic technology. This project has been developed in partnership with the [Oakland Public Ethics Commission (PEC)](https://www.oaklandca.gov/boards-and-commissions/public-ethics-commission) since 2014. The PEC is an independent commission made up of Oakland residents and charged with ensuring fairness, openness, honesty and integrity in Oakland City government.
+ODCA is developed by [OpenOakland](https://openoakland.org/), a [Code for America](https://www.codeforamerica.org/) citizen brigade that works to improve the lives of Oaklanders by advancing civic innovation and open government through community partnerships, engaged volunteers, and civic technology. This project has been developed in partnership with the [Oakland Public Ethics Commission (PEC)](https://www.oaklandca.gov/boards-and-commissions/public-ethics-commission) since 2014. The PEC is an independent commission made up of Oakland residents and charged with ensuring fairness, openness, honesty and integrity in Oakland City government.
 
 All development on OpenDisclosure happens publicly on [Github](https://github.com/caciviclab/odca-jekyll). We’re always seeking volunteers to contribute to our project and support civic tech. 
 
@@ -76,8 +76,8 @@ All development on OpenDisclosure happens publicly on [Github](https://github.co
 
 Thank you to our fellow Code for America brigade teams for your support and assistance:
 
-- [OpenOakland](http://openoakland.org/)
-- [Code for San Francisco](http://codeforsanfrancisco.org/)
+- [OpenOakland](https://openoakland.org/)
+- [Code for San Francisco](https://codeforsanfrancisco.org/)
 - [Code for Sacramento](https://codeforsacramento.org/)
-- [Open San Diego](http://opensandiego.org/)
-- [Code For San Jose](http://codeforsanjose.com/)
+- [Open San Diego](https://opensandiego.org/)
+- [Code For San Jose](https://www.codeforsanjose.com/)
