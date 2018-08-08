@@ -2,7 +2,9 @@
 layout: default
 ---
 {% assign candidate = page %}
-{% assign other_committees = site.committees | where:"candidate_controlled_id", candidate.filer_id %}
+{% if candidate.filer_id != empty %}
+  {% assign other_committees = site.committees | where:"candidate_controlled_id", candidate.filer_id %}
+{% endif %}
 {% assign ballot = site.ballots | where: "path", candidate.ballot | first %}
 {% assign locality = site.localities | where: "locality_id", ballot.locality | first %}
 {% assign election_day = ballot.election | date: '%Y-%m-%d' %}
