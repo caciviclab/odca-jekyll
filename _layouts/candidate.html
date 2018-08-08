@@ -2,7 +2,9 @@
 layout: default
 ---
 {% assign candidate = page %}
-{% assign other_committees = site.committees | where:"candidate_controlled_id", candidate.filer_id %}
+{% if candidate.filer_id != empty %}
+  {% assign other_committees = site.committees | where:"candidate_controlled_id", candidate.filer_id %}
+{% endif %}
 {% assign ballot = site.ballots | where: "path", candidate.ballot | first %}
 {% assign locality = site.localities | where: "locality_id", ballot.locality | first %}
 {% assign election_day = ballot.election | date: '%Y-%m-%d' %}
@@ -58,7 +60,7 @@ layout: default
         </div>
       </section>
     {% endif %}
-    {% if other_committees != empty %}
+    {% if other_committees and other_committees != empty %}
         <section class="l-section">
             <div class="l-section__content">
                 <h2 class="candidate__money-heading">Other committees controlled by this candidate</h2>
