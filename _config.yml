@@ -21,8 +21,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   engage the voting public and raise awareness and accountability. Ultimately,
   this is one step toward shifting politics into a movement of civic engagement
   and ultimate citizen action.
-baseurl: "/odca-jekyll" # the subpath of your site, e.g. /blog
-url: "https://caciviclab.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.opendisclosure.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: caciviclab
 github_username:  caciviclab
 future: true
