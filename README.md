@@ -40,8 +40,7 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
 
 ## Setup
 
-    $ npm install
-    $ bundle install
+    $ make setup
     $ make build
     
 Follow the instructions under ### Finance Instructions.

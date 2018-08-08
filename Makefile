@@ -18,6 +18,10 @@ serve:
 	npm run watch &
 	bundle exec jekyll serve --incremental
 
+setup:
+	npm install
+	bundle install
+
 test:
 	npm test
 	bundle exec htmlproofer _site --check-html --disable-external
