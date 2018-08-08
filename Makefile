@@ -20,5 +20,5 @@ serve:
 
 test:
 	npm test
-	bundle exec htmlproofer _site --url-swap /odca-jekyll: --check-html --disable-external
+	bundle exec htmlproofer _site --check-html --disable-external
 	bundle exec scss-lint _sass
