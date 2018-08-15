@@ -147,7 +147,7 @@ class ContributionsTable extends React.Component {
         <table className="contributors">
           <thead className="contributors__thead">
             <tr>
-              <td className="contributors__name">
+              <td className={`contributors__name${isActive('name')}`}>
                 <span className="arrow-container">
                   {/* down arrow */}
                   <svg width="10" height="10">
@@ -158,13 +158,13 @@ class ContributionsTable extends React.Component {
                     <polygon points="0,10 5,0 10,10" />
                   </svg> */}
                 </span>
-                <input type="button" className={`sort-column ${isActive('name')}`} onClick={sortToggle('name')} value="Name" />
+                <input type="button" className="sort-column" onClick={sortToggle('name')} value="Name" />
               </td>
-              <td className="contributors__amount">
-                <input type="button" className={`sort-column amount${isActive('amount')}`} onClick={sortToggle('amount')} value="Amount" />
+              <td className={`contributors__amount${isActive('amount')}`}>
+                <input type="button" className="sort-column amount" onClick={sortToggle('amount')} value="Amount" />
               </td>
-              <td className="contributors__date contributors__col--s1">
-                <input type="button" className={`sort-column${isActive('date')}`} onClick={sortToggle('date')} value="Date" />
+              <td className={`contributors__date contributors__col--s1${isActive('date')}`}>
+                <input type="button" className="sort-column" onClick={sortToggle('date')} value="Date" />
               </td>
             </tr>
           </thead>
