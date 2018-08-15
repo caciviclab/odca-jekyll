@@ -1,0 +1,13 @@
+{% assign election = include.election %}
+{% assign locality = include.locality %}
+{% capture ballot_path %}_ballots/{{ locality }}/{{ election }}.md{% endcapture %}
+
+{% assign ballot = site.ballots | where: "path", ballot_path | first %}
+{% assign referendums = site.referendums | where: "locality", locality | where: "election", election %}
+<h2><a href="{{ ballot.url | relative_url }}">{{ ballot.title | escape }}</a></h2>
+<h3>Referendums</h3>
+<ul>
+  {% for referendum in referendums %}
+  <li><a href="{{ referendum.url | relative_url }}">{{ referendum.title | escape }}</a></li>
+  {% endfor %}
+</ul>

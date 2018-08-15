@@ -3,7 +3,8 @@ layout: default
 ---
 {% assign empty_array = '' | split: '' %}
 {% assign committee = page %}
-{% assign contributions = site.data.committees[committee.filer_id].contributions | default: empty_array | sort: 'Tran_Amt1' | reverse %}
+{% assign finance = site.data.committees[committee.filer_id] %}
+{% assign contributions = finance.contributions | default: empty_array | sort: 'Tran_Amt1' | reverse %}
 
 
 <header class="grid">

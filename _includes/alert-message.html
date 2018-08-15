@@ -10,7 +10,7 @@ Alert: We have become aware of an issue with the accuracy of data for this page 
       </div>
     </div>
     <div class="alert-message__content">
-      {{ include.message | default: default_message }}
+      {{ include.message | default: default_message | markdownify }}
     </div>
   </div>
 </div>
