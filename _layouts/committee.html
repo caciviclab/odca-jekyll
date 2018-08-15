@@ -13,6 +13,10 @@ layout: default
 <article class="l-committee grid">
   <div class="grid-col-12">
     <h2>Contributions</h2>
+    <div class="total-contributions">
+      Total money raised to date
+      <span class="money">{{ finance.total_contributions | dollars }}</span>
+    </div>
     {% if contributions == empty %}
       <p>Sorry, there is no contribution data available for this committee.</p>
     {% else %}
