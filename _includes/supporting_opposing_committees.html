@@ -1,5 +1,12 @@
+{% comment %}
+First we calculate the maximum for the money bar.
+{% endcomment %}
+{% assign max = 0 %}
+{% for committee in include.committees %}
+  {% assign max = max | plus: committee.amount %}
+{% endfor %}
 {% for committee in include.committees %}
   <div><a href="{{ site.baseurl }}/committee/{{ committee.id }}/">{{ committee.name }}</a></div>
   <div>{{ committee.amount | dollars }}</div>
-  {% include money-bar.html value=committee.amount color=include.color max=committee.amount %}
+  {% include money-bar.html value=committee.amount color=include.color max=max %}
 {% endfor %}
