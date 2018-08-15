@@ -3,6 +3,10 @@ $col-min-width--s2: 14rem;
 $breakpoint--s1: $grid--small;
 $breakpoint--s2: $grid--medium;
 
+.filter {
+  margin-bottom: 1rem;
+}
+
 .contributors {
   table-layout: fixed;
   width: 100%;

@@ -143,7 +143,7 @@ class ContributionsTable extends React.Component {
 
     return (
       <div>
-        <input value={this.state.filterField} onChange={updateFilter} type="text" />
+        <input className="filter" value={this.state.filterField} onChange={updateFilter} type="text" />
         <table className="contributors">
           <thead className="contributors__thead">
             <tr>
