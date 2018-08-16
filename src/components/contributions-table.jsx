@@ -132,8 +132,8 @@ class ContributionsTable extends React.Component {
     };
 
     const isActive = colName =>
-      this.state.sort.column === colName
-        ? " active" : "";
+      (this.state.sort.column === colName
+        ? ' active' : '');
 
     const updateFilter = (e) => {
       this.setState({
@@ -143,21 +143,11 @@ class ContributionsTable extends React.Component {
 
     return (
       <div>
-        <input className="filter" value={this.state.filterField} onChange={updateFilter} type="text" />
+        <input className="filter" value={this.state.filterField} onChange={updateFilter} type="text" placeholder="Type to search" />
         <table className="contributors">
           <thead className="contributors__thead">
             <tr>
               <td className={`contributors__name${isActive('name')}`}>
-                <span className="arrow-container">
-                  {/* down arrow */}
-                  <svg width="10" height="10">
-                    <polygon points="0,0 5,10 10,0" />
-                  </svg>
-                  {/* up arrow */}
-                  {/* <svg width="10" height="10">
-                    <polygon points="0,10 5,0 10,10" />
-                  </svg> */}
-                </span>
                 <input type="button" className="sort-column" onClick={sortToggle('name')} value="Name" />
               </td>
               <td className={`contributors__amount${isActive('amount')}`}>
