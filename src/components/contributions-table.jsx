@@ -131,9 +131,15 @@ class ContributionsTable extends React.Component {
       });
     };
 
-    const isActive = colName =>
-      (this.state.sort.column === colName
-        ? ' active' : '');
+    const isActive = (colName) => {
+      const currentSort = this.state.sort;
+      if (this.state.sort.column !== colName) {
+        return '';
+      } else if (currentSort.order === 1) {
+        return ' down-arrow';
+      }
+      return ' up-arrow';
+    };
 
     const updateFilter = (e) => {
       this.setState({
@@ -147,14 +153,17 @@ class ContributionsTable extends React.Component {
         <table className="contributors">
           <thead className="contributors__thead">
             <tr>
-              <td className={`contributors__name${isActive('name')}`}>
-                <input type="button" className="sort-column" onClick={sortToggle('name')} value="Name" />
+              <td className={`contributors__name${isActive('name')}`} onClick={sortToggle('name')}>
+                <span className="arrow-container" />
+                <input type="button" className="sort-column" value="Name" />
               </td>
-              <td className={`contributors__amount${isActive('amount')}`}>
-                <input type="button" className="sort-column amount" onClick={sortToggle('amount')} value="Amount" />
+              <td className={`contributors__amount${isActive('amount')}`} onClick={sortToggle('amount')}>
+                <span className="arrow-container" />
+                <input type="button" className="sort-column amount" value="Amount" />
               </td>
-              <td className={`contributors__date contributors__col--s1${isActive('date')}`}>
-                <input type="button" className="sort-column" onClick={sortToggle('date')} value="Date" />
+              <td className={`contributors__date contributors__col--s1${isActive('date')}`} onClick={sortToggle('date')}>
+                <span className="arrow-container" />
+                <input type="button" className="sort-column" value="Date" />
               </td>
             </tr>
           </thead>
