@@ -3,7 +3,9 @@
 
 <div class="candidate-summary">
   <div class="candidate-summary__left">
-    {% include candidate-photo.html candidate=candidate class="candidate-summary__photo" %}
+    <a href="{{ candidate.url | prepend: site.baseurl }}">
+      {% include candidate-photo.html candidate=candidate class="candidate-summary__photo" %}
+    </a>
   </div>
   <div class="candidate-summary__right">
     <div><a href="{{ candidate.url | prepend: site.baseurl }}">{{ candidate.name | smartify | escape }}</a></div>
