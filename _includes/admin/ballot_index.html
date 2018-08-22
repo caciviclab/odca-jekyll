@@ -1,6 +1,6 @@
 {% assign election = include.election %}
 {% assign locality = include.locality %}
-{% capture ballot_path %}_ballots/{{ locality }}/{{ election }}.md{% endcapture %}
+{% capture ballot_path %}_elections/{{ locality }}/{{ election }}.md{% endcapture %}
 
 {% assign ballot = site.ballots | where: "path", ballot_path | first %}
 {% assign referendums = site.referendums | where: "locality", locality | where: "election", election %}

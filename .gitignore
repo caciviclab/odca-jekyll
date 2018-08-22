@@ -1,4 +1,4 @@
-_ballots
+_elections
 _candidates
 _committees
 _data/candidates
@@ -16,6 +16,7 @@ _office_elections
 _referendums
 .sass-cache
 _site
+.vscode/
 
 .byebug_history
 /assets/js/bundle.js
