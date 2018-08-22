@@ -136,9 +136,9 @@ class ContributionsTable extends React.Component {
       if (this.state.sort.column !== colName) {
         return '';
       } else if (currentSort.order === 1) {
-        return ' down-arrow';
+        return ' is-descending';
       }
-      return ' up-arrow';
+      return ' is-ascending';
     };
 
     const updateFilter = (e) => {
@@ -153,17 +153,23 @@ class ContributionsTable extends React.Component {
         <table className="contributors">
           <thead className="contributors__thead">
             <tr>
-              <td className={`contributors__name${isActive('name')}`} onClick={sortToggle('name')}>
-                <span className="arrow-container" />
-                <input type="button" className="sort-column" value="Name" />
+              <td className={`contributors__name${isActive('name')}`}>
+                <button type="button" className="sort-button" onClick={sortToggle('name')}>
+                  <span className="arrow-container" />
+                  Name
+                </button>
               </td>
-              <td className={`contributors__amount${isActive('amount')}`} onClick={sortToggle('amount')}>
-                <span className="arrow-container" />
-                <input type="button" className="sort-column amount" value="Amount" />
+              <td className={`contributors__amount${isActive('amount')}`}>
+                <button type="button" className="sort-button amount" onClick={sortToggle('amount')}>
+                  <span className="arrow-container" />
+                  Amount
+                </button>
               </td>
-              <td className={`contributors__date contributors__col--s1${isActive('date')}`} onClick={sortToggle('date')}>
-                <span className="arrow-container" />
-                <input type="button" className="sort-column" value="Date" />
+              <td className={`contributors__date contributors__col--s1${isActive('date')}`}>
+                <button type="button" className="sort-button" onClick={sortToggle('date')}>
+                  <span className="arrow-container" />
+                  Date
+                </button>
               </td>
             </tr>
           </thead>
