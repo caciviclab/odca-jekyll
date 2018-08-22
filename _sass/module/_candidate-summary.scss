@@ -13,27 +13,51 @@
   @include grid-column(10);
   margin-bottom: $spacing-base * 2;
   margin-top: $spacing-base * 2;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .candidate-summary__photo {
   width: 100%;
+  min-width: 4rem;
+}
+
+.candidate-summary__name {
+  font-size: $h3-font-size;
+  line-height: normal;
+  background-image: url('./assets/images/icon_more_info.png');
+  background-position: top;
+  background-repeat: repeat;
 }
 
 .candidate-summary__occupation {
   font-family: $font-family-sans-serif;
   color: $color-grey-2;
+  font-size: $h6-font-size;
+  line-height: normal;
+  margin-top: .6rem;
 }
 
 .candidate-summary__contributions {
   font-family: $font-family-sans-serif;
   color: $color-grey-4;
-  font-size: $h5-font-size;
-  font-style: italic;
+  font-size: $h6-font-size;
+  font-weight: $font-weight-light;
+  line-height: normal;
+  margin-top: .6rem;
 
   .money {
     color: $color-grey-2;
     font-size: $h4-font-size;
     font-style: normal;
+    font-weight: $font-weight-light;
     margin-left: $spacing-base;
+    line-height: 1.5rem;
+  }
+
+  .hover-info-container {
+    padding-left: 1rem;
   }
 }

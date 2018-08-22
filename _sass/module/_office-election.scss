@@ -1,5 +1,10 @@
 .office-election__header {
   border-bottom: 2px $color-gold solid;
+
+  h2 {
+    font-weight: $font-weight-normal;
+  }
+
 }
 
 .office-election__candidate {
