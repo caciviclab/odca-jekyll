@@ -8,7 +8,9 @@ ODCA pulls the raw data for money accepted from candidate and ballot committees 
 
 ODCA is developed by [OpenOakland](https://openoakland.org/), a [Code for America](https://www.codeforamerica.org/) citizen brigade that works to improve the lives of Oaklanders by advancing civic innovation and open government through community partnerships, engaged volunteers, and civic technology. This project has been developed in partnership with the [Oakland Public Ethics Commission (PEC)](https://www.oaklandca.gov/boards-and-commissions/public-ethics-commission) since 2014. The PEC is an independent commission made up of Oakland residents and charged with ensuring fairness, openness, honesty and integrity in Oakland City government.
 
-All development on OpenDisclosure happens publicly on [Github](https://github.com/caciviclab/odca-jekyll). We’re always seeking volunteers to contribute to our project and support civic tech. 
+All development on Open Disclosure happens publicly on
+[Github](https://github.com/caciviclab/odca-jekyll). We’re always seeking
+volunteers to contribute to our project and support civic tech.
 
 ### Current Team
 
