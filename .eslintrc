@@ -1,1 +1,6 @@
 extends: airbnb
+env:
+  browser: yes
+  es6: yes
+parserOptions:
+  ecmaVersion: 6
