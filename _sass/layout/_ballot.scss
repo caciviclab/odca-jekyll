@@ -9,7 +9,6 @@
   border-top: 3px $color-gold solid;
 
   @include grid-media($neat-grid--medium) {
-    @include soft-border;
     @include grid-column(4);
     @include grid-shift(-8);
     border-top: none;

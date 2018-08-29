@@ -139,14 +139,15 @@ $hero-breakpoint: $grid--medium;
 }
 
 .hero__funds__raised__header {
-  font-weight: 400;
+  font-weight: 100;
   font-style: italic;
+  text-align: center;
 }
 
 .hero__funds_raised__total {
   color: $color-gold;
-  font-weight: 400;
   font-size: 4rem;
+  text-align: center;
 }
 
 .hero__funds__raised__city {

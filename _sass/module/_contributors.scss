@@ -3,8 +3,24 @@ $col-min-width--s2: 14rem;
 $breakpoint--s1: $grid--small;
 $breakpoint--s2: $grid--medium;
 
+.filter {
+  margin: 1rem 0;
+  width: 35%;
+  padding: 0.5rem;
+}
+
 .contributors {
+  table-layout: fixed;
+  width: 100%;
   border-top: 3px $color-gold solid;
+
+  .contributors__amount {
+    width: 20%;
+  }
+
+  .contributors__date {
+    width: 20%;
+  }
 }
 
 .contributors__thead {
@@ -12,6 +28,44 @@ $breakpoint--s2: $grid--medium;
 
   tr {
     border-bottom: 1px $color-grey-4 solid;
+  }
+
+  .sort-button {
+    border: 0;
+    text-align: left;
+    display: inline-block;
+    outline: none;
+    background-color: inherit;
+    width: 100%;
+    height: 100%;
+
+    &.amount {
+      text-align: right;
+    }
+  }
+}
+
+.arrow-container {
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  background-position: top left;
+}
+
+.is-descending {
+  background-color: $color-grey-5;
+
+  .arrow-container {
+    background-image: url('./images/down-arrow.svg');
+  }
+}
+
+.is-ascending {
+  background-color: $color-grey-5;
+
+  .arrow-container {
+    background-image: url('./images/up-arrow.svg');
   }
 }
 

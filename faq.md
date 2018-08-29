@@ -83,7 +83,7 @@ Open Disclosure contains links to various third party websites that contain addi
 
 ## Who do I contact if I believe any of the data is incorrect?
 
-Contact the [Open Disclosure team](https://github.com/caciviclab/disclosure-frontend/issues/new?labels=type%2Fquestion&title=Feedback%3A+a+question+on+data+correctness) if you believe any of the data or candidate information is incorrect or violates the statement of impartiality outlined in the answer above. We want public feedback and ask to be notified if any errors are present. Thank you!
+Contact the [Open Disclosure team](https://github.com/caciviclab/odca-jekyll/issues/new?labels=type%2Fquestion&title=Feedback%3A+a+question+on+data+correctness) if you believe any of the data or candidate information is incorrect or violates the statement of impartiality outlined in the answer above. We want public feedback and ask to be notified if any errors are present. Thank you!
 
 ## What are Oakland's Campaign Finance Rules?
 

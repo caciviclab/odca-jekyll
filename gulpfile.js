@@ -78,6 +78,10 @@ gulp.task('pull:stats', function () {
   return gulp.src(dataDir('_data', 'stats.json'))
     .pipe(gulp.dest('_data'));
 });
+gulp.task('pull:totals', function () {
+  return gulp.src(dataDir('_data', 'totals.json'))
+    .pipe(gulp.dest('_data'));
+});
 
 
 gulp.task('pull', gulp.parallel(
@@ -91,4 +95,5 @@ gulp.task('pull', gulp.parallel(
   'pull:referendum_opposing',
   'pull:referendum_supporting',
   'pull:stats',
+  'pull:totals',
 ));

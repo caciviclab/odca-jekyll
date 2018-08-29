@@ -131,6 +131,16 @@ class ContributionsTable extends React.Component {
       });
     };
 
+    const isActive = (colName) => {
+      const currentSort = this.state.sort;
+      if (this.state.sort.column !== colName) {
+        return '';
+      } else if (currentSort.order === 1) {
+        return ' is-descending';
+      }
+      return ' is-ascending';
+    };
+
     const updateFilter = (e) => {
       this.setState({
         filter: e.target.value,
@@ -139,13 +149,28 @@ class ContributionsTable extends React.Component {
 
     return (
       <div>
-        <input value={this.state.filterField} onChange={updateFilter} type="text" />
+        <input className="filter" value={this.state.filterField} onChange={updateFilter} type="text" placeholder="Type to search" />
         <table className="contributors">
           <thead className="contributors__thead">
             <tr>
-              <td className="contributors__name"><button onClick={sortToggle('name')}>^</button>Name</td>
-              <td className="contributors__amount"><button onClick={sortToggle('amount')}>^</button>Amount</td>
-              <td className="contributors__date contributors__col--s1"><button onClick={sortToggle('date')}>^</button>Date</td>
+              <td className={`contributors__name${isActive('name')}`}>
+                <button type="button" className="sort-button" onClick={sortToggle('name')}>
+                  <span className="arrow-container" />
+                  Name
+                </button>
+              </td>
+              <td className={`contributors__amount${isActive('amount')}`}>
+                <button type="button" className="sort-button amount" onClick={sortToggle('amount')}>
+                  <span className="arrow-container" />
+                  Amount
+                </button>
+              </td>
+              <td className={`contributors__date contributors__col--s1${isActive('date')}`}>
+                <button type="button" className="sort-button" onClick={sortToggle('date')}>
+                  <span className="arrow-container" />
+                  Date
+                </button>
+              </td>
             </tr>
           </thead>
           <tbody>

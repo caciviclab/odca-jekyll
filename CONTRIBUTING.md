@@ -20,7 +20,7 @@ Being a collaboration of brigades, we often meetup in person at our local
 brigades without the entire group. It's important to keep the rest of the group
 informed. We can't all make it to four brigade meetings a week `;-)` Keep this
 in mind as you collaborate and consider posting decisions or learnings to our
-[slack](https://opencal.slack.com) or comment on an [issue](/issues).
+[slack](https://caciviclab.slack.com) or comment on an [issue](/issues).
 
 
 ## Pull requests
