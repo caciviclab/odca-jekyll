@@ -1,22 +1,28 @@
 .candidate-summary {
-  @include grid-container;
-  @include grid-collapse;
+  display: flex;
 }
 
 .candidate-summary__left {
-  @include grid-column(2);
   margin-bottom: $spacing-base * 2;
   margin-top: $spacing-base * 2;
 }
 
 .candidate-summary__right {
-  @include grid-column(10);
   margin-bottom: $spacing-base * 2;
   margin-top: $spacing-base * 2;
+  margin-left: $spacing-base * 2;
+
+  div {
+    white-space: pre-wrap;      //* CSS3 *//
+    white-space: -moz-pre-wrap; //* Firefox *//
+    white-space: -pre-wrap;     //* Opera <7 *//
+    white-space: -o-pre-wrap;   //* Opera 7 *//
+    word-wrap: break-word;      //* IE *//
+  }
 }
 
 .candidate-summary__photo {
-  width: 100%;
+  max-width: 80px;
 }
 
 .candidate-summary__occupation {
