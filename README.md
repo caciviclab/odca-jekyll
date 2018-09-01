@@ -29,6 +29,7 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
 - [Bundler](https://bundler.io/) gem
 - [Make](https://www.gnu.org/software/make/)
 - [Node 8.9+](https://nodejs.org/)
+- [ImageMagick](https://www.imagemagick.org/)
 
 
 ## Setup
