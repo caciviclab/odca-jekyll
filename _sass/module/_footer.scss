@@ -12,12 +12,7 @@
 
   li {
     list-style: none;
-
-    + li {
-      padding-top: 0.3rem;
-    }
   }
-
 }
 
 .footer__col {
@@ -38,6 +33,23 @@
     color: $heading-color;
     text-decoration: none;
   }
+}
+
+.footer__nav {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.footer__nav-item {
+  flex: 0 0 auto;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.footer__nav-item:not(:last-child) {
+  margin-right: 2rem;
 }
 
 .social-media-list {
