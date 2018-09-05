@@ -3,6 +3,9 @@
   color: $color-grey-2;
   font-style: italic;
   font-weight: 400;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 5px;
 }
 
 .landing__description {
@@ -10,8 +13,9 @@
 }
 
 .landing__description__paragraph {
-  display: flex;
-  justify-content: center;
   color: $color-grey-2;
   font-weight: 300;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 5px;
 }
