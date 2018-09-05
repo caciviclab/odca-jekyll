@@ -14,8 +14,7 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: 'babel-loader',
                 options: {
-                    presets: ['es2015', 'react'],
-                    plugins: [require('babel-plugin-transform-object-rest-spread')]
+                    presets: ['@babel/preset-env', '@babel/react'],
                 },
             }
         ]
