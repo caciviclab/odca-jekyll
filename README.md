@@ -118,7 +118,7 @@ Code is licensed under the GNU Affero General Public License.
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ```
 
-Font Awesome Icons located under `assets/fontawesome/` available under the
+[Font Awesome Icons](https://fontawesome.com/) located under `assets/fontawesome/` available under the
 [CC-BY-4.0 License](https://creativecommons.org/licenses/by/4.0/).
 
 

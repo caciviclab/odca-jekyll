@@ -20,6 +20,15 @@ $candidate-photo-width: 10rem;
   margin-bottom: ($spacing-base * 2);
 }
 
+.candidate__link {
+  line-height: 1; // Aligns the icons better
+  margin-bottom: 0.5rem;
+
+  a {
+    text-decoration: none;
+  }
+}
+
 .candidate__photo {
   @include grid-column(3);
   border-radius: ($candidate-photo-width / 2);
