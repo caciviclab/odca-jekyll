@@ -43,10 +43,16 @@ layout: default
                      <span class="hover-info">For more detail on voluntary spending limits, see the <a href="{{ "/faq/" | relative_url }}">FAQ article</a>.</span>
               </span>
             </div>
-              {%  endif %}
-            <div><a href="{{ candidate.website_url }}">{{ candidate.website_url }}</a></div>
-            <div><a href="https://twitter.com/{{ candidate.twitter_url }}">{{ candidate.twitter_url }}</a></div>
-            {% if candidate.votersedge_url != null %}<div><a href="{{ candidate.votersedge_url }}" target="_blank">Voter's Edge Profile</a></div>{% endif %}
+            {% endif %}
+            {% if candidate.website_url %}
+              <div class="candidate__link"><a href="{{ candidate.website_url }}">{% include svg-icon.html icon="desktop-solid" %} {{ candidate.website_url }}</a></div>
+            {% endif %}
+            {% if candidate.twitter_url %}
+              <div class="candidate__link"><a href="https://twitter.com/{{ candidate.twitter_url }}">{% include svg-icon.html icon="twitter-brands" %} {{ candidate.twitter_url }}</a></div>
+            {% endif %}
+            {% if candidate.votersedge_url %}
+              <div class="candidate__link"><a href="{{ candidate.votersedge_url }}" target="_blank">{% include svg-icon.html icon="external-link-square-alt-solid" %} Voter’s Edge profile</a></div>
+            {% endif %}
           </div>
         </div>
       </div>
