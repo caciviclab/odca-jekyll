@@ -28,15 +28,8 @@ function defaultParseAttributes(attributes) {
 }
 
 function webComponent(Component, customElementName, CustomElement) {
-  // Avoid `class` here since we're transpiling with Babel 6 which is
-  // incompatible with ES6 classes. ES6 classes are required for Custom
-  // Elements.
-  // https://github.com/w3c/webcomponents/issues/587#issuecomment-254017839
-  function WebComponent() {
-    return Reflect.construct(HTMLElement, [], WebComponent);
-  }
-
-  WebComponent.prototype = {
+  // Define a one-off class to register as the custom element
+  class WebComponent extends HTMLElement {
     connectedCallback() {
       // Parse the HTML attributes into props.
       // TODO we should infer the parsing based on `propTypes` instead of
@@ -55,11 +48,8 @@ function webComponent(Component, customElementName, CustomElement) {
       // have to provide its own styles. Let's avoid that for now and keep
       // everything in the host DOM.
       ReactDOM.render(component, this);
-    },
-  };
-
-  Object.setPrototypeOf(WebComponent.prototype, HTMLElement.prototype);
-  Object.setPrototypeOf(WebComponent, HTMLElement);
+    }
+  }
 
   customElements.define(customElementName, CustomElement || WebComponent);
 
