@@ -21,6 +21,7 @@
 }
 
 .footer__col {
+  margin-top: 1.8rem;
   @include media($grid--medium) {
     // Last column should align right on wider screens
     &:last-child {
@@ -31,6 +32,7 @@
 
 .footer__heading {
   @include heading('h2');
+  margin-top: 0;
 
   a {
     color: $heading-color;
