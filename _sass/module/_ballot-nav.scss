@@ -22,7 +22,12 @@
   }
 
   p {
-    padding-top: $spacing-base;
+    padding: $spacing-base;
+    margin: auto;
+  }
+
+  p:hover {
+    background-color: $color-gold;
   }
 }
 
