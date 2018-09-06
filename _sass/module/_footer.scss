@@ -37,7 +37,10 @@
 
 .footer__nav {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
+  @include media($grid--medium) {
+    flex-direction: row;
+  }
 }
 
 .footer__nav-item {
