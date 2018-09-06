@@ -1,4 +1,5 @@
 $ballot-nav-border: 2px $color-grey-4-5 solid;
+
 .ballot-nav {
   @include media($grid--medium) {
     // Add gutter for the border
