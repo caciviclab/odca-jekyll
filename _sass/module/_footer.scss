@@ -26,6 +26,12 @@
     &:last-child {
       text-align: right;
     }
+    &.footer__left-col {
+      height: 198px;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+    }
   }
 }
 
