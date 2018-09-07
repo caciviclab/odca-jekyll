@@ -4,6 +4,10 @@
   background-color: $color-grey-5;
   padding-bottom: $spacing-base * 2;
 
+  a {
+    text-decoration: none;
+  }
+
   ul {
     margin-top: 0;
     margin-bottom: $spacing-base * 2;
@@ -31,7 +35,6 @@
 
   a {
     color: $heading-color;
-    text-decoration: none;
   }
 }
 
@@ -45,14 +48,16 @@
 
 .footer__nav-item {
   flex: 0 0 auto;
-
-  a {
-    text-decoration: none;
-  }
 }
 
 .footer__nav-item:not(:last-child) {
   margin-right: 3rem;
+}
+
+.footer__stipulation {
+  @include font-size($font-size-small);
+  font-weight: normal;
+  color: $heading-color--light;
 }
 
 .social-media-list {

@@ -1,5 +1,6 @@
 .tagline {
-  @include heading('h3');
+  @include heading('h5');
+  font-weight: normal;
 }
 
 .tagline__em {
