@@ -149,28 +149,28 @@ class ContributionsTable extends React.Component {
 
     return (
       <div>
-        <input className="filter" value={this.state.filterField} onChange={updateFilter} type="text" placeholder="Type to search" />
+        <input className="filter" value={this.state.filterField} onChange={updateFilter} type="text" placeholder="Type to filter contributions" />
         <table className="contributors">
           <thead className="contributors__thead">
             <tr>
-              <td className={`contributors__name${isActive('name')}`}>
+              <th className={`contributors__name${isActive('name')}`}>
                 <button type="button" className="sort-button" onClick={sortToggle('name')}>
-                  <span className="arrow-container" />
                   Name
+                  <span className="arrow-container" />
                 </button>
-              </td>
-              <td className={`contributors__amount${isActive('amount')}`}>
+              </th>
+              <th className={`contributors__amount${isActive('amount')}`}>
                 <button type="button" className="sort-button amount" onClick={sortToggle('amount')}>
-                  <span className="arrow-container" />
                   Amount
-                </button>
-              </td>
-              <td className={`contributors__date contributors__col--s1${isActive('date')}`}>
-                <button type="button" className="sort-button" onClick={sortToggle('date')}>
                   <span className="arrow-container" />
-                  Date
                 </button>
-              </td>
+              </th>
+              <th className={`contributors__date contributors__col--s1${isActive('date')}`}>
+                <button type="button" className="sort-button" onClick={sortToggle('date')}>
+                  Date
+                  <span className="arrow-container" />
+                </button>
+              </th>
             </tr>
           </thead>
           <tbody>
