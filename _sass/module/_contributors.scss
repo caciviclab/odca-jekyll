@@ -8,30 +8,6 @@ $breakpoint--s2: $grid--medium;
   border-top: 3px $color-gold solid;
 }
 
-.contributors__amount {
-  width: 35%;
-}
-
-.contributors__date {
-  width: 25%;
-}
-
-@include media($breakpoint--s1) {
-  .contributors__amount {
-    width: 25%;
-  }
-}
-
-@include media($breakpoint--s2) {
-  .contributors__amount {
-    width: 20%;
-  }
-
-  .contributors__date {
-    width: 20%;
-  }
-}
-
 .contributors__thead {
   font-weight: bold;
 
@@ -83,12 +59,30 @@ $breakpoint--s2: $grid--medium;
 .contributors__amount {
   padding: 0 $spacing-base;
   vertical-align: top;
+  width: 35%;
 }
 
 .contributors__date {
   padding: 0 $spacing-base;
   vertical-align: top;
   white-space: nowrap;
+  width: 25%;
+}
+
+@include media($breakpoint--s1) {
+  .contributors__amount {
+    width: 25%;
+  }
+}
+
+@include media($breakpoint--s2) {
+  .contributors__amount {
+    width: 20%;
+  }
+
+  .contributors__date {
+    width: 20%;
+  }
 }
 
 .contributors__col--s1 {
