@@ -8,7 +8,7 @@ header: Track the money in Oakland elections
   {% assign oakland_total_funds = oakland_total_funds | plus: source[1] %}
 {% endfor %}
 {% for source in site.data.totals.oakland-2018 %}
-{% assign oakland_total_funds = oakland_total_funds | plus: source[1] %}
+  {% assign oakland_total_funds = oakland_total_funds | plus: source[1] %}
 {% endfor %}
 
 {% capture hero-cta %}
