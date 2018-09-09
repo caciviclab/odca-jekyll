@@ -1,0 +1,39 @@
+.l-ballot__main {
+  h1 {
+    font-weight: $font-weight-normal;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: $font-weight-light;
+  }
+
+  header {
+    border-bottom: 2px $color-gold solid;
+    padding-bottom: $spacing-base;
+  }
+}
+
+.referendum__summary {
+  h3 {
+    font-weight: $font-weight-normal;
+    color: $color-grey-2;
+    text-transform: uppercase;
+    padding-top: $spacing-base;
+  }
+
+  p {
+    color: $color-grey-2;
+  }
+}
+
+.referendum__region {
+  h2 {
+    text-transform: uppercase;
+    color: $color-grey-2;
+    font-weight: $font-weight-normal;
+  }
+}
