@@ -6,7 +6,7 @@
 
 .l-ballot__nav {
   @include grid-column(12);
-  border-top: 3px $color-gold solid;
+  border-top: 2px $color-gold solid;
 
   @include grid-media($neat-grid--medium) {
     @include grid-column(4);

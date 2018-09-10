@@ -4,10 +4,18 @@
 {% assign ballots = site.ballots | where: "locality", locality.locality_id | reverse %}
 
 <nav class="ballot-nav">
-  {% if office_elections and office_elections != empty %}
-    <section class="l-section">
-      <div class="l-section__content">
-        <h3>Elective Offices</h3>
+  <section class="l-section">
+    <div class="l-section__content">
+      {% if referendums and referendums != empty %}
+        <div class="ballot-nav__group">
+          <h4>{% include referendum_measure_heading.html referendum_measure_display=locality.referendum_measure_display %}</h4>
+          {% for ballot_item in referendums %}
+              {% assign referendum = site.referendums | where: "path", ballot_item | first %}
+              <p><a href="{{ referendum.url | prepend: site.baseurl }}">{% if referendum.number %}{{ referendum.number }} {% endif %}{{ referendum.title | escape}}</a></p>
+          {% endfor %}
+        </div>
+      {% endif %}
+      {% if office_elections and office_elections != empty %}
         {% for ballot_item in office_elections %}
           <div class="ballot-nav__group">
             {% if ballot_item.label %}
@@ -19,7 +27,7 @@
             {% endfor %}
           </div>
         {% endfor %}
-      </div>
-    </section>
-  {% endif %}
+      {% endif %}
+    </div>
+  </section>
 </nav>

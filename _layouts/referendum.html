@@ -20,31 +20,32 @@ layout: default
     <div><p><i>No measure number has been assigned.</i></p></div>
   {% endif %}
 </header>
-<section class="l-section">
-  {{ referendum.content }}
+<section class="l-section referendum__summary">
+  {% if referendum.content %}
+    <h3>Summary</h3>
+    {{ referendum.content }}
+  {% endif %}
 </section>
 
 {% if supporting.total_contributions > 0 or opposing.total_contributions > 0 %}
 <!-- supporting money column -->
 <section class="l-section">
+  <div class="l-section__content">
+    <h2 class="section-header referendum__region">Contributions by region</h2>
+  </div>
   <div class="l-section__content l-section__content--half">
     <center>
-      <h2 class="section-header">Supporting Money
+      <h2 class="section-header">Contributions to Support
         <div>{{ supporting.total_contributions | dollars }}</div>
       </h2>
     </center>
   </div>
   <div class="l-section__content l-section__content--half">
     <center>
-      <h2 class="section-header">Opposing Money
+      <h2 class="section-header">Contributions to Oppose
         <div>{{ opposing.total_contributions | dollars }}</div>
       </h2>
     </center>
-  </div>
-</section>
-<section class="l-section">
-  <div class="l-section__content">
-    <h2 class="section-header">Contributions by region</h2>
   </div>
   <div class="l-section__content l-section__content--half">
     <div class="subheading">Supporting regions</div>
@@ -76,7 +77,7 @@ layout: default
 <!-- supporting contributions/expenditures column -->
 <section class="l-section">
   <div class="l-section__content">
-    <h2>Expenditures</h2>
+    <h2>Spending Breakdown by Committee</h2>
   </div>
   <div class="l-section__content l-section__content--half">
     <div class="subheading">In support of the measure</div>

@@ -1,26 +1,11 @@
 $col-min-width--s1: 10rem;
-$col-min-width--s2: 14rem;
-$breakpoint--s1: $grid--small;
+$breakpoint--s1: 460px;
 $breakpoint--s2: $grid--medium;
-
-.filter {
-  margin: 1rem 0;
-  width: 35%;
-  padding: 0.5rem;
-}
 
 .contributors {
   table-layout: fixed;
   width: 100%;
   border-top: 3px $color-gold solid;
-
-  .contributors__amount {
-    width: 20%;
-  }
-
-  .contributors__date {
-    width: 20%;
-  }
 }
 
 .contributors__thead {
@@ -37,17 +22,16 @@ $breakpoint--s2: $grid--medium;
     background-color: inherit;
     width: 100%;
     height: 100%;
-
-    &.amount {
-      text-align: right;
-    }
+    padding: 0;
+    white-space: nowrap;
   }
 }
 
 .arrow-container {
-  width: 10px;
-  height: 10px;
-  margin-right: 10px;
+  $arrow-size: 10px;
+  width: $arrow-size;
+  height: $arrow-size;
+  margin-left: $arrow-size;
   display: inline-block;
   background-position: top left;
 }
@@ -74,30 +58,30 @@ $breakpoint--s2: $grid--medium;
 
 .contributors__amount {
   padding: 0 $spacing-base;
-  text-align: right;
   vertical-align: top;
-
-  @include media($breakpoint--s1) {
-    min-width: $col-min-width--s1;
-  }
-
-  @include media($breakpoint--s2) {
-    min-width: $col-min-width--s2;
-  }
+  width: 35%;
 }
 
 .contributors__date {
   padding: 0 $spacing-base;
-  text-align: left;
   vertical-align: top;
   white-space: nowrap;
+  width: 25%;
+}
 
-  @include media($breakpoint--s1) {
-    min-width: $col-min-width--s1;
+@include media($breakpoint--s1) {
+  .contributors__amount {
+    width: 25%;
+  }
+}
+
+@include media($breakpoint--s2) {
+  .contributors__amount {
+    width: 20%;
   }
 
-  @include media($breakpoint--s2) {
-    min-width: $col-min-width--s2;
+  .contributors__date {
+    width: 20%;
   }
 }
 
@@ -106,5 +90,19 @@ $breakpoint--s2: $grid--medium;
 
   @include media($breakpoint--s1) {
     display: table-cell;
+  }
+}
+
+contributions-table {
+  .filter {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  @include grid-media($neat-grid--medium) {
+    .filter {
+      width: 35%;
+    }
   }
 }
