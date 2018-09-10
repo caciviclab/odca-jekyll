@@ -33,11 +33,4 @@ $ballot-nav-border: 2px $color-grey-4-5 solid;
     // Separate the ballot nav groups with border
     border-top: $ballot-nav-border;
   }
-
-  @include media($grid--medium) {
-    &:first-child {
-      // Include a top border on larger screens
-      border-top: $ballot-nav-border;
-    }
-  }
 }
