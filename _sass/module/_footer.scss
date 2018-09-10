@@ -4,6 +4,10 @@
   background-color: $color-grey-5;
   padding-bottom: $spacing-base * 2;
 
+  a {
+    text-decoration: none;
+  }
+
   ul {
     margin-top: 0;
     margin-bottom: $spacing-base * 2;
@@ -12,30 +16,57 @@
 
   li {
     list-style: none;
-
-    + li {
-      padding-top: 0.3rem;
-    }
   }
-
 }
 
 .footer__col {
+  margin-top: 1.8rem;
+
   @include media($grid--medium) {
     // Last column should align right on wider screens
     &:last-child {
       text-align: right;
+    }
+
+    &.footer__left-col {
+      height: 198px;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
     }
   }
 }
 
 .footer__heading {
   @include heading('h2');
+  margin-top: 0;
 
   a {
     color: $heading-color;
-    text-decoration: none;
   }
+}
+
+.footer__nav {
+  display: flex;
+  flex-flow: column nowrap;
+
+  @include media($grid--medium) {
+    flex-direction: row;
+  }
+}
+
+.footer__nav-item {
+  flex: 0 0 auto;
+}
+
+.footer__nav-item:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.footer__stipulation {
+  @include font-size($font-size-small);
+  font-weight: normal;
+  color: $heading-color--light;
 }
 
 .social-media-list {
