@@ -21,15 +21,16 @@ $candidate-photo-width: 10rem;
 }
 
 .candidate__link {
+  // scss-lint:disable VendorPrefix
   line-height: 1; // Aligns the icons better
   margin-bottom: 0.5rem;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
-  -webkit-hyphenate-character: "";
-  -moz-hyphenate-character: "";
-  -ms-hyphenate-character: "";
+  -webkit-hyphenate-character: '';
+  -moz-hyphenate-character: '';
+  -ms-hyphenate-character: '';
   word-break: break-all;
 
   a {
