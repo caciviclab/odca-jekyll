@@ -3,7 +3,7 @@ layout: default
 ---
 {% assign candidate = page %}
 {% if candidate.filer_id != empty %}
-  {% assign other_committees = site.committees | where:"candidate_controlled_id", candidate.filer_id %}
+{% assign other_committees = site.committees | where:"candidate_controlled_id", candidate.filer_id %}
 {% endif %}
 {% assign ballot = site.ballots | where: "path", candidate.ballot | first %}
 {% assign locality = site.localities | where: "locality_id", ballot.locality | first %}
@@ -24,51 +24,65 @@ layout: default
         <div class="candidate__info-container">
           {% include candidate-photo.html candidate=candidate class="candidate__photo" %}
           <div class="candidate__info">
-            <div class="candidate__occupation-commitee-name">{% if candidate.is_incumbent == true and candidate.committee_name != null %}
+            <div class="candidate__occupation-commitee-name">{% if candidate.is_incumbent == true and
+              candidate.committee_name != null %}
               Incumbent |
-            {% elsif candidate.is_incumbent == true and candidate.committee_name == null %}
+              {% elsif candidate.is_incumbent == true and candidate.committee_name == null %}
               Incumbent
-            {% elsif candidate.is_incumbent == false and candidate.committee_name != null and candidate.occupation != null %}
+              {% elsif candidate.is_incumbent == false and candidate.committee_name != null and candidate.occupation !=
+              null %}
               {{ candidate.occupation }} |
-            {% elsif candidate.is_incumbent == false and candidate.committee_name == null %}
+              {% elsif candidate.is_incumbent == false and candidate.committee_name == null %}
               {{ candidate.occupation }}
-            {% endif %}
-            {% if candidate.committee_name != null %}<span class="candidate__commitee-name"> {{ candidate.committee_name | smartify | escape }} </span>{% endif %}</div>
+              {% endif %}
+              {% if candidate.committee_name != null %}<span class="candidate__commitee-name"> {{
+                candidate.committee_name | smartify | escape }} </span>{% endif %}</div>
             {% if candidate.is_accepted_expenditure_ceiling %}
             <div class="candidate__expenditure-ceiling">
-              This candidate has agreed to the voluntary spending limits.
-              The maximum contribution this candidate can accept is $800.
+              This candidate has agreed to voluntary spending limits.
+              The maximum contribution this candidate can accept is $800 from any individual, business entity,
+              committee or other organization and $1,600 from a qualified broad-based committee.
               <span class="hover-info-container"><img src="{{ "/assets/images/icon_more_info.png" | relative_url }}"
-                     alt="Voluntary spending limits - more information" />
-                     <span class="hover-info">For more detail on voluntary spending limits, see the <a href="{{ "/faq/" | relative_url }}">FAQ article</a>.</span>
+                  alt="Voluntary spending limits - more information" />
+                <span class="hover-info">For more on Oakland contribution limits and campaign rules, see the <a href="https://www.oaklandca.gov/services/boards-and-commissions-index/ethics/campaign-finance-rules-and-disclosure/information-for-candidates-and-campaign-committees/oakland-campaign-contribution-limits">
+                    Public Ethics Commission Candidate Resources page</a>.</span>
               </span>
             </div>
-              {%  endif %}
-            <div><a href="{{ candidate.website_url }}">{{ candidate.website_url }}</a></div>
-            <div><a href="https://twitter.com/{{ candidate.twitter_url }}">{{ candidate.twitter_url }}</a></div>
-            {% if candidate.votersedge_url != null %}<div><a href="{{ candidate.votersedge_url }}" target="_blank">Voter's Edge Profile</a></div>{% endif %}
+            {% endif %}
+            {% if candidate.website_url %}
+            <div class="candidate__link"><a href="{{ candidate.website_url }}">{% include svg-icon.html
+                icon="desktop-solid" %} {{ candidate.website_url }}</a></div>
+            {% endif %}
+            {% if candidate.twitter_url %}
+            <div class="candidate__link"><a href="https://twitter.com/{{ candidate.twitter_url }}">{% include
+                svg-icon.html icon="twitter-brands" %} {{ candidate.twitter_url }}</a></div>
+            {% endif %}
+            {% if candidate.votersedge_url %}
+            <div class="candidate__link"><a href="{{ candidate.votersedge_url }}" target="_blank">{% include
+                svg-icon.html icon="external-link-square-alt-solid" %} Voter’s Edge profile</a></div>
+            {% endif %}
           </div>
         </div>
       </div>
     </section>
     {% if finance.total_contributions > 0 or finance.total_expenditures > 0 %}
-      {% include candidate/finance.html candidate=candidate finance=finance %}
+    {% include candidate/finance.html candidate=candidate finance=finance %}
     {% else %}
-      <section class="l-section">
-        <div class="l-section__content">
-          <p><i>No finance data is available for this candidate.</i></p>
-        </div>
-      </section>
+    <section class="l-section">
+      <div class="l-section__content">
+        <p><i>No finance data is available for this candidate.</i></p>
+      </div>
+    </section>
     {% endif %}
     {% if other_committees and other_committees != empty %}
-        <section class="l-section">
-            <div class="l-section__content">
-                <h2 class="candidate__money-heading">Other committees controlled by this candidate</h2>
-                {% for committee in other_committees %}
-                    <p><a href="{{ site.baseurl }}/committee/{{ committee.filer_id }}/">{{ committee.name | smarity | escape }}</a></p>
-                {% endfor %}
-            </div>
-        </section>
+    <section class="l-section">
+      <div class="l-section__content">
+        <h2 class="candidate__money-heading">Other committees controlled by this candidate</h2>
+        {% for committee in other_committees %}
+        <p><a href="{{ site.baseurl }}/committee/{{ committee.filer_id }}/">{{ committee.name | smarity | escape }}</a></p>
+        {% endfor %}
+      </div>
+    </section>
     {% endif %}
   </div>
 </div>

@@ -1,7 +1,12 @@
 ---
 layout: default
-header: Track the Money in Oakland Elections
+header: Track the money in Oakland elections
 ---
+
+{% assign oakland_total_funds = 0 %}
+{% for source in site.data.totals.oakland-2018 %}
+  {% assign oakland_total_funds = oakland_total_funds | plus: source[1] %}
+{% endfor %}
 
 {% capture hero-cta %}
 <div class="hero__cta-container">
@@ -43,10 +48,10 @@ header: Track the Money in Oakland Elections
           <li>Are the sources of political spending local?</li>
         </ul>
         <div class="hero__funds__raised__header">
-          <h2>Funds Raised in Oakland:</h2>
+          <h2>Total contributions flowing into Oakland’s 2018 Election:</h2>
         </div>
         <div class="hero__funds_raised__total">
-          {{ site.data.totals.oakland-2018['Within Oakland'] | dollars }}
+          {{ oakland_total_funds | dollars }}
         </div>
       </div>
     </div>
@@ -55,7 +60,7 @@ header: Track the Money in Oakland Elections
 </div>
 <div class="landing__description">
   <h3 class="landing__description__header">
-    OpenDisclosure was created to empower Oakland voters with timely, accurate, and useful information about the
+    Open Disclosure was created to empower Oakland voters with timely, accurate, and useful information about the
     role of money in local elections.
   </h3>
   <p class="landing__description__paragraph">

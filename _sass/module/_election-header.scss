@@ -2,20 +2,18 @@
   font-size: $small-font-size;
 }
 
-@include grid-media($neat-grid--medium) {
-  .election-header__day {
-    float: left;
-    color: $color-navy;
-    font-size: $h3-font-size;
-    font-weight: bold;
-  }
+.election-header__day {
+  float: left;
+  color: $color-navy;
+  font-size: $h3-font-size;
+  font-weight: bold;
+}
 
-  .election-header__updated-at {
-    float: right;
-  }
+.election-header__updated-at {
+  float: right;
+}
 
-  .election-header__title {
-    color: $color-navy;
-    font-weight: 400;
-  }
+.election-header__title {
+  color: $color-navy;
+  font-weight: 400;
 }
