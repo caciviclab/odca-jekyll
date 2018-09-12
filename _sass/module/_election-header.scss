@@ -1,4 +1,5 @@
 .election-header__updated-at {
+  float: right;
   font-size: $small-font-size;
 }
 
@@ -7,10 +8,6 @@
   color: $color-navy;
   font-size: $h3-font-size;
   font-weight: bold;
-}
-
-.election-header__updated-at {
-  float: right;
 }
 
 .election-header__title {
