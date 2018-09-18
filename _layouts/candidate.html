@@ -3,7 +3,7 @@ layout: default
 ---
 {% assign candidate = page %}
 {% if candidate.filer_id != empty %}
-{% assign other_committees = site.committees | where:"candidate_controlled_id", candidate.filer_id %}
+  {% assign other_committees = site.committees | where:"candidate_controlled_id", candidate.filer_id %}
 {% endif %}
 {% assign ballot = site.ballots | where: "path", candidate.ballot | first %}
 {% assign locality = site.localities | where: "locality_id", ballot.locality | first %}
@@ -65,8 +65,8 @@ layout: default
         </div>
       </div>
     </section>
-    {% if finance.total_contributions > 0 or finance.total_expenditures > 0 %}
-    {% include candidate/finance.html candidate=candidate finance=finance %}
+    {% if finance.total_contributions > 0 or finance.total_expenditures > 0 or finance.supporting_money.total_supporting_independent > 0 %}
+      {% include candidate/finance.html candidate=candidate finance=finance %}
     {% else %}
     <section class="l-section">
       <div class="l-section__content">
