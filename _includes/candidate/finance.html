@@ -14,13 +14,7 @@
     {% endif %}
     <div class="candidate__summary candidate__summary--balance">Current balance: <span class="money">{{ finance.total_contributions | minus: finance.total_expenditures | minus: finance.total_loans_received | dollars }}</span></div>
     {% else %}
-    <div class="candidate__summary">This candidate has not yet reported receiving any contributions to their campaign.
-      <span class="hover-info-container"><img src="{{ '/assets/images/icon_more_info.png' | relative_url }}"
-        alt="Independent expenditures - more information" />
-        <span class="hover-info">Spending by third parties that advocates the election or defeat of a candidate and is not made in coordination with a candidate or campaign committee is termed an independent expenditure. To learn more,
-          <a href="{{ site.baseurl }}/faq/">see the FAQ </a>.</span>
-      </span>
-    </div>
+    <div class="candidate__summary">This candidate has not yet reported receiving any contributions to their campaign.</div>
     {% endif %}
   </div>
 </section>
@@ -32,11 +26,23 @@
     {% if expenditures_against > 0 %}
     <div class="candidate__expenditures">
       Independent Expenditures Opposing Candidate <span class="money">{{ expenditures_against | dollars }}</span>
+      <span class="hover-info-container"><img src="{{ '/assets/images/icon_more_info.png' | relative_url }}"
+        alt="Independent expenditures - more information" />
+        <span class="hover-info">Spending by third parties that advocates the election or defeat of a candidate and is not made in coordination with a candidate or campaign committee is termed an independent expenditure. To learn more,
+          <a href="{{ site.baseurl }}/faq/">see the FAQ </a>.</span>
+      </span>
     </div>
     {% endif %}
     {% if independent_expenditures_for > 0 %}
     <div class="candidate__expenditures">
       Independent Expenditures Supporting Candidate <span class="money">{{ independent_expenditures_for | dollars }}</span>
+      {% if expenditures_against <= 0 %}
+      <span class="hover-info-container"><img src="{{ '/assets/images/icon_more_info.png' | relative_url }}"
+        alt="Independent expenditures - more information" />
+        <span class="hover-info">Spending by third parties that advocates the election or defeat of a candidate and is not made in coordination with a candidate or campaign committee is termed an independent expenditure. To learn more,
+          <a href="{{ site.baseurl }}/faq/">see the FAQ </a>.</span>
+      </span>
+      {% endif %}
     </div>
     {% endif %}
   </div>
