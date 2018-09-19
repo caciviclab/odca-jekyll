@@ -14,7 +14,7 @@
     {% endif %}
     <div class="candidate__summary candidate__summary--balance">Current balance: <span class="money">{{ finance.total_contributions | minus: finance.total_expenditures | minus: finance.total_loans_received | dollars }}</span></div>
     {% else %}
-    <div class="candidate__summary">This candidate has not yet reported receiving any contributions to their campaign.</div>
+    <div class="candidate__summary">No contribution data found for this candidate.</div>
     {% endif %}
   </div>
 </section>
