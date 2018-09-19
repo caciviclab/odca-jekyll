@@ -13,12 +13,12 @@
               {% assign referendum = site.referendums | where: "path", ballot_item | first %}
 
                {% if page.url == referendum.url %}
-               <p class='current-page'>
-                 <a href='{{ referendum.url | prepend: site.baseurl }}'>{% if referendum.number %}{{ referendum.number }} {% endif %}{{ referendum.title | escape}}</a>
+               <p class="current-page">
+                 <a href="{{ referendum.url | prepend: site.baseurl }}">{% if referendum.number %}{{ referendum.number }} {% endif %}{{ referendum.title | escape}}</a>
                </p>
                {% else %}
                <p>
-                 <a href='{{ referendum.url | prepend: site.baseurl }}'>{% if referendum.number %}{{ referendum.number }} {% endif %}{{ referendum.title | escape}}</a>
+                 <a href="{{ referendum.url | prepend: site.baseurl }}">{% if referendum.number %}{{ referendum.number }} {% endif %}{{ referendum.title | escape}}</a>
                </p>
                {% endif %}
 
