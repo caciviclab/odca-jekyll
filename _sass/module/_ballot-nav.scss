@@ -28,13 +28,14 @@ $ballot-nav-border: 2px $color-grey-4-5 solid;
     margin: auto;
   }
 
-  p.current-page {
-    background-color: $color-gold;
-  }
 }
 
 a {
   text-decoration: none;
+}
+
+.current-page {
+  background-color: $color-gold;
 }
 
 .ballot-nav__group {
