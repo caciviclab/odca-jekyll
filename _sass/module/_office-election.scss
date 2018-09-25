@@ -3,5 +3,7 @@
 }
 
 .office-election__candidate {
-  border-bottom: 1px $color-grey-5 solid;
+  & + & {
+    border-top: 1px $color-grey-5 solid;
+  }
 }

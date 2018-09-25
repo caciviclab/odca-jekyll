@@ -38,9 +38,20 @@ a {
 }
 
 .ballot-nav__group {
-  border-top: 2px $color-grey-4-5 solid;
+  $border-top: 2px $color-grey-4-5 solid;
 
   h4 {
     font-weight: lighter;
+  }
+
+  & + & {
+    border-top: $border-top;
+  }
+
+  @include grid-media($neat-grid--medium) {
+    // First border clashes with the gold border on small screens, but not on large screens
+    &:first-child {
+      border-top: $border-top;
+    }
   }
 }
