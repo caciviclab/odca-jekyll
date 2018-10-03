@@ -100,3 +100,9 @@ a {
   margin-bottom: $spacing-base;
   margin-top: $spacing-base;
 }
+
+.note {
+  color: $subheading-color;
+  font-size: $small-font-size;
+  font-style: italic;
+}

@@ -18,9 +18,17 @@ layout: default
       <span class="money">{{ finance.total_contributions | dollars }}</span>
     </div>
     {% if contributions == empty %}
-      <p>Sorry, there is no contribution data available for this committee.</p>
+      <p>
+        Sorry, there is no contribution data available for this committee. Note
+        that contributor tables do not presently include loans, although funds
+        from loans are included in the total contributions received.
+      </p>
     {% else %}
-    <contributions-table contributions="{{ contributions | jsonify | escape }}"></contributions-table>
+      <p class="note">
+        Contributor tables do not presently include loans, although funds
+        from loans are included in the total contributions received.
+      </p>
+      <contributions-table contributions="{{ contributions | jsonify | escape }}"></contributions-table>
     {% endif %}
   </div>
 </article>
