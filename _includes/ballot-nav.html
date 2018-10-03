@@ -25,7 +25,9 @@
             {% endif %}
             {% for office_election_path in ballot_item.items %}
               {% assign office_election = site.office_elections | where: "path", office_election_path | first %}
-              <p><a href="{{ office_election.url | prepend: site.baseurl }}">{{ office_election.title }}</a></p>
+              <p {% if page.url == office_election.url %}class="current-page"{% endif %}>
+                <a href="{{ office_election.url | prepend: site.baseurl }}">{{ office_election.title }}</a>
+              </p>
             {% endfor %}
           </div>
         {% endfor %}
