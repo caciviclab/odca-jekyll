@@ -71,6 +71,9 @@ layout: default
     {% else %}
     <section class="l-section">
       <div class="l-section__content">
+        {% if candidate.data_warning %}
+          {% include alert-message.html message=candidate.data_warning %}
+        {% endif %}
         <p><i>No finance data is available for this candidate.</i></p>
       </div>
     </section>
