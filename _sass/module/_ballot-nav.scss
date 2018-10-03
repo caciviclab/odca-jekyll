@@ -44,3 +44,10 @@ a {
     font-weight: lighter;
   }
 }
+
+.ballot-nav__measure-title {
+  display: block;
+  color: $subheading-color;
+  font-style: italic;
+  font-size: $small-font-size;
+}
