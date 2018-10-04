@@ -11,6 +11,7 @@ function dataDir(...pathParts) {
 
 gulp.task('clean', function () {
   return del([
+    '_ballots',
     '_elections',
     '_candidates',
     '_office_elections',
@@ -22,6 +23,11 @@ gulp.task('clean', function () {
     '_data/referendum_supporting',
     '_data/stats.json',
   ]);
+});
+
+gulp.task('pull:ballots', function () {
+  return gulp.src(dataDir('_ballots', '**', '*.md'))
+    .pipe(gulp.dest('_ballots'));
 });
 
 gulp.task('pull:elections', function () {
@@ -85,6 +91,7 @@ gulp.task('pull:totals', function () {
 
 
 gulp.task('pull', gulp.parallel(
+  'pull:ballots',
   'pull:elections',
   'pull:candidates',
   'pull:candidates-finance',
