@@ -12,7 +12,10 @@
           {% for ballot_item in referendums %}
               {% assign referendum = site.referendums | where: "path", ballot_item | first %}
               <p {% if page.url == referendum.url %}class="current-page"{% endif %}>
-                 <a href="{{ referendum.url | prepend: site.baseurl }}">{% if referendum.number %}{{ referendum.number }} {% endif %}{{ referendum.title | escape}}</a>
+                <a href="{{ referendum.url | prepend: site.baseurl }}">
+                  Measure {% if referendum.number %}{{ referendum.number }} {% endif %}
+                  <span class="ballot-nav__measure-title">{{ referendum.title | escape}}</span>
+                </a>
               </p>
           {% endfor %}
         </div>
