@@ -40,6 +40,9 @@ collections:
   committees:
     output: true
     permalink: /committee/:path/
+  elections:
+    output: true
+    permalink: /election/:path/
   localities:
     output: true
     permalink: /:path/
