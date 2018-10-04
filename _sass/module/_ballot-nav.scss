@@ -24,11 +24,15 @@ $ballot-nav-border: 2px $color-grey-4-5 solid;
   }
 
   p {
-    padding: $spacing-base;
     margin: auto;
   }
 
-  p:hover {
+  a {
+    display: block;
+    padding: $spacing-base;
+  }
+
+  a:hover {
     background-color: $color-gold;
   }
 }
@@ -43,4 +47,11 @@ a {
   h4 {
     font-weight: lighter;
   }
+}
+
+.ballot-nav__measure-title {
+  display: block;
+  color: $subheading-color;
+  font-style: italic;
+  font-size: $small-font-size;
 }
