@@ -9,6 +9,7 @@ _data/referendum_supporting
 _data/stats.json
 _data/totals.json
 .DS_Store
+_includes/svg
 .jekyll-cache
 .jekyll-metadata
 node_modules

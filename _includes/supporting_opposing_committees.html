@@ -5,8 +5,20 @@ First we calculate the maximum for the money bar.
 {% for committee in include.committees %}
   {% assign max = max | plus: committee.amount %}
 {% endfor %}
+
 {% for committee in include.committees %}
-  <div><a href="{{ site.baseurl }}/committee/{{ committee.id }}/">{{ committee.name }}</a></div>
-  <div>{{ committee.amount | dollars }}</div>
-  {% include money-bar.html value=committee.amount color=include.color max=max %}
+  {% comment %}
+  We're dealing with two different object shapes, a committee from collection, or
+  a committee from the referendum supporting/opposing organzation list. One has
+  `filer_id`, the other `id`.
+  {% endcomment %}
+  {% assign filer_id = committee.filer_id | default: committee.id %}
+
+  <div><a href="{{ site.baseurl }}/committee/{{ filer_id }}/">{{ committee.name }}</a></div>
+  {% if committee.amount > 0 %}
+    <div>{{ committee.amount | dollars }}</div>
+    {% include money-bar.html value=committee.amount color=include.color max=max %}
+  {% else %}
+    <div class="note">No expenditures have been reported by this committee</div>
+  {% endif %}
 {% endfor %}

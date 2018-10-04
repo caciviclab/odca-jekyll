@@ -29,6 +29,7 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
 - [Bundler](https://bundler.io/) gem
 - [Make](https://www.gnu.org/software/make/)
 - [Node 8.9+](https://nodejs.org/)
+- [ImageMagick](https://www.imagemagick.org/)
 
 
 ## Setup
@@ -118,7 +119,7 @@ Code is licensed under the GNU Affero General Public License.
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ```
 
-Font Awesome Icons located under `assets/fontawesome/` available under the
+[Font Awesome Icons](https://fontawesome.com/) located under `assets/fontawesome/` available under the
 [CC-BY-4.0 License](https://creativecommons.org/licenses/by/4.0/).
 
 
