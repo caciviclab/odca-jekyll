@@ -26,6 +26,14 @@ $breakpoint--s1: $grid--small;
   margin-right: $spacing;
   vertical-align: top;
 
+  p {
+    margin: 0;
+  }
+
+  p + p {
+    margin-top: $spacing-base;
+  }
+
   @include media($breakpoint--s1) {
     display: inline-block;
     margin-right: 0;
