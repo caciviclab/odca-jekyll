@@ -15,13 +15,11 @@
   }
 }
 
-.l-section__content {
-  .uppercase {
-    font-weight: $font-weight-normal;
-  }
+.contribution__breakdown__title {
+  padding-left: 1em;  
 }
 
-.section-header {
+.contribution__support_oppose {
   div {
     font-weight: $font-weight-normal;
   }

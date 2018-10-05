@@ -48,7 +48,7 @@ Beware: these objects are shaped differently (they have different properties).
 </header>
 <section class="l-section referendum__summary">
   {% if referendum.content %}
-    <h3 class="color-grey-2 uppercase">Summary</h3>
+    <h3 class="contribution__breakdown__title color-grey-2">Summary</h3>
     {{ referendum.content }}
   {% endif %}
 </section>
@@ -57,18 +57,18 @@ Beware: these objects are shaped differently (they have different properties).
 <!-- supporting money column -->
 <section class="l-section">
   <div class="l-section__content">
-    <h2 class="section-header uppercase color-grey-2">Contributions by region</h2>
+    <h2 class="contribution__breakdown__title uppercase color-grey-2">Contributions by region</h2>
   </div>
   <div class="l-section__content l-section__content--half">
     <center>
-      <h2 class="section-header">Contributions to Support
+      <h2 class="contribution__support_oppose">Contributions to Support
         <div>{{ supporting.total_contributions | dollars }}</div>
       </h2>
     </center>
   </div>
   <div class="l-section__content l-section__content--half">
     <center>
-      <h2 class="section-header">Contributions to Oppose
+      <h2 class="contribution__support_oppose">Contributions to Oppose
         <div>{{ opposing.total_contributions | dollars }}</div>
       </h2>
     </center>
@@ -88,7 +88,7 @@ Beware: these objects are shaped differently (they have different properties).
 </section>
 <section class="l-section">
   <div class="l-section__content">
-    <h2>Contributions by type</h2>
+    <h2 class="contribution__breakdown__title">Contributions by type</h2>
   </div>
   <div class="l-section__content l-section__content--half">
     <div class="subheading">Supporting contributors</div>
@@ -103,7 +103,7 @@ Beware: these objects are shaped differently (they have different properties).
 <!-- supporting contributions/expenditures column -->
 <section class="l-section">
   <div class="l-section__content">
-    <h2>Spending breakdown by committee</h2>
+    <h2 class="contribution__breakdown__title">Spending breakdown by committee</h2>
   </div>
   <div class="l-section__content l-section__content--half">
     <div class="subheading">In support of the measure</div>
