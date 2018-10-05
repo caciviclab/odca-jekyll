@@ -31,15 +31,15 @@ google_analytics: UA-50973042-1
 
 
 collections:
-  ballots:
-    output: true
-    permalink: /election/:path/
   candidates:
     output: true
     permalink: /candidate/:path/
   committees:
     output: true
     permalink: /committee/:path/
+  elections:
+    output: true
+    permalink: /election/:path/
   localities:
     output: true
     permalink: /:path/
@@ -56,7 +56,7 @@ defaults:
     values:
       layout: page
   - scope:
-      type: ballots
+      type: elections
     values:
       layout: ballot
   - scope:
