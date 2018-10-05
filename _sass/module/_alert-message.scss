@@ -28,10 +28,10 @@ $breakpoint--s1: $grid--small;
 
   p {
     margin: 0;
-  }
 
-  p + p {
-    margin-top: $spacing-base;
+    + p {
+      margin-top: $spacing-base;
+    }
   }
 
   @include media($breakpoint--s1) {
