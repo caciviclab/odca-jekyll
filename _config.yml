@@ -59,7 +59,7 @@ defaults:
     values:
       layout: page
   - scope:
-      type: ballots
+      type: elections
     values:
       layout: ballot
   - scope:

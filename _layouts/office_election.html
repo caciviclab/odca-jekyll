@@ -2,7 +2,7 @@
 layout: default
 ---
 {% assign office_election = page %}
-{% assign ballot = site.ballots | where: "path", office_election.ballot | first %}
+{% assign ballot = site.elections | where: "path", office_election.election | first %}
 {% assign locality = site.localities | where: "locality_id", ballot.locality | first %}
 {% assign election_day = ballot.election | date: '%Y-%m-%d' %}
 
