@@ -31,9 +31,6 @@ google_analytics: UA-50973042-1
 
 
 collections:
-  ballots:
-    output: true
-    permalink: /election/:path/
   candidates:
     output: true
     permalink: /candidate/:path/
