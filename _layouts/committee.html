@@ -17,6 +17,13 @@ layout: default
       Total money raised to date:
       <span class="money">{{ finance.total_contributions | dollars }}</span>
     </div>
+    {% if committee.data_warning %}
+      <div class="grid grid--full grid--narrow grid--left">
+        <div class="grid-col-12">
+          {% include alert-message.html message=committee.data_warning %}
+        </div>
+      </div>
+    {% endif %}
     {% if contributions == empty %}
       <p>
         Sorry, there is no contribution data available for this committee. Note

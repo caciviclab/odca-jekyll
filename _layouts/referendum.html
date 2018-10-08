@@ -47,6 +47,9 @@ Beware: these objects are shaped differently (they have different properties).
   {% endif %}
 </header>
 <section class="l-section referendum__summary">
+  {% if referendum.data_warning %}
+    {% include alert-message.html message=referendum.data_warning %}
+  {% endif %}
   {% if referendum.content %}
     <h3>Summary</h3>
     {{ referendum.content }}
