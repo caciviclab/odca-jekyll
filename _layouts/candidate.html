@@ -92,7 +92,7 @@ layout: default
     {% if opposing_committees and opposing_committees != empty %}
     <section class="l-section">
       <div class="l-section__content">
-        <h2 class="candidate_money-heading">Committees opposing this candidate</h2>
+        <h2 class="candidate_money-heading">Committees opposing candidate</h2>
         {% for committee in opposing_committees %}
         <p><a href="{{ site.baseurl }}/committee/{{ committee.filer_id }}/">{{ committee.name | smartify | escape }}</a></p>
         {% endfor %}
