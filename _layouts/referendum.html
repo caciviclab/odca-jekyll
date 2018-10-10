@@ -47,13 +47,15 @@ Beware: these objects are shaped differently (they have different properties).
   {% endif %}
 </header>
 <section class="l-section referendum__summary">
-  {% if referendum.data_warning %}
-    {% include alert-message.html message=referendum.data_warning %}
-  {% endif %}
-  {% if referendum.content %}
-    <h3>Summary</h3>
-    {{ referendum.content }}
-  {% endif %}
+  <div class="l-section__content">
+    {% if referendum.data_warning %}
+      {% include alert-message.html message=referendum.data_warning %}
+    {% endif %}
+    {% if referendum.content %}
+      <h3>Summary</h3>
+      {{ referendum.content }}
+    {% endif %}
+</div>
 </section>
 
 {% if supporting.total_contributions > 0 or opposing.total_contributions > 0 %}
