@@ -55,25 +55,25 @@ Beware: these objects are shaped differently (they have different properties).
       <h3>Summary</h3>
       {{ referendum.content }}
     {% endif %}
-</div>
+  </div>
 </section>
 
 {% if supporting.total_contributions > 0 or opposing.total_contributions > 0 %}
 <!-- supporting money column -->
 <section class="l-section">
   <div class="l-section__content">
-    <h2 class="section-header referendum__region">Contributions by region</h2>
+    <h2 class="color-grey-2">Contributions by region</h2>
   </div>
   <div class="l-section__content l-section__content--half">
     <center>
-      <h2 class="section-header">Contributions to Support
+      <h2 class="contribution__support_oppose">Contributions to Support
         <div>{{ supporting.total_contributions | dollars }}</div>
       </h2>
     </center>
   </div>
   <div class="l-section__content l-section__content--half">
     <center>
-      <h2 class="section-header">Contributions to Oppose
+      <h2 class="contribution__support_oppose">Contributions to Oppose
         <div>{{ opposing.total_contributions | dollars }}</div>
       </h2>
     </center>
