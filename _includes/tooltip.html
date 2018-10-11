@@ -1,0 +1,7 @@
+{% assign message = include.message %}
+{% assign alt = include.alt %}
+
+<span class="hover-info-container"><img src="{{ '/assets/images/icon_more_info.png' | relative_url }}"
+    alt="{{ alt }}" />
+    <span class="hover-info">{{ message }}</span>
+</span>
