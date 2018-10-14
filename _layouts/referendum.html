@@ -40,9 +40,9 @@ Beware: these objects are shaped differently (they have different properties).
 <header>
   {% if referendum.number %}
     <h1>Measure {{ referendum.number }}</h1>
-    <h2>{{ referendum.title | escape }}</h2>
+    <h2>{{ referendum.title | smartify | escape }}</h2>
   {% else %}
-    <h1>{{ referendum.title | escape }}</h1>
+    <h1>{{ referendum.title | smartify | escape }}</h1>
     <div><p><i>No measure number has been assigned.</i></p></div>
   {% endif %}
 </header>
