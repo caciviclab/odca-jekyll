@@ -98,55 +98,13 @@ layout: default
       <!-- supporting contributions/expenditures column -->
         <div class="subheading">In support of the candidate</div>
         
-        {% comment %}
-          This loop is mostly cribbed from _includes/supporting_opposing_committees.html
-          Ideally we would use that include here
-            but the objects are shaped differently (they have different properties)
-        {% endcomment %}
-
-        {% for committee in supporting_committees %}
-
-        {% assign filer_id = site.committees.filer_id | where: "name", committee.Filer_NamL %}
-
-        <div><a href="{{ site.baseurl }}/committee/{{ committee.Filer_ID }}/">{{ committee.Filer_NamL }}</a></div>
-        {% if committee.Total > 0 %}
-        <div>{{ committee.Total | dollars }}</div>
-
-        {% comment %}
-          The money-bar takes an object of a different shape than finance.supporting_money.support_list
-          This will need some work to work properly with the candidate data
-        {% endcomment %}
-        {% include money-bar.html value=committee.Total color=include.color max=max %}
-        {% else %}
-        <div class="note">No expenditures have been reported by this committee</div>
-        {% endif %}
-        {% endfor %}
-
-      </div>
+        {% include supporting_opposing_committees.html committees=supporting_committees color="green" %}
 
     <!-- opposing contributions/expenditures column -->
       <div class="l-section__content l-section__content--half">
         <div class="subheading">In opposition of the candidate</div>
 
-        {% comment %}
-          see above comment about _inclues/suppporting_opposing_committees
-        {% endcomment %}
-        
-        {% for committee in opposing_committees %}
-
-        <div><a href="{{ site.baseurl }}/committee/{{ committee.Filer_ID }}/">{{ committee.Filer_NamL }}</a></div>
-        {% if committee.Total > 0 %}
-        <div>{{ committee.Total | dollars }}</div>
-
-        {% comment %}
-          The money-bar takes an object of a different shape than finance.supporting_money.support_list
-          This will need some work to work properly with the candidate data
-        {% endcomment %}
-        {% include money-bar.html value=committee.Total color=include.color max=max %}
-        {% else %}
-        <div class="note">No expenditures have been reported by this committee</div>
-        {% endif %}
-        {% endfor %}
+        {% include supporting_opposing_committees.html committees=opposing_committees color="red" %}
 
       </div>
     </section>
