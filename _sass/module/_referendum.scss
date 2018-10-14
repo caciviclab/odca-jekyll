@@ -6,6 +6,11 @@
 }
 
 .referendum__summary {
+  .l-section__content {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   h3 {
     margin-top: $spacing-base * 2;
   }
