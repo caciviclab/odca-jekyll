@@ -90,7 +90,7 @@ layout: default
       </div>
     </section>
     {% endif %}
-
+    {% if supporting_committees != empty or opposing_committees != empty %}
     <section class="l-section">
       <div class="l-section__content">
         <h2>Spending breakdown by committee</h2>
@@ -98,20 +98,15 @@ layout: default
       <div class="l-section__content l-section__content--half">
       <!-- supporting contributions/expenditures column -->
         <div class="subheading">In support of the candidate</div>
-        
         {% include supporting_opposing_committees.html committees=supporting_committees color="green" %}
-
         </div>
-
     <!-- opposing contributions/expenditures column -->
       <div class="l-section__content l-section__content--half">
         <div class="subheading">In opposition of the candidate</div>
-
         {% include supporting_opposing_committees.html committees=opposing_committees color="red" %}
-
       </div>
     </section>
-
+    {% endif %}
   </div>
 </div>
 {% endcapture %}
