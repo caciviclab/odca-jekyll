@@ -35,14 +35,12 @@ First we calculate the maximum for the money bar.
     `Filer_NamL`
   {% endcomment %}
 
-  {% if committee.filer_id %}
-    {% assign filer_id = "committee.filer_id" %}
-  {% elsif committee.id %}
-    {% assign filer_id = "committee.id" %}
+  {% if committee.id %}
+    {% assign filer_id = committee.id %}
   {% elsif committee.Filer_ID %}
     {% assign filer_id = committee.Filer_ID %}
   {% else %}
-    {% assign filer_id = "foo_bar" %}
+    {% assign filer_id = committee.filer_id %}
   {% endif %}
   {% assign money = committee.Total | default: committee.amount %}
   {% assign name = committee.Filer_NamL | default: committee.name %}
