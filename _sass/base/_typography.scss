@@ -28,31 +28,32 @@ $heading-font-family: $font-family-sans-serif;
 @mixin heading($size) {
   color: $heading-color;
   line-height: $heading-line-height;
+  font-family: $font-family-sans-serif;
 
   @if $size == 'h1' {
-    font-family: $font-family-sans-serif;
     font-size: $h1-font-size;
+    font-weight: $font-weight-normal;
   }
   @if $size == 'h2' {
-    font-family: $font-family-sans-serif;
     font-size: $h2-font-size;
+    font-weight: $font-weight-light;
   }
   @if $size == 'h3' {
     color: $heading-color--light;
-    font-family: $font-family-sans-serif;
     font-size: $h3-font-size;
+    font-weight: $font-weight-normal;
   }
   @if $size == 'h4' {
-    font-family: $font-family-sans-serif;
     font-size: $h4-font-size;
+    font-weight: $font-weight-light;
   }
   @if $size == 'h5' {
-    font-family: $font-family-sans-serif;
     font-size: $h5-font-size;
+    font-weight: $font-weight-light;
   }
   @if $size == 'h6' {
-    font-family: $font-family-sans-serif;
     font-size: $h6-font-size;
+    font-weight: $font-weight-light;
   }
 }
 
@@ -90,6 +91,11 @@ h6 {
 
 a {
   color: $link-color;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .subheading {
