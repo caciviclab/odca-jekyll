@@ -19,6 +19,9 @@
   display: inline-block;
   height: 2.25rem;
   width: 4rem;
+  p {
+    margin: 0px;
+  }
 }
 
 .hover-info-container:hover .hover-info {
