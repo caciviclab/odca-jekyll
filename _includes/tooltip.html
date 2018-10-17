@@ -1,0 +1,6 @@
+{% assign message = include.message %}
+
+<span class="hover-info-container"><img src="{{ '/assets/images/icon_more_info.png' | relative_url }}"
+    alt="A question mark in circle indicating additional information" />
+    <span class="hover-info">{{ message | markdownify }}</span>
+</span>

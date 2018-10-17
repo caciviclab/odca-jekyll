@@ -8,6 +8,16 @@
     {% endif %}
     {% if finance.total_contributions > 0 or finance.total_expenditures > 0 %}
     <div class="candidate__summary candidate__summary--contributions">Contributions: <span class="money">{{ finance.total_contributions | dollars }}</span></div>
+    {% if candidate.public_funding_received %}
+    <div class="candidate__summary candidate__summary--public-financing">
+      Public financing received:
+      {% capture tooltip_message -%}
+      Eligible City Council candidates may apply for public funds to reimburse certain campaign expenses. Learn more from the <a href="https://www.oaklandca.gov/topics/limited-public-financing-program" target="_blank">Public Ethics Commission's Public Financing Program</a>.
+      {%- endcapture %}
+      {% include tooltip.html message=tooltip_message %}
+      <span class="money">{{ candidate.public_funding_received | dollars }}</span>
+    </div>
+    {% endif %}
     <div class="candidate__summary candidate__summary--expenditures">Expenditures: <span class="money">{{ finance.total_expenditures | dollars }}</span></div>
     {% if finance.total_loans_received > 0 %}
     <div class="candidate__summary candidate__summary--loans">Loans: <span class="money">{{ finance.total_loans_received | dollars }}</span></div>
@@ -26,22 +36,22 @@
     {% if expenditures_against > 0 %}
     <div class="candidate__expenditures">
       Independent Expenditures Opposing Candidate <span class="money">{{ expenditures_against | dollars }}</span>
-      <span class="hover-info-container"><img src="{{ '/assets/images/icon_more_info.png' | relative_url }}"
-        alt="Independent expenditures - more information" />
-        <span class="hover-info">Spending by third parties that advocates the election or defeat of a candidate and is not made in coordination with a candidate or campaign committee is termed an independent expenditure. To learn more,
-          <a href="{{ site.baseurl }}/faq/">see the FAQ </a>.</span>
-      </span>
+      {% capture tooltip_message -%}
+      Spending by third parties that advocates the election or defeat of a candidate and is not made in coordination with a candidate or campaign committee is termed an independent expenditure. To learn more,
+      <a href="{{ site.baseurl }}/faq/" target="_blank">see the FAQ </a>.
+      {%- endcapture %}
+      {% include tooltip.html message=tooltip_message %}
     </div>
     {% endif %}
     {% if independent_expenditures_for > 0 %}
     <div class="candidate__expenditures">
       Independent Expenditures Supporting Candidate <span class="money">{{ independent_expenditures_for | dollars }}</span>
       {% if expenditures_against <= 0 %}
-      <span class="hover-info-container"><img src="{{ '/assets/images/icon_more_info.png' | relative_url }}"
-        alt="Independent expenditures - more information" />
-        <span class="hover-info">Spending by third parties that advocates the election or defeat of a candidate and is not made in coordination with a candidate or campaign committee is termed an independent expenditure. To learn more,
-          <a href="{{ site.baseurl }}/faq/">see the FAQ </a>.</span>
-      </span>
+      {% capture tooltip_message -%}
+      Spending by third parties that advocates the election or defeat of a candidate and is not made in coordination with a candidate or campaign committee is termed an independent expenditure. To learn more,
+      <a href="{{ site.baseurl }}/faq/" target="_blank">see the FAQ </a>.
+      {%- endcapture %}
+      {% include tooltip.html message=tooltip_message %}
       {% endif %}
     </div>
     {% endif %}
