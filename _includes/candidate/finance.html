@@ -8,6 +8,16 @@
     {% endif %}
     {% if finance.total_contributions > 0 or finance.total_expenditures > 0 %}
     <div class="candidate__summary candidate__summary--contributions">Contributions: <span class="money">{{ finance.total_contributions | dollars }}</span></div>
+    {% if candidate.public_funding_received %}
+    <div class="candidate__summary candidate__summary--public-financing">
+      Public financing received:
+      {% capture tooltip_message -%}
+      Eligible City Council candidates may apply for public funds to reimburse certain campaign expenses. Learn more from the <a href="https://www.oaklandca.gov/topics/limited-public-financing-program" target="_blank">Public Ethics Commission's Public Financing Program</a>.
+      {%- endcapture %}
+      {% include tooltip.html message=tooltip_message %}
+      <span class="money">{{ candidate.public_funding_received | dollars }}</span>
+    </div>
+    {% endif %}
     <div class="candidate__summary candidate__summary--expenditures">Expenditures: <span class="money">{{ finance.total_expenditures | dollars }}</span></div>
     {% if finance.total_loans_received > 0 %}
     <div class="candidate__summary candidate__summary--loans">Loans: <span class="money">{{ finance.total_loans_received | dollars }}</span></div>

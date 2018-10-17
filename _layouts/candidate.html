@@ -46,11 +46,11 @@ layout: default
               This candidate has agreed to voluntary spending limits.
               The maximum contribution this candidate can accept is $800 from any individual, business entity,
               committee or other organization and $1,600 from a qualified broad-based committee.
-              <span class="hover-info-container"><img src="{{ '/assets/images/icon_more_info.png' | relative_url }}"
-                  alt="Voluntary spending limits - more information" />
-                  <span class="hover-info">For more on Oakland contribution limits and campaign rules, see the <a href="https://www.oaklandca.gov/resources/oakland-campaign-contribution-limits">
-                    Public Ethics Commission Candidate Resources page</a>.</span>
-              </span>
+              {% capture tooltip_message -%}
+              For more on Oakland contribution limits and campaign rules, see the <a href="https://www.oaklandca.gov/resources/oakland-campaign-contribution-limits" target="_blank">
+              Public Ethics Commission Candidate Resources page</a>.
+              {%- endcapture %}
+              {% include tooltip.html message=tooltip_message %}
             </div>
             {% endif %}
             {% if candidate.website_url %}
