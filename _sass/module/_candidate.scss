@@ -61,7 +61,8 @@ $candidate-photo-width: 10rem;
   }
 }
 
-.candidate__summary--contributions, .candidate__summary--public-financing {
+.candidate__summary--contributions,
+.candidate__summary--public-financing {
   color: $color-evergreen;
 
   .money {
