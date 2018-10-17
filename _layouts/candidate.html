@@ -92,34 +92,34 @@ layout: default
       </div>
     </section>
     {% endif %}
-{% if expenditures_opposing > 0 or expenditures_supporting > 0 %}
-<section class="l-section">
-  <div class="l-section__content">
-    {% if expenditures_opposing > 0 %}
-    <div class="candidate__expenditures">
-      Independent expenditures opposing candidate <span class="money">{{ expenditures_opposing | dollars }}</span>
-      <span class="hover-info-container"><img src="{{ '/assets/images/icon_more_info.png' | relative_url }}"
-        alt="Independent expenditures - more information" />
-        <span class="hover-info">Spending by third parties that advocates the election or defeat of a candidate and is not made in coordination with a candidate or campaign committee is termed an independent expenditure. To learn more,
-          <a href="{{ site.baseurl }}/faq/">see the FAQ </a>.</span>
-      </span>
-    </div>
+    {% if expenditures_opposing > 0 or expenditures_supporting > 0 %}
+    <section class="l-section">
+      <div class="l-section__content">
+        {% if expenditures_opposing > 0 %}
+        <div class="candidate__expenditures">
+          Independent expenditures opposing candidate <span class="money">{{ expenditures_opposing | dollars }}</span>
+          <span class="hover-info-container"><img src="{{ '/assets/images/icon_more_info.png' | relative_url }}"
+            alt="Independent expenditures - more information" />
+            <span class="hover-info">Spending by third parties that advocates the election or defeat of a candidate and is not made in coordination with a candidate or campaign committee is termed an independent expenditure. To learn more,
+              <a href="{{ site.baseurl }}/faq/">see the FAQ </a>.</span>
+          </span>
+        </div>
+        {% endif %}
+        {% if expenditures_supporting > 0 %}
+        <div class="candidate__expenditures">
+          Independent expenditures supporting candidate <span class="money">{{ expenditures_supporting | dollars }}</span>
+          {% if expenditures_opposing <= 0 %}
+          <span class="hover-info-container"><img src="{{ '/assets/images/icon_more_info.png' | relative_url }}"
+            alt="Independent expenditures - more information" />
+            <span class="hover-info">Spending by third parties that advocates the election or defeat of a candidate and is not made in coordination with a candidate or campaign committee is termed an independent expenditure. To learn more,
+              <a href="{{ site.baseurl }}/faq/">see the FAQ </a>.</span>
+          </span>
+          {% endif %}
+        </div>
+        {% endif %}
+      </div>
+    </section>
     {% endif %}
-    {% if expenditures_supporting > 0 %}
-    <div class="candidate__expenditures">
-      Independent expenditures supporting candidate <span class="money">{{ expenditures_supporting | dollars }}</span>
-      {% if expenditures_opposing <= 0 %}
-      <span class="hover-info-container"><img src="{{ '/assets/images/icon_more_info.png' | relative_url }}"
-        alt="Independent expenditures - more information" />
-        <span class="hover-info">Spending by third parties that advocates the election or defeat of a candidate and is not made in coordination with a candidate or campaign committee is termed an independent expenditure. To learn more,
-          <a href="{{ site.baseurl }}/faq/">see the FAQ </a>.</span>
-      </span>
-      {% endif %}
-    </div>
-    {% endif %}
-  </div>
-</section>
-{% endif %}
     {% if supporting_committees != empty or opposing_committees != empty %}
     <section class="l-section">
       <div class="l-section__content">
