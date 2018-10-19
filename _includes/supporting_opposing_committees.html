@@ -1,5 +1,5 @@
 {% comment %}
-data:
+committee data expected this shape:
   committees = [
     {
       amount
@@ -21,14 +21,14 @@ First we calculate the maximum for the money bar.
 {% for committee in include.committees %}
   {% comment %}
   We're dealing with three different object shapes
-    1. a committee from collection
+    1. a committee from committees collection
     and one of the following:
     2. a committee from the referendum supporting/opposing organization list.
     3. a committee from the candidate support_list/opposition_list organization list
   committee collection has:
     `filer_id`
   referendum support/oppose org list has:
-    the other `id`
+    `id`
   candidate support/oppose org list has:
     `Filer_ID`
     `Total`
