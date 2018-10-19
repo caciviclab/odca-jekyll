@@ -1,6 +1,7 @@
 {% assign locality = include.locality %}
 {% assign referendums = include.ballot.referendums %}
 {% assign office_elections = include.ballot.office_elections %}
+{% assign tabIndxVar = 4 %}
 
 <nav class="ballot-nav">
   <section class="l-section">
@@ -9,9 +10,10 @@
         <div class="ballot-nav__group">
           <h4>{% include referendum_measure_heading.html referendum_measure_display=locality.referendum_measure_display %}</h4>
           {% for ballot_item in referendums %}
+              {% assign tabIndxVar = tabIndxVar | plus:1 %}
               {% assign referendum = site.referendums | where: "path", ballot_item | first %}
               <p {% if page.url == referendum.url %}class="current-page"{% endif %}>
-                <a href="{{ referendum.url | prepend: site.baseurl }}">
+                <a href="{{ referendum.url | prepend: site.baseurl }}" tabindex="{{ tabIndxVar }}">
                   Measure {% if referendum.number %}{{ referendum.number }} {% endif %}
                   <span class="ballot-nav__measure-title">{{ referendum.title | smartify | escape }}</span>
                 </a>
@@ -21,14 +23,16 @@
       {% endif %}
       {% if office_elections and office_elections != empty %}
         {% for ballot_item in office_elections %}
+          {% assign tabIndxVar = tabIndxVar | plus:1 %}
           <div class="ballot-nav__group">
             {% if ballot_item.label %}
               <h4>{{ ballot_item.label | escape }}</h4>
             {% endif %}
             {% for office_election_path in ballot_item.items %}
+            {% assign tabIndxVar = tabIndxVar | plus:1 %}
               {% assign office_election = site.office_elections | where: "path", office_election_path | first %}
               <p {% if page.url == office_election.url %}class="current-page"{% endif %}>
-                <a href="{{ office_election.url | prepend: site.baseurl }}">{{ office_election.title }}</a>
+                <a href="{{ office_election.url | prepend: site.baseurl }}" tabindex="{{ tabIndxVar}}">{{ office_election.title }}</a>
               </p>
             {% endfor %}
           </div>
