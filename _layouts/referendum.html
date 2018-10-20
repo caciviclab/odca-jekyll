@@ -113,6 +113,7 @@ Beware: these objects are shaped differently (they have different properties).
 {% endif %}
 
 <!-- supporting contributions/expenditures column -->
+{% if supporting_organizations != empty or opposing_organizations != empty %}
 <section class="l-section">
   <div class="l-section__content">
     <h2>Spending breakdown by committee
@@ -133,6 +134,7 @@ Beware: these objects are shaped differently (they have different properties).
     {% include supporting_opposing_committees.html committees=opposing_organizations color="red" %}
   </div>
 </section>
+{% endif %}
 
 {% endcapture %}
 {% include ballot-layout.html content=body ballot=ballot locality=locality %}
