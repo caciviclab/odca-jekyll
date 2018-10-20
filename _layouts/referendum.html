@@ -104,6 +104,13 @@ Beware: these objects are shaped differently (they have different properties).
     {% include contributions_by_type.html supporting_opposing=opposing color="red" %}
   </div>
 </section>
+{% else %}
+<section class="l-section">
+  <div class="l-section__content">
+    <p><i>No filings have been reported for this ballot measure.</i></p>
+  </div>
+</section>
+{% endif %}
 
 <!-- supporting contributions/expenditures column -->
 <section class="l-section">
@@ -126,13 +133,6 @@ Beware: these objects are shaped differently (they have different properties).
     {% include supporting_opposing_committees.html committees=opposing_organizations color="red" %}
   </div>
 </section>
-{% else %}
-<section class="l-section">
-  <div class="l-section__content">
-    <p><i>No filings have been reported for this ballot measure.</i></p>
-  </div>
-</section>
-{% endif %}
 
 {% endcapture %}
 {% include ballot-layout.html content=body ballot=ballot locality=locality %}
