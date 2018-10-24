@@ -113,8 +113,8 @@ Beware: these objects are shaped differently (they have different properties).
 {% endif %}
 
 <!-- supporting contributions/expenditures column -->
-{% if supporting_organizations != empty or opposing_organizations != empty %}
 <section class="l-section">
+{% if supporting_organizations != empty or opposing_organizations != empty %}
   <div class="l-section__content">
     <h2>Spending breakdown by committee
     {% capture tooltip_message -%}
@@ -133,8 +133,12 @@ Beware: these objects are shaped differently (they have different properties).
     <div class="subheading">In opposition of the measure</div>
     {% include supporting_opposing_committees.html committees=opposing_organizations color="red" %}
   </div>
-</section>
+{% else %}
+  <div class="l-section__content">
+    <p><i>No independent expenditures have been filed for this ballot measure.</i></p>
+  </div>
 {% endif %}
+</section>
 
 {% endcapture %}
 {% include ballot-layout.html content=body ballot=ballot locality=locality %}
