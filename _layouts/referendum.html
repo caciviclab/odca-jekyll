@@ -108,7 +108,12 @@ Beware: these objects are shaped differently (they have different properties).
 <!-- supporting contributions/expenditures column -->
 <section class="l-section">
   <div class="l-section__content">
-    <h2>Spending breakdown by committee</h2>
+    <h2>Spending breakdown by committee
+    {% capture tooltip_message -%}
+    For more on how independent expenditures are calculated, <a href="{{ site.baseurl }}/faq/#how-are-contributions-calculated-for-committees-that-support-or-oppose-multiple-measures">see the FAQ</a>.
+    {%- endcapture %}
+    {% include tooltip.html message=tooltip_message %}
+    </h2>
   </div>
   <div class="l-section__content l-section__content--half">
     <div class="subheading">In support of the measure</div>
