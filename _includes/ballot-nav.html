@@ -15,7 +15,7 @@
               <p {% if page.url == referendum.url %}class="current-page"{% endif %}>
                 <a href="{{ referendum.url | prepend: site.baseurl }}" tabindex="{{ tabIndxVar }}">
                   Measure {% if referendum.number %}{{ referendum.number }} {% endif %}
-                  <span class="ballot-nav__measure-title">{{ referendum.title | smartify | escape }}</span>
+                  <span class="ballot-nav__measure-title">{{ referendum.title | smartify }}</span>
                 </a>
               </p>
           {% endfor %}
