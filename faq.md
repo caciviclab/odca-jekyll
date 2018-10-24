@@ -9,6 +9,7 @@ title: Frequently asked questions
 - [How do you calculate the proportion raised within Oakland?](#how-do-you-calculate-the-proportion-raised-within-oakland)
 - [Why don't the total contributions presented match the numbers in the lists of itemized contributions by location and category?](#why-dont-the-total-contributions-presented-match-the-numbers-in-the-lists-of-itemized-contributions-by-location-and-category)
 - [What is an Independent Expenditure?](#what-is-an-independent-expenditure)
+- [How are contributions calculated for committees that support or oppose multiple measures?](#how-are-contributions-calculated-for-committees-that-support-or-oppose-multiple-measures)
 - [What other types of committees must report their campaign-related spending?](#what-other-types-of-committees-must-report-their-campaign-related-spending)
 - [How were ballot measure summaries prepared?](#how-were-ballot-measure-summaries-prepared)
 - [Does Open Disclosure endorse third-party content?](#does-open-disclosure-endorse-third-party-content)
@@ -68,6 +69,10 @@ The total contributions and the itemized lists are calculated using different da
 ## What is an Independent Expenditure?
 
 Political spending that expressly advocates the election or defeat of a candidate or ballot measure but is not made in consultation, cooperation, or coordination with the candidate or campaign committee is termed an [independent expenditure](http://www.fppc.ca.gov/content/dam/fppc/NS-Documents/TAD/Campaign%20Manuals/Manual_4/Manual_4_Ch_11_IE_Reporting.pdf). Under California law, any entity that makes independent expenditures of $1,000 or more per year to California candidates or ballot measures is subject to California campaign finance disclosure reporting requirements.
+
+## How are contributions calculated for committees that support or oppose multiple measures?
+
+Data reported by committees formed to support or oppose multiple ballot measures is displayed in total and may include contributions and expenses to support or oppose other ballot measures. In cases where more than one ballot measure committee is formed to support or oppose a ballot measure, data may include transfers between committees. To view campaign statements visit [Oakland’s public campaign finance portal](https://public.netfile.com/pub2/Default.aspx?aid=COAK)
 
 ## What other types of committees must report their campaign-related spending?
 

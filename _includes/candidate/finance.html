@@ -28,36 +28,6 @@
     {% endif %}
   </div>
 </section>
-{% assign expenditures_against = finance.opposing_money.opposing_expenditures %}
-{% assign independent_expenditures_for = finance.supporting_money.total_supporting_independent %}
-{% if expenditures_against > 0 or independent_expenditures_for > 0 %}
-<section class="l-section">
-  <div class="l-section__content">
-    {% if expenditures_against > 0 %}
-    <div class="candidate__expenditures">
-      Independent Expenditures Opposing Candidate <span class="money">{{ expenditures_against | dollars }}</span>
-      {% capture tooltip_message -%}
-      Spending by third parties that advocates the election or defeat of a candidate and is not made in coordination with a candidate or campaign committee is termed an independent expenditure. To learn more,
-      <a href="{{ site.baseurl }}/faq/" target="_blank">see the FAQ </a>.
-      {%- endcapture %}
-      {% include tooltip.html message=tooltip_message %}
-    </div>
-    {% endif %}
-    {% if independent_expenditures_for > 0 %}
-    <div class="candidate__expenditures">
-      Independent Expenditures Supporting Candidate <span class="money">{{ independent_expenditures_for | dollars }}</span>
-      {% if expenditures_against <= 0 %}
-      {% capture tooltip_message -%}
-      Spending by third parties that advocates the election or defeat of a candidate and is not made in coordination with a candidate or campaign committee is termed an independent expenditure. To learn more,
-      <a href="{{ site.baseurl }}/faq/" target="_blank">see the FAQ </a>.
-      {%- endcapture %}
-      {% include tooltip.html message=tooltip_message %}
-      {% endif %}
-    </div>
-    {% endif %}
-  </div>
-</section>
-{% endif %}
 {% if finance.total_contributions > 0 or finance.total_expenditures > 0 %}
 {% assign money_bar_max = finance.total_contributions | plus: finance.total_expenditures %}
 <section class="l-section">
