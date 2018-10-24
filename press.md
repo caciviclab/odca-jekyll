@@ -10,6 +10,9 @@ title: Press
 [Oakland Elections Fundraising News Thanks To Open Disclosure Oakland](http://oaklandnewsnow.com/index.php/2018/10/05/oakland-elections-fundraising-news-thanks-to-open-disclosure-oakland/)  
 *October 5, 2018 – Oakland News Now, Zennie Abraham*
 
+[Oakland Public Ethics Commission and Local Volunteers Launch Campaign Finance App for November Election](https://www.oaklandca.gov/news/2018/oakland-public-ethics-commission-and-local-volunteers-launch-campaign-finance-app-for-november-election)  
+*September 18, 2018 – City of Oakland*
+
 
 ## 2016
 
@@ -18,6 +21,9 @@ title: Press
 
 [OpenOakland and The Search for Sustainable Civic Technology](https://civichall.org/civicist/open-oakland-and-the-search-sustainable-civic-tech/)  
 *May 9, 2016 – Civicist/Civic Hall, Jessica McKenzie*
+
+[Local Volunteers Build OpenDisclosure.io Website to Show Political Campaign Contributions](https://www.oaklandca.gov/news/2016/local-volunteers-build-opendisclosure-io-website-to-show-political-campaign-contributions)
+*October 18, 2016 – City of Oakland*
 
 
 ## 2014
