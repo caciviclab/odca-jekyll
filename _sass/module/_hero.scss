@@ -179,7 +179,6 @@ p.hero__tag {
   }
 
   .hero__section {
-    @extend %section-border--major;
 
     .hero__lede { // scss-lint:disable SelectorDepth
       @include heading('h2');
