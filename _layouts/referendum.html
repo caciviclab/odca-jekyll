@@ -56,14 +56,10 @@ layout: default
   <div class="l-section__content l-section__content--half">
     <div class="subheading">Supporting regions</div>
     {% include contributions_by_region.html supporting_opposing=supporting color="green" %}
-    {% if supporting and supporting.supporting_organizations != empty %}
-    {% endif %}
   </div>
   <div class="l-section__content l-section__content--half">
     <div class="subheading">Opposing regions</div>
     {% include contributions_by_region.html supporting_opposing=opposing color="red" %}
-    {% if opposing and opposing.opposing_organizations != empty %}
-    {% endif %}
   </div>
 </section>
 <section class="l-section">
