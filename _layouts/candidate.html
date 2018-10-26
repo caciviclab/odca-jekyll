@@ -19,7 +19,7 @@ layout: default
 <div class="candidate">
   <header class="candidate__header grid">
     <div class="grid-col-12">
-      <h2>{{ candidate.name | smartify | escape }}</h2>
+      <h2>{{ candidate.name | smartify }}</h2>
     </div>
   </header>
   <div class="candidate__main">
@@ -40,7 +40,7 @@ layout: default
               {{ candidate.occupation }}
               {% endif %}
               {% if candidate.committee_name != null %}<span class="candidate__commitee-name"> {{
-                candidate.committee_name | smartify | escape }} </span>{% endif %}</div>
+                candidate.committee_name | smartify }} </span>{% endif %}</div>
             {% if candidate.is_accepted_expenditure_ceiling %}
             <div class="candidate__expenditure-ceiling">
               This candidate has agreed to voluntary spending limits.
