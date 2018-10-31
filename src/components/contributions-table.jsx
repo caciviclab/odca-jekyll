@@ -17,9 +17,9 @@ class ContributionsTable extends React.Component {
       contributions: contributions.map((contribution, i) => ({
         id: i,
         name: name(contribution),
-        type: contribution.Contributor_type || '—', // ATTENTION: this is a PLACEHOLDER. I don't know what this field is called until I get it from the backend
-        occupation: contribution.Tran_Occ || '—',
-        employer: contribution.Tran_Emp || '—',
+        type: contribution.Contributor_type || '', // ATTENTION: this is a PLACEHOLDER. I don't know what this field is called until I get it from the backend
+        occupation: contribution.Tran_Occ || '',
+        employer: contribution.Tran_Emp || '',
         zip: contribution.Tran_Zip4,
         amount: contribution.Tran_Amt1,
         date: new Date(contribution.Tran_Date),
@@ -51,7 +51,10 @@ class ContributionsTable extends React.Component {
     this.state = ContributionsTable.initialState(props.contributions);
   }
 
-  codepointCompare = (a, b) => {
+  codepointCompare = (x, y) => {
+    // sort falsey values to the bottom, rather than to the top
+    const [a, b] = [x || '\uffff', y || '\uffff']
+
     return (a > b
       ? 1
       : (a < b
@@ -94,11 +97,10 @@ class ContributionsTable extends React.Component {
       });
   }
 
-  applySortOrder(contributions) {
+  applySortOrder = (contributions) => {
     const { sort } = this.state;
-    const codepointCompare = this.codepointCompare;
 
-    function difference(a, b) {
+    const difference = (a, b) => {
       // We're doing some funkiness with ascending/decsending based on the
       // column to give a _maybe_ more intuitive behavior. The default sort is
       // ascending, but if you sort by amount, you probably want that to start in
@@ -110,11 +112,11 @@ class ContributionsTable extends React.Component {
         case 'name':
           return a.name.localeCompare(b.name);
         case 'type':
-          return codepointCompare(a.type, b.type);
+          return this.codepointCompare(a.type, b.type);
         case 'occupation':
-          return codepointCompare(a.occupation, b.occupation);
+          return this.codepointCompare(a.occupation, b.occupation);
         case 'employer':
-          return codepointCompare(a.employer, b.employer);
+          return this.codepointCompare(a.employer, b.employer);
         case 'date':
           return b.date.valueOf() - a.date.valueOf();
         case 'zip':
@@ -131,6 +133,16 @@ class ContributionsTable extends React.Component {
 
   render() {
     const { contributions } = this.state;
+
+    const maybeReturnEmptyCell = (contribution, key) => {
+      const baseClass = `contributors__${key}`
+      const [classList, display] = contribution[key]
+        ? [ baseClass, contribution[key] ]
+        : [ baseClass + " contributors__empty-cell", "—"]
+
+      return <td className={ classList }>{ display }</td>
+    }
+
     const sortToggle = column => () => {
       const currentSort = this.state.sort;
       if (currentSort.column === column) {
@@ -225,7 +237,7 @@ class ContributionsTable extends React.Component {
                 <tr key={contribution.id}>
                   <td className="contributors__name">{contribution.name}</td>
                   <td className="contributors__type">{contribution.type || '—'}</td>
-                  <td className="contributors__occupation">{contribution.occupation || '—'}</td>
+                  { maybeReturnEmptyCell(contribution, 'occupation') }
                   <td className="contributors__employer">{contribution.employer || '—'}</td>
                   <td className="contributors__zip">{contribution.zip || '—'}</td>
                   <td className="contributors__amount">{dollars(contribution.amount)}</td>
