@@ -22,6 +22,18 @@ $hero-breakpoint: $grid--medium;
   }
 }
 
+.hero__mobile__attribution {
+  background-color: $attribution-background-color;
+  font-size: $small-font-size;
+  text-align: center;
+  padding: 0 $spacing-base;
+  width: auto;
+  margin-bottom: 0;
+
+  @include media($hero-breakpoint) {
+    display: block;
+  }
+}
 .hero--photo {
   background-image: url('./images/open-disclosure-splash.png');
   background-position: bottom;
