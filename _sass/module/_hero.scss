@@ -9,26 +9,14 @@ $hero-breakpoint: $grid--medium;
 }
 
 .hero__attribution {
-  background-color: $attribution-background-color;
-  bottom: 0;
-  display: none;
-  font-size: $small-font-size;
-  padding: 0 $spacing-base;
   position: absolute;
-  right: 0;
-
-  @include media($hero-breakpoint) {
-    display: block;
-  }
-}
-
-.hero__mobile__attribution {
   background-color: $attribution-background-color;
   font-size: $small-font-size;
   text-align: center;
   padding: 0 $spacing-base;
   width: auto;
-  margin-bottom: 0;
+  bottom: 0px;
+  right: 0px;
 
   @include media($hero-breakpoint) {
     display: block;
