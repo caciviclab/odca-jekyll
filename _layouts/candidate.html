@@ -10,13 +10,16 @@ layout: default
 {% assign locality = site.localities | where: "locality_id", ballot.locality | first %}
 {% assign election_day = ballot.election | date: '%Y-%m-%d' %}
 {% assign finance = site.data.candidates[locality.slug][election_day][candidate.slug] %}
-
+{% assign opposing_committees = finance.opposing_money.opposition_list %}
+{% assign supporting_committees = finance.supporting_money.support_list %}
+{% assign expenditures_opposing = finance.opposing_money.opposing_expenditures %}
+{% assign expenditures_supporting = finance.supporting_money.total_supporting_independent %}
 
 {% capture body %}
 <div class="candidate">
   <header class="candidate__header grid">
     <div class="grid-col-12">
-      <h2>{{ candidate.name | smartify | escape }}</h2>
+      <h2>{{ candidate.name | smartify }}</h2>
     </div>
   </header>
   <div class="candidate__main">
@@ -37,7 +40,7 @@ layout: default
               {{ candidate.occupation }}
               {% endif %}
               {% if candidate.committee_name != null %}<span class="candidate__commitee-name"> {{
-                candidate.committee_name | smartify | escape }} </span>{% endif %}</div>
+                candidate.committee_name | smartify }} </span>{% endif %}</div>
             {% if candidate.is_accepted_expenditure_ceiling %}
             <div class="candidate__expenditure-ceiling">
               This candidate has agreed to voluntary spending limits.
@@ -89,13 +92,43 @@ layout: default
       </div>
     </section>
     {% endif %}
-    {% if opposing_committees and opposing_committees != empty %}
+    {% if expenditures_opposing > 0 or expenditures_supporting > 0 %}
+    {% capture tooltip_message -%}
+    Spending by third parties that advocates the election or defeat of a candidate and is not made in coordination with a candidate or campaign committee is termed an independent expenditure. To learn more, <a href="{{ site.baseurl }}/faq/">see the FAQ</a>.
+    {%- endcapture %}
     <section class="l-section">
       <div class="l-section__content">
-        <h2 class="candidate_money-heading">Committees opposing candidate</h2>
-        {% for committee in opposing_committees %}
-        <p><a href="{{ site.baseurl }}/committee/{{ committee.filer_id }}/">{{ committee.name | smartify | escape }}</a></p>
-        {% endfor %}
+        {% if expenditures_opposing > 0 %}
+        <div class="candidate__expenditures">
+          Independent expenditures opposing candidate <span class="money">{{ expenditures_opposing | dollars }}</span>
+          {% include tooltip.html message=tooltip_message %}
+        </div>
+        {% endif %}
+        {% if expenditures_supporting > 0 %}
+        <div class="candidate__expenditures">
+          Independent expenditures supporting candidate <span class="money">{{ expenditures_supporting | dollars }}</span>
+          {% if expenditures_opposing <= 0 %}
+          {% include tooltip.html message=tooltip_message %}
+          {% endif %}
+        </div>
+        {% endif %}
+      </div>
+    </section>
+    {% endif %}
+    {% if supporting_committees != empty or opposing_committees != empty %}
+    <section class="l-section">
+      <div class="l-section__content">
+        <h2>Spending breakdown by committee</h2>
+      </div>
+      <div class="l-section__content l-section__content--half">
+      <!-- supporting contributions/expenditures column -->
+        <div class="subheading">In support of the candidate</div>
+        {% include supporting_opposing_committees.html committees=supporting_committees color="green" %}
+        </div>
+      <!-- opposing contributions/expenditures column -->
+      <div class="l-section__content l-section__content--half">
+        <div class="subheading">In opposition of the candidate</div>
+        {% include supporting_opposing_committees.html committees=opposing_committees color="red" %}
       </div>
     </section>
     {% endif %}
