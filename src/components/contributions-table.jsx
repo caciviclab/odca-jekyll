@@ -17,6 +17,9 @@ class ContributionsTable extends React.Component {
       contributions: contributions.map((contribution, i) => ({
         id: i,
         name: name(contribution),
+        occupation: contribution.Tran_Occ,
+        employer: contribution.Tran_Emp,
+        zip: contribution.Tran_Zip4,
         amount: contribution.Tran_Amt1,
         date: new Date(contribution.Tran_Date),
       })),
@@ -159,6 +162,30 @@ class ContributionsTable extends React.Component {
                   <span className="arrow-container" />
                 </button>
               </th>
+              <th className={`contributors__type${isActive('type')}`}>
+                <button type="button" className="sort-button type" onClick={sortToggle('type')}>
+                  Contributor type
+                  <span className="arrow-container" />
+                </button>
+              </th>
+              <th className={`contributors__occupation${isActive('occupation')}`}>
+                <button type="button" className="sort-button occupation" onClick={sortToggle('occupation')}>
+                  Occupation
+                  <span className="arrow-container" />
+                </button>
+              </th>
+              <th className={`contributors__employer${isActive('employer')}`}>
+                <button type="button" className="sort-button employer" onClick={sortToggle('employer')}>
+                  Employer
+                  <span className="arrow-container" />
+                </button>
+              </th>
+              <th className={`contributors__zip${isActive('zip')}`}>
+                <button type="button" className="sort-button zip" onClick={sortToggle('zip')}>
+                  ZIP code
+                  <span className="arrow-container" />
+                </button>
+              </th>
               <th className={`contributors__amount${isActive('amount')}`}>
                 <button type="button" className="sort-button amount" onClick={sortToggle('amount')}>
                   Amount
@@ -178,6 +205,10 @@ class ContributionsTable extends React.Component {
               this.applySortOrder(this.applyFilter(contributions)).map(contribution => (
                 <tr key={contribution.id}>
                   <td className="contributors__name">{contribution.name}</td>
+                  <td className="contributors__type">{dollars(contribution.type)}</td>
+                  <td className="contributors__occupation">{dollars(contribution.occupation)}</td>
+                  <td className="contributors__employer">{dollars(contribution.employer)}</td>
+                  <td className="contributors__zip">{dollars(contribution.zip)}</td>
                   <td className="contributors__amount">{dollars(contribution.amount)}</td>
                   <td className="contributors__date contributors__col--s1">{day(contribution.date)}</td>
                 </tr>
