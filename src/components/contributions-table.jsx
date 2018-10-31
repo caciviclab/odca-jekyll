@@ -51,6 +51,14 @@ class ContributionsTable extends React.Component {
     this.state = ContributionsTable.initialState(props.contributions);
   }
 
+  codepointCompare = (a, b) => {
+    return (a > b
+      ? 1
+      : (a < b
+      ? -1
+      : 0))
+  }
+
   /**
    * applyFilter
    *
@@ -88,6 +96,8 @@ class ContributionsTable extends React.Component {
 
   applySortOrder(contributions) {
     const { sort } = this.state;
+    const codepointCompare = this.codepointCompare;
+
     function difference(a, b) {
       // We're doing some funkiness with ascending/decsending based on the
       // column to give a _maybe_ more intuitive behavior. The default sort is
@@ -100,11 +110,11 @@ class ContributionsTable extends React.Component {
         case 'name':
           return a.name.localeCompare(b.name);
         case 'type':
-          return a.type.localeCompare(b.type);
+          return codepointCompare(a.type, b.type);
         case 'occupation':
-          return a.occupation.localeCompare(b.occupation);
+          return codepointCompare(a.occupation, b.occupation);
         case 'employer':
-          return a.employer.localeCompare(b.employer);
+          return codepointCompare(a.employer, b.employer);
         case 'date':
           return b.date.valueOf() - a.date.valueOf();
         case 'zip':
