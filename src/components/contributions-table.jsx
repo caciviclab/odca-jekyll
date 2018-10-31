@@ -17,8 +17,9 @@ class ContributionsTable extends React.Component {
       contributions: contributions.map((contribution, i) => ({
         id: i,
         name: name(contribution),
-        occupation: contribution.Tran_Occ,
-        employer: contribution.Tran_Emp,
+        type: contribution.Contributor_type || '—', // ATTENTION: this is a PLACEHOLDER. I don't know what this field is called until I get it from the backend
+        occupation: contribution.Tran_Occ || '—',
+        employer: contribution.Tran_Emp || '—',
         zip: contribution.Tran_Zip4,
         amount: contribution.Tran_Amt1,
         date: new Date(contribution.Tran_Date),
@@ -98,8 +99,16 @@ class ContributionsTable extends React.Component {
           return b.amount - a.amount;
         case 'name':
           return a.name.localeCompare(b.name);
+        case 'type':
+          return a.type.localeCompare(b.type);
+        case 'occupation':
+          return a.occupation.localeCompare(b.occupation);
+        case 'employer':
+          return a.employer.localeCompare(b.employer);
         case 'date':
           return b.date.valueOf() - a.date.valueOf();
+        case 'zip':
+          return +(b.zip.replace('-', '').padEnd(9, '0')) - +(a.zip.replace('-', '').padEnd(9, '0'))
         default:
           return 0;
       }
@@ -205,10 +214,10 @@ class ContributionsTable extends React.Component {
               this.applySortOrder(this.applyFilter(contributions)).map(contribution => (
                 <tr key={contribution.id}>
                   <td className="contributors__name">{contribution.name}</td>
-                  <td className="contributors__type">{dollars(contribution.type)}</td>
-                  <td className="contributors__occupation">{dollars(contribution.occupation)}</td>
-                  <td className="contributors__employer">{dollars(contribution.employer)}</td>
-                  <td className="contributors__zip">{dollars(contribution.zip)}</td>
+                  <td className="contributors__type">{contribution.type || '—'}</td>
+                  <td className="contributors__occupation">{contribution.occupation || '—'}</td>
+                  <td className="contributors__employer">{contribution.employer || '—'}</td>
+                  <td className="contributors__zip">{contribution.zip || '—'}</td>
                   <td className="contributors__amount">{dollars(contribution.amount)}</td>
                   <td className="contributors__date contributors__col--s1">{day(contribution.date)}</td>
                 </tr>
