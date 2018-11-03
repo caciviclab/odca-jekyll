@@ -15,40 +15,42 @@ $hero-breakpoint: $grid--medium;
   text-align: center;
   padding: 0 $spacing-base;
   width: auto;
-  bottom: 0px;
-  right: 0px;
+  bottom: 0;
+  right: 0;
 
   @include media($hero-breakpoint) {
     display: block;
   }
 }
+
 .hero--photo {
   background-image: url('./images/open-disclosure-splash.png');
   background-position: bottom;
   background-size: cover;
 
-  @include media($hero-breakpoint) {
-    // When hero includes a background image, increase legibility
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    ul,
-    li {
-      color: $color-white;
-      text-shadow: 0 2px 3px $text-shadow-color;
-    }
-    // Include a scrim over photo backgrounds to increase legibility of content
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-    }
+  // When hero includes a background image, increase legibility
+  .hero__subhead,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul,
+  li,
+  p {
+    color: $color-white;
+    text-shadow: 0 2px 3px $text-shadow-color;
+  }
+
+  // Include a scrim over photo backgrounds to increase legibility of content
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 }
 
@@ -82,13 +84,8 @@ $hero-breakpoint: $grid--medium;
   font-style: italic;
 }
 
-.hero__tag {
-  color: $color-white;
-}
-
 .hero__lede {
   text-align: center;
-  color: $color-white;
 
   @include media($hero-breakpoint) {
     text-align: initial;
