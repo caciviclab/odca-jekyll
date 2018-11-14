@@ -10,31 +10,6 @@ layout: default
 {% assign ballot = site.elections | where: 'path', ballot_path | first %}
 {% assign locality = site.localities | where: 'locality_id', ballot.locality | first %}
 
-{% comment %}
-https://github.com/caciviclab/odca-jekyll/issues/248
-The list of supporting/opposing organizations is based on expenditures. Here we
-add any committees that are known supporting/opposing this referendum even if
-they don't have reported expenditures. Be careful not to add duplicates.
-Beware: these objects are shaped differently (they have different properties).
-{% endcomment %}
-{% assign supporting_opposing_committees  = site.committees | where: 'election', election_day | where: 'referendum_number', referendum.number %}
-{% assign supporting_committees = supporting_opposing_committees | where: 'support_or_oppose', 'S' %}
-{% assign opposing_committees = supporting_opposing_committees | where: 'support_or_oppose', 'O' %}
-{% assign supporting_organizations = supporting.supporting_organizations %}
-{% for committee in supporting_committees %}
-  {% assign committee_exists = supporting.supporting_organizations | where: 'id', committee.filer_id | first %}
-  {% unless committee_exists %}
-    {% assign supporting_organizations = supporting_organizations | push: committee %}
-  {% endunless %}
-{% endfor %}
-{% assign opposing_organizations = opposing.opposing_organizations %}
-{% for committee in opposing_committees %}
-  {% assign committee_exists = opposing.opposing_organizations | where: 'id', committee.filer_id | first %}
-  {% unless committee_exists %}
-    {% assign opposing_organizations = opposing_organizations | push: committee %}
-  {% endunless %}
-{% endfor %}
-
 
 {% capture body %}
 <header>
@@ -84,14 +59,10 @@ Beware: these objects are shaped differently (they have different properties).
   <div class="l-section__content l-section__content--half">
     <div class="subheading">Supporting regions</div>
     {% include contributions_by_region.html supporting_opposing=supporting color="green" %}
-    {% if supporting and supporting.supporting_organizations != empty %}
-    {% endif %}
   </div>
   <div class="l-section__content l-section__content--half">
     <div class="subheading">Opposing regions</div>
     {% include contributions_by_region.html supporting_opposing=opposing color="red" %}
-    {% if opposing and opposing.opposing_organizations != empty %}
-    {% endif %}
   </div>
 </section>
 <section class="l-section">
@@ -128,13 +99,13 @@ Beware: these objects are shaped differently (they have different properties).
   </div>
   <div class="l-section__content l-section__content--half">
     <div class="subheading">In support of the measure</div>
-    {% include supporting_opposing_committees.html committees=supporting_organizations color="green" %}
+    {% include supporting_opposing_committees.html committees=supporting.supporting_organizations color="green" %}
   </div>
 
 <!-- opposing contributions/expenditures column -->
   <div class="l-section__content l-section__content--half">
     <div class="subheading">In opposition of the measure</div>
-    {% include supporting_opposing_committees.html committees=opposing_organizations color="red" %}
+    {% include supporting_opposing_committees.html committees=opposing.opposing_organizations color="red" %}
   </div>
 {% else %}
   <div class="l-section__content">
