@@ -1,0 +1,176 @@
+// Borrowed from FEC
+$background-color: $color-lochmara-blue;
+
+.glossary {
+//  @include transition(right, .3s);
+  background-color: $background-color;
+  bottom: 0;
+  color: $color-white;
+  max-width: 30rem;
+  overflow-y: scroll;
+  padding: 3rem;
+  position: fixed;
+  top: 0;
+  width: 75%;
+  z-index: $z-header-nav;
+
+  &[aria-hidden='true'] {
+    display: block !important;
+    right: -100%;
+    transition: .5s;
+  }
+
+  &[aria-hidden='false'] {
+    right: 0;
+    transition: .3s;
+  }
+
+  p {
+    a,
+    a:active,
+    a:visited,
+    a:visited:hover,
+    a:hover {
+      color: $color-lochmara-blue;
+    }
+  }
+
+  .glossary-close {
+    background-color: $background-color;
+    background-image: url('data:image/svg+xml;charset=utf8, %3Csvg%20%20fill%3D%27%23ffffff%27%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M15.053%205.856a1.234%201.234%200%200%200-1.747-1.745l-3.9%203.895h.353L5.857%204.11a1.234%201.234%200%200%200-1.746%201.745l3.9%203.896v-.353l-3.9%203.895a1.234%201.234%200%200%200%201.746%201.745l3.9-3.895h-.353l3.9%203.895c.23.23.543.36.874.36a1.234%201.234%200%200%200%20.873-2.105l-3.9-3.895v.354l3.9-3.894z%22%2F%3E%3C%2Fsvg%3E');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    border: 0;
+    color: $color-white;
+    height: 4rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4rem;
+
+    &:active,
+    &:hover {
+      background-color: $background-color;
+      color: $color-white;
+    }
+
+    span {
+      position: absolute;
+      left: -999em;
+    }
+  }
+
+  h2 {
+    color: $color-white;
+  }
+
+  .label {
+    color: $color-white;
+  }
+
+  p {
+    color: $color-white;
+  }
+
+  ul {
+    padding-left: 0;
+    list-style: none;
+  }
+}
+
+.glossary__item {
+  margin-bottom: $spacing-base;
+
+  ol,
+  ul {
+    margin-left: $spacing-base * 2;
+  }
+}
+
+.glossary__term {
+  background-color: $background-color;
+  background-image: url('./images/down-arrow-white.svg');
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  border: none;
+  border-bottom: 1px solid $color-white;
+  border-color: $color-white;
+  color: $color-white;
+  padding-left: 0;
+  padding-bottom: $spacing-base;
+  text-align: left;
+  width: 100%;
+  text-transform: capitalize;
+
+
+  &[aria-expanded=true] {
+    background-image: url('./images/up-arrow-white.svg');
+  }
+
+  &:active,
+  &:hover {
+    background-color: $background-color;
+    color: $color-white;
+  }
+}
+
+.glossary__definition {
+  margin-top: $spacing-base * 2;
+  margin-bottom: $spacing-base * 2.5;
+  font-weight: $font-weight-lightest;
+}
+
+.glossary-toggle {
+  background-color: $brand-color;
+  color: $color-white;
+  font-weight: $font-weight-normal;
+  border: none;
+  bottom: 0;
+  margin: 0;
+  padding: 1rem 2rem;
+  position: fixed;
+
+  @media all and (min-width: $grid--small) {
+    right: 2rem;
+  }
+
+  @media print {
+    display: none;
+  }
+}
+
+.glossary-search {
+  padding: 0;
+  padding-top: 1rem;
+  width: calc(100% - 1.4em);
+  font-weight: $font-weight-lightest;
+}
+
+.glossary-search-label {
+  font-size: 1.4rem;
+}
+
+
+// Term classes
+[data-term] {
+  cursor: pointer;
+  text-decoration: underline dotted;
+  white-space: nowrap; // prevent glossary icon from wrapping
+  &:after {
+    content: "";
+    width: 1em;
+    height: 0.7em;
+    background-image: url('./images/down-arrow-white.svg');
+    fill: $color-white;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 0.3rem;
+    margin-right: 0.5rem;
+  }
+}
+
+.glossary [data-term]:after {
+  background-image: url('./images/down-arrow-white.svg');
+  fill: $color-white;
+}
