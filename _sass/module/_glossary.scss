@@ -41,6 +41,11 @@ $background-color: $color-lochmara-blue;
     padding-left: 0;
     list-style: none;
   }
+
+  [data-term]::after {
+    background-image: url('./images/down-arrow-white.svg');
+    fill: $color-white;
+  }
 }
 
 .glossary-close {
@@ -156,8 +161,8 @@ $background-color: $color-lochmara-blue;
   cursor: pointer;
   text-decoration: underline dotted;
   white-space: nowrap; // prevent glossary icon from wrapping
-  &:after {
-    content: "";
+  &::after {
+    content: '';
     width: 1em;
     height: 0.7em;
     background-image: url('./images/down-arrow-white.svg');
@@ -167,9 +172,4 @@ $background-color: $color-lochmara-blue;
     margin-left: 0.3rem;
     margin-right: 0.5rem;
   }
-}
-
-.glossary [data-term]:after {
-  background-image: url('./images/down-arrow-white.svg');
-  fill: $color-white;
 }
