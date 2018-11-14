@@ -17,7 +17,7 @@ class ContributionsTable extends React.Component {
       contributions: contributions.map((contribution, i) => ({
         id: i,
         name: name(contribution),
-        type: contribution.Contributor_type || '', // ATTENTION: this is a PLACEHOLDER. I don't know what this field is called until I get it from the backend
+        type: contribution.Entity_Cd || '',
         occupation: contribution.Tran_Occ || '',
         employer: contribution.Tran_Emp || '',
         zip: contribution.Tran_Zip4,
@@ -236,10 +236,10 @@ class ContributionsTable extends React.Component {
               this.applySortOrder(this.applyFilter(contributions)).map(contribution => (
                 <tr key={contribution.id}>
                   <td className="contributors__name">{contribution.name}</td>
-                  <td className="contributors__type">{contribution.type || '—'}</td>
+                  { maybeReturnEmptyCell(contribution, 'type') }
                   { maybeReturnEmptyCell(contribution, 'occupation') }
-                  <td className="contributors__employer">{contribution.employer || '—'}</td>
-                  <td className="contributors__zip">{contribution.zip || '—'}</td>
+                  { maybeReturnEmptyCell(contribution, 'employer') }
+                  { maybeReturnEmptyCell(contribution, 'zip') }
                   <td className="contributors__amount">{dollars(contribution.amount)}</td>
                   <td className="contributors__date contributors__col--s1">{day(contribution.date)}</td>
                 </tr>
