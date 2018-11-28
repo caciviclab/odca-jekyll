@@ -135,7 +135,7 @@ class ContributionsTable extends React.Component {
     const { contributions } = this.state;
 
     const maybeReturnEmptyCell = (contribution, key) => {
-      const baseClass = `contributors__${key}`
+      const baseClass = `contributors__cell contributors__${key}`
       const [classList, display] = contribution[key]
         ? [ baseClass, contribution[key] ]
         : [ baseClass + " contributors__empty-cell", "—"]
@@ -187,43 +187,43 @@ class ContributionsTable extends React.Component {
         <table className="contributors">
           <thead className="contributors__thead">
             <tr>
-              <th className={`contributors__name${isActive('name')}`}>
+              <th className={`contributors__heading contributors__name${isActive('name')}`}>
                 <button type="button" className="sort-button" onClick={sortToggle('name')}>
                   Name
                   <span className="arrow-container" />
                 </button>
               </th>
-              <th className={`contributors__type${isActive('type')}`}>
+              <th className={`contributors__heading contributors__type${isActive('type')}`}>
                 <button type="button" className="sort-button type" onClick={sortToggle('type')}>
                   Contributor type
                   <span className="arrow-container" />
                 </button>
               </th>
-              <th className={`contributors__occupation${isActive('occupation')}`}>
+              <th className={`contributors__heading contributors__occupation${isActive('occupation')}`}>
                 <button type="button" className="sort-button occupation" onClick={sortToggle('occupation')}>
                   Occupation
                   <span className="arrow-container" />
                 </button>
               </th>
-              <th className={`contributors__employer${isActive('employer')}`}>
+              <th className={`contributors__heading contributors__employer${isActive('employer')}`}>
                 <button type="button" className="sort-button employer" onClick={sortToggle('employer')}>
                   Employer
                   <span className="arrow-container" />
                 </button>
               </th>
-              <th className={`contributors__zip${isActive('zip')}`}>
+              <th className={`contributors__heading contributors__zip${isActive('zip')}`}>
                 <button type="button" className="sort-button zip" onClick={sortToggle('zip')}>
                   ZIP code
                   <span className="arrow-container" />
                 </button>
               </th>
-              <th className={`contributors__amount${isActive('amount')}`}>
+              <th className={`contributors__heading contributors__amount${isActive('amount')}`}>
                 <button type="button" className="sort-button amount" onClick={sortToggle('amount')}>
                   Amount
                   <span className="arrow-container" />
                 </button>
               </th>
-              <th className={`contributors__date contributors__col--s1${isActive('date')}`}>
+              <th className={`contributors__heading contributors__date contributors__col--s1${isActive('date')}`}>
                 <button type="button" className="sort-button" onClick={sortToggle('date')}>
                   Date
                   <span className="arrow-container" />
@@ -235,13 +235,20 @@ class ContributionsTable extends React.Component {
             {
               this.applySortOrder(this.applyFilter(contributions)).map(contribution => (
                 <tr key={contribution.id}>
-                  <td className="contributors__name">{contribution.name}</td>
+                  <td className="contributors__cell contributors__name">
+                    {contribution.name}
+                    <div className="contributors__card">
+                      <div>{ contribution.type } | { contribution.amount }</div>
+                      <div>{ contribution.zip } | { day(contribution.date) }</div>
+                      <div>{ contribution.occupation }, { contribution.employer }</div>
+                    </div>
+                  </td>
                   { maybeReturnEmptyCell(contribution, 'type') }
                   { maybeReturnEmptyCell(contribution, 'occupation') }
                   { maybeReturnEmptyCell(contribution, 'employer') }
                   { maybeReturnEmptyCell(contribution, 'zip') }
-                  <td className="contributors__amount">{dollars(contribution.amount)}</td>
-                  <td className="contributors__date contributors__col--s1">{day(contribution.date)}</td>
+                  <td className="contributors__cell contributors__amount">{dollars(contribution.amount)}</td>
+                  <td className="contributors__cell contributors__date contributors__col--s1">{day(contribution.date)}</td>
                 </tr>
               ))
             }
