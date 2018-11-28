@@ -29,6 +29,9 @@ layout: default
     {% if referendum.content %}
       <h3>Summary</h3>
       {{ referendum.content }}
+      {% if referendum.voters_edge_url %}
+        <a href="{{referendum.voters_edge_url}}">Voter Information from CA Voter's Edge</a>
+      {% endif %}
     {% endif %}
   </div>
 </section>
