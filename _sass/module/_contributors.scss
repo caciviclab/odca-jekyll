@@ -106,9 +106,18 @@ contributions-table {
 
 .contributors__card {
   font-weight: normal;
+
+  & span[class*='grid-col-'] {
+    margin-left: 0;
+  }
 }
 
-@media screen and (min-width: $grid--small) {
+.contributors__card-amount,
+.contributors__card-date {
+  text-align: right;
+}
+
+@include media($grid--small) {
   .contributors__heading:not(.contributors__name),
   .contributors__cell:not(.contributors__name) {
     display: table-cell;
