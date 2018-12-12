@@ -238,15 +238,17 @@ class ContributionsTable extends React.Component {
                   <td className="contributors__cell contributors__name">
                     {contribution.name}
                     <div className="contributors__card">
-                      <div className="grid">
-                        <span className="grid-col-6--xs contributors__card-type">{ contribution.type }</span>
-                        <span className="grid-col-6--xs contributors__card-amount">{ '$' + contribution.amount }</span>
+                      <div className="contributors__card-row">
+                        <span className="contributors__card-type">{ contribution.type }</span>
+                        <span className="contributors__card-amount">{ '$' + contribution.amount }</span>
                       </div>
-                      <div>
-                        <span className="grid-col-6--xs contributors__card-zip">{ contribution.zip }</span>
-                        <span className="grid-col-6--xs contributors__card-date">{ day(contribution.date) }</span>
+                      <div className="contributors__card-row">
+                        <span className="contributors__card-zip">Zip code: { contribution.zip }</span>
+                        <span className="contributors__card-date">{ day(contribution.date) }</span>
                       </div>
-                      <div>{ contribution.occupation || '' }{ contribution.employer ? ', ' + contribution.employer : '' }</div>
+                      <div
+                        className="contributors__card-occupation contributors__card-employer"
+                      >{ contribution.occupation || '' }{ contribution.employer ? ', ' + contribution.employer : '' }</div>
                     </div>
                   </td>
                   { maybeReturnEmptyCell(contribution, 'type') }

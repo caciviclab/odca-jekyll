@@ -95,21 +95,33 @@ contributions-table {
   }
 }
 
-.contributors__heading:not(.contributors__name),
+.contributors__thead,
 .contributors__cell:not(.contributors__name) {
   display: none;
 }
 
 .contributors__name {
+  padding-top: 1.5rem;
   font-weight: bold;
 }
 
 .contributors__card {
   font-weight: normal;
+}
 
-  & span[class*='grid-col-'] {
-    margin-left: 0;
-  }
+.contributors__card-row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.contributors__card-type,
+.contributors__card-zip,
+.contributors__card-date,
+.contributors__card-occupation,
+.contributors__card-employer {
+  @include font-size(1.6);
+  color: $color-grey-3;
 }
 
 .contributors__card-amount,
@@ -118,12 +130,13 @@ contributions-table {
 }
 
 @include media($grid--small) {
-  .contributors__heading:not(.contributors__name),
+  .contributors__heading,
   .contributors__cell:not(.contributors__name) {
     display: table-cell;
   }
 
   .contributors__name {
+    padding-top: 0;
     font-weight: normal;
   }
 
