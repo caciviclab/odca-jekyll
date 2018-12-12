@@ -8,7 +8,11 @@
     </a>
   </div>
   <div class="candidate-summary__right">
+    {% if candidate.is_winner %}
+    <div><a href="{{ candidate.url | prepend: site.baseurl }}">{{ candidate.name | smartify }}</a> - elected</div>
+    {% else %}
     <div><a href="{{ candidate.url | prepend: site.baseurl }}">{{ candidate.name | smartify }}</a></div>
+    {% endif %}
     <div class="candidate-summary__occupation">{% if candidate.is_incumbent %}Incumbent, {% endif %}{{ candidate.occupation | default: 'No occupation reported' | escape }}</div>
     {% if finance.total_contributions > 0 %}
       <div class="candidate-summary__contributions">amount collected <span class="money">{{ finance.total_contributions | dollars }}</span></div>
