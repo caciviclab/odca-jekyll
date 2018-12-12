@@ -95,6 +95,14 @@ contributions-table {
   }
 }
 
+.contributors__sort-select {
+  margin-bottom: 1rem;
+  border-radius: 2px;
+  border: 1px solid $color-navy;
+  padding: .8rem;
+  width: 100%;
+}
+
 .contributors__thead,
 .contributors__cell:not(.contributors__name) {
   display: none;
@@ -130,6 +138,10 @@ contributions-table {
 }
 
 @include media($grid--small) {
+  .contributors__sort-select {
+    display: none;
+  }
+  
   .contributors__heading,
   .contributors__cell:not(.contributors__name) {
     display: table-cell;
