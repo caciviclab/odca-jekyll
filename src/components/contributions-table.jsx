@@ -97,7 +97,19 @@ class ContributionsTable extends React.Component {
       });
   }
 
-  applySortOrder = (contributions) => {
+  updateSortOrder = e => {
+    const value = JSON.parse(e.target.value);
+    this.setState(() => {
+      return {
+        sort: {
+          order: value.order,
+          column: value.column
+        }
+      }
+    })
+  }
+
+  applySortOrder = contributions => {
     const { sort } = this.state;
 
     const difference = (a, b) => {
@@ -184,17 +196,17 @@ class ContributionsTable extends React.Component {
     return (
       <div>
         <input className="filter" value={this.state.filterField} onChange={updateFilter} type="text" placeholder="Type to filter contributions" />
-        <select className="contributors__sort-select" value={"Sort by: " + this.state.sort.column } onChange="">
-          <option>Name A-Z</option>
-          <option>Name Z-A</option>
-          <option>Contributor type A-Z</option>
-          <option>Contriubtor type Z-A</option>
-          <option>Amount hi-lo</option>
-          <option>Amount lo-hi</option>
-          <option>Zip hi-lo</option>
-          <option>Zip lo-hi</option>
-          <option>Date hi-lo</option>
-          <option>Date lo-hi</option>
+        <select className="contributors__sort-select" onChange={ e => this.updateSortOrder(e) }>
+          <option value={'{ "column": "name", "order": 1}'}>Name A-Z</option>
+          <option value={'{ "column": "name", "order": -1}'}>Name Z-A</option>
+          <option value={'{ "column": "type", "order": 1}'}>Contributor type A-Z</option>
+          <option value={'{ "column": "type", "order": -1}'}>Contriubtor type Z-A</option>
+          <option value={'{ "column": "amount", "order": 1}'}>Amount hi-lo</option>
+          <option value={'{ "column": "amount", "order": -1}'}>Amount lo-hi</option>
+          <option value={'{ "column": "zip", "order": 1}'}>Zip hi-lo</option>
+          <option value={'{ "column": "zip", "order": -1}'}>Zip lo-hi</option>
+          <option value={'{ "column": "date", "order": 1}'}>Date hi-lo</option>
+          <option value={'{ "column": "date", "order": -1}'}>Date lo-hi</option>
         </select>
         <table className="contributors">
           <thead className="contributors__thead">
