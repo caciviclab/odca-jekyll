@@ -95,12 +95,26 @@ contributions-table {
   }
 }
 
+contributions-table .filter {
+  border: 2px solid $color-grey-5;
+}
+
 .contributors__sort-select {
   margin-bottom: 1rem;
   border-radius: 2px;
   border: 1px solid $color-navy;
-  padding: .8rem;
   width: 100%;
+  background-repeat: no-repeat;
+  background-position: 95% 54%;
+  background-image: url('data:image/svg+xml;utf8,\
+    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8">\
+      <polygon points="0 2, 2 0, 6 4, 10 0, 12 2, 6 8" fill="black"></polygon>\
+    </svg>')
+}
+
+contributions-table .filter,
+.contributors__sort-select {
+  padding: .6rem;
 }
 
 .contributors__thead,
@@ -142,7 +156,10 @@ contributions-table {
     display: none;
   }
   
-  .contributors__heading,
+  .contributors__thead {
+    display: table-header-group;
+  }
+  
   .contributors__cell:not(.contributors__name) {
     display: table-cell;
   }
