@@ -106,10 +106,7 @@ contributions-table .filter {
   width: 100%;
   background-repeat: no-repeat;
   background-position: 95% 54%;
-  background-image: url('data:image/svg+xml;utf8,\
-    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8">\
-      <polygon points="0 2, 2 0, 6 4, 10 0, 12 2, 6 8" fill="black"></polygon>\
-    </svg>')
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8"><polygon points="0 2, 2 0, 6 4, 10 0, 12 2, 6 8" fill="black"></polygon></svg>');
 }
 
 contributions-table .filter,
