@@ -196,13 +196,13 @@ class ContributionsTable extends React.Component {
     return (
       <div>
         <input className="filter" value={this.state.filterField} onChange={updateFilter} type="text" placeholder="Type to filter contributions" />
-        <select className="contributors__sort-select" onChange={ e => this.updateSortOrder(e) }>
+        <select className="contributors__sort-select" defaultValue={'{ "column": "amount", "order": 1}'} onChange={ e => this.updateSortOrder(e) }>
           <option value={'{ "column": "name", "order": 1}'}>Name (A-Z)</option>
           <option value={'{ "column": "name", "order": -1}'}>Name (Z-A)</option>
           <option value={'{ "column": "type", "order": 1}'}>Contributor type (A-Z)</option>
           <option value={'{ "column": "type", "order": -1}'}>Contriubtor type (Z-A)</option>
           <option value={'{ "column": "amount", "order": 1}'}>Amount (high to low)</option>
-          <option value={'{ "column": "amount", "order": -1}'}>Amount (high to low)</option>
+          <option value={'{ "column": "amount", "order": -1}'}>Amount (low to high)</option>
           <option value={'{ "column": "date", "order": -1}'}>Date (first to last)</option>
           <option value={'{ "column": "date", "order": 1}'}>Date (last to first)</option>
         </select>
