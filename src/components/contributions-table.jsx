@@ -197,16 +197,14 @@ class ContributionsTable extends React.Component {
       <div>
         <input className="filter" value={this.state.filterField} onChange={updateFilter} type="text" placeholder="Type to filter contributions" />
         <select className="contributors__sort-select" onChange={ e => this.updateSortOrder(e) }>
-          <option value={'{ "column": "name", "order": 1}'}>Name A-Z</option>
-          <option value={'{ "column": "name", "order": -1}'}>Name Z-A</option>
-          <option value={'{ "column": "type", "order": 1}'}>Contributor type A-Z</option>
-          <option value={'{ "column": "type", "order": -1}'}>Contriubtor type Z-A</option>
-          <option value={'{ "column": "amount", "order": 1}'}>Amount hi-lo</option>
-          <option value={'{ "column": "amount", "order": -1}'}>Amount lo-hi</option>
-          <option value={'{ "column": "zip", "order": 1}'}>Zip hi-lo</option>
-          <option value={'{ "column": "zip", "order": -1}'}>Zip lo-hi</option>
-          <option value={'{ "column": "date", "order": 1}'}>Date hi-lo</option>
-          <option value={'{ "column": "date", "order": -1}'}>Date lo-hi</option>
+          <option value={'{ "column": "name", "order": 1}'}>Name (A-Z)</option>
+          <option value={'{ "column": "name", "order": -1}'}>Name (Z-A)</option>
+          <option value={'{ "column": "type", "order": 1}'}>Contributor type (A-Z)</option>
+          <option value={'{ "column": "type", "order": -1}'}>Contriubtor type (Z-A)</option>
+          <option value={'{ "column": "amount", "order": 1}'}>Amount (high to low)</option>
+          <option value={'{ "column": "amount", "order": -1}'}>Amount (high to low)</option>
+          <option value={'{ "column": "date", "order": -1}'}>Date (first to last)</option>
+          <option value={'{ "column": "date", "order": 1}'}>Date (last to first)</option>
         </select>
         <table className="contributors">
           <thead className="contributors__thead">
