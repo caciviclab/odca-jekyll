@@ -56,7 +56,8 @@ $breakpoint--s2: $grid--medium;
 }
 
 .contributors__name {
-  padding: 0 $spacing-base;
+  padding: 1.5rem $spacing-base 1rem;
+  font-weight: bold;
 }
 
 .contributors__amount {
@@ -84,6 +85,7 @@ $breakpoint--s2: $grid--medium;
 contributions-table {
   .filter {
     margin: 1rem 0;
+    border: 2px solid $color-grey-5;
     padding: 0.5rem;
     width: 100%;
   }
@@ -93,10 +95,6 @@ contributions-table {
       width: 35%;
     }
   }
-}
-
-contributions-table .filter {
-  border: 2px solid $color-grey-5;
 }
 
 .contributors__sort-select {
@@ -117,11 +115,6 @@ contributions-table .filter,
 .contributors__thead,
 .contributors__cell:not(.contributors__name) {
   display: none;
-}
-
-.contributors__name {
-  padding-top: 1.5rem; padding-bottom: 1rem;
-  font-weight: bold;
 }
 
 .contributors__card {
@@ -152,11 +145,11 @@ contributions-table .filter,
   .contributors__sort-select {
     display: none;
   }
-  
+
   .contributors__thead {
     display: table-header-group;
   }
-  
+
   .contributors__cell:not(.contributors__name) {
     display: table-cell;
   }
