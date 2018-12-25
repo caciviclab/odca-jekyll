@@ -51,17 +51,6 @@ class ContributionsTable extends React.Component {
     this.state = ContributionsTable.initialState(props.contributions);
   }
 
-  codepointCompare = (x, y) => {
-    // sort falsey values to the bottom, rather than to the top
-    const [a, b] = [x || '\uffff', y || '\uffff']
-
-    return (a > b
-      ? 1
-      : (a < b
-      ? -1
-      : 0))
-  }
-
   /**
    * applyFilter
    *
@@ -97,20 +86,29 @@ class ContributionsTable extends React.Component {
       });
   }
 
-  updateSortOrder = e => {
+  updateSortOrder(e) {
     const value = JSON.parse(e.target.value);
-    this.setState(() => {
-      return {
+    this.setState(() => (
+      {
         sort: {
           order: value.order,
-          column: value.column
-        }
+          column: value.column,
+        },
       }
-    })
+    ));
   }
 
-  applySortOrder = contributions => {
+  applySortOrder(contributions) {
     const { sort } = this.state;
+
+    const codepointCompare = (x, y) => {
+      // sort falsey values to the bottom, rather than to the top
+      const [a, b] = [x || '\uffff', y || '\uffff'];
+
+      if (a > b) return 1;
+      else if (a < b) return -1;
+      return 0;
+    };
 
     const difference = (a, b) => {
       // We're doing some funkiness with ascending/decsending based on the
@@ -124,19 +122,19 @@ class ContributionsTable extends React.Component {
         case 'name':
           return a.name.localeCompare(b.name);
         case 'type':
-          return this.codepointCompare(a.type, b.type);
+          return codepointCompare(a.type, b.type);
         case 'occupation':
-          return this.codepointCompare(a.occupation, b.occupation);
+          return codepointCompare(a.occupation, b.occupation);
         case 'employer':
-          return this.codepointCompare(a.employer, b.employer);
+          return codepointCompare(a.employer, b.employer);
         case 'date':
           return b.date.valueOf() - a.date.valueOf();
         case 'zip':
-          return +(b.zip.replace('-', '').padEnd(9, '0')) - +(a.zip.replace('-', '').padEnd(9, '0'))
+          return +(b.zip.replace('-', '').padEnd(9, '0')) - +(a.zip.replace('-', '').padEnd(9, '0'));
         default:
           return 0;
       }
-    }
+    };
 
     return contributions
       .map(x => x) // Create a new array to avoid sort mutating the state
@@ -147,13 +145,13 @@ class ContributionsTable extends React.Component {
     const { contributions } = this.state;
 
     const maybeReturnEmptyCell = (contribution, key) => {
-      const baseClass = `contributors__cell contributors__${key}`
+      const baseClass = `contributors__cell contributors__${key}`;
       const [classList, display] = contribution[key]
-        ? [ baseClass, contribution[key] ]
-        : [ baseClass + " contributors__empty-cell", "—"]
+        ? [baseClass, contribution[key]]
+        : [`${baseClass} contributors__empty-cell`, '—'];
 
-      return <td className={ classList }>{ display }</td>
-    }
+      return <td className={classList}>{ display }</td>;
+    };
 
     const sortToggle = column => () => {
       const currentSort = this.state.sort;
@@ -196,7 +194,7 @@ class ContributionsTable extends React.Component {
     return (
       <div>
         <input className="filter" value={this.state.filterField} onChange={updateFilter} type="text" placeholder="Type to filter contributions" />
-        <select className="contributors__sort-select" defaultValue={'{ "column": "amount", "order": 1}'} onChange={ e => this.updateSortOrder(e) }>
+        <select className="contributors__sort-select" defaultValue={'{ "column": "amount", "order": 1}'} onChange={e => this.updateSortOrder(e)}>
           <option value={'{ "column": "name", "order": 1}'}>Name (A-Z)</option>
           <option value={'{ "column": "name", "order": -1}'}>Name (Z-A)</option>
           <option value={'{ "column": "type", "order": 1}'}>Contributor type (A-Z)</option>
@@ -262,7 +260,7 @@ class ContributionsTable extends React.Component {
                     <div className="contributors__card">
                       <div className="contributors__card-row">
                         <span className="contributors__card-type">{ contribution.type }</span>
-                        <span className="contributors__card-amount">{ '$' + contribution.amount }</span>
+                        <span className="contributors__card-amount">{ `$${contribution.amount}` }</span>
                       </div>
                       <div className="contributors__card-row">
                         <span className="contributors__card-zip">Zip code: { contribution.zip }</span>
@@ -270,7 +268,8 @@ class ContributionsTable extends React.Component {
                       </div>
                       <div
                         className="contributors__card-occupation contributors__card-employer"
-                      >{ contribution.occupation || '' }{ contribution.employer ? ', ' + contribution.employer : '' }</div>
+                      >{ contribution.occupation || '' }{ contribution.employer ? `, ${contribution.employer}` : '' }
+                      </div>
                     </div>
                   </td>
                   { maybeReturnEmptyCell(contribution, 'type') }
