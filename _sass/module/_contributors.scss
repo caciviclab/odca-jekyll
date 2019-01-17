@@ -2,16 +2,6 @@ $col-min-width--s1: 10rem;
 $breakpoint--s1: 460px;
 $breakpoint--s2: $grid--medium;
 
-.contributions__test::after {
-  color: red;
-  content: 'width < 460';
-
-  @include media($breakpoint--s1) {
-    color: blue;
-    content: 'min-width = 460';
-  }
-}
-
 .contributors {
   border-top: 3px $color-gold solid;
   width: 100%;
