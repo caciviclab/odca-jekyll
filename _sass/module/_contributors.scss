@@ -14,6 +14,7 @@ $breakpoint--s2: $grid--medium;
 
 .contributors {
   border-top: 3px $color-gold solid;
+  width: 100%;
 }
 
 .contributors__thead {
@@ -65,57 +66,6 @@ $breakpoint--s2: $grid--medium;
   }
 }
 
-.contributors__empty-cell {
-  padding-left: 2rem;
-}
-
-.contributors__name {
-  padding: 1.5rem $spacing-base 1rem;
-  font-weight: bold;
-
-  @include media($breakpoint--s1) {
-    padding-top: 0;
-    font-weight: normal;
-  }
-}
-
-.contributors__amount {
-  padding: 0 $spacing-base;
-}
-
-.contributors__date {
-  padding: 0 $spacing-base;
-  white-space: nowrap;
-}
-
-.contributors__occupation {
-  hyphens: auto;
-  -webkit-hyphenate-character: '';
-}
-
-.contributors__col--s1 {
-  display: none;
-
-  @include media($breakpoint--s1) {
-    display: table-cell;
-  }
-}
-
-contributions-table {
-  .filter {
-    margin: 1rem 0;
-    border: 2px solid $color-grey-5;
-    padding: 0.5rem;
-    width: 100%;
-  }
-
-  @include grid-media($neat-grid--medium) {
-    .filter {
-      width: 35%;
-    }
-  }
-}
-
 .contributors__sort-select {
   margin-bottom: 1rem;
   border-radius: 2px;
@@ -135,12 +85,55 @@ contributions-table .filter,
   padding: .6rem;
 }
 
+contributions-table {
+  .filter {
+    margin: 1rem 0;
+    border: 2px solid $color-grey-5;
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  @include grid-media($neat-grid--medium) {
+    .filter {
+      width: 35%;
+    }
+  }
+}
+
+.contributors__heading,
+.contributors__cell {
+  padding: 0 $spacing-base;
+}
+
+.contributors__empty-cell {
+  padding-left: $spacing-base * 1.5;
+}
+
 .contributors__cell:not(.contributors__name) {
   display: none;
 
   @include media($breakpoint--s1) {
     display: table-cell;
   }
+}
+
+.contributors__name {
+  padding: 1.5rem $spacing-base 1rem;
+  font-weight: bold;
+
+  @include media($breakpoint--s1) {
+    padding: 0 $spacing-base;
+    font-weight: normal;
+  }
+}
+
+.contributors__date {
+  white-space: nowrap;
+}
+
+.contributors__occupation {
+  hyphens: auto;
+  -webkit-hyphenate-character: '';
 }
 
 .contributors__card {

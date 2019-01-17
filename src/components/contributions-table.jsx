@@ -145,7 +145,7 @@ class ContributionsTable extends React.Component {
     const { contributions } = this.state;
 
     const maybeReturnEmptyCell = (contribution, key) => {
-      const baseClass = `contributors__cell contributors__${key}`;
+      const baseClass = 'contributors__cell';
       const [classList, display] = contribution[key]
         ? [baseClass, contribution[key]]
         : [`${baseClass} contributors__empty-cell`, '—'];
@@ -214,31 +214,31 @@ class ContributionsTable extends React.Component {
                 </button>
               </th>
               <th className={`contributors__heading contributors__type${isActive('type')}`}>
-                <button type="button" className="sort-button type" onClick={sortToggle('type')}>
+                <button type="button" className="sort-button" onClick={sortToggle('type')}>
                   Contributor type
                   <span className="arrow-container" />
                 </button>
               </th>
               <th className={`contributors__heading contributors__occupation${isActive('occupation')}`}>
-                <button type="button" className="sort-button occupation" onClick={sortToggle('occupation')}>
+                <button type="button" className="sort-button" onClick={sortToggle('occupation')}>
                   Occupation
                   <span className="arrow-container" />
                 </button>
               </th>
               <th className={`contributors__heading contributors__employer${isActive('employer')}`}>
-                <button type="button" className="sort-button employer" onClick={sortToggle('employer')}>
+                <button type="button" className="sort-button" onClick={sortToggle('employer')}>
                   Employer
                   <span className="arrow-container" />
                 </button>
               </th>
               <th className={`contributors__heading contributors__zip${isActive('zip')}`}>
-                <button type="button" className="sort-button zip" onClick={sortToggle('zip')}>
+                <button type="button" className="sort-button" onClick={sortToggle('zip')}>
                   ZIP code
                   <span className="arrow-container" />
                 </button>
               </th>
               <th className={`contributors__heading contributors__amount${isActive('amount')}`}>
-                <button type="button" className="sort-button amount" onClick={sortToggle('amount')}>
+                <button type="button" className="sort-button" onClick={sortToggle('amount')}>
                   Amount
                   <span className="arrow-container" />
                 </button>
