@@ -19,7 +19,11 @@ layout: default
 <div class="candidate">
   <header class="candidate__header grid">
     <div class="grid-col-12">
-      <h2>{{ candidate.name | smartify }}</h2>
+      {% if finance.is_winner == true %}
+        <h2>{{ candidate.name | smartify }} - elected</h2>
+      {% else %}
+        <h2>{{ candidate.name | smartify }}</h2>
+      {% endif %}
     </div>
   </header>
   <div class="candidate__main">
