@@ -14,38 +14,17 @@ This is a list of resources used by Open Oakland's **_[Open Disclosure]_** team 
 ## People To Know?
 Lots of people have worked on Open Disclosure in its 2+ years of existance (thanks for joining!), but if you *really* want to know "the deal" try these folks (@slack-Ids from openoakland.slack.com)
 
-* _Project Leads_: Tom Dooner(@tdooner) Aaron Borden(@adborden)
-* _Designer_: :warning::warning::warning:
-* _City Liason_: :warning::warning::warning:
-* ???: :warning::warning::warning:
-*
-*
-
----
+* _Project Leads_: Tom Dooner(@tdooner) & Aaron Borden(@adborden)
+* _Designer_: Elina Rubuliak (@elina)
+* _City Liason_: Suzanne Doran (@sfdoran)
 
 # How to build the site on your machine
 
-Clone _*both*_ the back and front-end repos into the same parent directory. :warning: The front-end ***requires*** that the back-end directory be a sibling _specifically named_ `..\disclosure-backend-static` :warning: in order to build as it is hardcoded that way in the gulpfile.
+Clone _**both**_ the back and front-end repos into the same parent directory. :warning: The front-end ***requires*** that the back-end directory be a sibling _specifically named_ `../disclosure-backend-static` :warning: in order to build as it is hardcoded that way in the gulpfile.
 
-Dependencies you should already have installed: [Ruby **2.3.4**], [Bundler],
-[Make],
-[Node 8.9+],
-[ImageMagick] (Only need for production builds?? :warning: ?? **TODO** ?? :warning:),Python ?, [PostgreSQL] (only needed for back-end builds??)
-
-## ** Build the Front-End **
-(You did see the warning above that you'll need both repositories, right?)
-
-1. **1st-time only**: `cd` into the front-end directory, run `make setup`, then run `make build`.
-
-2. **Update** your local data resources with `make pull-finance`
-
-3. **Rebuild**/**Start Local Server** - *`make serve`*, then the site should be at http://localhost:4000/
-
-4. After making any changes you must run Front-End tests with `make test`.
+Dependencies you should have installed before starting this process: [Ruby **2.3.4**], [Bundler], [Make], [Node 8.9+], [ImageMagick], [wget], Python v_, [PostgreSQL]
 
 ## ** Build the Back-End **
-If you are only doing front-end work, **building the entire back-end is not necessary** - you just need the base files to exist on your machine so feel free to skip this.
-
 * **1st-time only**: `cd disclosure-backend-static` and run the following three commands one-at-a-time:
 
 ```
@@ -55,17 +34,34 @@ bundle install
 ```
 
 * **Update Data**: You *do not need to do this every time* - It takes a while to pull the latest information and since it's fairly static data (the real site only updates its data once every 12hrs) you only need to do this "every so often":
-  * 1) `make download` - Download raw data files from netfile and our [shared google sheet]
-  * 2) `make import` - Import data for processing
-  * 3) `make process` - Run the calculators and put output in the "build" folder
+
+0. [ Optionally `make clean` to remove previously-downloaded files ]
+
+1. `make download` - Download raw data files from netfile and our [shared google sheet]
+
+2.	`make import` - Import data for processing
+
+3.	`make process` - Run the calculators and put output in the "build" folder
+	
 
 * **Debugging** - If you need it, `make run` will serve the static JSON files via a local web server
 
+## ** Build the Front-End **
+(You did see the warning above that you'll need both repositories, right?)
+
+1. **1st-time only** `cd` into the front-end directory, run `make setup` 
+
+2. `make pull-finance` - Update your local data resources
+
+3. `make build` - Build the site based on the current local files
+
+4. `make serve` - Rebuilds and *Starts the Local Server*. The site should then be available at http://localhost:4000/
+
+5. `make test` - *After making changes*, but before making your pull-request, please make sure all front-end tests pass.
+
 ## Making Changes / Development Process
 
-Notes on our development approach and preferred coding style are written in [ :warning: ** TODO ** :warning: CONTRIBUTING.md ]
-
-tldr; - To work on the code, create and switch to a new branch in which you can do your work and make changes. When you are ready to merge your code, push your branch up to GitHub, go to the website and click the button in order to "Open a New Pull Request". Another member will review your code to approve the merge request.
+To work on the code, create and switch to a new branch in which you can do your work and make changes. When you are ready to merge your code, push your branch up to GitHub, go to the website and click the button in order to "Open a New Pull Request". Please don't merge your own pull-req, another team member will review your code to approve the merge request!
 
 [Bundler]: https://bundler.io/
 [campaign-finance wiki]: https://github.com/caciviclab/campaign-finance-wiki
@@ -83,3 +79,4 @@ tldr; - To work on the code, create and switch to a new branch in which you can 
 [Ruby **2.3.4**]: https://www.ruby-lang.org/en/downloads/
 [shared google sheet]: https://docs.google.com/spreadsheets/d/1vJR8GR5Bk3bUQXziPiQe7to1O-QEm-_5GfD7hPjp-Xc/edit?usp=sharing
 [the site's FAQ]: https://www.opendisclosure.io/faq/
+[wget]: https://www.gnu.org/software/wget/
