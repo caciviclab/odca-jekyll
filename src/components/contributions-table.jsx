@@ -80,7 +80,7 @@ class ContributionsTable extends React.Component {
           tokenize(contribution.name)
           .concat(tokenize(contribution.employer))
           .concat(tokenize(contribution.occupation))
-          .concat(contribution.zip)
+          .concat(String(contribution.zip))
           .concat(String(contribution.amount));
         const queries = tokenize(filter);
 
