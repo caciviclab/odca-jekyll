@@ -76,8 +76,7 @@ class ContributionsTable extends React.Component {
 
     return contributions
       .filter((contribution) => {
-        const tokens =
-          tokenize(contribution.name)
+        const tokens = tokenize(contribution.name)
           .concat(tokenize(contribution.employer))
           .concat(tokenize(contribution.occupation))
           .concat(String(contribution.zip))
