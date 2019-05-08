@@ -10,6 +10,10 @@
 
 .landing__description {
   padding: 50px;
+
+  & + & {
+    border-top: 1px solid $color-grey-4-5;
+  }
 }
 
 .landing__description__paragraph {
