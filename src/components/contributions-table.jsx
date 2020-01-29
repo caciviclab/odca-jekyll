@@ -76,7 +76,11 @@ class ContributionsTable extends React.Component {
 
     return contributions
       .filter((contribution) => {
-        const tokens = tokenize(contribution.name);
+        const tokens = tokenize(contribution.name)
+          .concat(tokenize(contribution.employer))
+          .concat(tokenize(contribution.occupation))
+          .concat(String(contribution.zip))
+          .concat(String(contribution.amount));
         const queries = tokenize(filter);
 
         // Every query needs to match at least one token. It's considered a
