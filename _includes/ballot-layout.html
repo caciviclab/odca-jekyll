@@ -1,7 +1,11 @@
 {% include election-header.html ballot=include.ballot locality=include.locality %}
+{% assign updated_at = site.data.stats.date_processed | date: "%b. %-d, %Y" %}
 
 <div class="l-ballot">
   <div class="l-ballot__main">
+    <div class="grid-col-12">
+      <div class="election-header__updated-at">Content last updated {{ updated_at }}</div>
+    </div>
     <div class="l-ballot__content">
       <article>
         {{ include.content }}
@@ -9,7 +13,14 @@
     </div>
   </div>
   <div class="l-ballot__nav">
-    {% include ballot-nav.html ballot=include.ballot locality=include.locality %}
+    <h1>{{ locality.name | escape }}</h1>
+    {% for election in related_elections %}
+      {% if election == page.election %}
+        {% include ballot-nav.html ballot=include.ballot locality=include.locality %}
+      {% else %}
+        <div class="ballot-nav__day">{{ election | date: "%B %-d, %Y" }} election</div>
+      {% endif %}
+    {% endfor %}
   </div>
 </div>
 

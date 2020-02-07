@@ -22,5 +22,12 @@
   @include grid-media($neat-grid--medium) {
     @include grid-column(8);
     @include grid-shift(4);
+    .l-ballot__updated-at {
+      float: right;
+    }
   }
+}
+
+.l-ballot__updated-at {
+  font-size: $small-font-size;
 }

@@ -4,7 +4,7 @@ layout: default
 {% assign ballot = page %}
 {% assign locality = site.localities | where: 'slug', ballot.locality | first %}
 
-{% assign ballots = site.elections | where: "locality", locality.locality_id | reverse %}
+{% assign ballots = site.elections | where: "locality", locality.locality_id %}
 {% comment %}
     ¿Is this used anywhere?
     {% assign current_ballot = ballots | where: "election", locality.current_election | first %}

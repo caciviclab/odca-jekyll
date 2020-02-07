@@ -53,6 +53,12 @@ a {
   }
 }
 
+.ballot-nav__day {
+  color: $color-navy;
+  font-size: $h3-font-size;
+  font-weight: bold;
+}
+
 .ballot-nav__measure-title {
   display: block;
   color: $subheading-color;
