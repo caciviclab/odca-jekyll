@@ -13,12 +13,8 @@
   </div>
   <div class="l-ballot__nav">
     <h1>{{ locality.name | escape }}</h1>
-    {% for election in related_elections %}
-      {% if election == page.election %}
-        {% include ballot-nav.html ballot=include.ballot locality=include.locality %}
-      {% else %}
-        <div class="ballot-nav__day">{{ election | date: "%B %-d, %Y" }} election</div>
-      {% endif %}
+    {% for ballot in ballots %}
+      {% include ballot-nav.html ballot=ballot locality=include.locality %}
     {% endfor %}
   </div>
 </div>
