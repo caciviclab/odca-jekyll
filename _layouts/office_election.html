@@ -5,6 +5,8 @@ layout: default
 {% assign ballot = site.elections | where: "path", office_election.election | first %}
 {% assign locality = site.localities | where: "locality_id", ballot.locality | first %}
 {% assign election_day = ballot.election | date: '%Y-%m-%d' %}
+{% assign election_year = ballot.election | slice: 0, 4 %}
+{% assign ballots = site.elections | where_exp: 'ballot', 'ballot.election contains election_year' %}
 
 {% comment %}
 Filter the candidates for this election.
@@ -25,4 +27,4 @@ Filter the candidates for this election.
   </main>
 </div>
 {% endcapture %}
-{% include ballot-layout.html content=body locality=locality ballot=ballot %}
+{% include ballot-layout.html content=body ballots=ballots locality=locality %}
