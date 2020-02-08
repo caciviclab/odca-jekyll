@@ -6,23 +6,7 @@ $ballot-nav-border: 2px $color-grey-4-5 solid;
     padding-right: $gutter--large;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: $heading-color--light;
-    font-weight: $font-weight-light;
-  }
-
   // Collapse the gutter for l-sections so they consume the full-width, including the left margin.
-  .l-section {
-    @include grid-media($neat-grid--medium) {
-      @include grid-collapse;
-    }
-  }
-
   p {
     margin: auto;
   }
@@ -37,20 +21,29 @@ $ballot-nav-border: 2px $color-grey-4-5 solid;
   }
 }
 
+.ballot-nav__heading--spacious {
+  margin: 1.75rem 0;
+}
+
+.ballot-nav__group {
+  border-top: 1px $color-grey-4-5 solid;
+}
+
+.ballot-nav__heading--light {
+  color: $heading-color--light;
+  font-weight: $font-weight-light;
+}
+
+.ballot-nav__heading--blue {
+  color: $color-navy;
+}
+
 a {
   text-decoration: none;
 }
 
 .current-page {
   background-color: $color-gold;
-}
-
-.ballot-nav__group {
-  border-top: 2px $color-grey-4-5 solid;
-
-  h4 {
-    font-weight: lighter;
-  }
 }
 
 .ballot-nav__day {

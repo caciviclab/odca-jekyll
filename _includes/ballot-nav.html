@@ -3,13 +3,16 @@
 {% assign office_elections = include.ballot.office_elections %}
 {% assign tabIndxVar = 4 %}
 
-<div class="ballot-nav__day">{{ include.ballot.election | date: "%B %-d, %Y" }} election</div>
 <nav class="ballot-nav">
+  <div class="ballot-nav__group">
+    <h3 class="ballot-nav__heading--light">Upcoming Races</h3>
+    <h3 class="ballot-nav__heading--spacious ballot-nav__day">{{ include.ballot.election | date: "%B %-d, %Y" }} election</h3>
+  </div>
   <section class="l-section">
-    <div class="l-section__content">
+    <div class="ballot-nav__group">
       {% if referendums and referendums != empty %}
         <div class="ballot-nav__group">
-          <h4>{% include referendum_measure_heading.html referendum_measure_display=locality.referendum_measure_display %}</h4>
+          <h4 class="ballot-nav__heading--light">{% include referendum_measure_heading.html referendum_measure_display=locality.referendum_measure_display %}</h4>
           {% for ballot_item in referendums %}
               {% assign tabIndxVar = tabIndxVar | plus:1 %}
               {% assign referendum = site.referendums | where: "path", ballot_item | first %}
@@ -27,7 +30,7 @@
           {% assign tabIndxVar = tabIndxVar | plus:1 %}
           <div class="ballot-nav__group">
             {% if ballot_item.label %}
-              <h4>{{ ballot_item.label | escape }}</h4>
+              <h4 class="ballot-nav__heading--light">{{ ballot_item.label | escape }}</h4>
             {% endif %}
             {% for office_election_path in ballot_item.items %}
             {% assign tabIndxVar = tabIndxVar | plus:1 %}

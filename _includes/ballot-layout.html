@@ -3,7 +3,7 @@
 <div class="l-ballot">
   <div class="l-ballot__main">
     <div class="grid-col-12">
-      <div class="l-ballot__updated-at">Content last updated {{ updated_at }}</div>
+      <span class="l-ballot__updated-at">Content last updated {{ updated_at }}</span>
     </div>
     <div class="l-ballot__content">
       <article>
@@ -12,7 +12,7 @@
     </div>
   </div>
   <div class="l-ballot__nav">
-    <h1>{{ locality.name | escape }}</h1>
+    <h3 class="ballot-nav__heading--spacious ballot-nav__heading--light ballot-nav__heading--blue">{{ locality.name | escape }}</h3>
     {% for ballot in ballots %}
       {% include ballot-nav.html ballot=ballot locality=include.locality %}
     {% endfor %}
