@@ -12,10 +12,7 @@
     </div>
   </div>
   <div class="l-ballot__nav">
-    <h3 class="ballot-nav__heading--spacious ballot-nav__heading--light ballot-nav__heading--blue">{{ locality.name | escape }}</h3>
-    {% for ballot in ballots %}
-      {% include ballot-nav.html ballot=ballot locality=include.locality %}
-    {% endfor %}
+    {% include ballot-nav.html ballots=ballots locality=locality %}
   </div>
 </div>
 

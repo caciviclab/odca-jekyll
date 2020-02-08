@@ -1,15 +1,16 @@
 {% assign locality = include.locality %}
-{% assign referendums = include.ballot.referendums %}
-{% assign office_elections = include.ballot.office_elections %}
 {% assign tabIndxVar = 4 %}
 
 <nav class="ballot-nav">
+  <h3 class="ballot-nav__heading--spacious ballot-nav__heading--light ballot-nav__heading--blue">{{ locality.name | escape }}</h3>
   <div class="ballot-nav__group">
     <h3 class="ballot-nav__heading--light">Upcoming Races</h3>
-    <h3 class="ballot-nav__heading--spacious ballot-nav__day">{{ include.ballot.election | date: "%B %-d, %Y" }} election</h3>
   </div>
   <section class="l-section">
-    <div class="ballot-nav__group">
+    {% for ballot in ballots %}
+      {% assign referendums = ballot.referendums %}
+      {% assign office_elections = ballot.office_elections %}
+      <h3 class="ballot-nav__heading--spacious ballot-nav__day">{{ ballot.election | date: "%B %-d, %Y" }}</h3>
       {% if referendums and referendums != empty %}
         <div class="ballot-nav__group">
           <h4 class="ballot-nav__heading--light">{% include referendum_measure_heading.html referendum_measure_display=locality.referendum_measure_display %}</h4>
@@ -42,6 +43,6 @@
           </div>
         {% endfor %}
       {% endif %}
-    </div>
+    {% endfor %}
   </section>
 </nav>
