@@ -3,11 +3,12 @@ layout: default
 ---
 {% assign referendum = page %}
 {% assign election_day = referendum.election | date: "%Y-%m-%d" %}
+{% capture ballot_path %}_elections/{{ referendum.locality }}/{{ election_day }}.md{% endcapture %}
+{% assign ballot = site.elections | where: 'path', ballot_path | first %}
 {% assign referendum_id = referendum.title | slugify: 'latin' %}
 {% assign supporting = site.data.referendum_supporting[referendum.locality][election_day][referendum_id] %}
 {% assign opposing = site.data.referendum_opposing[referendum.locality][election_day][referendum_id] %}
 {% assign election_year = referendum.election | slice: 0, 4 %}
-{% assign ballots = site.elections | where_exp: 'ballot', 'ballot.election contains election_year' %}
 {% assign locality = site.localities | where: 'locality_id', referendum.locality | first %}
 
 
@@ -115,4 +116,4 @@ layout: default
 </section>
 
 {% endcapture %}
-{% include ballot-layout.html content=body ballots=ballots locality=locality %}
+{% include ballot-layout.html content=body ballot=ballot locality=locality %}

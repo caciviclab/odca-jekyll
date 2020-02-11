@@ -9,7 +9,6 @@ layout: default
 {% assign ballot = site.elections | where: "path", candidate.election | first %}
 {% assign locality = site.localities | where: "locality_id", ballot.locality | first %}
 {% assign election_year = ballot.election | slice: 0, 4 %}
-{% assign ballots = site.elections | where_exp: 'ballot', 'ballot.election contains election_year' %}
 {% assign election_day = ballot.election | date: '%Y-%m-%d' %}
 {% assign finance = site.data.candidates[locality.slug][election_day][candidate.slug] %}
 {% assign opposing_committees = finance.opposing_money.opposition_list %}
@@ -141,4 +140,4 @@ layout: default
   </div>
 </div>
 {% endcapture %}
-{% include ballot-layout.html content=body ballots=ballots locality=locality %}
+{% include ballot-layout.html content=body ballot=ballot locality=locality %}
