@@ -21,7 +21,7 @@
       {% assign tabIndxVar = tabIndxVar | plus:1 %}
       {% assign referendum = site.referendums | where: "path", ballot_item | first %}
       <li class="ballot-nav__list-item{% if page.url == referendum.url %} current-page{% endif %}">
-        <a href="{{ referendum.url | prepend: site.baseurl }}" tabindex="{{ tabIndxVar }}">
+        <a class="ballot-nav__link-item" href="{{ referendum.url | prepend: site.baseurl }}" tabindex="{{ tabIndxVar }}">
           Measure {% if referendum.number %}{{ referendum.number }} {% endif %}
           <span class="ballot-nav__measure-title">{{ referendum.title | smartify }}</span>
         </a>
@@ -42,7 +42,7 @@
       {% assign tabIndxVar = tabIndxVar | plus:1 %}
       {% assign office_election = site.office_elections | where: "path", office_election_path | first %}
       <li class="ballot-nav__list-item{% if page.url == referendum.url %} current-page{% endif %}">
-        <a href="{{ office_election.url | prepend: site.baseurl }}" tabindex="{{ tabIndxVar}}">{{ office_election.title }}</a>
+        <a class="ballot-nav__link-item" href="{{ office_election.url | prepend: site.baseurl }}" tabindex="{{ tabIndxVar}}">{{ office_election.title }}</a>
       </li>
       {% endfor %}
       </ul>
