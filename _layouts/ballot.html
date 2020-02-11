@@ -7,7 +7,6 @@ layout: default
 {% assign today = site.time | date: "%Y-%m-%d" %}
 {% assign current_election = locality.current_election | date: "%Y-%m-%d" %}
 {% assign ballot_year = page.election | slice: 0, 4 %}
-{% assign ballots = site.elections | where: 'locality', 'ballot.locality' | where_exp: 'ballot', 'ballot.election contains ballot_year' %}
 
 {% capture body %}
 <span>Election-wide finance data coming soon! Choose a ballot item from the navigation.</span>
