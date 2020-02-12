@@ -8,7 +8,6 @@ layout: default
 {% assign referendum_id = referendum.title | slugify: 'latin' %}
 {% assign supporting = site.data.referendum_supporting[referendum.locality][election_day][referendum_id] %}
 {% assign opposing = site.data.referendum_opposing[referendum.locality][election_day][referendum_id] %}
-{% assign election_year = referendum.election | slice: 0, 4 %}
 {% assign locality = site.localities | where: 'locality_id', referendum.locality | first %}
 
 
