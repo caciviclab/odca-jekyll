@@ -8,8 +8,6 @@ layout: default
 {% assign opposing_committees = site.committees | where: "opposing_candidate", candidate.slug %}
 {% assign ballot = site.elections | where: "path", candidate.election | first %}
 {% assign locality = site.localities | where: "locality_id", ballot.locality | first %}
-{% assign election_year = ballot.election | slice: 0, 4 %}
-{% assign election_day = ballot.election | date: '%Y-%m-%d' %}
 {% assign finance = site.data.candidates[locality.slug][election_day][candidate.slug] %}
 {% assign opposing_committees = finance.opposing_money.opposition_list %}
 {% assign supporting_committees = finance.supporting_money.support_list %}
