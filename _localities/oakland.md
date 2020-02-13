@@ -13,7 +13,6 @@ contribution_limit:
         The maximum contribution this candidate can accept is $200 from any individual, business entity, committee or other organization and $400 from a qualified broad-based committee.
     - election_year: 2018
       text: >
-        This candidate has agreed to voluntary spending limits.
         The maximum contribution this candidate can accept is $800 from any individual, business entity,
         committee or other organization and $1,600 from a qualified broad-based committee.
 ---

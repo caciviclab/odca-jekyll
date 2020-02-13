@@ -49,6 +49,7 @@ layout: default
             {% assign election_year = ballot.election | slice: 0, 4 | plus: 0 %}
             {% assign contribution_limit = locality.contribution_limit | where: 'election_year', election_year | first %}
             <div class="candidate__expenditure-ceiling">
+              This candidate has agreed to voluntary spending limits.
               {{ contribution_limit.text }}
               {% capture tooltip_message -%}
               For more on Oakland contribution limits and campaign rules, see the <a href="https://www.oaklandca.gov/resources/oakland-campaign-contribution-limits" target="_blank">
