@@ -41,7 +41,7 @@
       {% for office_election_path in ballot_item.items %}
       {% assign tabIndxVar = tabIndxVar | plus:1 %}
       {% assign office_election = site.office_elections | where: "path", office_election_path | first %}
-      <li class="ballot-nav__list-item{% if page.url == referendum.url %} current-page{% endif %}">
+      <li class="ballot-nav__list-item{% if page.url == office_election.url %} current-page{% endif %}">
         <a class="ballot-nav__link-item" href="{{ office_election.url | prepend: site.baseurl }}" tabindex="{{ tabIndxVar}}">{{ office_election.title }}</a>
       </li>
       {% endfor %}
