@@ -8,6 +8,7 @@ layout: default
 {% assign opposing_committees = site.committees | where: "opposing_candidate", candidate.slug %}
 {% assign ballot = site.elections | where: "path", candidate.election | first %}
 {% assign locality = site.localities | where: "locality_id", ballot.locality | first %}
+{% assign election_day = ballot.election | date: '%Y-%m-%d' %}
 {% assign finance = site.data.candidates[locality.slug][election_day][candidate.slug] %}
 {% assign opposing_committees = finance.opposing_money.opposition_list %}
 {% assign supporting_committees = finance.supporting_money.support_list %}
@@ -15,6 +16,10 @@ layout: default
 {% assign expenditures_supporting = finance.supporting_money.total_supporting_independent %}
 
 {% capture body %}
+<h1 style="color: gold">
+  {{ locality.slug }}<br>
+  {{ election_day }}
+</h1>
 <div class="candidate">
   <header class="candidate__header grid">
     <div class="grid-col-12">
