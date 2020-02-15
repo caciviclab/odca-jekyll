@@ -14,13 +14,9 @@ volunteers to contribute to our project and support civic tech.
 
 ### Current Team
 
-- Aaron D Borden
-- Andy Luo
 - Alison Lawyer
 - Colin King-Bailey
 - Elina Rubuliak
-- Jesse Woltjer
-- Maddy Ford
 - Mike Ubell
 - Sarah Seiter
 - Suzanne Doran
@@ -28,8 +24,10 @@ volunteers to contribute to our project and support civic tech.
 
 ### Open Disclosure Alumni
 
+- Aaron D Borden
 - Amanda Richardson
 - Andrell Bower
+- Andy Luo
 - Ash Roughani
 - Asha John
 - Ben Cipollini
@@ -46,6 +44,7 @@ volunteers to contribute to our project and support civic tech.
 - Jamie Marcus
 - Jesse Biroscak
 - Jesse Rosato
+- Jesse Woltjer
 - John C. Osborn
 - Jonathan Wrobel
 - Kate Drew
@@ -55,6 +54,7 @@ volunteers to contribute to our project and support civic tech.
 - Linda Peng
 - Luis Aguilar
 - Lynna Jirpongopas
+- Maddy Ford
 - Maggie Shine
 - Maksim Pecherskiy
 - Mel Restori
