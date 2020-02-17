@@ -8,6 +8,8 @@ header: Track the money in Oakland elections
   {% assign oakland_total_funds = oakland_total_funds | plus: source[1] %}
 {% endfor %}
 
+{% assign oakland_residents_percentage = site.data.totals.oakland-2018['Within Oakland'] | divided_by: oakland_total_funds%}
+
 {% capture hero-cta %}
 <div class="hero__cta-container">
   <div class="hero__cta"><a class="btn" href="{{ site.baseurl }}{% link _office_elections/oakland/2018-11-06/mayor.md %}">Follow the money</a></div>
@@ -53,6 +55,12 @@ header: Track the money in Oakland elections
         </div>
         <div class="hero__funds_raised__total">
           {{ oakland_total_funds | dollars }}
+        </div>
+        <div class="hero__funds__raised__header">
+          <h2>Percentage of Contributions from Oakland Residents:</h2>
+        </div>
+        <div class="hero__funds_raised__total">
+          {{ oakland_residents_percentage | times: 100 | round }}%
         </div>
       </div>
     </div>
