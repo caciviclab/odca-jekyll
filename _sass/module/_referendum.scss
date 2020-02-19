@@ -18,6 +18,11 @@
   p {
     color: $color-grey-2;
   }
+
+  a {
+    margin-bottom: $spacing-base * 2;
+    display: block;
+  }
 }
 
 .contribution__support_oppose {
