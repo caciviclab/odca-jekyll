@@ -3,12 +3,19 @@ layout: default
 header: Track the money in Oakland elections
 ---
 
-{% assign oakland_total_funds = 0 %}
+{% assign oakland_march_total_funds = 0 %}
 {% for source in site.data.totals.oakland-march-2020 %}
+  {% assign oakland_march_total_funds = oakland_march_total_funds | plus: source[1] %}
+{% endfor %}
+
+{% assign oakland_march_residents_percentage = site.data.totals.oakland-march-2020['Within Oakland'] | divided_by: oakland_march_total_funds%}
+
+{% assign oakland_total_funds = 0 %}
+{% for source in site.data.totals.oakland-2020 %}
   {% assign oakland_total_funds = oakland_total_funds | plus: source[1] %}
 {% endfor %}
 
-{% assign oakland_residents_percentage = site.data.totals.oakland-2018['Within Oakland'] | divided_by: oakland_total_funds%}
+{% assign oakland_residents_percentage = site.data.totals.oakland-2020['Within Oakland'] | divided_by: oakland_total_funds%}
 
 {% capture hero-cta %}
 <div class="hero__cta-container">
@@ -16,62 +23,70 @@ header: Track the money in Oakland elections
 </div>
 {% endcapture %}
 
-<div class="hero hero--photo hero--landing">
-  <div class="hero__content">
-    <div class="hero__header">
-      <h1 class="hero__hed">Open Disclosure Oakland</h1>
-      <p class="hero__subhead">
-        Bringing campaign money to light
-      </p>
+<div class="hero hero--photo">
+  <div class="grid custom-grid-thirds hero__content">
+    <div class="custom-grid--thirds__a-single-column hero__header">
+        <h4 class="hero__subheader">
+          Open Disclosure was created to empower Oakland voters with timely,
+          accurate, and useful information about the role of money in local elections.
+        </h4>
+        <h1 class="hero__hed">{{ page.header | escape }}</h1>
+        {{ hero-cta }}
     </div>
-    <div class="hero__main">
-      <div class="hero__section grid--full">
-        <div class="grid-col-12">
-          <div class="hero__lede">
-            <p>{{ page.header | escape }}</p>
-          </div>
-          {{ hero-cta }}
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="hero__attribution">
-    <span>Modified from source by <a href="https://www.flickr.com/photos/danramarch/4411629379/">Daniel Ramirez</a> <a href="https://creativecommons.org/licenses/by/2.0/">(CC BY 2.0)</a></span>
-  </div>
-  <div class="hero__content hero__content--s1">
-    <div class="hero__header">
-      <h1 class="hero__hed">{{ page.header | escape }}</h1>
-      {{ hero-cta }}
-    </div>
-    <div class="hero__main">
-      <div class="hero__lede">
-        <ul>
-          <li>Who is contributing to the candidates?</li>
-          <li>How much money has each candidate raised?</li>
-          <li>Who is spending money to influence local ballot measures outcomes?</li>
-          <li>Are the sources of political spending local?</li>
-        </ul>
-        <div class="hero__funds__raised__header">
-          <h2>Total contributions flowing into Oakland’s March 2020 Election:</h2>
-        </div>
-        <div class="hero__funds_raised__total">
-          {{ oakland_total_funds | dollars }}
-        </div>
-        <div class="hero__funds__raised__header">
-          <h2>Percentage of Contributions from Oakland Residents:</h2>
-        </div>
-        <div class="hero__funds_raised__total">
-          {{ oakland_residents_percentage | times: 100 | round }}%
-        </div>
+    <div class="custom-grid--thirds__a-double-column hero__table-container">
+      <div>
+        <h2 class="hero__table__header">Oakland Election Live Snapshot</h2>
+        <table class="hero__table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th class="hero__column__header">MARCH 2020</th>
+                    <th class="hero__column__header">NOVEMBER 2020</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="hero__row__header">Contributions to date</td>
+                    <td class="hero__funds_raised__total">{{ oakland_march_total_funds | dollars }}</td>
+                    <td class="hero__funds_raised__total">{{ oakland_total_funds | dollars }}</td>
+                </tr>
+                <tr>
+                    <td class="hero__row__header">% of contributions from Oakland residents</td>
+                    <td class="hero__funds_raised__total">{{ oakland_march_residents_percentage | times: 100 | round }}%</td>
+                    <td class="hero__funds_raised__total">{{ oakland_residents_percentage | times: 100 | round }}%</td>
+                </tr>
+                <tr>
+                    <td class="hero__row__header">Top 3 third-party spenders (independent expenditures)</td>
+                    <td class="hero__top-spenders">
+                      <ul>
+                        <li>OUTFRONT MEDIA LLC</li>
+                        <li>Families and Educators for Public Education</li>
+                        <li>OAKLAND EDUCATION ASSOCIATION POLITICAL ACTION COMMITTEE</li>
+                      </ul>
+                    </td>
+                    <td class="hero__top-spenders">Info Coming Soon!</td>
+                </tr>
+            </tbody>
+        </table>
       </div>
     </div>
   </div>
 </div>
 <div class="landing__description">
-  <h3 class="landing__description__header">
-    Open Disclosure was created to empower Oakland voters with timely, accurate, and useful information about the
-    role of money in local elections.
-  </h3>
+  <h3 class="landing__description__header">Sign up for daily campaign finance alerts.</h3>
+  <p class="landing__description__paragraph">Every day, Oakland's lobbyists, candidates, and decisionmakers are required to disclose their finances. Open Disclosure Alerts help you stay on top of the influence of money on your local politics.</p>
+
+  <p class="landing__description__paragraph">
+    <strong><a href="https://alert.opendisclosure.io" class="btn">Sign up for daily alerts</a></strong>
+  </p>
+</div>
+<div class="landing__description">
+  <ul>
+    <li>Who is giving money to candidates?</li>
+    <li>How much money has each candidate collected?</li>
+    <li>Is the money coming from local sources?</li>
+    <li>What ballot measures are receiving the most funds?</li>
+  </ul>
   <p class="landing__description__paragraph">
     This site pulls data from the City of Oakland’s campaign finance reporting database to produce easy to understand
     graphs that clearly show the source of campaign funds and how they are being spent to sway election results. Our goal is
@@ -82,11 +97,4 @@ header: Track the money in Oakland elections
     political participation by Oakland residents.
   </p>
 </div>
-<div class="landing__description">
-  <h3 class="landing__description__header">Sign up for daily campaign finance alerts.</h3>
-  <p class="landing__description__paragraph">Every day, Oakland's lobbyists, candidates, and decisionmakers are required to disclose their finances. Open Disclosure Alerts help you stay on top of the influence of money on your local politics.</p>
 
-  <p class="landing__description__paragraph">
-    <strong><a href="https://alert.opendisclosure.io" class="btn">Sign up for daily alerts</a></strong>
-  </p>
-</div>
