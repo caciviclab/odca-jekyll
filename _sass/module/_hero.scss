@@ -8,6 +8,10 @@ $custom-grid--thirds: (
   gutter: $spacing-base * 4,
 );
 
+.custom-grid--thirds {
+  @include grid-container;
+}
+
 .hero {
   padding: ($spacing-base * 4.8) ($spacing-base * 3) ($spacing-base * 6) ($spacing-base * 3);
   position: relative;
@@ -49,7 +53,6 @@ $custom-grid--thirds: (
 
   @include media($hero-breakpoint) {
     padding: 0;
-    @include grid-container;
     @include grid-column(1, $custom-grid--thirds);
   }
 
@@ -97,7 +100,6 @@ $custom-grid--thirds: (
   @include media($hero-breakpoint) {
     display: flex;  
     justify-content: center;
-    @include grid-container;
     @include grid-column(2, $custom-grid--thirds);
   }
 }
