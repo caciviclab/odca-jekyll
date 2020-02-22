@@ -97,21 +97,3 @@ $neat-grid--large: (
     }
   }
 }
-
-
-$custom-grid--thirds: (
-  columns: 3,
-  gutter: $spacing-base * 4,
-);
-
-.custom-grid--thirds {
-  @include grid-container;
-}
-
-.custom-grid--thirds__a-single-column {
-  @include grid-column(1, $custom-grid--thirds);
-}
-
-.custom-grid--thirds__a-double-column {
-  @include grid-column(2, $custom-grid--thirds);
-}

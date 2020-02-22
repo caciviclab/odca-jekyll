@@ -2,6 +2,12 @@ $text-shadow-color: rgba(30, 30, 30, .8);
 $scrim-color: rgba(0, 0, 0, .4);
 $hero-breakpoint: $grid--medium;
 
+
+$custom-grid--thirds: (
+  columns: 3,
+  gutter: $spacing-base * 4,
+);
+
 .hero {
   padding: ($spacing-base * 4.8) ($spacing-base * 3) ($spacing-base * 6) ($spacing-base * 3);
   position: relative;
@@ -38,7 +44,14 @@ $hero-breakpoint: $grid--medium;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+  padding: 5rem;
 
+  @include media($hero-breakpoint) {
+    padding: 0;
+    @include grid-container;
+    @include grid-column(1, $custom-grid--thirds);
+  }
 
   .btn {
     background-color: $color-white;
@@ -49,8 +62,10 @@ $hero-breakpoint: $grid--medium;
 }
 
 .hero__subheader {
-  margin-top: $spacing-base * 8;
   font-style: italic;
+  @include media($hero-breakpoint) {
+    margin-top: $spacing-base * 7;
+  }
 }
 
 .hero__hed {
@@ -78,8 +93,13 @@ $hero-breakpoint: $grid--medium;
 }
 
 .hero__table-container {
-  display: flex;  
-  justify-content: center;
+  display: none;
+  @include media($hero-breakpoint) {
+    display: flex;  
+    justify-content: center;
+    @include grid-container;
+    @include grid-column(2, $custom-grid--thirds);
+  }
 }
 
 .hero__table {
