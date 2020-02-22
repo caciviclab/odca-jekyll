@@ -13,7 +13,7 @@ $custom-grid--thirds: (
 }
 
 .hero {
-  padding: ($spacing-base * 4.8) ($spacing-base * 3) ($spacing-base * 6) ($spacing-base * 3);
+  padding: ($spacing-base * 4.8) ($spacing-base * 3) ($spacing-base * 6);
   position: relative;
   display: flex;
   justify-content: center;
@@ -66,6 +66,7 @@ $custom-grid--thirds: (
 
 .hero__subheader {
   font-style: italic;
+
   @include media($hero-breakpoint) {
     margin-top: $spacing-base * 7;
   }
@@ -84,9 +85,11 @@ $custom-grid--thirds: (
 
 .hero__top-spenders {
   font-size: 1.5rem;
+
   ul {
     margin: 0;
   }
+
   li {
     color: $color-gold;
     list-style-type: none;
@@ -97,8 +100,9 @@ $custom-grid--thirds: (
 
 .hero__table-container {
   display: none;
+
   @include media($hero-breakpoint) {
-    display: flex;  
+    display: flex;
     justify-content: center;
     @include grid-column(2, $custom-grid--thirds);
   }
@@ -106,14 +110,16 @@ $custom-grid--thirds: (
 
 .hero__table {
   max-width: 55rem;
+
   // make first column half of the size of the second and third column:
   td {
-    padding: $spacing-base 0;
+    padding: $spacing-base * 2 0;
     width: 38%;
     color: $color-gold;
     text-align: center;
     font-style: italic;
   }
+
   td:first-child {
     width: 24%;
     text-align: left;
@@ -134,6 +140,7 @@ $custom-grid--thirds: (
     font-style: normal;
     font-size: 1.5rem;
   }
+  
   .hero__column__header {
     color: $color-white;
     font-style: normal;
