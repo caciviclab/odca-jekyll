@@ -126,11 +126,6 @@ $custom-grid--thirds: (
     vertical-align: top;
   }
 
-  thead tr {
-    border-bottom: none;
-    margin-bottom: $spacing-base;
-  }
-
   tr:last-child {
     border-bottom: none;
   }
@@ -140,7 +135,7 @@ $custom-grid--thirds: (
     font-style: normal;
     font-size: 1.5rem;
   }
-  
+
   .hero__column__header {
     color: $color-white;
     font-style: normal;
@@ -149,8 +144,12 @@ $custom-grid--thirds: (
   }
 }
 
+.hero__table__head tr {
+  border-bottom: none;
+  margin-bottom: $spacing-base;
+}
+
 .hero__table__header {
   margin-bottom: $spacing-base * 2;
   text-align: left;
-
 }
