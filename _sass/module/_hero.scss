@@ -74,13 +74,13 @@ $custom-grid--thirds: (
 
 .hero__hed {
   font-size: $h2-font-size;
-  font-weight: $font-weight-bold;
   font-style: normal;
   margin-bottom: $spacing-base * 2.5;
 }
 
 .hero__funds_raised__total {
   font-size: 3rem;
+  font-weight: $font-weight-light;
 }
 
 .hero__top-spenders {
