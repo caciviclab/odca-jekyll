@@ -4,13 +4,13 @@ header: Track the money in Oakland elections
 ---
 
 {% assign oakland_total_funds = 0 %}
-{% for source in site.data.totals.oakland-2018 %}
+{% for source in site.data.totals.oakland-march-2020 %}
   {% assign oakland_total_funds = oakland_total_funds | plus: source[1] %}
 {% endfor %}
 
 {% capture hero-cta %}
 <div class="hero__cta-container">
-  <div class="hero__cta"><a class="btn" href="{{ site.baseurl }}{% link _office_elections/oakland/2018-11-06/mayor.md %}">Follow the money</a></div>
+  <div class="hero__cta"><a class="btn" href="{{ site.baseurl }}{% link _elections/oakland/2020-03-03.md %}">Follow the money</a></div>
 </div>
 {% endcapture %}
 
@@ -49,7 +49,7 @@ header: Track the money in Oakland elections
           <li>Are the sources of political spending local?</li>
         </ul>
         <div class="hero__funds__raised__header">
-          <h2>Total contributions flowing into Oakland’s 2018 Election:</h2>
+          <h2>Total contributions flowing into Oakland’s March 2020 Election:</h2>
         </div>
         <div class="hero__funds_raised__total">
           {{ oakland_total_funds | dollars }}
