@@ -21,7 +21,7 @@ title: Frequently asked questions
 
 ## What data is featured on this website?
 
-Open Disclosure visualizes campaign finance data for Oakland candidates and ballot measures. The data comes from the City’s campaign finance portal on the City of Oakland Public Ethics Commission website.
+Open Disclosure visualizes campaign finance data for Oakland candidates and ballot measures. The data comes from the City’s [campaign finance portal](https://public.netfile.com/pub2/Default.aspx?aid=COAK) on the City of Oakland Public Ethics Commission website.
 
 The data collected by the Public Ethics Commission is required by the  California [Political Reform Act (PRA)](http://www.fppc.ca.gov/the-law/the-political-reform-act.html), which requires that a candidate or campaign committee that plans to raise or spend $2,000 or more in a calendar year—including the candidate’s personal funds—must file statements and reports on the committee’s financial activity at specified periods. Candidates or campaign committees that do not raise or spend $2,000 or more in a calendar year are not required to report their financial activity electronically, which may result in some candidates with no available public financial data.
 
@@ -31,7 +31,7 @@ Campaign finance data is self-reported by all local candidate-controlled and bal
 
 The campaign finance data that Open Disclosure presents is derived primarily from the filings of the California Fair Political Practices Commission (FPPC) [Form 460](http://www.fppc.ca.gov/content/dam/fppc/NS-Documents/TAD/Campaign%20Forms/460.pdf) (Recipient Committee Campaign Statement). Once a campaign committee has raised or spent $2,000 or more it must file Form 460, which contains an overview of the committee’s activity during a specified period.
 
-Oakland campaign committees file Form 460 with the Public Ethics Commission’s e-filing system, NetFile, which is available on the [Public Portal for Campaign Finance and Lobbyist Disclosure](http://nf4.netfile.com/pub2/Default.aspx?aid=COAK&AspxAutoDetectCookieSupport=1). The raw data is also synced daily to the City of Oakland's [Open Data Portal](https://data.oaklandnet.com/).
+Oakland campaign committees file Form 460 with the Public Ethics Commission’s e-filing system, NetFile, which is available on the [Public Portal for Campaign Finance and Lobbyist Disclosure](http://nf4.netfile.com/pub2/Default.aspx?aid=COAK&AspxAutoDetectCookieSupport=1). The raw data is also synced daily to the City of Oakland's [OakData portal](https://data.oaklandnet.com/).
 
 
 ## How up-to-date is the data?
@@ -41,18 +41,18 @@ Open Disclosure is based on campaign finance [filing deadlines](http://www.fppc.
 State of California Fair Political Practices Commission (FPPC) for all state and
 local elections.
 
-The filing deadlines for local candidates and measures on the November 6, 2018 election are:
+The filing deadlines for local candidates and measures on the November 3, 2020 election are:
 
 | Reporting Period    |||| FPPC Filing Deadline  |
 | :----------------   |||| :-------------------- |
-| 1/1/2018 – 6/30/18  |||| July 31, 2018        |
-| 7/1/18 – 9/22/18    |||| September 27, 2018    |
-| 9/23/18 – 10/20/18  |||| October 25, 2018      |
-| 10/21/18 – 12/31/18 |||| January 31, 2019      |
+| 1/1/2020 – 6/30/20  |||| July 31, 2020        |
+| 7/1/20 – 9/19/20    |||| September 24, 2020    |
+| 9/20/20 – 10/17/20  |||| October 22, 2020      |
+| 10/18/20 – 12/31/20 |||| February 1, 2020      |
 
 In addition to these filing deadlines, contributions of $1,000 or more from
 a single source made to candidate and ballot measure committees within the 90
-days prior to the election (8/8/18-11/6/18) must be reported within 24 hours.
+days prior to the election (8/5/20-11/3/20) must be reported within 24 hours.
 
 ## What is a non-itemized contribution (small contribution)?
 
@@ -92,9 +92,9 @@ Contact the [Open Disclosure team](https://github.com/caciviclab/odca-jekyll/iss
 
 ## What are Oakland's Campaign Finance Rules?
 
-Any “person” may contribute up to $800* to each candidate per election cycle. “Broad-based political committees” may contribute up to $1,600* to each candidate per election cycle ([Oakland Campaign Reform Act (OCRA) 3.12.050](https://library.municode.com/HTML/16308/level3/TIT3MUEL_CH3.12THOACAREAC_ARTIIICOLI.html#TIT3MUEL_CH3.12THOACAREAC_ARTIIICOLI_3.12.050LICOPE)).
+Any “person” may contribute up to $900* to each candidate per election cycle. “Broad-based political committees” may contribute up to $1,700* to each candidate per election cycle ([Oakland Campaign Reform Act (OCRA) 3.12.050](https://library.municode.com/HTML/16308/level3/TIT3MUEL_CH3.12THOACAREAC_ARTIIICOLI.html#TIT3MUEL_CH3.12THOACAREAC_ARTIIICOLI_3.12.050LICOPE)).
 
-*Candidates may accept this higher contribution limit ONLY IF they accept the [OCRA expenditure ceilings](https://www.oaklandca.gov/documents/contribution-and-expenditure-limits) by submitting the [OCRA Form 301](https://www.oaklandca.gov/documents/ocra-form-301). If the candidate does not accept the expenditure ceilings then the limit for persons is $100 and the limit for broad-based political committees is $400.
+*Candidates may accept contributions at this higher limit ONLY IF they [voluntarily limit](https://www.oaklandca.gov/resources/oakland-campaign-contribution-limits) their campaign spending. If the candidate does not agree to limit spending, the maximum for persons is $200 and the maximum for broad-based political committees is $400.
 
 “Person” means an individual, proprietorship, firm, partnership, joint venture, syndicate, business, trust, company, corporation, association, committee, and any other organization or group of persons acting in concert ([OCRA 3.12.040](https://library.municode.com/HTML/16308/level3/TIT3MUEL_CH3.12THOACAREAC_ARTIIDE.html#TIT3MUEL_CH3.12THOACAREAC_ARTIIDE_3.12.040INAC)).
 
