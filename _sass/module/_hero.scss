@@ -1,31 +1,27 @@
 $text-shadow-color: rgba(30, 30, 30, .8);
-$attribution-background-color: rgba(230, 230, 230, .7);
 $scrim-color: rgba(0, 0, 0, .4);
 $hero-breakpoint: $grid--medium;
 
-.hero {
-  padding: ($spacing-base * 6) 0;
-  position: relative;
+
+$custom-grid--thirds: (
+  columns: 3,
+  gutter: $spacing-base * 4,
+);
+
+.custom-grid--thirds {
+  @include grid-container;
 }
 
-.hero__attribution {
-  position: absolute;
-  background-color: $attribution-background-color;
-  font-size: $small-font-size;
-  text-align: center;
-  padding: 0 $spacing-base;
-  width: auto;
-  bottom: 0;
-  right: 0;
-
-  @include media($hero-breakpoint) {
-    display: block;
-  }
+.hero {
+  padding: ($spacing-base * 4.8) ($spacing-base * 3) ($spacing-base * 6);
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .hero--photo {
-  background-image: url('./images/open-disclosure-splash.png');
-  background-position: bottom;
+  background-image: url('./images/oakland-city-hall.png');
+  background-position: bottom right;
   background-size: cover;
 
   // When hero includes a background image, increase legibility
@@ -42,145 +38,111 @@ $hero-breakpoint: $grid--medium;
     color: $color-white;
     text-shadow: 0 2px 3px $text-shadow-color;
   }
-
-  // Include a scrim over photo backgrounds to increase legibility of content
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-}
-
-// Layout element
-.hero__header {
-  @include grid-column(12);
-  text-align: center;
-}
-
-// Layout element
-.hero__main {
-  @include grid-column(12);
-  font-weight: 350;
-  font-style: italic;
-  display: flex;
-  justify-content: center;
-}
-
-.hero__hed {
-  font-size: $title-font-size;
-  font-weight: 375;
-
-  @include media($hero-breakpoint) {
-    font-style: italic;
-  }
-}
-
-.hero__subhead {
-  @include heading('h3');
-  color: $color-white;
-  font-style: italic;
-}
-
-.hero__lede {
-  text-align: center;
-
-  @include media($hero-breakpoint) {
-    text-align: initial;
-  }
 }
 
 .hero__content {
-  @extend .grid--narrow;
-  position: relative; // layer the content above the .hero--photo scrim
+  max-width: 120rem;
 }
 
-.hero__section {
-  padding-bottom: $spacing-base * 2;
-}
-
-.hero__cta-container {
-  @include grid-collapse;
+.hero__header {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-}
+  width: 100%;
+  padding: 5rem;
 
-.hero__cta-header {
-  @include grid-column(12);
-}
-
-.hero__cta {
-  @include grid-column(12);
-  margin-top: ($spacing-base * 2);
-
-  @include grid-media($neat-grid--small) {
-    @include grid-column(6);
-  }
-
-  @include grid-media($neat-grid--medium) {
-    @include grid-column(4);
-  }
-
-  // Buttons should take full width of the column
-  .btn {
-    background-color: $color-white;
-    font-style: normal;
-    font-weight: bold;
-    width: 100%;
+  @include media($hero-breakpoint) {
+    padding: 0;
+    @include grid-column(1, $custom-grid--thirds);
   }
 }
 
-.hero__funds__raised {
-  display: flex;
-  justify-content: space-around;
-}
-
-.hero__funds__raised__header {
-  font-weight: 100;
+.hero__subheader {
   font-style: italic;
-  text-align: center;
+
+  @include media($hero-breakpoint) {
+    margin-top: $spacing-base * 7;
+  }
+}
+
+.hero__hed {
+  font-size: $h2-font-size;
+  font-style: normal;
+  margin-bottom: $spacing-base * 2.5;
 }
 
 .hero__funds_raised__total {
-  color: $color-gold;
-  font-size: 4rem;
-  text-align: center;
+  font-size: 3rem;
+  font-weight: $font-weight-light;
 }
 
-.hero__funds__raised__city {
-  text-align: center;
-}
+.hero__top-spenders {
+  font-size: 1.5rem;
 
-.hero--landing {
-  // The hero on the landing page works very differently, showing different
-  // content based on the breakpoint. The breakpoints are represented as
-  // sub-classes e.g. --s1
-  // Hide s1 content below the breakpoint
-  .hero__content--s1 {
-    display: none;
+  ul {
+    margin: 0;
   }
+
+  li {
+    color: $color-gold;
+    list-style-type: none;
+    margin-bottom: $spacing-base;
+    line-height: 2rem;
+  }
+}
+
+.hero__table-container {
+  display: none;
 
   @include media($hero-breakpoint) {
-    // Hide the default content after the breakpoint
-    .hero__content {
-      display: none;
-    }
+    display: flex;
+    justify-content: center;
+    @include grid-column(2, $custom-grid--thirds);
+  }
+}
 
-    // Show the s1 content after the breakpoint
-    .hero__content--s1 {
-      display: block;
-    }
+.hero__table {
+  max-width: 55rem;
+
+  // make first column half of the size of the second and third column:
+  td {
+    padding: $spacing-base * 2 0;
+    width: 38%;
+    color: $color-gold;
+    text-align: center;
+    font-style: italic;
   }
 
-  .hero__section {
-
-    .hero__lede { // scss-lint:disable SelectorDepth
-      @include heading('h2');
-      font-size: 2.1rem;
-      font-style: italic;
-    }
+  td:first-child {
+    width: 24%;
+    text-align: left;
+    vertical-align: top;
   }
+
+  tr:last-child {
+    border-bottom: none;
+  }
+
+  .hero__row__header {
+    color: $color-white;
+    font-style: normal;
+    font-size: 1.5rem;
+  }
+
+  .hero__column__header {
+    color: $color-white;
+    font-style: normal;
+    font-weight: $font-weight-normal;
+    font-size: 2rem;
+  }
+}
+
+.hero__table__head tr {
+  border-bottom: none;
+  margin-bottom: $spacing-base;
+}
+
+.hero__table__header {
+  margin-bottom: $spacing-base * 2;
+  text-align: left;
 }

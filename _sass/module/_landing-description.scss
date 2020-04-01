@@ -1,11 +1,11 @@
 .landing__description__header {
-  @include heading('h3');
-  color: $color-grey-2;
+  @include heading('h2');
+  color: $color-white;
   font-style: italic;
   font-weight: 400;
   text-align: center;
   margin: auto;
-  margin-bottom: $spacing-base;
+  margin-bottom: $spacing-base * 3;
 }
 
 .landing__description {
@@ -17,9 +17,41 @@
 }
 
 .landing__description__paragraph {
-  color: $color-grey-2;
   font-weight: 300;
   text-align: center;
   margin: auto;
-  margin-bottom: 5px;
+  margin-bottom: $spacing-base * 2;
+}
+
+.landing__alerts-signup {
+  background: $color-navy;
+  color: $color-white;
+}
+
+.landing__btn {
+  padding: $spacing-base;
+  background-color: $color-white;
+  font-style: normal;
+  font-weight: bold;
+
+  @include media($breakpoint--s1) {
+    padding-left: ($spacing-base * 4);
+    padding-right: ($spacing-base * 4);
+  }
+}
+
+.landing__info {
+  color: $color-grey-2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  ul {
+    font-size: 2rem;
+    margin: 0 auto ($spacing-base * 3);
+  }
+
+  li {
+    margin-bottom: $spacing-base;
+  }
 }
