@@ -1,0 +1,23 @@
+.election-summary {
+  &__total {
+    text-align: center;
+    margin: 24px 0;
+
+    &-header {
+      text-transform: uppercase;
+      font-size: $h3-font-size;
+      margin-bottom: 12px;
+      color: $color-grey-3;
+    }
+
+    &-amount {
+      color: $color-grey-2;
+      font-size: $h1-font-size;
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  &__race-amount {
+    float: right;
+  }
+}

@@ -1,0 +1,20 @@
+<div class="election-summary">
+  <section class="l-section election-summary__total">
+    <div class="election-summary__total-header">Total contributions reported for this election</div>
+    <div class="election-summary__total-amount">{{data_totals['Total'] | dollars}}</div>
+  </section>
+
+  <section class="l-section">
+    <div class="l-section__content">
+      <h2>Top 3 Most Expensive Races</h2>
+    </div>
+    <div class="l-section__content">
+      {% for race in data_totals['most_expensive_races'] %}
+        <div>
+          <a href="/{{race['type']}}/{{ballot.locality}}/{{ballot.slug}}/{{race['slug']}}/">{{race['title']}}</a>
+          <span class="election-summary__race-amount">{{race['amount'] | dollars}}</span>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+</div>

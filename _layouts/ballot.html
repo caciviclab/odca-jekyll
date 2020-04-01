@@ -6,8 +6,12 @@ layout: default
 
 {% assign today = site.time | date: "%Y-%m-%d" %}
 {% assign current_election = locality.current_election | date: "%Y-%m-%d" %}
+{% assign data_totals = site.data.totals[ballot.election_id] %}
 
 {% capture body %}
-<span>Election-wide finance data coming soon! Choose a ballot item from the navigation.</span>
+<header>
+  <h1>Data for All Upcoming Races in {{ballot.locality | capitalize}}</h1>
+</header>
+{% include election-summary.html %}
 {% endcapture %}
 {% include ballot-layout.html content=body ballot=ballot locality=locality %}
