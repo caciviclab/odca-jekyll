@@ -17,6 +17,8 @@ header: Track the money in Oakland elections
 
 {% assign oakland_residents_percentage = site.data.totals.oakland-2020['Within Oakland'] | divided_by: oakland_total_funds%}
 
+{% assign ie_placeholder_text = 'No independent expenditures reported' %}
+
 <div class="hero hero--photo">
   <div class="grid custom-grid-thirds hero__content">
     <div class="hero__header">
@@ -61,7 +63,7 @@ header: Track the money in Oakland elections
                         {% endfor %}
                       </ul>
                       {% else %}
-                      Info Coming Soon!
+                      {{ ie_placeholder_text }}
                       {% endif %}
                     </td>
                     <td class="hero__top-spenders">
@@ -72,7 +74,7 @@ header: Track the money in Oakland elections
                         {% endfor %}
                       </ul>
                       {% else %}
-                      Info Coming Soon!
+                      {{ ie_placeholder_text }}
                       {% endif %}
                     </td>
                 </tr>
