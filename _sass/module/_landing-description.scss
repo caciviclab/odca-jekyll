@@ -29,10 +29,15 @@
 }
 
 .landing__btn {
-  padding: $spacing-base ($spacing-base * 4);
+  padding: $spacing-base;
   background-color: $color-white;
   font-style: normal;
   font-weight: bold;
+
+  @include media($breakpoint--s1) {
+    padding-left: ($spacing-base * 4);
+    padding-right: ($spacing-base * 4);
+  }
 }
 
 .landing__info {
