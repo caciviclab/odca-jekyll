@@ -58,13 +58,27 @@ header: Track the money in Oakland elections
                 <tr>
                     <td class="hero__row__header">Top 3 third-party spenders (independent expenditures)</td>
                     <td class="hero__top-spenders">
+                      {% if site.data.totals.oakland-march-2020.largest_independent_expenditures != null %}
                       <ul>
-                        <li>OUTFRONT MEDIA LLC</li>
-                        <li>Families and Educators for Public Education</li>
-                        <li>OAKLAND EDUCATION ASSOCIATION POLITICAL ACTION COMMITTEE</li>
+                        {% for expenditure in site.data.totals.oakland-march-2020.largest_independent_expenditures %}
+                        <li>{{ expenditure.Filer_NamL }}</li>
+                        {% endfor %}
                       </ul>
+                      {% else %}
+                      Info Coming Soon!
+                      {% endif %}
                     </td>
-                    <td class="hero__top-spenders">Info Coming Soon!</td>
+                    <td class="hero__top-spenders">
+                      {% if site.data.totals.oakland-2020.largest_independent_expenditures != null %}
+                      <ul>
+                        {% for expenditure in site.data.totals.oakland-2020.largest_independent_expenditures %}
+                        <li>{{ expenditure.Filer_NamL }}</li>
+                        {% endfor %}
+                      </ul>
+                      {% else %}
+                      Info Coming Soon!
+                      {% endif %}
+                    </td>
                 </tr>
             </tbody>
         </table>
