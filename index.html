@@ -17,12 +17,6 @@ header: Track the money in Oakland elections
 
 {% assign oakland_residents_percentage = site.data.totals.oakland-2020['Within Oakland'] | divided_by: oakland_total_funds%}
 
-{% capture hero-cta %}
-<div class="hero__cta-container">
-  <div class="hero__cta"><a class="btn" href="{{ site.baseurl }}{% link _elections/oakland/2020-11-03.md %}">Follow the money</a></div>
-</div>
-{% endcapture %}
-
 <div class="hero hero--photo">
   <div class="grid custom-grid-thirds hero__content">
     <div class="hero__header">
@@ -31,7 +25,9 @@ header: Track the money in Oakland elections
           accurate, and useful information about the role of money in local elections.
         </h4>
         <h1 class="hero__hed">{{ page.header | escape }}</h1>
-        {{ hero-cta }}
+        <div>
+          <a class="btn landing__btn" href="{{ site.baseurl }}{% link _elections/oakland/2020-03-03.md %}">Follow the money</a>
+        </div>
     </div>
     <div class="hero__table-container">
       <div>
@@ -94,7 +90,7 @@ header: Track the money in Oakland elections
   </p>
 
   <p class="landing__description__paragraph">
-    <strong><a href="https://alert.opendisclosure.io" class="btn landing__btn">Sign up for daily alerts</a></strong>
+    <a href="https://alert.opendisclosure.io" class="btn landing__btn">Sign up for daily alerts</a>
   </p>
 </div>
 <div class="landing__description landing__info">
