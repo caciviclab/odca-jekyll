@@ -12,7 +12,10 @@
     {% for ballot in ballots %}
     {% assign referendums = ballot.referendums %}
     {% assign office_elections = ballot.office_elections %}
-    <h3 class="ballot-nav__date-heading ballot-nav__group">{{ ballot.election | date: "%B %-d, %Y" }}</h3>
+    {% capture summary_path %}/election/{{ ballot.locality }}/{{ ballot.election }}/{% endcapture %}
+    <h3 class="ballot-nav__date-heading ballot-nav__group">
+      <a href="{{ summary_path | prepend: site.baseurl }}">{{ ballot.election | date: "%B %-d, %Y" }}</a>
+    </h3>
     {% if referendums and referendums != empty %}
     <div class="ballot-nav__group">
       <h4 class="ballot-nav__section-heading">{% include referendum_measure_heading.html referendum_measure_display=locality.referendum_measure_display %}</h4>
