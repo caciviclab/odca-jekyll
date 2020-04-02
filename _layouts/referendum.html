@@ -8,6 +8,7 @@ layout: default
 {% assign referendum_id = referendum.title | slugify: 'latin' %}
 {% assign supporting = site.data.referendum_supporting[referendum.locality][election_day][referendum_id] %}
 {% assign opposing = site.data.referendum_opposing[referendum.locality][election_day][referendum_id] %}
+{% assign voters_edge_url = opposing.voters_edge_url | escape %}
 {% assign locality = site.localities | where: 'locality_id', referendum.locality | first %}
 
 
@@ -29,8 +30,11 @@ layout: default
     {% if referendum.content %}
       <h3>Summary</h3>
       {{ referendum.content }}
-      {% if referendum.voters_edge_url %}
-        <a href="{{referendum.voters_edge_url}}">Voter Information from CA Voter's Edge</a>
+      {% if voters_edge_url %}
+        <a href="{{voters_edge_url}}" target="_blank">
+          {% include svg-icon.html icon="external-link-square-alt-solid" %} More 
+          Information on CA Voter’s Edge
+        </a>
       {% endif %}
     {% endif %}
   </div>
