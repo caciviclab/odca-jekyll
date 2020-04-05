@@ -9,12 +9,12 @@
     <h3 class="ballot-nav__section-heading">Upcoming Races</h3>
   </div>
   <section>
-    {% for ballot in ballots %}
-    {% assign referendums = ballot.referendums %}
-    {% assign office_elections = ballot.office_elections %}
-    {% capture summary_path %}/election/{{ ballot.locality }}/{{ ballot.election }}/{% endcapture %}
-    <h3 class="ballot-nav__date-heading ballot-nav__group">
-      <a href="{{ summary_path | prepend: site.baseurl }}">{{ ballot.election | date: "%B %-d, %Y" }}</a>
+    {% for nav_ballot in ballots %}
+    {% assign referendums = nav_ballot.referendums %}
+    {% assign office_elections = nav_ballot.office_elections %}
+    {% capture summary_path %}/election/{{ nav_ballot.locality }}/{{ nav_ballot.election }}/{% endcapture %}
+    <h3 class="ballot-nav__date-heading ballot-nav__group{% if nav_ballot.election == ballot.election %} current-page{% endif %}">
+      <a href="{{ summary_path | prepend: site.baseurl }}">{{ nav_ballot.election | date: "%B %-d, %Y" }}</a>
     </h3>
     {% if referendums and referendums != empty %}
     <div class="ballot-nav__group">
