@@ -1,6 +1,7 @@
 {% assign locality = include.locality %}
 {% assign tabIndxVar = 4 %}
 {% assign election_year = ballot.election | slice: 0, 4 %}
+{% assign path_end = page.url | split: "/" | last %}
 {% assign ballots = site.elections | where: 'locality', locality.locality_id | where_exp: 'ballot', 'ballot.title contains election_year' | reverse %}
 
 <nav class="ballot-nav">
@@ -9,10 +10,13 @@
     <h3 class="ballot-nav__section-heading">Upcoming Races</h3>
   </div>
   <section>
-    {% for ballot in ballots %}
-    {% assign referendums = ballot.referendums %}
-    {% assign office_elections = ballot.office_elections %}
-    <h3 class="ballot-nav__date-heading ballot-nav__group">{{ ballot.election | date: "%B %-d, %Y" }}</h3>
+    {% for nav_ballot in ballots %}
+    {% assign referendums = nav_ballot.referendums %}
+    {% assign office_elections = nav_ballot.office_elections %}
+    {% capture summary_path %}/election/{{ nav_ballot.locality }}/{{ nav_ballot.election }}/{% endcapture %}
+    <h3 class="ballot-nav__date-heading ballot-nav__group">
+      <a href="{{ summary_path | prepend: site.baseurl }}" class="ballot-nav__link{% if nav_ballot.election == path_end %} current-page{% endif %}">{{ nav_ballot.election | date: "%B %-d, %Y" }}</a>
+    </h3>
     {% if referendums and referendums != empty %}
     <div class="ballot-nav__group">
       <h4 class="ballot-nav__section-heading">{% include referendum_measure_heading.html referendum_measure_display=locality.referendum_measure_display %}</h4>
@@ -21,7 +25,7 @@
       {% assign tabIndxVar = tabIndxVar | plus:1 %}
       {% assign referendum = site.referendums | where: "path", ballot_item | first %}
       <li class="ballot-nav__list-item{% if page.url == referendum.url %} current-page{% endif %}">
-        <a class="ballot-nav__link-item" href="{{ referendum.url | prepend: site.baseurl }}" tabindex="{{ tabIndxVar }}">
+        <a class="ballot-nav__link" href="{{ referendum.url | prepend: site.baseurl }}" tabindex="{{ tabIndxVar }}">
           Measure {% if referendum.number %}{{ referendum.number }} {% endif %}
           <span class="ballot-nav__measure-title">{{ referendum.title | smartify }}</span>
         </a>
@@ -42,7 +46,7 @@
       {% assign tabIndxVar = tabIndxVar | plus:1 %}
       {% assign office_election = site.office_elections | where: "path", office_election_path | first %}
       <li class="ballot-nav__list-item{% if page.url == office_election.url %} current-page{% endif %}">
-        <a class="ballot-nav__link-item" href="{{ office_election.url | prepend: site.baseurl }}" tabindex="{{ tabIndxVar}}">{{ office_election.title }}</a>
+        <a class="ballot-nav__link" href="{{ office_election.url | prepend: site.baseurl }}" tabindex="{{ tabIndxVar}}">{{ office_election.title }}</a>
       </li>
       {% endfor %}
       </ul>
