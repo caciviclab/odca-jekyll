@@ -15,7 +15,7 @@
     {% assign office_elections = nav_ballot.office_elections %}
     {% capture summary_path %}/election/{{ nav_ballot.locality }}/{{ nav_ballot.election }}/{% endcapture %}
     <h3 class="ballot-nav__date-heading ballot-nav__group">
-      <a href="{{ summary_path | prepend: site.baseurl }}" class="ballot-nav__date-link{% if nav_ballot.election == path_end %} current-page{% endif %}">{{ nav_ballot.election | date: "%B %-d, %Y" }}</a>
+      <a href="{{ summary_path | prepend: site.baseurl }}" class="ballot-nav__link{% if nav_ballot.election == path_end %} current-page{% endif %}">{{ nav_ballot.election | date: "%B %-d, %Y" }}</a>
     </h3>
     {% if referendums and referendums != empty %}
     <div class="ballot-nav__group">
@@ -25,7 +25,7 @@
       {% assign tabIndxVar = tabIndxVar | plus:1 %}
       {% assign referendum = site.referendums | where: "path", ballot_item | first %}
       <li class="ballot-nav__list-item{% if page.url == referendum.url %} current-page{% endif %}">
-        <a class="ballot-nav__link-item" href="{{ referendum.url | prepend: site.baseurl }}" tabindex="{{ tabIndxVar }}">
+        <a class="ballot-nav__link" href="{{ referendum.url | prepend: site.baseurl }}" tabindex="{{ tabIndxVar }}">
           Measure {% if referendum.number %}{{ referendum.number }} {% endif %}
           <span class="ballot-nav__measure-title">{{ referendum.title | smartify }}</span>
         </a>
@@ -46,7 +46,7 @@
       {% assign tabIndxVar = tabIndxVar | plus:1 %}
       {% assign office_election = site.office_elections | where: "path", office_election_path | first %}
       <li class="ballot-nav__list-item{% if page.url == office_election.url %} current-page{% endif %}">
-        <a class="ballot-nav__link-item" href="{{ office_election.url | prepend: site.baseurl }}" tabindex="{{ tabIndxVar}}">{{ office_election.title }}</a>
+        <a class="ballot-nav__link" href="{{ office_election.url | prepend: site.baseurl }}" tabindex="{{ tabIndxVar}}">{{ office_election.title }}</a>
       </li>
       {% endfor %}
       </ul>
