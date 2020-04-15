@@ -7,6 +7,7 @@ layout: default
 {% assign today = site.time | date: "%Y-%m-%d" %}
 {% assign current_election = locality.current_election | date: "%B %-d, %Y" %}
 {% assign data_totals = site.data.totals[ballot.election_id] %}
+{% assign election_totals = site.data.elections[ballot.election] %}
 
 {% capture body %}
 <header>

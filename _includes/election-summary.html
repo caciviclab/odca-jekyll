@@ -20,6 +20,11 @@
   <section class="l-section">
     <div class="l-section_content">
       <h2>Who is contributing to races on this ballot?</h2>
+      {% for contribution_type in election_totals['contributions_by_type'] %}
+      <div>
+        <span>{{ contribution_type[0] }}: {{ contribution_type[1] }}</span>
+      </div>
+      {% endfor %}
     </div>
   </section>
   <section class="l-section">
