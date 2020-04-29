@@ -3,19 +3,11 @@ layout: default
 header: Track the money in Oakland elections
 ---
 
-{% assign oakland_march_total_funds = 0 %}
-{% for source in site.data.totals.oakland-march-2020 %}
-  {% assign oakland_march_total_funds = oakland_march_total_funds | plus: source[1] %}
-{% endfor %}
+{% assign oakland_march_total_funds = site.data.totals.oakland-march-2020.total_contributions %}
+{% assign oakland_march_residents_percentage = site.data.totals.oakland-march-2020.total_contributions_by_source['Within Oakland'] | divided_by: oakland_march_total_funds%}
 
-{% assign oakland_march_residents_percentage = site.data.totals.oakland-march-2020['Within Oakland'] | divided_by: oakland_march_total_funds%}
-
-{% assign oakland_total_funds = 0 %}
-{% for source in site.data.totals.oakland-2020 %}
-  {% assign oakland_total_funds = oakland_total_funds | plus: source[1] %}
-{% endfor %}
-
-{% assign oakland_residents_percentage = site.data.totals.oakland-2020['Within Oakland'] | divided_by: oakland_total_funds%}
+{% assign oakland_total_funds = site.data.totals.oakland-2020.total_contributions %}
+{% assign oakland_residents_percentage = site.data.totals.oakland-2020.total_contributions_by_source['Within Oakland'] | divided_by: oakland_total_funds %}
 
 {% assign ie_placeholder_text = 'No independent expenditures reported' %}
 
