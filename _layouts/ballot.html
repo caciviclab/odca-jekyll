@@ -5,12 +5,12 @@ layout: default
 {% assign locality = site.localities | where: 'slug', ballot.locality | first %}
 
 {% assign today = site.time | date: "%Y-%m-%d" %}
-{% assign current_election = locality.current_election | date: "%Y-%m-%d" %}
+{% assign current_election = locality.current_election | date: "%B %-d, %Y" %}
 {% assign data_totals = site.data.totals[ballot.election_id] %}
 
 {% capture body %}
 <header>
-  <h1>Data for All Upcoming Races in {{ballot.locality | capitalize}}</h1>
+  <h1>Data for {{ballot.locality | capitalize}} Election on {{ballot.election | date: "%B %-d, %Y"}}</h1>
 </header>
 {% include election-summary.html %}
 {% endcapture %}
