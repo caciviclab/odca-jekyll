@@ -1,3 +1,9 @@
+{% assign max = 0 %}
+{% for contribution_type in election_totals['contributions_by_type'] %}
+  {% assign amount = contribution_type[1] %}
+  {% assign max = max | plus: amount %}
+{% endfor %}
+
 <div class="election-summary">
   <section class="l-section election-summary__total">
     <div class="election-summary__total-header">Total contributions reported for this election</div>
@@ -18,27 +24,29 @@
     </div>
   </section>
   <section class="l-section">
-    <div class="l-section_content">
+    <div class="l-section__content">
       <h2>Who is contributing to races on this ballot?</h2>
+    </div>
+    <div class="l-section__content">
       {% for contribution_type in election_totals['contributions_by_type'] %}
-      <div>
-        <span>{{ contribution_type[0] }}: {{ contribution_type[1] }}</span>
-      </div>
+      {% assign amount = contribution_type[1] %}
+      {% assign type_name = contribution_type[0] %}
+      {% include money-bar.html label=type_name value=amount color="green" max=data_totals.total_contributions %}
       {% endfor %}
     </div>
   </section>
   <section class="l-section">
-    <div class="l-section_content">
+    <div class="l-section__content">
       <h2>Candidates with the largest proportion of small contributions (under $100)</h2>
     </div>
   </section>
   <section class="l-section">
-    <div class="l-section_content">
+    <div class="l-section__content">
       <h2>Top 5 spenders who have made the most large contributions (over $100)</h2>
     </div>
   </section>
   <section class="l-section">
-    <div class="l-section_content">
+    <div class="l-section__content">
       <h2>Where is the money coming from?</h2>
     </div>
   </section>
