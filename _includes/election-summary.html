@@ -17,7 +17,7 @@
     <div class="l-section__content">
       {% for race in data_totals['most_expensive_races'] %}
         <div>
-          <a href="/{{race['type']}}/{{ballot.locality}}/{{ballot.slug}}/{{race['slug']}}/">{{race['title']}}</a>
+          <a href="/{{race.type}}/{{ballot.locality}}/{{ballot.slug}}/{{race.slug}}/">{{race['title']}}</a>
           <span class="election-summary__race-amount">{{race['amount'] | dollars}}</span>
         </div>
       {% endfor %}
@@ -28,10 +28,10 @@
       <h2>Who is contributing to races on this ballot?</h2>
     </div>
     <div class="l-section__content">
-      {% for contribution_type in election_totals['contributions_by_type'] %}
-      {% assign amount = contribution_type[1] %}
-      {% assign type_name = contribution_type[0] %}
-      {% include money-bar.html label=type_name value=amount color="green" max=data_totals.total_contributions %}
+      {% for contribution_type in election_totals.contributions_by_type %}
+        {% assign amount = contribution_type[1] %}
+        {% assign type_name = contribution_type[0] %}
+        {% include money-bar.html label=type_name value=amount color="green" max=data_totals.total_contributions %}
       {% endfor %}
     </div>
   </section>
@@ -39,10 +39,34 @@
     <div class="l-section__content">
       <h2>Candidates with the largest proportion of small contributions (under $100)</h2>
     </div>
+    <div class="l-section__content">
+      <ul>
+        {% for candidate in election_totals.candidates_with_most_small_contributions %}
+        <li>
+          <span>
+            <a
+              href="{{ site.baseurl }}/{{ ballot.locality }}/{{ ballot.slug }}/{{ candidate.slug }}"
+            >{{ candidate.name }}</a>, {{ candidate.office_title }}
+          </span>
+          <span>{{ candidate.small_contribution_percent | times: 100 }}%</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
   </section>
   <section class="l-section">
     <div class="l-section__content">
       <h2>Top 5 spenders who have made the most large contributions (over $100)</h2>
+    </div>
+    <div class="l-section__content">
+      <ul>
+        {% for spender in election_totals.top_spenders %}
+        <li>
+          <span>{{ spender.name }}</span>
+          <span>{{ spender.total_contributions }} contributions in {{ ballot.election | date: "%Y" }}</span>
+        </li>
+        {% endfor %}
+      </ul>
     </div>
   </section>
   <section class="l-section">
