@@ -4,6 +4,35 @@
     <div class="election-summary__total-amount">{{data_totals['total_contributions'] | dollars}}</div>
   </section>
 
+  <section>
+    <div id="searchbox"></div>
+    <div id="hits"></div>
+
+    <script>
+      function initSearch() {
+        const searchClient = algoliasearch('RGVUOXJ3SQ', 'ef71f156127ce537f9f596c58a647281');
+
+        const search = instantsearch({
+          indexName: 'election',
+          searchClient,
+        });
+
+        search.addWidgets([
+          instantsearch.widgets.searchBox({
+            container: '#searchbox',
+          }),
+
+          instantsearch.widgets.hits({
+            container: '#hits',
+          })
+        ]);
+
+        search.start();
+      }
+      document.addEventListener("DOMContentLoaded", initSearch);
+    </script>
+  </section>
+
   <section class="l-section">
     <div class="l-section__content">
       <h2>Top 3 Most Expensive Races</h2>
