@@ -33,6 +33,9 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
 
 ## Setup
 
+If you do not have nvm (node version manager), first install that: https://github.com/nvm-sh/nvm#install--update-script
+
+    $ nvm install && nvm use # To get on the right node version
     $ make setup
     $ make build
 
