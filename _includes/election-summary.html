@@ -4,10 +4,15 @@
   {% assign max = max | plus: amount %}
 {% endfor %}
 
+{% for source in election_totals.total_contributions_by_source %}
+  {% assign amount = contribution_type[1] %}
+  {% assign max = max | plus: amount %}
+{% endfor %}
+
 <div class="election-summary">
   <section class="l-section election-summary__total">
     <div class="election-summary__total-header">Total contributions reported for this election</div>
-    <div class="election-summary__total-amount">{{data_totals['total_contributions'] | dollars}}</div>
+    <div class="election-summary__total-amount">{{ data_totals['total_contributions'] | dollars }}</div>
   </section>
 
   <section class="l-section">
@@ -72,6 +77,18 @@
   <section class="l-section">
     <div class="l-section__content">
       <h2>Where is the money coming from?</h2>
+    </div>
+    <div class="l-section__content">
+      <ul>
+        {% for source in election_totals.total_contributions_by_source %}
+        <li>
+          <span>{{ source[0] }}</span>
+          <span>{{ source[1] }}</span>
+          {% assign amount=source[1] %}
+          {% include money-bar.html label=type_name value=amount color="green" max=data_totals.total_contributions %}
+        </li>
+        {% endfor %}
+      </ul>
     </div>
   </section>
 </div>
