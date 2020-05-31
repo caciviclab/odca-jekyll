@@ -37,11 +37,11 @@ If you do not have nvm (node version manager), first install that: https://githu
 
     $ nvm install && nvm use # To get on the right node version
     $ make setup
-    $ make build
 
 Follow the instructions under [Finance disclosures](#finance-disclosures).
 
     $ make pull-finance
+    $ make build
     $ make serve
 
 Open your web browser to [http://localhost:4000/](http://localhost:4000/).
