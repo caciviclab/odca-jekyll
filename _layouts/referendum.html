@@ -117,6 +117,9 @@ layout: default
   </div>
 {% endif %}
 </section>
+<section class="l-section">
+  {% include ballot-measure-alerts.html %}
+</section>
 
 {% endcapture %}
 {% include ballot-layout.html content=body ballot=ballot locality=locality %}

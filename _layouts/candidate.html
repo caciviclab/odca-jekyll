@@ -77,6 +77,9 @@ layout: default
     {% if finance.total_contributions > 0 or finance.total_expenditures > 0
       or finance.supporting_money.total_supporting_independent > 0 or finance.opposing_money.opposing_expenditures > 0 %}
       {% include candidate/finance.html candidate=candidate finance=finance %}
+      <section class="l-section">
+        {% include candidate-alerts.html %}
+      </section>
     {% else %}
     <section class="l-section">
       <div class="l-section__content">
