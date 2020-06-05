@@ -10,6 +10,7 @@ layout: default
 {% assign opposing = site.data.referendum_opposing[referendum.locality][election_day][referendum_id] %}
 {% assign voters_edge_url = opposing.voters_edge_url | escape %}
 {% assign locality = site.localities | where: 'locality_id', referendum.locality | first %}
+{% assign alert_text = "ballot measure" %}
 
 
 {% capture body %}
@@ -118,7 +119,7 @@ layout: default
 {% endif %}
 </section>
 <section class="l-section">
-  {% include ballot-measure-alerts.html %}
+  {% include alerts-signup.html alert_text=alert_text %}
 </section>
 
 {% endcapture %}
