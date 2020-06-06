@@ -14,6 +14,7 @@ layout: default
 {% assign supporting_committees = finance.supporting_money.support_list %}
 {% assign expenditures_opposing = finance.opposing_money.opposing_expenditures %}
 {% assign expenditures_supporting = finance.supporting_money.total_supporting_independent %}
+{% assign alert_text = "candidate" %}
 
 {% capture body %}
 <div class="candidate">
@@ -77,6 +78,9 @@ layout: default
     {% if finance.total_contributions > 0 or finance.total_expenditures > 0
       or finance.supporting_money.total_supporting_independent > 0 or finance.opposing_money.opposing_expenditures > 0 %}
       {% include candidate/finance.html candidate=candidate finance=finance %}
+      <section class="l-section">
+        {% include alerts-signup.html alert_text=alert_text %}
+      </section>
     {% else %}
     <section class="l-section">
       <div class="l-section__content">

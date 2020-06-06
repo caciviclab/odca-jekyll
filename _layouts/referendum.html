@@ -10,6 +10,7 @@ layout: default
 {% assign opposing = site.data.referendum_opposing[referendum.locality][election_day][referendum_id] %}
 {% assign voters_edge_url = opposing.voters_edge_url | escape %}
 {% assign locality = site.localities | where: 'locality_id', referendum.locality | first %}
+{% assign alert_text = "ballot measure" %}
 
 
 {% capture body %}
@@ -116,6 +117,9 @@ layout: default
     <p><i>No independent expenditures have been filed for this ballot measure.</i></p>
   </div>
 {% endif %}
+</section>
+<section class="l-section">
+  {% include alerts-signup.html alert_text=alert_text %}
 </section>
 
 {% endcapture %}
