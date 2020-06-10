@@ -49,6 +49,9 @@ collections:
   referendums:
     output: true
     permalink: /referendum/:path/
+  search:
+    output: true
+    permalink: /search/:path/
 
 defaults:
   - scope:
