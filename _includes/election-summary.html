@@ -23,7 +23,7 @@
       {% for race in data_totals['most_expensive_races'] %}
         <div>
           <a href="/{{race.type}}/{{ballot.locality}}/{{ballot.slug}}/{{race.slug}}/">{{race['title']}}</a>
-          <span class="election-summary__race-amount">{{race['amount'] | dollars}}</span>
+          <span class="election-summary__race-amount">{{ race.amount | dollars }}</span>
         </div>
       {% endfor %}
     </div>
@@ -64,11 +64,11 @@
       <h2>Top 5 spenders who have made the most large contributions (over $100)</h2>
     </div>
     <div class="l-section__content">
-      <ul>
+      <ul class="no-bullet-list">
         {% for spender in election_totals.top_spenders %}
-        <li>
-          <span>{{ spender.name }}</span>
-          <span>{{ spender.total_contributions }} contributions in {{ ballot.election | date: "%Y" }}</span>
+        <li class="grid grid--full">
+          <span class="grid-col-10">{{ spender.name }}</span>
+          <span class="grid-col-2 align-right">{{ spender.total_spending | dollars }}</span>
         </li>
         {% endfor %}
       </ul>
@@ -79,9 +79,9 @@
       <h2>Where is the money coming from?</h2>
     </div>
     <div class="l-section__content">
-      <ul>
+      <ul class="no-bullet-list">
         {% for source in election_totals.total_contributions_by_source %}
-        <li>
+        <li class="grid">
           {% assign place=source[0] %}
           {% assign amount=source[1] %}
           {% include money-bar.html label=place value=amount color="green" max=data_totals.total_contributions %}
