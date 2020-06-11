@@ -45,15 +45,15 @@
       <h2>Candidates with the largest proportion of small contributions (under $100)</h2>
     </div>
     <div class="l-section__content">
-      <ul>
-        {% for candidate in election_totals.candidates_with_most_small_contributions %}
-        <li>
-          <span>
+      <ul class="no-bullet-list">
+        {% for candidate in election_totals.largest_small_proportion %}
+        <li class="grid grid--full">
+          <span class="grid-col-11">
             <a
-              href="{{ site.baseurl }}/{{ ballot.locality }}/{{ ballot.slug }}/{{ candidate.slug }}"
-            >{{ candidate.name }}</a>, {{ candidate.office_title }}
+              href="{{ site.baseurl }}/candidate/{{ ballot.locality }}/{{ ballot.slug }}/{{ candidate.slug }}"
+            >{{ candidate.candidate }}</a>, {{ candidate.office_title }}
           </span>
-          <span>{{ candidate.small_contribution_percent | times: 100 }}%</span>
+          <span class="grid-col-1 align-right">{{ candidate.proportion | times: 100 | round: 1 }}%</span>
         </li>
         {% endfor %}
       </ul>
@@ -82,10 +82,9 @@
       <ul>
         {% for source in election_totals.total_contributions_by_source %}
         <li>
-          <span>{{ source[0] }}</span>
-          <span>{{ source[1] }}</span>
+          {% assign place=source[0] %}
           {% assign amount=source[1] %}
-          {% include money-bar.html label=type_name value=amount color="green" max=data_totals.total_contributions %}
+          {% include money-bar.html label=place value=amount color="green" max=data_totals.total_contributions %}
         </li>
         {% endfor %}
       </ul>
