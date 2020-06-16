@@ -2,7 +2,7 @@ SVGS := $(patsubst %,_includes/svg/%,$(notdir $(wildcard assets/fontawesome/*.sv
 
 build: $(SVGS)
 	npm run build
-	bundle _1.16.3_ exec jekyll build
+	bundle exec jekyll build
 
 clean:
 	rm -rf _site
@@ -21,7 +21,7 @@ serve: $(SVGS)
 
 setup:
 	npm install
-	bundle _1.16.3_ install
+	bundle install
 
 _includes/svg/%.svg: assets/fontawesome/%.svg
 	mkdir -p _includes/svg
