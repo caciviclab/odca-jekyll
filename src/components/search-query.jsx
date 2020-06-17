@@ -9,11 +9,15 @@ const searchClient = algoliasearch('H897LKXYG1', '50a4f124e0d934cac92e79ece37631
 const hitComponent = ({ hit }) => {
   return (
     <div>
-      <p><strong>Ballot Measure:</strong> {hit.title}</p>
-      <p><strong>Election date:</strong> {hit.election_date}</p>
-      <p><strong>Location:</strong> {hit.election_location}</p>
-      <p><strong>Election title:</strong> {hit.election_title}</p>
-      <p><strong>Election type:</strong> {hit.election_type}</p>
+      { !!hit.last_name ? <div><strong>Contributor:</strong> {hit.first_name} {hit.last_name}</div> : '' }
+      <strong>Election:</strong> {hit.election_title}<br/>
+      { !!hit.title ? <div><strong>Ballot Measure:</strong> {hit.title}</div> : ''}
+      { !!hit.name ? <div><strong>Candidate:</strong>
+        <a href={"/candidate/" + hit.election_location + "/" + hit.election_date + "/" + hit.candidate_slug}> {hit.name}</a> </div> : ''}
+      { !!hit.office_title ? <div><strong>Office:</strong> {hit.office_title}</div> :''}
+      { !!hit.amount ? <div><strong>Amount:</strong> ${hit.amount}</div> : ''}
+      <strong>Election date:</strong> {hit.election_date}<br/>
+      <strong>Location:</strong> {hit.election_location}<br/>
     </div>
   )
 }
