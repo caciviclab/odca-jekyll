@@ -6,6 +6,18 @@ import { RefinementList, InstantSearch, SearchBox, Hits } from 'react-instantsea
 
 const searchClient = algoliasearch('H897LKXYG1', '50a4f124e0d934cac92e79ece376316a');
 
+const hitComponent = ({ hit }) => {
+  return (
+    <div>
+      <p><strong>Ballot Measure:</strong> {hit.title}</p>
+      <p><strong>Election date:</strong> {hit.election_date}</p>
+      <p><strong>Location:</strong> {hit.election_location}</p>
+      <p><strong>Election title:</strong> {hit.election_title}</p>
+      <p><strong>Election type:</strong> {hit.election_type}</p>
+    </div>
+  )
+}
+
 class SearchQuery extends React.Component {
   render() {
     console.log('searchQuery rendering!');
@@ -20,8 +32,8 @@ class SearchQuery extends React.Component {
           <RefinementList attribute="election_location"/>
         </div>
         <div className='right-panel'>
-            <SearchBox />
-            <Hits />
+            <SearchBox className='searchbar'/>
+            <Hits hitComponent={hitComponent}/>
         </div>
       </InstantSearch>
     );
