@@ -98,5 +98,11 @@ $neat-grid--large: (
   }
 }
 
-.left-panel { float: left; width: 250px; }
-.right-panel { margin-left: 260px; }
+.left-panel {
+  float: left;
+  width: 250px;
+  margin-left: 20px;
+}
+.right-panel {
+  margin-left: 275px;
+}

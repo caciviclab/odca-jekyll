@@ -2,7 +2,7 @@ import React from 'react';
 import algoliasearch from 'algoliasearch';
 import PropTypes from 'prop-types';
 
-import { RefinementList, InstantSearch, SearchBox, Hits } from 'react-instantsearch-dom';
+import { RefinementList, InstantSearch, SearchBox, Hits, ClearRefinements, Pagination } from 'react-instantsearch-dom';
 import webComponent from '../web-component';
 
 const searchClient = algoliasearch('H897LKXYG1', '50a4f124e0d934cac92e79ece376316a');
@@ -41,6 +41,7 @@ class SearchQuery extends React.Component {
     return (
       <InstantSearch searchClient={searchClient} indexName="election">
         <div className="left-panel">
+          <ClearRefinements clearsQuery="true" />
           <h3> Election Title </h3>
           <RefinementList attribute="election_title" />
           <h3> Election Date </h3>
@@ -51,6 +52,7 @@ class SearchQuery extends React.Component {
         <div className="right-panel">
           <SearchBox className="searchbar" />
           <Hits hitComponent={hitComponent} />
+          <Pagination />
         </div>
       </InstantSearch>
     );
