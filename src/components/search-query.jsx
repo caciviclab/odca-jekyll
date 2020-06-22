@@ -12,13 +12,20 @@ const hitComponent = ({ hit }) => (
     { hit.last_name ?
       <div><strong>Contributor:</strong> {hit.first_name} {hit.last_name}</div> : ''
     }
-    <strong>Election:</strong> {hit.election_title}<br />
-    { hit.title ? <div><strong>Ballot Measure:</strong> {hit.title}</div> : ''}
+    <div><strong>Election: </strong>
+      <a href={`/election/${hit.election_location}/${hit.election_date}`} >
+        {hit.election_title}
+      </a>
+    </div>
+    { hit.title ?
+      <div><strong>Ballot Measure: </strong>
+        <a href={`/referendum/${hit.election_location}/${hit.election_date}/${hit.slug}`} >
+          {hit.title}
+        </a>
+      </div> : ''}
     { hit.name ?
-      <div><strong>Candidate:</strong>
-        <a href={`/candidate/${hit.election_location}/${hit.election_date}/\
-          ${hit.candidate_slug}`}
-        >
+      <div><strong>Candidate: </strong>
+        <a href={`/candidate/${hit.election_location}/${hit.election_date}/${hit.candidate_slug}`} >
           {hit.name}
         </a>
       </div>
@@ -26,7 +33,10 @@ const hitComponent = ({ hit }) => (
     }
     { hit.office_title ?
       <div>
-        <strong>Office:</strong> {hit.office_title}
+        <strong>Office: </strong>
+        <a href={`/office/${hit.election_location}/${hit.election_date}/${hit.office_slug}`} >
+          {hit.office_title}
+        </a>
       </div> : ''
     }
     { hit.amount ? <div><strong>Amount:</strong> ${hit.amount}</div> : ''}
