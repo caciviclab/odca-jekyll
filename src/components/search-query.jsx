@@ -44,6 +44,25 @@ const hitComponent = ({ hit }) => (
     <strong>Location:</strong> {hit.election_location}<br />
   </div>
 );
+hitComponent.propTypes = {
+  hit: PropTypes.shape({
+    last_name: PropTypes.string,
+    first_name: PropTypes.string,
+    election_title: PropTypes.string,
+    election_location: PropTypes.string,
+    election_date: PropTypes.string,
+    name: PropTypes.string,
+    title: PropTypes.string,
+    amount: PropTypes.number,
+    slug: PropTypes.string,
+    candidate_slug: PropTypes.string,
+    office_slug: PropTypes.string,
+    office_title: PropTypes.string,
+  }),
+};
+hitComponent.defaultProps = {
+  hit: {},
+};
 
 class SearchQuery extends React.Component {
   render() {
