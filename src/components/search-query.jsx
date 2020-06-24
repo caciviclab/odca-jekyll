@@ -66,7 +66,6 @@ hitComponent.defaultProps = {
 
 class SearchQuery extends React.Component {
   render() {
-    console.log('searchQuery rendering!');
     return (
       <InstantSearch searchClient={searchClient} indexName="election">
         <div className="left-panel">
