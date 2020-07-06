@@ -2,13 +2,7 @@ _ballots
 _elections
 _candidates
 _committees
-_data/candidates
-_data/committees
-_data/contributions
-_data/referendum_opposing
-_data/referendum_supporting
-_data/stats.json
-_data/totals.json
+_data
 .DS_Store
 _includes/svg
 .jekyll-cache
