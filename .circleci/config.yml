@@ -22,12 +22,18 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.3-node
+      - image: circleci/ruby:2.7-node
     steps:
       - checkout
       - restore_cache:
           keys:
             - *bundle-cache-key
+      - run:
+          name: Configure Bundler # use bundler version in Gemfile.lock
+          command: |
+            echo 'export BUNDLER_VERSION=$(cat Gemfile.lock | tail -1 | tr -d " ")' >> $BASH_ENV
+            source $BASH_ENV
+            gem install bundler
       - run:
           name: Bundle Install
           command: bundle check || bundle install --path vendor/bundle
@@ -69,7 +75,7 @@ jobs:
 
   deploy:
     docker:
-      - image: circleci/ruby:2.3-node
+      - image: circleci/ruby:2.7-node
     environment:
       GITHUB_REPO: caciviclab/odca-jekyll
     steps:
