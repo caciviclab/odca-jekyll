@@ -7,9 +7,9 @@ raise awareness and accountability. Ultimately, this is one step toward shifting
 politics into a movement of civic engagement and ultimate citizen action.
 
 
-# Readme contents
+# Contents
 
-- [Code of conduct](#code-of-conduct-and-values)
+- [Code of conduct](#code-of-conduct)
 - [Quickstart for developers](#quickstart-for-developers)
 - [Project documentation](#project-documentation)
 - [License](#license)
