@@ -1,55 +1,76 @@
-[![CircleCI](https://circleci.com/gh/caciviclab/odca-jekyll.svg?style=svg)](https://circleci.com/gh/caciviclab/odca-jekyll)
+Open Disclosure Oakland  [![CircleCI](https://circleci.com/gh/caciviclab/odca-jekyll.svg?style=svg)](https://circleci.com/gh/caciviclab/odca-jekyll)
+===========================================================================
 
-# www.opendisclosure.io
-
-[Open Disclosure California][opendisclosure-io] provides transparent,
-non-partisan campaign contribution and expenditure data in an accessible and
-easy to understand format. We hope this site will engage the voting public and
+[Open Disclosure][opendisclosure-io] is a project of [OpenOakland](https://openoakland.org). 
+The website provides transparent, non-partisan campaign contribution and expenditure data in an accessible and easy to understand format. We hope this site will engage the voting public and
 raise awareness and accountability. Ultimately, this is one step toward shifting
 politics into a movement of civic engagement and ultimate citizen action.
 
 
-## Contributing
+# Contents
 
-Welcome! We are a coalition of brigades, all volunteers from the California. We
-would love to get help from folks across the state to help us in building
-a database of campaign finance data for local jurisdictions across the state.
-
-www.opendisclosure.io is one piece of the ODCA project. We try to keep our
-[project page](http://caciviclab.org/opendisclosure/) up to date with all the
-information about how we work and where to get looped in.
-
-Please see [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
+- [Code of conduct](#code-of-conduct)
+- [Quickstart for developers](#quickstart-for-developers)
+- [Project documentation](#project-documentation)
+- [License](#license)
 
 
-## Prerequisites
+# Code of conduct
 
-- [Ruby 2.3](https://www.ruby-lang.org/)
-- [Bundler](https://bundler.io/) gem
+To participate in this project, we ask you to abide by the OpenOakland [Code of Conduct](CODE_OF_CONDUCT.md).
+
+
+# Quickstart for developers
+
+There are two ways to run the website locally for development: using Docker, and running everything locally.
+
+## Run using Docker
+
+### Prerequisites
+
+- [Docker](https://www.docker.com/products/docker-desktop)
+
+Ensure you have the backend cloned as a sibling to this repo. Find more details below in [Finance disclosures](#finance-disclosures).
+
+### Run this command in your terminal
+
+    $ make docker
+
+Open your web browser to [http://localhost:4000/](http://localhost:4000/).
+
+
+## Run locally
+
+### Prerequisites
+
+- [Ruby 2.7](https://www.ruby-lang.org/)
+- [Bundler 2](https://bundler.io/) gem
 - [Make](https://www.gnu.org/software/make/)
-- [Node 8.9+](https://nodejs.org/)
+- [Node 12.16+](https://nodejs.org/)
 - [ImageMagick](https://www.imagemagick.org/)
+- [nvm](https://github.com/nvm-sh/nvm#install--update-script)
 
 
-## Setup
-
-If you do not have nvm (node version manager), first install that: https://github.com/nvm-sh/nvm#install--update-script
+### Run these commands in your terminal
 
     $ nvm install && nvm use # To get on the right node version
-    $ make setup
+    $ make setup # To install all dependencies
 
-Follow the instructions under [Finance disclosures](#finance-disclosures).
+Ensure you have the backend cloned as a sibling to this repo. Find more details below in [Finance disclosures](#finance-disclosures).
 
     $ make pull-finance
-    $ make build
     $ make serve
 
 Open your web browser to [http://localhost:4000/](http://localhost:4000/).
 
 
-## Development
+### Additional commands
 
-Run the tests
+You can build the site without running a server, if needed 
+    
+    $ make build
+
+You can run the tests locally too
 
     $ make test
 
@@ -82,20 +103,21 @@ Now rebuild your site with the finance data.
     $ make serve
 
 
-## Deployment
+## Deployment Information
 
-This site is deployed by a [scheduled CI
-task](https://circleci.com/gh/caciviclab/workflows/odca-jekyll) twice daily. It
-clones the [disclosure-backend-static][backend-static] repo and pulls in the
-finance data before doing a build. Merges to the master branch will also trigger
-a deploy.
+This site is deployed by a [scheduled CI task](https://circleci.com/gh/caciviclab/workflows/odca-jekyll) twice daily. It clones the [disclosure-backend-static][backend-static] repo and pulls in the finance data before doing a build. Merges to the master branch will also trigger a deploy.
 
 The site is hosted on [GitHub Pages](https://pages.github.com/). The deploy
 consists of a force push of the `_site` directory to the `gh-pages` branch done
 by [_bin/deploy.sh](_bin/deploy.sh).
 
 
-## License
+# Project documentation
+
+- [Project Overview](https://docs.google.com/document/d/147WBdGqM_J9pA_fmUhuE0DOEKrIFy0GaT9m66oXTbG0/edit?usp=sharing)
+
+
+# License
 
 Content for this website is available under the [Creative Commons
 Attribution-NonCommercial-ShareAlike 4.0 International
@@ -105,7 +127,7 @@ Code is licensed under the GNU Affero General Public License.
 
 ```
     www.opendisclosure.io California’s online source for local campaign finance data
-    Copyright (C) 2018  CA Civic Lab
+    Copyright (C) 2020  OpenOakland
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as
