@@ -77,6 +77,7 @@ class SearchQuery extends React.Component {
           <SearchBox className="searchbar" />
           <Hits hitComponent={hitComponent} />
           <Pagination />
+          <a href="https://www.algolia.com" >Search by Algolia</a>
         </div>
       </InstantSearch>
     );
