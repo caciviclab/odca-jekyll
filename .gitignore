@@ -2,11 +2,7 @@ _ballots
 _elections
 _candidates
 _committees
-<<<<<<< HEAD
 _data
-=======
-_data/
->>>>>>> gulp pull new _data/elections/ files, and ignore them
 .DS_Store
 _includes/svg
 .jekyll-cache
