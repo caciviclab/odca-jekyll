@@ -72,8 +72,6 @@ class SearchQuery extends React.Component {
           <ClearRefinements clearsQuery="true" />
           <h3> Election Title </h3>
           <RefinementList attribute="election_title" />
-          <h3> Election Date </h3>
-          <RefinementList attribute="election_date" />
         </div>
         <div className="right-panel">
           <SearchBox className="searchbar" />
