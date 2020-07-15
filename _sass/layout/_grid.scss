@@ -99,10 +99,14 @@ $neat-grid--large: (
 }
 
 .left-panel {
-  float: left;
-  width: 250px;
-  margin-left: 20px;
+  @media screen and (min-width: $grid--medium) {
+    float: left;
+    width: 250px;
+    margin-left: 20px;
+  }
 }
 .right-panel {
-  margin-left: 275px;
+  @media screen and (min-width: $grid--medium) {
+    margin-left: 275px;
+  }
 }
