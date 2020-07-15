@@ -61,21 +61,6 @@
   </section>
   <section class="l-section">
     <div class="l-section__content">
-      <h2>Top 5 spenders who have made the most large contributions</h2>
-    </div>
-    <div class="l-section__content">
-      <ul class="no-bullet-list">
-        {% for spender in election_totals.top_spenders %}
-        <li class="grid grid--full">
-          <span class="grid-col-10">{{ spender.name }}</span>
-          <span class="grid-col-2 align-right">{{ spender.total_spending | dollars }}</span>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </section>
-  <section class="l-section">
-    <div class="l-section__content">
       <h2>Where is the money coming from?</h2>
     </div>
     <div class="l-section__content">
