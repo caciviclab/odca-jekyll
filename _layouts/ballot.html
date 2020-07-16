@@ -11,7 +11,7 @@ layout: default
 
 {% capture body %}
 <header>
-  <h1>Data for {{ballot.locality | capitalize}} Election on {{ballot.election | date: "%B %-d, %Y"}}</h1>
+  <h2>Data for {{ballot.locality | capitalize}} Election on {{ballot.election | date: "%B %-d, %Y"}}</h2>
 </header>
 {% include election-summary.html %}
 {% endcapture %}
