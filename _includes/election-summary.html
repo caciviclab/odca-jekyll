@@ -1,14 +1,3 @@
-{% assign max = 0 %}
-{% for contribution_type in election_totals['contributions_by_type'] %}
-  {% assign amount = contribution_type[1] %}
-  {% assign max = max | plus: amount %}
-{% endfor %}
-
-{% for source in election_totals.total_contributions_by_source %}
-  {% assign amount = contribution_type[1] %}
-  {% assign max = max | plus: amount %}
-{% endfor %}
-
 <div class="election-summary">
   <section class="l-section election-summary__total">
     <div class="election-summary__total-header">Total contributions reported for this election</div>
