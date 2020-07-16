@@ -45,7 +45,7 @@
     "@babel/preset-react": "^7.10.1",
     "babel-loader": "^8.1.0",
     "document-register-element": "^1.14.3",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "moment": "^2.26.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
