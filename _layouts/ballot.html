@@ -7,10 +7,11 @@ layout: default
 {% assign today = site.time | date: "%Y-%m-%d" %}
 {% assign current_election = locality.current_election | date: "%B %-d, %Y" %}
 {% assign data_totals = site.data.totals[ballot.election_id] %}
+{% assign election_totals = site.data.elections[ballot.locality][ballot.election] %}
 
 {% capture body %}
 <header>
-  <h1>Data for {{ballot.locality | capitalize}} Election on {{ballot.election | date: "%B %-d, %Y"}}</h1>
+  <h2>Data for {{ballot.locality | capitalize}} Election on {{ballot.election | date: "%B %-d, %Y"}}</h2>
 </header>
 {% include election-summary.html %}
 {% endcapture %}

@@ -1,20 +1,67 @@
 <div class="election-summary">
   <section class="l-section election-summary__total">
     <div class="election-summary__total-header">Total contributions reported for this election</div>
-    <div class="election-summary__total-amount">{{data_totals['total_contributions'] | dollars}}</div>
+    <div class="election-summary__total-amount">{{ data_totals.total_contributions | dollars }}</div>
   </section>
 
   <section class="l-section">
     <div class="l-section__content">
-      <h2>Top 3 Most Expensive Races</h2>
+      <h3>Top 3 Most Expensive Races</h3>
     </div>
     <div class="l-section__content">
-      {% for race in data_totals['most_expensive_races'] %}
+      {% for race in data_totals.most_expensive_races %}
         <div>
-          <a href="/{{race['type']}}/{{ballot.locality}}/{{ballot.slug}}/{{race['slug']}}/">{{race['title']}}</a>
-          <span class="election-summary__race-amount">{{race['amount'] | dollars}}</span>
+          <a href="/{{race.type}}/{{ballot.locality}}/{{ballot.slug}}/{{race.slug}}/">{{ race.title }}</a>
+          <span class="election-summary__race-amount">{{ race.amount | dollars }}</span>
         </div>
       {% endfor %}
+    </div>
+  </section>
+  <section class="l-section">
+    <div class="l-section__content">
+      <h3>Who is contributing to races on this ballot?</h3>
+    </div>
+    <div class="l-section__content">
+      {% for contribution_type in election_totals.contributions_by_type %}
+        {% assign amount = contribution_type[1] %}
+        {% assign type_name = contribution_type[0] %}
+        {% include money-bar.html label=type_name value=amount color="green" max=data_totals.total_contributions %}
+      {% endfor %}
+    </div>
+  </section>
+  <section class="l-section">
+    <div class="l-section__content">
+      <h3>Candidates with the largest proportion of small contributions (under $100)</h3>
+    </div>
+    <div class="l-section__content">
+      <ul class="no-bullet-list">
+        {% for candidate in election_totals.largest_small_proportion %}
+        <li class="grid grid--full">
+          <span class="grid-col-11">
+            <a
+              href="{{ site.baseurl }}/candidate/{{ ballot.locality }}/{{ ballot.slug }}/{{ candidate.slug }}"
+            >{{ candidate.candidate }}</a>, {{ candidate.office_title }}
+          </span>
+          <span class="grid-col-1 align-right">{{ candidate.proportion | times: 100 | round: 1 }}%</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+  <section class="l-section">
+    <div class="l-section__content">
+      <h3>Where is the money coming from?</h3>
+    </div>
+    <div class="l-section__content">
+      <ul class="no-bullet-list">
+        {% for source in election_totals.total_contributions_by_source %}
+        <li class="grid">
+          {% assign place=source[0] %}
+          {% assign amount=source[1] %}
+          {% include money-bar.html label=place value=amount color="green" max=data_totals.total_contributions %}
+        </li>
+        {% endfor %}
+      </ul>
     </div>
   </section>
 </div>

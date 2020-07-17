@@ -19,6 +19,7 @@ gulp.task('clean', function () {
     '_referendums',
     '_data/candidates',
     '_data/committees',
+    '_data/elections',
     '_data/referendum_opposing',
     '_data/referendum_supporting',
     '_data/stats.json',
@@ -34,6 +35,11 @@ gulp.task('pull:elections', function () {
   return gulp.src(dataDir('_elections', '**', '*.md'))
     .pipe(gulp.dest('_elections'));
 });
+
+gulp.task('pull:elections-totals', function () {
+  return gulp.src(dataDir('_data', 'elections', '**', '*.json'))
+    .pipe(gulp.dest('_data/elections'));
+})
 
 gulp.task('pull:referendums', function () {
   return gulp.src(dataDir('_referendums', '**', '*.md'))
@@ -93,6 +99,7 @@ gulp.task('pull:totals', function () {
 gulp.task('pull', gulp.parallel(
   'pull:ballots',
   'pull:elections',
+  'pull:elections-totals',
   'pull:candidates',
   'pull:candidates-finance',
   'pull:committees',
