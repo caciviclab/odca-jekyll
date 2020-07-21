@@ -32,6 +32,10 @@ There are two ways to run the website locally for development: using Docker, and
 
 Ensure you have the backend cloned as a sibling to this repo. Find more details below in [Finance disclosures](#finance-disclosures).
 
+Note: If you are switching from the "local" build to the "docker" build you need to: 
+
+    $ rm -rf .jekyll-metadata
+
 ### Run this command in your terminal
 
     $ make docker
