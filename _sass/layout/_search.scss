@@ -1,17 +1,25 @@
 .search__wrapper {
-  margin-top: 20px;
-  margin-bottom: 50px;
+  margin-top: 2 * $spacing-base;
+  margin-bottom: 4 * $spacing-base;
+}
+
+.election-checkboxes {
+  @include media($grid--small) {
+    margin-bottom: 2 * $spacing-base;
+  }
 }
 
 .searchbar {
-  margin-bottom: 10px;
+  margin-bottom: $spacing-base;
 
   input {
-    height: 20px;
+    height: 3rem;
   }
 }
+
+// NOTE: These `ais` classes override the defaults from Algolia Instant Search
 .ais-Pagination {
-  margin-top: 20px;
+  margin-top: 2 * $spacing-base;
 }
 
 .ais-Hits-item {
