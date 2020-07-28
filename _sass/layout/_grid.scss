@@ -97,21 +97,3 @@ $neat-grid--large: (
     }
   }
 }
-
-.left-panel {
-  @media screen and (max-width: $grid--medium) {
-    margin-bottom: 20px;
-  }
-
-  @media screen and (min-width: $grid--medium) {
-    float: left;
-    width: 250px;
-    margin-left: 20px;
-  }
-}
-
-.right-panel {
-  @media screen and (min-width: $grid--medium) {
-    margin-left: 275px;
-  }
-}
