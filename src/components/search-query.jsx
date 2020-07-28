@@ -2,82 +2,91 @@ import React from 'react';
 import algoliasearch from 'algoliasearch';
 import PropTypes from 'prop-types';
 
-import { RefinementList, InstantSearch, SearchBox, Hits, ClearRefinements, Pagination, PoweredBy } from 'react-instantsearch-dom';
+import { RefinementList, InstantSearch, SearchBox, ClearRefinements, Pagination,
+  connectHits, PoweredBy } from 'react-instantsearch-dom';
 import webComponent from '../web-component';
 
 const searchClient = algoliasearch('H897LKXYG1', '50a4f124e0d934cac92e79ece376316a');
 
-const HitComponent = ({ hit }) => (
-  <div>
-    { hit.last_name ?
+const Hits = ({ hits }) => (
+  <dl>
+    {hits.map(hit => (
       <div>
-        <strong>Contributor:</strong> {hit.first_name} {hit.last_name}
-      </div>
-      : ''
-    }
-    <div>
-      <strong>Election: </strong>
-      <a href={`/election/${hit.election_location.toLowerCase()}/${hit.election_date}`} target="_blank" rel="noreferrer" >
-        {hit.election_title}
-      </a>
-    </div>
-    { hit.committee_name ?
-      <div>
-        <strong>Committee: </strong>
-        <a href={`/committee/${hit.committee_id}`} target="_blank" rel="noreferrer" >
-          {hit.committee_name}
-        </a>
-      </div>
-      : ''
-    }
-    { hit.title ?
-      <div>
-        { hit.supporting ?
-          <strong>{hit.supporting} </strong>
+        { hit.last_name ?
+          <dt>
+            <strong>Contributor:</strong> {hit.first_name} {hit.last_name}
+          </dt>
           : ''
         }
-        { hit.measure ? <strong>{hit.measure} -  </strong>
-          : <strong>Ballot Measure: </strong>
-        }
-        <a href={`/referendum/${hit.election_location.toLowerCase()}/${hit.election_date}/${hit.slug}`} target="_blank" rel="noreferrer" >
-          {hit.title}
-        </a>
-      </div>
-      : ''
-    }
-    { hit.name ?
-      <div>
-        { hit.supporting ?
-          <strong>{hit.supporting} </strong>
+        <dd>
+          <strong>Election: </strong>
+          <a href={`/election/${hit.election_location.toLowerCase()}/${hit.election_date}`} target="_blank" rel="noreferrer" >
+            {hit.election_title}
+          </a>
+        </dd>
+        { hit.committee_name ?
+          <dd>
+            <strong>Committee: </strong>
+            <a href={`/committee/${hit.committee_id}`} target="_blank" rel="noreferrer" >
+              {hit.committee_name}
+            </a>
+          </dd>
           : ''
         }
-        <strong>Candidate: </strong>
-        <a href={`/candidate/${hit.election_location.toLowerCase()}/${hit.election_date}/${hit.candidate_slug}`} target="_blank" rel="noreferrer" >
-          {hit.name}
-        </a>
+        { hit.title ?
+          <dd>
+            { hit.supporting ?
+              <strong>{hit.supporting} </strong>
+              : ''
+            }
+            { hit.measure ? <strong>{hit.measure} -  </strong>
+              : <strong>Ballot Measure: </strong>
+            }
+            <a href={`/referendum/${hit.election_location.toLowerCase()}/${hit.election_date}/${hit.slug}`} target="_blank" rel="noreferrer" >
+              {hit.title}
+            </a>
+          </dd>
+          : ''
+        }
+        { hit.office_title ?
+          <dd>
+            <strong>Office: </strong>
+            <a href={`/office/${hit.election_location.toLowerCase()}/${hit.election_date}/${hit.office_slug}`} target="_blank" rel="noreferrer" >
+              {hit.office_title}
+            </a>
+          </dd> : ''
+        }
+        { hit.name ?
+          <dd>
+            { hit.supporting ?
+              <strong>{hit.supporting} </strong>
+              : ''
+            }
+            <strong>Candidate: </strong>
+            <a href={`/candidate/${hit.election_location.toLowerCase()}/${hit.election_date}/${hit.candidate_slug}`} target="_blank" rel="noreferrer" >
+              {hit.name}
+            </a>
+          </dd>
+          : ''
+        }
+        { hit.amount ?
+          <dd>
+            <strong>Amount:</strong> ${hit.amount}
+          </dd>
+          : ''}
+        <dd> <strong>Election date:</strong> {hit.election_date} </dd>
+        <dd> <strong>Location:</strong> {hit.election_location} </dd>
+        <hr />
       </div>
-      : ''
-    }
-    { hit.office_title ?
-      <div>
-        <strong>Office: </strong>
-        <a href={`/office/${hit.election_location.toLowerCase()}/${hit.election_date}/${hit.office_slug}`} target="_blank" rel="noreferrer" >
-          {hit.office_title}
-        </a>
-      </div> : ''
-    }
-    { hit.amount ?
-      <div>
-        <strong>Amount:</strong> ${hit.amount}
-      </div>
-      : ''
-    }
-    <div> <strong>Election date:</strong> {hit.election_date} </div>
-    <div> <strong>Location:</strong> {hit.election_location} </div>
-  </div>
+    ))}
+  </dl>
 );
-HitComponent.propTypes = {
-  hit: PropTypes.shape({
+
+const CustomHits = connectHits(Hits);
+
+Hits.propTypes = {
+  hits: PropTypes.shape({
+    map: PropTypes.string,
     last_name: PropTypes.string,
     first_name: PropTypes.string,
     election_title: PropTypes.string,
@@ -96,8 +105,9 @@ HitComponent.propTypes = {
     office_title: PropTypes.string,
   }),
 };
-HitComponent.defaultProps = {
-  hit: {},
+
+Hits.defaultProps = {
+  hits: {},
 };
 
 const SearchQuery = () => (
@@ -111,7 +121,7 @@ const SearchQuery = () => (
       <div className="grid-col-10">
         <SearchBox className="searchbar" />
         <PoweredBy />
-        <Hits hitComponent={HitComponent} />
+        <CustomHits />
         <Pagination />
       </div>
     </div>
