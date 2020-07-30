@@ -21,14 +21,30 @@ const HitComponent = ({ hit }) => (
         {hit.election_title}
       </a>
     </div>
+    { hit.committee_name ?
+      <div>
+        <strong>Committee: </strong>
+        <a href={`/committee/${hit.committee_id}`} >
+          {hit.committee_name}
+        </a>
+      </div>
+      : ''
+    }
     { hit.title ?
       <div>
-        <strong>Ballot Measure: </strong>
+        { hit.supporting ?
+          <strong>{hit.supporting} </strong>
+          : ''
+        }
+        { hit.measure ? <strong>{hit.measure} -  </strong>
+          : <strong>Ballot Measure: </strong>
+        }
         <a href={`/referendum/${hit.election_location.toLowerCase()}/${hit.election_date}/${hit.slug}`} >
           {hit.title}
         </a>
       </div>
-      : ''}
+      : ''
+    }
     { hit.name ?
       <div>
         <strong>Candidate: </strong>
@@ -50,7 +66,8 @@ const HitComponent = ({ hit }) => (
       <div>
         <strong>Amount:</strong> ${hit.amount}
       </div>
-      : ''}
+      : ''
+    }
     <div> <strong>Election date:</strong> {hit.election_date} </div>
     <div> <strong>Location:</strong> {hit.election_location} </div>
   </div>
@@ -63,6 +80,10 @@ HitComponent.propTypes = {
     election_location: PropTypes.string,
     election_date: PropTypes.string,
     name: PropTypes.string,
+    committee_name: PropTypes.string,
+    committee_id: PropTypes.string,
+    supporting: PropTypes.string,
+    measure: PropTypes.string,
     title: PropTypes.string,
     amount: PropTypes.number,
     slug: PropTypes.string,
