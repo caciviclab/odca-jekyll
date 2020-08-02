@@ -2,7 +2,7 @@ import React from 'react';
 import algoliasearch from 'algoliasearch';
 import PropTypes from 'prop-types';
 
-import { RefinementList, InstantSearch, SearchBox, Hits, ClearRefinements, Pagination } from 'react-instantsearch-dom';
+import { RefinementList, InstantSearch, SearchBox, Hits, ClearRefinements, Pagination, PoweredBy } from 'react-instantsearch-dom';
 import webComponent from '../web-component';
 
 const searchClient = algoliasearch('H897LKXYG1', '50a4f124e0d934cac92e79ece376316a');
@@ -47,6 +47,10 @@ const HitComponent = ({ hit }) => (
     }
     { hit.name ?
       <div>
+        { hit.supporting ?
+          <strong>{hit.supporting} </strong>
+          : ''
+        }
         <strong>Candidate: </strong>
         <a href={`/candidate/${hit.election_location.toLowerCase()}/${hit.election_date}/${hit.candidate_slug}`} >
           {hit.name}
@@ -106,9 +110,9 @@ const SearchQuery = () => (
       </div>
       <div className="grid-col-10">
         <SearchBox className="searchbar" />
+        <PoweredBy />
         <Hits hitComponent={HitComponent} />
         <Pagination />
-        <a href="https://www.algolia.com">Search by Algolia</a>
       </div>
     </div>
   </InstantSearch>
