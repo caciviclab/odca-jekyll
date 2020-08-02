@@ -17,14 +17,14 @@ const HitComponent = ({ hit }) => (
     }
     <div>
       <strong>Election: </strong>
-      <a href={`/election/${hit.election_location.toLowerCase()}/${hit.election_date}`} >
+      <a href={`/election/${hit.election_location.toLowerCase()}/${hit.election_date}`} target="_blank" >
         {hit.election_title}
       </a>
     </div>
     { hit.committee_name ?
       <div>
         <strong>Committee: </strong>
-        <a href={`/committee/${hit.committee_id}`} >
+        <a href={`/committee/${hit.committee_id}`} target="_blank" >
           {hit.committee_name}
         </a>
       </div>
@@ -39,7 +39,7 @@ const HitComponent = ({ hit }) => (
         { hit.measure ? <strong>{hit.measure} -  </strong>
           : <strong>Ballot Measure: </strong>
         }
-        <a href={`/referendum/${hit.election_location.toLowerCase()}/${hit.election_date}/${hit.slug}`} >
+        <a href={`/referendum/${hit.election_location.toLowerCase()}/${hit.election_date}/${hit.slug}`} target="_blank" >
           {hit.title}
         </a>
       </div>
@@ -52,7 +52,7 @@ const HitComponent = ({ hit }) => (
           : ''
         }
         <strong>Candidate: </strong>
-        <a href={`/candidate/${hit.election_location.toLowerCase()}/${hit.election_date}/${hit.candidate_slug}`} >
+        <a href={`/candidate/${hit.election_location.toLowerCase()}/${hit.election_date}/${hit.candidate_slug}`} target="_blank" >
           {hit.name}
         </a>
       </div>
@@ -61,7 +61,7 @@ const HitComponent = ({ hit }) => (
     { hit.office_title ?
       <div>
         <strong>Office: </strong>
-        <a href={`/office/${hit.election_location.toLowerCase()}/${hit.election_date}/${hit.office_slug}`} >
+        <a href={`/office/${hit.election_location.toLowerCase()}/${hit.election_date}/${hit.office_slug}`} target="_blank" >
           {hit.office_title}
         </a>
       </div> : ''
