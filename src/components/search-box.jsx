@@ -14,7 +14,7 @@ const CustomSearchBox = () => (
       searchAsYouType={false}
       onSubmit={event => {
         event.preventDefault();
-        window.location.replace("localhost:4000/search");
+        window.location.replace("http://openoakland.org/search");
       }} />
   </InstantSearch>
 )
