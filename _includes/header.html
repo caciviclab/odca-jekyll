@@ -4,7 +4,7 @@
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
     <a class="header__title header__title--md" rel="author" href="{{ "/" | relative_url }}" tabindex="1">Open Disclosure Oakland</a>
-
+    <search-box />
     {% if page_paths %}
       <nav class="header-nav">
         <input type="checkbox" id="header-nav-trigger" class="header-nav__trigger" />

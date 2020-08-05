@@ -7,10 +7,16 @@ import webComponent from '../web-component';
 
 const searchClient = algoliasearch('H897LKXYG1', '50a4f124e0d934cac92e79ece376316a');
 
-const SearchBox = () => (
+const CustomSearchBox = () => (
   <InstantSearch searchClient={searchClient} indexName="election">
-    <SearchBox className="searchbar" />
+    <SearchBox
+      className="searchbar"
+      searchAsYouType={false}
+      onSubmit={event => {
+        event.preventDefault();
+        window.location.replace("localhost:4000/search");
+      }} />
   </InstantSearch>
 )
 
-export default webComponent(SearchBox, 'search-box');
+export default webComponent(CustomSearchBox, 'search-box');
