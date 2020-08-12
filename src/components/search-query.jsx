@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import algoliasearch from 'algoliasearch';
 import PropTypes from 'prop-types';
 
@@ -7,11 +7,21 @@ import webComponent from '../web-component';
 
 const searchClient = algoliasearch('H897LKXYG1', '50a4f124e0d934cac92e79ece376316a');
 
+const HideShow = ({ hide, ...rest }) => (
+  <div style={{ display: hide ? 'none' : 'inline-block' }}>
+    {rest.children}
+  </div>
+);
+
+HideShow.propTypes = {
+  hide: PropTypes.bool.isRequired,
+};
+
 const HitComponent = ({ hit }) => (
   <div>
-    { hit.last_name ?
+    {hit.last_name ?
       <div>
-        <strong>Contributor:</strong> {hit.first_name} {hit.last_name}
+        <strong>Contributor: </strong>{hit.first_name} {hit.last_name}
       </div>
       : ''
     }
@@ -21,7 +31,7 @@ const HitComponent = ({ hit }) => (
         {hit.election_title}
       </a>
     </div>
-    { hit.committee_name ?
+    {hit.committee_name ?
       <div>
         <strong>Committee: </strong>
         <a href={`/committee/${hit.committee_id}`} target="_blank" rel="noreferrer" >
@@ -30,7 +40,7 @@ const HitComponent = ({ hit }) => (
       </div>
       : ''
     }
-    { hit.title ?
+    {hit.title ?
       <div>
         { hit.supporting ?
           <strong>{hit.supporting} </strong>
@@ -45,9 +55,9 @@ const HitComponent = ({ hit }) => (
       </div>
       : ''
     }
-    { hit.name ?
+    {hit.name ?
       <div>
-        { hit.supporting ?
+        {hit.supporting ?
           <strong>{hit.supporting} </strong>
           : ''
         }
@@ -58,7 +68,7 @@ const HitComponent = ({ hit }) => (
       </div>
       : ''
     }
-    { hit.office_title ?
+    {hit.office_title ?
       <div>
         <strong>Office: </strong>
         <a href={`/office/${hit.election_location.toLowerCase()}/${hit.election_date}/${hit.office_slug}`} target="_blank" rel="noreferrer" >
@@ -66,16 +76,17 @@ const HitComponent = ({ hit }) => (
         </a>
       </div> : ''
     }
-    { hit.amount ?
+    {hit.amount ?
       <div>
-        <strong>Amount:</strong> ${hit.amount}
+        <strong>Amount: </strong>${hit.amount}
       </div>
       : ''
     }
-    <div> <strong>Election date:</strong> {hit.election_date} </div>
-    <div> <strong>Location:</strong> {hit.election_location} </div>
+    <div> <strong>Election date: </strong>{hit.election_date}</div>
+    <div> <strong>Location: </strong>{hit.election_location}</div>
   </div>
 );
+
 HitComponent.propTypes = {
   hit: PropTypes.shape({
     last_name: PropTypes.string,
@@ -96,26 +107,32 @@ HitComponent.propTypes = {
     office_title: PropTypes.string,
   }),
 };
+
 HitComponent.defaultProps = {
   hit: {},
 };
 
-const SearchQuery = () => (
-  <InstantSearch searchClient={searchClient} indexName="election">
-    <div className="grid">
-      <div className="grid-col-2 election-checkboxes">
-        <ClearRefinements clearsQuery="true" />
-        <h3>Election Title</h3>
-        <RefinementList attribute="election_title" />
+const SearchQuery = () => {
+  const [hide, setHide] = useState(true);
+  return (
+    <InstantSearch searchClient={searchClient} indexName="election">
+      <div className="grid">
+        <div className="grid-col-2 election-checkboxes">
+          <ClearRefinements clearsQuery="true" />
+          <h3>Election Title</h3>
+          <RefinementList attribute="election_title" />
+        </div>
+        <div className="grid-col-10">
+          <SearchBox className="searchbar" onFocus={() => setHide(false)} onBlur={() => setHide(true)} />
+          <PoweredBy />
+          <HideShow hide={hide}>
+            <Hits hitComponent={HitComponent} />
+          </HideShow>
+          <Pagination />
+        </div>
       </div>
-      <div className="grid-col-10">
-        <SearchBox className="searchbar" />
-        <PoweredBy />
-        <Hits hitComponent={HitComponent} />
-        <Pagination />
-      </div>
-    </div>
-  </InstantSearch>
-);
+    </InstantSearch>
+  );
+};
 
 export default webComponent(SearchQuery, 'search-query');
