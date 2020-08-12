@@ -7,13 +7,23 @@ import webComponent from '../web-component';
 
 const searchClient = algoliasearch('H897LKXYG1', '50a4f124e0d934cac92e79ece376316a');
 
-const HideShow = ({ hide, ...rest }) => (
-  <div style={{ display: hide ? 'none' : 'inline-block' }}>
+const getWrapperStyles = hide => ({
+  display: hide ? 'none' : 'inline-block',
+  border: '1px solid grey',
+  borderRadius: '10px',
+  padding: '4px',
+  zIndex: 1000,
+  boxShadow: '-1px 1px 2px lightgrey',
+  maxWidth: '750px',
+});
+
+const HitListContentWrapper = ({ hide, ...rest }) => (
+  <div style={getWrapperStyles(hide)}>
     {rest.children}
   </div>
 );
 
-HideShow.propTypes = {
+HitListContentWrapper.propTypes = {
   hide: PropTypes.bool.isRequired,
 };
 
@@ -118,16 +128,16 @@ const SearchQuery = () => {
     <InstantSearch searchClient={searchClient} indexName="election">
       <div className="grid">
         <div className="grid-col-2 election-checkboxes">
-          <ClearRefinements clearsQuery="true" />
           <h3>Election Title</h3>
           <RefinementList attribute="election_title" />
+          <ClearRefinements clearsQuery="true" />
         </div>
         <div className="grid-col-10">
           <SearchBox className="searchbar" onFocus={() => setHide(false)} onBlur={() => setHide(true)} />
           <PoweredBy />
-          <HideShow hide={hide}>
+          <HitListContentWrapper hide={hide}>
             <Hits hitComponent={HitComponent} />
-          </HideShow>
+          </HitListContentWrapper>
           <Pagination />
         </div>
       </div>
