@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import {
   RefinementList, InstantSearch, SearchBox, ClearRefinements, Pagination,
-  connectHits, PoweredBy,
+  connectHits, PoweredBy, connectStateResults,
 } from 'react-instantsearch-dom';
 import webComponent from '../web-component';
 
@@ -112,6 +112,15 @@ Hits.defaultProps = {
   hits: {},
 };
 
+const Results = connectStateResults(({ searchState }) =>
+  (searchState && searchState.query ? (
+    <div>
+      <CustomHits />
+    </div>
+  ) : (
+    <div>No query</div>
+  )));
+
 const SearchQuery = () => (
   <InstantSearch searchClient={searchClient} indexName="election">
     <div className="grid">
@@ -123,7 +132,7 @@ const SearchQuery = () => (
       <div className="grid-col-10">
         <SearchBox className="searchbar" />
         <PoweredBy />
-        <CustomHits />
+        <Results />
         <Pagination />
       </div>
     </div>
