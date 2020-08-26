@@ -1,21 +1,12 @@
 import React from 'react';
-import algoliasearch from 'algoliasearch';
 import PropTypes from 'prop-types';
-import { orderBy } from 'lodash';
-
-import {
-  RefinementList, InstantSearch, SearchBox, ClearRefinements, Pagination,
-  connectHits, PoweredBy, connectStateResults,
-} from 'react-instantsearch-dom';
-import webComponent from '../web-component';
-
-const searchClient = algoliasearch('H897LKXYG1', '50a4f124e0d934cac92e79ece376316a');
+import { connectHits } from 'react-instantsearch-dom';
 
 const Hits = ({ hits }) => (
-  <dl>
+  <dl className="hit-list">
     {hits.map(hit => (
       <div>
-        { hit.last_name ?
+        {hit.last_name ?
           <dt>
             <strong>Contributor:</strong> {hit.first_name} {hit.last_name}
           </dt>
@@ -27,7 +18,7 @@ const Hits = ({ hits }) => (
             {hit.election_title}
           </a>
         </dd>
-        { hit.committee_name ?
+        {hit.committee_name ?
           <dd>
             <strong>Committee: </strong>
             <a href={`/committee/${hit.committee_id}`} target="_blank" rel="noreferrer" >
@@ -36,13 +27,13 @@ const Hits = ({ hits }) => (
           </dd>
           : ''
         }
-        { hit.title ?
+        {hit.title ?
           <dd>
-            { hit.supporting ?
+            {hit.supporting ?
               <strong>{hit.supporting} </strong>
               : ''
             }
-            { hit.measure ? <strong>{hit.measure} -  </strong>
+            {hit.measure ? <strong>{hit.measure} -  </strong>
               : <strong>Ballot Measure: </strong>
             }
             <a href={`/referendum/${hit.election_location.toLowerCase()}/${hit.election_date}/${hit.slug}`} target="_blank" rel="noreferrer" >
@@ -51,7 +42,7 @@ const Hits = ({ hits }) => (
           </dd>
           : ''
         }
-        { hit.office_title ?
+        {hit.office_title ?
           <dd>
             <strong>Office: </strong>
             <a href={`/office/${hit.election_location.toLowerCase()}/${hit.election_date}/${hit.office_slug}`} target="_blank" rel="noreferrer" >
@@ -59,9 +50,9 @@ const Hits = ({ hits }) => (
             </a>
           </dd> : ''
         }
-        { hit.name ?
+        {hit.name ?
           <dd>
-            { hit.supporting ?
+            {hit.supporting ?
               <strong>{hit.supporting} </strong>
               : ''
             }
@@ -72,7 +63,7 @@ const Hits = ({ hits }) => (
           </dd>
           : ''
         }
-        { hit.amount ?
+        {hit.amount ?
           <dd>
             <strong>Amount:</strong> ${hit.amount}
           </dd>
@@ -86,6 +77,7 @@ const Hits = ({ hits }) => (
 );
 
 const CustomHits = connectHits(Hits);
+export default CustomHits;
 
 Hits.propTypes = {
   hits: PropTypes.shape({
@@ -112,48 +104,3 @@ Hits.propTypes = {
 Hits.defaultProps = {
   hits: {},
 };
-
-const Results = connectStateResults(({ searchState }) =>
-  (searchState && searchState.query ? (
-    <div>
-      <CustomHits />
-    </div>
-  ) : (
-    <div>No query</div>
-  )));
-
-const SearchQuery = () => (
-  <InstantSearch searchClient={searchClient} indexName="election">
-    <div className="grid">
-      <div className="grid-col-2 election-checkboxes">
-        <ClearRefinements clearsQuery="true" />
-        <h3>Election Title</h3>
-        <RefinementList
-          attribute="election_title"
-          /* List refinements ordered by date descending */
-          transformItems={items =>
-            orderBy(items, (i) => {
-              /* extract the election date */
-              const d = i.label.match(/^[^ ]* (.*, [^ ]*)/);
-              if (d) {
-                /* remove th, st, rd, etc from the day */
-                const r = d['1'].replace(/[^[0-9]*,/, ',');
-                return Date.parse(r);
-              }
-              /* if we can't extrat a date, put it last */
-              return 0;
-            }, 'desc')
-          }
-        />
-      </div>
-      <div className="grid-col-10">
-        <SearchBox className="searchbar" />
-        <PoweredBy />
-        <Results />
-        <Pagination />
-      </div>
-    </div>
-  </InstantSearch>
-);
-
-export default webComponent(SearchQuery, 'search-query');
