@@ -22,10 +22,10 @@
   margin-top: 2 * $spacing-base;
 }
 
-.ais-Hits-item {
-  width: 100%;
-}
-
 .ais-RefinementList-labelText {
   margin-left: 0.5 * $spacing-base;
+}
+
+.hit-list {
+  font-size: $small-font-size;
 }
