@@ -80,7 +80,7 @@ const CustomHits = connectHits(Hits);
 export default CustomHits;
 
 Hits.propTypes = {
-  hits: PropTypes.shape({
+  hits: PropTypes.arrayOf(PropTypes.shape({
     map: PropTypes.string,
     last_name: PropTypes.string,
     first_name: PropTypes.string,
@@ -98,9 +98,9 @@ Hits.propTypes = {
     candidate_slug: PropTypes.string,
     office_slug: PropTypes.string,
     office_title: PropTypes.string,
-  }),
+  })),
 };
 
 Hits.defaultProps = {
-  hits: {},
+  hits: [],
 };
