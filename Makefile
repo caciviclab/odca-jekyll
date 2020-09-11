@@ -51,6 +51,7 @@ docker:
           -v "$(PWD)/_plugins/:/app/_plugins" \
           -v "$(PWD)/assets/:/app/assets" \
           -v "$(PWD)/src/:/app/src" \
+		  -v "$(PWD)/*.html:/app/*.html" \
           odca-jekyll
 
 .PHONY: build clean production pull-finance serve setup test
