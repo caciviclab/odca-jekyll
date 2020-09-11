@@ -29,7 +29,9 @@
 }
 
 .landing__btn {
+  margin-bottom: $spacing-base;
   padding: $spacing-base;
+  display: block;
   background-color: $color-white;
   font-style: normal;
   font-weight: bold;
