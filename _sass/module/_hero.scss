@@ -61,14 +61,14 @@ $custom-grid--thirds: (
   font-style: italic;
 
   @include media($hero-breakpoint) {
-    margin-bottom: $spacing-base * 2;
+    margin-top: $spacing-base * 2;
   }
 }
 
 .hero__hed {
   font-size: $h2-font-size;
   font-style: normal;
-  margin-bottom: $spacing-base * 2.5;
+  margin-top: $spacing-base * 2;
 }
 
 .hero__hed--centered {
