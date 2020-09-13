@@ -75,6 +75,15 @@ $custom-grid--thirds: (
   text-align: center;
 }
 
+.hero__btn-container {
+  // Sass doesn't seem to be able to do CSS calc with Sass vars
+  // so we set it as a CSS var here
+  @include media($hero-breakpoint) {
+    --spacing-base: .9rem;
+    width: calc(100% - (var(--spacing-base) * 4));
+  }
+}
+
 .hero__funds_raised__total {
   font-size: 3rem;
   font-weight: $font-weight-light;
@@ -99,6 +108,7 @@ $custom-grid--thirds: (
   display: none;
 
   @include media($hero-breakpoint) {
+    padding-top: $spacing-base * 2.5;
     display: flex;
     justify-content: center;
     @include grid-column(2, $custom-grid--thirds);

@@ -38,8 +38,8 @@
   font-weight: bold;
 
   @include media($breakpoint--s1) {
-    padding-left: ($spacing-base * 4);
-    padding-right: ($spacing-base * 4);
+    padding-left: ($spacing-base * 2);
+    padding-right: ($spacing-base * 2);
   }
 }
 
