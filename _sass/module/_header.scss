@@ -4,7 +4,7 @@ $header-background-color: $color-navy;
   color: $color-white;
   background-color: $header-background-color;
   border-bottom: 5px $color-lochmara-blue solid;
-  padding: $spacing-base 0;
+  padding: ($spacing-base * 2) 0;
   position: relative;
 }
 
