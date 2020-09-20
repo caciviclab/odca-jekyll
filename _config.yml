@@ -85,6 +85,7 @@ defaults:
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
 include:
   - .circleci # Include CircleCI config so gh-pages branch is ignored in CI
 
