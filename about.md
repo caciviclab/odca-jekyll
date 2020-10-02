@@ -19,6 +19,8 @@ All development on Open Disclosure happens publicly on [Github](https://github.c
 - Sarah Seiter (2014-2020)
 - Suzanne Doran (2016-2020)
 - Tom Dooner (2014-2020)
+- Karen Ivy (2020-2020)
+
 
 ### Open Disclosure Alumni
 
