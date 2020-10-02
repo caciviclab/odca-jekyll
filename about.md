@@ -15,6 +15,8 @@ All development on Open Disclosure happens publicly on [Github](https://github.c
 - Alison Lawyer (2018-2020)
 - Colin King-Bailey (2018-2020)
 - Elina Rubuliak (2014-2020)
+- Jeff Van (2020-2020)
+- Josh Ling (2020-2020)
 - Karen Ivy (2020-2020)
 - Mike Ubell (2014-2020)
 - Sarah Seiter (2014-2020)
