@@ -12,13 +12,17 @@ All development on Open Disclosure happens publicly on [Github](https://github.c
 
 ### Current Team
 
-- Alison Lawyer (2018-2020)
-- Colin King-Bailey (2018-2020)
-- Elina Rubuliak (2014-2020)
-- Mike Ubell (2014-2020)
-- Sarah Seiter (2014-2020)
-- Suzanne Doran (2016-2020)
-- Tom Dooner (2014-2020)
+- Alison Lawyer (since 2018)
+- Colin King-Bailey (since 2018)
+- Elina Rubuliak (since 2014)
+- Jeff Van (since 2020)
+- Josh Ling (since 2020)
+- Karen Ivy (since 2020)
+- Mike Ubell (since 2014)
+- Sarah Seiter (since 2014)
+- Suzanne Doran (since 2016)
+- Tom Dooner (since 2014)
+
 
 ### Open Disclosure Alumni
 
