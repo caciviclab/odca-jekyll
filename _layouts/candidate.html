@@ -67,6 +67,14 @@ layout: default
             <div class="candidate__link"><a href="https://twitter.com/{{ candidate.twitter_url }}">{% include
                 svg-icon.html icon="twitter-brands" %} {{ candidate.twitter_url }}</a></div>
             {% endif %}
+            {% if candidate.facebook_url %}
+            <div class="candidate__link"><a href="{{ candidate.facebook_url }}" target="_blank">{% include
+                svg-icon.html icon="icon-facebook-square" %} {{ candidate.facebook_url }}</a></div>
+            {% endif %}
+            {% if candidate.instagram_url %}
+            <div class="candidate__link"><a href="https://www.instagram.com/{{ candidate.instagram_url }}" target="_blank">{% include
+                svg-icon.html icon="icon-instagram" %} {{ candidate.instagram_url }}</a></div>
+            {% endif %}
             {% if candidate.votersedge_url %}
             <div class="candidate__link"><a href="{{ candidate.votersedge_url }}" target="_blank">{% include
                 svg-icon.html icon="external-link-square-alt-solid" %} Voter’s Edge profile</a></div>
