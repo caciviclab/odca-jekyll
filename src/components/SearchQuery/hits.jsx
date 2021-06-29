@@ -8,7 +8,7 @@ const Hits = ({ hits }) => (
       <div>
         {hit.last_name ?
           <dt>
-            <strong>Contributor: </strong> 
+            <strong>Contributor: </strong>
             <Highlight attribute="first_name" hit={hit} /> <Highlight attribute="last_name" hit={hit} />
           </dt>
           : ''
@@ -34,7 +34,7 @@ const Hits = ({ hits }) => (
               <strong><Highlight attribute="supporting" hit={hit} /> </strong>
               : ''
             }
-            {hit.measure ? <strong><Highlight attribute="measure" hit={hit} />} -  </strong>
+            {hit.measure ? <strong><Highlight attribute="measure" hit={hit} /> -  </strong>
               : <strong>Ballot Measure: </strong>
             }
             <a href={`/referendum/${hit.election_location.toLowerCase()}/${hit.election_date}/${hit.slug}`} target="_blank" rel="noreferrer" >
