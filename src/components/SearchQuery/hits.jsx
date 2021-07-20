@@ -2,14 +2,23 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connectHits, Highlight } from 'react-instantsearch-dom';
 
+function FormatHit(props) {
+  return (
+    <strong> {props.title} </strong>
+    (props.link==''? '' : <a href= {props.link}  target="_blank" rel="noreferrer" >)
+    <Hightlight attribute = {props.field1} hit={hit} />
+    (props.field2==''? '':   <Hightlight attribute = {props.field2} hit={hit} />)
+    (props.link==''? '': </a>)
+    );
+}
+
 const Hits = ({ hits }) => (
   <dl className="hit-list">
     {hits.map(hit => (
       <div>
         {hit.last_name ?
           <dt>
-            <strong>Contributor: </strong>
-            <Highlight attribute="first_name" hit={hit} /> <Highlight attribute="last_name" hit={hit} />
+            <FormatHit title="Contributor" field1="first_name" field2="last_name" link="" />
           </dt>
           : ''
         }
