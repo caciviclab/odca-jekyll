@@ -33,26 +33,26 @@ const elementAttributeLookup = {
 //     : `/${linkType}/${election_location.toLowerCase()}/${election_date}/${slug}`;
 // }
 
-function LinkableHighlight(attribute, hit) {
-  const notLinkable = ['amount', 'election_date', 'election_location']
-  return (
-    notLinkable.indexOf(attribute) === -1
-      ?
-        <a href="/">
-          <Highlight attribute={attribute} hit={hit} />
-        </a>
-      : <Highlight attribute={attribute} hit={hit} />
-  );
-}
+// function LinkableHighlight(attribute, hit) {
+//   const notLinkable = ['amount', 'election_date', 'election_location']
+//   return (
+//     notLinkable.indexOf(attribute) === -1
+//       ?
+//         <a href="/">
+//           <Highlight attribute={attribute} hit={hit} />
+//         </a>
+//       : <Highlight attribute={attribute} hit={hit} />
+//   );
+// }
 
 const Hits = ({ hits }) => (
   <dl className="hit-list">
     {hits.map(hit => (
-      <div>
-        {Object.keys(hit).map(key => (
-          <dd style={{ color: 'goldenrod', backgroundColor: 'purple' }}>
-            <strong>{elementAttributeLookup[key]}</strong>
-            <LinkableHighlight attribute={key} hit={hit} />
+      <div key={`${hit.objectID}_${Math.floor(Math.random() * 1e10)}`}>
+        {Object.keys(hit).map(attribute => (
+          elementAttributeLookup.indexOf(attribute) !== -1 &&
+          <dd key={`${attribute}_${Math.floor(Math.random() * 1e10)}`}>
+            <strong>{elementAttributeLookup[attribute]}</strong>
           </dd>
         ))}
       </div>
