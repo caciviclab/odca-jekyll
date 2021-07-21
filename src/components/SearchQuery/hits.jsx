@@ -2,88 +2,59 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connectHits, Highlight } from 'react-instantsearch-dom';
 
-function FormatHit(props) {
+// function FormatHit(props) {
+//   return (
+//     <div>
+//       <strong>{props.title}</strong>
+//       { props.link || (
+//       <a href={props.link} target="_blank" rel="noreferrer" >
+//         <Highlight attribute={props.field1} hit={props.hit} />
+//         <Highlight attribute={props.field2} hit={props.hit} />
+//       </a>)}
+//     </div>
+//   );
+// }
+
+const elementAttributeLookup = {
+  first_name: 'Contributor',
+  election_title: 'Election',
+  committee_name: 'Committee',
+  measure: 'Measure',
+  office_title: 'Office',
+  name: 'Candidate',
+  amount: 'Amount',
+  election_date: 'Election date',
+  election_location: 'Location',
+};
+
+// function composeHref(linkType, { election_location, election_date, committee_dd, slug }) {
+//   return linkType === 'committee'
+//     ? `/${linkType}/${committee_id}`
+//     : `/${linkType}/${election_location.toLowerCase()}/${election_date}/${slug}`;
+// }
+
+function LinkableHighlight(attribute, hit) {
+  const notLinkable = ['amount', 'election_date', 'election_location']
   return (
-    <>
-    <strong> {props.title} </strong>
-    <a href= {props.link}  target="_blank" rel="noreferrer" >
-    <Highlight attribute = {props.field1} hit={props.hit} />
-    &nbsp;
-    <Highlight attribute = {props.field2} hit={props.hit} />
-    </a>
-  </>
-    );
+    notLinkable.indexOf(attribute) === -1
+      ?
+        <a href="/">
+          <Highlight attribute={attribute} hit={hit} />
+        </a>
+      : <Highlight attribute={attribute} hit={hit} />
+  );
 }
 
 const Hits = ({ hits }) => (
   <dl className="hit-list">
     {hits.map(hit => (
       <div>
-        {hit.last_name ?
-          <dt>
-            <FormatHit hit={hit} title="Contributor" field1="first_name" field2="last_name" link="" />
-          </dt>
-          : ''
-        }
-        <dd>
-          <strong>Election: </strong>
-          <a href={`/election/${hit.election_location.toLowerCase()}/${hit.election_date}`} target="_blank" rel="noreferrer" >
-            <Highlight attribute="election_title" hit={hit} />
-          </a>
-        </dd>
-        {hit.committee_name ?
-          <dd>
-            <strong>Committee: </strong>
-            <a href={`/committee/${hit.committee_id}`} target="_blank" rel="noreferrer" >
-              <Highlight attribute="committee_name" hit={hit} />
-            </a>
+        {Object.keys(hit).map(key => (
+          <dd style={{ color: 'goldenrod', backgroundColor: 'purple' }}>
+            <strong>{elementAttributeLookup[key]}</strong>
+            <LinkableHighlight attribute={key} hit={hit} />
           </dd>
-          : ''
-        }
-        {hit.title ?
-          <dd>
-            {hit.supporting ?
-              <strong><Highlight attribute="supporting" hit={hit} /> </strong>
-              : ''
-            }
-            {hit.measure ? <strong><Highlight attribute="measure" hit={hit} /> -  </strong>
-              : <strong>Ballot Measure: </strong>
-            }
-            <a href={`/referendum/${hit.election_location.toLowerCase()}/${hit.election_date}/${hit.slug}`} target="_blank" rel="noreferrer" >
-              <Highlight attribute="title" hit={hit} />
-            </a>
-          </dd>
-          : ''
-        }
-        {hit.office_title ?
-          <dd>
-            <strong>Office: </strong>
-            <a href={`/office/${hit.election_location.toLowerCase()}/${hit.election_date}/${hit.office_slug}`} target="_blank" rel="noreferrer" >
-              <Highlight attribute="office_title" hit={hit} />
-            </a>
-          </dd> : ''
-        }
-        {hit.name ?
-          <dd>
-            {hit.supporting ?
-              <strong><Highlight attribute="supporting" hit={hit} /> </strong>
-              : ''
-            }
-            <strong>Candidate: </strong>
-            <a href={`/candidate/${hit.election_location.toLowerCase()}/${hit.election_date}/${hit.candidate_slug}`} target="_blank" rel="noreferrer" >
-              <Highlight attribute="name" hit={hit} />
-            </a>
-          </dd>
-          : ''
-        }
-        {hit.amount ?
-          <dd>
-            <strong>Amount:</strong> $<Highlight attribute="amount" hit={hit} />
-          </dd>
-          : ''}
-        <dd> <strong>Election date:</strong> <Highlight attribute="election_date" hit={hit} /> </dd>
-        <dd> <strong>Location:</strong> <Highlight attribute="election_location" hit={hit} /> </dd>
-        <hr />
+        ))}
       </div>
     ))}
   </dl>
