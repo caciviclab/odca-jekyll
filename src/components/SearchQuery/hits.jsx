@@ -2,20 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connectHits, Highlight } from 'react-instantsearch-dom';
 
-// function FormatHit(props) {
-//   return (
-//     <div>
-//       <strong>{props.title}</strong>
-//       { props.link || (
-//       <a href={props.link} target="_blank" rel="noreferrer" >
-//         <Highlight attribute={props.field1} hit={props.hit} />
-//         <Highlight attribute={props.field2} hit={props.hit} />
-//       </a>)}
-//     </div>
-//   );
-// }
-
-const elementAttributeLookup = {
+const attributeFieldLookup = {
   first_name: 'Contributor',
   election_title: 'Election',
   committee_name: 'Committee',
@@ -27,18 +14,20 @@ const elementAttributeLookup = {
   election_location: 'Location',
 };
 
-// function composeHref(linkType, { election_location, election_date, committee_dd, slug }) {
-//   return linkType === 'committee'
-//     ? `/${linkType}/${committee_id}`
-//     : `/${linkType}/${election_location.toLowerCase()}/${election_date}/${slug}`;
-// }
+function composeHref(field, { election_location, election_date, committee_id, slug }) {
+  const lowerField = field.toLowerCase();
+  return lowerField === 'committee'
+    ? `/${lowerField}/${committee_id}`
+    : `/${lowerField}/${election_location.toLowerCase()}/${election_date}/${slug || ''}`;
+}
 
 function LinkableHighlight({ attribute, hit }) {
-  const notLinkable = ['amount', 'election_date', 'election_location']
+  const notLinkable = ['Contributor', 'Amount', 'Election date', 'Location'];
+  const field = attributeFieldLookup[attribute];
   return (
-    notLinkable.indexOf(attribute) === -1
+    notLinkable.indexOf(field) === -1
       ?
-        <a href="/">
+        <a href={composeHref(field, hit)}>
           <Highlight attribute={attribute} hit={hit} />
         </a>
       : <Highlight attribute={attribute} hit={hit} />
@@ -50,9 +39,9 @@ const Hits = ({ hits }) => (
     {hits.map(hit => (
       <div key={`${hit.objectID}_${Math.floor(Math.random() * 1e10)}`}>
         {Object.keys(hit).map(attribute => (
-          attribute in elementAttributeLookup &&
+          attribute in attributeFieldLookup &&
           <dd key={`${attribute}_${Math.floor(Math.random() * 1e10)}`}>
-            <strong>{elementAttributeLookup[attribute]}</strong>
+            <strong>{attributeFieldLookup[attribute]}</strong>
             <LinkableHighlight attribute={attribute} hit={hit} />
           </dd>
         ))}
