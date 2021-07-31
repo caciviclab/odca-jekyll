@@ -27,14 +27,7 @@ function FormatHit(props) {
   return (
     <span>
       {props.title && <strong>{props.title}: </strong>}
-      {props.symbol}<RefHighlight attribute={props.field1} link={props.link} hit={props.hit} />
-      &nbsp;
-      {props.field2 && <RefHighlight
-        attribute={props.field2}
-        link={props.link}
-        hit={props.hit}
-      />
-      }
+      {props.symbol}<RefHighlight attribute={props.field} link={props.link} hit={props.hit} />
     </span>
   );
 }
@@ -42,8 +35,7 @@ function FormatHit(props) {
 FormatHit.propTypes = {
   title: PropTypes.string,
   symbol: PropTypes.string,
-  field1: PropTypes.string,
-  field2: PropTypes.string,
+  field: PropTypes.string.isRequired,
   link: PropTypes.string,
   hit: PropTypes.shape().isRequired,
 };
@@ -51,8 +43,6 @@ FormatHit.propTypes = {
 FormatHit.defaultProps = {
   title: '',
   symbol: '',
-  field1: '',
-  field2: '',
   link: '',
 };
 function makeLink(type, location, date, slug) {
@@ -62,26 +52,28 @@ function makeLink(type, location, date, slug) {
 const Hits = ({ hits }) => (
   <dl className="hit-list">
     {hits.map(hit => (
-      <div>
-        {hit.last_name &&
-          <dt>
-            <FormatHit hit={hit} title="Contributor" field1="first_name" field2="last_name" />
-          </dt>
+      <div key={hit.objectID}>
+        {hit.c_name && hit.type !== 'donation' &&
+          <dd>
+            <FormatHit hit={hit} title="Contributor" field="c_name" />
+          </dd>
         }
-        <dd>
-          <FormatHit
-            hit={hit}
-            title="Election"
-            field1="election_title"
-            link={makeLink('election', hit.election_location, hit.election_date, '')}
-          />
-        </dd>
+        {hit.election_title &&
+          <dd>
+            <FormatHit
+              hit={hit}
+              title="Election"
+              field="election_title"
+              link={makeLink('election', hit.election_location, hit.election_date, '')}
+            />
+          </dd>
+        }
         {hit.committee_name &&
           <dd>
             <FormatHit
               hit={hit}
               title="Committee"
-              field1="committee_name"
+              field="committee_name"
               link={makeLink('committee', '', '', hit.committee_id)}
             />
           </dd>
@@ -95,18 +87,8 @@ const Hits = ({ hits }) => (
             }
             <FormatHit
               hit={hit}
-              field1="title"
+              field="title"
               link={makeLink('referendum', hit.election_location, hit.election_date, hit.slug)}
-            />
-          </dd>
-        }
-        {hit.office_title &&
-          <dd>
-            <FormatHit
-              hit={hit}
-              title="Office"
-              field1="office_title"
-              link={makeLink('office', hit.election_location, hit.election_date, hit.office_slug)}
             />
           </dd>
         }
@@ -115,19 +97,63 @@ const Hits = ({ hits }) => (
             <strong>{hit.supporting} </strong>
             <FormatHit
               hit={hit}
-              title="Candidate"
-              field1="name"
-              link={makeLink('candidate', hit.election_location, hit.election_date, hit.candidate_slug)}
+              title={hit.type === 'donation' ? 'Requestor' : 'Candidate'}
+              field="name"
+              link={hit.type === 'donation' ? null :
+                makeLink('candidate', hit.election_location, hit.election_date, hit.candidate_slug)}
             />
+          </dd>
+        }
+        {hit.office_title &&
+          <dd>
+            <FormatHit
+              hit={hit}
+              title="Office"
+              field="office_title"
+              link={hit.type === 'donation' ? null :
+                makeLink('office', hit.election_location, hit.election_date, hit.office_slug)}
+            />
+          </dd>
+        }
+        {hit.c_name && hit.type === 'donation' &&
+          <dd>
+            <FormatHit hit={hit} title="Requested Donation of" field="c_name" />
+            &nbsp;
+            <FormatHit hit={hit} title="In" field="location" />
+          </dd>
+        }
+        {hit.payee &&
+          <dd>
+            <FormatHit hit={hit} title="Recipeint" field="payee" />
+          </dd>
+        }
+        {hit.date &&
+          <dd>
+            <FormatHit hit={hit} title="Date" field="date" />
+          </dd>
+        }
+        {hit.description &&
+          <dd>
+            <FormatHit hit={hit} title="Purpose" field="description" link={hit.url} />
           </dd>
         }
         {hit.amount &&
           <dd>
-            <FormatHit hit={hit} title="Amount" field1="amount" symbol="$" />
+            <FormatHit hit={hit} title="Amount" field="amount" symbol="$" />
           </dd>
         }
-        <dd> <FormatHit hit={hit} title="Election date" field1="election_date" /> </dd>
-        <dd> <FormatHit hit={hit} title="Location" field1="election_location" /> </dd>
+        {hit.election_date &&
+          <dd>
+            <FormatHit
+              hit={hit}
+              title={hit.type === 'donation' ? 'Date' : 'Election date'}
+              field="election_date"
+            />
+          </dd>
+        }
+        {hit.election_location &&
+          <dd> <FormatHit hit={hit} title="Location" field="election_location" /> </dd>
+        }
         <hr />
       </div>
     ))}
@@ -140,8 +166,7 @@ export default CustomHits;
 Hits.propTypes = {
   hits: PropTypes.arrayOf(PropTypes.shape({
     map: PropTypes.string,
-    last_name: PropTypes.string,
-    first_name: PropTypes.string,
+    c_name: PropTypes.string,
     election_title: PropTypes.string,
     election_location: PropTypes.string,
     election_date: PropTypes.string,

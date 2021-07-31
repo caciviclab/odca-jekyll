@@ -21,7 +21,7 @@ const Results = connectStateResults(({ searchState }) =>
   )));
 
 const SearchQuery = () => (
-  <InstantSearch searchClient={searchClient} indexName="election">
+  <InstantSearch searchClient={searchClient} indexName="contributions">
     <div className="grid">
       <div className="grid-col-2 election-checkboxes">
         <ClearRefinements clearsQuery="true" />
