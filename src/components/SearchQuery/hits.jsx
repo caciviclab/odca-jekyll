@@ -26,7 +26,7 @@ RefHighlight.defaultProps = {
 function FormatHit(props) {
   return (
     <span>
-      <strong> {props.title}: </strong>
+      {props.title && <strong>{props.title}: </strong>}
       {props.symbol}<RefHighlight attribute={props.field1} link={props.link} hit={props.hit} />
       &nbsp;
       {props.field2 && <RefHighlight
@@ -88,9 +88,9 @@ const Hits = ({ hits }) => (
         }
         {hit.title &&
           <dd>
-            <strong> hit.supporting </strong>
+            <strong> {hit.supporting} </strong>
             {hit.measure ?
-              <strong><Highlight attribute="measure" hit={hit} /> -  </strong>
+              <strong><Highlight attribute="measure" hit={hit} /> - </strong>
               : <strong>Ballot Measure: </strong>
             }
             <FormatHit
