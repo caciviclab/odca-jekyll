@@ -2,75 +2,132 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connectHits, Highlight } from 'react-instantsearch-dom';
 
+function RefHighlight(props) {
+  if (props.link) {
+    return (
+      <a href={props.link} target="_blank" rel="noreferrer" >
+        <Highlight attribute={props.attribute} hit={props.hit} />
+      </a>
+    );
+  }
+  return <Highlight attribute={props.attribute} hit={props.hit} />;
+}
+
+RefHighlight.propTypes = {
+  link: PropTypes.string,
+  attribute: PropTypes.string,
+  hit: PropTypes.shape().isRequired,
+};
+RefHighlight.defaultProps = {
+  link: '',
+  attribute: '',
+};
+
+function FormatHit(props) {
+  return (
+    <span>
+      {props.title && <strong>{props.title}: </strong>}
+      {props.symbol}<RefHighlight attribute={props.field1} link={props.link} hit={props.hit} />
+      &nbsp;
+      {props.field2 && <RefHighlight
+        attribute={props.field2}
+        link={props.link}
+        hit={props.hit}
+      />
+      }
+    </span>
+  );
+}
+
+FormatHit.propTypes = {
+  title: PropTypes.string,
+  symbol: PropTypes.string,
+  field1: PropTypes.string,
+  field2: PropTypes.string,
+  link: PropTypes.string,
+  hit: PropTypes.shape().isRequired,
+};
+
+FormatHit.defaultProps = {
+  title: '',
+  symbol: '',
+  field1: '',
+  field2: '',
+  link: '',
+};
+function makeLink(type, location, date, slug) {
+  return `/${type}/${location.toLowerCase()}/${date}/${slug}`;
+}
+
 const Hits = ({ hits }) => (
   <dl className="hit-list">
     {hits.map(hit => (
       <div>
-        {hit.last_name ?
+        {hit.last_name &&
           <dt>
-            <strong>Contributor: </strong>
-            <Highlight attribute="first_name" hit={hit} /> <Highlight attribute="last_name" hit={hit} />
+            <FormatHit hit={hit} title="Contributor" field1="first_name" field2="last_name" />
           </dt>
-          : ''
         }
         <dd>
-          <strong>Election: </strong>
-          <a href={`/election/${hit.election_location.toLowerCase()}/${hit.election_date}`} target="_blank" rel="noreferrer" >
-            <Highlight attribute="election_title" hit={hit} />
-          </a>
+          <FormatHit
+            hit={hit}
+            title="Election"
+            field1="election_title"
+            link={makeLink('election', hit.election_location, hit.election_date, '')}
+          />
         </dd>
-        {hit.committee_name ?
+        {hit.committee_name &&
           <dd>
-            <strong>Committee: </strong>
-            <a href={`/committee/${hit.committee_id}`} target="_blank" rel="noreferrer" >
-              <Highlight attribute="committee_name" hit={hit} />
-            </a>
+            <FormatHit
+              hit={hit}
+              title="Committee"
+              field1="committee_name"
+              link={makeLink('committee', '', '', hit.committee_id)}
+            />
           </dd>
-          : ''
         }
-        {hit.title ?
+        {hit.title &&
           <dd>
-            {hit.supporting ?
-              <strong><Highlight attribute="supporting" hit={hit} /> </strong>
-              : ''
-            }
-            {hit.measure ? <strong><Highlight attribute="measure" hit={hit} /> -  </strong>
+            <strong> {hit.supporting} </strong>
+            {hit.measure ?
+              <strong><Highlight attribute="measure" hit={hit} /> - </strong>
               : <strong>Ballot Measure: </strong>
             }
-            <a href={`/referendum/${hit.election_location.toLowerCase()}/${hit.election_date}/${hit.slug}`} target="_blank" rel="noreferrer" >
-              <Highlight attribute="title" hit={hit} />
-            </a>
+            <FormatHit
+              hit={hit}
+              field1="title"
+              link={makeLink('referendum', hit.election_location, hit.election_date, hit.slug)}
+            />
           </dd>
-          : ''
         }
-        {hit.office_title ?
+        {hit.office_title &&
           <dd>
-            <strong>Office: </strong>
-            <a href={`/office/${hit.election_location.toLowerCase()}/${hit.election_date}/${hit.office_slug}`} target="_blank" rel="noreferrer" >
-              <Highlight attribute="office_title" hit={hit} />
-            </a>
-          </dd> : ''
-        }
-        {hit.name ?
-          <dd>
-            {hit.supporting ?
-              <strong><Highlight attribute="supporting" hit={hit} /> </strong>
-              : ''
-            }
-            <strong>Candidate: </strong>
-            <a href={`/candidate/${hit.election_location.toLowerCase()}/${hit.election_date}/${hit.candidate_slug}`} target="_blank" rel="noreferrer" >
-              <Highlight attribute="name" hit={hit} />
-            </a>
+            <FormatHit
+              hit={hit}
+              title="Office"
+              field1="office_title"
+              link={makeLink('office', hit.election_location, hit.election_date, hit.office_slug)}
+            />
           </dd>
-          : ''
         }
-        {hit.amount ?
+        {hit.name &&
           <dd>
-            <strong>Amount:</strong> $<Highlight attribute="amount" hit={hit} />
+            <strong>{hit.supporting} </strong>
+            <FormatHit
+              hit={hit}
+              title="Candidate"
+              field1="name"
+              link={makeLink('candidate', hit.election_location, hit.election_date, hit.candidate_slug)}
+            />
           </dd>
-          : ''}
-        <dd> <strong>Election date:</strong> <Highlight attribute="election_date" hit={hit} /> </dd>
-        <dd> <strong>Location:</strong> <Highlight attribute="election_location" hit={hit} /> </dd>
+        }
+        {hit.amount &&
+          <dd>
+            <FormatHit hit={hit} title="Amount" field1="amount" symbol="$" />
+          </dd>
+        }
+        <dd> <FormatHit hit={hit} title="Election date" field1="election_date" /> </dd>
+        <dd> <FormatHit hit={hit} title="Location" field1="election_location" /> </dd>
         <hr />
       </div>
     ))}
