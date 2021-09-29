@@ -53,9 +53,9 @@ const Hits = ({ hits }) => (
   <dl className="hit-list">
     {hits.map(hit => (
       <div key={hit.objectID}>
-        {hit.c_name && hit.type !== 'donation' &&
+        {hit.contributor_name && hit.type !== 'donation' &&
           <dd>
-            <FormatHit hit={hit} title="Contributor" field="c_name" />
+            <FormatHit hit={hit} title="Contributor" field="contributor_name" />
           </dd>
         }
         {hit.election_title &&
@@ -115,9 +115,9 @@ const Hits = ({ hits }) => (
             />
           </dd>
         }
-        {hit.c_name && hit.type === 'donation' &&
+        {hit.contributor_name && hit.type === 'donation' &&
           <dd>
-            <FormatHit hit={hit} title="Requested Donation of" field="c_name" />
+            <FormatHit hit={hit} title="Requested Donation of" field="contributor_name" />
             &nbsp;
             <FormatHit hit={hit} title="In" field="location" />
           </dd>
@@ -166,7 +166,7 @@ export default CustomHits;
 Hits.propTypes = {
   hits: PropTypes.arrayOf(PropTypes.shape({
     map: PropTypes.string,
-    c_name: PropTypes.string,
+    contributor_name: PropTypes.string,
     election_title: PropTypes.string,
     election_location: PropTypes.string,
     election_date: PropTypes.string,
