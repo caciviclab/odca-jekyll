@@ -57,6 +57,7 @@
   </div>
 </section>
 {% assign money_bar_max = finance.total_contributions %}
+{% if money_bar_max > 0 %}
 <section class="l-section">
   <div class="l-section__content">
     <div class="subheading">Money coming in</div>
@@ -74,4 +75,5 @@
     {% endif %}
   </div>
 </section>
+{% endif %}
 {% endif %}
