@@ -67,7 +67,7 @@ gulp.task('pull:committees', function () {
 });
 
 gulp.task('pull:committees-finance', function () {
-  return gulp.src(dataDir('_data', 'committees', '*.json'))
+  return gulp.src(dataDir('_data', 'committees', '**', '*.json'))
     .pipe(gulp.dest('_data/committees'));
 });
 

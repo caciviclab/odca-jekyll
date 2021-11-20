@@ -3,12 +3,13 @@ layout: default
 ---
 {% assign empty_array = '' | split: '' %}
 {% assign committee = page %}
+{% capture ballot_path %}{{ committee.election }}.md{% endcapture %}
+{% assign ballot_path = ballot_path | replace: "/.md", ".md" %}
+{% assign ballot = site.elections | where: "path", ballot_path | first %}
 {% assign locality = site.localities | where: "locality_id", ballot.locality | first %}
-{% assign ballot = site.elections | where: "path", committee.election | first %}
 {% assign election_day = ballot.election | date: '%Y-%m-%d' %}
 {% assign finance = site.data.committees[locality.slug][election_day][committee.filer_id] %}
 {% assign contributions = finance.contributions | default: empty_array | sort: 'Tran_Amt1' | reverse %}
-
 
 <header class="grid">
   <h1 class="grid-col-12">{{ committee.name }}</h1>

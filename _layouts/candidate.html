@@ -15,6 +15,7 @@ layout: default
 {% assign expenditures_opposing = finance.opposing_money.opposing_expenditures %}
 {% assign expenditures_supporting = finance.supporting_money.total_supporting_independent %}
 {% assign alert_text = "candidate" %}
+{% capture path %}{{ locality.slug }}/{{ election_day }}{% endcapture %}
 
 {% capture body %}
 <div class="candidate">
@@ -85,7 +86,7 @@ layout: default
     </section>
     {% if finance.total_contributions > 0 or finance.total_expenditures > 0
       or finance.supporting_money.total_supporting_independent > 0 or finance.opposing_money.opposing_expenditures > 0 %}
-      {% include candidate/finance.html candidate=candidate finance=finance %}
+      {% include candidate/finance.html candidate=candidate finance=finance path = path %}
     {% else %}
     <section class="l-section">
       <div class="l-section__content">
@@ -101,7 +102,7 @@ layout: default
       <div class="l-section__content">
         <h2 class="candidate__money-heading">Other committees controlled by this candidate</h2>
         {% for committee in other_committees %}
-        <p><a href="{{ site.baseurl }}/committee/{{ committee.filer_id }}/">{{ committee.name | smarity | escape }}</a></p>
+        <p><a href="{{ site.baseurl }}/committee/{{ path }}/{{ committee.filer_id }}/">{{ committee.name | smarity | escape }}</a></p>
         {% endfor %}
       </div>
     </section>
