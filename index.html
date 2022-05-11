@@ -2,10 +2,12 @@
 layout: default
 header: Track the money in Oakland elections
 ---
+{% assign primary_date = '2022-06-07' %}
+{% assign general_date = '2022-11-08' %}
 
-{% assign march_totals = site.data.elections.oakland['2020-03-03'] %}
-{% assign oakland_march_total_funds = march_totals.total_contributions %}
-{% assign oakland_march_residents_percentage = march_totals.total_contributions_by_source['Within Oakland'] | divided_by: oakland_march_total_funds %}
+{% assign primary_totals = site.data.elections.oakland['2020-03-03'] %}
+{% assign oakland_march_total_funds = primary_totals.total_contributions %}
+{% assign oakland_march_residents_percentage = primary_totals.total_contributions_by_source['Within Oakland'] | divided_by: oakland_march_total_funds %}
 
 {% assign election_totals = site.data.elections.oakland['2020-11-03'] %}
 {% assign oakland_total_funds = election_totals.total_contributions %}
@@ -35,7 +37,7 @@ header: Track the money in Oakland elections
             <thead class="hero__table__head">
                 <tr>
                     <th></th>
-                    <th class="hero__column__header">MARCH 2020</th>
+                    <th class="hero__column__header">{{ primary_date | date: "%B %Y" | upcase }}</th>
                     <th class="hero__column__header">NOVEMBER 2020</th>
                 </tr>
             </thead>
@@ -53,7 +55,7 @@ header: Track the money in Oakland elections
                 <tr>
                     <td class="hero__row__header">Top 3 third-party spenders (independent expenditures)</td>
                     <td class="hero__top-spenders">
-                      {% if march_totals.largest_independent_expenditures[0] != null %}
+                      {% if primary_totals.largest_independent_expenditures[0] != null %}
                       <ul>
                         {% for expenditure in site.data.totals.oakland-march-2020.largest_independent_expenditures %}
                         <li>{{ expenditure.name }}</li>
