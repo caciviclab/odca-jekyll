@@ -2,14 +2,25 @@
 layout: default
 header: Track the money in Oakland elections
 ---
+{% assign primary_date = '2022-06-07' %}
+{% assign general_date = '2022-11-08' %}
 
-{% assign march_totals = site.data.elections.oakland['2020-03-03'] %}
-{% assign oakland_march_total_funds = march_totals.total_contributions %}
-{% assign oakland_march_residents_percentage = march_totals.total_contributions_by_source['Within Oakland'] | divided_by: oakland_march_total_funds %}
+{% assign primary_totals = site.data.elections.oakland[primary_date] %}
+{% assign primary_total_funds = primary_totals.total_contributions %}
+{% if primary_total_funds > 0 %}
+{% assign primary_residents_percent = primary_totals.total_contributions_by_source['Within Oakland'] | divided_by: primary_total_funds %}
+{% else %}
+{% assign primary_residents_percent = 0 %}
+{% endif %}
 
-{% assign election_totals = site.data.elections.oakland['2020-11-03'] %}
-{% assign oakland_total_funds = election_totals.total_contributions %}
-{% assign oakland_residents_percentage = election_totals.total_contributions_by_source['Within Oakland'] | divided_by: oakland_total_funds %}
+{% assign general_totals = site.data.elections.oakland[general_date] %}
+{% assign general_total_funds = general_totals.total_contributions %}
+{% if general_total_funds > 0 %}
+{% assign general_residents_percentage = general_totals.total_contributions_by_source['Within Oakland'] | divided_by: general_total_funds %}
+{% else %}
+{% assign general_residents_percentage = 0 %}
+{% endif %}
+
 
 {% assign ie_placeholder_text = 'No independent expenditures reported' %}
 
@@ -35,27 +46,27 @@ header: Track the money in Oakland elections
             <thead class="hero__table__head">
                 <tr>
                     <th></th>
-                    <th class="hero__column__header">MARCH 2020</th>
-                    <th class="hero__column__header">NOVEMBER 2020</th>
+                    <th class="hero__column__header">{{ primary_date | date: "%B %Y" | upcase }}</th>
+                    <th class="hero__column__header">{{ general_date | date: "%B %Y" | upcase }}</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td class="hero__row__header">Contributions to date</td>
-                    <td class="hero__funds_raised__total">{{ oakland_march_total_funds | dollars }}</td>
-                    <td class="hero__funds_raised__total">{{ oakland_total_funds | dollars }}</td>
+                    <td class="hero__funds_raised__total">{{ primary_total_funds | dollars }}</td>
+                    <td class="hero__funds_raised__total">{{ general_total_funds | dollars }}</td>
                 </tr>
                 <tr>
                     <td class="hero__row__header">% of contributions from Oakland residents</td>
-                    <td class="hero__funds_raised__total">{{ oakland_march_residents_percentage | times: 100 | round }}%</td>
-                    <td class="hero__funds_raised__total">{{ oakland_residents_percentage | times: 100 | round }}%</td>
+                    <td class="hero__funds_raised__total">{{ primary_residents_percent | times: 100 | round }}%</td>
+                    <td class="hero__funds_raised__total">{{ general_residents_percentage | times: 100 | round }}%</td>
                 </tr>
                 <tr>
                     <td class="hero__row__header">Top 3 third-party spenders (independent expenditures)</td>
                     <td class="hero__top-spenders">
-                      {% if march_totals.largest_independent_expenditures[0] != null %}
+                      {% if primary_totals.largest_independent_expenditures[0] != null %}
                       <ul>
-                        {% for expenditure in site.data.totals.oakland-march-2020.largest_independent_expenditures %}
+                        {% for expenditure in primary_totals.largest_independent_expenditures %}
                         <li>{{ expenditure.name }}</li>
                         {% endfor %}
                       </ul>
@@ -64,9 +75,9 @@ header: Track the money in Oakland elections
                       {% endif %}
                     </td>
                     <td class="hero__top-spenders">
-                      {% if election_totals.largest_independent_expenditures[0] != null %}
+                      {% if general_totals.largest_independent_expenditures[0] != null %}
                       <ul>
-                        {% for expenditure in election_totals.largest_independent_expenditures %}
+                        {% for expenditure in general_totals.largest_independent_expenditures %}
                         <li>{{ expenditure.name }}</li>
                         {% endfor %}
                       </ul>
