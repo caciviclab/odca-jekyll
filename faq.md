@@ -41,7 +41,9 @@ Open Disclosure is based on campaign finance [filing deadlines](http://www.fppc.
 State of California Fair Political Practices Commission (FPPC) for all state and
 local elections.
 
-The filing deadlines for local candidates and measures on the June 7, 2022 election are:
+The filing deadlines for local candidates and measures for: 
+
+**The June 7, 2022 election**:
 
 | Reporting Period    |||| FPPC Filing Deadline  |
 | :----------------   |||| :-------------------- |
@@ -50,7 +52,7 @@ The filing deadlines for local candidates and measures on the June 7, 2022 elect
 | 4/24/22 - 5/21/22   |||| May 26, 2022          |
 | 5/22/22 - 6/30/22   |||| Aug 1, 2022           |
 
-The filing deadlines for local candidates and measures on the November 8, 2022 election are:
+**The November 8, 2022 election:**
 
 | Reporting Period    |||| FPPC Filing Deadline  |
 | :----------------   |||| :-------------------- |
