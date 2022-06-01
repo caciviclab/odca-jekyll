@@ -41,18 +41,27 @@ Open Disclosure is based on campaign finance [filing deadlines](http://www.fppc.
 State of California Fair Political Practices Commission (FPPC) for all state and
 local elections.
 
-The filing deadlines for local candidates and measures on the November 3, 2020 election are:
+The filing deadlines for local candidates and measures on the June 7, 2022 election are:
 
 | Reporting Period    |||| FPPC Filing Deadline  |
 | :----------------   |||| :-------------------- |
-| 1/1/22 – 6/30/22    |||| August 1, 2022        |
+| 1/1/2021 – 12/31/21 |||| January 31, 2022      |
+| 1/1/22 - 4/23/22    |||| Apr 28, 2022          |
+| 4/24/22 - 5/21/22   |||| May 26, 2022          |
+| 5/22/22 - 6/30/22   |||| Aug 1, 2022           |
+
+The filing deadlines for local candidates and measures on the November 8, 2022 election are:
+
+| Reporting Period    |||| FPPC Filing Deadline  |
+| :----------------   |||| :-------------------- |
+| 1/1/2022 – 6/30/22  |||| August 1, 2022        |
 | 7/1/22 – 9/24/22    |||| September 29, 2022    |
 | 9/25/22 – 10/22/22  |||| October 27, 2022      |
 | 10/23/22 – 12/31/22 |||| January 31, 2023      |
 
 In addition to these filing deadlines, contributions of $1,000 or more from
 a single source made to candidate and ballot measure committees within the 90
-days prior to the election (8/10/22-11/8/22) must be reported within 24 hours.
+days prior to the election must be reported within 24 hours.
 
 ## What is a non-itemized contribution (small contribution)?
 
