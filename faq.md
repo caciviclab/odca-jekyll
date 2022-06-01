@@ -92,7 +92,7 @@ Contact the [Open Disclosure team](https://github.com/caciviclab/odca-jekyll/iss
 
 ## What are Oakland's Campaign Finance Rules?
 
-Contribution limits differ depending upon the source of the contribution and whether a candidate agrees to voluntarily limit their campaign spending. Candidates who agree to limit their campaign spending by submitting OCRA Form 301 to the Public Ethics Commission may accept contributions in greater amounts than those who do not.
+Any “person” may contribute up to $900* to each candidate per election cycle. “Broad-based political committees” may contribute up to $1,800* to each candidate per election cycle ([Oakland Campaign Reform Act (OCRA) 3.12.050](https://library.municode.com/HTML/16308/level3/TIT3MUEL_CH3.12THOACAREAC_ARTIIICOLI.html#TIT3MUEL_CH3.12THOACAREAC_ARTIIICOLI_3.12.050LICOPE)).
 
 Any “person” may contribute up to $900* per election cycle to each candidate. “Broad-based political committees” may contribute up to $1,800* per election cycle to each candidate ([Oakland Campaign Reform Act (OCRA) 3.12.050](https://library.municode.com/HTML/16308/level3/TIT3MUEL_CH3.12THOACAREAC_ARTIIICOLI.html#TIT3MUEL_CH3.12THOACAREAC_ARTIIICOLI_3.12.050LICOPE)).
 
