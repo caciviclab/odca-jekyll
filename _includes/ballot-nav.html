@@ -10,7 +10,7 @@
     <h3 class="ballot-nav__section-heading">Upcoming Races</h3>
   </div>
   <section>
-    {% for nav_ballot in ballots %}
+    {% for nav_ballot in ballots reversed %}{% comment %}revsersed after special election to make November election appear at top{% endcomment %}
     {% assign referendums = nav_ballot.referendums %}
     {% assign office_elections = nav_ballot.office_elections %}
     {% capture summary_path %}/election/{{ nav_ballot.locality }}/{{ nav_ballot.election }}/{% endcapture %}
