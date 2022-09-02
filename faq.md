@@ -45,14 +45,14 @@ The filing deadlines for local candidates and measures on the November 3, 2020 e
 
 | Reporting Period    |||| FPPC Filing Deadline  |
 | :----------------   |||| :-------------------- |
-| 1/1/2020 – 6/30/20  |||| July 31, 2020        |
-| 7/1/20 – 9/19/20    |||| September 24, 2020    |
-| 9/20/20 – 10/17/20  |||| October 22, 2020      |
-| 10/18/20 – 12/31/20 |||| February 1, 2020      |
+| 1/1/22 – 6/30/22    |||| August 1, 2022        |
+| 7/1/22 – 9/24/22    |||| September 29, 2022    |
+| 9/25/22 – 10/22/22  |||| October 27, 2022      |
+| 10/23/22 – 12/31/22 |||| January 31, 2023      |
 
 In addition to these filing deadlines, contributions of $1,000 or more from
 a single source made to candidate and ballot measure committees within the 90
-days prior to the election (8/5/20-11/3/20) must be reported within 24 hours.
+days prior to the election (8/10/22-11/8/22) must be reported within 24 hours.
 
 ## What is a non-itemized contribution (small contribution)?
 
@@ -92,9 +92,11 @@ Contact the [Open Disclosure team](https://github.com/caciviclab/odca-jekyll/iss
 
 ## What are Oakland's Campaign Finance Rules?
 
-Any “person” may contribute up to $900* to each candidate per election cycle. “Broad-based political committees” may contribute up to $1,700* to each candidate per election cycle ([Oakland Campaign Reform Act (OCRA) 3.12.050](https://library.municode.com/HTML/16308/level3/TIT3MUEL_CH3.12THOACAREAC_ARTIIICOLI.html#TIT3MUEL_CH3.12THOACAREAC_ARTIIICOLI_3.12.050LICOPE)).
+Contribution limits differ depending upon the source of the contribution and whether a candidate agrees to voluntarily limit their campaign spending. Candidates who agree to limit their campaign spending by submitting OCRA Form 301 to the Public Ethics Commission may accept contributions in greater amounts than those who do not.
 
-*Candidates may accept contributions at this higher limit ONLY IF they [voluntarily limit](https://www.oaklandca.gov/resources/oakland-campaign-contribution-limits) their campaign spending. If the candidate does not agree to limit spending, the maximum for persons is $200 and the maximum for broad-based political committees is $400.
+Any “person” may contribute up to $900* per election cycle to each candidate. “Broad-based political committees” may contribute up to $1,800* per election cycle to each candidate ([Oakland Campaign Reform Act (OCRA) 3.12.050](https://library.municode.com/HTML/16308/level3/TIT3MUEL_CH3.12THOACAREAC_ARTIIICOLI.html#TIT3MUEL_CH3.12THOACAREAC_ARTIIICOLI_3.12.050LICOPE)).
+
+*Candidates may accept contributions at this higher limit ONLY IF they [voluntarily limit](https://www.oaklandca.gov/resources/oakland-campaign-contribution-limits-1-1-2) their campaign spending. If the candidate does not agree to limit spending, the maximum for persons is $200 and the maximum for broad-based political committees is $400.
 
 “Person” means an individual, proprietorship, firm, partnership, joint venture, syndicate, business, trust, company, corporation, association, committee, and any other organization or group of persons acting in concert ([OCRA 3.12.040](https://library.municode.com/HTML/16308/level3/TIT3MUEL_CH3.12THOACAREAC_ARTIIDE.html#TIT3MUEL_CH3.12THOACAREAC_ARTIIDE_3.12.040INAC)).
 
@@ -102,7 +104,7 @@ Any “person” may contribute up to $900* to each candidate per election cycle
 
 For more information on Oakland’s campaign finance rules, please review the Oakland Campaign Reform Act ([OCRA](https://library.municode.com/HTML/16308/level1/TIT3MUEL.html#TOPTITLE)) and the Public Ethics Commission's [Oakland Campaign Reform Act Guide](https://www.oaklandca.gov/documents/guide-to-oakland-campaign-reform-act).
 
-Contact the [Public Ethics Commission](https://www.oaklandca.gov/boards-and-commissions/public-ethics-commission) with any questions at ethicscommission@oaklandca.gov or (510) 238-3593.
+Contact the [Public Ethics Commission](https://www.oaklandca.gov/boards-and-commissions/public-ethics-commission) with any questions at ethicscommission@oaklandca.gov.
 
 ## Expenditure Categories: What each category includes
 
