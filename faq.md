@@ -41,18 +41,29 @@ Open Disclosure is based on campaign finance [filing deadlines](http://www.fppc.
 State of California Fair Political Practices Commission (FPPC) for all state and
 local elections.
 
-The filing deadlines for local candidates and measures on the November 3, 2020 election are:
+The filing deadlines for local candidates and measures for: 
+
+**The June 7, 2022 election**:
 
 | Reporting Period    |||| FPPC Filing Deadline  |
 | :----------------   |||| :-------------------- |
-| 1/1/22 – 6/30/22    |||| August 1, 2022        |
+| 1/1/2021 – 12/31/21 |||| January 31, 2022      |
+| 1/1/22 - 4/23/22    |||| Apr 28, 2022          |
+| 4/24/22 - 5/21/22   |||| May 26, 2022          |
+| 5/22/22 - 6/30/22   |||| Aug 1, 2022           |
+
+**The November 8, 2022 election:**
+
+| Reporting Period    |||| FPPC Filing Deadline  |
+| :----------------   |||| :-------------------- |
+| 1/1/2022 – 6/30/22  |||| August 1, 2022        |
 | 7/1/22 – 9/24/22    |||| September 29, 2022    |
 | 9/25/22 – 10/22/22  |||| October 27, 2022      |
 | 10/23/22 – 12/31/22 |||| January 31, 2023      |
 
 In addition to these filing deadlines, contributions of $1,000 or more from
 a single source made to candidate and ballot measure committees within the 90
-days prior to the election (8/10/22-11/8/22) must be reported within 24 hours.
+days prior to the election must be reported within 24 hours.
 
 ## What is a non-itemized contribution (small contribution)?
 
@@ -92,7 +103,7 @@ Contact the [Open Disclosure team](https://github.com/caciviclab/odca-jekyll/iss
 
 ## What are Oakland's Campaign Finance Rules?
 
-Contribution limits differ depending upon the source of the contribution and whether a candidate agrees to voluntarily limit their campaign spending. Candidates who agree to limit their campaign spending by submitting OCRA Form 301 to the Public Ethics Commission may accept contributions in greater amounts than those who do not.
+Any “person” may contribute up to $900* to each candidate per election cycle. “Broad-based political committees” may contribute up to $1,800* to each candidate per election cycle ([Oakland Campaign Reform Act (OCRA) 3.12.050](https://library.municode.com/HTML/16308/level3/TIT3MUEL_CH3.12THOACAREAC_ARTIIICOLI.html#TIT3MUEL_CH3.12THOACAREAC_ARTIIICOLI_3.12.050LICOPE)).
 
 Any “person” may contribute up to $900* per election cycle to each candidate. “Broad-based political committees” may contribute up to $1,800* per election cycle to each candidate ([Oakland Campaign Reform Act (OCRA) 3.12.050](https://library.municode.com/HTML/16308/level3/TIT3MUEL_CH3.12THOACAREAC_ARTIIICOLI.html#TIT3MUEL_CH3.12THOACAREAC_ARTIIICOLI_3.12.050LICOPE)).
 
