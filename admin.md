@@ -2,13 +2,21 @@
 title: Admin
 ---
 
-{% include admin/ballot_index.html locality="oakland" election="2022-11-08" %}
-{% include admin/ballot_index.html locality="oakland" election="2020-03-03" %}
-{% include admin/ballot_index.html locality="oakland" election="2020-11-03" %}
-{% include admin/ballot_index.html locality="oakland" election="2018-11-06" %}
-{% include admin/ballot_index.html locality="oakland" election="2018-06-05" %}
-{% include admin/ballot_index.html locality="oakland" election="2016-11-08" %}
-{% include admin/ballot_index.html locality="sf" election="2018-11-06" %}
-{% include admin/ballot_index.html locality="sf" election="2018-06-05" %}
-{% include admin/ballot_index.html locality="sf" election="2016-11-08" %}
-{% include admin/ballot_index.html locality="berkeley" election="2018-11-06" %}
+{% assign sorted_elections = site.data.elections.oakland | sort %}
+{% for election_data in sorted_elections reversed %}
+  {% assign election_date = election_data[0] %}
+  {% include admin/ballot_index.html locality="oakland" election=election_date %}
+{% endfor %}
+
+<h2>Elections In Other Jurisdictions</h2>
+{% assign sorted_elections = site.data.elections.sf | sort %}
+{% for election_data in sorted_elections reversed %}
+  {% assign election_date = election_data[0] %}
+  {% include admin/ballot_index.html locality="sf" election=election_date %}
+{% endfor %}
+
+{% assign sorted_elections = site.data.elections.berkeley | sort %}
+{% for election_data in sorted_elections reversed %}
+  {% assign election_date = election_data[0] %}
+  {% include admin/ballot_index.html locality="berkeley" election=election_date %}
+{% endfor %}
