@@ -23,7 +23,10 @@ gem "mini_magick"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
   gem "jekyll-seo-tag"
-  gem "jekyll-assets"
+  gem "jekyll-sass-converter", "< 3.0" # 3.0+ has a build error in "neat" SCSS framework
+  # TODO: Use next published jekyll-assets release
+  # https://github.com/envygeeks/jekyll-assets/issues/660
+  gem "jekyll-assets", git: 'https://github.com/envygeeks/jekyll-assets'
   gem 'jekyll-redirect-from'
 end
 

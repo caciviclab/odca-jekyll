@@ -22,7 +22,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.7-node
+      - image: cimg/ruby:3.2.2-node
     steps:
       - checkout
       - restore_cache:
@@ -75,7 +75,7 @@ jobs:
 
   deploy:
     docker:
-      - image: circleci/ruby:2.7-node
+      - image: cimg/ruby:3.2.2-node
     environment:
       GITHUB_REPO: caciviclab/odca-jekyll
     steps:
