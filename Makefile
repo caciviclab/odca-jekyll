@@ -12,7 +12,7 @@ clean:
 	npm run gulp -- clean
 
 production: $(SVGS)
-	npm run dist
+	NODE_OPTIONS=--openssl-legacy-provider npm run dist
 	JEKYLL_ENV=production bundle exec jekyll build
 
 pull-finance:
