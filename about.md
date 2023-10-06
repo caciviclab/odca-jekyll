@@ -17,11 +17,12 @@ All development on Open Disclosure happens publicly on [Github](https://github.c
 - Suzanne Doran (since 2016)
 - Colin King-Bailey (since 2018)
 - Francis Doran (since 2020)
+- Tom Dooner (since 2014)
 
 
 ### Open Disclosure Alumni
 
-Aaron D Borden; Alison Lawyer; Amanda Richardson; Andrell Bower; Andy Luo; Ash Roughani; Asha John; Ben Cipollini; Brian Ferrell; Daniel O’Kelly; Dave Guarino; Eddie A Tejeda; Edward Breen; Emily Ann Ramos; Emily Bookstein; Ethan Lang; Ian Rees; Ian Root; Jamie Marcus; Jeff Van; Jesse Biroscak; Jesse Rosato; Jesse Woltjer; John C. Osborn; Jonathan Wrobel; Josh Ling; Karen Ivy; Kate Drew; Klein Lieu; Kyle Warneck; Lauren Angius; Linda Peng; Luis Aguilar; Lynna Jirpongopas; Maddy Ford; Maggie Shine; Maksim Pecherskiy; Mel Restori; Michael Liu; Peter Hall; Peter Thompson; Phebe Polk; Phil Wolff; Phillip Ventura; Ray Kiddy; Sam Higgins; Sarah Seiter; Sean Finney; Steve 'Spike' Spiker; Sunny Juneja; Thomas Favre-Bulle; Timothy Kempf; Tom Dooner; Vivek Bansal; Vivian Brown. 
+Aaron D Borden; Alison Lawyer; Amanda Richardson; Andrell Bower; Andy Luo; Ash Roughani; Asha John; Ben Cipollini; Brian Ferrell; Daniel O’Kelly; Dave Guarino; Eddie A Tejeda; Edward Breen; Emily Ann Ramos; Emily Bookstein; Ethan Lang; Ian Rees; Ian Root; Jamie Marcus; Jeff Van; Jesse Biroscak; Jesse Rosato; Jesse Woltjer; John C. Osborn; Jonathan Wrobel; Josh Ling; Karen Ivy; Kate Drew; Klein Lieu; Kyle Warneck; Lauren Angius; Linda Peng; Luis Aguilar; Lynna Jirpongopas; Maddy Ford; Maggie Shine; Maksim Pecherskiy; Mel Restori; Michael Liu; Peter Hall; Peter Thompson; Phebe Polk; Phil Wolff; Phillip Ventura; Ray Kiddy; Sam Higgins; Sarah Seiter; Sean Finney; Steve 'Spike' Spiker; Sunny Juneja; Thomas Favre-Bulle; Timothy Kempf; Vivek Bansal; Vivian Brown. 
 
 #### Thank you
 
