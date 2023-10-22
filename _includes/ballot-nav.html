@@ -1,8 +1,15 @@
 {% assign locality = include.locality %}
 {% assign tabIndxVar = 4 %}
 {% assign election_year = ballot.election | slice: 0, 4 %}
+{% comment %}
+  Temporarly display the 2023 special and 2024 general election.
+  We should have a way of specifying exactly which elections to display.
+{% endcomment %}
+{% assign next_year = election_year | plus:1 %}
 {% assign path_end = page.url | split: "/" | last %}
 {% assign ballots = site.elections | where: 'locality', locality.locality_id | where_exp: 'ballot', 'ballot.title contains election_year' %}
+{% assign next = site.elections | where: 'locality', locality.locality_id | where_exp: 'ballot', 'ballot.title contains next_year' %}
+{% assign ballots = next | concat: ballots %}
 
 <nav class="ballot-nav">
   <h3 class="ballot-nav__locality-heading">{{ locality.name | escape }}</h3>
