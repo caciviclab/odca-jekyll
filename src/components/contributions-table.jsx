@@ -12,7 +12,7 @@ function name(contribution) {
 }
 
 class ContributionsTable extends React.Component {
-  static initialState(contributions) {
+  static initialState(contributions, iec) {
     return {
       contributions: contributions.map((contribution, i) => ({
         id: i,
@@ -23,7 +23,10 @@ class ContributionsTable extends React.Component {
         zip: contribution.Tran_Zip4,
         amount: contribution.Tran_Amt1,
         date: new Date(contribution.Tran_Date),
+        election_name: contribution.election_name || '',
       })),
+      sortOnElectionName: iec,
+      sortElectionNameOrder: -1,
       filter: '',
       // Initial state is sorting by amount, "ascending", note that the columns
       // have different definitions of ascending/descending, see `applySortOrder`
@@ -32,6 +35,7 @@ class ContributionsTable extends React.Component {
         order: 1,
         column: 'amount',
       },
+      iec,
     };
   }
 
@@ -41,14 +45,15 @@ class ContributionsTable extends React.Component {
   static parseAttributes(attributes) {
     const contributions = JSON.parse(attributes.contributions ?
       attributes.contributions.value : []);
+    const iec = attributes.iec.value === 'true';
     return {
-      contributions,
+      contributions, iec,
     };
   }
 
   constructor(props) {
     super(props);
-    this.state = ContributionsTable.initialState(props.contributions);
+    this.state = ContributionsTable.initialState(props.contributions, props.iec);
   }
 
   /**
@@ -104,6 +109,8 @@ class ContributionsTable extends React.Component {
 
   applySortOrder(contributions) {
     const { sort } = this.state;
+    const { sortOnElectionName } = this.state;
+    const { sortElectionNameOrder } = this.state;
 
     const codepointCompare = (x, y) => {
       // sort falsey values to the bottom, rather than to the top
@@ -114,7 +121,61 @@ class ContributionsTable extends React.Component {
       return 0;
     };
 
+    function parseElectionName(input) {
+      const [ename, ...rest] = input.split('-');
+
+      if (rest.length === 1) {
+        // If there is only one element after the split, assume it's the year
+        return { ename, month: 'november', year: rest[0] };
+      } else if (rest.length >= 2) {
+        // If there are two or more elements, assume the last is the year
+        // and the second-to-last is the month
+        return { ename, month: rest[rest.length - 2], year: rest[rest.length - 1] };
+      }
+      // Handle the case where there are no elements after the split
+      return { ename, month: 'november', year: undefined };
+    }
+
+    const electionCompare = (x, y) => {
+      const election1 = parseElectionName(x);
+      const election2 = parseElectionName(y);
+
+      if (election1.name > election2.name) {
+        return 1;
+      }
+      if (election1.name < election2.name) {
+        return -1;
+      }
+
+      if (election1.year > election2.year) {
+        return 1;
+      }
+      if (election1.year < election2.year) {
+        return -1;
+      }
+
+      const monthOrder = {
+        january: 0,
+        february: 1,
+        march: 2,
+        april: 3,
+        may: 4,
+        june: 5,
+        july: 6,
+        august: 7,
+        september: 8,
+        october: 9,
+        november: 10,
+        december: 11,
+      };
+
+      return monthOrder[election1.month] - monthOrder[election2.month];
+    };
+
     const difference = (a, b) => {
+      if (sortOnElectionName && a.election_name !== b.election_name) {
+        return electionCompare(a.election_name, b.election_name) * sortElectionNameOrder;
+      }
       // We're doing some funkiness with ascending/decsending based on the
       // column to give a _maybe_ more intuitive behavior. The default sort is
       // ascending, but if you sort by amount, you probably want that to start in
@@ -147,6 +208,7 @@ class ContributionsTable extends React.Component {
 
   render() {
     const { contributions } = this.state;
+    const { iec } = this.state;
 
     const maybeReturnEmptyCell = (contribution, key) => {
       const baseClass = 'contributors__cell';
@@ -159,6 +221,13 @@ class ContributionsTable extends React.Component {
 
     const sortToggle = column => () => {
       const currentSort = this.state.sort;
+      const electionNameOrder = this.state.sortElectionNameOrder;
+      if (column === 'election_name') {
+        this.setState({
+          sortElectionNameOrder: electionNameOrder * -1,
+        });
+        return;
+      }
       if (currentSort.column === column) {
         // Already sorting on this column, toggle the order
         this.setState({
@@ -166,6 +235,7 @@ class ContributionsTable extends React.Component {
             column,
             order: currentSort.order * -1,
           },
+          sortElectionNameOrder: electionNameOrder * -1,
         });
         return;
       }
@@ -198,6 +268,21 @@ class ContributionsTable extends React.Component {
     return (
       <div>
         <input className="filter" value={this.state.filterField} onChange={updateFilter} type="text" placeholder="Type to filter contributions" />
+        { iec &&
+          <label htmlFor="ename">
+            <input
+              id="ename"
+              type="checkbox"
+              checked={this.state.sortOnElectionName}
+              onChange={() =>
+                this.setState(prevState => ({
+                  sortOnElectionName: !prevState.sortOnElectionName,
+                }))
+              }
+            />
+            Sort by Election Name
+          </label>
+        }
         <select className="contributors__sort-select" defaultValue={'{ "column": "amount", "order": 1}'} onChange={e => this.updateSortOrder(e)}>
           <option value={'{ "column": "name", "order": 1}'}>Name (A-Z)</option>
           <option value={'{ "column": "name", "order": -1}'}>Name (Z-A)</option>
@@ -211,6 +296,14 @@ class ContributionsTable extends React.Component {
         <table className="contributors">
           <thead className="contributors__thead">
             <tr>
+              { iec &&
+                <th className={`contributors__heading contributors__election_name${isActive('election_name')}`}>
+                  <button type="button" className="sort-button" onClick={sortToggle('election_name')}>
+                    Election Name
+                    <span className="arrow-container" />
+                  </button>
+                </th>
+              }
               <th className={`contributors__heading contributors__name${isActive('name')}`}>
                 <button type="button" className="sort-button" onClick={sortToggle('name')}>
                   Name
@@ -259,6 +352,11 @@ class ContributionsTable extends React.Component {
             {
               this.applySortOrder(this.applyFilter(contributions)).map(contribution => (
                 <tr key={contribution.id}>
+                  { iec &&
+                    <td className="contributors__cell contributors__election_name">
+                      {contribution.election_name}
+                    </td>
+                  }
                   <td className="contributors__cell contributors__name">
                     {contribution.name}
                     <div className="contributors__card">
@@ -299,10 +397,13 @@ ContributionsTable.propTypes = {
     Tran_NamL: PropTypes.string.isRequired,
     Tran_NamF: PropTypes.string,
   })),
+  iec: PropTypes.bool,
+
 };
 
 ContributionsTable.defaultProps = {
   contributions: [],
+  iec: false,
 };
 
 

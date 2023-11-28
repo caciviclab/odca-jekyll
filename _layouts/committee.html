@@ -35,7 +35,10 @@ layout: default
         Contributor tables do not presently include loans, although funds
         from loans are included in the total contributions received.
       </p>
-      <contributions-table contributions="{{ contributions | jsonify | escape }}"></contributions-table>
+      <contributions-table
+        contributions="{{ contributions | jsonify | escape }}"
+        iec="{{ finance.iec }}">
+      </contributions-table>
     {% endif %}
   </div>
 </article>
