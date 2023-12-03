@@ -24,6 +24,7 @@ class ContributionsTable extends React.Component {
         amount: contribution.Tran_Amt1,
         date: new Date(contribution.Tran_Date),
         election_name: contribution.election_name || '',
+        title: contribution.title || '',
       })),
       sortOnElectionName: iec,
       sortElectionNameOrder: -1,
@@ -354,7 +355,7 @@ class ContributionsTable extends React.Component {
                 <tr key={contribution.id}>
                   { iec &&
                     <td className="contributors__cell contributors__election_name">
-                      {contribution.election_name}
+                      {contribution.title}
                     </td>
                   }
                   <td className="contributors__cell contributors__name">
