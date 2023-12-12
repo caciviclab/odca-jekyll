@@ -109,9 +109,7 @@ class ContributionsTable extends React.Component {
   }
 
   applySortOrder(contributions) {
-    const { sort } = this.state;
-    const { sortOnElectionName } = this.state;
-    const { sortElectionNameOrder } = this.state;
+    const { sort, sortOnElectionName, sortElectionNameOrder } = this.state;
 
     const codepointCompare = (x, y) => {
       // sort falsey values to the bottom, rather than to the top
@@ -122,7 +120,7 @@ class ContributionsTable extends React.Component {
       return 0;
     };
 
-    function parseElectionName(input) {
+    const parseElectionName = (input) => {
       const [ename, ...rest] = input.split('-');
 
       if (rest.length === 1) {
@@ -135,19 +133,15 @@ class ContributionsTable extends React.Component {
       }
       // Handle the case where there are no elements after the split
       return { ename, month: 'november', year: undefined };
-    }
+    };
 
     const electionCompare = (x, y) => {
       const election1 = parseElectionName(x);
       const election2 = parseElectionName(y);
 
-      if (election1.name > election2.name) {
-        return 1;
-      }
-      if (election1.name < election2.name) {
-        return -1;
-      }
-
+      // we don't need to sort on name beause, while its unlikely to have
+      // two jurisdictions for the same IEC, we want the contributions sorted
+      // by date.
       if (election1.year > election2.year) {
         return 1;
       }

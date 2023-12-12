@@ -2,6 +2,7 @@ SVGS := $(patsubst %,_includes/svg/%,$(notdir $(wildcard assets/fontawesome/*.sv
 PWD=$(shell pwd)
 RED=\033[0;31m
 CLR=\033[0m
+NODE_OPTIONS=--openssl-legacy-provider
 
 build: $(SVGS)
 	npm run build
@@ -19,11 +20,11 @@ pull-finance:
 	npm run pull
 
 serve-docker: $(SVGS)
-	npm run watch &
+	NODE_OPTIONS=$(NODE_OPTIONS) npm run watch &
 	jekyll serve --incremental
 
 serve: $(SVGS)
-	npm run watch &
+	NODE_OPTIONS=$(NODE_OPTIONS) npm run watch &
 	bundle exec jekyll serve --incremental
 
 setup:
