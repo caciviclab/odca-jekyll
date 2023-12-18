@@ -92,7 +92,7 @@ GEM
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.6)
-    rack (2.2.3)
+    rack (2.2.8)
     rainbow (3.0.0)
     rake (12.3.3)
     rb-fsevent (0.10.4)
