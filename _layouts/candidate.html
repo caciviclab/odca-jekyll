@@ -60,7 +60,7 @@ layout: default
             </div>
             {% endif %}
             {% if candidate.website_url %}
-            <div class="candidate__link"><a href="{{ candidate.website_url }}">{% include svg-icon.html
+            <div class="candidate__link"><a href="{{ candidate.website_url | replace: 'http:', 'https:' }}">{% include svg-icon.html
                 icon="desktop-solid" %} {{ candidate.website_url }}</a></div>
             {% endif %}
             {% if candidate.twitter_url %}
@@ -76,7 +76,7 @@ layout: default
                 svg-icon.html icon="icon-instagram" %} {{ candidate.instagram_url }}</a></div>
             {% endif %}
             {% if candidate.votersedge_url %}
-            <div class="candidate__link"><a href="{{ candidate.votersedge_url }}" target="_blank">{% include
+            <div class="candidate__link"><a href="{{ candidate.votersedge_url | replace: 'http:', 'https:' }}" target="_blank">{% include
                 svg-icon.html icon="external-link-square-alt-solid" %} Voter’s Edge profile</a></div>
             {% endif %}
           </div>
