@@ -13,7 +13,7 @@ clean:
 	npm run gulp -- clean
 
 production: $(SVGS)
-	npm run dist
+	NODE_OPTIONS=$(NODE_OPTIONS) npm run dist
 	JEKYLL_ENV=production bundle exec jekyll build
 
 pull-finance:
