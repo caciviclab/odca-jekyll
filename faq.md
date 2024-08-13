@@ -43,23 +43,14 @@ local elections.
 
 The filing deadlines for local candidates and measures for: 
 
-**The June 7, 2022 election**:
+**The November 5, 2024 election:**
 
 | Reporting Period    |||| FPPC Filing Deadline  |
 | :----------------   |||| :-------------------- |
-| 1/1/2021 – 12/31/21 |||| January 31, 2022      |
-| 1/1/22 - 4/23/22    |||| Apr 28, 2022          |
-| 4/24/22 - 5/21/22   |||| May 26, 2022          |
-| 5/22/22 - 6/30/22   |||| Aug 1, 2022           |
-
-**The November 8, 2022 election:**
-
-| Reporting Period    |||| FPPC Filing Deadline  |
-| :----------------   |||| :-------------------- |
-| 1/1/2022 – 6/30/22  |||| August 1, 2022        |
-| 7/1/22 – 9/24/22    |||| September 29, 2022    |
-| 9/25/22 – 10/22/22  |||| October 27, 2022      |
-| 10/23/22 – 12/31/22 |||| January 31, 2023      |
+| 1/1/2024 – 6/30/24  |||| July 31, 2024         |
+| 7/1/24 – 9/21/24    |||| September 24, 2024    |
+| 9/22/24 – 10/19/24  |||| October 26, 2024      |
+| 10/20/24 – 12/31/24 |||| January 31, 2025      |
 
 In addition to these filing deadlines, contributions of $1,000 or more from
 a single source made to candidate and ballot measure committees within the 90
@@ -103,13 +94,9 @@ Contact the [Open Disclosure team](https://github.com/caciviclab/odca-jekyll/iss
 
 ## What are Oakland's Campaign Finance Rules?
 
-Any “person” may contribute up to $900* to each candidate per election cycle. “Broad-based political committees” may contribute up to $1,800* to each candidate per election cycle ([Oakland Campaign Reform Act (OCRA) 3.12.050](https://library.municode.com/HTML/16308/level3/TIT3MUEL_CH3.12THOACAREAC_ARTIIICOLI.html#TIT3MUEL_CH3.12THOACAREAC_ARTIIICOLI_3.12.050LICOPE)).
+Effective January 31, 2023, the limit for a contribution from a “person” is $600 for each candidate per election cycle. The limit for a contribution from a “broad-based political committee” is up to $1,200 to each candidate per election cycle ([Oakland Campaign Reform Act (OCRA) 3.12.050](https://library.municode.com/HTML/16308/level3/TIT3MUEL_CH3.12THOACAREAC_ARTIIICOLI.html#TIT3MUEL_CH3.12THOACAREAC_ARTIIICOLI_3.12.050LICOPE)).
 
-Any “person” may contribute up to $900* per election cycle to each candidate. “Broad-based political committees” may contribute up to $1,800* per election cycle to each candidate ([Oakland Campaign Reform Act (OCRA) 3.12.050](https://library.municode.com/HTML/16308/level3/TIT3MUEL_CH3.12THOACAREAC_ARTIIICOLI.html#TIT3MUEL_CH3.12THOACAREAC_ARTIIICOLI_3.12.050LICOPE)).
-
-*Candidates may accept contributions at this higher limit ONLY IF they [voluntarily limit](https://www.oaklandca.gov/resources/oakland-campaign-contribution-limits-1-1-2) their campaign spending. If the candidate does not agree to limit spending, the maximum for persons is $200 and the maximum for broad-based political committees is $400.
-
-“Person” means an individual, proprietorship, firm, partnership, joint venture, syndicate, business, trust, company, corporation, association, committee, and any other organization or group of persons acting in concert ([OCRA 3.12.040](https://library.municode.com/HTML/16308/level3/TIT3MUEL_CH3.12THOACAREAC_ARTIIDE.html#TIT3MUEL_CH3.12THOACAREAC_ARTIIDE_3.12.040INAC)).
+Under Oakland rules, a “person” includes an individual, proprietorship, firm, partnership, joint venture, syndicate, business, trust, company, corporation, association, committee, and any other organization or group of persons acting in concert ([OCRA 3.12.040](https://library.municode.com/HTML/16308/level3/TIT3MUEL_CH3.12THOACAREAC_ARTIIDE.html#TIT3MUEL_CH3.12THOACAREAC_ARTIIDE_3.12.040INAC)).
 
 ”Broad-based political committee” means a committee of persons which has been in existence for more than six months, receives contributions from one hundred (100) or more persons, and acting in concert makes contributions to five or more candidates ([OCRA 3.12.040](https://library.municode.com/HTML/16308/level3/TIT3MUEL_CH3.12THOACAREAC_ARTIIDE.html#TIT3MUEL_CH3.12THOACAREAC_ARTIIDE_3.12.040INAC)).
 
