@@ -17,6 +17,7 @@ class ContributionsTable extends React.Component {
       contributions: contributions.map((contribution, i) => ({
         id: i,
         name: name(contribution),
+        committee: contribution.Cmte_ID,
         type: contribution.Entity_Cd || '',
         occupation: contribution.Tran_Occ || '',
         employer: contribution.Tran_Emp || '',
@@ -213,6 +214,16 @@ class ContributionsTable extends React.Component {
 
       return <td className={classList}>{ display }</td>;
     };
+    const highlightCommittee = (contribution) => {
+      if (contribution.type === 'Committee') {
+        return (
+          <a href={`/committee/${contribution.committee}`}>
+            {contribution.name}
+          </a>
+        );
+      }
+      return contribution.name;
+    };
 
     const sortToggle = column => () => {
       const currentSort = this.state.sort;
@@ -353,7 +364,7 @@ class ContributionsTable extends React.Component {
                     </td>
                   }
                   <td className="contributors__cell contributors__name">
-                    {contribution.name}
+                    { highlightCommittee(contribution) }
                     <div className="contributors__card">
                       <div className="contributors__card-row">
                         <span className="contributors__card-type">{ contribution.type }</span>
