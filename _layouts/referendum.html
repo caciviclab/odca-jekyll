@@ -11,6 +11,7 @@ layout: default
 {% assign voters_edge_url = opposing.voters_edge_url | escape %}
 {% assign locality = site.localities | where: 'locality_id', referendum.locality | first %}
 {% assign alert_text = "ballot measure" %}
+{% capture path %}{{ referendum.locality }}/{{ election_day }}{% endcapture %}
 
 
 {% capture body %}
@@ -104,7 +105,7 @@ layout: default
   </div>
   <div class="l-section__content l-section__content--half">
     <div class="subheading">In support of the measure</div>
-    {% include supporting_opposing_committees.html committees=supporting.supporting_organizations color="green" %}
+    {% include supporting_opposing_committees.html committees=supporting.supporting_organizations path=path color="green" %}
   </div>
 
 <!-- opposing contributions/expenditures column -->

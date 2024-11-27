@@ -41,7 +41,7 @@
       {% include money-bar.html label=label value=value color="green" max=money_bar_max %}
     {% endfor %}
     {% if candidate.filer_id and candidate.filer_id != "" %}
-      <p><a href="{{ site.baseurl }}/committee/{{ candidate.filer_id }}/">{% include
+    <p><a href="{{ site.baseurl }}/committee/{{ path }}/{{ candidate.filer_id }}">{% include
         svg-icon.html icon="table-solid" %} See all contributions</a></p>
     {% endif %}
   </div>
