@@ -23,21 +23,21 @@ title: Frequently asked questions
 
 Open Disclosure visualizes campaign finance data for Oakland candidates and ballot measures. The data comes from the City’s [campaign finance portal](https://public.netfile.com/pub2/Default.aspx?aid=COAK) on the City of Oakland Public Ethics Commission website.
 
-The data collected by the Public Ethics Commission is required by the  California [Political Reform Act (PRA)](http://www.fppc.ca.gov/the-law/the-political-reform-act.html), which requires that a candidate or campaign committee that plans to raise or spend $2,000 or more in a calendar year—including the candidate’s personal funds—must file statements and reports on the committee’s financial activity at specified periods. Candidates or campaign committees that do not raise or spend $2,000 or more in a calendar year are not required to report their financial activity electronically, which may result in some candidates with no available public financial data.
+The data collected by the Public Ethics Commission is required by the  California [Political Reform Act (PRA)](https://www.fppc.ca.gov/the-law/the-political-reform-act.html), which requires that a candidate or campaign committee that plans to raise or spend $2,000 or more in a calendar year—including the candidate’s personal funds—must file statements and reports on the committee’s financial activity at specified periods. Candidates or campaign committees that do not raise or spend $2,000 or more in a calendar year are not required to report their financial activity electronically, which may result in some candidates with no available public financial data.
 
 Campaign finance data is self-reported by all local candidate-controlled and ballot measure committees. Our volunteer team does not clean, scrub, or edit the data. If there are misspellings or duplicate entries, then that was how the committee reported the campaign finance data. The data is presented as reported. Where necessary we may aggregate data that we believe represents the same entity.
 
 ## Where does the data come from?
 
-The campaign finance data that Open Disclosure presents is derived primarily from the filings of the California Fair Political Practices Commission (FPPC) [Form 460](http://www.fppc.ca.gov/content/dam/fppc/NS-Documents/TAD/Campaign%20Forms/460.pdf) (Recipient Committee Campaign Statement). Once a campaign committee has raised or spent $2,000 or more it must file Form 460, which contains an overview of the committee’s activity during a specified period.
+The campaign finance data that Open Disclosure presents is derived primarily from the filings of the California Fair Political Practices Commission (FPPC) [Form 460](https://www.fppc.ca.gov/content/dam/fppc/NS-Documents/TAD/Campaign%20Forms/460.pdf) (Recipient Committee Campaign Statement). Once a campaign committee has raised or spent $2,000 or more it must file Form 460, which contains an overview of the committee’s activity during a specified period.
 
-Oakland campaign committees file Form 460 with the Public Ethics Commission’s e-filing system, NetFile, which is available on the [Public Portal for Campaign Finance and Lobbyist Disclosure](http://nf4.netfile.com/pub2/Default.aspx?aid=COAK&AspxAutoDetectCookieSupport=1). The raw data is also synced daily to the City of Oakland's [OakData portal](https://data.oaklandnet.com/).
+Oakland campaign committees file Form 460 with the Public Ethics Commission’s e-filing system, NetFile, which is available on the [Public Portal for Campaign Finance and Lobbyist Disclosure](https://nf4.netfile.com/pub2/Default.aspx?aid=COAK&AspxAutoDetectCookieSupport=1). The raw data is also synced daily to the City of Oakland's [OakData portal](https://data.oaklandca.gov/).
 
 
 ## How up-to-date is the data?
 
 The data is published to the site approximately every 24 hours. The data for
-Open Disclosure is based on campaign finance [filing deadlines](http://www.fppc.ca.gov/learn/campaign-rules/where-and-when-to-file-campaign-statements/when-to-file-campaign-statements-state-local-filing-schedules.html) established by the
+Open Disclosure is based on campaign finance [filing deadlines](https://www.fppc.ca.gov/learn/campaign-rules/where-and-when-to-file-campaign-statements/when-to-file-campaign-statements-state-local-filing-schedules.html) established by the
 State of California Fair Political Practices Commission (FPPC) for all state and
 local elections.
 
@@ -70,7 +70,7 @@ The total contributions and the itemized lists are calculated using different da
 
 ## What is an Independent Expenditure?
 
-Political spending that expressly advocates the election or defeat of a candidate or ballot measure but is not made in consultation, cooperation, or coordination with the candidate or campaign committee is termed an [independent expenditure](http://www.fppc.ca.gov/content/dam/fppc/NS-Documents/TAD/Campaign%20Manuals/Manual_4/Manual_4_Ch_11_IE_Reporting.pdf). Under California law, any entity that makes independent expenditures of $1,000 or more per year to California candidates or ballot measures is subject to California campaign finance disclosure reporting requirements.
+Political spending that expressly advocates the election or defeat of a candidate or ballot measure but is not made in consultation, cooperation, or coordination with the candidate or campaign committee is termed an [independent expenditure](https://www.fppc.ca.gov/content/dam/fppc/NS-Documents/TAD/Campaign%20Manuals/Manual_4/Manual_4_Ch_11_IE_Reporting.pdf). Under California law, any entity that makes independent expenditures of $1,000 or more per year to California candidates or ballot measures is subject to California campaign finance disclosure reporting requirements.
 
 ## How are contributions calculated for committees that support or oppose multiple measures?
 
@@ -78,7 +78,7 @@ Data reported by committees formed to support or oppose multiple ballot measures
 
 ## What other types of committees must report their campaign-related spending?
 
-Committees that are not candidate-controlled or formed to support or oppose a particular candidate or ballot measure also raise funds and spend money in local elections. Under the Political Reform Act, committees that receive contributions or make expenditures to support or oppose multiple candidates and/or ballot measures must also file statements and reports on their activities just as candidate and ballot measure committees do. They must also report which candidate or ballot measure their expenditure is intended to support or oppose and whether the expenditure is a contribution to the campaign or an independent expenditure (see above). Independent expenditures are not included in the fundraising totals for candidates or ballot measures, but they are shown in a separate line item. For more information, see the [California Fair Political Practices Commission guide to Campaign Rules](http://www.fppc.ca.gov/learn/campaign-rules.html).
+Committees that are not candidate-controlled or formed to support or oppose a particular candidate or ballot measure also raise funds and spend money in local elections. Under the Political Reform Act, committees that receive contributions or make expenditures to support or oppose multiple candidates and/or ballot measures must also file statements and reports on their activities just as candidate and ballot measure committees do. They must also report which candidate or ballot measure their expenditure is intended to support or oppose and whether the expenditure is a contribution to the campaign or an independent expenditure (see above). Independent expenditures are not included in the fundraising totals for candidates or ballot measures, but they are shown in a separate line item. For more information, see the [California Fair Political Practices Commission guide to Campaign Rules](https://www.fppc.ca.gov/learn/campaign-rules.html).
 
 ## How were ballot measure summaries prepared?
 
@@ -107,7 +107,7 @@ Contact the [Public Ethics Commission](https://www.oaklandca.gov/boards-and-comm
 ## Expenditure Categories: What each category includes
 
 _From [Form 460 Schedule
-E](http://www.fppc.ca.gov/content/dam/fppc/NS-Documents/TAD/Campaign%20Forms/460.pdf),
+E](https://www.fppc.ca.gov/content/dam/fppc/NS-Documents/TAD/Campaign%20Forms/460.pdf),
 p24_
 
 
