@@ -2,7 +2,7 @@
 {% assign tabIndxVar = 4 %}
 {% assign election_year = ballot.election | slice: 0, 4 %}
 {% assign path_end = page.url | split: "/" | last %}
-{% assign ballots = site.elections | where: 'locality', locality.locality_id | where_exp: 'ballot', 'ballot.title contains election_year' %}
+{% assign ballots = site.elections | where: 'locality', locality.locality_id | where_exp: 'ballot', 'ballot.display >= 1' | sort: 'display'  %}
 
 <nav class="ballot-nav">
   <h3 class="ballot-nav__locality-heading">{{ locality.name | escape }}</h3>
@@ -10,7 +10,7 @@
     <h3 class="ballot-nav__section-heading">Upcoming Races</h3>
   </div>
   <section>
-    {% for nav_ballot in ballots %}{% comment %}revserse after special election to make November election appear at top{% endcomment %}
+    {% for nav_ballot in ballots %}
     {% assign referendums = nav_ballot.referendums %}
     {% assign office_elections = nav_ballot.office_elections %}
     {% capture summary_path %}/election/{{ nav_ballot.locality }}/{{ nav_ballot.election }}/{% endcapture %}
