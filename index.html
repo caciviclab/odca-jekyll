@@ -2,9 +2,10 @@
 layout: default
 header: Track the money in Oakland elections
 ---
-{% comment %}Keep these dates updated for upcoming elections{% endcomment %}
-{% assign primary_date = '2024-03-05' %}
-{% assign general_date = '2024-11-05' %}
+{% assign general = site.elections | where: 'locality', "oakland" | where: 'display', 1 | first %}
+{% assign general_date = general.election %}
+{% assign primary = site.elections | where: 'locality', "oakland" | where: 'display', 2 | first %}
+{% assign primary_date = primary.election %}
 
 {% assign primary_totals = site.data.elections.oakland[primary_date] %}
 {% assign primary_total_funds = primary_totals.total_contributions %}
@@ -35,7 +36,7 @@ header: Track the money in Oakland elections
         <h1 class="hero__hed">{{ page.header | escape }}</h1>
         <div class="hero__btn-container">
           {% comment %}Keep this date updated for latest election{% endcomment %}
-          <a class="btn landing__btn" href="{{ site.baseurl }}{% link _elections/oakland/2024-11-05.md %}">Follow the money</a>
+          <a class="btn landing__btn" href="{{ site.baseurl }}{% link _elections/oakland/2025-04-15.md %}">Follow the money</a>
           <h1 class="hero__hed hero__hed--centered">or</h1>
           <h4 class="hero__subheader">Search contributors by name</h4>
           <a class="btn landing__btn" href="{{ site.baseurl }}/search">Search now</a>
