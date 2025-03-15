@@ -5,6 +5,7 @@ layout: default
 {% assign committee = page %}
 {% assign finance = site.data.committees[committee.filer_id] %}
 {% assign contributions = finance.contributions | default: empty_array | sort: 'Tran_Amt1' | reverse %}
+{% assign by_election = finance.contributions_by_election %}
 
 
 <header class="grid">
@@ -17,6 +18,19 @@ layout: default
       Total money raised to date:
       <span class="money">{{ finance.total_contributions | dollars }}</span>
     </div>
+    <div>
+      {% for election in by_election %}
+        {% assign title=election[0]  %}
+        {% assign amount=election[1]  %}
+        Total for {{ title }}:
+        <span class="money">{{ amount | dollars }}</span>
+        <br>
+      {% endfor %}
+    </div>
+    {% if candidate.filer_id and candidate.filer_id != "" %}
+      <p><a href="{{ site.baseurl }}/committee/{{ candidate.filer_id }}/">{% include
+        svg-icon.html icon="table-solid" %} See all contributions</a></p>
+    {% endif %}
     {% if committee.data_warning %}
       <div class="grid grid--full grid--narrow grid--left">
         <div class="grid-col-12">
