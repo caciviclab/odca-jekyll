@@ -49,13 +49,13 @@ First we calculate the maximum for the money bar.
   {% if filer_id != "pending" and filer_id != "Pending" and filer_id != "PENDING" %}
   <div class="committee__support_oppose">
     <div>{{ name | smartify }}</div>
-    <a href="{{ site.baseurl }}/committee/{{ filer_id }}/">See all contributions to this committee</a>
     {% if money > 0 %}
       <div>{{ money | dollars }}</div>
       {% include money-bar.html value=money color=include.color max=max %}
     {% else %}
       <div class="note">No expenditures have been reported by this committee</div>
     {% endif %}
+    <a href="{{ site.baseurl }}/committee/{{ filer_id }}/">See all contributions to this committee</a>
   </div>
   {% endif %}
 {% endfor %}
