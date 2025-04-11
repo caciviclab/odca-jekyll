@@ -20,8 +20,8 @@ layout: default
     </div>
     <div>
       {% for election in by_election %}
-        {% assign title=election[0]  %}
-        {% assign amount=election[1]  %}
+        {% assign title=election[1][0]  %}
+        {% assign amount=election[1][1]  %}
         Total for {{ title }}:
         <span class="money">{{ amount | dollars }}</span>
         <br>
