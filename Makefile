@@ -25,7 +25,7 @@ serve-docker: $(SVGS)
 
 serve: $(SVGS)
 	NODE_OPTIONS=$(NODE_OPTIONS) npm run watch &
-	bundle exec jekyll serve --incremental
+	RUBYOPT="-W:no-deprecated" bundle exec jekyll serve --incremental
 
 setup:
 	npm install
