@@ -75,5 +75,41 @@
     {% endif %}
   </div>
 </section>
+{% assign by_employer = finance.supporting_money.contributions_by_employer %}
+{% assign by_occupation = finance.supporting_money.contributions_by_occupation %}
+{% assign employer_count = by_employer | size %}
+{% assign occupation_count = by_occupation | size %}
+{% if employer_count > 0 or occupation_count > 0 %}
+<section class="l-section">
+  <div class="l-section__content">
+    <div class="subheading">Money coming in</div>
+    <h2 class="candidate__money-heading">Where individual contributors work
+      {%- capture tooltip_message -%}
+      Based on the employer and occupation that individual contributors report
+      on itemized contributions. Different spellings of the same employer or
+      occupation are grouped together. Some similar reported occupations are
+      grouped together. E.g. Realtor, Real Estate Broker, etc. 
+      Contributions reporting neither an
+      employer nor an occupation are not shown. Retired people often put
+      Not Employed so we group those together.
+      {%- endcapture -%}
+      {% include tooltip.html message=tooltip_message %}</h2>
+  </div>
+  <div class="l-section__content l-section__content--half">
+    <div class="subheading">Top employers</div>
+    {% assign employer_max = by_employer[0].total %}
+    {% for employer in by_employer limit:10 %}
+      {% include money-bar.html label=employer.name value=employer.total color="green" max=employer_max %}
+    {% endfor %}
+  </div>
+  <div class="l-section__content l-section__content--half">
+    <div class="subheading">Top occupations</div>
+    {% assign occupation_max = by_occupation[0].total %}
+    {% for occupation in by_occupation limit:10 %}
+      {% include money-bar.html label=occupation.name value=occupation.total color="green" max=occupation_max %}
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
 {% endif %}
 {% endif %}
