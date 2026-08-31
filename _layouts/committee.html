@@ -38,6 +38,38 @@ layout: default
         </div>
       </div>
     {% endif %}
+    {% assign by_employer = finance.contributions_by_employer %}
+    {% assign by_occupation = finance.contributions_by_occupation %}
+    {% assign employer_count = by_employer | size %}
+    {% assign occupation_count = by_occupation | size %}
+    {% if employer_count > 0 or occupation_count > 0 %}
+    <div class="grid grid--full">
+      <div class="grid-col-12">
+        <h2>Where individual contributors work
+          {%- capture tooltip_message -%}
+          Based on the employer and occupation that individual contributors
+          report on itemized contributions. Different spellings of the same
+          employer or occupation are grouped together. Contributions reporting
+          neither an employer nor an occupation are not shown.
+          {%- endcapture -%}
+          {% include tooltip.html message=tooltip_message %}</h2>
+      </div>
+      <div class="grid-col-6">
+        <div class="subheading">Top employers</div>
+        {% assign employer_max = by_employer[0].total %}
+        {% for employer in by_employer limit:10 %}
+          {% include money-bar.html label=employer.name value=employer.total color="green" max=employer_max %}
+        {% endfor %}
+      </div>
+      <div class="grid-col-6">
+        <div class="subheading">Top occupations</div>
+        {% assign occupation_max = by_occupation[0].total %}
+        {% for occupation in by_occupation limit:10 %}
+          {% include money-bar.html label=occupation.name value=occupation.total color="green" max=occupation_max %}
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
     {% if contributions == empty %}
       <p>
         Sorry, there is no contribution data available for this committee. Note
