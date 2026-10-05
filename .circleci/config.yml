@@ -1,24 +1,4 @@
-bundle-cache-key: &bundle-cache-key
-  v1-bundle-{{ checksum "Gemfile.lock" }}
-
-npm-cache-key: &npm-cache-key
-  v1-npm-{{ checksum "package-lock.json" }}
-
-deploy-workflow-jobs: &deploy-workflow-jobs
-  - build:
-      filters:
-        branches:
-          ignore:
-            - gh-pages
-  - deploy:
-      requires:
-        - build
-      filters:
-        branches:
-          only: master
-
-
-version: 2
+version: 2.1
 jobs:
   build:
     docker:
@@ -27,7 +7,7 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - *bundle-cache-key
+            - v1-bundle-{{ checksum "Gemfile.lock" }}
       - run:
           name: Configure Bundler # use bundler version in Gemfile.lock
           command: |
@@ -37,17 +17,17 @@ jobs:
           name: Bundle Install
           command: bundle check || bundle install --path vendor/bundle
       - save_cache:
-          key: *bundle-cache-key
+          key: v1-bundle-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
       - restore_cache:
           keys:
-            - *npm-cache-key
+            - v1-npm-{{ checksum "package-lock.json" }}
       - run:
           name: npm install
           command: npm install
       - save_cache:
-          key: *npm-cache-key
+          key: v1-npm-{{ checksum "package-lock.json" }}
           paths:
             - node_modules
       - run:
@@ -84,15 +64,25 @@ jobs:
             - "84:e6:5d:fd:1d:8c:53:18:7e:0e:3e:ba:82:49:38:ca"
       - attach_workspace:
           at: .
-      - deploy:
+      - run:
           name: Deploy to GH pages
           command: _bin/deploy.sh
 
 
 workflows:
-  version: 2
   commit:
-    jobs: *deploy-workflow-jobs
+    jobs:
+      - build:
+          filters:
+            branches:
+              ignore:
+                - gh-pages
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
 
   twice-daily:
     triggers:
@@ -102,4 +92,15 @@ workflows:
             branches:
               only:
                 - master
-    jobs: *deploy-workflow-jobs
+    jobs:
+      - build:
+          filters:
+            branches:
+              ignore:
+                - gh-pages
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
