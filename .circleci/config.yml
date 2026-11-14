@@ -1,0 +1,106 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: cimg/ruby:2.7-node
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-bundle-{{ checksum "Gemfile.lock" }}
+      - run:
+          name: Configure Bundler # use bundler version in Gemfile.lock
+          command: |
+            BUNDLER_VERSION=$(tail -1 Gemfile.lock | tr -d " ")
+            gem install bundler -v "$BUNDLER_VERSION"
+      - run:
+          name: Bundle Install
+          command: bundle check || bundle install --path vendor/bundle
+      - save_cache:
+          key: v1-bundle-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+      - restore_cache:
+          keys:
+            - v1-npm-{{ checksum "package-lock.json" }}
+      - run:
+          name: npm install
+          command: npm install
+      - save_cache:
+          key: v1-npm-{{ checksum "package-lock.json" }}
+          paths:
+            - node_modules
+      - run:
+          name: Clone finance data repo
+          command: git clone https://github.com/caciviclab/disclosure-backend-static.git
+          working_directory: ..
+      - run:
+          name: Clean data folder
+          command: make clean
+      - run:
+          name: Pull finance data
+          command: make pull-finance
+      - run:
+          name: Build production
+          command: make production
+      - run:
+          name: Test
+          command: make test
+      # Saves the build files so they can be recalled in other jobs
+      - persist_to_workspace:
+          root: .
+          paths:
+            - _site
+
+  deploy:
+    docker:
+      - image: cimg/ruby:2.7-node
+    environment:
+      GITHUB_REPO: caciviclab/odca-jekyll
+    steps:
+      - checkout
+      - add_ssh_keys:
+          fingerprints:
+            - "84:e6:5d:fd:1d:8c:53:18:7e:0e:3e:ba:82:49:38:ca"
+      - attach_workspace:
+          at: .
+      - run:
+          name: Deploy to GH pages
+          command: _bin/deploy.sh
+
+
+workflows:
+  commit:
+    jobs:
+      - build:
+          filters:
+            branches:
+              ignore:
+                - gh-pages
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
+
+  twice-daily:
+    triggers:
+      - schedule:
+          cron: "0 0,12 * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - build:
+          filters:
+            branches:
+              ignore:
+                - gh-pages
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
